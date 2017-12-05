@@ -15,7 +15,10 @@ count = -1
 
 @app.route('/')
 def my_form():
-	return render_template("input.html")
+	try:
+		return render_template("input.html")
+	except:
+		print sys.exc_info()
 
 @app.route('/', methods = ['POST'])
 def my_form_post():
