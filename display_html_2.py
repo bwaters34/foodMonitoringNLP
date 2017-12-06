@@ -53,17 +53,18 @@ def read_file(fileName):
 					tags = pos_tag(word_tokenize(temp_i))
 					individual_food_words = word.split()
 					last_word = individual_food_words[-1]
-					for word, label in tags:
-						if word == last_word and check_if_noun(label):
-							index_of_food_names.append([c, c + len(word) + 1])
-							print('chose word: '+ word)
-							pass
-						else:
-							continue
+					# for word, label in tags:
+					# 	if word == last_word and check_if_noun(label):
+					# 		index_of_food_names.append([c, c + len(word) + 1])
+					# 		print('chose word: '+ word)
+					# 		pass
+					# 	else:
+					# 		continue
 					print(tags)
 					print(individual_food_words)
+					index_of_food_names.append([c, c + len(word) + 1])
 
-					#print "word found", word, len(word), max_len, max_len_word
+			#print "word found", word, len(word), max_len, max_len_word
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				for char_pos in dic:
@@ -103,7 +104,7 @@ def check_if_noun(tag):
 if __name__ == '__main__':
 	try:
 		# print 4/0
-		fileName = 'HSLLD/HV1/MT/admmt1.cha'
+		fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
 		html_format = read_file(fileName)
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
