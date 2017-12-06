@@ -45,13 +45,24 @@ def read_file(fileName):
 				# if match_word(word, temp_i):
 
 				if temp_i.__contains__(' ' + word + ' '):
-					# tags = pos_tag(word_tokenize(temp_i))
 					# print(tags)
 					print word
 					unique_food_names[word] = 1
 					found_at_least = 1
-					c =  i.find(word) 
-					index_of_food_names.append([c ,c + len(word) + 1])
+					c =  i.find(word)
+					tags = pos_tag(word_tokenize(temp_i))
+					individual_food_words = word.split()
+					last_word = individual_food_words[-1]
+					for word, label in tags:
+						if word == last_word and check_if_noun(label):
+							index_of_food_names.append([c, c + len(word) + 1])
+							print('chose word: '+ word)
+							pass
+						else:
+							continue
+					print(tags)
+					print(individual_food_words)
+
 					#print "word found", word, len(word), max_len, max_len_word
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
@@ -84,9 +95,10 @@ def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 			dic[i] = 1 
 	return dic 
 
-def check_if_noun():
-	pass
-
+def check_if_noun(tag):
+	if tag == 'NN' or tag == 'NNS' or tag == 'NNP' or tag == 'NNPS':
+		return True
+ 	return False
 
 if __name__ == '__main__':
 	try:

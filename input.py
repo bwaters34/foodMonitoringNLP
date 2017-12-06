@@ -34,9 +34,9 @@ def my_form_post():
 	#processed_text
 	print var[count]
 	try:
-		html_format = read_file(var[count])
+		# html_format = read_file(var[count])
 		# print "HTNL Format", html_format
-		front_end.wrapStringInHTMLWindows(body=html_format)
+		# front_end.wrapStringInHTMLWindows(body=html_format)
 
 		message = Markup(str(display_html_2.read_file(var[count])))
 		print(message)
