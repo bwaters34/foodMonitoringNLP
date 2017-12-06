@@ -3,7 +3,7 @@ from flask import request
 from flask import render_template
 import display_html_2
 import pickle 
-import sys 
+import sys
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -11,6 +11,8 @@ def load(fileName):
 
 app = Flask(__name__)
 var = load('food_files.pickle')
+print(var)
+
 count = -1
 
 @app.route('/')
@@ -32,9 +34,15 @@ def my_form_post():
 	#processed_text
 	print var[count]
 	try:
+		html_format = read_file(var[count])
+		# print "HTNL Format", html_format
+		front_end.wrapStringInHTMLWindows(body=html_format)
+
 		message = Markup(str(display_html_2.read_file(var[count])))
+		print(message)
 		return render_template('input.html', filename = var[count],body = message)
 	except:
+		print('error')
 		print sys.exc_info()
 		count += 1
 		return render_template('input.html', filename = var[count], body = 'Couldnt display')
