@@ -35,7 +35,7 @@ def read_file(fileName):
 			#write2file += text + '<br>'
 			found_at_least = 0
 			index_of_food_names = []
-			temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[3:])
+			temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[4:])
 
 			for word in foodNames:
 				#if word in i:
@@ -75,9 +75,23 @@ def read_file(fileName):
 			else:
 				pass
 				text += i[1:] 
-			write2file += text + '<br>'
+			
+			tags = pos_tag(word_tokenize(temp_i))
+			#Joining the tags
+			tags = join_tags(tags)
+			print("tags -> ", tags)
+			write2file += text + '<br>' + tags + '<br>'
+			#Orignal 
+			#write2file += text + '<br>'
+
 	#return write2file, unique_food_names
 	return write2file
+
+def join_tags(sentence):
+	text = '     '
+	for i in sentence:
+		text += '(' + i[0] + "->" + i[1] + ") "
+	return text
 
 def match_word(food_key_word, sentence, value = 0):
 	food_key_word = food_key_word.split()

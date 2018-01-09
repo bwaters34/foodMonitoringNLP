@@ -11,6 +11,7 @@ def load(fileName):
 
 app = Flask(__name__)
 var = load('food_files.pickle')
+var.sort()
 print(var)
 
 count = -1
@@ -39,7 +40,7 @@ def my_form_post():
 		# front_end.wrapStringInHTMLWindows(body=html_format)
 
 		message = Markup(str(display_html_2.read_file(var[count])))
-		print(message)
+		#print(message)
 		return render_template('input.html', filename = var[count],body = message)
 	except:
 		print('error')
