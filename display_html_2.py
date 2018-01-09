@@ -36,7 +36,7 @@ def read_file(fileName):
 			found_at_least = 0
 			index_of_food_names = []
 			temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[4:])
-
+			#temp_i = i[4:]
 			for word in foodNames:
 				#if word in i:
 				if word == 'brownies':
@@ -65,6 +65,8 @@ def read_file(fileName):
 					index_of_food_names.append([c, c + len(word) + 1])
 
 			#print "word found", word, len(word), max_len, max_len_word
+			print ("Temproray -> ", temp_i)
+			print ("Final i -> ", i)
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				for char_pos in dic:
@@ -75,12 +77,12 @@ def read_file(fileName):
 			else:
 				pass
 				text += i[1:] 
-			
+			print ("Final text ->", text)
 			tags = pos_tag(word_tokenize(temp_i))
 			#Joining the tags
 			tags = join_tags(tags)
 			print("tags -> ", tags)
-			write2file += text + '<br>' + tags + '<br>'
+			write2file += text + '<br>' + tags + '<br><br>'
 			#Orignal 
 			#write2file += text + '<br>'
 
@@ -103,7 +105,7 @@ def match_word(food_key_word, sentence, value = 0):
 
 def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 	dic = defaultdict(int)
-	for i in xrange(length_of_sent):
+	for i in xrange(1, length_of_sent):
 		dic[i] = 0
 	for meeting_schedules in list_of_timings:
 		for i in xrange(meeting_schedules[0], meeting_schedules[1]):
@@ -119,6 +121,7 @@ if __name__ == '__main__':
 	try:
 		# print 4/0
 		fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
+		fileName = 'HSLLD/HV1/MT/admmt1.cha'
 		html_format = read_file(fileName)
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
