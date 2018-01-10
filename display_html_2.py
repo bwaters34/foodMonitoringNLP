@@ -7,7 +7,10 @@ from collections import defaultdict
 import matplotlib.pyplot as plt
 import seaborn as sns
 from nltk import pos_tag, word_tokenize
-from os import path 
+from os import path
+import solution_parser
+
+
 def load(fileName):
 	with open(fileName, 'r') as f:
 		return pickle.load(f) 
@@ -94,11 +97,10 @@ def read_file(fileName):
 	# attempt to load solutions file
 	solution_file_path = path.join('solutions', fileName)
 	try:
-		with open(solution_file_path, 'rb') as f:
-			solution_set = pickle.load(f)
-			precision, recall = calculate_precision_and_recall(solution_set, predicted_food_labels_set)
-			print('precision', precision)
-			print('recall', recall)
+		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
+		precision, recall = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+		print('precision', precision)
+		print('recall', recall)
 
 	except IOError:
 		print('no solution file found for: ' + solution_file_path)
@@ -133,30 +135,6 @@ def check_if_noun(tag):
 		return True
  	return False
 
-def calculate_precision_and_recall(gold_standard_set, predicted_set):
-	"""
-
-	:param gold_standard_set:
-	:param predicted_set:
-	:return:
-	"""
-	print('calculating accuracy and recall')
-	print(gold_standard_set)
-	print(predicted_set)
-	true_positives = 0
-	false_positives = 0
-	false_negatives = 0
-	for elem in predicted_set:
-		if elem in gold_standard_set:
-			true_positives += 1
-		else:
-			false_positives += 1
-	for gold_elem in gold_standard_set:
-		if gold_elem not in predicted_set:
-			false_negatives += 1
-	precision = true_positives / float(true_positives + false_positives)
-	recall = true_positives / float(true_positives + false_negatives)
-	return precision, recall
 
 
 if __name__ == '__main__':
