@@ -54,19 +54,25 @@ def creating_solution_helper(file_path):
 		line_number = 0
 		for line in f:
 			line_number += 1
-			print("line number: " + str(line_number))
-			print(line)
-			output_str = ''
-			i = 0
-			while i < len(line):
-				if i % 5 == 0:
-					length_of_addition_to_str = len(str(i))
-					output_str += str(i)
-					i += length_of_addition_to_str
-				else:
-					output_str += ' '
-					i += 1
-			print(output_str)
+			if line[0] == '*':
+				print("line number: " + str(line_number))
+				print(line[:-1])
+				output_str = ''
+				i = 0
+				while i < len(line):
+					if i % 5 == 0:
+						length_of_addition_to_str = len(str(i))
+						output_str += str(i)
+						i += length_of_addition_to_str
+					else:
+						output_str += ' '
+						i += 1
+				output_str = ''
+				for i in range(len(line[:-1])):
+					char = line[i]
+					output_str+= char + str(i) + ' '
+				print(output_str)
+
 
 if __name__ == '__main__':
 	file_name = sys.argv[1]

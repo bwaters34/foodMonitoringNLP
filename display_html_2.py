@@ -56,6 +56,8 @@ def read_file(fileName):
 					unique_food_names[word] = 1
 					found_at_least = 1
 					c =  i.find(word)
+					if current_line_number == 79:
+						print('help')
 					tags = pos_tag(word_tokenize(temp_i))
 					individual_food_words = word.split()
 					last_word = individual_food_words[-1]
