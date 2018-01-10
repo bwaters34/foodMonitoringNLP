@@ -22,7 +22,10 @@ def read_file(fileName):
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
 	unique_food_names = {}
 	f = file(fileName, 'r')
-	for i in f:
+	current_line_number = 0
+	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
+	for i in f: # i is the current line (a string)
+		current_line_number += 1
 		if i[0] == '*':
 			text = ''
 			i = i.lower()
@@ -63,7 +66,8 @@ def read_file(fileName):
 					print(tags)
 					print(individual_food_words)
 					index_of_food_names.append([c, c + len(word) + 1])
-
+					set_elem = (current_line_number, (c, c + len(word) + 1))
+					predicted_food_labels_set.add(set_elem)
 			#print "word found", word, len(word), max_len, max_len_word
 			print ("Temproray -> ", temp_i)
 			print ("Final i -> ", i)
@@ -73,7 +77,7 @@ def read_file(fileName):
 					if dic[char_pos] == 1:
 						text += '<mark>' +  i[char_pos] + '</mark>'
 					else:
-						text += i[char_pos]	
+						text += i[char_pos]
 			else:
 				pass
 				text += i[1:] 
@@ -83,9 +87,21 @@ def read_file(fileName):
 			tags = join_tags(tags)
 			print("tags -> ", tags)
 			write2file += text + '<br>' + tags + '<br><br>'
+
 			#Orignal 
 			#write2file += text + '<br>'
 
+	# attempt to load solutions file
+	solution_file_path = path.join('solutions', fileName)
+	try:
+		with open(solution_file_path, 'rb') as f:
+			solution_set = pickle.load(f)
+			precision, recall = calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+			print('precision', precision)
+			print('recall', recall)
+
+	except IOError:
+		print('no solution file found for: ' + solution_file_path)
 	#return write2file, unique_food_names
 	return write2file
 
@@ -117,10 +133,35 @@ def check_if_noun(tag):
 		return True
  	return False
 
+def calculate_precision_and_recall(gold_standard_set, predicted_set):
+	"""
+
+	:param gold_standard_set:
+	:param predicted_set:
+	:return:
+	"""
+	print('calculating accuracy and recall')
+	print(gold_standard_set)
+	print(predicted_set)
+	true_positives = 0
+	false_positives = 0
+	false_negatives = 0
+	for elem in predicted_set:
+		if elem in gold_standard_set:
+			true_positives += 1
+		else:
+			false_positives += 1
+	for gold_elem in gold_standard_set:
+		if gold_elem not in predicted_set:
+			false_negatives += 1
+	precision = true_positives / float(true_positives + false_positives)
+	recall = true_positives / float(true_positives + false_negatives)
+	return precision, recall
+
+
 if __name__ == '__main__':
 	try:
-		# print 4/0
-		fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
+		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
 		fileName = 'HSLLD/HV1/MT/admmt1.cha'
 		html_format = read_file(fileName)
 		#print "HTNL Format", html_format
