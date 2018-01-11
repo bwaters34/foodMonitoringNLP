@@ -56,8 +56,6 @@ def read_file(fileName):
 					unique_food_names[word] = 1
 					found_at_least = 1
 					c =  i.find(word)
-					if current_line_number == 79:
-						print('help')
 					tags = pos_tag(word_tokenize(temp_i))
 					individual_food_words = word.split()
 					last_word = individual_food_words[-1]
@@ -71,7 +69,7 @@ def read_file(fileName):
 					print(tags)
 					print(individual_food_words)
 					index_of_food_names.append([c, c + len(word) + 1])
-					set_elem = (current_line_number, (c, c + len(word) + 1))
+					set_elem = (current_line_number, (c, c + len(word))) # removed the plus one
 					predicted_food_labels_set.add(set_elem)
 			#print "word found", word, len(word), max_len, max_len_word
 			print ("Temproray -> ", temp_i)
@@ -99,10 +97,25 @@ def read_file(fileName):
 	# attempt to load solutions file
 	solution_file_path = path.join('solutions', fileName)
 	try:
+		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
-		precision, recall = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+		print('calculating')
+		precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
 		print('precision', precision)
 		print('recall', recall)
+		print('true positives:') + str(true_pos_list)
+		print('lines:')
+		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
+			print(line)
+		print('false positives: ' + str(false_pos_list))
+		print('lines:')
+		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+			print(line)
+		print('false negatives: ' + str(false_neg_list))
+		print('lines:')
+		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+			print(line)
+
 
 	except IOError:
 		print('no solution file found for: ' + solution_file_path)

@@ -13,17 +13,23 @@ def calculate_precision_and_recall(gold_standard_set, predicted_set):
 	true_positives = 0
 	false_positives = 0
 	false_negatives = 0
+	true_pos_list = []
+	false_pos_list = []
+	false_neg_list = []
 	for elem in predicted_set:
 		if elem in gold_standard_set:
 			true_positives += 1
+			true_pos_list.append(elem)
 		else:
 			false_positives += 1
+			false_pos_list.append(elem)
 	for gold_elem in gold_standard_set:
 		if gold_elem not in predicted_set:
 			false_negatives += 1
+			false_neg_list.append(gold_elem)
 	precision = true_positives / float(true_positives + false_positives)
 	recall = true_positives / float(true_positives + false_negatives)
-	return precision, recall
+	return precision, recall, sorted(false_pos_list), sorted(false_neg_list), sorted(true_pos_list)
 
 def get_solution_set_from_file(file_path):
 	"""
@@ -40,12 +46,13 @@ def get_solution_set_from_file(file_path):
 	solutions = set()
 	with open(file_path) as f:
 		for line in f:
-			words = [int(word) for word in line.split()]
-			line_number = words[0]
-			word_start = words[1]
-			word_end = words[2]
-			key = (line_number, (word_start, word_end))
-			solutions.add(key)
+			if len(line) > 1: # make sure its not end of file
+				words = [int(word) for word in line.split()]
+				line_number = words[0]
+				word_start = words[1]
+				word_end = words[2]
+				key = (line_number, (word_start, word_end))
+				solutions.add(key)
 	return solutions
 
 def creating_solution_helper(file_path):
@@ -73,7 +80,33 @@ def creating_solution_helper(file_path):
 					output_str+= char + str(i) + ' '
 				print(output_str)
 
+def extract_line_numbers_from_solution_set(solution_set):
+	return [x[0] for x in solution_set]
+
+
+def get_corresponding_lines(file_name, solution_set):
+	"""
+
+	:param file_name:
+	:param list_of_tuples: Sorted list of requested line numbers
+	:return: list of strings corresponding to requested lines
+	"""
+	lines = []
+
+	sorted_list_of_line_numbers = extract_line_numbers_from_solution_set(solution_set)
+
+	with open(file_name) as f:
+		current_line_number = 0
+		current_sorted_line_index = 0
+		for line in f:
+			current_line_number +=1
+			if current_sorted_line_index < len(sorted_list_of_line_numbers) and current_line_number == sorted_list_of_line_numbers[current_sorted_line_index]:
+				while current_sorted_line_index < len(sorted_list_of_line_numbers) and sorted_list_of_line_numbers[current_sorted_line_index] == current_line_number:
+					lines.append((solution_set[current_sorted_line_index], line))
+					current_sorted_line_index += 1
+	return lines
 
 if __name__ == '__main__':
 	file_name = sys.argv[1]
 	creating_solution_helper(file_name)
+
