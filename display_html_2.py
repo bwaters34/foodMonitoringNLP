@@ -93,7 +93,7 @@ def read_file(fileName):
 						t = []
 						for temp_words in temp_langua:
 							t.append(temp_words)
-						food_id_langua_pairs.append([word, t])
+						food_id_langua_pairs.append([word + " " + food_id, t])
 						#food_id_langua_pairs = 
 					print("food -> ", food_id_group_pairs)
 			#print "word found", word, len(word), max_len, max_len_word
@@ -128,8 +128,8 @@ def read_file(fileName):
 					food_ledger_langua += "<mark>" + food_name_langua + "----></mark>"
 					for ledger in pairs[1]:
 						food_ledger_langua += ledger.lower() + ",  "
-					food_ledger_langua + "<br>"
-			write2file += text + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua
+					food_ledger_langua += "<br>" + "<br>"
+			write2file += text + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua 
 
 			#Orignal 
 			#write2file += text + '<br>'
