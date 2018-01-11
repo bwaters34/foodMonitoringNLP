@@ -76,6 +76,8 @@ def read_file(fileName):
 			print ("Final i -> ", i)
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
+				print('dic')
+				print(dic)
 				for char_pos in dic:
 					if dic[char_pos] == 1:
 						text += '<mark>' +  i[char_pos] + '</mark>'
@@ -101,8 +103,8 @@ def read_file(fileName):
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
 		print('calculating')
 		precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
-		print('precision', precision)
-		print('recall', recall)
+		print('precision: ' +  str(precision))
+		print('recall: ' +  str(recall))
 		print('true positives:') + str(true_pos_list)
 		print('lines:')
 		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
