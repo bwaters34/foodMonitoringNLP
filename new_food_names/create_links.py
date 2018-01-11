@@ -35,9 +35,9 @@ class create_links:
 		self.save(self.dic_food_group_final, "food_group.pickle")
 		self.save(self.dic_food_name_to_id, "food_names.pickle")
 		temp_re = self.retrieve("food_names.pickle")
-		print temp_re.keys()
-		temp_re = self.retrieve("food_group.pickle")
-		print temp_re
+		#print temp_re
+		#temp_re = self.retrieve("food_group.pickle")
+		#sprint temp_re
 		#print self.dic_food_group_final
 
 	def create_lists(self, sentence):
@@ -87,8 +87,8 @@ class create_links:
 			for v in value:
 				print keys, v
 		self.save(self.temp_dic_lanuage_of_food, "langua.pickle")
-		#temp = self.retrieve("langua.pickle")
-		#print temp
+		temp = self.retrieve("langua.pickle")
+		print temp
 
 	def create_food_group(self):
 		self.dic_food_group = {}
@@ -118,4 +118,4 @@ if __name__ == '__main__':
 	cl.create_food_group()
 	cl.create_language_desc()
 	cl.create_lanuage_of_food()
-	cl.create_food_desc()
+	#cl.create_food_desc()

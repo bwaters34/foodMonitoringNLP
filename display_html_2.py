@@ -21,13 +21,22 @@ def save(variable, fileName):
 
 def read_file(fileName):
 	write2file = ''
-	foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
+	#Previous versions
+	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
+	foodNames = load("./data/food_desc_files/food_names.pickle")
+
+	foodGroup = load("./data/food_desc_files/food_group.pickle")
+
+	langua = load("./data/food_desc_files/langua.pickle")
+
 	unique_food_names = {}
 	f = file(fileName, 'r')
 	current_line_number = 0
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
 	for i in f: # i is the current line (a string)
+		food_id_group_pairs = []
+		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
 			text = ''
@@ -71,9 +80,25 @@ def read_file(fileName):
 					index_of_food_names.append([c, c + len(word) + 1])
 					set_elem = (current_line_number, (c, c + len(word))) # removed the plus one
 					predicted_food_labels_set.add(set_elem)
+
+					#Adding stuffs after reading documentation from USDA
+					#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
+					food_id = foodNames[word]
+					if food_id in foodGroup:
+						food_group_for_food_id = foodGroup[food_id]
+						food_id_group_pairs.append([word, food_group_for_food_id])
+					
+					if food_id in langua:
+						temp_langua = langua[food_id]
+						t = []
+						for temp_words in temp_langua:
+							t.append(temp_words)
+						food_id_langua_pairs.append([word, t])
+						#food_id_langua_pairs = 
+					print("food -> ", food_id_group_pairs)
 			#print "word found", word, len(word), max_len, max_len_word
-			print ("Temproray -> ", temp_i)
-			print ("Final i -> ", i)
+			#print ("Temproray -> ", temp_i)
+			#print ("Final i -> ", i)
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				print('dic')
@@ -86,12 +111,25 @@ def read_file(fileName):
 			else:
 				pass
 				text += i[1:] 
-			print ("Final text ->", text)
+			#print ("Final text ->", text)
 			tags = pos_tag(word_tokenize(temp_i))
 			#Joining the tags
 			tags = join_tags(tags)
-			print("tags -> ", tags)
-			write2file += text + '<br>' + tags + '<br><br>'
+			#print("tags -> ", tags)
+			print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
+			food_tags = ''
+			if len(food_id_group_pairs):
+				for pairs in food_id_group_pairs:
+					food_tags += "<mark>" + pairs[0] + "</mark>" + "----> " + pairs[1] + "<br>"
+			food_ledger_langua = ''
+			if len(food_id_langua_pairs):
+				for pairs in food_id_langua_pairs:
+					food_name_langua = pairs[0]
+					food_ledger_langua += "<mark>" + food_name_langua + "----></mark>"
+					for ledger in pairs[1]:
+						food_ledger_langua += ledger.lower() + ",  "
+					food_ledger_langua + "<br>"
+			write2file += text + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua
 
 			#Orignal 
 			#write2file += text + '<br>'
