@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from nltk import pos_tag, word_tokenize
 from os import path
+from collections import namedtuple
 import solution_parser
 
 
@@ -54,13 +55,13 @@ def read_file(fileName):
 			index_of_food_names = []
 			temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[4:])
 			#temp_i = i[4:]
+			spans_found_on_line = []
 			for word in foodNames:
 				#if word in i:
 				if word == 'brownies':
 					print word
 					#match_word(word, temp_i, 1)
 				# if match_word(word, temp_i):
-
 				if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
 					print word
@@ -80,8 +81,8 @@ def read_file(fileName):
 					print(tags)
 					print(individual_food_words)
 					index_of_food_names.append([c, c + len(word) + 1])
-					set_elem = (current_line_number, (c, c + len(word))) # removed the plus one
-					predicted_food_labels_set.add(set_elem)
+					 # removed the plus one
+					spans_found_on_line.append((c, c + len(word)))
 
 					#Adding stuffs after reading documentation from USDA
 					#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
@@ -110,6 +111,10 @@ def read_file(fileName):
 						text += '<mark>' +  i[char_pos] + '</mark>'
 					else:
 						text += i[char_pos]
+				tuples_list = give_largest_non_overlapping_sequences(spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
+				for tup in tuples_list:
+					set_elem = (current_line_number, tup) # add line number so we know where in the document we got it
+					predicted_food_labels_set.add(set_elem)
 			else:
 				pass
 				text += i[1:] 
@@ -211,12 +216,39 @@ def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 			dic[i] = 1 
 	return dic 
 
+
 def check_if_noun(tag):
 	if tag == 'NN' or tag == 'NNS' or tag == 'NNP' or tag == 'NNPS':
 		return True
  	return False
 
+def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
+	Sequence = namedtuple('Sequence', ['start', 'end', 'size'])
+	list_of_named_sequences = [Sequence(start = x[0], end = x[1], size = x[1] - x[0] - 1) for x in list_of_start_end_tuples] # size is -1 because the end number represents the index of the character AFTER the last character in the sequence.
+	sorted_by_size_sequences = sorted(list_of_named_sequences, key=lambda seq: seq.size) # smallest size is first, largest size is last
+	non_overlapping_sequences = []
+	while len(sorted_by_size_sequences) > 0:
+		sequence = sorted_by_size_sequences.pop() # last element in list, therefore sequence with largest size still on the list
+		if not conflicts_with_sequences(non_overlapping_sequences, sequence):
+			non_overlapping_sequences.append(sequence)
+	extracted_tuples = [(seq.start, seq.end) for seq in non_overlapping_sequences]
+	return extracted_tuples
 
+def conflicts_with_sequences(list_of_sequences, test_sequence):
+	"""Tests if test_sequence conflicts with any sequence in the list_of_sequences"""
+	for already_added_sequence in list_of_sequences:
+		if sequences_overlap(already_added_sequence, test_sequence):
+			return True
+	return False
+
+def sequences_overlap(seq1, seq2):
+	"""Returns if two sequences overlap"""
+	if seq1.end <= seq2.start: # seq1 must end before seq2 begins. they do not overlap
+		return False
+	elif seq2.end <= seq1.start:
+		return False
+	else:
+		return True
 
 if __name__ == '__main__':
 	try:

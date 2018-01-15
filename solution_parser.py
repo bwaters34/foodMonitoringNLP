@@ -8,7 +8,9 @@ def calculate_precision_and_recall(gold_standard_set, predicted_set):
 	:return:
 	"""
 	print('calculating accuracy and recall')
+	print('correct labels:')
 	print(gold_standard_set)
+	print('predicted labels:')
 	print(predicted_set)
 	true_positives = 0
 	false_positives = 0
@@ -27,8 +29,12 @@ def calculate_precision_and_recall(gold_standard_set, predicted_set):
 		if gold_elem not in predicted_set:
 			false_negatives += 1
 			false_neg_list.append(gold_elem)
+
+	if true_positives == 0:
+		print("OH NO")
 	precision = true_positives / float(true_positives + false_positives)
 	recall = true_positives / float(true_positives + false_negatives)
+
 	return precision, recall, sorted(false_pos_list), sorted(false_neg_list), sorted(true_pos_list)
 
 def get_solution_set_from_file(file_path):
@@ -62,18 +68,9 @@ def creating_solution_helper(file_path):
 		for line in f:
 			line_number += 1
 			if line[0] == '*':
-				print("line number: " + str(line_number))
+				print('')
 				print(line[:-1])
-				output_str = ''
-				i = 0
-				while i < len(line):
-					if i % 5 == 0:
-						length_of_addition_to_str = len(str(i))
-						output_str += str(i)
-						i += length_of_addition_to_str
-					else:
-						output_str += ' '
-						i += 1
+				print("line number: " + str(line_number))
 				output_str = ''
 				for i in range(len(line[:-1])):
 					char = line[i]
