@@ -35,11 +35,13 @@ def read_file(fileName):
 	f = file(fileName, 'r')
 	current_line_number = 0
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
-	for i in f: # i is the current line (a string)
+	for line_no, i in enumerate(f): # i is the current line (a string)
+		
 		food_id_group_pairs = []
 		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
+			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no+1)
 			text = ''
 			i = i.lower()
 			#i = i.split()
@@ -121,7 +123,10 @@ def read_file(fileName):
 			#Joining the tags
 			tags = join_tags(tags)
 			#print("tags -> ", tags)
-			print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
+			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
+
+			print ("pairs -> ", word_char_index)
+
 			food_tags = ''
 			if len(food_id_group_pairs):
 				for pairs in food_id_group_pairs:
@@ -134,7 +139,7 @@ def read_file(fileName):
 					for ledger in pairs[1]:
 						food_ledger_langua += ledger.lower() + ",  "
 					food_ledger_langua += "<br>" + "<br>"
-			write2file += text + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua 
+			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua 
 
 			#Orignal 
 			#write2file += text + '<br>'
@@ -166,6 +171,27 @@ def read_file(fileName):
 		print('no solution file found for: ' + solution_file_path)
 	#return write2file, unique_food_names
 	return write2file
+
+def provide_words_with_char_nos(sentence, line_no):
+	temp_char = ''
+	start_count = 0 
+	return_array = []
+	for index, char in enumerate(sentence):
+		if char != ' ' and char != '\t':
+			temp_char += char 
+		else:
+			return_array.append([temp_char, start_count, index])
+			start_count = index + 1 
+			temp_char = ' '
+
+	#Converting to displayable format (String format)
+	return_string = '<br>(line->' + str(line_no)+ ") "
+	for word in return_array:
+		return_string += word[0].lower() + " ("+str(word[1])+","+str(word[2])+") "
+	return_string += "<br>"
+	return return_array, return_string
+
+
 
 def join_tags(sentence):
 	text = '     '
