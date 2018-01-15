@@ -34,12 +34,13 @@ def read_file(fileName):
 	f = file(fileName, 'r')
 	current_line_number = 0
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
-	for i in f: # i is the current line (a string)
-		word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i)
+	for line_no, i in enumerate(f): # i is the current line (a string)
+		
 		food_id_group_pairs = []
 		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
+			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no)
 			text = ''
 			i = i.lower()
 			#i = i.split()
@@ -166,7 +167,7 @@ def read_file(fileName):
 	#return write2file, unique_food_names
 	return write2file
 
-def provide_words_with_char_nos(sentence):
+def provide_words_with_char_nos(sentence, line_no):
 	temp_char = ''
 	start_count = 0 
 	return_array = []
@@ -179,7 +180,7 @@ def provide_words_with_char_nos(sentence):
 			temp_char = ' '
 
 	#Converting to displayable format (String format)
-	return_string = '<br>'
+	return_string = '<br>(line->' + str(line_no)+ ") "
 	for word in return_array:
 		return_string += word[0].lower() + " ("+str(word[1])+","+str(word[2])+") "
 	return_string += "<br>"
