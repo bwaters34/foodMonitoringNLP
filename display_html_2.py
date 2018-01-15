@@ -40,7 +40,7 @@ def read_file(fileName):
 		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
-			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no)
+			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no+1)
 			text = ''
 			i = i.lower()
 			#i = i.split()
