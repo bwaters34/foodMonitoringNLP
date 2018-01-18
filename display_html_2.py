@@ -154,25 +154,28 @@ def read_file(fileName):
 		print('precision: ' +  str(precision))
 		print('recall: ' +  str(recall))
 		print('true positives:') + str(true_pos_list)
-		print('lines:')
+		print('lines: {}'.format(len(solution_parser.get_corresponding_lines(fileName, true_pos_list))))
 		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
 			print(line)
 		print('false positives: ' + str(false_pos_list))
-		print('lines:')
+		print('lines: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_pos_list))))
 		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
 			print(line)
+
 		print('false negatives: ' + str(false_neg_list))
-		print('lines:')
+		print('lines: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_neg_list))))
 		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
 			print(line)
+		print('# true pos: {}'.format(len(solution_parser.get_corresponding_lines(fileName, true_pos_list))))
+		print('# false pos: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_pos_list))))
+		print('# false neg: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_neg_list))))
+
 		write2file += '<br><hr>'+"Precision: "+str(precision)+ \
 						"<br>Recall: "+str(recall) + "<br><hr>"
 		write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
 						"<br>"
 		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
 			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
-
-
 		write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
 		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
 			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
@@ -266,7 +269,7 @@ def sequences_overlap(seq1, seq2):
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		fileName = 'HSLLD/HV1/MT/admmt1.cha'
+		fileName = 'HSLLD/HV1/MT/conmt1.cha'
 		html_format = read_file(fileName)
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
