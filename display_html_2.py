@@ -165,11 +165,24 @@ def read_file(fileName):
 		print('lines:')
 		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
 			print(line)
+		write2file += '<br><hr>'+"Precision: "+str(precision)+ \
+						"<br>Recall: "+str(recall) + "<br><hr>"
+		write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
+						"<br>"
+		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+
+
+		write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
+		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+
 
 
 	except IOError:
 		print('no solution file found for: ' + solution_file_path)
 	#return write2file, unique_food_names
+
 	return write2file
 
 def provide_words_with_char_nos(sentence, line_no):
