@@ -32,7 +32,10 @@ def calculate_precision_and_recall(gold_standard_set, predicted_set):
 
 	if true_positives == 0:
 		print("OH NO")
-	precision = true_positives / float(true_positives + false_positives)
+	if true_positives + false_positives != 0:
+		precision = true_positives / float(true_positives + false_positives)
+	else:
+		precision = 1.0
 	recall = true_positives / float(true_positives + false_negatives)
 
 	return precision, recall, sorted(false_pos_list), sorted(false_neg_list), sorted(true_pos_list)
