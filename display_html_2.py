@@ -269,7 +269,7 @@ def sequences_overlap(seq1, seq2):
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		fileName = 'HSLLD/HV1/MT/conmt1.cha'
+		fileName = 'HSLLD/HV1/MT/aprmt1.cha'
 		html_format = read_file(fileName)
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
