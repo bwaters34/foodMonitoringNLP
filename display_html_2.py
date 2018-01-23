@@ -10,7 +10,7 @@ from nltk import pos_tag, word_tokenize
 from os import path
 from collections import namedtuple
 import solution_parser
-
+import CMUTweetTagger
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -20,7 +20,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName):
+def read_file(fileName, parser_type = None):
 	write2file = ''
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -30,6 +30,8 @@ def read_file(fileName):
 	foodGroup = load("./data/food_desc_files/food_group.pickle")
 
 	langua = load("./data/food_desc_files/langua.pickle")
+
+	ark_parsed_data = ark_parser(fileName)
 
 	unique_food_names = {}
 	f = file(fileName, 'r')
@@ -67,7 +69,14 @@ def read_file(fileName):
 					print word
 					unique_food_names[word] = 1
 					found_at_least = 1
-					c =  i.find(word)
+					
+					# #Previous Setting
+					# c =  i.find(word)
+					# index_of_food_names.append([c, c + len(word) + 1])
+					
+					# #removed the plus one
+					# spans_found_on_line.append((c, c + len(word)))
+
 					tags = pos_tag(word_tokenize(temp_i))
 					individual_food_words = word.split()
 					last_word = individual_food_words[-1]
@@ -80,10 +89,13 @@ def read_file(fileName):
 					# 		continue
 					print(tags)
 					print(individual_food_words)
-					index_of_food_names.append([c, c + len(word) + 1])
-					 # removed the plus one
-					spans_found_on_line.append((c, c + len(word)))
 
+
+					for match in re.finditer(word, i):
+						food_match_indexes = match.span()
+						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+						spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+						
 					#Adding stuffs after reading documentation from USDA
 					#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
 					food_id = foodNames[word]
@@ -119,13 +131,20 @@ def read_file(fileName):
 				pass
 				text += i[1:] 
 			#print ("Final text ->", text)
-			tags = pos_tag(word_tokenize(temp_i))
-			#Joining the tags
-			tags = join_tags(tags)
-			#print("tags -> ", tags)
+			if parser_type == 'stanford_POS' or 1:
+				tags = pos_tag(word_tokenize(temp_i))
+				#Joining the tags
+				tags = join_tags(tags)
+			elif parser_type == 'ark_tweet_parser':
+				#tags =  CMUTweetTagger.runtagger_parse([temp_i])
+				tags = join_tags(ark_parsed_data[line_no])
+				#tags = ''
+				#tags1 = join_tags(tags)
+
+			#print("tags -> ", tags1)
 			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
 
-			print ("pairs -> ", word_char_index)
+			#print ("pairs -> ", word_char_index)
 
 			food_tags = ''
 			if len(food_id_group_pairs):
@@ -187,7 +206,7 @@ def read_file(fileName):
 	except IOError:
 		print('no solution file found for: ' + solution_file_path)
 	#return write2file, unique_food_names
-	namedtuple()
+	#namedtuple()
 
 	return write2file
 
@@ -269,11 +288,23 @@ def sequences_overlap(seq1, seq2):
 	else:
 		return True
 
+def ark_parser(fileName):
+	final_list_of_sentences = []
+	list_of_sentences = open(fileName, "r").read()
+	for sentence in list_of_sentences.split('\n'):
+		if len(sentence) > 1:
+			if sentence[0] == '*':
+				final_list_of_sentences.append(' '.join(sentence.split()))
+	print final_list_of_sentences
+	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
+	return var
+
+
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
 		fileName = 'HSLLD/HV1/MT/admmt1.cha'
-		html_format = read_file(fileName)
+		html_format = read_file(fileName, 'ark_tweet_parser')
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
 	except:
