@@ -10,7 +10,7 @@ from nltk import pos_tag, word_tokenize
 from os import path
 from collections import namedtuple
 import solution_parser
-
+import os
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -20,7 +20,14 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName):
+def read_file(fileName, tagger=None, only_files_with_solutions=False):
+	"""
+
+	:param fileName: file to read
+	:param tagger: Part of speech tagger to use when pattern matching. If None, no pattern matching is performed
+	:param only_files_with_solutions: if True, only reads files with solutions, and returns None if the file doesn't have a solution.
+	:return:
+	"""
 	write2file = ''
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -35,8 +42,20 @@ def read_file(fileName):
 	f = file(fileName, 'r')
 	current_line_number = 0
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
+	solution_set_loaded = False
+	try:
+		solution_file_path = path.join('solutions', fileName)
+		print('loading solution set')
+		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
+		solution_set_loaded = True
+	except IOError:
+		print('no solution file found for: ' + solution_file_path)
+
+	# if we only want files with solutions, and no solution set is found, break early so we don't need to parse the file for food words.
+	if only_files_with_solutions:
+		if not solution_set_loaded:
+			return "solution set not found", None
 	for line_no, i in enumerate(f): # i is the current line (a string)
-		
 		food_id_group_pairs = []
 		food_id_langua_pairs = []
 		current_line_number += 1
@@ -125,7 +144,7 @@ def read_file(fileName):
 			#print("tags -> ", tags)
 			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
 
-			print ("pairs -> ", word_char_index)
+			# print ("pairs -> ", word_char_index)
 
 			food_tags = ''
 			if len(food_id_group_pairs):
@@ -143,53 +162,45 @@ def read_file(fileName):
 
 			#Orignal 
 			#write2file += text + '<br>'
-
-	# attempt to load solutions file
-	solution_file_path = path.join('solutions', fileName)
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
 	num_false_neg = None
-	try:
-		print('loading solution set')
-		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
-		print('calculating')
-		precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
-		num_true_pos = len(true_pos_list)
-		num_false_pos = len(false_pos_list)
-		num_false_neg = len(false_neg_list)
-		print('precision: ' +  str(precision))
-		print('recall: ' +  str(recall))
-		print('true positives:') + str(true_pos_list)
-		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
-			print(line)
-		print('false positives: ' + str(false_pos_list))
-		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-			print(line)
-		print('false negatives: ' + str(false_neg_list))
-		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-			print(line)
-		print('# true pos: {}'.format(num_true_pos))
-		print('# false pos: {}'.format(num_false_pos))
-		print('# false neg: {}'.format(num_false_neg))
 
-		write2file += '<br><hr>'+"Precision: "+str(precision)+ \
-						"<br>Recall: "+str(recall) + "<br><hr>"
-		write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
-						"<br>"
-		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
-		write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
-		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+	print('calculating')
+	precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+	num_true_pos = len(true_pos_list)
+	num_false_pos = len(false_pos_list)
+	num_false_neg = len(false_neg_list)
+	print('precision: ' +  str(precision))
+	print('recall: ' +  str(recall))
+	print('true positives:') + str(true_pos_list)
+	for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
+		print(line)
+	print('false positives: ' + str(false_pos_list))
+	for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+		print(line)
+	print('false negatives: ' + str(false_neg_list))
+	for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+		print(line)
+	print('# true pos: {}'.format(num_true_pos))
+	print('# false pos: {}'.format(num_false_pos))
+	print('# false neg: {}'.format(num_false_neg))
 
+	write2file += '<br><hr>'+"Precision: "+str(precision)+ \
+					"<br>Recall: "+str(recall) + "<br><hr>"
+	write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
+					"<br>"
+	for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+		write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+	write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
+	for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+		write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
 
-
-	except IOError:
-		print('no solution file found for: ' + solution_file_path)
 	#return write2file, unique_food_names
-	namedtuple()
+	Accuracy = namedtuple('Accuracy', 'num_true_pos num_false_pos num_false_neg') # makes returning multiple values more clear
+	results = Accuracy(num_true_pos = num_true_pos, num_false_pos = num_false_pos, num_false_neg = num_false_neg)
 
-	return write2file
+	return write2file, results
 
 def provide_words_with_char_nos(sentence, line_no):
 	temp_char = ''
@@ -269,17 +280,45 @@ def sequences_overlap(seq1, seq2):
 	else:
 		return True
 
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False):
+	sum_true_pos = 0
+	sum_false_pos = 0
+	sum_false_neg = 0
+
+	for filename in os.listdir(directory_path):
+		file_path = directory_path + '/' + filename
+		print(file_path)
+		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions)
+		if results is not None:
+			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
+				sum_true_pos += results.num_true_pos
+			if results.num_false_pos is not None:
+				sum_false_pos += results.num_false_pos
+			if results.num_false_neg is not None:
+				sum_false_neg += results.num_false_neg
+
+	precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
+	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
+	return precision, recall, sum_true_pos, sum_false_pos, sum_false_neg
+
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		fileName = 'HSLLD/HV1/MT/admmt1.cha'
-		html_format = read_file(fileName)
+		sum_true_pos = 0
+		sum_false_pos = 0
+		sum_false_neg = 0
+		directory = 'HSLLD/HV1/MT/'
+		precision, recall, true_pos, false_pos, false_neg = evaluate_all_files_in_directory(directory, only_files_with_solutions=True)
 		#print "HTNL Format", html_format
+		print('precision: {}'.format(precision))
+		print('recallL {}'.format(recall))
+		fileName = 'HSLLD/HV1/MT/admmt1.cha'
+		html_format, results = read_file(fileName)
 		front_end.wrapStringInHTMLWindows(body = html_format)
 	except:
 		print "none"
 		print sys.exc_info()
-	
+
 	# fileCounts = []
 	# all_files = load("C:\\Users\\priti\\OneDrive\\Documents\\CCPP\\FoodMonitoring-NLP\\data\\food_files.pickle")
 	# c = 0
