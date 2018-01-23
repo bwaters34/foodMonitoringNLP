@@ -312,9 +312,8 @@ if __name__ == '__main__':
 		#print "HTNL Format", html_format
 		print('precision: {}'.format(precision))
 		print('recallL {}'.format(recall))
-		fileName = 'HSLLD/HV1/MT/admmt1.cha'
-		html_format, results = read_file(fileName)
-		front_end.wrapStringInHTMLWindows(body = html_format)
+
+
 	except:
 		print "none"
 		print sys.exc_info()
