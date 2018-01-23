@@ -1,1196 +1,3036 @@
 
-*JAK:	hot (12.) .
-line number: 18
-*0 J1 A2 K3 :4 	5 h6 o7 t8  9 (10 111 212 .13 )14  15 .16 
+*CHI:	xxx yellow and bl(ue) [//] blue and green and red .
+line number: 15
+*0 C1 H2 I3 :4 	5 x6 x7 x8  9 y10 e11 l12 l13 o14 w15  16 a17 n18 d19  20 b21 l22 (23 u24 e25 )26  27 [28 /29 /30 ]31  32 b33 l34 u35 e36  37 a38 n39 d40  41 g42 r43 e44 e45 n46  47 a48 n49 d50  51 r52 e53 d54  55 .56 
 
-*MOT:	what do you want to drink ?
-line number: 21
-*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 d11 o12  13 y14 o15 u16  17 w18 a19 n20 t21  22 t23 o24  25 d26 r27 i28 n29 k30  31 ?32 
+*MOT:	alright please [?] color something while you're waiting for your food ?
+line number: 20
+*0 M1 O2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 p14 l15 e16 a17 s18 e19  20 [21 ?22 ]23  24 c25 o26 l27 o28 r29  30 s31 o32 m33 e34 t35 h36 i37 n38 g39  40 w41 h42 i43 l44 e45  46 y47 o48 u49 '50 r51 e52  53 w54 a55 i56 t57 i58 n59 g60  61 f62 o63 r64  65 y66 o67 u68 r69  70 f71 o72 o73 d74  75 ?76 
 
-*CHI:	milk [!] .
-line number: 26
-*0 C1 H2 I3 :4 	5 m6 i7 l8 k9  10 [11 !12 ]13  14 .15 
+*CHI:	yes .
+line number: 27
+*0 C1 H2 I3 :4 	5 y6 e7 s8  9 .10 
 
-*JAK:	<&m> [//] juice .
+*MOT:	alright .
 line number: 30
-*0 J1 A2 K3 :4 	5 <6 &7 m8 >9  10 [11 /12 /13 ]14  15 j16 u17 i18 c19 e20  21 .22 
+*0 M1 O2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 .14 
 
-*MOT:	okay .
+*MOT:	you may <wh(ile)> [//] just while I <&s> [//] cut up the meat .
 line number: 33
-*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+*0 M1 O2 T3 :4 	5 y6 o7 u8  9 m10 a11 y12  13 <14 w15 h16 (17 i18 l19 e20 )21 >22  23 [24 /25 /26 ]27  28 j29 u30 s31 t32  33 w34 h35 i36 l37 e38  39 I40  41 <42 &43 s44 >45  46 [47 /48 /49 ]50  51 c52 u53 t54  55 u56 p57  58 t59 h60 e61  62 m63 e64 a65 t66  67 .68 
 
-*FAT:	milk .
-line number: 36
-*0 F1 A2 T3 :4 	5 m6 i7 l8 k9  10 .11 
-
-*MOT:	milk juice milk .
-line number: 39
-*0 M1 O2 T3 :4 	5 m6 i7 l8 k9  10 j11 u12 i13 c14 e15  16 m17 i18 l19 k20  21 .22 
-
-*CHI:	milk juice milk zzz .
-line number: 44
-*0 C1 H2 I3 :4 	5 m6 i7 l8 k9  10 j11 u12 i13 c14 e15  16 m17 i18 l19 k20  21 z22 z23 z24  25 .26 
-
-*FAT:	milk juice milk .
-line number: 48
-*0 F1 A2 T3 :4 	5 m6 i7 l8 k9  10 j11 u12 i13 c14 e15  16 m17 i18 l19 k20  21 .22 
-
-*JAK:	milk (.) juice (.) milk juice milk juice milk juice milk juice milk .
-line number: 51
-*0 J1 A2 K3 :4 	5 m6 i7 l8 k9  10 (11 .12 )13  14 j15 u16 i17 c18 e19  20 (21 .22 )23  24 m25 i26 l27 k28  29 j30 u31 i32 c33 e34  35 m36 i37 l38 k39  40 j41 u42 i43 c44 e45  46 m47 i48 l49 k50  51 j52 u53 i54 c55 e56  57 m58 i59 l60 k61  62 j63 u64 i65 c66 e67  68 m69 i70 l71 k72  73 .74 
-
-*MOT:	oops .
-line number: 56
-*0 M1 O2 T3 :4 	5 o6 o7 p8 s9  10 .11 
-
-*MOT:	xxx Jake wants xxx <xxx supper> [>] .
-line number: 59
-*0 M1 O2 T3 :4 	5 x6 x7 x8  9 J10 a11 k12 e13  14 w15 a16 n17 t18 s19  20 x21 x22 x23  24 <25 x26 x27 x28  29 s30 u31 p32 p33 e34 r35 >36  37 [38 >39 ]40  41 .42 
-
-*JAK:	<no juice> [<] .
-line number: 62
-*0 J1 A2 K3 :4 	5 <6 n7 o8  9 j10 u11 i12 c13 e14 >15  16 [17 <18 ]19  20 .21 
-
-*MOT:	I shouldn't have asked you .
-line number: 66
-*0 M1 O2 T3 :4 	5 I6  7 s8 h9 o10 u11 l12 d13 n14 '15 t16  17 h18 a19 v20 e21  22 a23 s24 k25 e26 d27  28 y29 o30 u31  32 .33 
-
-*MOT:	I shouldn't have offered .
-line number: 69
-*0 M1 O2 T3 :4 	5 I6  7 s8 h9 o10 u11 l12 d13 n14 '15 t16  17 h18 a19 v20 e21  22 o23 f24 f25 e26 r27 e28 d29  30 .31 
-
-*JAK:	all done .
-line number: 72
-*0 J1 A2 K3 :4 	5 a6 l7 l8  9 d10 o11 n12 e13  14 .15 
-
-*MOT:	oh_my_goodness !
-line number: 77
-*0 M1 O2 T3 :4 	5 o6 h7 _8 m9 y10 _11 g12 o13 o14 d15 n16 e17 s18 s19  20 !21 
-
-*MOT:	well you eat some supper now before I give you more okay (11.) ?
-line number: 80
-*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 y11 o12 u13  14 e15 a16 t17  18 s19 o20 m21 e22  23 s24 u25 p26 p27 e28 r29  30 n31 o32 w33  34 b35 e36 f37 o38 r39 e40  41 I42  43 g44 i45 v46 e47  48 y49 o50 u51  52 m53 o54 r55 e56  57 o58 k59 a60 y61  62 (63 164 165 .66 )67  68 ?69 
-
-*JAK:	Mama I can't see the T_V .
-line number: 85
-*0 J1 A2 K3 :4 	5 M6 a7 m8 a9  10 I11  12 c13 a14 n15 '16 t17  18 s19 e20 e21  22 t23 h24 e25  26 T27 _28 V29  30 .31 
-
-*MOT:	oh God xxx terrible huh ?
-line number: 89
-*0 M1 O2 T3 :4 	5 o6 h7  8 G9 o10 d11  12 x13 x14 x15  16 t17 e18 r19 r20 i21 b22 l23 e24  25 h26 u27 h28  29 ?30 
-
-*JAK:	Conner's by the T_V that's not fair .
-line number: 93
-*0 J1 A2 K3 :4 	5 C6 o7 n8 n9 e10 r11 '12 s13  14 b15 y16  17 t18 h19 e20  21 T22 _23 V24  25 t26 h27 a28 t29 '30 s31  32 n33 o34 t35  36 f37 a38 i39 r40  41 .42 
-
-*MOT:	I know [?] .
-line number: 98
-*0 M1 O2 T3 :4 	5 I6  7 k8 n9 o10 w11  12 [13 ?14 ]15  16 .17 
-
-*MOT:	I'll go turn it off because Jake's missing it anyway .
-line number: 101
-*0 M1 O2 T3 :4 	5 I6 '7 l8 l9  10 g11 o12  13 t14 u15 r16 n17  18 i19 t20  21 o22 f23 f24  25 b26 e27 c28 a29 u30 s31 e32  33 J34 a35 k36 e37 '38 s39  40 m41 i42 s43 s44 i45 n46 g47  48 i49 t50  51 a52 n53 y54 w55 a56 y57  58 .59 
-
-*CHI:	no .
-line number: 106
-*0 C1 H2 I3 :4 	5 n6 o7  8 .9 
-
-*FAT:	we'll watch it after <you eat> [>] .
-line number: 109
-*0 F1 A2 T3 :4 	5 w6 e7 '8 l9 l10  11 w12 a13 t14 c15 h16  17 i18 t19  20 a21 f22 t23 e24 r25  26 <27 y28 o29 u30  31 e32 a33 t34 >35  36 [37 >38 ]39  40 .41 
-
-*MOT:	<you won't miss it> [<] !
-line number: 113
-*0 M1 O2 T3 :4 	5 <6 y7 o8 u9  10 w11 o12 n13 '14 t15  16 m17 i18 s19 s20  21 i22 t23 >24  25 [26 <27 ]28  29 !30 
-
-*FAT:	and then you can turn it right back on .
-line number: 116
-*0 F1 A2 T3 :4 	5 a6 n7 d8  9 t10 h11 e12 n13  14 y15 o16 u17  18 c19 a20 n21  22 t23 u24 r25 n26  27 i28 t29  30 r31 i32 g33 h34 t35  36 b37 a38 c39 k40  41 o42 n43  44 .45 
-
-*FAT:	it doesn't go over it's a tape .
-line number: 121
-*0 F1 A2 T3 :4 	5 i6 t7  8 d9 o10 e11 s12 n13 '14 t15  16 g17 o18  19 o20 v21 e22 r23  24 i25 t26 '27 s28  29 a30  31 t32 a33 p34 e35  36 .37 
-
-*CHI:	we gonna miss it on xxx or it stay on all day .
-line number: 126
-*0 C1 H2 I3 :4 	5 w6 e7  8 g9 o10 n11 n12 a13  14 m15 i16 s17 s18  19 i20 t21  22 o23 n24  25 x26 x27 x28  29 o30 r31  32 i33 t34  35 s36 t37 a38 y39  40 o41 n42  43 a44 l45 l46  47 d48 a49 y50  51 .52 
-
-*FAT:	no you'll see it right where she shut it off it'll go right <back on> [>] .
-line number: 131
-*0 F1 A2 T3 :4 	5 n6 o7  8 y9 o10 u11 '12 l13 l14  15 s16 e17 e18  19 i20 t21  22 r23 i24 g25 h26 t27  28 w29 h30 e31 r32 e33  34 s35 h36 e37  38 s39 h40 u41 t42  43 i44 t45  46 o47 f48 f49  50 i51 t52 '53 l54 l55  56 g57 o58  59 r60 i61 g62 h63 t64  65 <66 b67 a68 c69 k70  71 o72 n73 >74  75 [76 >77 ]78  79 .80 
-
-*MOT:	<that's the> [<] good thing about [!] it .
-line number: 138
-*0 M1 O2 T3 :4 	5 <6 t7 h8 a9 t10 '11 s12  13 t14 h15 e16 >17  18 [19 <20 ]21  22 g23 o24 o25 d26  27 t28 h29 i30 n31 g32  33 a34 b35 o36 u37 t38  39 [40 !41 ]42  43 i44 t45  46 .47 
-
-*JAK:	yeah (.) Conner because <Mama's> [>] [/] .
-line number: 142
-*0 J1 A2 K3 :4 	5 y6 e7 a8 h9  10 (11 .12 )13  14 C15 o16 n17 n18 e19 r20  21 b22 e23 c24 a25 u26 s27 e28  29 <30 M31 a32 m33 a34 '35 s36 >37  38 [39 >40 ]41  42 [43 /44 ]45  46 .47 
-
-*MOT:	<you don't> [<] miss any .
-line number: 145
-*0 M1 O2 T3 :4 	5 <6 y7 o8 u9  10 d11 o12 n13 '14 t15 >16  17 [18 <19 ]20  21 m22 i23 s24 s25  26 a27 n28 y29  30 .31 
-
-*MOT:	if you have_to go out you just turn it off and when you come back you pick up from where it was on before .
-line number: 148
-*0 M1 O2 T3 :4 	5 i6 f7  8 y9 o10 u11  12 h13 a14 v15 e16 _17 t18 o19  20 g21 o22  23 o24 u25 t26  27 y28 o29 u30  31 j32 u33 s34 t35  36 t37 u38 r39 n40  41 i42 t43  44 o45 f46 f47  48 a49 n50 d51  52 w53 h54 e55 n56  57 y58 o59 u60  61 c62 o63 m64 e65  66 b67 a68 c69 k70  71 y72 o73 u74  75 p76 i77 c78 k79  80 u81 p82  83 f84 r85 o86 m87  88 w89 h90 e91 r92 e93  94 i95 t96  97 w98 a99 s100  101 o102 n103  104 b105 e106 f107 o108 r109 e110  111 .112 
-
-*JAK:	yeah .
-line number: 157
-*0 J1 A2 K3 :4 	5 y6 e7 a8 h9  10 .11 
-
-*FAT:	I'll tell you this xxx .
-line number: 161
-*0 F1 A2 T3 :4 	5 I6 '7 l8 l9  10 t11 e12 l13 l14  15 y16 o17 u18  19 t20 h21 i22 s23  24 x25 x26 x27  28 .29 
-
-*MOT:	xxx alright (.) .
-line number: 165
-*0 M1 O2 T3 :4 	5 x6 x7 x8  9 a10 l11 r12 i13 g14 h15 t16  17 (18 .19 )20  21 .22 
-
-*MOT:	I don't believe May's not home .
-line number: 169
-*0 M1 O2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 b14 e15 l16 i17 e18 v19 e20  21 M22 a23 y24 '25 s26  27 n28 o29 t30  31 h32 o33 m34 e35  36 .37 
-
-*FAT:	<&w> [/] &w [/] .
-line number: 175
-*0 F1 A2 T3 :4 	5 <6 &7 w8 >9  10 [11 /12 ]13  14 &15 w16  17 [18 /19 ]20  21 .22 
-
-*MOT:	should go chasing after her .
-line number: 176
-*0 M1 O2 T3 :4 	5 s6 h7 o8 u9 l10 d11  12 g13 o14  15 c16 h17 a18 s19 i20 n21 g22  23 a24 f25 t26 e27 r28  29 h30 e31 r32  33 .34 
-
-*JAK:	I put the medicine there because I have_to xxx .
-line number: 180
-*0 J1 A2 K3 :4 	5 I6  7 p8 u9 t10  11 t12 h13 e14  15 m16 e17 d18 i19 c20 i21 n22 e23  24 t25 h26 e27 r28 e29  30 b31 e32 c33 a34 u35 s36 e37  38 I39  40 h41 a42 v43 e44 _45 t46 o47  48 x49 x50 x51  52 .53 
-
-*FAT:	is Jessie coming back <there with her> [>] ?
-line number: 185
-*0 F1 A2 T3 :4 	5 i6 s7  8 J9 e10 s11 s12 i13 e14  15 c16 o17 m18 i19 n20 g21  22 b23 a24 c25 k26  27 <28 t29 h30 e31 r32 e33  34 w35 i36 t37 h38  39 h40 e41 r42 >43  44 [45 >46 ]47  48 ?49 
-
-*MOT:	<xxx> [<] .
-line number: 190
-*0 M1 O2 T3 :4 	5 <6 x7 x8 x9 >10  11 [12 <13 ]14  15 .16 
-
-*MOT:	well Jessie's mother was gonna either pick her up here or at the park .
-line number: 191
-*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 J11 e12 s13 s14 i15 e16 '17 s18  19 m20 o21 t22 h23 e24 r25  26 w27 a28 s29  30 g31 o32 n33 n34 a35  36 e37 i38 t39 h40 e41 r42  43 p44 i45 c46 k47  48 h49 e50 r51  52 u53 p54  55 h56 e57 r58 e59  60 o61 r62  63 a64 t65  66 t67 h68 e69  70 p71 a72 r73 k74  75 .76 
-
-*MOT:	and &-uh she was gonna pick her up at five thirty .
-line number: 198
-*0 M1 O2 T3 :4 	5 a6 n7 d8  9 &10 -11 u12 h13  14 s15 h16 e17  18 w19 a20 s21  22 g23 o24 n25 n26 a27  28 p29 i30 c31 k32  33 h34 e35 r36  37 u38 p39  40 a41 t42  43 f44 i45 v46 e47  48 t49 h50 i51 r52 t53 y54  55 .56 
-
-*MOT:	so I imagine her mom's gonna give May a ride home and I imagine she must be picking her up about now otherwise it's all screwed up (.) .
-line number: 203
-*0 M1 O2 T3 :4 	5 s6 o7  8 I9  10 i11 m12 a13 g14 i15 n16 e17  18 h19 e20 r21  22 m23 o24 m25 '26 s27  28 g29 o30 n31 n32 a33  34 g35 i36 v37 e38  39 M40 a41 y42  43 a44  45 r46 i47 d48 e49  50 h51 o52 m53 e54  55 a56 n57 d58  59 I60  61 i62 m63 a64 g65 i66 n67 e68  69 s70 h71 e72  73 m74 u75 s76 t77  78 b79 e80  81 p82 i83 c84 k85 i86 n87 g88  89 h90 e91 r92  93 u94 p95  96 a97 b98 o99 u100 t101  102 n103 o104 w105  106 o107 t108 h109 e110 r111 w112 i113 s114 e115  116 i117 t118 '119 s120  121 a122 l123 l124  125 s126 c127 r128 e129 w130 e131 d132  133 u134 p135  136 (137 .138 )139  140 .141 
-
-*MOT:	xxx have_to have a talk with her about not coming home .
-line number: 214
-*0 M1 O2 T3 :4 	5 x6 x7 x8  9 h10 a11 v12 e13 _14 t15 o16  17 h18 a19 v20 e21  22 a23  24 t25 a26 l27 k28  29 w30 i31 t32 h33  34 h35 e36 r37  38 a39 b40 o41 u42 t43  44 n45 o46 t47  48 c49 o50 m51 i52 n53 g54  55 h56 o57 m58 e59  60 .61 
-
-*MOT:	she doesn't have a watch on but still an hour's a big difference from a half an hour .
-line number: 221
-*0 M1 O2 T3 :4 	5 s6 h7 e8  9 d10 o11 e12 s13 n14 '15 t16  17 h18 a19 v20 e21  22 a23  24 w25 a26 t27 c28 h29  30 o31 n32  33 b34 u35 t36  37 s38 t39 i40 l41 l42  43 a44 n45  46 h47 o48 u49 r50 '51 s52  53 a54  55 b56 i57 g58  59 d60 i61 f62 f63 e64 r65 e66 n67 c68 e69  70 f71 r72 o73 m74  75 a76  77 h78 a79 l80 f81  82 a83 n84  85 h86 o87 u88 r89  90 .91 
-
-*FAT:	what ?
-line number: 230
-*0 F1 A2 T3 :4 	5 w6 h7 a8 t9  10 ?11 
-
-*MOT:	I told her I was there at quarter of five and I said come home at five [///] I mean in a half an hour .
-line number: 234
-*0 M1 O2 T3 :4 	5 I6  7 t8 o9 l10 d11  12 h13 e14 r15  16 I17  18 w19 a20 s21  22 t23 h24 e25 r26 e27  28 a29 t30  31 q32 u33 a34 r35 t36 e37 r38  39 o40 f41  42 f43 i44 v45 e46  47 a48 n49 d50  51 I52  53 s54 a55 i56 d57  58 c59 o60 m61 e62  63 h64 o65 m66 e67  68 a69 t70  71 f72 i73 v74 e75  76 [77 /78 /79 /80 ]81  82 I83  84 m85 e86 a87 n88  89 i90 n91  92 a93  94 h95 a96 l97 f98  99 a100 n101  102 h103 o104 u105 r106  107 .108 
-
-*FAT:	yeah well she don't know a half hour .
-line number: 245
-*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 w11 e12 l13 l14  15 s16 h17 e18  19 d20 o21 n22 '23 t24  25 k26 n27 o28 w29  30 a31  32 h33 a34 l35 f36  37 h38 o39 u40 r41  42 .43 
-
-*FAT:	she ought_to carry a watch around with her .
-line number: 252
-*0 F1 A2 T3 :4 	5 s6 h7 e8  9 o10 u11 g12 h13 t14 _15 t16 o17  18 c19 a20 r21 r22 y23  24 a25  26 w27 a28 t29 c30 h31  32 a33 r34 o35 u36 n37 d38  39 w40 i41 t42 h43  44 h45 e46 r47  48 .49 
-
-*MOT:	she has a watch .
-line number: 258
-*0 M1 O2 T3 :4 	5 s6 h7 e8  9 h10 a11 s12  13 a14  15 w16 a17 t18 c19 h20  21 .22 
-
-*MOT:	Conner !
-line number: 262
-*0 M1 O2 T3 :4 	5 C6 o7 n8 n9 e10 r11  12 !13 
-
-*MOT:	you like it (.) ?
-line number: 266
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 l10 i11 k12 e13  14 i15 t16  17 (18 .19 )20  21 ?22 
-
-*MOT:	is it your favorite ?
-line number: 271
-*0 M1 O2 T3 :4 	5 i6 s7  8 i9 t10  11 y12 o13 u14 r15  16 f17 a18 v19 o20 r21 i22 t23 e24  25 ?26 
-
-*MOT:	huh ?
-line number: 276
-*0 M1 O2 T3 :4 	5 h6 u7 h8  9 ?10 
-
-*CHI:	more milk (.) .
-line number: 281
-*0 C1 H2 I3 :4 	5 m6 o7 r8 e9  10 m11 i12 l13 k14  15 (16 .17 )18  19 .20 
-
-*MOT:	hm: .
-line number: 285
-*0 M1 O2 T3 :4 	5 h6 m7 :8  9 .10 
-
-*MOT:	say can I have more milk please .
-line number: 288
-*0 M1 O2 T3 :4 	5 s6 a7 y8  9 c10 a11 n12  13 I14  15 h16 a17 v18 e19  20 m21 o22 r23 e24  25 m26 i27 l28 k29  30 p31 l32 e33 a34 s35 e36  37 .38 
-
-*CHI:	can I have more milk please .
-line number: 291
-*0 C1 H2 I3 :4 	5 c6 a7 n8  9 I10  11 h12 a13 v14 e15  16 m17 o18 r19 e20  21 m22 i23 l24 k25  26 p27 l28 e29 a30 s31 e32  33 .34 
-
-*MOT:	xxx .
-line number: 294
-*0 M1 O2 T3 :4 	5 x6 x7 x8  9 .10 
-
-*CHI:	whoop .
-line number: 295
-*0 C1 H2 I3 :4 	5 w6 h7 o8 o9 p10  11 .12 
+*MOT:	pull it out .
+line number: 38
+*0 M1 O2 T3 :4 	5 p6 u7 l8 l9  10 i11 t12  13 o14 u15 t16  17 .18 
 
 *CHI:	xxx .
-line number: 298
+line number: 41
 *0 C1 H2 I3 :4 	5 x6 x7 x8  9 .10 
 
-*MOT:	boy I think I gave you guys too much .
-line number: 299
-*0 M1 O2 T3 :4 	5 b6 o7 y8  9 I10  11 t12 h13 i14 n15 k16  17 I18  19 g20 a21 v22 e23  24 y25 o26 u27  28 g29 u30 y31 s32  33 t34 o35 o36  37 m38 u39 c40 h41  42 .43 
-
-*MOT:	I hope you can eat that all .
-line number: 304
-*0 M1 O2 T3 :4 	5 I6  7 h8 o9 p10 e11  12 y13 o14 u15  16 c17 a18 n19  20 e21 a22 t23  24 t25 h26 a27 t28  29 a30 l31 l32  33 .34 
-
-*MOT:	that's good for you you know .
-line number: 307
-*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 g13 o14 o15 d16  17 f18 o19 r20  21 y22 o23 u24  25 y26 o27 u28  29 k30 n31 o32 w33  34 .35 
-
-*MOT:	you gonna try to eat it all up ?
-line number: 311
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 g10 o11 n12 n13 a14  15 t16 r17 y18  19 t20 o21  22 e23 a24 t25  26 i27 t28  29 a30 l31 l32  33 u34 p35  36 ?37 
-
-*CHI:	zzz .
-line number: 317
-*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
-
-*JAK:	yeah .
-line number: 321
-*0 J1 A2 K3 :4 	5 y6 e7 a8 h9  10 .11 
-
-*CHI:	I don't like the xxx ones .
-line number: 325
-*0 C1 H2 I3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 l14 i15 k16 e17  18 t19 h20 e21  22 x23 x24 x25  26 o27 n28 e29 s30  31 .32 
-
-*CHI:	the xxx .
-line number: 328
-*0 C1 H2 I3 :4 	5 t6 h7 e8  9 x10 x11 x12  13 .14 
-
-*MOT:	the what ?
-line number: 331
-*0 M1 O2 T3 :4 	5 t6 h7 e8  9 w10 h11 a12 t13  14 ?15 
-
-*MOT:	the <shells [!]> [>] .
-line number: 335
-*0 M1 O2 T3 :4 	5 t6 h7 e8  9 <10 s11 h12 e13 l14 l15 s16  17 [18 !19 ]20 >21  22 [23 >24 ]25  26 .27 
-
-*CHI:	<xxx> [<] <&th> [/] these ones right here .
-line number: 338
-*0 C1 H2 I3 :4 	5 <6 x7 x8 x9 >10  11 [12 <13 ]14  15 <16 &17 t18 h19 >20  21 [22 /23 ]24  25 t26 h27 e28 s29 e30  31 o32 n33 e34 s35  36 r37 i38 g39 h40 t41  42 h43 e44 r45 e46  47 .48 
-
-*JAK:	<just like the shells> [>] .
-line number: 341
-*0 J1 A2 K3 :4 	5 <6 j7 u8 s9 t10  11 l12 i13 k14 e15  16 t17 h18 e19  20 s21 h22 e23 l24 l25 s26 >27  28 [29 >30 ]31  32 .33 
-
-*MOT:	<xxx> [<] .
-line number: 344
-*0 M1 O2 T3 :4 	5 <6 x7 x8 x9 >10  11 [12 <13 ]14  15 .16 
-
-*SIS:	xxx just a quick glass of water and we're gonna go back .
-line number: 346
-*0 S1 I2 S3 :4 	5 x6 x7 x8  9 j10 u11 s12 t13  14 a15  16 q17 u18 i19 c20 k21  22 g23 l24 a25 s26 s27  28 o29 f30  31 w32 a33 t34 e35 r36  37 a38 n39 d40  41 w42 e43 '44 r45 e46  47 g48 o49 n50 n51 a52  53 g54 o55  56 b57 a58 c59 k60  61 .62 
-
-*SIS:	xxx .
-line number: 351
-*0 S1 I2 S3 :4 	5 x6 x7 x8  9 .10 
-
-*MOT:	yeah &-um <what> [//] what's this business of an hour ?
-line number: 353
-*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 &11 -12 u13 m14  15 <16 w17 h18 a19 t20 >21  22 [23 /24 /25 ]26  27 w28 h29 a30 t31 '32 s33  34 t35 h36 i37 s38  39 b40 u41 s42 i43 n44 e45 s46 s47  48 o49 f50  51 a52 n53  54 h55 o56 u57 r58  59 ?60 
-
-*MOT:	I said an half an hour .
-line number: 358
-*0 M1 O2 T3 :4 	5 I6  7 s8 a9 i10 d11  12 a13 n14  15 h16 a17 l18 f19  20 a21 n22  23 h24 o25 u26 r27  28 .29 
-
-*SIS:	<well we> [//] <I had to> [//] <we> [//] <ready to> [/] ready to pick her up and what the heck is xxx stuff .
-line number: 362
-*0 S1 I2 S3 :4 	5 <6 w7 e8 l9 l10  11 w12 e13 >14  15 [16 /17 /18 ]19  20 <21 I22  23 h24 a25 d26  27 t28 o29 >30  31 [32 /33 /34 ]35  36 <37 w38 e39 >40  41 [42 /43 /44 ]45  46 <47 r48 e49 a50 d51 y52  53 t54 o55 >56  57 [58 /59 ]60  61 r62 e63 a64 d65 y66  67 t68 o69  70 p71 i72 c73 k74  75 h76 e77 r78  79 u80 p81  82 a83 n84 d85  86 w87 h88 a89 t90  91 t92 h93 e94  95 h96 e97 c98 k99  100 i101 s102  103 x104 x105 x106  107 s108 t109 u110 f111 f112  113 .114 
-
-*MOT:	that's that coffee I made by mistake .
-line number: 368
-*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 t13 h14 a15 t16  17 c18 o19 f20 f21 e22 e23  24 I25  26 m27 a28 d29 e30  31 b32 y33  34 m35 i36 s37 t38 a39 k40 e41  42 .43 
-
-*SIS:	shoot !
-line number: 374
-*0 S1 I2 S3 :4 	5 s6 h7 o8 o9 t10  11 !12 
-
-*SIS:	this dumb [?] coffee mix .
-line number: 377
-*0 S1 I2 S3 :4 	5 t6 h7 i8 s9  10 d11 u12 m13 b14  15 [16 ?17 ]18  19 c20 o21 f22 f23 e24 e25  26 m27 i28 x29  30 .31 
-
-*SIS:	hold on .
-line number: 380
-*0 S1 I2 S3 :4 	5 h6 o7 l8 d9  10 o11 n12  13 .14 
-
-*MOT:	there's &-um fruit punch in the yellow jug (10.) .
-line number: 384
-*0 M1 O2 T3 :4 	5 t6 h7 e8 r9 e10 '11 s12  13 &14 -15 u16 m17  18 f19 r20 u21 i22 t23  24 p25 u26 n27 c28 h29  30 i31 n32  33 t34 h35 e36  37 y38 e39 l40 l41 o42 w43  44 j45 u46 g47  48 (49 150 051 .52 )53  54 .55 
-
-*CHI:	little milk ?
-line number: 390
-*0 C1 H2 I3 :4 	5 l6 i7 t8 t9 l10 e11  12 m13 i14 l15 k16  17 ?18 
-
-*CHI:	milk Mama ?
-line number: 394
-*0 C1 H2 I3 :4 	5 m6 i7 l8 k9  10 M11 a12 m13 a14  15 ?16 
-
-*MOT:	May <go> [/] go wash up and I'll get your plate ready .
-line number: 399
-*0 M1 O2 T3 :4 	5 M6 a7 y8  9 <10 g11 o12 >13  14 [15 /16 ]17  18 g19 o20  21 w22 a23 s24 h25  26 u27 p28  29 a30 n31 d32  33 I34 '35 l36 l37  38 g39 e40 t41  42 y43 o44 u45 r46  47 p48 l49 a50 t51 e52  53 r54 e55 a56 d57 y58  59 .60 
-
-*SIS:	okay let me drink this .
-line number: 405
-*0 S1 I2 S3 :4 	5 o6 k7 a8 y9  10 l11 e12 t13  14 m15 e16  17 d18 r19 i20 n21 k22  23 t24 h25 i26 s27  28 .29 
-
-*MOT:	here (.) .
-line number: 408
-*0 M1 O2 T3 :4 	5 h6 e7 r8 e9  10 (11 .12 )13  14 .15 
-
-*CHI:	Jake not eating .
-line number: 412
-*0 C1 H2 I3 :4 	5 J6 a7 k8 e9  10 n11 o12 t13  14 e15 a16 t17 i18 n19 g20  21 .22 
-
-*JES:	bye !
-line number: 416
-*0 J1 E2 S3 :4 	5 b6 y7 e8  9 !10 
-
-*JAK:	<bye> [>] !
-line number: 420
-*0 J1 A2 K3 :4 	5 <6 b7 y8 e9 >10  11 [12 >13 ]14  15 !16 
-
-*MOT:	<bye Jessie> [<] .
-line number: 424
-*0 M1 O2 T3 :4 	5 <6 b7 y8 e9  10 J11 e12 s13 s14 i15 e16 >17  18 [19 <20 ]21  22 .23 
-
-*MOT:	you want <that> [>] ?
-line number: 428
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 w10 a11 n12 t13  14 <15 t16 h17 a18 t19 >20  21 [22 >23 ]24  25 ?26 
-
-*MOT:	I'll get it for you .
-line number: 432
-*0 M1 O2 T3 :4 	5 I6 '7 l8 l9  10 g11 e12 t13  14 i15 t16  17 f18 o19 r20  21 y22 o23 u24  25 .26 
-
-*FAT:	<what's that> [<] ?
-line number: 435
-*0 F1 A2 T3 :4 	5 <6 w7 h8 a9 t10 '11 s12  13 t14 h15 a16 t17 >18  19 [20 <21 ]22  23 ?24 
-
-*FAT:	what's that ?
-line number: 438
-*0 F1 A2 T3 :4 	5 w6 h7 a8 t9 '10 s11  12 t13 h14 a15 t16  17 ?18 
-
-*MOT:	spaghetti on his shirt .
-line number: 441
-*0 M1 O2 T3 :4 	5 s6 p7 a8 g9 h10 e11 t12 t13 i14  15 o16 n17  18 h19 i20 s21  22 s23 h24 i25 r26 t27  28 .29 
-
-*JAK:	zzz .
-line number: 444
-*0 J1 A2 K3 :4 	5 z6 z7 z8  9 .10 
-
-*JAK:	try to eat my belly button .
-line number: 448
-*0 J1 A2 K3 :4 	5 t6 r7 y8  9 t10 o11  12 e13 a14 t15  16 m17 y18  19 b20 e21 l22 l23 y24  25 b26 u27 t28 t29 o30 n31  32 .33 
-
-*JAK:	zzz .
-line number: 451
-*0 J1 A2 K3 :4 	5 z6 z7 z8  9 .10 
-
-*MOT:	come on you guys don't fool at the table !
-line number: 455
-*0 M1 O2 T3 :4 	5 c6 o7 m8 e9  10 o11 n12  13 y14 o15 u16  17 g18 u19 y20 s21  22 d23 o24 n25 '26 t27  28 f29 o30 o31 l32  33 a34 t35  36 t37 h38 e39  40 t41 a42 b43 l44 e45  46 !47 
-
-*CHI:	zzz .
-line number: 460
-*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
-
-*FAT:	hey !
-line number: 464
-*0 F1 A2 T3 :4 	5 h6 e7 y8  9 !10 
-
-*CHI:	zzz .
-line number: 468
-*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
-
-*FAT:	stop it !
-line number: 472
-*0 F1 A2 T3 :4 	5 s6 t7 o8 p9  10 i11 t12  13 !14 
-
-*FAT:	zzz .
-line number: 475
-*0 F1 A2 T3 :4 	5 z6 z7 z8  9 .10 
-
-*SIS:	you didn't buy xxx diet soda ?
-line number: 479
-*0 S1 I2 S3 :4 	5 y6 o7 u8  9 d10 i11 d12 n13 '14 t15  16 b17 u18 y19  20 x21 x22 x23  24 d25 i26 e27 t28  29 s30 o31 d32 a33  34 ?35 
-
-*MOT:	yes I did !
-line number: 483
-*0 M1 O2 T3 :4 	5 y6 e7 s8  9 I10  11 d12 i13 d14  15 !16 
-
-*MOT:	behind the peaches .
-line number: 486
-*0 M1 O2 T3 :4 	5 b6 e7 h8 i9 n10 d11  12 t13 h14 e15  16 p17 e18 a19 c20 h21 e22 s23  24 .25 
-
-*JAK:	look at Conner I did on your arm .
-line number: 490
-*0 J1 A2 K3 :4 	5 l6 o7 o8 k9  10 a11 t12  13 C14 o15 n16 n17 e18 r19  20 I21  22 d23 i24 d25  26 o27 n28  29 y30 o31 u32 r33  34 a35 r36 m37  38 .39 
-
-*JAK:	right there .
-line number: 495
-*0 J1 A2 K3 :4 	5 r6 i7 g8 h9 t10  11 t12 h13 e14 r15 e16  17 .18 
-
-*CHI:	Mama !
-line number: 499
-*0 C1 H2 I3 :4 	5 M6 a7 m8 a9  10 !11 
-
-*CHI:	&-uh my belly hurts .
-line number: 502
-*0 C1 H2 I3 :4 	5 &6 -7 u8 h9  10 m11 y12  13 b14 e15 l16 l17 y18  19 h20 u21 r22 t23 s24  25 .26 
-
-*MOT:	well then go slower .
-line number: 506
-*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 t11 h12 e13 n14  15 g16 o17  18 s19 l20 o21 w22 e23 r24  25 .26 
-
-*CHI:	no I don't wan(t) (t)a .
-line number: 509
-*0 C1 H2 I3 :4 	5 n6 o7  8 I9  10 d11 o12 n13 '14 t15  16 w17 a18 n19 (20 t21 )22  23 (24 t25 )26 a27  28 .29 
-
-*MOT:	well take a little rest (.) and then eat more .
-line number: 512
-*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 t11 a12 k13 e14  15 a16  17 l18 i19 t20 t21 l22 e23  24 r25 e26 s27 t28  29 (30 .31 )32  33 a34 n35 d36  37 t38 h39 e40 n41  42 e43 a44 t45  46 m47 o48 r49 e50  51 .52 
-
-*CHI:	I don't want it !
-line number: 517
-*0 C1 H2 I3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 i19 t20  21 !22 
-
-*JAK:	<xxx> [>] .
-line number: 520
-*0 J1 A2 K3 :4 	5 <6 x7 x8 x9 >10  11 [12 >13 ]14  15 .16 
-
-*MOT:	<xxx> [<] because you drank all of that milk so fast that's probably why .
-line number: 521
-*0 M1 O2 T3 :4 	5 <6 x7 x8 x9 >10  11 [12 <13 ]14  15 b16 e17 c18 a19 u20 s21 e22  23 y24 o25 u26  27 d28 r29 a30 n31 k32  33 a34 l35 l36  37 o38 f39  40 t41 h42 a43 t44  45 m46 i47 l48 k49  50 s51 o52  53 f54 a55 s56 t57  58 t59 h60 a61 t62 '63 s64  65 p66 r67 o68 b69 a70 b71 l72 y73  74 w75 h76 y77  78 .79 
-
-*JAK:	you drank all that <milk> [>] up .
-line number: 527
-*0 J1 A2 K3 :4 	5 y6 o7 u8  9 d10 r11 a12 n13 k14  15 a16 l17 l18  19 t20 h21 a22 t23  24 <25 m26 i27 l28 k29 >30  31 [32 >33 ]34  35 u36 p37  38 .39 
-
-*CHI:	<no> [<] .
-line number: 530
-*0 C1 H2 I3 :4 	5 <6 n7 o8 >9  10 [11 <12 ]13  14 .15 
-
-*SIS:	thank you .
-line number: 534
-*0 S1 I2 S3 :4 	5 t6 h7 a8 n9 k10  11 y12 o13 u14  15 .16 
-
-*MOT:	you're welcome .
-line number: 538
-*0 M1 O2 T3 :4 	5 y6 o7 u8 '9 r10 e11  12 w13 e14 l15 c16 o17 m18 e19  20 .21 
-
-*CHI:	zzz .
-line number: 542
-*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
-
-*MOT:	is it hot ?
-line number: 546
-*0 M1 O2 T3 :4 	5 i6 s7  8 i9 t10  11 h12 o13 t14  15 ?16 
-
-*MOT:	is it good ?
-line number: 550
-*0 M1 O2 T3 :4 	5 i6 s7  8 i9 t10  11 g12 o13 o14 d15  16 ?17 
-
-*SIS:	mhm .
-line number: 554
-*0 S1 I2 S3 :4 	5 m6 h7 m8  9 .10 
-
-*MOT:	that's on May's diet .
-line number: 558
-*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 o13 n14  15 M16 a17 y18 '19 s20  21 d22 i23 e24 t25  26 .27 
-
-*JAK:	yep .
-line number: 562
-*0 J1 A2 K3 :4 	5 y6 e7 p8  9 .10 
-
-*SIS:	I'm being good .
-line number: 565
-*0 S1 I2 S3 :4 	5 I6 '7 m8  9 b10 e11 i12 n13 g14  15 g16 o17 o18 d19  20 .21 
-
-*SIS:	xxx favorite thing was shells [!] (9.) .
-line number: 568
-*0 S1 I2 S3 :4 	5 x6 x7 x8  9 f10 a11 v12 o13 r14 i15 t16 e17  18 t19 h20 i21 n22 g23  24 w25 a26 s27  28 s29 h30 e31 l32 l33 s34  35 [36 !37 ]38  39 (40 941 .42 )43  44 .45 
-
-*CHI:	whoa !
-line number: 572
-*0 C1 H2 I3 :4 	5 w6 h7 o8 a9  10 !11 
-
-*JAK:	those shells are [/] .
-line number: 575
-*0 J1 A2 K3 :4 	5 t6 h7 o8 s9 e10  11 s12 h13 e14 l15 l16 s17  18 a19 r20 e21  22 [23 /24 ]25  26 .27 
-
-*MOT:	here have a tomato Jake .
-line number: 578
-*0 M1 O2 T3 :4 	5 h6 e7 r8 e9  10 h11 a12 v13 e14  15 a16  17 t18 o19 m20 a21 t22 o23  24 J25 a26 k27 e28  29 .30 
-
-*JAK:	<Mama> [>] !
-line number: 581
-*0 J1 A2 K3 :4 	5 <6 M7 a8 m9 a10 >11  12 [13 >14 ]15  16 !17 
-
-*MOT:	<no no no> [<] no no .
-line number: 584
-*0 M1 O2 T3 :4 	5 <6 n7 o8  9 n10 o11  12 n13 o14 >15  16 [17 <18 ]19  20 n21 o22  23 n24 o25  26 .27 
-
-*CHI:	<&wh> [/] where you found these ?
-line number: 587
-*0 C1 H2 I3 :4 	5 <6 &7 w8 h9 >10  11 [12 /13 ]14  15 w16 h17 e18 r19 e20  21 y22 o23 u24  25 f26 o27 u28 n29 d30  31 t32 h33 e34 s35 e36  37 ?38 
-
-*MOT:	at the grocery store .
-line number: 592
-*0 M1 O2 T3 :4 	5 a6 t7  8 t9 h10 e11  12 g13 r14 o15 c16 e17 r18 y19  20 s21 t22 o23 r24 e25  26 .27 
-
-*MOT:	zzz .
-line number: 595
-*0 M1 O2 T3 :4 	5 z6 z7 z8  9 .10 
-
-*CHI:	no what .
-line number: 599
-*0 C1 H2 I3 :4 	5 n6 o7  8 w9 h10 a11 t12  13 .14 
-
-*MOT:	they fit on your thumb huh ?
-line number: 602
-*0 M1 O2 T3 :4 	5 t6 h7 e8 y9  10 f11 i12 t13  14 o15 n16  17 y18 o19 u20 r21  22 t23 h24 u25 m26 b27  28 h29 u30 h31  32 ?33 
-
-*JAK:	yeah .
-line number: 606
-*0 J1 A2 K3 :4 	5 y6 e7 a8 h9  10 .11 
-
-*CHI:	like on me too but +...
-line number: 609
-*0 C1 H2 I3 :4 	5 l6 i7 k8 e9  10 o11 n12  13 m14 e15  16 t17 o18 o19  20 b21 u22 t23  24 +25 .26 .27 .28 
-
-*MOT:	fit on your tongue .
-line number: 612
-*0 M1 O2 T3 :4 	5 f6 i7 t8  9 o10 n11  12 y13 o14 u15 r16  17 t18 o19 n20 g21 u22 e23  24 .25 
-
-*MOT:	oh good well it's a good thing they fit on your tongue .
-line number: 615
-*0 M1 O2 T3 :4 	5 o6 h7  8 g9 o10 o11 d12  13 w14 e15 l16 l17  18 i19 t20 '21 s22  23 a24  25 g26 o27 o28 d29  30 t31 h32 i33 n34 g35  36 t37 h38 e39 y40  41 f42 i43 t44  45 o46 n47  48 y49 o50 u51 r52  53 t54 o55 n56 g57 u58 e59  60 .61 
-
-*CHI:	zzz .
-line number: 620
-*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
-
-*JAK:	look I want xxx .
-line number: 624
-*0 J1 A2 K3 :4 	5 l6 o7 o8 k9  10 I11  12 w13 a14 n15 t16  17 x18 x19 x20  21 .22 
-
-*MOT:	you what ?
-line number: 627
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 w10 h11 a12 t13  14 ?15 
-
-*JAK:	I want a bowl .
-line number: 631
-*0 J1 A2 K3 :4 	5 I6  7 w8 a9 n10 t11  12 a13  14 b15 o16 w17 l18  19 .20 
-
-*MOT:	oh .
-line number: 634
-*0 M1 O2 T3 :4 	5 o6 h7  8 .9 
-
-*MOT:	don't talk with food in your mouth .
-line number: 637
-*0 M1 O2 T3 :4 	5 d6 o7 n8 '9 t10  11 t12 a13 l14 k15  16 w17 i18 t19 h20  21 f22 o23 o24 d25  26 i27 n28  29 y30 o31 u32 r33  34 m35 o36 u37 t38 h39  40 .41 
-
-*JAK:	zzz .
-line number: 642
-*0 J1 A2 K3 :4 	5 z6 z7 z8  9 .10 
-
-*CHI:	give me some xxx .
-line number: 646
-*0 C1 H2 I3 :4 	5 g6 i7 v8 e9  10 m11 e12  13 s14 o15 m16 e17  18 x19 x20 x21  22 .23 
-
-*MOT:	you want more right ?
-line number: 650
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 w10 a11 n12 t13  14 m15 o16 r17 e18  19 r20 i21 g22 h23 t24  25 ?26 
-
-*MOT:	another tomato ?
-line number: 654
-*0 M1 O2 T3 :4 	5 a6 n7 o8 t9 h10 e11 r12  13 t14 o15 m16 a17 t18 o19  20 ?21 
-
-*MOT:	cucumber ?
-line number: 658
-*0 M1 O2 T3 :4 	5 c6 u7 c8 u9 m10 b11 e12 r13  14 ?15 
-
-*CHI:	no .
-line number: 662
-*0 C1 H2 I3 :4 	5 n6 o7  8 .9 
-
-*CHI:	more cucum(ber) .
-line number: 665
-*0 C1 H2 I3 :4 	5 m6 o7 r8 e9  10 c11 u12 c13 u14 m15 (16 b17 e18 r19 )20  21 .22 
-
-*MOT:	some lettuce .
-line number: 668
-*0 M1 O2 T3 :4 	5 s6 o7 m8 e9  10 l11 e12 t13 t14 u15 c16 e17  18 .19 
-
-*MOT:	lettuce ?
-line number: 671
-*0 M1 O2 T3 :4 	5 l6 e7 t8 t9 u10 c11 e12  13 ?14 
-
-*JAK:	I like lettuce !
-line number: 675
-*0 J1 A2 K3 :4 	5 I6  7 l8 i9 k10 e11  12 l13 e14 t15 t16 u17 c18 e19  20 !21 
-
-*MOT:	alright hold on .
-line number: 680
-*0 M1 O2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 h14 o15 l16 d17  18 o19 n20  21 .22 
-
-*CHI:	<the doctor come [?]> [>] .
-line number: 683
-*0 C1 H2 I3 :4 	5 <6 t7 h8 e9  10 d11 o12 c13 t14 o15 r16  17 c18 o19 m20 e21  22 [23 ?24 ]25 >26  27 [28 >29 ]30  31 .32 
-
-*SIS:	<there's a whole bowl> [<] with two tomatoes and a piece of lettuce .
-line number: 686
-*0 S1 I2 S3 :4 	5 <6 t7 h8 e9 r10 e11 '12 s13  14 a15  16 w17 h18 o19 l20 e21  22 b23 o24 w25 l26 >27  28 [29 <30 ]31  32 w33 i34 t35 h36  37 t38 w39 o40  41 t42 o43 m44 a45 t46 o47 e48 s49  50 a51 n52 d53  54 a55  56 p57 i58 e59 c60 e61  62 o63 f64  65 l66 e67 t68 t69 u70 c71 e72  73 .74 
-
-*JAK:	ah yum yum .
-line number: 693
-*0 J1 A2 K3 :4 	5 a6 h7  8 y9 u10 m11  12 y13 u14 m15  16 .17 
-
-*MOT:	don't use your hands .
-line number: 697
-*0 M1 O2 T3 :4 	5 d6 o7 n8 '9 t10  11 u12 s13 e14  15 y16 o17 u18 r19  20 h21 a22 n23 d24 s25  26 .27 
-
-*MOT:	you gonna &-um +...
-line number: 701
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 g10 o11 n12 n13 a14  15 &16 -17 u18 m19  20 +21 .22 .23 .24 
-
-*MOT:	hold on .
-line number: 705
-*0 M1 O2 T3 :4 	5 h6 o7 l8 d9  10 o11 n12  13 .14 
-
-*MOT:	Conner do you want lettuce ?
-line number: 708
-*0 M1 O2 T3 :4 	5 C6 o7 n8 n9 e10 r11  12 d13 o14  15 y16 o17 u18  19 w20 a21 n22 t23  24 l25 e26 t27 t28 u29 c30 e31  32 ?33 
-
-*JAK:	I [!] do it .
-line number: 712
-*0 J1 A2 K3 :4 	5 I6  7 [8 !9 ]10  11 d12 o13  14 i15 t16  17 .18 
-
-*MOT:	and do you want tomatoes too ?
-line number: 715
-*0 M1 O2 T3 :4 	5 a6 n7 d8  9 d10 o11  12 y13 o14 u15  16 w17 a18 n19 t20  21 t22 o23 m24 a25 t26 o27 e28 s29  30 t31 o32 o33  34 ?35 
-
-*CHI:	no just lettuce .
-line number: 719
-*0 C1 H2 I3 :4 	5 n6 o7  8 j9 u10 s11 t12  13 l14 e15 t16 t17 u18 c19 e20  21 .22 
-
-*CHI:	no (to)matoes !
-line number: 722
-*0 C1 H2 I3 :4 	5 n6 o7  8 (9 t10 o11 )12 m13 a14 t15 o16 e17 s18  19 !20 
-
-*MOT:	alright !
-line number: 726
-*0 M1 O2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 !14 
-
-*CHI:	that's all .
-line number: 729
-*0 C1 H2 I3 :4 	5 t6 h7 a8 t9 '10 s11  12 a13 l14 l15  16 .17 
-
-*CHI:	that's all that's all that all .
-line number: 732
-*0 C1 H2 I3 :4 	5 t6 h7 a8 t9 '10 s11  12 a13 l14 l15  16 t17 h18 a19 t20 '21 s22  23 a24 l25 l26  27 t28 h29 a30 t31  32 a33 l34 l35  36 .37 
-
-*CHI:	that's all (.) .
-line number: 737
-*0 C1 H2 I3 :4 	5 t6 h7 a8 t9 '10 s11  12 a13 l14 l15  16 (17 .18 )19  20 .21 
-
-*CHI:	I love you .
-line number: 741
-*0 C1 H2 I3 :4 	5 I6  7 l8 o9 v10 e11  12 y13 o14 u15  16 .17 
-
-*MOT:	I don't have any diet dressing for you May .
-line number: 745
-*0 M1 O2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 h14 a15 v16 e17  18 a19 n20 y21  22 d23 i24 e25 t26  27 d28 r29 e30 s31 s32 i33 n34 g35  36 f37 o38 r39  40 y41 o42 u43  44 M45 a46 y47  48 .49 
-
-*JAK:	why ?
-line number: 751
-*0 J1 A2 K3 :4 	5 w6 h7 y8  9 ?10 
-
-*MOT:	what is that ?
-line number: 756
-*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 i11 s12  13 t14 h15 a16 t17  18 ?19 
-
-*MOT:	oh you can't have dressing <on your> [>] salad ?
-line number: 760
-*0 M1 O2 T3 :4 	5 o6 h7  8 y9 o10 u11  12 c13 a14 n15 '16 t17  18 h19 a20 v21 e22  23 d24 r25 e26 s27 s28 i29 n30 g31  32 <33 o34 n35  36 y37 o38 u39 r40 >41  42 [43 >44 ]45  46 s47 a48 l49 a50 d51  52 ?53 
-
-*SIS:	<uhuh> [<] .
-line number: 766
-*0 S1 I2 S3 :4 	5 <6 u7 h8 u9 h10 >11  12 [13 <14 ]15  16 .17 
-
-*SIS:	put your finger [?] dressing .
-line number: 769
-*0 S1 I2 S3 :4 	5 p6 u7 t8  9 y10 o11 u12 r13  14 f15 i16 n17 g18 e19 r20  21 [22 ?23 ]24  25 d26 r27 e28 s29 s30 i31 n32 g33  34 .35 
-
-*MOT:	yeah but it defeats the purpose to +...
-line number: 773
-*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 b11 u12 t13  14 i15 t16  17 d18 e19 f20 e21 a22 t23 s24  25 t26 h27 e28  29 p30 u31 r32 p33 o34 s35 e36  37 t38 o39  40 +41 .42 .43 .44 
-
-*SIS:	there was one page in here .
-line number: 777
-*0 S1 I2 S3 :4 	5 t6 h7 e8 r9 e10  11 w12 a13 s14  15 o16 n17 e18  19 p20 a21 g22 e23  24 i25 n26  27 h28 e29 r30 e31  32 .33 
-
-*MOT:	huh ?
-line number: 782
-*0 M1 O2 T3 :4 	5 h6 u7 h8  9 ?10 
-
-*SIS:	there was one piece of paper in here with the diet .
-line number: 786
-*0 S1 I2 S3 :4 	5 t6 h7 e8 r9 e10  11 w12 a13 s14  15 o16 n17 e18  19 p20 i21 e22 c23 e24  25 o26 f27  28 p29 a30 p31 e32 r33  34 i35 n36  37 h38 e39 r40 e41  42 w43 i44 t45 h46  47 t48 h49 e50  51 d52 i53 e54 t55  56 .57 
-
-*MOT:	it's right there .
-line number: 792
-*0 M1 O2 T3 :4 	5 i6 t7 '8 s9  10 r11 i12 g13 h14 t15  16 t17 h18 e19 r20 e21  22 .23 
-
-*SIS:	there .
-line number: 796
-*0 S1 I2 S3 :4 	5 t6 h7 e8 r9 e10  11 .12 
-
-*JAK:	zzz .
-line number: 799
-*0 J1 A2 K3 :4 	5 z6 z7 z8  9 .10 
-
-*CHI:	like that .
-line number: 803
-*0 C1 H2 I3 :4 	5 l6 i7 k8 e9  10 t11 h12 a13 t14  15 .16 
-
-*JAK:	I don't like that one Mom .
-line number: 807
-*0 J1 A2 K3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 l14 i15 k16 e17  18 t19 h20 a21 t22  23 o24 n25 e26  27 M28 o29 m30  31 .32 
-
-*CHI:	you didn't you put <&th> [/] &th xxx .
-line number: 812
-*0 C1 H2 I3 :4 	5 y6 o7 u8  9 d10 i11 d12 n13 '14 t15  16 y17 o18 u19  20 p21 u22 t23  24 <25 &26 t27 h28 >29  30 [31 /32 ]33  34 &35 t36 h37  38 x39 x40 x41  42 .43 
-
-*JAK:	I don't want it .
-line number: 815
-*0 J1 A2 K3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 i19 t20  21 .22 
-
-*MOT:	oh you didn't want the dressing ?
-line number: 819
-*0 M1 O2 T3 :4 	5 o6 h7  8 y9 o10 u11  12 d13 i14 d15 n16 '17 t18  19 w20 a21 n22 t23  24 t25 h26 e27  28 d29 r30 e31 s32 s33 i34 n35 g36  37 ?38 
-
-*CHI:	no I didn't <wanted it> [>] .
-line number: 825
-*0 C1 H2 I3 :4 	5 n6 o7  8 I9  10 d11 i12 d13 n14 '15 t16  17 <18 w19 a20 n21 t22 e23 d24  25 i26 t27 >28  29 [30 >31 ]32  33 .34 
-
-*MOT:	<you just> [<] want the lettuce ?
-line number: 828
-*0 M1 O2 T3 :4 	5 <6 y7 o8 u9  10 j11 u12 s13 t14 >15  16 [17 <18 ]19  20 w21 a22 n23 t24  25 t26 h27 e28  29 l30 e31 t32 t33 u34 c35 e36  37 ?38 
-
-*CHI:	yeah .
-line number: 832
-*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
-
-*JAK:	<&w> [/] <&w> [/] <with salad> [>] .
-line number: 835
-*0 J1 A2 K3 :4 	5 <6 &7 w8 >9  10 [11 /12 ]13  14 <15 &16 w17 >18  19 [20 /21 ]22  23 <24 w25 i26 t27 h28  29 s30 a31 l32 a33 d34 >35  36 [37 >38 ]39  40 .41 
-
-*MOT:	<oh come on> [<] !
-line number: 838
-*0 M1 O2 T3 :4 	5 <6 o7 h8  9 c10 o11 m12 e13  14 o15 n16 >17  18 [19 <20 ]21  22 !23 
-
-*JAK:	with salad .
-line number: 841
-*0 J1 A2 K3 :4 	5 w6 i7 t8 h9  10 s11 a12 l13 a14 d15  16 .17 
-
-*MOT:	sit !
-line number: 844
-*0 M1 O2 T3 :4 	5 s6 i7 t8  9 !10 
-
-*JAK:	with salad with some more (to)matoes .
-line number: 847
-*0 J1 A2 K3 :4 	5 w6 i7 t8 h9  10 s11 a12 l13 a14 d15  16 w17 i18 t19 h20  21 s22 o23 m24 e25  26 m27 o28 r29 e30  31 (32 t33 o34 )35 m36 a37 t38 o39 e40 s41  42 .43 
-
-*MOT:	<okay> [>] !
-line number: 850
-*0 M1 O2 T3 :4 	5 <6 o7 k8 a9 y10 >11  12 [13 >14 ]15  16 !17 
-
-*CHI:	<no> [<] !
-line number: 853
-*0 C1 H2 I3 :4 	5 <6 n7 o8 >9  10 [11 <12 ]13  14 !15 
-
-*CHI:	no no no no .
-line number: 856
-*0 C1 H2 I3 :4 	5 n6 o7  8 n9 o10  11 n12 o13  14 n15 o16  17 .18 
-
-*JAK:	no !
-line number: 859
-*0 J1 A2 K3 :4 	5 n6 o7  8 !9 
-
-*JAK:	one more .
-line number: 862
-*0 J1 A2 K3 :4 	5 o6 n7 e8  9 m10 o11 r12 e13  14 .15 
-
-*JAK:	two mores@c .
-line number: 865
-*0 J1 A2 K3 :4 	5 t6 w7 o8  9 m10 o11 r12 e13 s14 @15 c16  17 .18 
-
-*JAK:	xxx .
-line number: 868
-*0 J1 A2 K3 :4 	5 x6 x7 x8  9 .10 
-
-*CHI:	xxx lettuce lettuce .
-line number: 869
-*0 C1 H2 I3 :4 	5 x6 x7 x8  9 l10 e11 t12 t13 u14 c15 e16  17 l18 e19 t20 t21 u22 c23 e24  25 .26 
-
-*MOT:	you hurt me .
-line number: 872
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 h10 u11 r12 t13  14 m15 e16  17 .18 
-
-*CHI:	I'm sorry .
-line number: 875
-*0 C1 H2 I3 :4 	5 I6 '7 m8  9 s10 o11 r12 r13 y14  15 .16 
-
-*JAK:	I want two more the lettuce .
-line number: 878
-*0 J1 A2 K3 :4 	5 I6  7 w8 a9 n10 t11  12 t13 w14 o15  16 m17 o18 r19 e20  21 t22 h23 e24  25 l26 e27 t28 t29 u30 c31 e32  33 .34 
-
-*MOT:	okay Jake ?
-line number: 881
-*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 J11 a12 k13 e14  15 ?16 
-
-*MOT:	okay Conner ?
-line number: 885
-*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 C11 o12 n13 n14 e15 r16  17 ?18 
-
-*MOT:	you like the lettuce ?
-line number: 889
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 l10 i11 k12 e13  14 t15 h16 e17  18 l19 e20 t21 t22 u23 c24 e25  26 ?27 
-
-*MOT:	you like a little bunny rabbit ?
-line number: 893
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 l10 i11 k12 e13  14 a15  16 l17 i18 t19 t20 l21 e22  23 b24 u25 n26 n27 y28  29 r30 a31 b32 b33 i34 t35  36 ?37 
-
-*JAK:	no zzz .
-line number: 897
-*0 J1 A2 K3 :4 	5 n6 o7  8 z9 z10 z11  12 .13 
-
-*MOT:	you have plenty of dressing there Jake .
-line number: 901
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 h10 a11 v12 e13  14 p15 l16 e17 n18 t19 y20  21 o22 f23  24 d25 r26 e27 s28 s29 i30 n31 g32  33 t34 h35 e36 r37 e38  39 J40 a41 k42 e43  44 .45 
-
-*JAK:	I know that but I want more (.) .
-line number: 905
-*0 J1 A2 K3 :4 	5 I6  7 k8 n9 o10 w11  12 t13 h14 a15 t16  17 b18 u19 t20  21 I22  23 w24 a25 n26 t27  28 m29 o30 r31 e32  33 (34 .35 )36  37 .38 
-
-*JAK:	<I>[/] <I> [/] I don't like that on +...
-line number: 908
-*0 J1 A2 K3 :4 	5 <6 I7 >8 [9 /10 ]11  12 <13 I14 >15  16 [17 /18 ]19  20 I21  22 d23 o24 n25 '26 t27  28 l29 i30 k31 e32  33 t34 h35 a36 t37  38 o39 n40  41 +42 .43 .44 .45 
-
-*MOT:	oh you got it all over you (.) !
-line number: 911
-*0 M1 O2 T3 :4 	5 o6 h7  8 y9 o10 u11  12 g13 o14 t15  16 i17 t18  19 a20 l21 l22  23 o24 v25 e26 r27  28 y29 o30 u31  32 (33 .34 )35  36 !37 
-
-*CHI:	I'm a fat cow !
-line number: 915
-*0 C1 H2 I3 :4 	5 I6 '7 m8  9 a10  11 f12 a13 t14  15 c16 o17 w18  19 !20 
-
-*MOT:	that's sweet and spicy .
-line number: 918
-*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 s13 w14 e15 e16 t17  18 a19 n20 d21  22 s23 p24 i25 c26 y27  28 .29 
-
-*JAK:	and spicy yes .
-line number: 921
-*0 J1 A2 K3 :4 	5 a6 n7 d8  9 s10 p11 i12 c13 y14  15 y16 e17 s18  19 .20 
-
-*JAK:	spicy for your tongue ?
-line number: 924
-*0 J1 A2 K3 :4 	5 s6 p7 i8 c9 y10  11 f12 o13 r14  15 y16 o17 u18 r19  20 t21 o22 n23 g24 u25 e26  27 ?28 
-
-*MOT:	little bit .
-line number: 928
-*0 M1 O2 T3 :4 	5 l6 i7 t8 t9 l10 e11  12 b13 i14 t15  16 .17 
-
-*JAK:	and this is spicy .
-line number: 931
-*0 J1 A2 K3 :4 	5 a6 n7 d8  9 t10 h11 i12 s13  14 i15 s16  17 s18 p19 i20 c21 y22  23 .24 
-
-*SIS:	do you know where the other part of the &-um paper of my diet is ?
-line number: 934
-*0 S1 I2 S3 :4 	5 d6 o7  8 y9 o10 u11  12 k13 n14 o15 w16  17 w18 h19 e20 r21 e22  23 t24 h25 e26  27 o28 t29 h30 e31 r32  33 p34 a35 r36 t37  38 o39 f40  41 t42 h43 e44  45 &46 -47 u48 m49  50 p51 a52 p53 e54 r55  56 o57 f58  59 m60 y61  62 d63 i64 e65 t66  67 i68 s69  70 ?71 
+*MOT:	did he only sing this in the encore last night ?
+line number: 44
+*0 M1 O2 T3 :4 	5 d6 i7 d8  9 h10 e11  12 o13 n14 l15 y16  17 s18 i19 n20 g21  22 t23 h24 i25 s26  27 i28 n29  30 t31 h32 e33  34 e35 n36 c37 o38 r39 e40  41 l42 a43 s44 t45  46 n47 i48 g49 h50 t51  52 ?53 
+
+*FAT:	I'm sorry ?
+line number: 51
+*0 F1 A2 T3 :4 	5 I6 '7 m8  9 s10 o11 r12 r13 y14  15 ?16 
+
+*MOT:	did he only sing this in the encore ?
+line number: 54
+*0 M1 O2 T3 :4 	5 d6 i7 d8  9 h10 e11  12 o13 n14 l15 y16  17 s18 i19 n20 g21  22 t23 h24 i25 s26  27 i28 n29  30 t31 h32 e33  34 e35 n36 c37 o38 r39 e40  41 ?42 
+
+*FAT:	I don't know .
+line number: 59
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 .19 
+
+*MOT:	I'm just wondering where it is in the concert .
+line number: 62
+*0 M1 O2 T3 :4 	5 I6 '7 m8  9 j10 u11 s12 t13  14 w15 o16 n17 d18 e19 r20 i21 n22 g23  24 w25 h26 e27 r28 e29  30 i31 t32  33 i34 s35  36 i37 n38  39 t40 h41 e42  43 c44 o45 n46 c47 e48 r49 t50  51 .52 
 
 *MOT:	xxx .
-line number: 941
+line number: 67
 *0 M1 O2 T3 :4 	5 x6 x7 x8  9 .10 
 
-*SIS:	xxx .
-line number: 942
-*0 S1 I2 S3 :4 	5 x6 x7 x8  9 .10 
+*MOT:	I'd have a tape (.) .
+line number: 68
+*0 M1 O2 T3 :4 	5 I6 '7 d8  9 h10 a11 v12 e13  14 a15  16 t17 a18 p19 e20  21 (22 .23 )24  25 .26 
 
-*MOT:	xxx full ?
+*MOT:	for the audio tape .
+line number: 71
+*0 M1 O2 T3 :4 	5 f6 o7 r8  9 t10 h11 e12  13 a14 u15 d16 i17 o18  19 t20 a21 p22 e23  24 .25 
+
+*FAT:	I think the tops of this is six .
+line number: 74
+*0 F1 A2 T3 :4 	5 I6  7 t8 h9 i10 n11 k12  13 t14 h15 e16  17 t18 o19 p20 s21  22 o23 f24  25 t26 h27 i28 s29  30 i31 s32  33 s34 i35 x36  37 .38 
+
+*MOT:	stand by .
+line number: 79
+*0 M1 O2 T3 :4 	5 s6 t7 a8 n9 d10  11 b12 y13  14 .15 
+
+*FAT:	and the tension just xxx might be out .
+line number: 82
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 t10 h11 e12  13 t14 e15 n16 s17 i18 o19 n20  21 j22 u23 s24 t25  26 x27 x28 x29  30 m31 i32 g33 h34 t35  36 b37 e38  39 o40 u41 t42  43 .44 
+
+*MOT:	xxx this .
+line number: 85
+*0 M1 O2 T3 :4 	5 x6 x7 x8  9 t10 h11 i12 s13  14 .15 
+
+*CHI:	okay .
+line number: 88
+*0 C1 H2 I3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*MOT:	so I have_to put the rest of it on the &-uh +...
+line number: 91
+*0 M1 O2 T3 :4 	5 s6 o7  8 I9  10 h11 a12 v13 e14 _15 t16 o17  18 p19 u20 t21  22 t23 h24 e25  26 r27 e28 s29 t30  31 o32 f33  34 i35 t36  37 o38 n39  40 t41 h42 e43  44 &45 -46 u47 h48  49 +50 .51 .52 .53 
+
+*CHI:	zzz .
+line number: 96
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	you have_to start on the second side of the tape too .
+line number: 100
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 h10 a11 v12 e13 _14 t15 o16  17 s18 t19 a20 r21 t22  23 o24 n25  26 t27 h28 e29  30 s31 e32 c33 o34 n35 d36  37 s38 i39 d40 e41  42 o43 f44  45 t46 h47 e48  49 t50 a51 p52 e53  54 t55 o56 o57  58 .59 
+
+*FAT:	lose more o(f) [//] of Philip Flack [?] than anything else .
+line number: 105
+*0 F1 A2 T3 :4 	5 l6 o7 s8 e9  10 m11 o12 r13 e14  15 o16 (17 f18 )19  20 [21 /22 /23 ]24  25 o26 f27  28 P29 h30 i31 l32 i33 p34  35 F36 l37 a38 c39 k40  41 [42 ?43 ]44  45 t46 h47 a48 n49  50 a51 n52 y53 t54 h55 i56 n57 g58  59 e60 l61 s62 e63  64 .65 
+
+*FAT:	xxx [>] .
+line number: 110
+*0 F1 A2 T3 :4 	5 x6 x7 x8  9 [10 >11 ]12  13 .14 
+
+*MOT:	right [<] .
+line number: 111
+*0 M1 O2 T3 :4 	5 r6 i7 g8 h9 t10  11 [12 <13 ]14  15 .16 
+
+*MOT:	the second side is the side that I had <the encores on> [//] the encore [>] on .
+line number: 114
+*0 M1 O2 T3 :4 	5 t6 h7 e8  9 s10 e11 c12 o13 n14 d15  16 s17 i18 d19 e20  21 i22 s23  24 t25 h26 e27  28 s29 i30 d31 e32  33 t34 h35 a36 t37  38 I39  40 h41 a42 d43  44 <45 t46 h47 e48  49 e50 n51 c52 o53 r54 e55 s56  57 o58 n59 >60  61 [62 /63 /64 ]65  66 t67 h68 e69  70 e71 n72 c73 o74 r75 e76  77 [78 >79 ]80  81 o82 n83  84 .85 
+
+*FAT:	&-uh [<] .
+line number: 119
+*0 F1 A2 T3 :4 	5 &6 -7 u8 h9  10 [11 <12 ]13  14 .15 
+
+*MOT:	so I have_to get that to be able to use my little cassette .
+line number: 120
+*0 M1 O2 T3 :4 	5 s6 o7  8 I9  10 h11 a12 v13 e14 _15 t16 o17  18 g19 e20 t21  22 t23 h24 a25 t26  27 t28 o29  30 b31 e32  33 a34 b35 l36 e37  38 t39 o40  41 u42 s43 e44  45 m46 y47  48 l49 i50 t51 t52 l53 e54  55 c56 a57 s58 s59 e60 t61 t62 e63  64 .65 
+
+*MOT:	I'll do that right now .
+line number: 125
+*0 M1 O2 T3 :4 	5 I6 '7 l8 l9  10 d11 o12  13 t14 h15 a16 t17  18 r19 i20 g21 h22 t23  24 n25 o26 w27  28 .29 
+
+*FAT:	&-uh [<] .
+line number: 128
+*0 F1 A2 T3 :4 	5 &6 -7 u8 h9  10 [11 <12 ]13  14 .15 
+
+*FAT:	okay .
+line number: 129
+*0 F1 A2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*MOT:	Suzanne's sister did the New York bit ?
+line number: 132
+*0 M1 O2 T3 :4 	5 S6 u7 z8 a9 n10 n11 e12 '13 s14  15 s16 i17 s18 t19 e20 r21  22 d23 i24 d25  26 t27 h28 e29  30 N31 e32 w33  34 Y35 o36 r37 k38  39 b40 i41 t42  43 ?44 
+
+*MOT:	xxx and &-um biscuits .
+line number: 137
+*0 M1 O2 T3 :4 	5 x6 x7 x8  9 a10 n11 d12  13 &14 -15 u16 m17  18 b19 i20 s21 c22 u23 i24 t25 s26  27 .28 
+
+*FAT:	thanks .
+line number: 140
+*0 F1 A2 T3 :4 	5 t6 h7 a8 n9 k10 s11  12 .13 
+
+*MOT:	sorry Harve [?] .
+line number: 143
+*0 M1 O2 T3 :4 	5 s6 o7 r8 r9 y10  11 H12 a13 r14 v15 e16  17 [18 ?19 ]20  21 .22 
+
+*FAT:	that's okay .
+line number: 147
+*0 F1 A2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 o13 k14 a15 y16  17 .18 
+
+*FAT:	&-uh (.) do you want some Quick ?
+line number: 150
+*0 F1 A2 T3 :4 	5 &6 -7 u8 h9  10 (11 .12 )13  14 d15 o16  17 y18 o19 u20  21 w22 a23 n24 t25  26 s27 o28 m29 e30  31 Q32 u33 i34 c35 k36  37 ?38 
+
+*CHI:	<m(e)> [//] me ?
+line number: 154
+*0 C1 H2 I3 :4 	5 <6 m7 (8 e9 )10 >11  12 [13 /14 /15 ]16  17 m18 e19  20 ?21 
+
+*FAT:	yeah .
+line number: 158
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	Quick .
+line number: 161
+*0 C1 H2 I3 :4 	5 Q6 u7 i8 c9 k10  11 .12 
+
+*FAT:	do you want strawberry or chocolate ?
+line number: 164
+*0 F1 A2 T3 :4 	5 d6 o7  8 y9 o10 u11  12 w13 a14 n15 t16  17 s18 t19 r20 a21 w22 b23 e24 r25 r26 y27  28 o29 r30  31 c32 h33 o34 c35 o36 l37 a38 t39 e40  41 ?42 
+
+*CHI:	chocolate .
+line number: 168
+*0 C1 H2 I3 :4 	5 c6 h7 o8 c9 o10 l11 a12 t13 e14  15 .16 
+
+*MOT:	so how's the chicken look ?
+line number: 171
+*0 M1 O2 T3 :4 	5 s6 o7  8 h9 o10 w11 '12 s13  14 t15 h16 e17  18 c19 h20 i21 c22 k23 e24 n25  26 l27 o28 o29 k30  31 ?32 
+
+*CHI:	oh good (.) .
+line number: 175
+*0 C1 H2 I3 :4 	5 o6 h7  8 g9 o10 o11 d12  13 (14 .15 )16  17 .18 
+
+*CHI:	it looks good (.) .
+line number: 178
+*0 C1 H2 I3 :4 	5 i6 t7  8 l9 o10 o11 k12 s13  14 g15 o16 o17 d18  19 (20 .21 )22  23 .24 
+
+*CHI:	ring around the rosy pocket full of (.) ashes , ashes , we all fall down (.) .
+line number: 181
+*0 C1 H2 I3 :4 	5 r6 i7 n8 g9  10 a11 r12 o13 u14 n15 d16  17 t18 h19 e20  21 r22 o23 s24 y25  26 p27 o28 c29 k30 e31 t32  33 f34 u35 l36 l37  38 o39 f40  41 (42 .43 )44  45 a46 s47 h48 e49 s50  51 ,52  53 a54 s55 h56 e57 s58  59 ,60  61 w62 e63  64 a65 l66 l67  68 f69 a70 l71 l72  73 d74 o75 w76 n77  78 (79 .80 )81  82 .83 
+
+*CHI:	Mommy's using my old placemat today .
+line number: 188
+*0 C1 H2 I3 :4 	5 M6 o7 m8 m9 y10 '11 s12  13 u14 s15 i16 n17 g18  19 m20 y21  22 o23 l24 d25  26 p27 l28 a29 c30 e31 m32 a33 t34  35 t36 o37 d38 a39 y40  41 .42 
+
+*FAT:	yeah .
+line number: 192
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	and you're using your new placemat .
+line number: 195
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 y10 o11 u12 '13 r14 e15  16 u17 s18 i19 n20 g21  22 y23 o24 u25 r26  27 n28 e29 w30  31 p32 l33 a34 c35 e36 m37 a38 t39  40 .41 
+
+*MOT:	yeah I thought he might want to try his new placemat .
+line number: 199
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 I11  12 t13 h14 o15 u16 g17 h18 t19  20 h21 e22  23 m24 i25 g26 h27 t28  29 w30 a31 n32 t33  34 t35 o36  37 t38 r39 y40  41 h42 i43 s44  45 n46 e47 w48  49 p50 l51 a52 c53 e54 m55 a56 t57  58 .59 
+
+*MOT:	there xxx .
+line number: 204
+*0 M1 O2 T3 :4 	5 t6 h7 e8 r9 e10  11 x12 x13 x14  15 .16 
+
+*CHI:	xxx so good !
+line number: 207
+*0 C1 H2 I3 :4 	5 x6 x7 x8  9 s10 o11  12 g13 o14 o15 d16  17 !18 
+
+*MOT:	okay .
+line number: 210
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	clean this plate .
+line number: 213
+*0 C1 H2 I3 :4 	5 c6 l7 e8 a9 n10  11 t12 h13 i14 s15  16 p17 l18 a19 t20 e21  22 .23 
+
+*MOT:	pardon [>] ?
+line number: 216
+*0 M1 O2 T3 :4 	5 p6 a7 r8 d9 o10 n11  12 [13 >14 ]15  16 ?17 
+
+*CHI:	<cl(ean)> [//] clean this cup out [<] .
+line number: 220
+*0 C1 H2 I3 :4 	5 <6 c7 l8 (9 e10 a11 n12 )13 >14  15 [16 /17 /18 ]19  20 c21 l22 e23 a24 n25  26 t27 h28 i29 s30  31 c32 u33 p34  35 o36 u37 t38  39 [40 <41 ]42  43 .44 
+
+*MOT:	so you'd like something over it .
+line number: 223
+*0 M1 O2 T3 :4 	5 s6 o7  8 y9 o10 u11 '12 d13  14 l15 i16 k17 e18  19 s20 o21 m22 e23 t24 h25 i26 n27 g28  29 o30 v31 e32 r33  34 i35 t36  37 .38 
+
+*MOT:	Daddy's going to put it in <your dinosaur> [!] .
+line number: 227
+*0 M1 O2 T3 :4 	5 D6 a7 d8 d9 y10 '11 s12  13 g14 o15 i16 n17 g18  19 t20 o21  22 p23 u24 t25  26 i27 t28  29 i30 n31  32 <33 y34 o35 u36 r37  38 d39 i40 n41 o42 s43 a44 u45 r46 >47  48 [49 !50 ]51  52 .53 
+
+*CHI:	not my xxx ?
+line number: 232
+*0 C1 H2 I3 :4 	5 n6 o7 t8  9 m10 y11  12 x13 x14 x15  16 ?17 
+
+*MOT:	no [>] .
+line number: 236
+*0 M1 O2 T3 :4 	5 n6 o7  8 [9 >10 ]11  12 .13 
+
+*FAT:	<well I figured since you have your dinosaur placement might as well have your dinosaur cup> [<] .
+line number: 239
+*0 F1 A2 T3 :4 	5 <6 w7 e8 l9 l10  11 I12  13 f14 i15 g16 u17 r18 e19 d20  21 s22 i23 n24 c25 e26  27 y28 o29 u30  31 h32 a33 v34 e35  36 y37 o38 u39 r40  41 d42 i43 n44 o45 s46 a47 u48 r49  50 p51 l52 a53 c54 e55 m56 e57 n58 t59  60 m61 i62 g63 h64 t65  66 a67 s68  69 w70 e71 l72 l73  74 h75 a76 v77 e78  79 y80 o81 u82 r83  84 d85 i86 n87 o88 s89 a90 u91 r92  93 c94 u95 p96 >97  98 [99 <100 ]101  102 .103 
+
+*MOT:	so I'll wash this for another [>] time .
+line number: 246
+*0 M1 O2 T3 :4 	5 s6 o7  8 I9 '10 l11 l12  13 w14 a15 s16 h17  18 t19 h20 i21 s22  23 f24 o25 r26  27 a28 n29 o30 t31 h32 e33 r34  35 [36 >37 ]38  39 t40 i41 m42 e43  44 .45 
+
+*CHI:	<xxx match> [<] ?
+line number: 251
+*0 C1 H2 I3 :4 	5 <6 x7 x8 x9  10 m11 a12 t13 c14 h15 >16  17 [18 <19 ]20  21 ?22 
+
+*FAT:	I don't know .
+line number: 255
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 .19 
+
+*CHI:	mat(ch) [?] is a drink .
+line number: 258
+*0 C1 H2 I3 :4 	5 m6 a7 t8 (9 c10 h11 )12  13 [14 ?15 ]16  17 i18 s19  20 a21  22 d23 r24 i25 n26 k27  28 .29 
+
+*FAT:	yeah .
+line number: 261
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	0 .
+line number: 264
+*0 C1 H2 I3 :4 	5 06  7 .8 
+
+*CHI:	zzz .
+line number: 266
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	okay .
+line number: 270
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*MOT:	I think it's +/.
+line number: 273
+*0 M1 O2 T3 :4 	5 I6  7 t8 h9 i10 n11 k12  13 i14 t15 '16 s17  18 +19 /20 .21 
+
+*CHI:	where's those little stuff points [?] ?
+line number: 276
+*0 C1 H2 I3 :4 	5 w6 h7 e8 r9 e10 '11 s12  13 t14 h15 o16 s17 e18  19 l20 i21 t22 t23 l24 e25  26 s27 t28 u29 f30 f31  32 p33 o34 i35 n36 t37 s38  39 [40 ?41 ]42  43 ?44 
+
+*MOT:	these little points .
+line number: 281
+*0 M1 O2 T3 :4 	5 t6 h7 e8 s9 e10  11 l12 i13 t14 t15 l16 e17  18 p19 o20 i21 n22 t23 s24  25 .26 
+
+*MOT:	oh they're supposed to be like grass and plants and things like that (.) in <the &-uh> [//] the landscape (.) all around the dinosaurs .
+line number: 285
+*0 M1 O2 T3 :4 	5 o6 h7  8 t9 h10 e11 y12 '13 r14 e15  16 s17 u18 p19 p20 o21 s22 e23 d24  25 t26 o27  28 b29 e30  31 l32 i33 k34 e35  36 g37 r38 a39 s40 s41  42 a43 n44 d45  46 p47 l48 a49 n50 t51 s52  53 a54 n55 d56  57 t58 h59 i60 n61 g62 s63  64 l65 i66 k67 e68  69 t70 h71 a72 t73  74 (75 .76 )77  78 i79 n80  81 <82 t83 h84 e85  86 &87 -88 u89 h90 >91  92 [93 /94 /95 ]96  97 t98 h99 e100  101 l102 a103 n104 d105 s106 c107 a108 p109 e110  111 (112 .113 )114  115 a116 l117 l118  119 a120 r121 o122 u123 n124 d125  126 t127 h128 e129  130 d131 i132 n133 o134 s135 a136 u137 r138 s139  140 .141 
+
+*MOT:	but right here they look sharp don't they ?
+line number: 293
+*0 M1 O2 T3 :4 	5 b6 u7 t8  9 r10 i11 g12 h13 t14  15 h16 e17 r18 e19  20 t21 h22 e23 y24  25 l26 o27 o28 k29  30 s31 h32 a33 r34 p35  36 d37 o38 n39 '40 t41  42 t43 h44 e45 y46  47 ?48 
+
+*CHI:	yeah .
+line number: 299
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	there you go (.) .
+line number: 302
+*0 M1 O2 T3 :4 	5 t6 h7 e8 r9 e10  11 y12 o13 u14  15 g16 o17  18 (19 .20 )21  22 .23 
+
+*MOT:	warm .
+line number: 305
+*0 M1 O2 T3 :4 	5 w6 a7 r8 m9  10 .11 
+
+*CHI:	the chicken is too ?
+line number: 309
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 c10 h11 i12 c13 k14 e15 n16  17 i18 s19  20 t21 o22 o23  24 ?25 
+
+*MOT:	what ?
+line number: 313
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 ?11 
+
+*MOT:	the chicken is [//] should be pretty cool .
+line number: 317
+*0 M1 O2 T3 :4 	5 t6 h7 e8  9 c10 h11 i12 c13 k14 e15 n16  17 i18 s19  20 [21 /22 /23 ]24  25 s26 h27 o28 u29 l30 d31  32 b33 e34  35 p36 r37 e38 t39 t40 y41  42 c43 o44 o45 l46  47 .48 
+
+*MOT:	I'll cut that one and the next one you have (.) I won't cut you can just eat it (be)cause it will be (.) cooled off (.) .
+line number: 320
+*0 M1 O2 T3 :4 	5 I6 '7 l8 l9  10 c11 u12 t13  14 t15 h16 a17 t18  19 o20 n21 e22  23 a24 n25 d26  27 t28 h29 e30  31 n32 e33 x34 t35  36 o37 n38 e39  40 y41 o42 u43  44 h45 a46 v47 e48  49 (50 .51 )52  53 I54  55 w56 o57 n58 '59 t60  61 c62 u63 t64  65 y66 o67 u68  69 c70 a71 n72  73 j74 u75 s76 t77  78 e79 a80 t81  82 i83 t84  85 (86 b87 e88 )89 c90 a91 u92 s93 e94  95 i96 t97  98 w99 i100 l101 l102  103 b104 e105  106 (107 .108 )109  110 c111 o112 o113 l114 e115 d116  117 o118 f119 f120  121 (122 .123 )124  125 .126 
+
+*CHI:	xxx [>] ?
+line number: 330
+*0 C1 H2 I3 :4 	5 x6 x7 x8  9 [10 >11 ]12  13 ?14 
+
+*MOT:	I knew Bro wouldn't make it home I hope he made it to the library +...
+line number: 332
+*0 M1 O2 T3 :4 	5 I6  7 k8 n9 e10 w11  12 B13 r14 o15  16 w17 o18 u19 l20 d21 n22 '23 t24  25 m26 a27 k28 e29  30 i31 t32  33 h34 o35 m36 e37  38 I39  40 h41 o42 p43 e44  45 h46 e47  48 m49 a50 d51 e52  53 i54 t55  56 t57 o58  59 t60 h61 e62  63 l64 i65 b66 r67 a68 r69 y70  71 +72 .73 .74 .75 
+
+*FAT:	oh I wouldn't +/.
+line number: 339
+*0 F1 A2 T3 :4 	5 o6 h7  8 I9  10 w11 o12 u13 l14 d15 n16 '17 t18  19 +20 /21 .22 
+
+*MOT:	on time (.) to get to xxx work done (be)cause it's so early he's first .
+line number: 342
+*0 M1 O2 T3 :4 	5 o6 n7  8 t9 i10 m11 e12  13 (14 .15 )16  17 t18 o19  20 g21 e22 t23  24 t25 o26  27 x28 x29 x30  31 w32 o33 r34 k35  36 d37 o38 n39 e40  41 (42 b43 e44 )45 c46 a47 u48 s49 e50  51 i52 t53 '54 s55  56 s57 o58  59 e60 a61 r62 l63 y64  65 h66 e67 '68 s69  70 f71 i72 r73 s74 t75  76 .77 
+
+*FAT:	zzz .
+line number: 349
+*0 F1 A2 T3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	his twenty dollars that he got for his birthday yesterday .
+line number: 353
+*0 M1 O2 T3 :4 	5 h6 i7 s8  9 t10 w11 e12 n13 t14 y15  16 d17 o18 l19 l20 a21 r22 s23  24 t25 h26 a27 t28  29 h30 e31  32 g33 o34 t35  36 f37 o38 r39  40 h41 i42 s43  44 b45 i46 r47 t48 h49 d50 a51 y52  53 y54 e55 s56 t57 e58 r59 d60 a61 y62  63 .64 
+
+*FAT:	zzz .
+line number: 359
+*0 F1 A2 T3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	is burning in his pocket already .
+line number: 363
+*0 M1 O2 T3 :4 	5 i6 s7  8 b9 u10 r11 n12 i13 n14 g15  16 i17 n18  19 h20 i21 s22  23 p24 o25 c26 k27 e28 t29  30 a31 l32 r33 e34 a35 d36 y37  38 .39 
+
+*FAT:	yeah .
+line number: 367
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	(it')s been +/.
+line number: 370
+*0 F1 A2 T3 :4 	5 (6 i7 t8 '9 )10 s11  12 b13 e14 e15 n16  17 +18 /19 .20 
+
+*MOT:	that's why he didn't need money to come home from the library yesterday he said I'll have enough to [/] .
+line number: 373
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 w13 h14 y15  16 h17 e18  19 d20 i21 d22 n23 '24 t25  26 n27 e28 e29 d30  31 m32 o33 n34 e35 y36  37 t38 o39  40 c41 o42 m43 e44  45 h46 o47 m48 e49  50 f51 r52 o53 m54  55 t56 h57 e58  59 l60 i61 b62 r63 a64 r65 y66  67 y68 e69 s70 t71 e72 r73 d74 a75 y76  77 h78 e79  80 s81 a82 i83 d84  85 I86 '87 l88 l89  90 h91 a92 v93 e94  95 e96 n97 o98 u99 g100 h101  102 t103 o104  105 [106 /107 ]108  109 .110 
+
+*CHI:	0 .
+line number: 381
+*0 C1 H2 I3 :4 	5 06  7 .8 
+
+*MOT:	yeah .
+line number: 383
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	I'm afraid the (.) chicken is &-uh (.) not as well cooked as [/] as usual .
+line number: 387
+*0 F1 A2 T3 :4 	5 I6 '7 m8  9 a10 f11 r12 a13 i14 d15  16 t17 h18 e19  20 (21 .22 )23  24 c25 h26 i27 c28 k29 e30 n31  32 i33 s34  35 &36 -37 u38 h39  40 (41 .42 )43  44 n45 o46 t47  48 a49 s50  51 w52 e53 l54 l55  56 c57 o58 o59 k60 e61 d62  63 a64 s65  66 [67 /68 ]69  70 a71 s72  73 u74 s75 u76 a77 l78  79 .80 
+
+*MOT:	well <it's> [/] it's probably better cooked than the biscuits though .
+line number: 393
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 <11 i12 t13 '14 s15 >16  17 [18 /19 ]20  21 i22 t23 '24 s25  26 p27 r28 o29 b30 a31 b32 l33 y34  35 b36 e37 t38 t39 e40 r41  42 c43 o44 o45 k46 e47 d48  49 t50 h51 a52 n53  54 t55 h56 e57  58 b59 i60 s61 c62 u63 i64 t65 s66  67 t68 h69 o70 u71 g72 h73  74 .75 
+
+*FAT:	I don't know .
+line number: 399
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 .19 
+
+*MOT:	well they'll both be nice and tender on the inside .
+line number: 402
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 t11 h12 e13 y14 '15 l16 l17  18 b19 o20 t21 h22  23 b24 e25  26 n27 i28 c29 e30  31 a32 n33 d34  35 t36 e37 n38 d39 e40 r41  42 o43 n44  45 t46 h47 e48  49 i50 n51 s52 i53 d54 e55  56 .57 
+
+*FAT:	zzz .
+line number: 407
+*0 F1 A2 T3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	well I told Nathaniel that going out to barbecue saves more of a symbolic cash than after it was started barbecuing season .
+line number: 410
+*0 F1 A2 T3 :4 	5 w6 e7 l8 l9  10 I11  12 t13 o14 l15 d16  17 N18 a19 t20 h21 a22 n23 i24 e25 l26  27 t28 h29 a30 t31  32 g33 o34 i35 n36 g37  38 o39 u40 t41  42 t43 o44  45 b46 a47 r48 b49 e50 c51 u52 e53  54 s55 a56 v57 e58 s59  60 m61 o62 r63 e64  65 o66 f67  68 a69  70 s71 y72 m73 b74 o75 l76 i77 c78  79 c80 a81 s82 h83  84 t85 h86 a87 n88  89 a90 f91 t92 e93 r94  95 i96 t97  98 w99 a100 s101  102 s103 t104 a105 r106 t107 e108 d109  110 b111 a112 r113 b114 e115 c116 u117 i118 n119 g120  121 s122 e123 a124 s125 o126 n127  128 .129 
+
+*MOT:	just to celebrate the first day of spring .
+line number: 420
+*0 M1 O2 T3 :4 	5 j6 u7 s8 t9  10 t11 o12  13 c14 e15 l16 e17 b18 r19 a20 t21 e22  23 t24 h25 e26  27 f28 i29 r30 s31 t32  33 d34 a35 y36  37 o38 f39  40 s41 p42 r43 i44 n45 g46  47 .48 
+
+*FAT:	how's the chicken Munchkin ?
+line number: 425
+*0 F1 A2 T3 :4 	5 h6 o7 w8 '9 s10  11 t12 h13 e14  15 c16 h17 i18 c19 k20 e21 n22  23 M24 u25 n26 c27 h28 k29 i30 n31  32 ?33 
+
+*CHI:	nice .
+line number: 430
+*0 C1 H2 I3 :4 	5 n6 i7 c8 e9  10 .11 
+
+*CHI:	barbecuing (.) a long thing .
+line number: 433
+*0 C1 H2 I3 :4 	5 b6 a7 r8 b9 e10 c11 u12 i13 n14 g15  16 (17 .18 )19  20 a21  22 l23 o24 n25 g26  27 t28 h29 i30 n31 g32  33 .34 
+
+*CHI:	barbecuing it's a long thing to do .
+line number: 436
+*0 C1 H2 I3 :4 	5 b6 a7 r8 b9 e10 c11 u12 i13 n14 g15  16 i17 t18 '19 s20  21 a22  23 l24 o25 n26 g27  28 t29 h30 i31 n32 g33  34 t35 o36  37 d38 o39  40 .41 
+
+*MOT:	yeah .
+line number: 441
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	it takes awhile (.) .
+line number: 444
+*0 F1 A2 T3 :4 	5 i6 t7  8 t9 a10 k11 e12 s13  14 a15 w16 h17 i18 l19 e20  21 (22 .23 )24  25 .26 
+
+*FAT:	(be)cause you just can't turn the coals on .
+line number: 447
+*0 F1 A2 T3 :4 	5 (6 b7 e8 )9 c10 a11 u12 s13 e14  15 y16 o17 u18  19 j20 u21 s22 t23  24 c25 a26 n27 '28 t29  30 t31 u32 r33 n34  35 t36 h37 e38  39 c40 o41 a42 l43 s44  45 o46 n47  48 .49 
+
+*FAT:	like you do an oven .
+line number: 452
+*0 F1 A2 T3 :4 	5 l6 i7 k8 e9  10 y11 o12 u13  14 d15 o16  17 a18 n19  20 o21 v22 e23 n24  25 .26 
+
+*FAT:	but when you cook it in the oven it doesn't taste this good .
+line number: 455
+*0 F1 A2 T3 :4 	5 b6 u7 t8  9 w10 h11 e12 n13  14 y15 o16 u17  18 c19 o20 o21 k22  23 i24 t25  26 i27 n28  29 t30 h31 e32  33 o34 v35 e36 n37  38 i39 t40  41 d42 o43 e44 s45 n46 '47 t48  49 t50 a51 s52 t53 e54  55 t56 h57 i58 s59  60 g61 o62 o63 d64  65 .66 
+
+*CHI:	uhuh (.) .
+line number: 461
+*0 C1 H2 I3 :4 	5 u6 h7 u8 h9  10 (11 .12 )13  14 .15 
+
+*MOT:	excuse me I'm going to check the +...
+line number: 464
+*0 M1 O2 T3 :4 	5 e6 x7 c8 u9 s10 e11  12 m13 e14  15 I16 '17 m18  19 g20 o21 i22 n23 g24  25 t26 o27  28 c29 h30 e31 c32 k33  34 t35 h36 e37  38 +39 .40 .41 .42 
+
+*CHI:	zzz .
+line number: 470
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*CHI:	oh .
+line number: 474
+*0 C1 H2 I3 :4 	5 o6 h7  8 .9 
+
+*FAT:	here a napkin .
+line number: 478
+*0 F1 A2 T3 :4 	5 h6 e7 r8 e9  10 a11  12 n13 a14 p15 k16 i17 n18  19 .20 
+
+*CHI:	my napkin ?
+line number: 481
+*0 C1 H2 I3 :4 	5 m6 y7  8 n9 a10 p11 k12 i13 n14  15 ?16 
+
+*FAT:	yeah [>] .
+line number: 485
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 [11 >12 ]13  14 .15 
+
+*CHI:	<this one> [<] ?
+line number: 488
+*0 C1 H2 I3 :4 	5 <6 t7 h8 i9 s10  11 o12 n13 e14 >15  16 [17 <18 ]19  20 ?21 
+
+*FAT:	mhm .
+line number: 492
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 .10 
+
+*CHI:	I'll leave it on in the show then it's all finished .
+line number: 495
+*0 C1 H2 I3 :4 	5 I6 '7 l8 l9  10 l11 e12 a13 v14 e15  16 i17 t18  19 o20 n21  22 i23 n24  25 t26 h27 e28  29 s30 h31 o32 w33  34 t35 h36 e37 n38  39 i40 t41 '42 s43  44 a45 l46 l47  48 f49 i50 n51 i52 s53 h54 e55 d56  57 .58 
+
+*MOT:	it all fit on the tape ?
+line number: 501
+*0 M1 O2 T3 :4 	5 i6 t7  8 a9 l10 l11  12 f13 i14 t15  16 o17 n18  19 t20 h21 e22  23 t24 a25 p26 e27  28 ?29 
+
+*FAT:	you got lucky .
+line number: 504
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 g10 o11 t12  13 l14 u15 c16 k17 y18  19 .20 
+
+*MOT:	yes .
+line number: 507
+*0 M1 O2 T3 :4 	5 y6 e7 s8  9 .10 
+
+*CHI:	it was a lot of stuff .
+line number: 510
+*0 C1 H2 I3 :4 	5 i6 t7  8 w9 a10 s11  12 a13  14 l15 o16 t17  18 o19 f20  21 s22 t23 u24 f25 f26  27 .28 
+
+*MOT:	do you have_to use the bath+room , Honey ?
+line number: 513
+*0 M1 O2 T3 :4 	5 d6 o7  8 y9 o10 u11  12 h13 a14 v15 e16 _17 t18 o19  20 u21 s22 e23  24 t25 h26 e27  28 b29 a30 t31 h32 +33 r34 o35 o36 m37  38 ,39  40 H41 o42 n43 e44 y45  46 ?47 
+
+*CHI:	no just [>] .
+line number: 519
+*0 C1 H2 I3 :4 	5 n6 o7  8 j9 u10 s11 t12  13 [14 >15 ]16  17 .18 
+
+*MOT:	okay [<] .
+line number: 522
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 [11 <12 ]13  14 .15 
+
+*CHI:	just just how &-uh [//] how many people in the sand yard sit this way ?
+line number: 525
+*0 C1 H2 I3 :4 	5 j6 u7 s8 t9  10 j11 u12 s13 t14  15 h16 o17 w18  19 &20 -21 u22 h23  24 [25 /26 /27 ]28  29 h30 o31 w32  33 m34 a35 n36 y37  38 p39 e40 o41 p42 l43 e44  45 i46 n47  48 t49 h50 e51  52 s53 a54 n55 d56  57 y58 a59 r60 d61  62 s63 i64 t65  66 t67 h68 i69 s70  71 w72 a73 y74  75 ?76 
+
+*MOT:	oh .
+line number: 532
+*0 M1 O2 T3 :4 	5 o6 h7  8 .9 
+
+*CHI:	they sit like this .
+line number: 535
+*0 C1 H2 I3 :4 	5 t6 h7 e8 y9  10 s11 i12 t13  14 l15 i16 k17 e18  19 t20 h21 i22 s23  24 .25 
+
+*MOT:	they wriggle in their seats in Nathaniel land ?
+line number: 538
+*0 M1 O2 T3 :4 	5 t6 h7 e8 y9  10 w11 r12 i13 g14 g15 l16 e17  18 i19 n20  21 t22 h23 e24 i25 r26  27 s28 e29 a30 t31 s32  33 i34 n35  36 N37 a38 t39 h40 a41 n42 i43 e44 l45  46 l47 a48 n49 d50  51 ?52 
+
+*CHI:	yeah .
+line number: 544
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	does it have rickety chairs ?
+line number: 547
+*0 M1 O2 T3 :4 	5 d6 o7 e8 s9  10 i11 t12  13 h14 a15 v16 e17  18 r19 i20 c21 k22 e23 t24 y25  26 c27 h28 a29 i30 r31 s32  33 ?34 
+
+*CHI:	yeah .
+line number: 551
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	why don't we turn the sound and xxx it off .
+line number: 554
+*0 F1 A2 T3 :4 	5 w6 h7 y8  9 d10 o11 n12 '13 t14  15 w16 e17  18 t19 u20 r21 n22  23 t24 h25 e26  27 s28 o29 u30 n31 d32  33 a34 n35 d36  37 x38 x39 x40  41 i42 t43  44 o45 f46 f47  48 .49 
+
+*MOT:	okay thank you .
+line number: 559
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 t11 h12 a13 n14 k15  16 y17 o18 u19  20 .21 
+
+*FAT:	you're welcome .
+line number: 562
+*0 F1 A2 T3 :4 	5 y6 o7 u8 '9 r10 e11  12 w13 e14 l15 c16 o17 m18 e19  20 .21 
+
+*CHI:	it was just a spill .
+line number: 566
+*0 C1 H2 I3 :4 	5 i6 t7  8 w9 a10 s11  12 j13 u14 s15 t16  17 a18  19 s20 p21 i22 l23 l24  25 .26 
+
+*MOT:	oh you spilled a little bit ?
+line number: 570
+*0 M1 O2 T3 :4 	5 o6 h7  8 y9 o10 u11  12 s13 p14 i15 l16 l17 e18 d19  20 a21  22 l23 i24 t25 t26 l27 e28  29 b30 i31 t32  33 ?34 
+
+*CHI:	yes .
+line number: 574
+*0 C1 H2 I3 :4 	5 y6 e7 s8  9 .10 
+
+*MOT:	okay well it's just a little .
+line number: 577
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 w11 e12 l13 l14  15 i16 t17 '18 s19  20 j21 u22 s23 t24  25 a26  27 l28 i29 t30 t31 l32 e33  34 .35 
+
+*MOT:	you [/] you got the napkin there fast .
+line number: 581
+*0 M1 O2 T3 :4 	5 y6 o7 u8  9 [10 /11 ]12  13 y14 o15 u16  17 g18 o19 t20  21 t22 h23 e24  25 n26 a27 p28 k29 i30 n31  32 t33 h34 e35 r36 e37  38 f39 a40 s41 t42  43 .44 
+
+*FAT:	<the bi(s)cuits> [//] the biscuits aren't burned .
+line number: 584
+*0 F1 A2 T3 :4 	5 <6 t7 h8 e9  10 b11 i12 (13 s14 )15 c16 u17 i18 t19 s20 >21  22 [23 /24 /25 ]26  27 t28 h29 e30  31 b32 i33 s34 c35 u36 i37 t38 s39  40 a41 r42 e43 n44 '45 t46  47 b48 u49 r50 n51 e52 d53  54 .55 
+
+*FAT:	they're (.) just about the way they [//] they're supposed to be .
+line number: 587
+*0 F1 A2 T3 :4 	5 t6 h7 e8 y9 '10 r11 e12  13 (14 .15 )16  17 j18 u19 s20 t21  22 a23 b24 o25 u26 t27  28 t29 h30 e31  32 w33 a34 y35  36 t37 h38 e39 y40  41 [42 /43 /44 ]45  46 t47 h48 e49 y50 '51 r52 e53  54 s55 u56 p57 p58 o59 s60 e61 d62  63 t64 o65  66 b67 e68  69 .70 
+
+*MOT:	oh really ?
+line number: 592
+*0 M1 O2 T3 :4 	5 o6 h7  8 r9 e10 a11 l12 l13 y14  15 ?16 
+
+*FAT:	yeah .
+line number: 595
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	I guess the reason I was going to take them out before is (be)cause <I> [/] I like them better (.) xxx [>] .
+line number: 598
+*0 M1 O2 T3 :4 	5 I6  7 g8 u9 e10 s11 s12  13 t14 h15 e16  17 r18 e19 a20 s21 o22 n23  24 I25  26 w27 a28 s29  30 g31 o32 i33 n34 g35  36 t37 o38  39 t40 a41 k42 e43  44 t45 h46 e47 m48  49 o50 u51 t52  53 b54 e55 f56 o57 r58 e59  60 i61 s62  63 (64 b65 e66 )67 c68 a69 u70 s71 e72  73 <74 I75 >76  77 [78 /79 ]80  81 I82  83 l84 i85 k86 e87  88 t89 h90 e91 m92  93 b94 e95 t96 t97 e98 r99  100 (101 .102 )103  104 x105 x106 x107  108 [109 >110 ]111  112 .113 
+
+*FAT:	under done [<] ?
+line number: 605
+*0 F1 A2 T3 :4 	5 u6 n7 d8 e9 r10  11 d12 o13 n14 e15  16 [17 <18 ]19  20 ?21 
+
+*MOT:	not under done but done just right .
+line number: 608
+*0 M1 O2 T3 :4 	5 n6 o7 t8  9 u10 n11 d12 e13 r14  15 d16 o17 n18 e19  20 b21 u22 t23  24 d25 o26 n27 e28  29 j30 u31 s32 t33  34 r35 i36 g37 h38 t39  40 .41 
+
+*MOT:	well it's just that light golden brown across the top (.) .
+line number: 612
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 i11 t12 '13 s14  15 j16 u17 s18 t19  20 t21 h22 a23 t24  25 l26 i27 g28 h29 t30  31 g32 o33 l34 d35 e36 n37  38 b39 r40 o41 w42 n43  44 a45 c46 r47 o48 s49 s50  51 t52 h53 e54  55 t56 o57 p58  59 (60 .61 )62  63 .64 
+
+*MOT:	that's not light golden brown (.) .
+line number: 617
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 n13 o14 t15  16 l17 i18 g19 h20 t21  22 g23 o24 l25 d26 e27 n28  29 b30 r31 o32 w33 n34  35 (36 .37 )38  39 .40 
+
+*MOT:	it's medium golden brown .
+line number: 620
+*0 M1 O2 T3 :4 	5 i6 t7 '8 s9  10 m11 e12 d13 i14 u15 m16  17 g18 o19 l20 d21 e22 n23  24 b25 r26 o27 w28 n29  30 .31 
+
+*FAT:	but it's not burnt .
+line number: 623
+*0 F1 A2 T3 :4 	5 b6 u7 t8  9 i10 t11 '12 s13  14 n15 o16 t17  18 b19 u20 r21 n22 t23  24 .25 
+
+*MOT:	well +...
+line number: 626
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 +11 .12 .13 .14 
+
+*FAT:	the other way the mushy part is supposed to be flaky .
+line number: 629
+*0 F1 A2 T3 :4 	5 t6 h7 e8  9 o10 t11 h12 e13 r14  15 w16 a17 y18  19 t20 h21 e22  23 m24 u25 s26 h27 y28  29 p30 a31 r32 t33  34 i35 s36  37 s38 u39 p40 p41 o42 s43 e44 d45  46 t47 o48  49 b50 e51  52 f53 l54 a55 k56 y57  58 .59 
+
+*MOT:	yeah that's true .
+line number: 634
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 t11 h12 a13 t14 '15 s16  17 t18 r19 u20 e21  22 .23 
+
+*MOT:	I liked it .
+line number: 637
+*0 M1 O2 T3 :4 	5 I6  7 l8 i9 k10 e11 d12  13 i14 t15  16 .17 
+
+*MOT:	true when mushy then I can't separate these little &-uh layers .
+line number: 640
+*0 M1 O2 T3 :4 	5 t6 r7 u8 e9  10 w11 h12 e13 n14  15 m16 u17 s18 h19 y20  21 t22 h23 e24 n25  26 I27  28 c29 a30 n31 '32 t33  34 s35 e36 p37 a38 r39 a40 t41 e42  43 t44 h45 e46 s47 e48  49 l50 i51 t52 t53 l54 e55  56 &57 -58 u59 h60  61 l62 a63 y64 e65 r66 s67  68 .69 
+
+*FAT:	mhm (.) .
+line number: 645
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 (10 .11 )12  13 .14 
+
+*CHI:	those calendars are so good to eat .
+line number: 648
+*0 C1 H2 I3 :4 	5 t6 h7 o8 s9 e10  11 c12 a13 l14 e15 n16 d17 a18 r19 s20  21 a22 r23 e24  25 s26 o27  28 g29 o30 o31 d32  33 t34 o35  36 e37 a38 t39  40 .41 
+
+*FAT:	what ?
+line number: 652
+*0 F1 A2 T3 :4 	5 w6 h7 a8 t9  10 ?11 
+
+*CHI:	those calendars are so good to eat !
+line number: 656
+*0 C1 H2 I3 :4 	5 t6 h7 o8 s9 e10  11 c12 a13 l14 e15 n16 d17 a18 r19 s20  21 a22 r23 e24  25 s26 o27  28 g29 o30 o31 d32  33 t34 o35  36 e37 a38 t39  40 !41 
+
+*FAT:	those calendars ?
+line number: 660
+*0 F1 A2 T3 :4 	5 t6 h7 o8 s9 e10  11 c12 a13 l14 e15 n16 d17 a18 r19 s20  21 ?22 
+
+*MOT:	what this ?
+line number: 664
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 t11 h12 i13 s14  15 ?16 
+
+*MOT:	these barbecued calendars ?
+line number: 668
+*0 M1 O2 T3 :4 	5 t6 h7 e8 s9 e10  11 b12 a13 r14 b15 e16 c17 u18 e19 d20  21 c22 a23 l24 e25 n26 d27 a28 r29 s30  31 ?32 
+
+*CHI:	no I mean that real calendar is good to eat .
+line number: 672
+*0 C1 H2 I3 :4 	5 n6 o7  8 I9  10 m11 e12 a13 n14  15 t16 h17 a18 t19  20 r21 e22 a23 l24  25 c26 a27 l28 e29 n30 d31 a32 r33  34 i35 s36  37 g38 o39 o40 d41  42 t43 o44  45 e46 a47 t48  49 .50 
+
+*FAT:	you want to eat the calendar ?
+line number: 677
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 w10 a11 n12 t13  14 t15 o16  17 e18 a19 t20  21 t22 h23 e24  25 c26 a27 l28 e29 n30 d31 a32 r33  34 ?35 
+
+*MOT:	when did you eat a calendar ?
+line number: 681
+*0 M1 O2 T3 :4 	5 w6 h7 e8 n9  10 d11 i12 d13  14 y15 o16 u17  18 e19 a20 t21  22 a23  24 c25 a26 l27 e28 n29 d30 a31 r32  33 ?34 
+
+*FAT:	<in what> [//] [>] in what month would you start eating ?
+line number: 685
+*0 F1 A2 T3 :4 	5 <6 i7 n8  9 w10 h11 a12 t13 >14  15 [16 /17 /18 ]19  20 [21 >22 ]23  24 i25 n26  27 w28 h29 a30 t31  32 m33 o34 n35 t36 h37  38 w39 o40 u41 l42 d43  44 y45 o46 u47  48 s49 t50 a51 r52 t53  54 e55 a56 t57 i58 n59 g60  61 ?62 
+
+*CHI:	well [<] +...
+line number: 690
+*0 C1 H2 I3 :4 	5 w6 e7 l8 l9  10 [11 <12 ]13  14 +15 .16 .17 .18 
+
+*CHI:	well every time we eat .
+line number: 693
+*0 C1 H2 I3 :4 	5 w6 e7 l8 l9  10 e11 v12 e13 r14 y15  16 t17 i18 m19 e20  21 w22 e23  24 e25 a26 t27  28 .29 
+
+*CHI:	every time people eat .
+line number: 696
+*0 C1 H2 I3 :4 	5 e6 v7 e8 r9 y10  11 t12 i13 m14 e15  16 p17 e18 o19 p20 l21 e22  23 e24 a25 t26  27 .28 
+
+*CHI:	else when people eat .
+line number: 699
+*0 C1 H2 I3 :4 	5 e6 l7 s8 e9  10 w11 h12 e13 n14  15 p16 e17 o18 p19 l20 e21  22 e23 a24 t25  26 .27 
+
+*MOT:	Nathaniel are you sure you don't have_to go to the bath+room ?
+line number: 702
+*0 M1 O2 T3 :4 	5 N6 a7 t8 h9 a10 n11 i12 e13 l14  15 a16 r17 e18  19 y20 o21 u22  23 s24 u25 r26 e27  28 y29 o30 u31  32 d33 o34 n35 '36 t37  38 h39 a40 v41 e42 _43 t44 o45  46 g47 o48  49 t50 o51  52 t53 h54 e55  56 b57 a58 t59 h60 +61 r62 o63 o64 m65  66 ?67 
+
+*CHI:	yeah !
+line number: 709
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 !11 
+
+*CHI:	how +...
+line number: 712
+*0 C1 H2 I3 :4 	5 h6 o7 w8  9 +10 .11 .12 .13 
+
+*MOT:	if you have_to go to the bath+room come back and have food to eat after that .
+line number: 715
+*0 M1 O2 T3 :4 	5 i6 f7  8 y9 o10 u11  12 h13 a14 v15 e16 _17 t18 o19  20 g21 o22  23 t24 o25  26 t27 h28 e29  30 b31 a32 t33 h34 +35 r36 o37 o38 m39  40 c41 o42 m43 e44  45 b46 a47 c48 k49  50 a51 n52 d53  54 h55 a56 v57 e58  59 f60 o61 o62 d63  64 t65 o66  67 e68 a69 t70  71 a72 f73 t74 e75 r76  77 t78 h79 a80 t81  82 .83 
+
+*CHI:	oh .
+line number: 722
+*0 C1 H2 I3 :4 	5 o6 h7  8 .9 
+
+*CHI:	xxx eat .
+line number: 725
+*0 C1 H2 I3 :4 	5 x6 x7 x8  9 e10 a11 t12  13 .14 
+
+*CHI:	zzz .
+line number: 728
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	alright .
+line number: 732
+*0 F1 A2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 .14 
+
+*FAT:	go pee+pee .
+line number: 735
+*0 F1 A2 T3 :4 	5 g6 o7  8 p9 e10 e11 +12 p13 e14 e15  16 .17 
+
+*CHI:	zzz .
+line number: 738
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	that's how they sit Nathaniel down .
+line number: 743
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 h13 o14 w15  16 t17 h18 e19 y20  21 s22 i23 t24  25 N26 a27 t28 h29 a30 n31 i32 e33 l34  35 d36 o37 w38 n39  40 .41 
+
+*MOT:	just to avoid confrontation (.) .
+line number: 747
+*0 M1 O2 T3 :4 	5 j6 u7 s8 t9  10 t11 o12  13 a14 v15 o16 i17 d18  19 c20 o21 n22 f23 r24 o25 n26 t27 a28 t29 i30 o31 n32  33 (34 .35 )36  37 .38 
+
+*MOT:	oh the chicken's xxx .
+line number: 750
+*0 M1 O2 T3 :4 	5 o6 h7  8 t9 h10 e11  12 c13 h14 i15 c16 k17 e18 n19 '20 s21  22 x23 x24 x25  26 .27 
+
+*MOT:	it is overdone but <it's still> [//] it's barbecued .
+line number: 753
+*0 M1 O2 T3 :4 	5 i6 t7  8 i9 s10  11 o12 v13 e14 r15 d16 o17 n18 e19  20 b21 u22 t23  24 <25 i26 t27 '28 s29  30 s31 t32 i33 l34 l35 >36  37 [38 /39 /40 ]41  42 i43 t44 '45 s46  47 b48 a49 r50 b51 e52 c53 u54 e55 d56  57 .58 
+
+*FAT:	yeah .
+line number: 757
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	and it would be very unhealthy to have that like that all the time .
+line number: 760
+*0 M1 O2 T3 :4 	5 a6 n7 d8  9 i10 t11  12 w13 o14 u15 l16 d17  18 b19 e20  21 v22 e23 r24 y25  26 u27 n28 h29 e30 a31 l32 t33 h34 y35  36 t37 o38  39 h40 a41 v42 e43  44 t45 h46 a47 t48  49 l50 i51 k52 e53  54 t55 h56 a57 t58  59 a60 l61 l62  63 t64 h65 e66  67 t68 i69 m70 e71  72 .73 
+
+*CHI:	zzz .
+line number: 766
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	what the hell it's the first day of spring .
+line number: 770
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 t11 h12 e13  14 h15 e16 l17 l18  19 i20 t21 '22 s23  24 t25 h26 e27  28 f29 i30 r31 s32 t33  34 d35 a36 y37  38 o39 f40  41 s42 p43 r44 i45 n46 g47  48 .49 
+
+*FAT:	usually the first barbecue of the year the (.) chicken isn't cooked right it takes a (.) couple times in the warm weather .
+line number: 775
+*0 F1 A2 T3 :4 	5 u6 s7 u8 a9 l10 l11 y12  13 t14 h15 e16  17 f18 i19 r20 s21 t22  23 b24 a25 r26 b27 e28 c29 u30 e31  32 o33 f34  35 t36 h37 e38  39 y40 e41 a42 r43  44 t45 h46 e47  48 (49 .50 )51  52 c53 h54 i55 c56 k57 e58 n59  60 i61 s62 n63 '64 t65  66 c67 o68 o69 k70 e71 d72  73 r74 i75 g76 h77 t78  79 i80 t81  82 t83 a84 k85 e86 s87  88 a89  90 (91 .92 )93  94 c95 o96 u97 p98 l99 e100  101 t102 i103 m104 e105 s106  107 i108 n109  110 t111 h112 e113  114 w115 a116 r117 m118  119 w120 e121 a122 t123 h124 e125 r126  127 .128 
+
+*FAT:	in the warm weather you can still cook it and just stay out there with the barbecue .
+line number: 784
+*0 F1 A2 T3 :4 	5 i6 n7  8 t9 h10 e11  12 w13 a14 r15 m16  17 w18 e19 a20 t21 h22 e23 r24  25 y26 o27 u28  29 c30 a31 n32  33 s34 t35 i36 l37 l38  39 c40 o41 o42 k43  44 i45 t46  47 a48 n49 d50  51 j52 u53 s54 t55  56 s57 t58 a59 y60  61 o62 u63 t64  65 t66 h67 e68 r69 e70  71 w72 i73 t74 h75  76 t77 h78 e79  80 b81 a82 r83 b84 e85 c86 u87 e88  89 .90 
+
+*MOT:	yeah .
+line number: 791
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	in the cold weather you say let's cook this sucker fast .
+line number: 794
+*0 F1 A2 T3 :4 	5 i6 n7  8 t9 h10 e11  12 c13 o14 l15 d16  17 w18 e19 a20 t21 h22 e23 r24  25 y26 o27 u28  29 s30 a31 y32  33 l34 e35 t36 '37 s38  39 c40 o41 o42 k43  44 t45 h46 i47 s48  49 s50 u51 c52 k53 e54 r55  56 f57 a58 s59 t60  61 .62 
+
+*CHI:	0 .
+line number: 799
+*0 C1 H2 I3 :4 	5 06  7 .8 
+
+*CHI:	hi Ma .
+line number: 801
+*0 C1 H2 I3 :4 	5 h6 i7  8 M9 a10  11 .12 
+
+*MOT:	the sky is all overcast and today is the night that I was telling &-uh Melanie about <the sky [/]> [>] .
+line number: 804
+*0 M1 O2 T3 :4 	5 t6 h7 e8  9 s10 k11 y12  13 i14 s15  16 a17 l18 l19  20 o21 v22 e23 r24 c25 a26 s27 t28  29 a30 n31 d32  33 t34 o35 d36 a37 y38  39 i40 s41  42 t43 h44 e45  46 n47 i48 g49 h50 t51  52 t53 h54 a55 t56  57 I58  59 w60 a61 s62  63 t64 e65 l66 l67 i68 n69 g70  71 &72 -73 u74 h75  76 M77 e78 l79 a80 n81 i82 e83  84 a85 b86 o87 u88 t89  90 <91 t92 h93 e94  95 s96 k97 y98  99 [100 /101 ]102 >103  104 [105 >106 ]107  108 .109 
+
+*FAT:	<it's not overcast> [<] .
+line number: 812
+*0 F1 A2 T3 :4 	5 <6 i7 t8 '9 s10  11 n12 o13 t14  15 o16 v17 e18 r19 c20 a21 s22 t23 >24  25 [26 <27 ]28  29 .30 
+
+*MOT:	no ?
+line number: 815
+*0 M1 O2 T3 :4 	5 n6 o7  8 ?9 
+
+*FAT:	no .
+line number: 818
+*0 F1 A2 T3 :4 	5 n6 o7  8 .9 
+
+*MOT:	oh .
+line number: 821
+*0 M1 O2 T3 :4 	5 o6 h7  8 .9 
+
+*MOT:	(bec)ause when I looked out the window up front the sky was all gray [!] .
+line number: 824
+*0 M1 O2 T3 :4 	5 (6 b7 e8 c9 )10 a11 u12 s13 e14  15 w16 h17 e18 n19  20 I21  22 l23 o24 o25 k26 e27 d28  29 o30 u31 t32  33 t34 h35 e36  37 w38 i39 n40 d41 o42 w43  44 u45 p46  47 f48 r49 o50 n51 t52  53 t54 h55 e56  57 s58 k59 y60  61 w62 a63 s64  65 a66 l67 l68  69 g70 r71 a72 y73  74 [75 !76 ]77  78 .79 
+
+*FAT:	we just watched the sun set .
+line number: 830
+*0 F1 A2 T3 :4 	5 w6 e7  8 j9 u10 s11 t12  13 w14 a15 t16 c17 h18 e19 d20  21 t22 h23 e24  25 s26 u27 n28  29 s30 e31 t32  33 .34 
+
+*MOT:	yeah ?
+line number: 833
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 ?11 
+
+*MOT:	xxx [>] .
+line number: 836
+*0 M1 O2 T3 :4 	5 x6 x7 x8  9 [10 >11 ]12  13 .14 
+
+*CHI:	oh good [<] .
+line number: 837
+*0 C1 H2 I3 :4 	5 o6 h7  8 g9 o10 o11 d12  13 [14 <15 ]16  17 .18 
+
+*MOT:	maybe we can go out tonight and see if we can &-uh notice where (.) Mars and Venus (.) and the <Pleiades moon are> [>] .
+line number: 840
+*0 M1 O2 T3 :4 	5 m6 a7 y8 b9 e10  11 w12 e13  14 c15 a16 n17  18 g19 o20  21 o22 u23 t24  25 t26 o27 n28 i29 g30 h31 t32  33 a34 n35 d36  37 s38 e39 e40  41 i42 f43  44 w45 e46  47 c48 a49 n50  51 &52 -53 u54 h55  56 n57 o58 t59 i60 c61 e62  63 w64 h65 e66 r67 e68  69 (70 .71 )72  73 M74 a75 r76 s77  78 a79 n80 d81  82 V83 e84 n85 u86 s87  88 (89 .90 )91  92 a93 n94 d95  96 t97 h98 e99  100 <101 P102 l103 e104 i105 a106 d107 e108 s109  110 m111 o112 o113 n114  115 a116 r117 e118 >119  120 [121 >122 ]123  124 .125 
+
+*CHI:	<&-um come to school and Ma tell them I'm not coming (.) today> [<] .
+line number: 849
+*0 C1 H2 I3 :4 	5 <6 &7 -8 u9 m10  11 c12 o13 m14 e15  16 t17 o18  19 s20 c21 h22 o23 o24 l25  26 a27 n28 d29  30 M31 a32  33 t34 e35 l36 l37  38 t39 h40 e41 m42  43 I44 '45 m46  47 n48 o49 t50  51 c52 o53 m54 i55 n56 g57  58 (59 .60 )61  62 t63 o64 d65 a66 y67 >68  69 [70 <71 ]72  73 .74 
+
+*MOT:	there's no school today .
+line number: 854
+*0 M1 O2 T3 :4 	5 t6 h7 e8 r9 e10 '11 s12  13 n14 o15  16 s17 c18 h19 o20 o21 l22  23 t24 o25 d26 a27 y28  29 .30 
+
+*CHI:	but tell them I'm not coming .
+line number: 857
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 t10 e11 l12 l13  14 t15 h16 e17 m18  19 I20 '21 m22  23 n24 o25 t26  27 c28 o29 m30 i31 n32 g33  34 .35 
+
+*FAT:	there's no one there to answer the phone .
+line number: 861
+*0 F1 A2 T3 :4 	5 t6 h7 e8 r9 e10 '11 s12  13 n14 o15  16 o17 n18 e19  20 t21 h22 e23 r24 e25  26 t27 o28  29 a30 n31 s32 w33 e34 r35  36 t37 h38 e39  40 p41 h42 o43 n44 e45  46 .47 
+
+*FAT:	it's Sunday .
+line number: 866
+*0 F1 A2 T3 :4 	5 i6 t7 '8 s9  10 S11 u12 n13 d14 a15 y16  17 .18 
+
+*FAT:	they're all home eating .
+line number: 869
+*0 F1 A2 T3 :4 	5 t6 h7 e8 y9 '10 r11 e12  13 a14 l15 l16  17 h18 o19 m20 e21  22 e23 a24 t25 i26 n27 g28  29 .30 
+
+*CHI:	even the teachers ?
+line number: 872
+*0 C1 H2 I3 :4 	5 e6 v7 e8 n9  10 t11 h12 e13  14 t15 e16 a17 c18 h19 e20 r21 s22  23 ?24 
+
+*FAT:	even the teachers .
+line number: 876
+*0 F1 A2 T3 :4 	5 e6 v7 e8 n9  10 t11 h12 e13  14 t15 e16 a17 c18 h19 e20 r21 s22  23 .24 
+
+*FAT:	they're not going to go to school when they don't have_to .
+line number: 879
+*0 F1 A2 T3 :4 	5 t6 h7 e8 y9 '10 r11 e12  13 n14 o15 t16  17 g18 o19 i20 n21 g22  23 t24 o25  26 g27 o28  29 t30 o31  32 s33 c34 h35 o36 o37 l38  39 w40 h41 e42 n43  44 t45 h46 e47 y48  49 d50 o51 n52 '53 t54  55 h56 a57 v58 e59 _60 t61 o62  63 .64 
+
+*MOT:	they have families too you know that .
+line number: 884
+*0 M1 O2 T3 :4 	5 t6 h7 e8 y9  10 h11 a12 v13 e14  15 f16 a17 m18 i19 l20 i21 e22 s23  24 t25 o26 o27  28 y29 o30 u31  32 k33 n34 o35 w36  37 t38 h39 a40 t41  42 .43 
+
+*MOT:	you know Gail has a son and Karen has a son .
+line number: 889
+*0 M1 O2 T3 :4 	5 y6 o7 u8  9 k10 n11 o12 w13  14 G15 a16 i17 l18  19 h20 a21 s22  23 a24  25 s26 o27 n28  29 a30 n31 d32  33 K34 a35 r36 e37 n38  39 h40 a41 s42  43 a44  45 s46 o47 n48  49 .50 
+
+*MOT:	blow your nose please .
+line number: 894
+*0 M1 O2 T3 :4 	5 b6 l7 o8 w9  10 y11 o12 u13 r14  15 n16 o17 s18 e19  20 p21 l22 e23 a24 s25 e26  27 .28 
+
+*CHI:	I know his son Christopher .
+line number: 897
+*0 C1 H2 I3 :4 	5 I6  7 k8 n9 o10 w11  12 h13 i14 s15  16 s17 o18 n19  20 C21 h22 r23 i24 s25 t26 o27 p28 h29 e30 r31  32 .33 
+
+*CHI:	he's his son .
+line number: 900
+*0 C1 H2 I3 :4 	5 h6 e7 '8 s9  10 h11 i12 s13  14 s15 o16 n17  18 .19 
+
+*MOT:	blow .
+line number: 903
+*0 M1 O2 T3 :4 	5 b6 l7 o8 w9  10 .11 
+
+*MOT:	that's what I heard it alright .
+line number: 907
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 w13 h14 a15 t16  17 I18  19 h20 e21 a22 r23 d24  25 i26 t27  28 a29 l30 r31 i32 g33 h34 t35  36 .37 
+
+*CHI:	heehee yes .
+line number: 911
+*0 C1 H2 I3 :4 	5 h6 e7 e8 h9 e10 e11  12 y13 e14 s15  16 .17 
+
+*CHI:	that's how you make blow your nose in Nathaniel land .
+line number: 914
+*0 C1 H2 I3 :4 	5 t6 h7 a8 t9 '10 s11  12 h13 o14 w15  16 y17 o18 u19  20 m21 a22 k23 e24  25 b26 l27 o28 w29  30 y31 o32 u33 r34  35 n36 o37 s38 e39  40 i41 n42  43 N44 a45 t46 h47 a48 n49 i50 e51 l52  53 l54 a55 n56 d57  58 .59 
+
+*MOT:	well I think Karen is probably home with Christopher right now .
+line number: 919
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 I11  12 t13 h14 i15 n16 k17  18 K19 a20 r21 e22 n23  24 i25 s26  27 p28 r29 o30 b31 a32 b33 l34 y35  36 h37 o38 m39 e40  41 w42 i43 t44 h45  46 C47 h48 r49 i50 s51 t52 o53 p54 h55 e56 r57  58 r59 i60 g61 h62 t63  64 n65 o66 w67  68 .69 
+
+*CHI:	why ?
+line number: 925
+*0 C1 H2 I3 :4 	5 w6 h7 y8  9 ?10 
+
+*CHI:	Christopher +...
+line number: 929
+*0 C1 H2 I3 :4 	5 C6 h7 r8 i9 s10 t11 o12 p13 h14 e15 r16  17 +18 .19 .20 .21 
+
+*MOT:	well <shouldn't> [/] shouldn't he have his Mummy home with him on one day a week ?
+line number: 932
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 <11 s12 h13 o14 u15 l16 d17 n18 '19 t20 >21  22 [23 /24 ]25  26 s27 h28 o29 u30 l31 d32 n33 '34 t35  36 h37 e38  39 h40 a41 v42 e43  44 h45 i46 s47  48 M49 u50 m51 m52 y53  54 h55 o56 m57 e58  59 w60 i61 t62 h63  64 h65 i66 m67  68 o69 n70  71 o72 n73 e74  75 d76 a77 y78  79 a80  81 w82 e83 e84 k85  86 ?87 
+
+*MOT:	<or two> [>] ?
+line number: 939
+*0 M1 O2 T3 :4 	5 <6 o7 r8  9 t10 w11 o12 >13  14 [15 >16 ]17  18 ?19 
+
+*FAT:	aren't you sad when your Mummy goes to work [<] ?
 line number: 943
-*0 M1 O2 T3 :4 	5 x6 x7 x8  9 f10 u11 l12 l13  14 ?15 
+*0 F1 A2 T3 :4 	5 a6 r7 e8 n9 '10 t11  12 y13 o14 u15  16 s17 a18 d19  20 w21 h22 e23 n24  25 y26 o27 u28 r29  30 M31 u32 m33 m34 y35  36 g37 o38 e39 s40  41 t42 o43  44 w45 o46 r47 k48  49 [50 <51 ]52  53 ?54 
 
-*SIS:	yeah I had that little piece xxx my lunch and when I got_to my drink and when I got_to the end of the salad I was full .
-line number: 946
-*0 S1 I2 S3 :4 	5 y6 e7 a8 h9  10 I11  12 h13 a14 d15  16 t17 h18 a19 t20  21 l22 i23 t24 t25 l26 e27  28 p29 i30 e31 c32 e33  34 x35 x36 x37  38 m39 y40  41 l42 u43 n44 c45 h46  47 a48 n49 d50  51 w52 h53 e54 n55  56 I57  58 g59 o60 t61 _62 t63 o64  65 m66 y67  68 d69 r70 i71 n72 k73  74 a75 n76 d77  78 w79 h80 e81 n82  83 I84  85 g86 o87 t88 _89 t90 o91  92 t93 h94 e95  96 e97 n98 d99  100 o101 f102  103 t104 h105 e106  107 s108 a109 l110 a111 d112  113 I114  115 w116 a117 s118  119 f120 u121 l122 l123  124 .125 
+*CHI:	what ?
+line number: 949
+*0 C1 H2 I3 :4 	5 w6 h7 a8 t9  10 ?11 
 
-*MOT:	your stomach is shrinking .
-line number: 956
-*0 M1 O2 T3 :4 	5 y6 o7 u8 r9  10 s11 t12 o13 m14 a15 c16 h17  18 i19 s20  21 s22 h23 r24 i25 n26 k27 i28 n29 g30  31 .32 
+*FAT:	aren't you sad when your Mummy goes to work ?
+line number: 953
+*0 F1 A2 T3 :4 	5 a6 r7 e8 n9 '10 t11  12 y13 o14 u15  16 s17 a18 d19  20 w21 h22 e23 n24  25 y26 o27 u28 r29  30 M31 u32 m33 m34 y35  36 g37 o38 e39 s40  41 t42 o43  44 w45 o46 r47 k48  49 ?50 
 
-*SIS:	I know .
+*CHI:	no .
 line number: 959
-*0 S1 I2 S3 :4 	5 I6  7 k8 n9 o10 w11  12 .13 
+*0 C1 H2 I3 :4 	5 n6 o7  8 .9 
 
-*MOT:	shrinking on the inside and then after it shrinks on the inside it'll shrink on the outside .
+*MOT:	oh !
 line number: 962
-*0 M1 O2 T3 :4 	5 s6 h7 r8 i9 n10 k11 i12 n13 g14  15 o16 n17  18 t19 h20 e21  22 i23 n24 s25 i26 d27 e28  29 a30 n31 d32  33 t34 h35 e36 n37  38 a39 f40 t41 e42 r43  44 i45 t46  47 s48 h49 r50 i51 n52 k53 s54  55 o56 n57  58 t59 h60 e61  62 i63 n64 s65 i66 d67 e68  69 i70 t71 '72 l73 l74  75 s76 h77 r78 i79 n80 k81  82 o83 n84  85 t86 h87 e88  89 o90 u91 t92 s93 i94 d95 e96  97 .98 
+*0 M1 O2 T3 :4 	5 o6 h7  8 !9 
 
-*SIS:	good !
+*CHI:	I get the toy (.) that doesn't talk .
+line number: 965
+*0 C1 H2 I3 :4 	5 I6  7 g8 e9 t10  11 t12 h13 e14  15 t16 o17 y18  19 (20 .21 )22  23 t24 h25 a26 t27  28 d29 o30 e31 s32 n33 '34 t35  36 t37 a38 l39 k40  41 .42 
+
+*FAT:	yeah [>] .
 line number: 970
-*0 S1 I2 S3 :4 	5 g6 o7 o8 d9  10 !11 
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 [11 >12 ]13  14 .15 
 
-*JAK:	I'm all done !
-line number: 974
-*0 J1 A2 K3 :4 	5 I6 '7 m8  9 a10 l11 l12  13 d14 o15 n16 e17  18 !19 
+*CHI:	if [<] you wind th(is) [//] this thing in back of your toy it will talk .
+line number: 973
+*0 C1 H2 I3 :4 	5 i6 f7  8 [9 <10 ]11  12 y13 o14 u15  16 w17 i18 n19 d20  21 t22 h23 (24 i25 s26 )27  28 [29 /30 /31 ]32  33 t34 h35 i36 s37  38 t39 h40 i41 n42 g43  44 i45 n46  47 b48 a49 c50 k51  52 o53 f54  55 y56 o57 u58 r59  60 t61 o62 y63  64 i65 t66  67 w68 i69 l70 l71  72 t73 a74 l75 k76  77 .78 
 
-*CHI:	I don't want this .
+*MOT:	I'll wait (un)til after dinner then .
 line number: 978
-*0 C1 H2 I3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 t19 h20 i21 s22  23 .24 
+*0 M1 O2 T3 :4 	5 I6 '7 l8 l9  10 w11 a12 i13 t14  15 (16 u17 n18 )19 t20 i21 l22  23 a24 f25 t26 e27 r28  29 d30 i31 n32 n33 e34 r35  36 t37 h38 e39 n40  41 .42 
 
-*JAK:	I don't want this .
+*MOT:	<I> [/] I wanted to talk too much instead of eating .
 line number: 982
-*0 J1 A2 K3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 t19 h20 i21 s22  23 .24 
+*0 M1 O2 T3 :4 	5 <6 I7 >8  9 [10 /11 ]12  13 I14  15 w16 a17 n18 t19 e20 d21  22 t23 o24  25 t26 a27 l28 k29  30 t31 o32 o33  34 m35 u36 c37 h38  39 i40 n41 s42 t43 e44 a45 d46  47 o48 f49  50 e51 a52 t53 i54 n55 g56  57 .58 
 
-*MOT:	yes you can eat some more .
-line number: 985
-*0 M1 O2 T3 :4 	5 y6 e7 s8  9 y10 o11 u12  13 c14 a15 n16  17 e18 a19 t20  21 s22 o23 m24 e25  26 m27 o28 r29 e30  31 .32 
+*CHI:	hi [<] .
+line number: 987
+*0 C1 H2 I3 :4 	5 h6 i7  8 [9 <10 ]11  12 .13 
 
-*CHI:	hm: .
-line number: 988
-*0 C1 H2 I3 :4 	5 h6 m7 :8  9 .10 
+*CHI:	it's Judy [?] .
+line number: 990
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 J11 u12 d13 y14  15 [16 ?17 ]18  19 .20 
 
-*JAK:	I don't wan(t) (t)a .
-line number: 991
-*0 J1 A2 K3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 (17 t18 )19  20 (21 t22 )23 a24  25 .26 
+*CHI:	zzz .
+line number: 993
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
 
-*MOT:	you did alright but couldn't you eat a little more ?
-line number: 994
-*0 M1 O2 T3 :4 	5 y6 o7 u8  9 d10 i11 d12  13 a14 l15 r16 i17 g18 h19 t20  21 b22 u23 t24  25 c26 o27 u28 l29 d30 n31 '32 t33  34 y35 o36 u37  38 e39 a40 t41  42 a43  44 l45 i46 t47 t48 l49 e50  51 m52 o53 r54 e55  56 ?57 
+*FAT:	<okay eat up> [>] .
+line number: 997
+*0 F1 A2 T3 :4 	5 <6 o7 k8 a9 y10  11 e12 a13 t14  15 u16 p17 >18  19 [20 >21 ]22  23 .24 
 
-*JAK:	no .
+*CHI:	zzz [<] .
 line number: 1000
-*0 J1 A2 K3 :4 	5 n6 o7  8 .9 
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 [10 <11 ]12  13 .14 
 
-*MOT:	a couple more bites (.) ?
-line number: 1003
-*0 M1 O2 T3 :4 	5 a6  7 c8 o9 u10 p11 l12 e13  14 m15 o16 r17 e18  19 b20 i21 t22 e23 s24  25 (26 .27 )28  29 ?30 
+*FAT:	no toys at our table .
+line number: 1004
+*0 F1 A2 T3 :4 	5 n6 o7  8 t9 o10 y11 s12  13 a14 t15  16 o17 u18 r19  20 t21 a22 b23 l24 e25  26 .27 
 
-*CHI:	I don't want more .
+*CHI:	what ?
 line number: 1007
-*0 C1 H2 I3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 m19 o20 r21 e22  23 .24 
+*0 C1 H2 I3 :4 	5 w6 h7 a8 t9  10 ?11 
 
-*CHI:	could I <have a> [>] [/] .
-line number: 1010
-*0 C1 H2 I3 :4 	5 c6 o7 u8 l9 d10  11 I12  13 <14 h15 a16 v17 e18  19 a20 >21  22 [23 >24 ]25  26 [27 /28 ]29  30 .31 
+*FAT:	no toys at our table .
+line number: 1011
+*0 F1 A2 T3 :4 	5 n6 o7  8 t9 o10 y11 s12  13 a14 t15  16 o17 u18 r19  20 t21 a22 b23 l24 e25  26 .27 
 
-*MOT:	<alright> [<] Conner go wash up then .
-line number: 1014
-*0 M1 O2 T3 :4 	5 <6 a7 l8 r9 i10 g11 h12 t13 >14  15 [16 <17 ]18  19 C20 o21 n22 n23 e24 r25  26 g27 o28  29 w30 a31 s32 h33  34 u35 p36  37 t38 h39 e40 n41  42 .43 
+*CHI:	oh .
+line number: 1015
+*0 C1 H2 I3 :4 	5 o6 h7  8 .9 
 
-*JAK:	I don't want mine Ma I don't want it .
-line number: 1017
-*0 J1 A2 K3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 m19 i20 n21 e22  23 M24 a25  26 I27  28 d29 o30 n31 '32 t33  34 w35 a36 n37 t38  39 i40 t41  42 .43 
+*CHI:	I didn't play any toy at our table .
+line number: 1018
+*0 C1 H2 I3 :4 	5 I6  7 d8 i9 d10 n11 '12 t13  14 p15 l16 a17 y18  19 a20 n21 y22  23 t24 o25 y26  27 a28 t29  30 o31 u32 r33  34 t35 a36 b37 l38 e39  40 .41 
 
-*CHI:	Jake you <didn't eat salad> [>] .
+*CHI:	not me .
 line number: 1023
-*0 C1 H2 I3 :4 	5 J6 a7 k8 e9  10 y11 o12 u13  14 <15 d16 i17 d18 n19 '20 t21  22 e23 a24 t25  26 s27 a28 l29 a30 d31 >32  33 [34 >35 ]36  37 .38 
+*0 C1 H2 I3 :4 	5 n6 o7 t8  9 m10 e11  12 .13 
 
-*MOT:	<this is a big tomato> [<] .
+*MOT:	Dylan's in his last minute thing again .
 line number: 1028
-*0 M1 O2 T3 :4 	5 <6 t7 h8 i9 s10  11 i12 s13  14 a15  16 b17 i18 g19  20 t21 o22 m23 a24 t25 o26 >27  28 [29 <30 ]31  32 .33 
+*0 M1 O2 T3 :4 	5 D6 y7 l8 a9 n10 '11 s12  13 i14 n15  16 h17 i18 s19  20 l21 a22 s23 t24  25 m26 i27 n28 u29 t30 e31  32 t33 h34 i35 n36 g37  38 a39 g40 a41 i42 n43  44 .45 
 
-*JAK:	I did a <I eat the> [/] <I eat the> [//] I eat that right here .
-line number: 1031
-*0 J1 A2 K3 :4 	5 I6  7 d8 i9 d10  11 a12  13 <14 I15  16 e17 a18 t19  20 t21 h22 e23 >24  25 [26 /27 ]28  29 <30 I31  32 e33 a34 t35  36 t37 h38 e39 >40  41 [42 /43 /44 ]45  46 I47  48 e49 a50 t51  52 t53 h54 a55 t56  57 r58 i59 g60 h61 t62  63 h64 e65 r66 e67  68 .69 
+*MOT:	&-um (.) he said he couldn't use the emotional side because he [//] his part of the xxx was &-um (.) very specific .
+line number: 1034
+*0 M1 O2 T3 :4 	5 &6 -7 u8 m9  10 (11 .12 )13  14 h15 e16  17 s18 a19 i20 d21  22 h23 e24  25 c26 o27 u28 l29 d30 n31 '32 t33  34 u35 s36 e37  38 t39 h40 e41  42 e43 m44 o45 t46 i47 o48 n49 a50 l51  52 s53 i54 d55 e56  57 b58 e59 c60 a61 u62 s63 e64  65 h66 e67  68 [69 /70 /71 ]72  73 h74 i75 s76  77 p78 a79 r80 t81  82 o83 f84  85 t86 h87 e88  89 x90 x91 x92  93 w94 a95 s96  97 &98 -99 u100 m101  102 (103 .104 )105  106 v107 e108 r109 y110  111 s112 p113 e114 c115 i116 f117 i118 c119  120 .121 
 
-*JAK:	xxx .
-line number: 1036
-*0 J1 A2 K3 :4 	5 x6 x7 x8  9 .10 
-
-*JAK:	<I eat that right there> [>] .
-line number: 1037
-*0 J1 A2 K3 :4 	5 <6 I7  8 e9 a10 t11  12 t13 h14 a15 t16  17 r18 i19 g20 h21 t22  23 t24 h25 e26 r27 e28 >29  30 [31 >32 ]33  34 .35 
-
-*MOT:	<xxx you have_to eat some more> [<] .
+*FAT:	wh(at) +/.
 line number: 1041
-*0 M1 O2 T3 :4 	5 <6 x7 x8 x9  10 y11 o12 u13  14 h15 a16 v17 e18 _19 t20 o21  22 e23 a24 t25  26 s27 o28 m29 e30  31 m32 o33 r34 e35 >36  37 [38 <39 ]40  41 .42 
+*0 F1 A2 T3 :4 	5 w6 h7 (8 a9 t10 )11  12 +13 /14 .15 
 
-*JAK:	xxx no !
+*MOT:	it was on the economics of it .
 line number: 1044
-*0 J1 A2 K3 :4 	5 x6 x7 x8  9 n10 o11  12 !13 
+*0 M1 O2 T3 :4 	5 i6 t7  8 w9 a10 s11  12 o13 n14  15 t16 h17 e18  19 e20 c21 o22 n23 o24 m25 i26 c27 s28  29 o30 f31  32 i33 t34  35 .36 
 
-*CHI:	<yeah> [>] !
+*MOT:	Brendan [?] you really should have done (.) this before .
 line number: 1048
-*0 C1 H2 I3 :4 	5 <6 y7 e8 a9 h10 >11  12 [13 >14 ]15  16 !17 
+*0 M1 O2 T3 :4 	5 B6 r7 e8 n9 d10 a11 n12  13 [14 ?15 ]16  17 y18 o19 u20  21 r22 e23 a24 l25 l26 y27  28 s29 h30 o31 u32 l33 d34  35 h36 a37 v38 e39  40 d41 o42 n43 e44  45 (46 .47 )48  49 t50 h51 i52 s53  54 b55 e56 f57 o58 r59 e60  61 .62 
 
-*JAK:	<no but I have> [<] a belly ache !
-line number: 1052
-*0 J1 A2 K3 :4 	5 <6 n7 o8  9 b10 u11 t12  13 I14  15 h16 a17 v18 e19 >20  21 [22 <23 ]24  25 a26  27 b28 e29 l30 l31 y32  33 a34 c35 h36 e37  38 !39 
+*CHI:	see ?
+line number: 1054
+*0 C1 H2 I3 :4 	5 s6 e7 e8  9 ?10 
 
-*MOT:	why don't you go blow your nose .
-line number: 1056
-*0 M1 O2 T3 :4 	5 w6 h7 y8  9 d10 o11 n12 '13 t14  15 y16 o17 u18  19 g20 o21  22 b23 l24 o25 w26  27 y28 o29 u30 r31  32 n33 o34 s35 e36  37 .38 
+*CHI:	<what do they> [//] what are those things called when +/.
+line number: 1058
+*0 C1 H2 I3 :4 	5 <6 w7 h8 a9 t10  11 d12 o13  14 t15 h16 e17 y18 >19  20 [21 /22 /23 ]24  25 w26 h27 a28 t29  30 a31 r32 e33  34 t35 h36 o37 s38 e39  40 t41 h42 i43 n44 g45 s46  47 c48 a49 l50 l51 e52 d53  54 w55 h56 e57 n58  59 +60 /61 .62 
 
-*JAK:	I'm all done !
-line number: 1061
-*0 J1 A2 K3 :4 	5 I6 '7 m8  9 a10 l11 l12  13 d14 o15 n16 e17  18 !19 
+*FAT:	don't put that near your ear .
+line number: 1062
+*0 F1 A2 T3 :4 	5 d6 o7 n8 '9 t10  11 p12 u13 t14  15 t16 h17 a18 t19  20 n21 e22 a23 r24  25 y26 o27 u28 r29  30 e31 a32 r33  34 .35 
 
-*CHI:	no you're not .
-line number: 1065
-*0 C1 H2 I3 :4 	5 n6 o7  8 y9 o10 u11 '12 r13 e14  15 n16 o17 t18  19 .20 
+*FAT:	that's very sharp .
+line number: 1066
+*0 F1 A2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 v13 e14 r15 y16  17 s18 h19 a20 r21 p22  23 .24 
 
-*JAK:	yes am !
-line number: 1069
-*0 J1 A2 K3 :4 	5 y6 e7 s8  9 a10 m11  12 !13 
+*CHI:	oh .
+line number: 1070
+*0 C1 H2 I3 :4 	5 o6 h7  8 .9 
 
-*MOT:	Conner you stay out of this .
-line number: 1074
-*0 M1 O2 T3 :4 	5 C6 o7 n8 n9 e10 r11  12 y13 o14 u15  16 s17 t18 a19 y20  21 o22 u23 t24  25 o26 f27  28 t29 h30 i31 s32  33 .34 
+*MOT:	oh yuck .
+line number: 1073
+*0 M1 O2 T3 :4 	5 o6 h7  8 y9 u10 c11 k12  13 .14 
 
-*MOT:	Jake go blow your nose and we'll see maybe your belly will have more room after that .
-line number: 1078
-*0 M1 O2 T3 :4 	5 J6 a7 k8 e9  10 g11 o12  13 b14 l15 o16 w17  18 y19 o20 u21 r22  23 n24 o25 s26 e27  28 a29 n30 d31  32 w33 e34 '35 l36 l37  38 s39 e40 e41  42 m43 a44 y45 b46 e47  48 y49 o50 u51 r52  53 b54 e55 l56 l57 y58  59 w60 i61 l62 l63  64 h65 a66 v67 e68  69 m70 o71 r72 e73  74 r75 o76 o77 m78  79 a80 f81 t82 e83 r84  85 t86 h87 a88 t89  90 .91 
+*CHI:	now this is there goes up here .
+line number: 1077
+*0 C1 H2 I3 :4 	5 n6 o7 w8  9 t10 h11 i12 s13  14 i15 s16  17 t18 h19 e20 r21 e22  23 g24 o25 e26 s27  28 u29 p30  31 h32 e33 r34 e35  36 .37 
 
-*JAK:	no !
-line number: 1086
-*0 J1 A2 K3 :4 	5 n6 o7  8 !9 
+*FAT:	I don't want +...
+line number: 1080
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 +19 .20 .21 .22 
 
-*JAK:	no !
-line number: 1090
-*0 J1 A2 K3 :4 	5 n6 o7  8 !9 
+*MOT:	Nathaniel no .
+line number: 1084
+*0 M1 O2 T3 :4 	5 N6 a7 t8 h9 a10 n11 i12 e13 l14  15 n16 o17  18 .19 
 
-*SIS:	you haven't eat anything .
-line number: 1094
-*0 S1 I2 S3 :4 	5 y6 o7 u8  9 h10 a11 v12 e13 n14 '15 t16  17 e18 a19 t20  21 a22 n23 y24 t25 h26 i27 n28 g29  30 .31 
+*MOT:	don't swing your head around while you're eating .
+line number: 1087
+*0 M1 O2 T3 :4 	5 d6 o7 n8 '9 t10  11 s12 w13 i14 n15 g16  17 y18 o19 u20 r21  22 h23 e24 a25 d26  27 a28 r29 o30 u31 n32 d33  34 w35 h36 i37 l38 e39  40 y41 o42 u43 '44 r45 e46  47 e48 a49 t50 i51 n52 g53  54 .55 
 
-*MOT:	did you wash your face <Conner> [>] ?
-line number: 1098
-*0 M1 O2 T3 :4 	5 d6 i7 d8  9 y10 o11 u12  13 w14 a15 s16 h17  18 y19 o20 u21 r22  23 f24 a25 c26 e27  28 <29 C30 o31 n32 n33 e34 r35 >36  37 [38 >39 ]40  41 ?42 
+*FAT:	(a)re you drinking your Quick ?
+line number: 1092
+*0 F1 A2 T3 :4 	5 (6 a7 )8 r9 e10  11 y12 o13 u14  15 d16 r17 i18 n19 k20 i21 n22 g23  24 y25 o26 u27 r28  29 Q30 u31 i32 c33 k34  35 ?36 
 
-*JAK:	<yeah I did [!]> [<] I eat one right here and one right there and <one right here> [>] .
-line number: 1102
-*0 J1 A2 K3 :4 	5 <6 y7 e8 a9 h10  11 I12  13 d14 i15 d16  17 [18 !19 ]20 >21  22 [23 <24 ]25  26 I27  28 e29 a30 t31  32 o33 n34 e35  36 r37 i38 g39 h40 t41  42 h43 e44 r45 e46  47 a48 n49 d50  51 o52 n53 e54  55 r56 i57 g58 h59 t60  61 t62 h63 e64 r65 e66  67 a68 n69 d70  71 <72 o73 n74 e75  76 r77 i78 g79 h80 t81  82 h83 e84 r85 e86 >87  88 [89 >90 ]91  92 .93 
+*CHI:	but [/] but I'm eating .
+line number: 1097
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 [10 /11 ]12  13 b14 u15 t16  17 I18 '19 m20  21 e22 a23 t24 i25 n26 g27  28 .29 
 
-*SIS:	<xxx> [<] I got xxx eat on your face Jake .
-line number: 1110
-*0 S1 I2 S3 :4 	5 <6 x7 x8 x9 >10  11 [12 <13 ]14  15 I16  17 g18 o19 t20  21 x22 x23 x24  25 e26 a27 t28  29 o30 n31  32 y33 o34 u35 r36  37 f38 a39 c40 e41  42 J43 a44 k45 e46  47 .48 
+*FAT:	I mean between [!] bites .
+line number: 1100
+*0 F1 A2 T3 :4 	5 I6  7 m8 e9 a10 n11  12 b13 e14 t15 w16 e17 e18 n19  20 [21 !22 ]23  24 b25 i26 t27 e28 s29  30 .31 
 
-*SIS:	one right here one right here and one right here .
-line number: 1114
-*0 S1 I2 S3 :4 	5 o6 n7 e8  9 r10 i11 g12 h13 t14  15 h16 e17 r18 e19  20 o21 n22 e23  24 r25 i26 g27 h28 t29  30 h31 e32 r33 e34  35 a36 n37 d38  39 o40 n41 e42  43 r44 i45 g46 h47 t48  49 h50 e51 r52 e53  54 .55 
+*MOT:	no swinging the head .
+line number: 1103
+*0 M1 O2 T3 :4 	5 n6 o7  8 s9 w10 i11 n12 g13 i14 n15 g16  17 t18 h19 e20  21 h22 e23 a24 d25  26 .27 
 
-*JAK:	no .
-line number: 1120
-*0 J1 A2 K3 :4 	5 n6 o7  8 .9 
+*MOT:	<Daddy [/]> [>] .
+line number: 1106
+*0 M1 O2 T3 :4 	5 <6 D7 a8 d9 d10 y11  12 [13 /14 ]15 >16  17 [18 >19 ]20  21 .22 
 
-*JAK:	one right here and one right here and one right here !
+*FAT:	<and so what did you think of the presents that Mac and Melanie gave you> [<] .
+line number: 1108
+*0 F1 A2 T3 :4 	5 <6 a7 n8 d9  10 s11 o12  13 w14 h15 a16 t17  18 d19 i20 d21  22 y23 o24 u25  26 t27 h28 i29 n30 k31  32 o33 f34  35 t36 h37 e38  39 p40 r41 e42 s43 e44 n45 t46 s47  48 t49 h50 a51 t52  53 M54 a55 c56  57 a58 n59 d60  61 M62 e63 l64 a65 n66 i67 e68  69 g70 a71 v72 e73  74 y75 o76 u77 >78  79 [80 <81 ]82  83 .84 
+
+*CHI:	they're good .
+line number: 1115
+*0 C1 H2 I3 :4 	5 t6 h7 e8 y9 '10 r11 e12  13 g14 o15 o16 d17  18 .19 
+
+*CHI:	well at least I didn't know they gave presents to people .
+line number: 1118
+*0 C1 H2 I3 :4 	5 w6 e7 l8 l9  10 a11 t12  13 l14 e15 a16 s17 t18  19 I20  21 d22 i23 d24 n25 '26 t27  28 k29 n30 o31 w32  33 t34 h35 e36 y37  38 g39 a40 v41 e42  43 p44 r45 e46 s47 e48 n49 t50 s51  52 t53 o54  55 p56 e57 o58 p59 l60 e61  62 .63 
+
+*MOT:	zzz .
 line number: 1123
-*0 J1 A2 K3 :4 	5 o6 n7 e8  9 r10 i11 g12 h13 t14  15 h16 e17 r18 e19  20 a21 n22 d23  24 o25 n26 e27  28 r29 i30 g31 h32 t33  34 h35 e36 r37 e38  39 a40 n41 d42  43 o44 n45 e46  47 r48 i49 g50 h51 t52  53 h54 e55 r56 e57  58 !59 
+*0 M1 O2 T3 :4 	5 z6 z7 z8  9 .10 
 
-*MOT:	how many does that make ?
-line number: 1129
-*0 M1 O2 T3 :4 	5 h6 o7 w8  9 m10 a11 n12 y13  14 d15 o16 e17 s18  19 t20 h21 a22 t23  24 m25 a26 k27 e28  29 ?30 
+*FAT:	well we didn't see them at Christmas time .
+line number: 1128
+*0 F1 A2 T3 :4 	5 w6 e7 l8 l9  10 w11 e12  13 d14 i15 d16 n17 '18 t19  20 s21 e22 e23  24 t25 h26 e27 m28  29 a30 t31  32 C33 h34 r35 i36 s37 t38 m39 a40 s41  42 t43 i44 m45 e46  47 .48 
 
-*JAK:	three .
-line number: 1134
-*0 J1 A2 K3 :4 	5 t6 h7 r8 e9 e10  11 .12 
+*CHI:	why ?
+line number: 1133
+*0 C1 H2 I3 :4 	5 w6 h7 y8  9 ?10 
 
-*JAK:	that's <all> [>] .
+*FAT:	because every time they were going to come down here they had snow (.) and every time we were going to go up there the weather was bad (.) so we had to wait (un)til yesterday to see them and so <we gave> [/] we gave Michael his birthday present (be)cause we gave them their Christmas present before Christmas <xxx [/]> [>] .
 line number: 1137
-*0 J1 A2 K3 :4 	5 t6 h7 a8 t9 '10 s11  12 <13 a14 l15 l16 >17  18 [19 >20 ]21  22 .23 
+*0 F1 A2 T3 :4 	5 b6 e7 c8 a9 u10 s11 e12  13 e14 v15 e16 r17 y18  19 t20 i21 m22 e23  24 t25 h26 e27 y28  29 w30 e31 r32 e33  34 g35 o36 i37 n38 g39  40 t41 o42  43 c44 o45 m46 e47  48 d49 o50 w51 n52  53 h54 e55 r56 e57  58 t59 h60 e61 y62  63 h64 a65 d66  67 s68 n69 o70 w71  72 (73 .74 )75  76 a77 n78 d79  80 e81 v82 e83 r84 y85  86 t87 i88 m89 e90  91 w92 e93  94 w95 e96 r97 e98  99 g100 o101 i102 n103 g104  105 t106 o107  108 g109 o110  111 u112 p113  114 t115 h116 e117 r118 e119  120 t121 h122 e123  124 w125 e126 a127 t128 h129 e130 r131  132 w133 a134 s135  136 b137 a138 d139  140 (141 .142 )143  144 s145 o146  147 w148 e149  150 h151 a152 d153  154 t155 o156  157 w158 a159 i160 t161  162 (163 u164 n165 )166 t167 i168 l169  170 y171 e172 s173 t174 e175 r176 d177 a178 y179  180 t181 o182  183 s184 e185 e186  187 t188 h189 e190 m191  192 a193 n194 d195  196 s197 o198  199 <200 w201 e202  203 g204 a205 v206 e207 >208  209 [210 /211 ]212  213 w214 e215  216 g217 a218 v219 e220  221 M222 i223 c224 h225 a226 e227 l228  229 h230 i231 s232  233 b234 i235 r236 t237 h238 d239 a240 y241  242 p243 r244 e245 s246 e247 n248 t249  250 (251 b252 e253 )254 c255 a256 u257 s258 e259  260 w261 e262  263 g264 a265 v266 e267  268 t269 h270 e271 m272  273 t274 h275 e276 i277 r278  279 C280 h281 r282 i283 s284 t285 m286 a287 s288  289 p290 r291 e292 s293 e294 n295 t296  297 b298 e299 f300 o301 r302 e303  304 C305 h306 r307 i308 s309 t310 m311 a312 s313  314 <315 x316 x317 x318  319 [320 /321 ]322 >323  324 [325 >326 ]327  328 .329 
 
-*MOT:	<how about> [<] three more then ?
-line number: 1141
-*0 M1 O2 T3 :4 	5 <6 h7 o8 w9  10 a11 b12 o13 u14 t15 >16  17 [18 <19 ]20  21 t22 h23 r24 e25 e26  27 m28 o29 r30 e31  32 t33 h34 e35 n36  37 ?38 
+*CHI:	and we're their friends .
+line number: 1156
+*0 C1 H2 I3 :4 	5 a6 n7 d8  9 w10 e11 '12 r13 e14  15 t16 h17 e18 i19 r20  21 f22 r23 i24 e25 n26 d27 s28  29 .30 
 
-*JAK:	don't wan(t) (t)a !
-line number: 1145
-*0 J1 A2 K3 :4 	5 d6 o7 n8 '9 t10  11 w12 a13 n14 (15 t16 )17  18 (19 t20 )21 a22  23 !24 
+*FAT:	yeah .
+line number: 1159
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
 
-*JAK:	one more !
-line number: 1148
-*0 J1 A2 K3 :4 	5 o6 n7 e8  9 m10 o11 r12 e13  14 !15 
+*CHI:	but at least I didn't give Melanie a present .
+line number: 1163
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 a10 t11  12 l13 e14 a15 s16 t17  18 I19  20 d21 i22 d23 n24 '25 t26  27 g28 i29 v30 e31  32 M33 e34 l35 a36 n37 i38 e39  40 a41  42 p43 r44 e45 s46 e47 n48 t49  50 .51 
 
-*JAK:	one more !
-line number: 1152
-*0 J1 A2 K3 :4 	5 o6 n7 e8  9 m10 o11 r12 e13  14 !15 
+*FAT:	we (.) well [/] .
+line number: 1168
+*0 F1 A2 T3 :4 	5 w6 e7  8 (9 .10 )11  12 w13 e14 l15 l16  17 [18 /19 ]20  21 .22 
 
-*MOT:	<three more> [>] .
-line number: 1155
-*0 M1 O2 T3 :4 	5 <6 t7 h8 r9 e10 e11  12 m13 o14 r15 e16 >17  18 [19 >20 ]21  22 .23 
-
-*JAK:	<one more> [<] !
-line number: 1158
-*0 J1 A2 K3 :4 	5 <6 o7 n8 e9  10 m11 o12 r13 e14 >15  16 [17 <18 ]19  20 !21 
-
-*MOT:	one more then go blow your nose and come back and have three more .
-line number: 1161
-*0 M1 O2 T3 :4 	5 o6 n7 e8  9 m10 o11 r12 e13  14 t15 h16 e17 n18  19 g20 o21  22 b23 l24 o25 w26  27 y28 o29 u30 r31  32 n33 o34 s35 e36  37 a38 n39 d40  41 c42 o43 m44 e45  46 b47 a48 c49 k50  51 a52 n53 d54  55 h56 a57 v58 e59  60 t61 h62 r63 e64 e65  66 m67 o68 r69 e70  71 .72 
-
-*JAK:	no .
-line number: 1166
-*0 J1 A2 K3 :4 	5 n6 o7  8 .9 
-
-*JAK:	zzz .
+*MOT:	we gave her her birthday present Honey in August when she had her birthday .
 line number: 1171
-*0 J1 A2 K3 :4 	5 z6 z7 z8  9 .10 
+*0 M1 O2 T3 :4 	5 w6 e7  8 g9 a10 v11 e12  13 h14 e15 r16  17 h18 e19 r20  21 b22 i23 r24 t25 h26 d27 a28 y29  30 p31 r32 e33 s34 e35 n36 t37  38 H39 o40 n41 e42 y43  44 i45 n46  47 A48 u49 g50 u51 s52 t53  54 w55 h56 e57 n58  59 s60 h61 e62  63 h64 a65 d66  67 h68 e69 r70  71 b72 i73 r74 t75 h76 d77 a78 y79  80 .81 
 
-*JAK:	pretend crying .
-line number: 1174
-*0 J1 A2 K3 :4 	5 p6 r7 e8 t9 e10 n11 d12  13 c14 r15 y16 i17 n18 g19  20 .21 
-
-*MOT:	Jake !
+*FAT:	and we gave her her Christmas present before Christmas and what they gave you was your Christmas present yesterday .
 line number: 1177
-*0 M1 O2 T3 :4 	5 J6 a7 k8 e9  10 !11 
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 w10 e11  12 g13 a14 v15 e16  17 h18 e19 r20  21 h22 e23 r24  25 C26 h27 r28 i29 s30 t31 m32 a33 s34  35 p36 r37 e38 s39 e40 n41 t42  43 b44 e45 f46 o47 r48 e49  50 C51 h52 r53 i54 s55 t56 m57 a58 s59  60 a61 n62 d63  64 w65 h66 a67 t68  69 t70 h71 e72 y73  74 g75 a76 v77 e78  79 y80 o81 u82  83 w84 a85 s86  87 y88 o89 u90 r91  92 C93 h94 r95 i96 s97 t98 m99 a100 s101  102 p103 r104 e105 s106 e107 n108 t109  110 y111 e112 s113 t114 e115 r116 d117 a118 y119  120 .121 
 
-*MOT:	alright eat one more and go blow your nose .
-line number: 1180
-*0 M1 O2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 e14 a15 t16  17 o18 n19 e20  21 m22 o23 r24 e25  26 a27 n28 d29  30 g31 o32  33 b34 l35 o36 w37  38 y39 o40 u41 r42  43 n44 o45 s46 e47  48 .49 
-
-*JAK:	xxx I don't want to eat no more .
+*MOT:	but Michael's birthday was in January .
 line number: 1185
-*0 J1 A2 K3 :4 	5 x6 x7 x8  9 I10  11 d12 o13 n14 '15 t16  17 w18 a19 n20 t21  22 t23 o24  25 e26 a27 t28  29 n30 o31  32 m33 o34 r35 e36  37 .38 
+*0 M1 O2 T3 :4 	5 b6 u7 t8  9 M10 i11 c12 h13 a14 e15 l16 '17 s18  19 b20 i21 r22 t23 h24 d25 a26 y27  28 w29 a30 s31  32 i33 n34  35 J36 a37 n38 u39 a40 r41 y42  43 .44 
 
-*MOT:	well then I'm gonna save it for lunch tomorrow .
+*FAT:	yeah .
 line number: 1189
-*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 t11 h12 e13 n14  15 I16 '17 m18  19 g20 o21 n22 n23 a24  25 s26 a27 v28 e29  30 i31 t32  33 f34 o35 r36  37 l38 u39 n40 c41 h42  43 t44 o45 m46 o47 r48 r49 o50 w51  52 .53 
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
 
-*JAK:	okay .
-line number: 1194
-*0 J1 A2 K3 :4 	5 o6 k7 a8 y9  10 .11 
+*MOT:	and we never saw him in January so that's why he got his present yesterday .
+line number: 1192
+*0 M1 O2 T3 :4 	5 a6 n7 d8  9 w10 e11  12 n13 e14 v15 e16 r17  18 s19 a20 w21  22 h23 i24 m25  26 i27 n28  29 J30 a31 n32 u33 a34 r35 y36  37 s38 o39  40 t41 h42 a43 t44 '45 s46  47 w48 h49 y50  51 h52 e53  54 g55 o56 t57  58 h59 i60 s61  62 p63 r64 e65 s66 e67 n68 t69  70 y71 e72 s73 t74 e75 r76 d77 a78 y79  80 .81 
 
-*MOT:	wash your hands and face too .
-line number: 1197
-*0 M1 O2 T3 :4 	5 w6 a7 s8 h9  10 y11 o12 u13 r14  15 h16 a17 n18 d19 s20  21 a22 n23 d24  25 f26 a27 c28 e29  30 t31 o32 o33  34 .35 
+*MOT:	Melanie remembers that we gave her present before .
+line number: 1199
+*0 M1 O2 T3 :4 	5 M6 e7 l8 a9 n10 i11 e12  13 r14 e15 m16 e17 m18 b19 e20 r21 s22  23 t24 h25 a26 t27  28 w29 e30  31 g32 a33 v34 e35  36 h37 e38 r39  40 p41 r42 e43 s44 e45 n46 t47  48 b49 e50 f51 o52 r53 e54  55 .56 
+
+*CHI:	but they didn't give me a <pr(esent)> [/] present on my [!] birthday .
+line number: 1204
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 t10 h11 e12 y13  14 d15 i16 d17 n18 '19 t20  21 g22 i23 v24 e25  26 m27 e28  29 a30  31 <32 p33 r34 (35 e36 s37 e38 n39 t40 )41 >42  43 [44 /45 ]46  47 p48 r49 e50 s51 e52 n53 t54  55 o56 n57  58 m59 y60  61 [62 !63 ]64  65 b66 i67 r68 t69 h70 d71 a72 y73  74 .75 
+
+*MOT:	zzz .
+line number: 1209
+*0 M1 O2 T3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	(be)cause your birthday is coming up next month .
+line number: 1213
+*0 F1 A2 T3 :4 	5 (6 b7 e8 )9 c10 a11 u12 s13 e14  15 y16 o17 u18 r19  20 b21 i22 r23 t24 h25 d26 a27 y28  29 i30 s31  32 c33 o34 m35 i36 n37 g38  39 u40 p41  42 n43 e44 x45 t46  47 m48 o49 n50 t51 h52  53 .54 
+
+*MOT:	last year they did .
+line number: 1218
+*0 M1 O2 T3 :4 	5 l6 a7 s8 t9  10 y11 e12 a13 r14  15 t16 h17 e18 y19  20 d21 i22 d23  24 .25 
+
+*FAT:	mhm .
+line number: 1221
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 .10 
+
+*MOT:	you know your [/] your video tapes with &-uh cartoons on them ?
+line number: 1224
+*0 M1 O2 T3 :4 	5 y6 o7 u8  9 k10 n11 o12 w13  14 y15 o16 u17 r18  19 [20 /21 ]22  23 y24 o25 u26 r27  28 v29 i30 d31 e32 o33  34 t35 a36 p37 e38 s39  40 w41 i42 t43 h44  45 &46 -47 u48 h49  50 c51 a52 r53 t54 o55 o56 n57 s58  59 o60 n61  62 t63 h64 e65 m66  67 ?68 
+
+*MOT:	&-um (.) which cartoons were they ?
+line number: 1230
+*0 M1 O2 T3 :4 	5 &6 -7 u8 m9  10 (11 .12 )13  14 w15 h16 i17 c18 h19  20 c21 a22 r23 t24 o25 o26 n27 s28  29 w30 e31 r32 e33  34 t35 h36 e37 y38  39 ?40 
+
+*MOT:	I don't know Bugs Bunny and things like that [>] .
+line number: 1235
+*0 M1 O2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 B19 u20 g21 s22  23 B24 u25 n26 n27 y28  29 a30 n31 d32  33 t34 h35 i36 n37 g38 s39  40 l41 i42 k43 e44  45 t46 h47 a48 t49  50 [51 >52 ]53  54 .55 
+
+*FAT:	mhm [<] .
+line number: 1240
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 [10 <11 ]12  13 .14 
+
+*MOT:	those were from Michael and Melanie and they give you <the sweatshirt that> [//] a sweatshirt that you wore yesterday (.) and &-uh they've given you other presents too .
+line number: 1243
+*0 M1 O2 T3 :4 	5 t6 h7 o8 s9 e10  11 w12 e13 r14 e15  16 f17 r18 o19 m20  21 M22 i23 c24 h25 a26 e27 l28  29 a30 n31 d32  33 M34 e35 l36 a37 n38 i39 e40  41 a42 n43 d44  45 t46 h47 e48 y49  50 g51 i52 v53 e54  55 y56 o57 u58  59 <60 t61 h62 e63  64 s65 w66 e67 a68 t69 s70 h71 i72 r73 t74  75 t76 h77 a78 t79 >80  81 [82 /83 /84 ]85  86 a87  88 s89 w90 e91 a92 t93 s94 h95 i96 r97 t98  99 t100 h101 a102 t103  104 y105 o106 u107  108 w109 o110 r111 e112  113 y114 e115 s116 t117 e118 r119 d120 a121 y122  123 (124 .125 )126  127 a128 n129 d130  131 &132 -133 u134 h135  136 t137 h138 e139 y140 '141 v142 e143  144 g145 i146 v147 e148 n149  150 y151 o152 u153  154 o155 t156 h157 e158 r159  160 p161 r162 e163 s164 e165 n166 t167 s168  169 t170 o171 o172  173 .174 
+
+*MOT:	but those <are the ones I remember> [>] .
+line number: 1253
+*0 M1 O2 T3 :4 	5 b6 u7 t8  9 t10 h11 o12 s13 e14  15 <16 a17 r18 e19  20 t21 h22 e23  24 o25 n26 e27 s28  29 I30  31 r32 e33 m34 e35 m36 b37 e38 r39 >40  41 [42 >43 ]44  45 .46 
+
+*CHI:	<did they Ma> [<] give me the pin cushion &-um tapes ?
+line number: 1258
+*0 C1 H2 I3 :4 	5 <6 d7 i8 d9  10 t11 h12 e13 y14  15 M16 a17 >18  19 [20 <21 ]22  23 g24 i25 v26 e27  28 m29 e30  31 t32 h33 e34  35 p36 i37 n38  39 c40 u41 s42 h43 i44 o45 n46  47 &48 -49 u50 m51  52 t53 a54 p55 e56 s57  58 ?59 
+
+*MOT:	yes yes .
+line number: 1264
+*0 M1 O2 T3 :4 	5 y6 e7 s8  9 y10 e11 s12  13 .14 
+
+*MOT:	that's right they gave you that [//] the tape .
+line number: 1267
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 r13 i14 g15 h16 t17  18 t19 h20 e21 y22  23 g24 a25 v26 e27  28 y29 o30 u31  32 t33 h34 a35 t36  37 [38 /39 /40 ]41  42 t43 h44 e45  46 t47 a48 p49 e50  51 .52 
+
+*FAT:	mhm [<] .
+line number: 1272
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 [10 <11 ]12  13 .14 
+
+*CHI:	but (.) you mean the &-uh the xxx [///] whose that guy who &-uh gets all those pins out +...
+line number: 1275
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 (10 .11 )12  13 y14 o15 u16  17 m18 e19 a20 n21  22 t23 h24 e25  26 &27 -28 u29 h30  31 t32 h33 e34  35 x36 x37 x38  39 [40 /41 /42 /43 ]44  45 w46 h47 o48 s49 e50  51 t52 h53 a54 t55  56 g57 u58 y59  60 w61 h62 o63  64 &65 -66 u67 h68  69 g70 e71 t72 s73  74 a75 l76 l77  78 t79 h80 o81 s82 e83  84 p85 i86 n87 s88  89 o90 u91 t92  93 +94 .95 .96 .97 
+
+*CHI:	cush@c quash@c +...
+line number: 1281
+*0 C1 H2 I3 :4 	5 c6 u7 s8 h9 @10 c11  12 q13 u14 a15 s16 h17 @18 c19  20 +21 .22 .23 .24 
+
+*MOT:	the pin cushion man who (.) pops the balloons ?
+line number: 1285
+*0 M1 O2 T3 :4 	5 t6 h7 e8  9 p10 i11 n12  13 c14 u15 s16 h17 i18 o19 n20  21 m22 a23 n24  25 w26 h27 o28  29 (30 .31 )32  33 p34 o35 p36 s37  38 t39 h40 e41  42 b43 a44 l45 l46 o47 o48 n49 s50  51 ?52 
+
+*CHI:	yes .
+line number: 1291
+*0 C1 H2 I3 :4 	5 y6 e7 s8  9 .10 
+
+*FAT:	what about him ?
+line number: 1294
+*0 F1 A2 T3 :4 	5 w6 h7 a8 t9  10 a11 b12 o13 u14 t15  16 h17 i18 m19  20 ?21 
+
+*CHI:	well he cuts balloons .
+line number: 1298
+*0 C1 H2 I3 :4 	5 w6 e7 l8 l9  10 h11 e12  13 c14 u15 t16 s17  18 b19 a20 l21 l22 o23 o24 n25 s26  27 .28 
+
+*FAT:	yeah .
+line number: 1301
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	and that's not very nice .
+line number: 1304
+*0 C1 H2 I3 :4 	5 a6 n7 d8  9 t10 h11 a12 t13 '14 s15  16 n17 o18 t19  20 v21 e22 r23 y24  25 n26 i27 c28 e29  30 .31 
+
+*FAT:	no it's not .
+line number: 1307
+*0 F1 A2 T3 :4 	5 n6 o7  8 i9 t10 '11 s12  13 n14 o15 t16  17 .18 
+
+*CHI:	next time when we see the pin cushion guy tell him to not &-um &-uh cut the balloons .
+line number: 1310
+*0 C1 H2 I3 :4 	5 n6 e7 x8 t9  10 t11 i12 m13 e14  15 w16 h17 e18 n19  20 w21 e22  23 s24 e25 e26  27 t28 h29 e30  31 p32 i33 n34  35 c36 u37 s38 h39 i40 o41 n42  43 g44 u45 y46  47 t48 e49 l50 l51  52 h53 i54 m55  56 t57 o58  59 n60 o61 t62  63 &64 -65 u66 m67  68 &69 -70 u71 h72  73 c74 u75 t76  77 t78 h79 e80  81 b82 a83 l84 l85 o86 o87 n88 s89  90 .91 
+
+*CHI:	tell him not to [>] .
+line number: 1317
+*0 C1 H2 I3 :4 	5 t6 e7 l8 l9  10 h11 i12 m13  14 n15 o16 t17  18 t19 o20  21 [22 >23 ]24  25 .26 
+
+*FAT:	you mean tell him not to pop the balloons ?
+line number: 1321
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 m10 e11 a12 n13  14 t15 e16 l17 l18  19 h20 i21 m22  23 n24 o25 t26  27 t28 o29  30 p31 o32 p33  34 t35 h36 e37  38 b39 a40 l41 l42 o43 o44 n45 s46  47 ?48 
+
+*CHI:	yeah .
+line number: 1327
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	okay .
+line number: 1330
+*0 F1 A2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*FAT:	you can tell him too you know .
+line number: 1333
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 c10 a11 n12  13 t14 e15 l16 l17  18 h19 i20 m21  22 t23 o24 o25  26 y27 o28 u29  30 k31 n32 o33 w34  35 .36 
+
+*CHI:	yeah .
+line number: 1336
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	(be)cause he doesn't listen to people .
+line number: 1339
+*0 C1 H2 I3 :4 	5 (6 b7 e8 )9 c10 a11 u12 s13 e14  15 h16 e17  18 d19 o20 e21 s22 n23 '24 t25  26 l27 i28 s29 t30 e31 n32  33 t34 o35  36 p37 e38 o39 p40 l41 e42  43 .44 
+
+*MOT:	zzz .
+line number: 1343
+*0 M1 O2 T3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	yeah .
+line number: 1347
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	except it's a cartoon Than .
+line number: 1350
+*0 M1 O2 T3 :4 	5 e6 x7 c8 e9 p10 t11  12 i13 t14 '15 s16  17 a18  19 c20 a21 r22 t23 o24 o25 n26  27 T28 h29 a30 n31  32 .33 
+
+*MOT:	<I> [/] I don't think he'll stop popping balloons because on the video he's always &-uh on the video .
+line number: 1353
+*0 M1 O2 T3 :4 	5 <6 I7 >8  9 [10 /11 ]12  13 I14  15 d16 o17 n18 '19 t20  21 t22 h23 i24 n25 k26  27 h28 e29 '30 l31 l32  33 s34 t35 o36 p37  38 p39 o40 p41 p42 i43 n44 g45  46 b47 a48 l49 l50 o51 o52 n53 s54  55 b56 e57 c58 a59 u60 s61 e62  63 o64 n65  66 t67 h68 e69  70 v71 i72 d73 e74 o75  76 h77 e78 '79 s80  81 a82 l83 w84 a85 y86 s87  88 &89 -90 u91 h92  93 o94 n95  96 t97 h98 e99  100 v101 i102 d103 e104 o105  106 .107 
+
+*CHI:	popping .
+line number: 1361
+*0 C1 H2 I3 :4 	5 p6 o7 p8 p9 i10 n11 g12  13 .14 
+
+*MOT:	popping balloons !
+line number: 1364
+*0 M1 O2 T3 :4 	5 p6 o7 p8 p9 i10 n11 g12  13 b14 a15 l16 l17 o18 o19 n20 s21  22 !23 
+
+*CHI:	popping [>] .
+line number: 1367
+*0 C1 H2 I3 :4 	5 p6 o7 p8 p9 i10 n11 g12  13 [14 >15 ]16  17 .18 
+
+*FAT:	<and> [/] and don't the balloons win in the end ?
+line number: 1370
+*0 F1 A2 T3 :4 	5 <6 a7 n8 d9 >10  11 [12 /13 ]14  15 a16 n17 d18  19 d20 o21 n22 '23 t24  25 t26 h27 e28  29 b30 a31 l32 l33 o34 o35 n36 s37  38 w39 i40 n41  42 i43 n44  45 t46 h47 e48  49 e50 n51 d52  53 ?54 
+
+*CHI:	what ?
+line number: 1376
+*0 C1 H2 I3 :4 	5 w6 h7 a8 t9  10 ?11 
+
+*FAT:	don't the balloons win in the end (.) ?
+line number: 1380
+*0 F1 A2 T3 :4 	5 d6 o7 n8 '9 t10  11 t12 h13 e14  15 b16 a17 l18 l19 o20 o21 n22 s23  24 w25 i26 n27  28 i29 n30  31 t32 h33 e34  35 e36 n37 d38  39 (40 .41 )42  43 ?44 
+
+*FAT:	don't they find their way to get rid of the pin cushion man ?
+line number: 1386
+*0 F1 A2 T3 :4 	5 d6 o7 n8 '9 t10  11 t12 h13 e14 y15  16 f17 i18 n19 d20  21 t22 h23 e24 i25 r26  27 w28 a29 y30  31 t32 o33  34 g35 e36 t37  38 r39 i40 d41  42 o43 f44  45 t46 h47 e48  49 p50 i51 n52  53 c54 u55 s56 h57 i58 o59 n60  61 m62 a63 n64  65 ?66 
+
+*CHI:	oh yes .
+line number: 1392
+*0 C1 H2 I3 :4 	5 o6 h7  8 y9 e10 s11  12 .13 
+
+*MOT:	do they ?
+line number: 1395
+*0 M1 O2 T3 :4 	5 d6 o7  8 t9 h10 e11 y12  13 ?14 
+
+*CHI:	how ?
+line number: 1399
+*0 C1 H2 I3 :4 	5 h6 o7 w8  9 ?10 
+
+*MOT:	I forget .
+line number: 1403
+*0 M1 O2 T3 :4 	5 I6  7 f8 o9 r10 g11 e12 t13  14 .15 
+
+*FAT:	maybe we'll have_to watch the cartoon again soon to see how .
+line number: 1406
+*0 F1 A2 T3 :4 	5 m6 a7 y8 b9 e10  11 w12 e13 '14 l15 l16  17 h18 a19 v20 e21 _22 t23 o24  25 w26 a27 t28 c29 h30  31 t32 h33 e34  35 c36 a37 r38 t39 o40 o41 n42  43 a44 g45 a46 i47 n48  49 s50 o51 o52 n53  54 t55 o56  57 s58 e59 e60  61 h62 o63 w64  65 .66 
+
+*CHI:	I know how they put (.) stuff in it .
+line number: 1411
+*0 C1 H2 I3 :4 	5 I6  7 k8 n9 o10 w11  12 h13 o14 w15  16 t17 h18 e19 y20  21 p22 u23 t24  25 (26 .27 )28  29 s30 t31 u32 f33 f34  35 i36 n37  38 i39 t40  41 .42 
+
+*CHI:	<they put mm stu(ff)> [//] they put Playdough in everything and then they swim on the pin cush@c guy .
+line number: 1416
+*0 C1 H2 I3 :4 	5 <6 t7 h8 e9 y10  11 p12 u13 t14  15 m16 m17  18 s19 t20 u21 (22 f23 f24 )25 >26  27 [28 /29 /30 ]31  32 t33 h34 e35 y36  37 p38 u39 t40  41 P42 l43 a44 y45 d46 o47 u48 g49 h50  51 i52 n53  54 e55 v56 e57 r58 y59 t60 h61 i62 n63 g64  65 a66 n67 d68  69 t70 h71 e72 n73  74 t75 h76 e77 y78  79 s80 w81 i82 m83  84 o85 n86  87 t88 h89 e90  91 p92 i93 n94  95 c96 u97 s98 h99 @100 c101  102 g103 u104 y105  106 .107 
+
+*CHI:	pin cushion guy .
+line number: 1422
+*0 C1 H2 I3 :4 	5 p6 i7 n8  9 c10 u11 s12 h13 i14 o15 n16  17 g18 u19 y20  21 .22 
+
+*FAT:	yeah .
+line number: 1425
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	and that's how the ending goes .
+line number: 1428
+*0 C1 H2 I3 :4 	5 a6 n7 d8  9 t10 h11 a12 t13 '14 s15  16 h17 o18 w19  20 t21 h22 e23  24 e25 n26 d27 i28 n29 g30  31 g32 o33 e34 s35  36 .37 
+
+*FAT:	no he can't pop their balloons any more like that .
+line number: 1432
+*0 F1 A2 T3 :4 	5 n6 o7  8 h9 e10  11 c12 a13 n14 '15 t16  17 p18 o19 p20  21 t22 h23 e24 i25 r26  27 b28 a29 l30 l31 o32 o33 n34 s35  36 a37 n38 y39  40 m41 o42 r43 e44  45 l46 i47 k48 e49  50 t51 h52 a53 t54  55 .56 
+
+*CHI:	n(o) yeah [!] .
+line number: 1437
+*0 C1 H2 I3 :4 	5 n6 (7 o8 )9  10 y11 e12 a13 h14  15 [16 !17 ]18  19 .20 
+
+*FAT:	mm .
+line number: 1440
+*0 F1 A2 T3 :4 	5 m6 m7  8 .9 
+
+*MOT:	oh .
+line number: 1443
+*0 M1 O2 T3 :4 	5 o6 h7  8 .9 
+
+*MOT:	good memory Nathaniel I didn't remember that part .
+line number: 1446
+*0 M1 O2 T3 :4 	5 g6 o7 o8 d9  10 m11 e12 m13 o14 r15 y16  17 N18 a19 t20 h21 a22 n23 i24 e25 l26  27 I28  29 d30 i31 d32 n33 '34 t35  36 r37 e38 m39 e40 m41 b42 e43 r44  45 t46 h47 a48 t49  50 p51 a52 r53 t54  55 .56 
+
+*CHI:	you'll have_to see it .
+line number: 1451
+*0 C1 H2 I3 :4 	5 y6 o7 u8 '9 l10 l11  12 h13 a14 v15 e16 _17 t18 o19  20 s21 e22 e23  24 i25 t26  27 .28 
+
+*MOT:	yeah .
+line number: 1454
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	do you want another piece of .
+line number: 1457
+*0 F1 A2 T3 :4 	5 d6 o7  8 y9 o10 u11  12 w13 a14 n15 t16  17 a18 n19 o20 t21 h22 e23 r24  25 p26 i27 e28 c29 e30  31 o32 f33  34 .35 
+
+*CHI:	it's on my T_V .
+line number: 1460
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 o11 n12  13 m14 y15  16 T17 _18 V19  20 .21 
+
+*MOT:	want another piece of chicken ?
+line number: 1464
+*0 M1 O2 T3 :4 	5 w6 a7 n8 t9  10 a11 n12 o13 t14 h15 e16 r17  18 p19 i20 e21 c22 e23  24 o25 f26  27 c28 h29 i30 c31 k32 e33 n34  35 ?36 
+
+*CHI:	&-uh (.) yeah .
+line number: 1468
+*0 C1 H2 I3 :4 	5 &6 -7 u8 h9  10 (11 .12 )13  14 y15 e16 a17 h18  19 .20 
+
+*CHI:	a couple of pieces .
+line number: 1471
+*0 C1 H2 I3 :4 	5 a6  7 c8 o9 u10 p11 l12 e13  14 o15 f16  17 p18 i19 e20 c21 e22 s23  24 .25 
+
+*MOT:	it has a lot of bone .
+line number: 1474
+*0 M1 O2 T3 :4 	5 i6 t7  8 h9 a10 s11  12 a13  14 l15 o16 t17  18 o19 f20  21 b22 o23 n24 e25  26 .27 
+
+*FAT:	mhm .
+line number: 1478
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 .10 
+
+*FAT:	let us see if I +...
+line number: 1481
+*0 F1 A2 T3 :4 	5 l6 e7 t8  9 u10 s11  12 s13 e14 e15  16 i17 f18  19 I20  21 +22 .23 .24 .25 
+
+*FAT:	xxx .
+line number: 1484
+*0 F1 A2 T3 :4 	5 x6 x7 x8  9 .10 
+
+*MOT:	I know .
+line number: 1486
+*0 M1 O2 T3 :4 	5 I6  7 k8 n9 o10 w11  12 .13 
+
+*MOT:	here [/] here you go .
+line number: 1490
+*0 M1 O2 T3 :4 	5 h6 e7 r8 e9  10 [11 /12 ]13  14 h15 e16 r17 e18  19 y20 o21 u22  23 g24 o25  26 .27 
+
+*CHI:	zzz .
+line number: 1494
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	sorry .
+line number: 1498
+*0 F1 A2 T3 :4 	5 s6 o7 r8 r9 y10  11 .12 
+
+*MOT:	oh that's alright .
+line number: 1501
+*0 M1 O2 T3 :4 	5 o6 h7  8 t9 h10 a11 t12 '13 s14  15 a16 l17 r18 i19 g20 h21 t22  23 .24 
+
+*MOT:	I like to wrap the biscuits and have chicken and biscuits .
+line number: 1504
+*0 M1 O2 T3 :4 	5 I6  7 l8 i9 k10 e11  12 t13 o14  15 w16 r17 a18 p19  20 t21 h22 e23  24 b25 i26 s27 c28 u29 i30 t31 s32  33 a34 n35 d36  37 h38 a39 v40 e41  42 c43 h44 i45 c46 k47 e48 n49  50 a51 n52 d53  54 b55 i56 s57 c58 u59 i60 t61 s62  63 .64 
+
+*CHI:	want to watch television with me on the [/] my television that I got right here (.) ?
+line number: 1509
+*0 C1 H2 I3 :4 	5 w6 a7 n8 t9  10 t11 o12  13 w14 a15 t16 c17 h18  19 t20 e21 l22 e23 v24 i25 s26 i27 o28 n29  30 w31 i32 t33 h34  35 m36 e37  38 o39 n40  41 t42 h43 e44  45 [46 /47 ]48  49 m50 y51  52 t53 e54 l55 e56 v57 i58 s59 i60 o61 n62  63 t64 h65 a66 t67  68 I69  70 g71 o72 t73  74 r75 i76 g77 h78 t79  80 h81 e82 r83 e84  85 (86 .87 )88  89 ?90 
+
+*CHI:	who wants to watch it with me ?
+line number: 1516
+*0 C1 H2 I3 :4 	5 w6 h7 o8  9 w10 a11 n12 t13 s14  15 t16 o17  18 w19 a20 t21 c22 h23  24 i25 t26  27 w28 i29 t30 h31  32 m33 e34  35 ?36 
+
+*CHI:	raise your hands .
+line number: 1521
+*0 C1 H2 I3 :4 	5 r6 a7 i8 s9 e10  11 y12 o13 u14 r15  16 h17 a18 n19 d20 s21  22 .23 
+
+*FAT:	not me .
+line number: 1524
+*0 F1 A2 T3 :4 	5 n6 o7 t8  9 m10 e11  12 .13 
+
+*FAT:	I want to eat dinner .
+line number: 1527
+*0 F1 A2 T3 :4 	5 I6  7 w8 a9 n10 t11  12 t13 o14  15 e16 a17 t18  19 d20 i21 n22 n23 e24 r25  26 .27 
+
+*CHI:	raise your hand .
+line number: 1530
+*0 C1 H2 I3 :4 	5 r6 a7 i8 s9 e10  11 y12 o13 u14 r15  16 h17 a18 n19 d20  21 .22 
+
+*CHI:	do you want to ?
+line number: 1533
+*0 C1 H2 I3 :4 	5 d6 o7  8 y9 o10 u11  12 w13 a14 n15 t16  17 t18 o19  20 ?21 
+
+*MOT:	I think we should eat instead of playing television don't you think ?
+line number: 1538
+*0 M1 O2 T3 :4 	5 I6  7 t8 h9 i10 n11 k12  13 w14 e15  16 s17 h18 o19 u20 l21 d22  23 e24 a25 t26  27 i28 n29 s30 t31 e32 a33 d34  35 o36 f37  38 p39 l40 a41 y42 i43 n44 g45  46 t47 e48 l49 e50 v51 i52 s53 i54 o55 n56  57 d58 o59 n60 '61 t62  63 y64 o65 u66  67 t68 h69 i70 n71 k72  73 ?74 
+
+*CHI:	this is my [!] television .
+line number: 1545
+*0 C1 H2 I3 :4 	5 t6 h7 i8 s9  10 i11 s12  13 m14 y15  16 [17 !18 ]19  20 t21 e22 l23 e24 v25 i26 s27 i28 o29 n30  31 .32 
+
+*FAT:	can you turn your television off for a couple of minutes ?
+line number: 1548
+*0 F1 A2 T3 :4 	5 c6 a7 n8  9 y10 o11 u12  13 t14 u15 r16 n17  18 y19 o20 u21 r22  23 t24 e25 l26 e27 v28 i29 s30 i31 o32 n33  34 o35 f36 f37  38 f39 o40 r41  42 a43  44 c45 o46 u47 p48 l49 e50  51 o52 f53  54 m55 i56 n57 u58 t59 e60 s61  62 ?63 
+
+*CHI:	it's off .
+line number: 1554
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 o11 f12 f13  14 .15 
+
+*FAT:	oh good .
+line number: 1557
+*0 F1 A2 T3 :4 	5 o6 h7  8 g9 o10 o11 d12  13 .14 
+
+*FAT:	can you put it away ?
+line number: 1560
+*0 F1 A2 T3 :4 	5 c6 a7 n8  9 y10 o11 u12  13 p14 u15 t16  17 i18 t19  20 a21 w22 a23 y24  25 ?26 
+
+*CHI:	okay .
+line number: 1564
+*0 C1 H2 I3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	but down there .
+line number: 1567
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 d10 o11 w12 n13  14 t15 h16 e17 r18 e19  20 .21 
+
+*FAT:	alright .
+line number: 1570
+*0 F1 A2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 .14 
+
+*CHI:	okay .
+line number: 1573
+*0 C1 H2 I3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	until I eat .
+line number: 1576
+*0 C1 H2 I3 :4 	5 u6 n7 t8 i9 l10  11 I12  13 e14 a15 t16  17 .18 
+
+*FAT:	it's about seven minutes <to six> [>] .
+line number: 1579
+*0 F1 A2 T3 :4 	5 i6 t7 '8 s9  10 a11 b12 o13 u14 t15  16 s17 e18 v19 e20 n21  22 m23 i24 n25 u26 t27 e28 s29  30 <31 t32 o33  34 s35 i36 x37 >38  39 [40 >41 ]42  43 .44 
+
+*CHI:	that noise bugs me .
+line number: 1584
+*0 C1 H2 I3 :4 	5 t6 h7 a8 t9  10 n11 o12 i13 s14 e15  16 b17 u18 g19 s20  21 m22 e23  24 .25 
+
+*FAT:	<what noise> [>] ?
+line number: 1587
+*0 F1 A2 T3 :4 	5 <6 w7 h8 a9 t10  11 n12 o13 i14 s15 e16 >17  18 [19 >20 ]21  22 ?23 
+
+*CHI:	but that [/] that noise from the (re)frigerator (.) it bugs me .
+line number: 1591
+*0 C1 H2 I3 :4 	5 b6 u7 t8  9 t10 h11 a12 t13  14 [15 /16 ]17  18 t19 h20 a21 t22  23 n24 o25 i26 s27 e28  29 f30 r31 o32 m33  34 t35 h36 e37  38 (39 r40 e41 )42 f43 r44 i45 g46 e47 r48 a49 t50 o51 r52  53 (54 .55 )56  57 i58 t59  60 b61 u62 g63 s64  65 m66 e67  68 .69 
+
+*MOT:	I think it's the fan &-uh that you must hear +/.
+line number: 1596
+*0 M1 O2 T3 :4 	5 I6  7 t8 h9 i10 n11 k12  13 i14 t15 '16 s17  18 t19 h20 e21  22 f23 a24 n25  26 &27 -28 u29 h30  31 t32 h33 a34 t35  36 y37 o38 u39  40 m41 u42 s43 t44  45 h46 e47 a48 r49  50 +51 /52 .53 
+
+*FAT:	no the refrigerator just kicked on .
+line number: 1601
+*0 F1 A2 T3 :4 	5 n6 o7  8 t9 h10 e11  12 r13 e14 f15 r16 i17 g18 e19 r20 a21 t22 o23 r24  25 j26 u27 s28 t29  30 k31 i32 c33 k34 e35 d36  37 o38 n39  40 .41 
+
+*MOT:	oh (.) .
+line number: 1604
+*0 M1 O2 T3 :4 	5 o6 h7  8 (9 .10 )11  12 .13 
+
+*MOT:	never mind .
+line number: 1607
+*0 M1 O2 T3 :4 	5 n6 e7 v8 e9 r10  11 m12 i13 n14 d15  16 .17 
+
+*CHI:	and that bugs me .
+line number: 1611
+*0 C1 H2 I3 :4 	5 a6 n7 d8  9 t10 h11 a12 t13  14 b15 u16 g17 s18  19 m20 e21  22 .23 
+
+*FAT:	well tough .
+line number: 1614
+*0 F1 A2 T3 :4 	5 w6 e7 l8 l9  10 t11 o12 u13 g14 h15  16 .17 
+
+*CHI:	I'll tell that to stop .
+line number: 1617
+*0 C1 H2 I3 :4 	5 I6 '7 l8 l9  10 t11 e12 l13 l14  15 t16 h17 a18 t19  20 t21 o22  23 s24 t25 o26 p27  28 .29 
+
+*CHI:	stop that refrigerator .
+line number: 1620
+*0 C1 H2 I3 :4 	5 s6 t7 o8 p9  10 t11 h12 a13 t14  15 r16 e17 f18 r19 i20 g21 e22 r23 a24 t25 o26 r27  28 .29 
+
+*FAT:	oh don't say that because if the refrigerator stops everything that's in the freezer will thaw and it will not be any good and everything that's in the refrigerator will get warm and it willn't be cold anymore .
+line number: 1623
+*0 F1 A2 T3 :4 	5 o6 h7  8 d9 o10 n11 '12 t13  14 s15 a16 y17  18 t19 h20 a21 t22  23 b24 e25 c26 a27 u28 s29 e30  31 i32 f33  34 t35 h36 e37  38 r39 e40 f41 r42 i43 g44 e45 r46 a47 t48 o49 r50  51 s52 t53 o54 p55 s56  57 e58 v59 e60 r61 y62 t63 h64 i65 n66 g67  68 t69 h70 a71 t72 '73 s74  75 i76 n77  78 t79 h80 e81  82 f83 r84 e85 e86 z87 e88 r89  90 w91 i92 l93 l94  95 t96 h97 a98 w99  100 a101 n102 d103  104 i105 t106  107 w108 i109 l110 l111  112 n113 o114 t115  116 b117 e118  119 a120 n121 y122  123 g124 o125 o126 d127  128 a129 n130 d131  132 e133 v134 e135 r136 y137 t138 h139 i140 n141 g142  143 t144 h145 a146 t147 '148 s149  150 i151 n152  153 t154 h155 e156  157 r158 e159 f160 r161 i162 g163 e164 r165 a166 t167 o168 r169  170 w171 i172 l173 l174  175 g176 e177 t178  179 w180 a181 r182 m183  184 a185 n186 d187  188 i189 t190  191 w192 i193 l194 l195 n196 '197 t198  199 b200 e201  202 c203 o204 l205 d206  207 a208 n209 y210 m211 o212 r213 e214  215 .216 
+
+*FAT:	we have_to keep everything cold in the (re)frige(rator) .
+line number: 1638
+*0 F1 A2 T3 :4 	5 w6 e7  8 h9 a10 v11 e12 _13 t14 o15  16 k17 e18 e19 p20  21 e22 v23 e24 r25 y26 t27 h28 i29 n30 g31  32 c33 o34 l35 d36  37 i38 n39  40 t41 h42 e43  44 (45 r46 e47 )48 f49 r50 i51 g52 e53 (54 r55 a56 t57 o58 r59 )60  61 .62 
+
+*FAT:	that's why we have a refrigerator .
+line number: 1643
+*0 F1 A2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 w13 h14 y15  16 w17 e18  19 h20 a21 v22 e23  24 a25  26 r27 e28 f29 r30 i31 g32 e33 r34 a35 t36 o37 r38  39 .40 
+
+*FAT:	and it makes that noise (be)cause it's working right (.) .
+line number: 1647
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 i10 t11  12 m13 a14 k15 e16 s17  18 t19 h20 a21 t22  23 n24 o25 i26 s27 e28  29 (30 b31 e32 )33 c34 a35 u36 s37 e38  39 i40 t41 '42 s43  44 w45 o46 r47 k48 i49 n50 g51  52 r53 i54 g55 h56 t57  58 (59 .60 )61  62 .63 
+
+*FAT:	and it's a quiet [!] noise .
+line number: 1652
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 i10 t11 '12 s13  14 a15  16 q17 u18 i19 e20 t21  22 [23 !24 ]25  26 n27 o28 i29 s30 e31  32 .33 
+
+*MOT:	Dylan is probably at the library until they're closed .
+line number: 1655
+*0 M1 O2 T3 :4 	5 D6 y7 l8 a9 n10  11 i12 s13  14 p15 r16 o17 b18 a19 b20 l21 y22  23 a24 t25  26 t27 h28 e29  30 l31 i32 b33 r34 a35 r36 y37  38 u39 n40 t41 i42 l43  44 t45 h46 e47 y48 '49 r50 e51  52 c53 l54 o55 s56 e57 d58  59 .60 
+
+*FAT:	you think so ?
+line number: 1660
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 t10 h11 i12 n13 k14  15 s16 o17  18 ?19 
+
+*MOT:	yeah (.) .
+line number: 1663
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 (11 .12 )13  14 .15 
+
+*MOT:	when he left here it was after two .
+line number: 1666
+*0 M1 O2 T3 :4 	5 w6 h7 e8 n9  10 h11 e12  13 l14 e15 f16 t17  18 h19 e20 r21 e22  23 i24 t25  26 w27 a28 s29  30 a31 f32 t33 e34 r35  36 t37 w38 o39  40 .41 
+
+*FAT:	yeah .
+line number: 1671
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	and he's going to Earling's [?] house today .
+line number: 1674
+*0 M1 O2 T3 :4 	5 a6 n7 d8  9 h10 e11 '12 s13  14 g15 o16 i17 n18 g19  20 t21 o22  23 E24 a25 r26 l27 i28 n29 g30 '31 s32  33 [34 ?35 ]36  37 h38 o39 u40 s41 e42  43 t44 o45 d46 a47 y48  49 .50 
+
+*FAT:	yeah .
+line number: 1679
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	and you know he probably didn't get to the library before three thirty .
+line number: 1682
+*0 M1 O2 T3 :4 	5 a6 n7 d8  9 y10 o11 u12  13 k14 n15 o16 w17  18 h19 e20  21 p22 r23 o24 b25 a26 b27 l28 y29  30 d31 i32 d33 n34 '35 t36  37 g38 e39 t40  41 t42 o43  44 t45 h46 e47  48 l49 i50 b51 r52 a53 r54 y55  56 b57 e58 f59 o60 r61 e62  63 t64 h65 r66 e67 e68  69 t70 h71 i72 r73 t74 y75  76 .77 
+
+*FAT:	probably not .
+line number: 1688
+*0 F1 A2 T3 :4 	5 p6 r7 o8 b9 a10 b11 l12 y13  14 n15 o16 t17  18 .19 
+
+*FAT:	the library closes at +...
+line number: 1691
+*0 F1 A2 T3 :4 	5 t6 h7 e8  9 l10 i11 b12 r13 a14 r15 y16  17 c18 l19 o20 s21 e22 s23  24 a25 t26  27 +28 .29 .30 .31 
+
+*MOT:	five thirty .
+line number: 1694
+*0 M1 O2 T3 :4 	5 f6 i7 v8 e9  10 t11 h12 i13 r14 t15 y16  17 .18 
+
+*FAT:	five [/] five thirty .
+line number: 1697
+*0 F1 A2 T3 :4 	5 f6 i7 v8 e9  10 [11 /12 ]13  14 f15 i16 v17 e18  19 t20 h21 i22 r23 t24 y25  26 .27 
+
+*MOT:	five or five thirty .
+line number: 1700
+*0 M1 O2 T3 :4 	5 f6 i7 v8 e9  10 o11 r12  13 f14 i15 v16 e17  18 t19 h20 i21 r22 t23 y24  25 .26 
+
+*MOT:	I'm sorry I didn't get it .
+line number: 1703
+*0 M1 O2 T3 :4 	5 I6 '7 m8  9 s10 o11 r12 r13 y14  15 I16  17 d18 i19 d20 n21 '22 t23  24 g25 e26 t27  28 i29 t30  31 .32 
+
+*MOT:	he was saying if the library wasn't open that's alright .
+line number: 1709
+*0 M1 O2 T3 :4 	5 h6 e7  8 w9 a10 s11  12 s13 a14 y15 i16 n17 g18  19 i20 f21  22 t23 h24 e25  26 l27 i28 b29 r30 a31 r32 y33  34 w35 a36 s37 n38 '39 t40  41 o42 p43 e44 n45  46 t47 h48 a49 t50 '51 s52  53 a54 l55 r56 i57 g58 h59 t60  61 .62 
+
+*MOT:	other kids will be done with the books they took out of the library and [/] and I can look at them and mine .
+line number: 1715
+*0 M1 O2 T3 :4 	5 o6 t7 h8 e9 r10  11 k12 i13 d14 s15  16 w17 i18 l19 l20  21 b22 e23  24 d25 o26 n27 e28  29 w30 i31 t32 h33  34 t35 h36 e37  38 b39 o40 o41 k42 s43  44 t45 h46 e47 y48  49 t50 o51 o52 k53  54 o55 u56 t57  58 o59 f60  61 t62 h63 e64  65 l66 i67 b68 r69 a70 r71 y72  73 a74 n75 d76  77 [78 /79 ]80  81 a82 n83 d84  85 I86  87 c88 a89 n90  91 l92 o93 o94 k95  96 a97 t98  99 t100 h101 e102 m103  104 a105 n106 d107  108 m109 i110 n111 e112  113 .114 
+
+*MOT:	so social studies isn't the first thing they had in mind .
+line number: 1724
+*0 M1 O2 T3 :4 	5 s6 o7  8 s9 o10 c11 i12 a13 l14  15 s16 t17 u18 d19 i20 e21 s22  23 i24 s25 n26 '27 t28  29 t30 h31 e32  33 f34 i35 r36 s37 t38  39 t40 h41 i42 n43 g44  45 t46 h47 e48 y49  50 h51 a52 d53  54 i55 n56  57 m58 i59 n60 d61  62 .63 
+
+*CHI:	zzz .
+line number: 1729
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	Nathaniel you're crazy ?
+line number: 1733
+*0 M1 O2 T3 :4 	5 N6 a7 t8 h9 a10 n11 i12 e13 l14  15 y16 o17 u18 '19 r20 e21  22 c23 r24 a25 z26 y27  28 ?29 
+
+*MOT:	when would you have time ?
+line number: 1737
+*0 M1 O2 T3 :4 	5 w6 h7 e8 n9  10 w11 o12 u13 l14 d15  16 y17 o18 u19  20 h21 a22 v23 e24  25 t26 i27 m28 e29  30 ?31 
+
+*CHI:	zzz .
+line number: 1741
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*CHI:	now xxx eat [?] this .
+line number: 1745
+*0 C1 H2 I3 :4 	5 n6 o7 w8  9 x10 x11 x12  13 e14 a15 t16  17 [18 ?19 ]20  21 t22 h23 i24 s25  26 .27 
+
+*MOT:	is this [= song he was singing] something you learned in school ?
+line number: 1748
+*0 M1 O2 T3 :4 	5 i6 s7  8 t9 h10 i11 s12  13 [14 =15  16 s17 o18 n19 g20  21 h22 e23  24 w25 a26 s27  28 s29 i30 n31 g32 i33 n34 g35 ]36  37 s38 o39 m40 e41 t42 h43 i44 n45 g46  47 y48 o49 u50  51 l52 e53 a54 r55 n56 e57 d58  59 i60 n61  62 s63 c64 h65 o66 o67 l68  69 ?70 
+
+*CHI:	yes .
+line number: 1753
+*0 C1 H2 I3 :4 	5 y6 e7 s8  9 .10 
+
+*CHI:	Henry knows it .
+line number: 1756
+*0 C1 H2 I3 :4 	5 H6 e7 n8 r9 y10  11 k12 n13 o14 w15 s16  17 i18 t19  20 .21 
+
+*MOT:	Henry ?
+line number: 1759
+*0 M1 O2 T3 :4 	5 H6 e7 n8 r9 y10  11 ?12 
+
+*CHI:	yeah .
+line number: 1763
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	make a cabin .
+line number: 1766
+*0 C1 H2 I3 :4 	5 m6 a7 k8 e9  10 a11  12 c13 a14 b15 i16 n17  18 .19 
+
+*CHI:	make your cabin for the song please .
+line number: 1769
+*0 C1 H2 I3 :4 	5 m6 a7 k8 e9  10 y11 o12 u13 r14  15 c16 a17 b18 i19 n20  21 f22 o23 r24  25 t26 h27 e28  29 s30 o31 n32 g33  34 p35 l36 e37 a38 s39 e40  41 .42 
+
+*MOT:	okay .
+line number: 1773
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	in your cabin in the wood (.) a little man by a window stood (.) saw a rabbit hopping by (.) quiet as can be .
+line number: 1776
+*0 C1 H2 I3 :4 	5 i6 n7  8 y9 o10 u11 r12  13 c14 a15 b16 i17 n18  19 i20 n21  22 t23 h24 e25  26 w27 o28 o29 d30  31 (32 .33 )34  35 a36  37 l38 i39 t40 t41 l42 e43  44 m45 a46 n47  48 b49 y50  51 a52  53 w54 i55 n56 d57 o58 w59  60 s61 t62 o63 o64 d65  66 (67 .68 )69  70 s71 a72 w73  74 a75  76 r77 a78 b79 b80 i81 t82  83 h84 o85 p86 p87 i88 n89 g90  91 b92 y93  94 (95 .96 )97  98 q99 u100 i101 e102 t103  104 a105 s106  107 c108 a109 n110  111 b112 e113  114 .115 
+
+*CHI:	help me !
+line number: 1786
+*0 C1 H2 I3 :4 	5 h6 e7 l8 p9  10 m11 e12  13 !14 
+
+*CHI:	help me !
+line number: 1789
+*0 C1 H2 I3 :4 	5 h6 e7 l8 p9  10 m11 e12  13 !14 
+
+*CHI:	the rabbit [///] .
+line number: 1792
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 r10 a11 b12 b13 i14 t15  16 [17 /18 /19 /20 ]21  22 .23 
+
+*CHI:	hey !
+line number: 1796
+*0 C1 H2 I3 :4 	5 h6 e7 y8  9 !10 
+
+*CHI:	you're talking quiet .
+line number: 1799
+*0 C1 H2 I3 :4 	5 y6 o7 u8 '9 r10 e11  12 t13 a14 l15 k16 i17 n18 g19  20 q21 u22 i23 e24 t25  26 .27 
+
+*MOT:	I know .
+line number: 1802
+*0 M1 O2 T3 :4 	5 I6  7 k8 n9 o10 w11  12 .13 
+
+*MOT:	I'm trying to learn it .
+line number: 1805
+*0 M1 O2 T3 :4 	5 I6 '7 m8  9 t10 r11 y12 i13 n14 g15  16 t17 o18  19 l20 e21 a22 r23 n24  25 i26 t27  28 .29 
+
+*MOT:	that's why .
+line number: 1808
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 w13 h14 y15  16 .17 
+
+*MOT:	go ahead .
+line number: 1811
+*0 M1 O2 T3 :4 	5 g6 o7  8 a9 h10 e11 a12 d13  14 .15 
+
+*CHI:	before the hunter shoot me dead (.) little rabbit come inside (.) safely you will hide .
+line number: 1814
+*0 C1 H2 I3 :4 	5 b6 e7 f8 o9 r10 e11  12 t13 h14 e15  16 h17 u18 n19 t20 e21 r22  23 s24 h25 o26 o27 t28  29 m30 e31  32 d33 e34 a35 d36  37 (38 .39 )40  41 l42 i43 t44 t45 l46 e47  48 r49 a50 b51 b52 i53 t54  55 c56 o57 m58 e59  60 i61 n62 s63 i64 d65 e66  67 (68 .69 )70  71 s72 a73 f74 e75 l76 y77  78 y79 o80 u81  82 w83 i84 l85 l86  87 h88 i89 d90 e91  92 .93 
+
+*CHI:	now this cabin .
+line number: 1821
+*0 C1 H2 I3 :4 	5 n6 o7 w8  9 t10 h11 i12 s13  14 c15 a16 b17 i18 n19  20 .21 
+
+*CHI:	in the cabin in the woods a little man by the window stood .
+line number: 1824
+*0 C1 H2 I3 :4 	5 i6 n7  8 t9 h10 e11  12 c13 a14 b15 i16 n17  18 i19 n20  21 t22 h23 e24  25 w26 o27 o28 d29 s30  31 a32  33 l34 i35 t36 t37 l38 e39  40 m41 a42 n43  44 b45 y46  47 t48 h49 e50  51 w52 i53 n54 d55 o56 w57  58 s59 t60 o61 o62 d63  64 .65 
+
+*CHI:	rabbit +...
+line number: 1829
+*0 C1 H2 I3 :4 	5 r6 a7 b8 b9 i10 t11  12 +13 .14 .15 .16 
+
+*MOT:	in the cabin in the woods a little man by the window stood .
+line number: 1833
+*0 M1 O2 T3 :4 	5 i6 n7  8 t9 h10 e11  12 c13 a14 b15 i16 n17  18 i19 n20  21 t22 h23 e24  25 w26 o27 o28 d29 s30  31 a32  33 l34 i35 t36 t37 l38 e39  40 m41 a42 n43  44 b45 y46  47 t48 h49 e50  51 w52 i53 n54 d55 o56 w57  58 s59 t60 o61 o62 d63  64 .65 
+
+*MOT:	rabbit +...
+line number: 1838
+*0 M1 O2 T3 :4 	5 r6 a7 b8 b9 i10 t11  12 +13 .14 .15 .16 
+
+*MOT:	go ahead .
+line number: 1842
+*0 M1 O2 T3 :4 	5 g6 o7  8 a9 h10 e11 a12 d13  14 .15 
+
+*CHI:	saw a rabbit hopping by +...
+line number: 1845
+*0 C1 H2 I3 :4 	5 s6 a7 w8  9 a10  11 r12 a13 b14 b15 i16 t17  18 h19 o20 p21 p22 i23 n24 g25  26 b27 y28  29 +30 .31 .32 .33 
+
+*MOT:	saw a rabbit hopping by +...
+line number: 1849
+*0 M1 O2 T3 :4 	5 s6 a7 w8  9 a10  11 r12 a13 b14 b15 i16 t17  18 h19 o20 p21 p22 i23 n24 g25  26 b27 y28  29 +30 .31 .32 .33 
+
+*CHI:	<(rab)bit hopping by> [<] .
+line number: 1852
+*0 C1 H2 I3 :4 	5 <6 (7 r8 a9 b10 )11 b12 i13 t14  15 h16 o17 p18 p19 i20 n21 g22  23 b24 y25 >26  27 [28 <29 ]30  31 .32 
+
+*CHI:	quiet as can be (.) help me !
+line number: 1856
+*0 C1 H2 I3 :4 	5 q6 u7 i8 e9 t10  11 a12 s13  14 c15 a16 n17  18 b19 e20  21 (22 .23 )24  25 h26 e27 l28 p29  30 m31 e32  33 !34 
+
+*CHI:	help me !
+line number: 1860
+*0 C1 H2 I3 :4 	5 h6 e7 l8 p9  10 m11 e12  13 !14 
+
+*CHI:	the rabbit said before the hunter shoots me dead .
+line number: 1864
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 r10 a11 b12 b13 i14 t15  16 s17 a18 i19 d20  21 b22 e23 f24 o25 r26 e27  28 t29 h30 e31  32 h33 u34 n35 t36 e37 r38  39 s40 h41 o42 o43 t44 s45  46 m47 e48  49 d50 e51 a52 d53  54 .55 
+
+*CHI:	little rabbit come inside +...
+line number: 1869
+*0 C1 H2 I3 :4 	5 l6 i7 t8 t9 l10 e11  12 r13 a14 b15 b16 i17 t18  19 c20 o21 m22 e23  24 i25 n26 s27 i28 d29 e30  31 +32 .33 .34 .35 
+
+*MOT:	hunter shoots me dead .
+line number: 1873
+*0 M1 O2 T3 :4 	5 h6 u7 n8 t9 e10 r11  12 s13 h14 o15 o16 t17 s18  19 m20 e21  22 d23 e24 a25 d26  27 .28 
+
+*MOT:	little rabbit come inside +...
+line number: 1876
+*0 M1 O2 T3 :4 	5 l6 i7 t8 t9 l10 e11  12 r13 a14 b15 b16 i17 t18  19 c20 o21 m22 e23  24 i25 n26 s27 i28 d29 e30  31 +32 .33 .34 .35 
+
+*CHI:	safely you will hide .
+line number: 1880
+*0 C1 H2 I3 :4 	5 s6 a7 f8 e9 l10 y11  12 y13 o14 u15  16 w17 i18 l19 l20  21 h22 i23 d24 e25  26 .27 
+
+*MOT:	safely you will hide .
+line number: 1884
+*0 M1 O2 T3 :4 	5 s6 a7 f8 e9 l10 y11  12 y13 o14 u15  16 w17 i18 l19 l20  21 h22 i23 d24 e25  26 .27 
+
+*CHI:	now a big cabin and this time it's gonna be loud .
+line number: 1888
+*0 C1 H2 I3 :4 	5 n6 o7 w8  9 a10  11 b12 i13 g14  15 c16 a17 b18 i19 n20  21 a22 n23 d24  25 t26 h27 i28 s29  30 t31 i32 m33 e34  35 i36 t37 '38 s39  40 g41 o42 n43 n44 a45  46 b47 e48  49 l50 o51 u52 d53  54 .55 
+
+*MOT:	how's that ?
+line number: 1893
+*0 M1 O2 T3 :4 	5 h6 o7 w8 '9 s10  11 t12 h13 a14 t15  16 ?17 
+
+*MOT:	okay .
+line number: 1897
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	in the cabin in the woods +...
+line number: 1900
+*0 C1 H2 I3 :4 	5 i6 n7  8 t9 h10 e11  12 c13 a14 b15 i16 n17  18 i19 n20  21 t22 h23 e24  25 w26 o27 o28 d29 s30  31 +32 .33 .34 .35 
+
+*MOT:	in the cabin in the woods +...
+line number: 1904
+*0 M1 O2 T3 :4 	5 i6 n7  8 t9 h10 e11  12 c13 a14 b15 i16 n17  18 i19 n20  21 t22 h23 e24  25 w26 o27 o28 d29 s30  31 +32 .33 .34 .35 
+
+*CHI:	a little man by a window stood .
+line number: 1908
+*0 C1 H2 I3 :4 	5 a6  7 l8 i9 t10 t11 l12 e13  14 m15 a16 n17  18 b19 y20  21 a22  23 w24 i25 n26 d27 o28 w29  30 s31 t32 o33 o34 d35  36 .37 
+
+*CHI:	<and while> [>] .
+line number: 1913
+*0 C1 H2 I3 :4 	5 <6 a7 n8 d9  10 w11 h12 i13 l14 e15 >16  17 [18 >19 ]20  21 .22 
+
+*MOT:	zzz [<] .
+line number: 1916
+*0 M1 O2 T3 :4 	5 z6 z7 z8  9 [10 <11 ]12  13 .14 
+
+*CHI:	the rabbit's hopping by safely you will hide !
+line number: 1920
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 r10 a11 b12 b13 i14 t15 '16 s17  18 h19 o20 p21 p22 i23 n24 g25  26 b27 y28  29 s30 a31 f32 e33 l34 y35  36 y37 o38 u39  40 w41 i42 l43 l44  45 h46 i47 d48 e49  50 !51 
+
+*MOT:	you skipped a whole bunch of it more didn't you ?
+line number: 1926
+*0 M1 O2 T3 :4 	5 y6 o7 u8  9 s10 k11 i12 p13 p14 e15 d16  17 a18  19 w20 h21 o22 l23 e24  25 b26 u27 n28 c29 h30  31 o32 f33  34 i35 t36  37 m38 o39 r40 e41  42 d43 i44 d45 n46 '47 t48  49 y50 o51 u52  53 ?54 
+
+*CHI:	no I didn't skip any [>] .
+line number: 1934
+*0 C1 H2 I3 :4 	5 n6 o7  8 I9  10 d11 i12 d13 n14 '15 t16  17 s18 k19 i20 p21  22 a23 n24 y25  26 [27 >28 ]29  30 .31 
+
+*MOT:	<that's a> [/] that's a fun song [<] .
+line number: 1937
+*0 M1 O2 T3 :4 	5 <6 t7 h8 a9 t10 '11 s12  13 a14 >15  16 [17 /18 ]19  20 t21 h22 a23 t24 '25 s26  27 a28  29 f30 u31 n32  33 s34 o35 n36 g37  38 [39 <40 ]41  42 .43 
+
+*CHI:	I learned it from Honey [?] .
+line number: 1940
+*0 C1 H2 I3 :4 	5 I6  7 l8 e9 a10 r11 n12 e13 d14  15 i16 t17  18 f19 r20 o21 m22  23 H24 o25 n26 e27 y28  29 [30 ?31 ]32  33 .34 
+
+*MOT:	that was a nice one of Honey .
+line number: 1943
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9  10 w11 a12 s13  14 a15  16 n17 i18 c19 e20  21 o22 n23 e24  25 o26 f27  28 H29 o30 n31 e32 y33  34 .35 
+
+*MOT:	did you hear that one Daddy ?
+line number: 1947
+*0 M1 O2 T3 :4 	5 d6 i7 d8  9 y10 o11 u12  13 h14 e15 a16 r17  18 t19 h20 a21 t22  23 o24 n25 e26  27 D28 a29 d30 d31 y32  33 ?34 
+
+*FAT:	I heard it all the way from the other room .
+line number: 1951
+*0 F1 A2 T3 :4 	5 I6  7 h8 e9 a10 r11 d12  13 i14 t15  16 a17 l18 l19  20 t21 h22 e23  24 w25 a26 y27  28 f29 r30 o31 m32  33 t34 h35 e36  37 o38 t39 h40 e41 r42  43 r44 o45 o46 m47  48 .49 
+
+*MOT:	I thought you would .
+line number: 1956
+*0 M1 O2 T3 :4 	5 I6  7 t8 h9 o10 u11 g12 h13 t14  15 y16 o17 u18  19 w20 o21 u22 l23 d24  25 .26 
+
+*CHI:	Daddy want to hear it again ?
+line number: 1959
+*0 C1 H2 I3 :4 	5 D6 a7 d8 d9 y10  11 w12 a13 n14 t15  16 t17 o18  19 h20 e21 a22 r23  24 i25 t26  27 a28 g29 a30 i31 n32  33 ?34 
+
+*FAT:	no .
+line number: 1963
+*0 F1 A2 T3 :4 	5 n6 o7  8 .9 
+
+*FAT:	I [//] one that I'd like to hear is &-uh love is something if you give it away .
+line number: 1966
+*0 F1 A2 T3 :4 	5 I6  7 [8 /9 /10 ]11  12 o13 n14 e15  16 t17 h18 a19 t20  21 I22 '23 d24  25 l26 i27 k28 e29  30 t31 o32  33 h34 e35 a36 r37  38 i39 s40  41 &42 -43 u44 h45  46 l47 o48 v49 e50  51 i52 s53  54 s55 o56 m57 e58 t59 h60 i61 n62 g63  64 i65 f66  67 y68 o69 u70  71 g72 i73 v74 e75  76 i77 t78  79 a80 w81 a82 y83  84 .85 
+
+*FAT:	<I like that one> [>] .
+line number: 1973
+*0 F1 A2 T3 :4 	5 <6 I7  8 l9 i10 k11 e12  13 t14 h15 a16 t17  18 o19 n20 e21 >22  23 [24 >25 ]26  27 .28 
+
+*CHI:	zzz [<] .
+line number: 1976
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 [10 <11 ]12  13 .14 
+
+*CHI:	little ra(bbit) what ?
+line number: 1980
+*0 C1 H2 I3 :4 	5 l6 i7 t8 t9 l10 e11  12 r13 a14 (15 b16 b17 i18 t19 )20  21 w22 h23 a24 t25  26 ?27 
+
+*FAT:	&-uh I would like to hear love is something if you give it away .
+line number: 1984
+*0 F1 A2 T3 :4 	5 &6 -7 u8 h9  10 I11  12 w13 o14 u15 l16 d17  18 l19 i20 k21 e22  23 t24 o25  26 h27 e28 a29 r30  31 l32 o33 v34 e35  36 i37 s38  39 s40 o41 m42 e43 t44 h45 i46 n47 g48  49 i50 f51  52 y53 o54 u55  56 g57 i58 v59 e60  61 i62 t63  64 a65 w66 a67 y68  69 .70 
+
+*FAT:	I like that one .
+line number: 1989
+*0 F1 A2 T3 :4 	5 I6  7 l8 i9 k10 e11  12 t13 h14 a15 t16  17 o18 n19 e20  21 .22 
+
+*CHI:	oh .
+line number: 1992
+*0 C1 H2 I3 :4 	5 o6 h7  8 .9 
+
+*CHI:	okay .
+line number: 1995
+*0 C1 H2 I3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	do you want hear it too ?
+line number: 1998
+*0 C1 H2 I3 :4 	5 d6 o7  8 y9 o10 u11  12 w13 a14 n15 t16  17 h18 e19 a20 r21  22 i23 t24  25 t26 o27 o28  29 ?30 
+
+*MOT:	yes .
+line number: 2003
+*0 M1 O2 T3 :4 	5 y6 e7 s8  9 .10 
+
+*CHI:	love is something if you give it away (.) give it away .
+line number: 2006
+*0 C1 H2 I3 :4 	5 l6 o7 v8 e9  10 i11 s12  13 s14 o15 m16 e17 t18 h19 i20 n21 g22  23 i24 f25  26 y27 o28 u29  30 g31 i32 v33 e34  35 i36 t37  38 a39 w40 a41 y42  43 (44 .45 )46  47 g48 i49 v50 e51  52 i53 t54  55 a56 w57 a58 y59  60 .61 
+
+*CHI:	love is something if you give it away you end up having more .
+line number: 2012
+*0 C1 H2 I3 :4 	5 l6 o7 v8 e9  10 i11 s12  13 s14 o15 m16 e17 t18 h19 i20 n21 g22  23 i24 f25  26 y27 o28 u29  30 g31 i32 v33 e34  35 i36 t37  38 a39 w40 a41 y42  43 y44 o45 u46  47 e48 n49 d50  51 u52 p53  54 h55 a56 v57 i58 n59 g60  61 m62 o63 r64 e65  66 .67 
+
+*CHI:	it's just like a magic penny (.) hold it tight and you don't have any friends that are near .
+line number: 2019
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 j11 u12 s13 t14  15 l16 i17 k18 e19  20 a21  22 m23 a24 g25 i26 c27  28 p29 e30 n31 n32 y33  34 (35 .36 )37  38 h39 o40 l41 d42  43 i44 t45  46 t47 i48 g49 h50 t51  52 a53 n54 d55  56 y57 o58 u59  60 d61 o62 n63 '64 t65  66 h67 a68 v69 e70  71 a72 n73 y74  75 f76 r77 i78 e79 n80 d81 s82  83 t84 h85 a86 t87  88 a89 r90 e91  92 n93 e94 a95 r96  97 .98 
+
+*CHI:	have so many and (o)ver (o)ver over the floor .
+line number: 2027
+*0 C1 H2 I3 :4 	5 h6 a7 v8 e9  10 s11 o12  13 m14 a15 n16 y17  18 a19 n20 d21  22 (23 o24 )25 v26 e27 r28  29 (30 o31 )32 v33 e34 r35  36 o37 v38 e39 r40  41 t42 h43 e44  45 f46 l47 o48 o49 r50  51 .52 
+
+*CHI:	love is something if you give it away (.) give it away .
+line number: 2033
+*0 C1 H2 I3 :4 	5 l6 o7 v8 e9  10 i11 s12  13 s14 o15 m16 e17 t18 h19 i20 n21 g22  23 i24 f25  26 y27 o28 u29  30 g31 i32 v33 e34  35 i36 t37  38 a39 w40 a41 y42  43 (44 .45 )46  47 g48 i49 v50 e51  52 i53 t54  55 a56 w57 a58 y59  60 .61 
+
+*CHI:	love is something if you give it away you end up having more .
+line number: 2039
+*0 C1 H2 I3 :4 	5 l6 o7 v8 e9  10 i11 s12  13 s14 o15 m16 e17 t18 h19 i20 n21 g22  23 i24 f25  26 y27 o28 u29  30 g31 i32 v33 e34  35 i36 t37  38 a39 w40 a41 y42  43 y44 o45 u46  47 e48 n49 d50  51 u52 p53  54 h55 a56 v57 i58 n59 g60  61 m62 o63 r64 e65  66 .67 
+
+*MOT:	oh xxx .
+line number: 2046
+*0 M1 O2 T3 :4 	5 o6 h7  8 x9 x10 x11  12 .13 
+
+*CHI:	want to hear the other love song ?
+line number: 2050
+*0 C1 H2 I3 :4 	5 w6 a7 n8 t9  10 t11 o12  13 h14 e15 a16 r17  18 t19 h20 e21  22 o23 t24 h25 e26 r27  28 l29 o30 v31 e32  33 s34 o35 n36 g37  38 ?39 
+
+*FAT:	no .
+line number: 2054
+*0 F1 A2 T3 :4 	5 n6 o7  8 .9 
+
+*CHI:	if there whirling swirling .
+line number: 2057
+*0 C1 H2 I3 :4 	5 i6 f7  8 t9 h10 e11 r12 e13  14 w15 h16 i17 r18 l19 i20 n21 g22  23 s24 w25 i26 r27 l28 i29 n30 g31  32 .33 
+
+*FAT:	sure .
+line number: 2061
+*0 F1 A2 T3 :4 	5 s6 u7 r8 e9  10 .11 
+
+*MOT:	okay .
+line number: 2064
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	love +...
+line number: 2067
+*0 C1 H2 I3 :4 	5 l6 o7 v8 e9  10 +11 .12 .13 .14 
+
+*CHI:	what is love ?
+line number: 2071
+*0 C1 H2 I3 :4 	5 w6 h7 a8 t9  10 i11 s12  13 l14 o15 v16 e17  18 ?19 
+
+*CHI:	I don't know what is .
+line number: 2075
+*0 C1 H2 I3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 w19 h20 a21 t22  23 i24 s25  26 .27 
+
+*MOT:	only you know this song here .
+line number: 2079
+*0 M1 O2 T3 :4 	5 o6 n7 l8 y9  10 y11 o12 u13  14 k15 n16 o17 w18  19 t20 h21 i22 s23  24 s25 o26 n27 g28  29 h30 e31 r32 e33  34 .35 
+
+*CHI:	no I don't .
+line number: 2082
+*0 C1 H2 I3 :4 	5 n6 o7  8 I9  10 d11 o12 n13 '14 t15  16 .17 
+
+*MOT:	then you can't sing that one right ?
+line number: 2085
+*0 M1 O2 T3 :4 	5 t6 h7 e8 n9  10 y11 o12 u13  14 c15 a16 n17 '18 t19  20 s21 i22 n23 g24  25 t26 h27 a28 t29  30 o31 n32 e33  34 r35 i36 g37 h38 t39  40 ?41 
+
+*CHI:	(be)cause I don't know it .
+line number: 2091
+*0 C1 H2 I3 :4 	5 (6 b7 e8 )9 c10 a11 u12 s13 e14  15 I16  17 d18 o19 n20 '21 t22  23 k24 n25 o26 w27  28 i29 t30  31 .32 
+
+*MOT:	okay .
+line number: 2094
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*MOT:	when you do learn it better will you sing it to us ?
+line number: 2097
+*0 M1 O2 T3 :4 	5 w6 h7 e8 n9  10 y11 o12 u13  14 d15 o16  17 l18 e19 a20 r21 n22  23 i24 t25  26 b27 e28 t29 t30 e31 r32  33 w34 i35 l36 l37  38 y39 o40 u41  42 s43 i44 n45 g46  47 i48 t49  50 t51 o52  53 u54 s55  56 ?57 
+
+*CHI:	at Open Center I learn it .
+line number: 2103
+*0 C1 H2 I3 :4 	5 a6 t7  8 O9 p10 e11 n12  13 C14 e15 n16 t17 e18 r19  20 I21  22 l23 e24 a25 r26 n27  28 i29 t30  31 .32 
+
+*MOT:	that's the first time I ever heard that second part of love is something that [//] about the penny part (.) ?
+line number: 2106
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 t13 h14 e15  16 f17 i18 r19 s20 t21  22 t23 i24 m25 e26  27 I28  29 e30 v31 e32 r33  34 h35 e36 a37 r38 d39  40 t41 h42 a43 t44  45 s46 e47 c48 o49 n50 d51  52 p53 a54 r55 t56  57 o58 f59  60 l61 o62 v63 e64  65 i66 s67  68 s69 o70 m71 e72 t73 h74 i75 n76 g77  78 t79 h80 a81 t82  83 [84 /85 /86 ]87  88 a89 b90 o91 u92 t93  94 t95 h96 e97  98 p99 e100 n101 n102 y103  104 p105 a106 r107 t108  109 (110 .111 )112  113 ?114 
+
+*MOT:	I never heard that part before .
+line number: 2115
+*0 M1 O2 T3 :4 	5 I6  7 n8 e9 v10 e11 r12  13 h14 e15 a16 r17 d18  19 t20 h21 a22 t23  24 p25 a26 r27 t28  29 b30 e31 f32 o33 r34 e35  36 .37 
+
+*MOT:	that's very pretty .
+line number: 2118
+*0 M1 O2 T3 :4 	5 t6 h7 a8 t9 '10 s11  12 v13 e14 r15 y16  17 p18 r19 e20 t21 t22 y23  24 .25 
+
+*CHI:	it's just like a magic penny .
+line number: 2121
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 j11 u12 s13 t14  15 l16 i17 k18 e19  20 a21  22 m23 a24 g25 i26 c27  28 p29 e30 n31 n32 y33  34 .35 
+
+*MOT:	love is like a magic penny .
+line number: 2125
+*0 M1 O2 T3 :4 	5 l6 o7 v8 e9  10 i11 s12  13 l14 i15 k16 e17  18 a19  20 m21 a22 g23 i24 c25  26 p27 e28 n29 n30 y31  32 .33 
+
+*FAT:	I'm gonna turn the overhead light off .
+line number: 2128
+*0 F1 A2 T3 :4 	5 I6 '7 m8  9 g10 o11 n12 n13 a14  15 t16 u17 r18 n19  20 t21 h22 e23  24 o25 v26 e27 r28 h29 e30 a31 d32  33 l34 i35 g36 h37 t38  39 o40 f41 f42  43 .44 
+
+*CHI:	sun it's just like a <ma(gic)> [///] why are you turning off the light ?
+line number: 2133
+*0 C1 H2 I3 :4 	5 s6 u7 n8  9 i10 t11 '12 s13  14 j15 u16 s17 t18  19 l20 i21 k22 e23  24 a25  26 <27 m28 a29 (30 g31 i32 c33 )34 >35  36 [37 /38 /39 /40 ]41  42 w43 h44 y45  46 a47 r48 e49  50 y51 o52 u53  54 t55 u56 r57 n58 i59 n60 g61  62 o63 f64 f65  66 t67 h68 e69  70 l71 i72 g73 h74 t75  76 ?77 
+
+*FAT:	just [/] just one of them .
+line number: 2141
+*0 F1 A2 T3 :4 	5 j6 u7 s8 t9  10 [11 /12 ]13  14 j15 u16 s17 t18  19 o20 n21 e22  23 o24 f25  26 t27 h28 e29 m30  31 .32 
+
+*FAT:	you still have the two other lights on in the room .
+line number: 2144
+*0 F1 A2 T3 :4 	5 y6 o7 u8  9 s10 t11 i12 l13 l14  15 h16 a17 v18 e19  20 t21 h22 e23  24 t25 w26 o27  28 o29 t30 h31 e32 r33  34 l35 i36 g37 h38 t39 s40  41 o42 n43  44 i45 n46  47 t48 h49 e50  51 r52 o53 o54 m55  56 .57 
+
+*CHI:	why did you turn that light off ?
+line number: 2149
+*0 C1 H2 I3 :4 	5 w6 h7 y8  9 d10 i11 d12  13 y14 o15 u16  17 t18 u19 r20 n21  22 t23 h24 a25 t26  27 l28 i29 g30 h31 t32  33 o34 f35 f36  37 ?38 
+
+*FAT:	and now it's Daddy's turn to have the lights the way he likes it .
+line number: 2154
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 n10 o11 w12  13 i14 t15 '16 s17  18 D19 a20 d21 d22 y23 '24 s25  26 t27 u28 r29 n30  31 t32 o33  34 h35 a36 v37 e38  39 t40 h41 e42  43 l44 i45 g46 h47 t48 s49  50 t51 h52 e53  54 w55 a56 y57  58 h59 e60  61 l62 i63 k64 e65 s66  67 i68 t69  70 .71 
+
+*FAT:	I'll turn the fan back on .
+line number: 2161
+*0 F1 A2 T3 :4 	5 I6 '7 l8 l9  10 t11 u12 r13 n14  15 t16 h17 e18  19 f20 a21 n22  23 b24 a25 c26 k27  28 o29 n30  31 .32 
+
+*MOT:	but we don't need the fan .
+line number: 2164
+*0 M1 O2 T3 :4 	5 b6 u7 t8  9 w10 e11  12 d13 o14 n15 '16 t17  18 n19 e20 e21 d22  23 t24 h25 e26  27 f28 a29 n30  31 .32 
+
+*FAT:	it's just nice to [/] to have the fan on low .
+line number: 2167
+*0 F1 A2 T3 :4 	5 i6 t7 '8 s9  10 j11 u12 s13 t14  15 n16 i17 c18 e19  20 t21 o22  23 [24 /25 ]26  27 t28 o29  30 h31 a32 v33 e34  35 t36 h37 e38  39 f40 a41 n42  43 o44 n45  46 l47 o48 w49  50 .51 
+
+*MOT:	okay .
+line number: 2172
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*FAT:	I was going to have a [/] a cigarette if that wouldn't be objectionable .
+line number: 2175
+*0 F1 A2 T3 :4 	5 I6  7 w8 a9 s10  11 g12 o13 i14 n15 g16  17 t18 o19  20 h21 a22 v23 e24  25 a26  27 [28 /29 ]30  31 a32  33 c34 i35 g36 a37 r38 e39 t40 t41 e42  43 i44 f45  46 t47 h48 a49 t50  51 w52 o53 u54 l55 d56 n57 '58 t59  60 b61 e62  63 o64 b65 j66 e67 c68 t69 i70 o71 n72 a73 b74 l75 e76  77 .78 
+
+*MOT:	yes .
+line number: 2181
+*0 M1 O2 T3 :4 	5 y6 e7 s8  9 .10 
+
+*MOT:	does that mean you want (t)a be excused ?
+line number: 2184
+*0 M1 O2 T3 :4 	5 d6 o7 e8 s9  10 t11 h12 a13 t14  15 m16 e17 a18 n19  20 y21 o22 u23  24 w25 a26 n27 t28  29 (30 t31 )32 a33  34 b35 e36  37 e38 x39 c40 u41 s42 e43 d44  45 ?46 
+
+*FAT:	no !
+line number: 2189
+*0 F1 A2 T3 :4 	5 n6 o7  8 !9 
+
+*FAT:	I'm gonna come <back to the table> [>] .
+line number: 2192
+*0 F1 A2 T3 :4 	5 I6 '7 m8  9 g10 o11 n12 n13 a14  15 c16 o17 m18 e19  20 <21 b22 a23 c24 k25  26 t27 o28  29 t30 h31 e32  33 t34 a35 b36 l37 e38 >39  40 [41 >42 ]43  44 .45 
+
+*MOT:	<oh bring it> [//] have it here .
+line number: 2197
+*0 M1 O2 T3 :4 	5 <6 o7 h8  9 b10 r11 i12 n13 g14  15 i16 t17 >18  19 [20 /21 /22 ]23  24 h25 a26 v27 e28  29 i30 t31  32 h33 e34 r35 e36  37 .38 
+
+*MOT:	oh that's why you wanted the fan on .
+line number: 2200
+*0 M1 O2 T3 :4 	5 o6 h7  8 t9 h10 a11 t12 '13 s14  15 w16 h17 y18  19 y20 o21 u22  23 w24 a25 n26 t27 e28 d29  30 t31 h32 e33  34 f35 a36 n37  38 o39 n40  41 .42 
+
+*FAT:	yeah .
+line number: 2205
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	okay .
+line number: 2208
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*FAT:	I mean if I have_to sit and smoke in the kitchen might as well turn the overhead fan on .
+line number: 2211
+*0 F1 A2 T3 :4 	5 I6  7 m8 e9 a10 n11  12 i13 f14  15 I16  17 h18 a19 v20 e21 _22 t23 o24  25 s26 i27 t28  29 a30 n31 d32  33 s34 m35 o36 k37 e38  39 i40 n41  42 t43 h44 e45  46 k47 i48 t49 c50 h51 e52 n53  54 m55 i56 g57 h58 t59  60 a61 s62  63 w64 e65 l66 l67  68 t69 u70 r71 n72  73 t74 h75 e76  77 o78 v79 e80 r81 h82 e83 a84 d85  86 f87 a88 n89  90 o91 n92  93 .94 
+
+*MOT:	good idea .
+line number: 2218
+*0 M1 O2 T3 :4 	5 g6 o7 o8 d9  10 i11 d12 e13 a14  15 .16 
+
+*FAT:	yeah (.) .
+line number: 2221
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 (11 .12 )13  14 .15 
+
+*FAT:	oh my tummy .
+line number: 2224
+*0 F1 A2 T3 :4 	5 o6 h7  8 m9 y10  11 t12 u13 m14 m15 y16  17 .18 
+
+*MOT:	I know .
+line number: 2228
+*0 M1 O2 T3 :4 	5 I6  7 k8 n9 o10 w11  12 .13 
+
+*MOT:	we're just sitting here eating while +...
+line number: 2231
+*0 M1 O2 T3 :4 	5 w6 e7 '8 r9 e10  11 j12 u13 s14 t15  16 s17 i18 t19 t20 i21 n22 g23  24 h25 e26 r27 e28  29 e30 a31 t32 i33 n34 g35  36 w37 h38 i39 l40 e41  42 +43 .44 .45 .46 
+
+*CHI:	<I'm your toy Mom> [<] .
+line number: 2236
+*0 C1 H2 I3 :4 	5 <6 I7 '8 m9  10 y11 o12 u13 r14  15 t16 o17 y18  19 M20 o21 m22 >23  24 [25 <26 ]27  28 .29 
+
+*FAT:	I didn't realize I had eaten that much .
+line number: 2240
+*0 F1 A2 T3 :4 	5 I6  7 d8 i9 d10 n11 '12 t13  14 r15 e16 a17 l18 i19 z20 e21  22 I23  24 h25 a26 d27  28 e29 a30 t31 e32 n33  34 t35 h36 a37 t38  39 m40 u41 c42 h43  44 .45 
+
+*MOT:	yeah .
+line number: 2245
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	here's your toy Mom .
+line number: 2248
+*0 C1 H2 I3 :4 	5 h6 e7 r8 e9 '10 s11  12 y13 o14 u15 r16  17 t18 o19 y20  21 M22 o23 m24  25 .26 
+
+*CHI:	wind &-uh that thing in back (.) of your toy [>] .
+line number: 2251
+*0 C1 H2 I3 :4 	5 w6 i7 n8 d9  10 &11 -12 u13 h14  15 t16 h17 a18 t19  20 t21 h22 i23 n24 g25  26 i27 n28  29 b30 a31 c32 k33  34 (35 .36 )37  38 o39 f40  41 y42 o43 u44 r45  46 t47 o48 y49  50 [51 >52 ]53  54 .55 
+
+*FAT:	I don't want any toys at the table Munchkin .
+line number: 2256
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 a19 n20 y21  22 t23 o24 y25 s26  27 a28 t29  30 t31 h32 e33  34 t35 a36 b37 l38 e39  40 M41 u42 n43 c44 h45 k46 i47 n48  49 .50 
+
+*MOT:	get away xxx [>] .
+line number: 2261
+*0 M1 O2 T3 :4 	5 g6 e7 t8  9 a10 w11 a12 y13  14 x15 x16 x17  18 [19 >20 ]21  22 .23 
+
+*CHI:	it's just on the seat .
+line number: 2266
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 j11 u12 s13 t14  15 o16 n17  18 t19 h20 e21  22 s23 e24 a25 t26  27 .28 
+
+*FAT:	I don't want any toys at the table Munchkin .
+line number: 2269
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 w14 a15 n16 t17  18 a19 n20 y21  22 t23 o24 y25 s26  27 a28 t29  30 t31 h32 e33  34 t35 a36 b37 l38 e39  40 M41 u42 n43 c44 h45 k46 i47 n48  49 .50 
+
+*CHI:	why ?
+line number: 2274
+*0 C1 H2 I3 :4 	5 w6 h7 y8  9 ?10 
+
+*FAT:	if you can be Nathaniel the boy you can sit at the table .
+line number: 2278
+*0 F1 A2 T3 :4 	5 i6 f7  8 y9 o10 u11  12 c13 a14 n15  16 b17 e18  19 N20 a21 t22 h23 a24 n25 i26 e27 l28  29 t30 h31 e32  33 b34 o35 y36  37 y38 o39 u40  41 c42 a43 n44  45 s46 i47 t48  49 a50 t51  52 t53 h54 e55  56 t57 a58 b59 l60 e61  62 .63 
+
+*FAT:	if you want to be a toy you have_to go in your toybox .
+line number: 2283
+*0 F1 A2 T3 :4 	5 i6 f7  8 y9 o10 u11  12 w13 a14 n15 t16  17 t18 o19  20 b21 e22  23 a24  25 t26 o27 y28  29 y30 o31 u32  33 h34 a35 v36 e37 _38 t39 o40  41 g42 o43  44 i45 n46  47 y48 o49 u50 r51  52 t53 o54 y55 b56 o57 x58  59 .60 
+
+*CHI:	&a:h .
+line number: 2289
+*0 C1 H2 I3 :4 	5 &6 a7 :8 h9  10 .11 
+
+*MOT:	it's dinner time not play time .
+line number: 2290
+*0 M1 O2 T3 :4 	5 i6 t7 '8 s9  10 d11 i12 n13 n14 e15 r16  17 t18 i19 m20 e21  22 n23 o24 t25  26 p27 l28 a29 y30  31 t32 i33 m34 e35  36 .37 
+
+*CHI:	I'm the teacher .
+line number: 2294
+*0 C1 H2 I3 :4 	5 I6 '7 m8  9 t10 h11 e12  13 t14 e15 a16 c17 h18 e19 r20  21 .22 
+
+*CHI:	and I'm doing +/.
+line number: 2297
+*0 C1 H2 I3 :4 	5 a6 n7 d8  9 I10 '11 m12  13 d14 o15 i16 n17 g18  19 +20 /21 .22 
+
+*FAT:	&-uh &-uh .
+line number: 2300
+*0 F1 A2 T3 :4 	5 &6 -7 u8 h9  10 &11 -12 u13 h14  15 .16 
+
+*CHI:	something .
+line number: 2301
+*0 C1 H2 I3 :4 	5 s6 o7 m8 e9 t10 h11 i12 n13 g14  15 .16 
+
+*FAT:	&-uh &-uh .
+line number: 2304
+*0 F1 A2 T3 :4 	5 &6 -7 u8 h9  10 &11 -12 u13 h14  15 .16 
+
+*FAT:	well you're sitting in the wrong seat then that seat is for Nathaniel the boy .
+line number: 2305
+*0 F1 A2 T3 :4 	5 w6 e7 l8 l9  10 y11 o12 u13 '14 r15 e16  17 s18 i19 t20 t21 i22 n23 g24  25 i26 n27  28 t29 h30 e31  32 w33 r34 o35 n36 g37  38 s39 e40 a41 t42  43 t44 h45 e46 n47  48 t49 h50 a51 t52  53 s54 e55 a56 t57  58 i59 s60  61 f62 o63 r64  65 N66 a67 t68 h69 a70 n71 i72 e73 l74  75 t76 h77 e78  79 b80 o81 y82  83 .84 
+
+*CHI:	well I'm pretending it's for &-um the teacher .
+line number: 2312
+*0 C1 H2 I3 :4 	5 w6 e7 l8 l9  10 I11 '12 m13  14 p15 r16 e17 t18 e19 n20 d21 i22 n23 g24  25 i26 t27 '28 s29  30 f31 o32 r33  34 &35 -36 u37 m38  39 t40 h41 e42  43 t44 e45 a46 c47 h48 e49 r50  51 .52 
+
+*CHI:	I'm pretending it's for the teacher .
+line number: 2317
+*0 C1 H2 I3 :4 	5 I6 '7 m8  9 p10 r11 e12 t13 e14 n15 d16 i17 n18 g19  20 i21 t22 '23 s24  25 f26 o27 r28  29 t30 h31 e32  33 t34 e35 a36 c37 h38 e39 r40  41 .42 
+
+*CHI:	I'm just pretending that .
+line number: 2322
+*0 C1 H2 I3 :4 	5 I6 '7 m8  9 j10 u11 s12 t13  14 p15 r16 e17 t18 e19 n20 d21 i22 n23 g24  25 t26 h27 a28 t29  30 .31 
+
+*FAT:	oh .
+line number: 2325
+*0 F1 A2 T3 :4 	5 o6 h7  8 .9 
+
+*CHI:	and I'm pretending that I'm writing a letter to the other teacher who's away .
+line number: 2328
+*0 C1 H2 I3 :4 	5 a6 n7 d8  9 I10 '11 m12  13 p14 r15 e16 t17 e18 n19 d20 i21 n22 g23  24 t25 h26 a27 t28  29 I30 '31 m32  33 w34 r35 i36 t37 i38 n39 g40  41 a42  43 l44 e45 t46 t47 e48 r49  50 t51 o52  53 t54 h55 e56  57 o58 t59 h60 e61 r62  63 t64 e65 a66 c67 h68 e69 r70  71 w72 h73 o74 '75 s76  77 a78 w79 a80 y81  82 .83 
+
+*FAT:	where is the other teacher away at ?
+line number: 2335
+*0 F1 A2 T3 :4 	5 w6 h7 e8 r9 e10  11 i12 s13  14 t15 h16 e17  18 o19 t20 h21 e22 r23  24 t25 e26 a27 c28 h29 e30 r31  32 a33 w34 a35 y36  37 a38 t39  40 ?41 
+
+*CHI:	at home .
+line number: 2340
+*0 C1 H2 I3 :4 	5 a6 t7  8 h9 o10 m11 e12  13 .14 
+
+*FAT:	oh .
+line number: 2343
+*0 F1 A2 T3 :4 	5 o6 h7  8 .9 
+
+*CHI:	the other teachers is sick .
+line number: 2346
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 o10 t11 h12 e13 r14  15 t16 e17 a18 c19 h20 e21 r22 s23  24 i25 s26  27 s28 i29 c30 k31  32 .33 
+
+*FAT:	well teacher I want you to make sure you drink your Quick and I want you to make sure you finish your dinner .
+line number: 2349
+*0 F1 A2 T3 :4 	5 w6 e7 l8 l9  10 t11 e12 a13 c14 h15 e16 r17  18 I19  20 w21 a22 n23 t24  25 y26 o27 u28  29 t30 o31  32 m33 a34 k35 e36  37 s38 u39 r40 e41  42 y43 o44 u45  46 d47 r48 i49 n50 k51  52 y53 o54 u55 r56  57 Q58 u59 i60 c61 k62  63 a64 n65 d66  67 I68  69 w70 a71 n72 t73  74 y75 o76 u77  78 t79 o80  81 m82 a83 k84 e85  86 s87 u88 r89 e90  91 y92 o93 u94  95 f96 i97 n98 i99 s100 h101  102 y103 o104 u105 r106  107 d108 i109 n110 n111 e112 r113  114 .115 
+
+*CHI:	here's a letter .
+line number: 2358
+*0 C1 H2 I3 :4 	5 h6 e7 r8 e9 '10 s11  12 a13  14 l15 e16 t17 t18 e19 r20  21 .22 
+
+*MOT:	well what does it say ?
+line number: 2361
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 w11 h12 a13 t14  15 d16 o17 e18 s19  20 i21 t22  23 s24 a25 y26  27 ?28 
+
+*CHI:	I can't read it until the other teacher comes back +...
+line number: 2365
+*0 C1 H2 I3 :4 	5 I6  7 c8 a9 n10 '11 t12  13 r14 e15 a16 d17  18 i19 t20  21 u22 n23 t24 i25 l26  27 t28 h29 e30  31 o32 t33 h34 e35 r36  37 t38 e39 a40 c41 h42 e43 r44  45 c46 o47 m48 e49 s50  51 b52 a53 c54 k55  56 +57 .58 .59 .60 
+
+*MOT:	okay [>] .
+line number: 2370
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 [11 >12 ]13  14 .15 
+
+*CHI:	tomorrow [<] .
+line number: 2373
+*0 C1 H2 I3 :4 	5 t6 o7 m8 o9 r10 r11 o12 w13  14 [15 <16 ]17  18 .19 
+
+*FAT:	hey teach make sure you &-uh finish drinking your Quick .
+line number: 2376
+*0 F1 A2 T3 :4 	5 h6 e7 y8  9 t10 e11 a12 c13 h14  15 m16 a17 k18 e19  20 s21 u22 r23 e24  25 y26 o27 u28  29 &30 -31 u32 h33  34 f35 i36 n37 i38 s39 h40  41 d42 r43 i44 n45 k46 i47 n48 g49  50 y51 o52 u53 r54  55 Q56 u57 i58 c59 k60  61 .62 
+
+*MOT:	whoa .
+line number: 2381
+*0 M1 O2 T3 :4 	5 w6 h7 o8 a9  10 .11 
+
+*CHI:	zzz .
+line number: 2384
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*CHI:	now today [/] today there [//] the other teacher's back .
+line number: 2388
+*0 C1 H2 I3 :4 	5 n6 o7 w8  9 t10 o11 d12 a13 y14  15 [16 /17 ]18  19 t20 o21 d22 a23 y24  25 t26 h27 e28 r29 e30  31 [32 /33 /34 ]35  36 t37 h38 e39  40 o41 t42 h43 e44 r45  46 t47 e48 a49 c50 h51 e52 r53 '54 s55  56 b57 a58 c59 k60  61 .62 
+
+*FAT:	do you know if we have a [/] a newer Information Please Almanac ?
+line number: 2393
+*0 F1 A2 T3 :4 	5 d6 o7  8 y9 o10 u11  12 k13 n14 o15 w16  17 i18 f19  20 w21 e22  23 h24 a25 v26 e27  28 a29  30 [31 /32 ]33  34 a35  36 n37 e38 w39 e40 r41  42 I43 n44 f45 o46 r47 m48 a49 t50 i51 o52 n53  54 P55 l56 e57 a58 s59 e60  61 A62 l63 m64 a65 n66 a67 c68  69 ?70 
+
+*MOT:	I don't think we do that's the only one as far as I know .
+line number: 2399
+*0 M1 O2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 t14 h15 i16 n17 k18  19 w20 e21  22 d23 o24  25 t26 h27 a28 t29 '30 s31  32 t33 h34 e35  36 o37 n38 l39 y40  41 o42 n43 e44  45 a46 s47  48 f49 a50 r51  52 a53 s54  55 I56  57 k58 n59 o60 w61  62 .63 
+
+*CHI:	no hot(el) (.) the hotel &-um book ?
+line number: 2407
+*0 C1 H2 I3 :4 	5 n6 o7  8 h9 o10 t11 (12 e13 l14 )15  16 (17 .18 )19  20 t21 h22 e23  24 h25 o26 t27 e28 l29  30 &31 -32 u33 m34  35 b36 o37 o38 k39  40 ?41 
+
+*MOT:	would that have been something for Dylan to look in ?
+line number: 2411
+*0 M1 O2 T3 :4 	5 w6 o7 u8 l9 d10  11 t12 h13 a14 t15  16 h17 a18 v19 e20  21 b22 e23 e24 n25  26 s27 o28 m29 e30 t31 h32 i33 n34 g35  36 f37 o38 r39  40 D41 y42 l43 a44 n45  46 t47 o48  49 l50 o51 o52 k53  54 i55 n56  57 ?58 
+
+*FAT:	yeah .
+line number: 2416
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	is that why you <pulled it out> [>] ?
+line number: 2419
+*0 M1 O2 T3 :4 	5 i6 s7  8 t9 h10 a11 t12  13 w14 h15 y16  17 y18 o19 u20  21 <22 p23 u24 l25 l26 e27 d28  29 i30 t31  32 o33 u34 t35 >36  37 [38 >39 ]40  41 ?42 
+
+*CHI:	<the hotel > [<] +...
+line number: 2423
+*0 C1 H2 I3 :4 	5 <6 t7 h8 e9  10 h11 o12 t13 e14 l15  16 >17  18 [19 <20 ]21  22 +23 .24 .25 .26 
+
+*MOT:	I didn't even think of that .
+line number: 2426
+*0 M1 O2 T3 :4 	5 I6  7 d8 i9 d10 n11 '12 t13  14 e15 v16 e17 n18  19 t20 h21 i22 n23 k24  25 o26 f27  28 t29 h30 a31 t32  33 .34 
+
+*CHI:	the hotel &-uh book ?
+line number: 2429
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 h10 o11 t12 e13 l14  15 &16 -17 u18 h19  20 b21 o22 o23 k24  25 ?26 
+
+*MOT:	no that's not a book about hotels .
+line number: 2433
+*0 M1 O2 T3 :4 	5 n6 o7  8 t9 h10 a11 t12 '13 s14  15 n16 o17 t18  19 a20  21 b22 o23 o24 k25  26 a27 b28 o29 u30 t31  32 h33 o34 t35 e36 l37 s38  39 .40 
+
+*CHI:	zzz .
+line number: 2438
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	it's a book that has all facts in it about different thing you need and after [///] use Dylan's napkin since he's not here .
+line number: 2442
+*0 M1 O2 T3 :4 	5 i6 t7 '8 s9  10 a11  12 b13 o14 o15 k16  17 t18 h19 a20 t21  22 h23 a24 s25  26 a27 l28 l29  30 f31 a32 c33 t34 s35  36 i37 n38  39 i40 t41  42 a43 b44 o45 u46 t47  48 d49 i50 f51 f52 e53 r54 e55 n56 t57  58 t59 h60 i61 n62 g63  64 y65 o66 u67  68 n69 e70 e71 d72  73 a74 n75 d76  77 a78 f79 t80 e81 r82  83 [84 /85 /86 /87 ]88  89 u90 s91 e92  93 D94 y95 l96 a97 n98 '99 s100  101 n102 a103 p104 k105 i106 n107  108 s109 i110 n111 c112 e113  114 h115 e116 '117 s118  119 n120 o121 t122  123 h124 e125 r126 e127  128 .129 
+
+*CHI:	okay <I'll do it> [>] .
+line number: 2452
+*0 C1 H2 I3 :4 	5 o6 k7 a8 y9  10 <11 I12 '13 l14 l15  16 d17 o18  19 i20 t21 >22  23 [24 >25 ]26  27 .28 
+
+*MOT:	please wipe your hand with it because you [/] you keep touching your eyes and your hands are greasy .
+line number: 2455
+*0 M1 O2 T3 :4 	5 p6 l7 e8 a9 s10 e11  12 w13 i14 p15 e16  17 y18 o19 u20 r21  22 h23 a24 n25 d26  27 w28 i29 t30 h31  32 i33 t34  35 b36 e37 c38 a39 u40 s41 e42  43 y44 o45 u46  47 [48 /49 ]50  51 y52 o53 u54  55 k56 e57 e58 p59  60 t61 o62 u63 c64 h65 i66 n67 g68  69 y70 o71 u72 r73  74 e75 y76 e77 s78  79 a80 n81 d82  83 y84 o85 u86 r87  88 h89 a90 n91 d92 s93  94 a95 r96 e97  98 g99 r100 e101 a102 s103 y104  105 .106 
+
+*MOT:	<th(at)> [/] that's right .
+line number: 2463
+*0 M1 O2 T3 :4 	5 <6 t7 h8 (9 a10 t11 )12 >13  14 [15 /16 ]17  18 t19 h20 a21 t22 '23 s24  25 r26 i27 g28 h29 t30  31 .32 
+
+*MOT:	take Dylan's napkin .
+line number: 2466
+*0 M1 O2 T3 :4 	5 t6 a7 k8 e9  10 D11 y12 l13 a14 n15 '16 s17  18 n19 a20 p21 k22 i23 n24  25 .26 
+
+*MOT:	I'll do [?] another one .
+line number: 2469
+*0 M1 O2 T3 :4 	5 I6 '7 l8 l9  10 d11 o12  13 [14 ?15 ]16  17 a18 n19 o20 t21 h22 e23 r24  25 o26 n27 e28  29 .30 
+
+*CHI:	I steal it from him .
+line number: 2472
+*0 C1 H2 I3 :4 	5 I6  7 s8 t9 e10 a11 l12  13 i14 t15  16 f17 r18 o19 m20  21 h22 i23 m24  25 .26 
+
+*MOT:	okay and I will replace it .
+line number: 2475
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 a11 n12 d13  14 I15  16 w17 i18 l19 l20  21 r22 e23 p24 l25 a26 c27 e28  29 i30 t31  32 .33 
+
+*MOT:	when he comes for dinner .
+line number: 2478
+*0 M1 O2 T3 :4 	5 w6 h7 e8 n9  10 h11 e12  13 c14 o15 m16 e17 s18  19 f20 o21 r22  23 d24 i25 n26 n27 e28 r29  30 .31 
+
+*CHI:	zzz .
+line number: 2481
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*CHI:	he'll have no napkins for get clean .
+line number: 2485
+*0 C1 H2 I3 :4 	5 h6 e7 '8 l9 l10  11 h12 a13 v14 e15  16 n17 o18  19 n20 a21 p22 k23 i24 n25 s26  27 f28 o29 r30  31 g32 e33 t34  35 c36 l37 e38 a39 n40  41 .42 
+
+*CHI:	zzz .
+line number: 2490
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	oh greedy brother you .
+line number: 2494
+*0 M1 O2 T3 :4 	5 o6 h7  8 g9 r10 e11 e12 d13 y14  15 b16 r17 o18 t19 h20 e21 r22  23 y24 o25 u26  27 .28 
+
+*CHI:	<I'm> [/] I'm Ernie .
+line number: 2497
+*0 C1 H2 I3 :4 	5 <6 I7 '8 m9 >10  11 [12 /13 ]14  15 I16 '17 m18  19 E20 r21 n22 i23 e24  25 .26 
+
+*CHI:	Bert <foll(ow)> [//] it's a game called follow the arrow .
+line number: 2500
+*0 C1 H2 I3 :4 	5 B6 e7 r8 t9  10 <11 f12 o13 l14 l15 (16 o17 w18 )19 >20  21 [22 /23 /24 ]25  26 i27 t28 '29 s30  31 a32  33 g34 a35 m36 e37  38 c39 a40 l41 l42 e43 d44  45 f46 o47 l48 l49 o50 w51  52 t53 h54 e55  56 a57 r58 r59 o60 w61  62 .63 
+
+*CHI:	play it .
+line number: 2507
+*0 C1 H2 I3 :4 	5 p6 l7 a8 y9  10 i11 t12  13 .14 
+
+*MOT:	Follow_The_Arrows ?
+line number: 2512
+*0 M1 O2 T3 :4 	5 F6 o7 l8 l9 o10 w11 _12 T13 h14 e15 _16 A17 r18 r19 o20 w21 s22  23 ?24 
+
+*CHI:	yeah .
+line number: 2516
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	this bird .
+line number: 2519
+*0 C1 H2 I3 :4 	5 t6 h7 i8 s9  10 b11 i12 r13 d14  15 .16 
+
+*CHI:	zzz (.) .
+line number: 2522
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 (10 .11 )12  13 .14 
+
+*CHI:	he doesn't do that .
+line number: 2526
+*0 C1 H2 I3 :4 	5 h6 e7  8 d9 o10 e11 s12 n13 '14 t15  16 d17 o18  19 t20 h21 a22 t23  24 .25 
+
+*CHI:	he says zzz@q .
+line number: 2529
+*0 C1 H2 I3 :4 	5 h6 e7  8 s9 a10 y11 s12  13 z14 z15 z16 @17 q18  19 .20 
+
+*MOT:	&-um .
+line number: 2533
+*0 M1 O2 T3 :4 	5 &6 -7 u8 m9  10 .11 
+
+*CHI:	try that .
+line number: 2534
+*0 C1 H2 I3 :4 	5 t6 r7 y8  9 t10 h11 a12 t13  14 .15 
+
+*MOT:	I think maybe we should celebrate Brook's birthday today even though we don't have a cake .
+line number: 2537
+*0 M1 O2 T3 :4 	5 I6  7 t8 h9 i10 n11 k12  13 m14 a15 y16 b17 e18  19 w20 e21  22 s23 h24 o25 u26 l27 d28  29 c30 e31 l32 e33 b34 r35 a36 t37 e38  39 B40 r41 o42 o43 k44 '45 s46  47 b48 i49 r50 t51 h52 d53 a54 y55  56 t57 o58 d59 a60 y61  62 e63 v64 e65 n66  67 t68 h69 o70 u71 g72 h73  74 w75 e76  77 d78 o79 n80 '81 t82  83 h84 a85 v86 e87  88 a89  90 c91 a92 k93 e94  95 .96 
+
+*FAT:	alright .
+line number: 2544
+*0 F1 A2 T3 :4 	5 a6 l7 r8 i9 g10 h11 t12  13 .14 
+
+*CHI:	<we could make one> [>] .
+line number: 2547
+*0 C1 H2 I3 :4 	5 <6 w7 e8  9 c10 o11 u12 l13 d14  15 m16 a17 k18 e19  20 o21 n22 e23 >24  25 [26 >27 ]28  29 .30 
+
+*FAT:	<I was> [/] [<] .
+line number: 2550
+*0 F1 A2 T3 :4 	5 <6 I7  8 w9 a10 s11 >12  13 [14 /15 ]16  17 [18 <19 ]20  21 .22 
+
+*FAT:	I was just looking at the suicide rates around <the world> [>] .
+line number: 2551
+*0 F1 A2 T3 :4 	5 I6  7 w8 a9 s10  11 j12 u13 s14 t15  16 l17 o18 o19 k20 i21 n22 g23  24 a25 t26  27 t28 h29 e30  31 s32 u33 i34 c35 i36 d37 e38  39 r40 a41 t42 e43 s44  45 a46 r47 o48 u49 n50 d51  52 <53 t54 h55 e56  57 w58 o59 r60 l61 d62 >63  64 [65 >66 ]67  68 .69 
+
+*CHI:	<we could> [<] .
+line number: 2556
+*0 C1 H2 I3 :4 	5 <6 w7 e8  9 c10 o11 u12 l13 d14 >15  16 [17 <18 ]19  20 .21 
+
+*CHI:	make a cake with eggs [>] .
+line number: 2559
+*0 C1 H2 I3 :4 	5 m6 a7 k8 e9  10 a11  12 c13 a14 k15 e16  17 w18 i19 t20 h21  22 e23 g24 g25 s26  27 [28 >29 ]30  31 .32 
+
+*MOT:	for nineteen seventy three ?
+line number: 2562
+*0 M1 O2 T3 :4 	5 f6 o7 r8  9 n10 i11 n12 e13 t14 e15 e16 n17  18 s19 e20 v21 e22 n23 t24 y25  26 t27 h28 r29 e30 e31  32 ?33 
+
+*CHI:	<we'll> [<] .
+line number: 2565
+*0 C1 H2 I3 :4 	5 <6 w7 e8 '9 l10 l11 >12  13 [14 <15 ]16  17 .18 
+
+*CHI:	need <eggs to make a cake> [>] .
+line number: 2568
+*0 C1 H2 I3 :4 	5 n6 e7 e8 d9  10 <11 e12 g13 g14 s15  16 t17 o18  19 m20 a21 k22 e23  24 a25  26 c27 a28 k29 e30 >31  32 [33 >34 ]35  36 .37 
+
+*FAT:	<no that's from nineteen seventy one> [<] .
+line number: 2571
+*0 F1 A2 T3 :4 	5 <6 n7 o8  9 t10 h11 a12 t13 '14 s15  16 f17 r18 o19 m20  21 n22 i23 n24 e25 t26 e27 e28 n29  30 s31 e32 v33 e34 n35 t36 y37  38 o39 n40 e41 >42  43 [44 <45 ]46  47 .48 
+
+*MOT:	oh .
+line number: 2576
+*0 M1 O2 T3 :4 	5 o6 h7  8 .9 
+
+*MOT:	up (un)til nineteen seventy one ?
+line number: 2579
+*0 M1 O2 T3 :4 	5 u6 p7  8 (9 u10 n11 )12 t13 i14 l15  16 n17 i18 n19 e20 t21 e22 e23 n24  25 s26 e27 v28 e29 n30 t31 y32  33 o34 n35 e36  37 ?38 
+
+*FAT:	yeah .
+line number: 2582
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	and Mexico has the lowest suicide rate at one point six per thousand and Hungary has the highest at twenty nine point six per one hundred thousand .
+line number: 2585
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 M10 e11 x12 i13 c14 o15  16 h17 a18 s19  20 t21 h22 e23  24 l25 o26 w27 e28 s29 t30  31 s32 u33 i34 c35 i36 d37 e38  39 r40 a41 t42 e43  44 a45 t46  47 o48 n49 e50  51 p52 o53 i54 n55 t56  57 s58 i59 x60  61 p62 e63 r64  65 t66 h67 o68 u69 s70 a71 n72 d73  74 a75 n76 d77  78 H79 u80 n81 g82 a83 r84 y85  86 h87 a88 s89  90 t91 h92 e93  94 h95 i96 g97 h98 e99 s100 t101  102 a103 t104  105 t106 w107 e108 n109 t110 y111  112 n113 i114 n115 e116  117 p118 o119 i120 n121 t122  123 s124 i125 x126  127 p128 e129 r130  131 o132 n133 e134  135 h136 u137 n138 d139 r140 e141 d142  143 t144 h145 o146 u147 s148 a149 n150 d151  152 .153 
+
+*CHI:	zzz [<] .
+line number: 2595
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 [10 <11 ]12  13 .14 
+
+*MOT:	mhm .
+line number: 2599
+*0 M1 O2 T3 :4 	5 m6 h7 m8  9 .10 
+
+*MOT:	I wonder what [/] what [/] what it is xxx about those countries .
+line number: 2602
+*0 M1 O2 T3 :4 	5 I6  7 w8 o9 n10 d11 e12 r13  14 w15 h16 a17 t18  19 [20 /21 ]22  23 w24 h25 a26 t27  28 [29 /30 ]31  32 w33 h34 a35 t36  37 i38 t39  40 i41 s42  43 x44 x45 x46  47 a48 b49 o50 u51 t52  53 t54 h55 o56 s57 e58  59 c60 o61 u62 n63 t64 r65 i66 e67 s68  69 .70 
+
+*FAT:	I don't know .
+line number: 2607
+*0 F1 A2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 .19 
+
+*FAT:	Ireland has a very low +/.
+line number: 2610
+*0 F1 A2 T3 :4 	5 I6 r7 e8 l9 a10 n11 d12  13 h14 a15 s16  17 a18  19 v20 e21 r22 y23  24 l25 o26 w27  28 +29 /30 .31 
+
+*CHI:	Mommy ?
+line number: 2613
+*0 C1 H2 I3 :4 	5 M6 o7 m8 m9 y10  11 ?12 
+
+*FAT:	rate .
+line number: 2617
+*0 F1 A2 T3 :4 	5 r6 a7 t8 e9  10 .11 
+
+*CHI:	you know what ?
+line number: 2620
+*0 C1 H2 I3 :4 	5 y6 o7 u8  9 k10 n11 o12 w13  14 w15 h16 a17 t18  19 ?20 
+
+*FAT:	West Berlin has an astronomical rate but the rest <of West Germany doesn't have a> [/] a huge rate .
+line number: 2624
+*0 F1 A2 T3 :4 	5 W6 e7 s8 t9  10 B11 e12 r13 l14 i15 n16  17 h18 a19 s20  21 a22 n23  24 a25 s26 t27 r28 o29 n30 o31 m32 i33 c34 a35 l36  37 r38 a39 t40 e41  42 b43 u44 t45  46 t47 h48 e49  50 r51 e52 s53 t54  55 <56 o57 f58  59 W60 e61 s62 t63  64 G65 e66 r67 m68 a69 n70 y71  72 d73 o74 e75 s76 n77 '78 t79  80 h81 a82 v83 e84  85 a86 >87  88 [89 /90 ]91  92 a93  94 h95 u96 g97 e98  99 r100 a101 t102 e103  104 .105 
+
+*CHI:	<I'm trying to talk to Mom> [<] .
+line number: 2629
+*0 C1 H2 I3 :4 	5 <6 I7 '8 m9  10 t11 r12 y13 i14 n15 g16  17 t18 o19  20 t21 a22 l23 k24  25 t26 o27  28 M29 o30 m31 >32  33 [34 <35 ]36  37 .38 
+
+*MOT:	what is it Honey ?
+line number: 2633
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 i11 s12  13 i14 t15  16 H17 o18 n19 e20 y21  22 ?23 
+
+*CHI:	well (.) do we have any eggs ?
+line number: 2637
+*0 C1 H2 I3 :4 	5 w6 e7 l8 l9  10 (11 .12 )13  14 d15 o16  17 w18 e19  20 h21 a22 v23 e24  25 a26 n27 y28  29 e30 g31 g32 s33  34 ?35 
+
+*MOT:	yes (.) .
+line number: 2641
+*0 M1 O2 T3 :4 	5 y6 e7 s8  9 (10 .11 )12  13 .14 
+
+*MOT:	Honey we don't have time to make a cake tonight .
+line number: 2644
+*0 M1 O2 T3 :4 	5 H6 o7 n8 e9 y10  11 w12 e13  14 d15 o16 n17 '18 t19  20 h21 a22 v23 e24  25 t26 i27 m28 e29  30 t31 o32  33 m34 a35 k36 e37  38 a39  40 c41 a42 k43 e44  45 t46 o47 n48 i49 g50 h51 t52  53 .54 
+
+*MOT:	Daddy and I both have a lot of things to do .
+line number: 2649
+*0 M1 O2 T3 :4 	5 D6 a7 d8 d9 y10  11 a12 n13 d14  15 I16  17 b18 o19 t20 h21  22 h23 a24 v25 e26  27 a28  29 l30 o31 t32  33 o34 f35  36 t37 h38 i39 n40 g41 s42  43 t44 o45  46 d47 o48  49 .50 
+
+*MOT:	so Brook doesn't eat cake .
+line number: 2654
+*0 M1 O2 T3 :4 	5 s6 o7  8 B9 r10 o11 o12 k13  14 d15 o16 e17 s18 n19 '20 t21  22 e23 a24 t25  26 c27 a28 k29 e30  31 .32 
+
+*MOT:	and we have other sweets .
+line number: 2657
+*0 M1 O2 T3 :4 	5 a6 n7 d8  9 w10 e11  12 h13 a14 v15 e16  17 o18 t19 h20 e21 r22  23 s24 w25 e26 e27 t28 s29  30 .31 
+
+*MOT:	I think (.) I have a can of cat food I bought for Brook and I have that present that I got him ?
+line number: 2660
+*0 M1 O2 T3 :4 	5 I6  7 t8 h9 i10 n11 k12  13 (14 .15 )16  17 I18  19 h20 a21 v22 e23  24 a25  26 c27 a28 n29  30 o31 f32  33 c34 a35 t36  37 f38 o39 o40 d41  42 I43  44 b45 o46 u47 g48 h49 t50  51 f52 o53 r54  55 B56 r57 o58 o59 k60  61 a62 n63 d64  65 I66  67 h68 a69 v70 e71  72 t73 h74 a75 t76  77 p78 r79 e80 s81 e82 n83 t84  85 t86 h87 a88 t89  90 I91  92 g93 o94 t95  96 h97 i98 m99  100 ?101 
+
+*MOT:	the rabbit's foot .
+line number: 2670
+*0 M1 O2 T3 :4 	5 t6 h7 e8  9 r10 a11 b12 b13 i14 t15 '16 s17  18 f19 o20 o21 t22  23 .24 
+
+*CHI:	yeah did you get a purple one for him ?
+line number: 2673
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 d11 i12 d13  14 y15 o16 u17  18 g19 e20 t21  22 a23  24 p25 u26 r27 p28 l29 e30  31 o32 n33 e34  35 f36 o37 r38  39 h40 i41 m42  43 ?44 
+
+*MOT:	no .
+line number: 2679
+*0 M1 O2 T3 :4 	5 n6 o7  8 .9 
+
+*MOT:	I just got him that orange one .
+line number: 2682
+*0 M1 O2 T3 :4 	5 I6  7 j8 u9 s10 t11  12 g13 o14 t15  16 h17 i18 m19  20 t21 h22 a23 t24  25 o26 r27 a28 n29 g30 e31  32 o33 n34 e35  36 .37 
+
+*MOT:	so we can sing happy birthday to him and we can eat our own sweets .
+line number: 2686
+*0 M1 O2 T3 :4 	5 s6 o7  8 w9 e10  11 c12 a13 n14  15 s16 i17 n18 g19  20 h21 a22 p23 p24 y25  26 b27 i28 r29 t30 h31 d32 a33 y34  35 t36 o37  38 h39 i40 m41  42 a43 n44 d45  46 w47 e48  49 c50 a51 n52  53 e54 a55 t56  57 o58 u59 r60  61 o62 w63 n64  65 s66 w67 e68 e69 t70 s71  72 .73 
+
+*MOT:	we can give him the can of cat+food .
+line number: 2693
+*0 M1 O2 T3 :4 	5 w6 e7  8 c9 a10 n11  12 g13 i14 v15 e16  17 h18 i19 m20  21 t22 h23 e24  25 c26 a27 n28  29 o30 f31  32 c33 a34 t35 +36 f37 o38 o39 d40  41 .42 
+
+*MOT:	it's a new flavor that they make .
+line number: 2698
+*0 M1 O2 T3 :4 	5 i6 t7 '8 s9  10 a11  12 n13 e14 w15  16 f17 l18 a19 v20 o21 r22  23 t24 h25 a26 t27  28 t29 h30 e31 y32  33 m34 a35 k36 e37  38 .39 
+
+*CHI:	oh well what ?
+line number: 2703
+*0 C1 H2 I3 :4 	5 o6 h7  8 w9 e10 l11 l12  13 w14 h15 a16 t17  18 ?19 
+
+*CHI:	<McDonald's> [>] ?
+line number: 2707
+*0 C1 H2 I3 :4 	5 <6 M7 c8 D9 o10 n11 a12 l13 d14 '15 s16 >17  18 [19 >20 ]21  22 ?23 
+
+*MOT:	and he'll have_to share his with Liz .
+line number: 2711
+*0 M1 O2 T3 :4 	5 a6 n7 d8  9 h10 e11 '12 l13 l14  15 h16 a17 v18 e19 _20 t21 o22  23 s24 h25 a26 r27 e28  29 h30 i31 s32  33 w34 i35 t36 h37  38 L39 i40 z41  42 .43 
+
+*CHI:	McDonald's ?
+line number: 2716
+*0 C1 H2 I3 :4 	5 M6 c7 D8 o9 n10 a11 l12 d13 '14 s15  16 ?17 
+
+*MOT:	no it's cat food .
+line number: 2720
+*0 M1 O2 T3 :4 	5 n6 o7  8 i9 t10 '11 s12  13 c14 a15 t16  17 f18 o19 o20 d21  22 .23 
+
+*MOT:	it's a new flavor I got him [>] .
+line number: 2723
+*0 M1 O2 T3 :4 	5 i6 t7 '8 s9  10 a11  12 n13 e14 w15  16 f17 l18 a19 v20 o21 r22  23 I24  25 g26 o27 t28  29 h30 i31 m32  33 [34 >35 ]36  37 .38 
+
+*CHI:	zzz [<] .
+line number: 2728
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 [10 <11 ]12  13 .14 
+
+*MOT:	White fish ocean white fish flavor .
+line number: 2732
+*0 M1 O2 T3 :4 	5 W6 h7 i8 t9 e10  11 f12 i13 s14 h15  16 o17 c18 e19 a20 n21  22 w23 h24 i25 t26 e27  28 f29 i30 s31 h32  33 f34 l35 a36 v37 o38 r39  40 .41 
+
+*CHI:	zzz .
+line number: 2735
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	xxx [>] .
+line number: 2739
+*0 M1 O2 T3 :4 	5 x6 x7 x8  9 [10 >11 ]12  13 .14 
+
+*CHI:	does cats like to eat ocean white flavor [<] ?
+line number: 2740
+*0 C1 H2 I3 :4 	5 d6 o7 e8 s9  10 c11 a12 t13 s14  15 l16 i17 k18 e19  20 t21 o22  23 e24 a25 t26  27 o28 c29 e30 a31 n32  33 w34 h35 i36 t37 e38  39 f40 l41 a42 v43 o44 r45  46 [47 <48 ]49  50 ?51 
+
+*MOT:	well we'll find out .
+line number: 2746
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 w11 e12 '13 l14 l15  16 f17 i18 n19 d20  21 o22 u23 t24  25 .26 
+
+*MOT:	<I> [/] I imagine they do (.) .
+line number: 2749
+*0 M1 O2 T3 :4 	5 <6 I7 >8  9 [10 /11 ]12  13 I14  15 i16 m17 a18 g19 i20 n21 e22  23 t24 h25 e26 y27  28 d29 o30  31 (32 .33 )34  35 .36 
+
+*MOT:	so we should do that today (be)cause it's going to be a very busy week .
+line number: 2752
+*0 M1 O2 T3 :4 	5 s6 o7  8 w9 e10  11 s12 h13 o14 u15 l16 d17  18 d19 o20  21 t22 h23 a24 t25  26 t27 o28 d29 a30 y31  32 (33 b34 e35 )36 c37 a38 u39 s40 e41  42 i43 t44 '45 s46  47 g48 o49 i50 n51 g52  53 t54 o55  56 b57 e58  59 a60  61 v62 e63 r64 y65  66 b67 u68 s69 y70  71 w72 e73 e74 k75  76 .77 
+
+*CHI:	yup .
+line number: 2759
+*0 C1 H2 I3 :4 	5 y6 u7 p8  9 .10 
+
+*CHI:	for me too .
+line number: 2762
+*0 C1 H2 I3 :4 	5 f6 o7 r8  9 m10 e11  12 t13 o14 o15  16 .17 
+
+*MOT:	yeah .
+line number: 2765
+*0 M1 O2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	very [!] busy week for me (.) .
+line number: 2768
+*0 C1 H2 I3 :4 	5 v6 e7 r8 y9  10 [11 !12 ]13  14 b15 u16 s17 y18  19 w20 e21 e22 k23  24 f25 o26 r27  28 m29 e30  31 (32 .33 )34  35 .36 
+
+*CHI:	it's a very busy wake [//] week for us [/] us three .
+line number: 2771
+*0 C1 H2 I3 :4 	5 i6 t7 '8 s9  10 a11  12 v13 e14 r15 y16  17 b18 u19 s20 y21  22 w23 a24 k25 e26  27 [28 /29 /30 ]31  32 w33 e34 e35 k36  37 f38 o39 r40  41 u42 s43  44 [45 /46 ]47  48 u49 s50  51 t52 h53 r54 e55 e56  57 .58 
+
+*MOT:	I had a &-um four part series with Andy Cervick in it which was the nights of the museum school I had to cancel .
+line number: 2776
+*0 M1 O2 T3 :4 	5 I6  7 h8 a9 d10  11 a12  13 &14 -15 u16 m17  18 f19 o20 u21 r22  23 p24 a25 r26 t27  28 s29 e30 r31 i32 e33 s34  35 w36 i37 t38 h39  40 A41 n42 d43 y44  45 C46 e47 r48 v49 i50 c51 k52  53 i54 n55  56 i57 t58  59 w60 h61 i62 c63 h64  65 w66 a67 s68  69 t70 h71 e72  73 n74 i75 g76 h77 t78 s79  80 o81 f82  83 t84 h85 e86  87 m88 u89 s90 e91 u92 m93  94 s95 c96 h97 o98 o99 l100  101 I102  103 h104 a105 d106  107 t108 o109  110 c111 a112 n113 c114 e115 l116  117 .118 
+
+*FAT:	tonight ?
+line number: 2786
+*0 F1 A2 T3 :4 	5 t6 o7 n8 i9 g10 h11 t12  13 ?14 
+
+*MOT:	it was &-um one of these &-uh the math class schedule we'll be having .
+line number: 2789
+*0 M1 O2 T3 :4 	5 i6 t7  8 w9 a10 s11  12 &13 -14 u15 m16  17 o18 n19 e20  21 o22 f23  24 t25 h26 e27 s28 e29  30 &31 -32 u33 h34  35 t36 h37 e38  39 m40 a41 t42 h43  44 c45 l46 a47 s48 s49  50 s51 c52 h53 e54 d55 u56 l57 e58  59 w60 e61 '62 l63 l64  65 b66 e67  68 h69 a70 v71 i72 n73 g74  75 .76 
+
+*MOT:	but <I knew> [//] I just took it tentatively and I &-uh told Kathy +/.
+line number: 2795
+*0 M1 O2 T3 :4 	5 b6 u7 t8  9 <10 I11  12 k13 n14 e15 w16 >17  18 [19 /20 /21 ]22  23 I24  25 j26 u27 s28 t29  30 t31 o32 o33 k34  35 i36 t37  38 t39 e40 n41 t42 a43 t44 i45 v46 e47 l48 y49  50 a51 n52 d53  54 I55  56 &57 -58 u59 h60  61 t62 o63 l64 d65  66 K67 a68 t69 h70 y71  72 +73 /74 .75 
+
+*CHI:	zzz .
+line number: 2801
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	I might have_to cancel so <she just> [>] xxx and I called her Friday .
+line number: 2805
+*0 M1 O2 T3 :4 	5 I6  7 m8 i9 g10 h11 t12  13 h14 a15 v16 e17 _18 t19 o20  21 c22 a23 n24 c25 e26 l27  28 s29 o30  31 <32 s33 h34 e35  36 j37 u38 s39 t40 >41  42 [43 >44 ]45  46 x47 x48 x49  50 a51 n52 d53  54 I55  56 c57 a58 l59 l60 e61 d62  63 h64 e65 r66  67 F68 r69 i70 d71 a72 y73  74 .75 
+
+*CHI:	zzz [<] .
+line number: 2810
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 [10 <11 ]12  13 .14 
+
+*FAT:	yeah .
+line number: 2814
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*MOT:	so she would have time before she goes away &-uh it's vacation time you know .
+line number: 2817
+*0 M1 O2 T3 :4 	5 s6 o7  8 s9 h10 e11  12 w13 o14 u15 l16 d17  18 h19 a20 v21 e22  23 t24 i25 m26 e27  28 b29 e30 f31 o32 r33 e34  35 s36 h37 e38  39 g40 o41 e42 s43  44 a45 w46 a47 y48  49 &50 -51 u52 h53  54 i55 t56 '57 s58  59 v60 a61 c62 a63 t64 i65 o66 n67  68 t69 i70 m71 e72  73 y74 o75 u76  77 k78 n79 o80 w81  82 .83 
+
+*MOT:	the &-uh colleges have their &-uh spring vacation this coming week [>] .
+line number: 2824
+*0 M1 O2 T3 :4 	5 t6 h7 e8  9 &10 -11 u12 h13  14 c15 o16 l17 l18 e19 g20 e21 s22  23 h24 a25 v26 e27  28 t29 h30 e31 i32 r33  34 &35 -36 u37 h38  39 s40 p41 r42 i43 n44 g45  46 v47 a48 c49 a50 t51 i52 o53 n54  55 t56 h57 i58 s59  60 c61 o62 m63 i64 n65 g66  67 w68 e69 e70 k71  72 [73 >74 ]75  76 .77 
+
+*CHI:	xxx [<] .
+line number: 2829
+*0 C1 H2 I3 :4 	5 x6 x7 x8  9 [10 <11 ]12  13 .14 
+
+*FAT:	mhm .
+line number: 2831
+*0 F1 A2 T3 :4 	5 m6 h7 m8  9 .10 
+
+*CHI:	Mom what [/] what does they call its name ?
+line number: 2834
+*0 C1 H2 I3 :4 	5 M6 o7 m8  9 w10 h11 a12 t13  14 [15 /16 ]17  18 w19 h20 a21 t22  23 d24 o25 e26 s27  28 t29 h30 e31 y32  33 c34 a35 l36 l37  38 i39 t40 s41  42 n43 a44 m45 e46  47 ?48 
+
+*FAT:	it says information please almanac atlas and yearbook .
+line number: 2839
+*0 F1 A2 T3 :4 	5 i6 t7  8 s9 a10 y11 s12  13 i14 n15 f16 o17 r18 m19 a20 t21 i22 o23 n24  25 p26 l27 e28 a29 s30 e31  32 a33 l34 m35 a36 n37 a38 c39  40 a41 t42 l43 a44 s45  46 a47 n48 d49  50 y51 e52 a53 r54 b55 o56 o57 k58  59 .60 
+
+*MOT:	&-uh except not Mass Eye I guess .
+line number: 2844
+*0 M1 O2 T3 :4 	5 &6 -7 u8 h9  10 e11 x12 c13 e14 p15 t16  17 n18 o19 t20  21 M22 a23 s24 s25  26 E27 y28 e29  30 I31  32 g33 u34 e35 s36 s37  38 .39 
+
+*MOT:	(be)cause I'm working at Mass Eye this week .
+line number: 2847
+*0 M1 O2 T3 :4 	5 (6 b7 e8 )9 c10 a11 u12 s13 e14  15 I16 '17 m18  19 w20 o21 r22 k23 i24 n25 g26  27 a28 t29  30 M31 a32 s33 s34  35 E36 y37 e38  39 t40 h41 i42 s43  44 w45 e46 e47 k48  49 .50 
+
+*FAT:	yeah .
+line number: 2852
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	I guess so .
+line number: 2855
+*0 F1 A2 T3 :4 	5 I6  7 g8 u9 e10 s11 s12  13 s14 o15  16 .17 
+
+*CHI:	<I guess m(om)> [/] (.) I guess that's my show .
+line number: 2858
+*0 C1 H2 I3 :4 	5 <6 I7  8 g9 u10 e11 s12 s13  14 m15 (16 o17 m18 )19 >20  21 [22 /23 ]24  25 (26 .27 )28  29 I30  31 g32 u33 e34 s35 s36  37 t38 h39 a40 t41 '42 s43  44 m45 y46  47 s48 h49 o50 w51  52 .53 
+
+*MOT:	what Honey ?
+line number: 2861
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 H11 o12 n13 e14 y15  16 ?17 
+
+*CHI:	I guess that's my show .
+line number: 2865
+*0 C1 H2 I3 :4 	5 I6  7 g8 u9 e10 s11 s12  13 t14 h15 a16 t17 '18 s19  20 m21 y22  23 s24 h25 o26 w27  28 .29 
+
+*MOT:	what is ?
+line number: 2868
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9  10 i11 s12  13 ?14 
+
+*CHI:	that show xxx .
+line number: 2872
+*0 C1 H2 I3 :4 	5 t6 h7 a8 t9  10 s11 h12 o13 w14  15 x16 x17 x18  19 .20 
+
+*MOT:	I don't know what it is that's on television .
+line number: 2875
+*0 M1 O2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 k14 n15 o16 w17  18 w19 h20 a21 t22  23 i24 t25  26 i27 s28  29 t30 h31 a32 t33 '34 s35  36 o37 n38  39 t40 e41 l42 e43 v44 i45 s46 i47 o48 n49  50 .51 
+
+*MOT:	well thanks Hon .
+line number: 2880
+*0 M1 O2 T3 :4 	5 w6 e7 l8 l9  10 t11 h12 a13 n14 k15 s16  17 H18 o19 n20  21 .22 
+
+*FAT:	you're welcome Love (.) .
+line number: 2884
+*0 F1 A2 T3 :4 	5 y6 o7 u8 '9 r10 e11  12 w13 e14 l15 c16 o17 m18 e19  20 L21 o22 v23 e24  25 (26 .27 )28  29 .30 
+
+*FAT:	we can put Bro's dinner away and he can have it when he gets back .
+line number: 2887
+*0 F1 A2 T3 :4 	5 w6 e7  8 c9 a10 n11  12 p13 u14 t15  16 B17 r18 o19 '20 s21  22 d23 i24 n25 n26 e27 r28  29 a30 w31 a32 y33  34 a35 n36 d37  38 h39 e40  41 c42 a43 n44  45 h46 a47 v48 e49  50 i51 t52  53 w54 h55 e56 n57  58 h59 e60  61 g62 e63 t64 s65  66 b67 a68 c69 k70  71 .72 
+
+*MOT:	okay (.) .
+line number: 2894
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 (11 .12 )13  14 .15 
+
+*MOT:	think that's enough chicken for him ?
+line number: 2897
+*0 M1 O2 T3 :4 	5 t6 h7 i8 n9 k10  11 t12 h13 a14 t15 '16 s17  18 e19 n20 o21 u22 g23 h24  25 c26 h27 i28 c29 k30 e31 n32  33 f34 o35 r36  37 h38 i39 m40  41 ?42 
+
+*FAT:	mm .
+line number: 2902
+*0 F1 A2 T3 :4 	5 m6 m7  8 .9 
+
+*MOT:	www .
+line number: 2905
+*0 M1 O2 T3 :4 	5 w6 w7 w8  9 .10 
+
+*FAT:	www .
+line number: 2906
+*0 F1 A2 T3 :4 	5 w6 w7 w8  9 .10 
+
+*CHI:	zzz .
+line number: 2907
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*FAT:	Chi !
+line number: 2911
+*0 F1 A2 T3 :4 	5 C6 h7 i8  9 !10 
+
+*MOT:	should we +...
+line number: 2915
+*0 M1 O2 T3 :4 	5 s6 h7 o8 u9 l10 d11  12 w13 e14  15 +16 .17 .18 .19 
+
+*FAT:	what's that ?
+line number: 2918
+*0 F1 A2 T3 :4 	5 w6 h7 a8 t9 '10 s11  12 t13 h14 a15 t16  17 ?18 
+
+*MOT:	should we &-uh turn that [= the tape recorder] off ?
+line number: 2921
+*0 M1 O2 T3 :4 	5 s6 h7 o8 u9 l10 d11  12 w13 e14  15 &16 -17 u18 h19  20 t21 u22 r23 n24  25 t26 h27 a28 t29  30 [31 =32  33 t34 h35 e36  37 t38 a39 p40 e41  42 r43 e44 c45 o46 r47 d48 e49 r50 ]51  52 o53 f54 f55  56 ?57 
+
+*FAT:	no .
+line number: 2924
+*0 F1 A2 T3 :4 	5 n6 o7  8 .9 
+
+*FAT:	Chi !
+line number: 2927
+*0 F1 A2 T3 :4 	5 C6 h7 i8  9 !10 
+
+*FAT:	Chi !
+line number: 2930
+*0 F1 A2 T3 :4 	5 C6 h7 i8  9 !10 
+
+*CHI:	what ?
+line number: 2933
+*0 C1 H2 I3 :4 	5 w6 h7 a8 t9  10 ?11 
+
+*FAT:	get back in here !
+line number: 2937
+*0 F1 A2 T3 :4 	5 g6 e7 t8  9 b10 a11 c12 k13  14 i15 n16  17 h18 e19 r20 e21  22 !23 
+
+*CHI:	what ?
+line number: 2940
+*0 C1 H2 I3 :4 	5 w6 h7 a8 t9  10 ?11 
+
+*FAT:	where did you go ?
+line number: 2945
+*0 F1 A2 T3 :4 	5 w6 h7 e8 r9 e10  11 d12 i13 d14  15 y16 o17 u18  19 g20 o21  22 ?23 
+
+*CHI:	in the living room .
+line number: 2949
+*0 C1 H2 I3 :4 	5 i6 n7  8 t9 h10 e11  12 l13 i14 v15 i16 n17 g18  19 r20 o21 o22 m23  24 .25 
+
+*FAT:	I want you to finish up .
+line number: 2952
+*0 F1 A2 T3 :4 	5 I6  7 w8 a9 n10 t11  12 y13 o14 u15  16 t17 o18  19 f20 i21 n22 i23 s24 h25  26 u27 p28  29 .30 
+
+*CHI:	finish up what ?
+line number: 2955
+*0 C1 H2 I3 :4 	5 f6 i7 n8 i9 s10 h11  12 u13 p14  15 w16 h17 a18 t19  20 ?21 
+
+*FAT:	eating .
+line number: 2959
+*0 F1 A2 T3 :4 	5 e6 a7 t8 i9 n10 g11  12 .13 
+
+*MOT:	zzz .
+line number: 2962
+*0 M1 O2 T3 :4 	5 z6 z7 z8  9 .10 
+
+*CHI:	oh .
+line number: 2966
+*0 C1 H2 I3 :4 	5 o6 h7  8 .9 
+
+*CHI:	I'm a busy bee .
+line number: 2969
+*0 C1 H2 I3 :4 	5 I6 '7 m8  9 a10  11 b12 u13 s14 y15  16 b17 e18 e19  20 .21 
+
+*CHI:	the big +...
+line number: 2972
+*0 C1 H2 I3 :4 	5 t6 h7 e8  9 b10 i11 g12  13 +14 .15 .16 .17 
+
+*FAT:	and could you sit [///] put your fishing rod down Honey .
+line number: 2975
+*0 F1 A2 T3 :4 	5 a6 n7 d8  9 c10 o11 u12 l13 d14  15 y16 o17 u18  19 s20 i21 t22  23 [24 /25 /26 /27 ]28  29 p30 u31 t32  33 y34 o35 u36 r37  38 f39 i40 s41 h42 i43 n44 g45  46 r47 o48 d49  50 d51 o52 w53 n54  55 H56 o57 n58 e59 y60  61 .62 
+
+*CHI:	okay .
+line number: 2980
+*0 C1 H2 I3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*CHI:	xxx .
+line number: 2983
+*0 C1 H2 I3 :4 	5 x6 x7 x8  9 .10 
+
+*FAT:	seven seventeen federal prisoners .
+line number: 2984
+*0 F1 A2 T3 :4 	5 s6 e7 v8 e9 n10  11 s12 e13 v14 e15 n16 t17 e18 e19 n20  21 f22 e23 d24 e25 r26 a27 l28  29 p30 r31 i32 s33 o34 n35 e36 r37 s38  39 .40 
+
+*CHI:	gum drop gum drop .
+line number: 2988
+*0 C1 H2 I3 :4 	5 g6 u7 m8  9 d10 r11 o12 p13  14 g15 u16 m17  18 d19 r20 o21 p22  23 .24 
+
+*CHI:	not by the hair of my gum gum drop .
+line number: 2991
+*0 C1 H2 I3 :4 	5 n6 o7 t8  9 b10 y11  12 t13 h14 e15  16 h17 a18 i19 r20  21 o22 f23  24 m25 y26  27 g28 u29 m30  31 g32 u33 m34  35 d36 r37 o38 p39  40 .41 
+
+*MOT:	maybe we should have told him to look up <something like> [//] do something like that and then update it in the library .
+line number: 2996
+*0 M1 O2 T3 :4 	5 m6 a7 y8 b9 e10  11 w12 e13  14 s15 h16 o17 u18 l19 d20  21 h22 a23 v24 e25  26 t27 o28 l29 d30  31 h32 i33 m34  35 t36 o37  38 l39 o40 o41 k42  43 u44 p45  46 <47 s48 o49 m50 e51 t52 h53 i54 n55 g56  57 l58 i59 k60 e61 >62  63 [64 /65 /66 ]67  68 d69 o70  71 s72 o73 m74 e75 t76 h77 i78 n79 g80  81 l82 i83 k84 e85  86 t87 h88 a89 t90  91 a92 n93 d94  95 t96 h97 e98 n99  100 u101 p102 d103 a104 t105 e106  107 i108 t109  110 i111 n112  113 t114 h115 e116  117 l118 i119 b120 r121 a122 r123 y124  125 .126 
+
+*FAT:	yeah .
+line number: 3004
+*0 F1 A2 T3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*FAT:	I thought I had gotten another information please almanac since we've been together but one year possibly my mother had given me one .
+line number: 3007
+*0 F1 A2 T3 :4 	5 I6  7 t8 h9 o10 u11 g12 h13 t14  15 I16  17 h18 a19 d20  21 g22 o23 t24 t25 e26 n27  28 a29 n30 o31 t32 h33 e34 r35  36 i37 n38 f39 o40 r41 m42 a43 t44 i45 o46 n47  48 p49 l50 e51 a52 s53 e54  55 a56 l57 m58 a59 n60 a61 c62  63 s64 i65 n66 c67 e68  69 w70 e71 '72 v73 e74  75 b76 e77 e78 n79  80 t81 o82 g83 e84 t85 h86 e87 r88  89 b90 u91 t92  93 o94 n95 e96  97 y98 e99 a100 r101  102 p103 o104 s105 s106 i107 b108 l109 y110  111 m112 y113  114 m115 o116 t117 h118 e119 r120  121 h122 a123 d124  125 g126 i127 v128 e129 n130  131 m132 e133  134 o135 n136 e137  138 .139 
+
+*MOT:	I don't remember it at all .
+line number: 3017
+*0 M1 O2 T3 :4 	5 I6  7 d8 o9 n10 '11 t12  13 r14 e15 m16 e17 m18 b19 e20 r21  22 i23 t24  25 a26 t27  28 a29 l30 l31  32 .33 
+
+*FAT:	xxx .
+line number: 3021
+*0 F1 A2 T3 :4 	5 x6 x7 x8  9 .10 
+
+*MOT:	good boy .
+line number: 3023
+*0 M1 O2 T3 :4 	5 g6 o7 o8 d9  10 b11 o12 y13  14 .15 
+
+*CHI:	zzz .
+line number: 3027
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	oh yucky boy !
+line number: 3031
+*0 M1 O2 T3 :4 	5 o6 h7  8 y9 u10 c11 k12 y13  14 b15 o16 y17  18 !19 
+
+*MOT:	put it on the plate .
+line number: 3035
+*0 M1 O2 T3 :4 	5 p6 u7 t8  9 i10 t11  12 o13 n14  15 t16 h17 e18  19 p20 l21 a22 t23 e24  25 .26 
+
+*MOT:	did you put too much in your mouth ?
+line number: 3038
+*0 M1 O2 T3 :4 	5 d6 i7 d8  9 y10 o11 u12  13 p14 u15 t16  17 t18 o19 o20  21 m22 u23 c24 h25  26 i27 n28  29 y30 o31 u32 r33  34 m35 o36 u37 t38 h39  40 ?41 
+
+*MOT:	there's a napkin use a napkin (.) .
+line number: 3045
+*0 M1 O2 T3 :4 	5 t6 h7 e8 r9 e10 '11 s12  13 a14  15 n16 a17 p18 k19 i20 n21  22 u23 s24 e25  26 a27  28 n29 a30 p31 k32 i33 n34  35 (36 .37 )38  39 .40 
+
+*MOT:	okay .
+line number: 3049
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*MOT:	whatever you have_to do Than .
+line number: 3052
+*0 M1 O2 T3 :4 	5 w6 h7 a8 t9 e10 v11 e12 r13  14 y15 o16 u17  18 h19 a20 v21 e22 _23 t24 o25  26 d27 o28  29 T30 h31 a32 n33  34 .35 
+
+*MOT:	you need to spit it out spit it out .
+line number: 3055
+*0 M1 O2 T3 :4 	5 y6 o7 u8  9 n10 e11 e12 d13  14 t15 o16  17 s18 p19 i20 t21  22 i23 t24  25 o26 u27 t28  29 s30 p31 i32 t33  34 i35 t36  37 o38 u39 t40  41 .42 
+
+*MOT:	this dinner was something [!] .
+line number: 3060
+*0 M1 O2 T3 :4 	5 t6 h7 i8 s9  10 d11 i12 n13 n14 e15 r16  17 w18 a19 s20  21 s22 o23 m24 e25 t26 h27 i28 n29 g30  31 [32 !33 ]34  35 .36 
+
+*CHI:	zzz .
+line number: 3064
+*0 C1 H2 I3 :4 	5 z6 z7 z8  9 .10 
+
+*MOT:	kind of yucky you know (.) ?
+line number: 3068
+*0 M1 O2 T3 :4 	5 k6 i7 n8 d9  10 o11 f12  13 y14 u15 c16 k17 y18  19 y20 o21 u22  23 k24 n25 o26 w27  28 (29 .30 )31  32 ?33 
+
+*MOT:	are you all done ?
+line number: 3072
+*0 M1 O2 T3 :4 	5 a6 r7 e8  9 y10 o11 u12  13 a14 l15 l16  17 d18 o19 n20 e21  22 ?23 
+
+*CHI:	yeah .
+line number: 3076
+*0 C1 H2 I3 :4 	5 y6 e7 a8 h9  10 .11 
+
+*CHI:	yes .
+line number: 3079
+*0 C1 H2 I3 :4 	5 y6 e7 s8  9 .10 
+
+*MOT:	is your milk finished ?
+line number: 3082
+*0 M1 O2 T3 :4 	5 i6 s7  8 y9 o10 u11 r12  13 m14 i15 l16 k17  18 f19 i20 n21 i22 s23 h24 e25 d26  27 ?28 
+
+*CHI:	want me to show ?
+line number: 3086
+*0 C1 H2 I3 :4 	5 w6 a7 n8 t9  10 m11 e12  13 t14 o15  16 s17 h18 o19 w20  21 ?22 
+
+*MOT:	good yes (.) .
+line number: 3090
+*0 M1 O2 T3 :4 	5 g6 o7 o8 d9  10 y11 e12 s13  14 (15 .16 )17  18 .19 
+
+*MOT:	oh good thank you very much .
+line number: 3093
+*0 M1 O2 T3 :4 	5 o6 h7  8 g9 o10 o11 d12  13 t14 h15 a16 n17 k18  19 y20 o21 u22  23 v24 e25 r26 y27  28 m29 u30 c31 h32  33 .34 
+
+*MOT:	let me roll up your sleeves so you can wash them .
+line number: 3096
+*0 M1 O2 T3 :4 	5 l6 e7 t8  9 m10 e11  12 r13 o14 l15 l16  17 u18 p19  20 y21 o22 u23 r24  25 s26 l27 e28 e29 v30 e31 s32  33 s34 o35  36 y37 o38 u39  40 c41 a42 n43  44 w45 a46 s47 h48  49 t50 h51 e52 m53  54 .55 
+
+*CHI:	I did .
+line number: 3101
+*0 C1 H2 I3 :4 	5 I6  7 d8 i9 d10  11 .12 
+
+*MOT:	okay .
+line number: 3104
+*0 M1 O2 T3 :4 	5 o6 k7 a8 y9  10 .11 
+
+*MOT:	both of them ?
+line number: 3107
+*0 M1 O2 T3 :4 	5 b6 o7 t8 h9  10 o11 f12  13 t14 h15 e16 m17  18 ?19 
+
+*CHI:	yes .
+line number: 3111
+*0 C1 H2 I3 :4 	5 y6 e7 s8  9 .10 

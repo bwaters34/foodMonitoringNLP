@@ -13,7 +13,6 @@ app = Flask(__name__)
 var = load('food_files.pickle')
 var.sort()
 print(var)
-
 count = -1
 
 @app.route('/')
@@ -35,11 +34,14 @@ def my_form_post():
 	#processed_text
 	print var[count]
 	try:
+
+
 		# html_format = read_file(var[count])
 		# print "HTNL Format", html_format
 		# front_end.wrapStringInHTMLWindows(body=html_format)
-
-		message = Markup(str(display_html_2.read_file(var[count])))
+		write_to_str, results = display_html_2.read_file(var[count])
+		print(results)
+		message = Markup(str(write_to_str))
 		#print(message)
 		return render_template('input.html', filename = var[count],body = message)
 	except:
