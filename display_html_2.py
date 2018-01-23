@@ -146,29 +146,31 @@ def read_file(fileName):
 
 	# attempt to load solutions file
 	solution_file_path = path.join('solutions', fileName)
+	num_true_pos = None # give dummy values in case try fails
+	num_false_pos = None
+	num_false_neg = None
 	try:
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
 		print('calculating')
 		precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+		num_true_pos = len(true_pos_list)
+		num_false_pos = len(false_pos_list)
+		num_false_neg = len(false_neg_list)
 		print('precision: ' +  str(precision))
 		print('recall: ' +  str(recall))
 		print('true positives:') + str(true_pos_list)
-		print('lines: {}'.format(len(solution_parser.get_corresponding_lines(fileName, true_pos_list))))
 		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
 			print(line)
 		print('false positives: ' + str(false_pos_list))
-		print('lines: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_pos_list))))
 		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
 			print(line)
-
 		print('false negatives: ' + str(false_neg_list))
-		print('lines: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_neg_list))))
 		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
 			print(line)
-		print('# true pos: {}'.format(len(solution_parser.get_corresponding_lines(fileName, true_pos_list))))
-		print('# false pos: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_pos_list))))
-		print('# false neg: {}'.format(len(solution_parser.get_corresponding_lines(fileName, false_neg_list))))
+		print('# true pos: {}'.format(num_true_pos))
+		print('# false pos: {}'.format(num_false_pos))
+		print('# false neg: {}'.format(num_false_neg))
 
 		write2file += '<br><hr>'+"Precision: "+str(precision)+ \
 						"<br>Recall: "+str(recall) + "<br><hr>"
@@ -185,6 +187,7 @@ def read_file(fileName):
 	except IOError:
 		print('no solution file found for: ' + solution_file_path)
 	#return write2file, unique_food_names
+	namedtuple()
 
 	return write2file
 
@@ -269,7 +272,7 @@ def sequences_overlap(seq1, seq2):
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		fileName = 'HSLLD/HV1/MT/aprmt1.cha'
+		fileName = 'HSLLD/HV1/MT/admmt1.cha'
 		html_format = read_file(fileName)
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
@@ -288,7 +291,7 @@ if __name__ == '__main__':
 	# 	except:
 	# 		continue
 	# 	else:
-	# 		fileCounts.append(len(count))
+	# 		fileCounts.append(len(cont))
 	# sns.distplot(fileCounts, 
 	# 				#hist = False,
 	# 				kde = False, 
