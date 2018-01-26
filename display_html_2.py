@@ -73,11 +73,6 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 			#temp_i = i[4:]
 			spans_found_on_line = []
 			for word in foodNames:
-				#if word in i:
-				if word == 'brownies':
-					print word
-					#match_word(word, temp_i, 1)
-				# if match_word(word, temp_i):
 				if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
 					print word
