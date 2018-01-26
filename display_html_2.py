@@ -10,8 +10,8 @@ from nltk import pos_tag, word_tokenize
 from os import path
 from collections import namedtuple
 import solution_parser
-import os
 import CMUTweetTagger
+import os
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -21,15 +21,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-
-def read_file(fileName, parser_type=None, only_files_with_solutions=False):
-	"""
-
-	:param fileName: file to read
-	:param tagger: Part of speech tagger to use when pattern matching. If None, no pattern matching is performed
-	:param only_files_with_solutions: if True, only reads files with solutions, and returns None if the file doesn't have a solution.
-	:return:
-	"""
+def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 	write2file = ''
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -47,9 +39,8 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False):
 	current_line_number = 0
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
 	solution_set_loaded = False
-	solution_file_path = path.join('solutions', fileName)
-
 	try:
+		solution_file_path = path.join('solutions', fileName)
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
 		solution_set_loaded = True
@@ -61,6 +52,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False):
 		if not solution_set_loaded:
 			return "solution set not found", None
 	for line_no, i in enumerate(f): # i is the current line (a string)
+		
 		food_id_group_pairs = []
 		food_id_langua_pairs = []
 		current_line_number += 1
@@ -154,10 +146,12 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False):
 				text += i[1:] 
 			#print ("Final text ->", text)
 			if parser_type == 'stanford_POS' or 1:
+				print('running stanford')
 				tags = pos_tag(word_tokenize(temp_i))
 				#Joining the tags
 				tags = join_tags(tags)
 			elif parser_type == 'ark_tweet_parser':
+				print('running ark')
 				#tags =  CMUTweetTagger.runtagger_parse([temp_i])
 				tags = join_tags(ark_parsed_data[line_no])
 				#tags = ''
@@ -165,6 +159,8 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False):
 
 			#print("tags -> ", tags1)
 			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
+
+			#print ("pairs -> ", word_char_index)
 
 			food_tags = ''
 			if len(food_id_group_pairs):
@@ -182,45 +178,54 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False):
 
 			#Orignal 
 			#write2file += text + '<br>'
+
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
 	num_false_neg = None
+	if solution_set_loaded:
+		print('loading solution set')
+		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
+		print('calculating')
+		precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+		num_true_pos = len(true_pos_list)
+		num_false_pos = len(false_pos_list)
+		num_false_neg = len(false_neg_list)
+		print('precision: ' +  str(precision))
+		print('recall: ' +  str(recall))
+		print('true positives:') + str(true_pos_list)
+		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
+			print(line)
+		print('false positives: ' + str(false_pos_list))
+		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+			print(line)
+		print('false negatives: ' + str(false_neg_list))
+		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+			print(line)
+		print('# true pos: {}'.format(num_true_pos))
+		print('# false pos: {}'.format(num_false_pos))
+		print('# false neg: {}'.format(num_false_neg))
 
-	print('calculating')
-	precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
-	num_true_pos = len(true_pos_list)
-	num_false_pos = len(false_pos_list)
-	num_false_neg = len(false_neg_list)
-	print('precision: ' +  str(precision))
-	print('recall: ' +  str(recall))
-	print('true positives:') + str(true_pos_list)
-	for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
-		print(line)
-	print('false positives: ' + str(false_pos_list))
-	for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-		print(line)
-	print('false negatives: ' + str(false_neg_list))
-	for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-		print(line)
-	print('# true pos: {}'.format(num_true_pos))
-	print('# false pos: {}'.format(num_false_pos))
-	print('# false neg: {}'.format(num_false_neg))
-
-	write2file += '<br><hr>'+"Precision: "+str(precision)+ \
-					"<br>Recall: "+str(recall) + "<br><hr>"
-	write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
-					"<br>"
-	for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-		write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
-	write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
-	for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-		write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
-
+		write2file += '<br><hr>'+"Precision: "+str(precision)+ \
+						"<br>Recall: "+str(recall) + "<br><hr>"
+		write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
+						"<br>"
+		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+		write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
+		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+	else:
+		print('no solution set found')
 	#return write2file, unique_food_names
-	Accuracy = namedtuple('Accuracy', 'num_true_pos num_false_pos num_false_neg') # makes returning multiple values more clear
-	results = Accuracy(num_true_pos = num_true_pos, num_false_pos = num_false_pos, num_false_neg = num_false_neg)
+	#namedtuple()
+
+	Accuracy = namedtuple('Accuracy',
+						  'num_true_pos num_false_pos num_false_neg')  # makes returning multiple values more clear
+	results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos, num_false_neg=num_false_neg)
+
 
 	return write2file, results
+
 
 def provide_words_with_char_nos(sentence, line_no):
 	temp_char = ''
@@ -300,6 +305,16 @@ def sequences_overlap(seq1, seq2):
 	else:
 		return True
 
+def ark_parser(fileName):
+	final_list_of_sentences = []
+	list_of_sentences = open(fileName, "r").read()
+	for sentence in list_of_sentences.split('\n'):
+		if len(sentence) > 1:
+			if sentence[0] == '*':
+				final_list_of_sentences.append(' '.join(sentence.split()))
+	print final_list_of_sentences
+	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
+	return var
 
 def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False):
 	sum_true_pos = 0
@@ -322,34 +337,18 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
 	return precision, recall, sum_true_pos, sum_false_pos, sum_false_neg
 
-def ark_parser(fileName):
-	final_list_of_sentences = []
-	list_of_sentences = open(fileName, "r").read()
-	for sentence in list_of_sentences.split('\n'):
-		if len(sentence) > 1:
-			if sentence[0] == '*':
-				final_list_of_sentences.append(' '.join(sentence.split()))
-	print final_list_of_sentences
-	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
-	return var
-
-
 
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		sum_true_pos = 0
-		sum_false_pos = 0
-		sum_false_neg = 0
-		directory = 'HSLLD/HV1/MT/'
-		precision, recall, true_pos, false_pos, false_neg = evaluate_all_files_in_directory(directory, only_files_with_solutions=True)
+		fileName = 'HSLLD/HV1/MT/jacmt1.cha'
+		html_format, results = read_file(fileName, 'ark_tweet_parser')
 		#print "HTNL Format", html_format
-		print('precision: {}'.format(precision))
-		print('recallL {}'.format(recall))
+		front_end.wrapStringInHTMLWindows(body = html_format)
 	except:
 		print "none"
 		print sys.exc_info()
-
+	
 	# fileCounts = []
 	# all_files = load("C:\\Users\\priti\\OneDrive\\Documents\\CCPP\\FoodMonitoring-NLP\\data\\food_files.pickle")
 	# c = 0
