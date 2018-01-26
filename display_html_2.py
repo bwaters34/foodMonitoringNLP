@@ -346,8 +346,6 @@ if __name__ == '__main__':
 		#print "HTNL Format", html_format
 		print('precision: {}'.format(precision))
 		print('recallL {}'.format(recall))
-
-
 	except:
 		print "none"
 		print sys.exc_info()
