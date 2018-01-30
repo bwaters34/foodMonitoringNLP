@@ -12,6 +12,7 @@ from collections import namedtuple
 import solution_parser
 import CMUTweetTagger
 import os
+import cal_calorie_given_food_name 
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -23,6 +24,8 @@ def save(variable, fileName):
 
 def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 	write2file = ''
+	total_calorie = 0.0
+	calorie = cal_calorie_given_food_name.food_to_calorie()
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
@@ -52,7 +55,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 		if not solution_set_loaded:
 			return "solution set not found", None
 	for line_no, i in enumerate(f): # i is the current line (a string)
-		
+		calorie_text = ''
 		food_id_group_pairs = []
 		food_id_langua_pairs = []
 		current_line_number += 1
@@ -85,6 +88,13 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 					
 					# #removed the plus one
 					# spans_found_on_line.append((c, c + len(word)))
+					try:
+						temp_calorie = calorie.cal_calorie(word)
+						total_calorie += temp_calorie
+						calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
+					except:
+						print sys.exc_info()
+						pass 
 
 					tags = pos_tag(word_tokenize(temp_i))
 					individual_food_words = word.split()
@@ -132,6 +142,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 						text += '<mark>' +  i[char_pos] + '</mark>'
 					else:
 						text += i[char_pos]
+				text += calorie_text
+
 				tuples_list = give_largest_non_overlapping_sequences(spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
 				for tup in tuples_list:
 					set_elem = (current_line_number, tup) # add line number so we know where in the document we got it
@@ -169,11 +181,11 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 					for ledger in pairs[1]:
 						food_ledger_langua += ledger.lower() + ",  "
 					food_ledger_langua += "<br>" + "<br>"
-			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua 
+			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua  
 
 			#Orignal 
 			#write2file += text + '<br>'
-
+	write2file += "<hr>" + "Total Calories -> " + str(total_calorie) 
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
 	num_false_neg = None
@@ -209,6 +221,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 		write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
 		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
 			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+
 	else:
 		print('no solution set found')
 	#return write2file, unique_food_names
@@ -336,7 +349,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		fileName = 'HSLLD/HV1/MT/jacmt1.cha'
+		fileName = 'HSLLD/HV1/MT/admmt1.cha'
 		html_format, results = read_file(fileName, 'ark_tweet_parser')
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
