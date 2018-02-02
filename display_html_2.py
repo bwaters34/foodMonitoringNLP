@@ -22,7 +22,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, parser_type = None, only_files_with_solutions = False):
+def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True):
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
@@ -42,8 +42,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 	current_line_number = 0
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
 	solution_set_loaded = False
+	solution_file_path = path.join('solutions', fileName)
 	try:
-		solution_file_path = path.join('solutions', fileName)
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
 		solution_set_loaded = True
@@ -153,7 +153,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 				text += i[1:] 
 			#print ("Final text ->", text)
 			if parser_type == 'stanford_POS' or 1:
-				print('running stanford')
+				# print('running stanford')
 				tags = pos_tag(word_tokenize(temp_i))
 				#Joining the tags
 				tags = join_tags(tags)
@@ -193,34 +193,45 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False):
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
 		print('calculating')
-		precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
+		if base_accuracy_on_how_many_unique_food_items_detected:
+			food_names_only_solution_set = solution_parser.convert_solution_set_to_set_of_food_names(fileName, solution_set)
+			food_names_only_predicted_set = solution_parser.convert_solution_set_to_set_of_food_names(fileName, predicted_food_labels_set)
+			precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(
+				food_names_only_solution_set, food_names_only_predicted_set)
+		else:
+			precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(solution_set, predicted_food_labels_set)
 		num_true_pos = len(true_pos_list)
 		num_false_pos = len(false_pos_list)
 		num_false_neg = len(false_neg_list)
+		print('file:' + fileName)
 		print('precision: ' +  str(precision))
 		print('recall: ' +  str(recall))
 		print('true positives:') + str(true_pos_list)
-		for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
-			print(line)
+		if not base_accuracy_on_how_many_unique_food_items_detected:
+			for line in solution_parser.get_corresponding_lines(fileName, true_pos_list):
+				print(line)
 		print('false positives: ' + str(false_pos_list))
-		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-			print(line)
+		if not base_accuracy_on_how_many_unique_food_items_detected:
+			for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+				print(line)
 		print('false negatives: ' + str(false_neg_list))
-		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-			print(line)
+		if not base_accuracy_on_how_many_unique_food_items_detected:
+			for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+				print(line)
 		print('# true pos: {}'.format(num_true_pos))
 		print('# false pos: {}'.format(num_false_pos))
 		print('# false neg: {}'.format(num_false_neg))
 
-		write2file += '<br><hr>'+"Precision: "+str(precision)+ \
-						"<br>Recall: "+str(recall) + "<br><hr>"
-		write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
-						"<br>"
-		for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
-		write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
-		for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-			write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+		if not base_accuracy_on_how_many_unique_food_items_detected:
+			write2file += '<br><hr>'+"Precision: "+str(precision)+ \
+							"<br>Recall: "+str(recall) + "<br><hr>"
+			write2file += 	"False Positives<br>"+ str(false_pos_list)+ \
+							"<br>"
+			for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
+				write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
+			write2file +=	"<hr>False negatives:<br>"+str(false_neg_list) + "<br>"
+			for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
+				write2file += str(line)+ " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) +"</mark><br>"
 
 	else:
 		print('no solution set found')
@@ -255,7 +266,6 @@ def provide_words_with_char_nos(sentence, line_no):
 	return return_array, return_string
 
 
-
 def join_tags(sentence):
 	text = '     '
 	for i in sentence:
@@ -277,13 +287,12 @@ def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 	for meeting_schedules in list_of_timings:
 		for i in xrange(meeting_schedules[0], meeting_schedules[1]):
 			dic[i] = 1 
-	return dic 
-
+	return dic
 
 def check_if_noun(tag):
 	if tag == 'NN' or tag == 'NNS' or tag == 'NNP' or tag == 'NNPS':
 		return True
- 	return False
+	return False
 
 def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
 	Sequence = namedtuple('Sequence', ['start', 'end', 'size'])

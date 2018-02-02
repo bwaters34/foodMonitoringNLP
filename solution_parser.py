@@ -88,16 +88,10 @@ def extract_line_numbers_from_solution_set(solution_set):
 
 
 def get_corresponding_lines(file_name, solution_set):
-	"""
-
-	:param file_name:
-	:param list_of_tuples: Sorted list of requested line numbers
-	:return: list of strings corresponding to requested lines
-	"""
 	lines = []
 
-	sorted_list_of_line_numbers = extract_line_numbers_from_solution_set(solution_set)
-
+	sorted_list_of_line_numbers = sorted(extract_line_numbers_from_solution_set(solution_set))
+	solution_set = sorted(solution_set)
 	with open(file_name) as f:
 		current_line_number = 0
 		current_sorted_line_index = 0
@@ -108,6 +102,20 @@ def get_corresponding_lines(file_name, solution_set):
 					lines.append((solution_set[current_sorted_line_index], line))
 					current_sorted_line_index += 1
 	return lines
+
+def convert_solution_set_to_set_of_food_names(file_path, solution_set):
+	food_names = set()
+	print(solution_set)
+	tuples_and_lines = get_corresponding_lines(file_path, list(solution_set))
+	print(tuples_and_lines)
+	for t_and_l in tuples_and_lines:
+		solution_tuple, line = t_and_l
+		substring_indexes = solution_tuple[1]
+		start_index, stop_index = substring_indexes # unpack the values from the tuple
+		food_name = line[start_index:stop_index]
+		food_names.add(food_name)
+
+	return food_names
 
 if __name__ == '__main__':
 	file_name = sys.argv[1]
