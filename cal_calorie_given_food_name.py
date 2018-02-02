@@ -31,14 +31,17 @@ class food_to_calorie:
 		file_loc = open("./data/sr28asc/NUT_DATA.txt", 'r')
 		for line in file_loc:
 			line = [word[1:-1] if index<2 else word for index, word in enumerate(line.split('^'))]
+			if line[1] != '208': continue
 			dic[line[0]].append(float(line[2]))
 		dic_final = {}
 		for food_id in dic:
-			dic_final[food_id] = round(sum(dic[food_id]), 3)
+			dic_final[food_id] = int(round(sum(dic[food_id]), 3))
+		print dic_final
 		self.write_to_file(dic_final, "./data/food_desc_files/food_to_nutrient.pickle")
 		#dic_temp = self.read_to_file("./data/food_desc/files/food_to_nutrient.pickle")
 		#print dic_temp
 
 if __name__ == '__main__':
 	food_calorie = food_to_calorie("bread")
-	#food_calorie.create_food_to_nutrition_data()
+	food_calorie.create_food_to_nutrition_data()
+	food_calorie.cal_calorie("bread")
