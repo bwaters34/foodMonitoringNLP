@@ -113,7 +113,7 @@ def convert_solution_set_to_set_of_food_names(file_path, solution_set):
 		substring_indexes = solution_tuple[1]
 		start_index, stop_index = substring_indexes # unpack the values from the tuple
 		if stop_index < start_index:
-			raise ValueError("stop index cannot be before start index, solutions are incorrect")
+			raise ValueError("stop index cannot be before start index, solutions are incorrect:, " + str(solution_tuple))
 		food_name = line[start_index:stop_index].lower()
 		food_names.add(food_name)
 
