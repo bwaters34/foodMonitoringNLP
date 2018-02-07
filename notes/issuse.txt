@@ -1,0 +1,95 @@
+Admmt1.cha
+
+False Positive:
+1) Spices: No comments
+2) honey: spoken in other sense
+3) potato chips: bad documentation
+
+False Negatives:
+1) brownie   -> 2nd column just brownie
+2) butter bread  -> 
+3) coke
+4) potato chip -> 2nd column (potato chips)
+
+
+
+
+
+
+
+Aimmt1.cha
+False Positive:
+1) applesauce: bad documentation
+2) shake: bad documentation
+
+False Negative:
+None
+
+
+
+
+
+Anamt1.cha
+False Positive:
+1) duck
+2) Duck
+3) honey
+
+False negative:
+1) popsicle  -> POPSICLE SCRIBBLERS in the 3rd column
+2) popsicles -> POPSICLE SCRIBBLERS in the 3rd column
+3) vitamin	-> 
+
+
+
+
+
+
+
+
+
+Annmt1.cha
+False Positive:
+1) honey
+2) sunshine
+3) tea
+
+False Negative:
+1) skim milk
+2) tomato -> Tomatoes (1st column)
+3) skim milk -> 3rd column (yogurt, plain, skim milk)
+
+
+
+
+Aprtm1.cha
+False Positive:
+1) Cabbage: bad documentation
+2) egg
+3) ham
+4) honey
+5) oats
+6) pork 
+7) shake
+
+False Negatives:
+1) ' shake'
+2) (po)tatoes
+3) <oats
+4) apple
+5) cereal
+6) cken>
+7) diet Slice
+8) diet soda
+9) ginger+ale
+10) koolaid
+11) nut and honey
+12) otas and brain cereal
+13) oats and honey
+14) popsicles
+15) pork chops
+16) salad
+17) slim fast
+18) soda
+19) sodas
+20) spice ham sandwich

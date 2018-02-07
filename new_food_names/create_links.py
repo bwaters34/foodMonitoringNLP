@@ -43,7 +43,12 @@ class create_links:
 	def create_lists(self, sentence):
 		temp = []
 		sentence = sentence.strip().split(',')
+		print sentence
 		temp.append(sentence[0])
+		if len(sentence) > 1:
+			#temp.append(sentence[1].strip())
+			pass
+			
 		if len(sentence) > 1:
 			for words in sentence[1:]:
 				temp.append(words.strip() + " " + sentence[0].strip())
@@ -83,12 +88,12 @@ class create_links:
 					self.temp_dic_lanuage_of_food[keys].append(self.dic_language_desc[v])
 				else:
 					self.temp_dic_lanuage_of_food[keys].append(self.dic_language_desc[v])
-		for keys, value in self.temp_dic_lanuage_of_food.iteritems():
-			for v in value:
-				print keys, v
+		# for keys, value in self.temp_dic_lanuage_of_food.iteritems():
+		# 	for v in value:
+		# 		print keys, v
 		self.save(self.temp_dic_lanuage_of_food, "langua.pickle")
 		temp = self.retrieve("langua.pickle")
-		print temp
+		#print temp
 
 	def create_food_group(self):
 		self.dic_food_group = {}
@@ -118,4 +123,4 @@ if __name__ == '__main__':
 	cl.create_food_group()
 	cl.create_language_desc()
 	cl.create_lanuage_of_food()
-	#cl.create_food_desc()
+	cl.create_food_desc()

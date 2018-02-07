@@ -13,6 +13,9 @@ import solution_parser
 import CMUTweetTagger
 import os
 import cal_calorie_given_food_name 
+from pprint import pprint 
+import nltk 
+import time 
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -60,6 +63,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
+			print "\n\nLine no -> ", line_no, "\n\n"
 			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no+1)
 			text = ''
 			i = i.lower()
@@ -76,9 +80,15 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#temp_i = i[4:]
 			spans_found_on_line = []
 			for word in foodNames:
-				if temp_i.__contains__(' ' + word + ' '):
+				#Generate all the pair of words of sentences
+				sentence_to_word_pairs = generate_pair(i)
+				#print "test strings -> ", sentence_to_word_pairs
+				#pprint(sentence_to_word_pairs)
+				food_pairs_edit_distance = calculate_edit_distance(i, sentence_to_word_pairs, word)
+				if len(food_pairs_edit_distance) > 0:
+				#if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
-					print word
+					#print word
 					unique_food_names[word] = 1
 					found_at_least = 1
 					
@@ -106,30 +116,35 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					# 		pass
 					# 	else:
 					# 		continue
+					
+					#Commented recently
 					print(tags)
 					print(individual_food_words)
 
 
-					for match in re.finditer(word, i):
-						food_match_indexes = match.span()
-						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-						spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
-						
+					# for match in re.finditer(word, i):
+					# 	food_match_indexes = match.span()
+					# 	index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+					# 	spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+					
+					for pairs in food_pairs_edit_distance:
+						index_of_food_names.append([pairs[2], pairs[3]])
+						spans_found_on_line.append([pairs[2], pairs[3]])
 					#Adding stuffs after reading documentation from USDA
 					#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
-					food_id = foodNames[word]
-					if food_id in foodGroup:
-						food_group_for_food_id = foodGroup[food_id]
-						food_id_group_pairs.append([word, food_group_for_food_id])
+					# food_id = foodNames[word]
+					# if food_id in foodGroup:
+					# 	food_group_for_food_id = foodGroup[food_id]
+					# 	food_id_group_pairs.append([word, food_group_for_food_id])
 					
-					if food_id in langua:
-						temp_langua = langua[food_id]
-						t = []
-						for temp_words in temp_langua:
-							t.append(temp_words)
-						food_id_langua_pairs.append([word + " " + food_id, t])
-						#food_id_langua_pairs = 
-					print("food -> ", food_id_group_pairs)
+					# if food_id in langua:
+					# 	temp_langua = langua[food_id]
+					# 	t = []
+					# 	for temp_words in temp_langua:
+					# 		t.append(temp_words)
+					# 	food_id_langua_pairs.append([word + " " + food_id, t])
+					# 	#food_id_langua_pairs = 
+					#print("food -> ", food_id_group_pairs)
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
@@ -170,22 +185,23 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#print ("pairs -> ", word_char_index)
 
 			food_tags = ''
-			if len(food_id_group_pairs):
-				for pairs in food_id_group_pairs:
-					food_tags += "<mark>" + pairs[0] + "</mark>" + "----> " + pairs[1] + "<br>"
+			# if len(food_id_group_pairs):
+			# 	for pairs in food_id_group_pairs:
+			# 		food_tags += "<mark>" + pairs[0] + "</mark>" + "----> " + pairs[1] + "<br>"
 			food_ledger_langua = ''
-			if len(food_id_langua_pairs):
-				for pairs in food_id_langua_pairs:
-					food_name_langua = pairs[0]
-					food_ledger_langua += "<mark>" + food_name_langua + "----></mark>"
-					for ledger in pairs[1]:
-						food_ledger_langua += ledger.lower() + ",  "
-					food_ledger_langua += "<br>" + "<br>"
+			# if len(food_id_langua_pairs):
+			# 	for pairs in food_id_langua_pairs:
+			# 		food_name_langua = pairs[0]
+			# 		food_ledger_langua += "<mark>" + food_name_langua + "----></mark>"
+			# 		for ledger in pairs[1]:
+			# 			food_ledger_langua += ledger.lower() + ",  "
+			# 		food_ledger_langua += "<br>" + "<br>"
 			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua  
 
 			#Orignal 
 			#write2file += text + '<br>'
 	write2file += "<hr>" + "Total Calories -> " + str(total_calorie) 
+	return write2file
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
 	num_false_neg = None
@@ -245,6 +261,30 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 	return write2file, results
 
+def generate_pair(sentence):
+	#print sentence
+	sentence = sentence.strip().split()
+	#print sentence
+	return_sentence = []
+	for range_ in xrange(1, len(sentence)):
+		for i in xrange(0, len(sentence)):
+			if i + range_ <= len(sentence):
+				#print sentence[i: range_]
+				return_sentence.append(' '.join(sentence[i:i+range_]))
+	return return_sentence
+
+def calculate_edit_distance(sentence, sentence_list_format, foodName, k = 0.5):
+	#return nltk.edit_distance(sentence, foodName)
+	return_list = []
+	for word_pairs in sentence_list_format:
+		
+		if abs(len(word_pairs) - len(foodName)) <= 3:
+			distance = nltk.edit_distance(word_pairs, foodName)
+			start = sentence.find(word_pairs)
+			return_list.append([foodName, word_pairs,start, start + len(word_pairs)])
+		#print word_pairs, "->", foodName, distance 
+	#print "Printing", return_list
+	return return_list
 
 def provide_words_with_char_nos(sentence, line_no):
 	temp_char = ''
@@ -358,14 +398,17 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
+		#print adsasda
+		start = time.time()
 		fileName = 'HSLLD/HV1/MT/admmt1.cha'
 		html_format, results = read_file(fileName, 'ark_tweet_parser')
 		#print "HTNL Format", html_format
 		front_end.wrapStringInHTMLWindows(body = html_format)
+		print "Time Taken -> ", time.time() - start
 	except:
 		print "none"
 		print sys.exc_info()
-	
+	print calculate_edit_distance("Hello I go to UMAss Amherst", generate_pair("Hello I go to UMAss Amherst"), "Amherst")
 	# fileCounts = []
 	# all_files = load("C:\\Users\\priti\\OneDrive\\Documents\\CCPP\\FoodMonitoring-NLP\\data\\food_files.pickle")
 	# c = 0
