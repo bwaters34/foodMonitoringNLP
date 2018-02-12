@@ -1,0 +1,23 @@
+Problems:
+'wheat', 'what'
+'owl', 'bowl'
+'agave', 'gave'
+'heart beef', 'her beef'
+raw carrots', 'the carrots'
+'rice', 'nice'
+'carrot cake', 'carrot haha'
+'rice', 'ride'
+Time taken 11.093214035
+
+
+
+
+Benefits:
+'carrot', 'carrots'
+'carrots', 'carrot>s'
+
+
+
+
+
+
