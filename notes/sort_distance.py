@@ -17,7 +17,7 @@ class sorting():
         #Sorting 
         temp_2_array = sorted(temp_array, key = lambda x: x[4])
         print temp_2_array
-        self.write_2_file(temp_2_array, "sort_distance_30_percen_results.txt")
+        self.write_2_file(temp_2_array, "sort_distance_30_percen_results.csv")
         #print f
     
     def write_2_file(self, variable, fileName):
@@ -26,7 +26,7 @@ class sorting():
             temp = ''
             for words in lines:
                 temp += str(words) + ","
-            #temp = temp[:-1]
+            temp = temp[:-1]
             temp += "\r\n"
             temp_text += temp
 
