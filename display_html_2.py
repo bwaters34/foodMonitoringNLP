@@ -148,22 +148,28 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					# if word == 'tomatoes':
 					# 	print "DIAGONISING", sentence_pos_tags, word
 					for food_data in sentence_pos_tags:
-						k = float(len(food_data[1]))/float(len(word))
+						k1 = float(len(food_data[1]))/float(len(word))
+						if 0.6 < k1 and k1 < 1.4:
 						#if 0.6 < k and k < 1.4:
-						if abs(len(food_data[1]) - len(word)) <= 3:
+						#k1 = abs(len(food_data[1]) - len(word)) 
+						#if k1 <= 3:
 							# if word == 'tomatoes':
 							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
 							distance = nltk.edit_distance(word, food_data[1])
-							#if distance/float(max(len(word), len(food_data))) <0.3:
-							if distance <= 3:
+							k2 = distance/float(max(len(word), len(food_data))) 
+							if k2 <=0.3:
+							#k2 = 3
+							#if distance <= k2:
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
-
+								#with open("./notes/edit_distance_3.txt", "a") as myfile:
+								with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
+									myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
