@@ -149,14 +149,22 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 				if len(sentence_pos_tags) > 0:
 					# if word == 'carrot':
 					# 	print "CARROT"
+					# if word == 'tomatoes':
+					# 	print "DIAGONISING", sentence_pos_tags, word
 					for food_data in sentence_pos_tags:
 						k = float(len(food_data[1]))/float(len(word))
-						if 0.6 < k and k < 1.4:
+						#if 0.6 < k and k < 1.4:
+						if abs(len(food_data[1]) - len(word)) <= 3:
+							# if word == 'tomatoes':
+							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
 							distance = nltk.edit_distance(word, food_data[1])
 							#if distance/float(max(len(word), len(food_data))) <0.3:
-							if distance < 3:
+							if distance <= 3:
+								found_at_least = 1
+								# if word == 'tomatoes':
+								# 	print word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
@@ -182,12 +190,13 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 				pass
 				text += i[1:] 
 			#print ("Final text ->", text)
-			if parser_type == 'stanford_POS' or 1:
+			tags = ''
+			if parser_type == 'stanford_POS' and 0:
 				# print('running stanford')
 				tags = pos_tag(word_tokenize(temp_i))
 				#Joining the tags
 				tags = join_tags(tags)
-			elif parser_type == 'ark_tweet_parser':
+			elif parser_type == 'ark_tweet_parser' and 0:
 				print('running ark')
 				#tags =  CMUTweetTagger.runtagger_parse([temp_i])
 				tags = join_tags(ark_parsed_data[line_no])
@@ -389,7 +398,7 @@ if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
 		start = time.time()
-		fileName = 'HSLLD/HV1/MT/admmt1.cha'
+		fileName = 'HSLLD/HV1/MT/conmt1.cha'
 		html_format, results = read_file(fileName, 'ark_tweet_parser')
 		#print "HTNL Format", html_format
 		print "Time taken to run the script", time.time() -start

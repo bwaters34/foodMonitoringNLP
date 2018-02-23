@@ -36,7 +36,9 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
 
     foodNames = load("./data/food_desc_files/food_names.pickle")
     extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
+    # extraFoodNames = {}
     print('adding extra names')
+
     print(len(foodNames))
     print(len(extraFoodNames))
     foodNames.update(extraFoodNames)
@@ -106,7 +108,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                         print sys.exc_info()
                         pass
 
-                    tags = pos_tag(word_tokenize(temp_i))
+                    # tags = pos_tag(word_tokenize(temp_i))
                     individual_food_words = word.split()
                     last_word = individual_food_words[-1]
                     # for word, label in tags:
@@ -116,7 +118,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                     # 		pass
                     # 	else:
                     # 		continue
-                    print(tags)
+                    # print(tags)
                     print(individual_food_words)
 
                     for match in re.finditer(word, i):
@@ -162,12 +164,12 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                 pass
                 text += i[1:]
             # print ("Final text ->", text)
-            if parser_type == 'stanford_POS' or 1:
+            if parser_type == 'stanford_POS' and 0:
                 # print('running stanford')
                 tags = pos_tag(word_tokenize(temp_i))
                 # Joining the tags
                 tags = join_tags(tags)
-            elif parser_type == 'ark_tweet_parser':
+            elif parser_type == 'ark_tweet_parser' and 0:
                 print('running ark')
                 # tags =  CMUTweetTagger.runtagger_parse([temp_i])
                 tags = join_tags(ark_parsed_data[line_no])
@@ -191,7 +193,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                     for ledger in pairs[1]:
                         food_ledger_langua += ledger.lower() + ",  "
                     food_ledger_langua += "<br>" + "<br>"
-            write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua
+            write2file += text + word_char_index_string_fromat + '<br>' + food_tags + '<br>' + food_tags + '<br>' + food_ledger_langua
 
             # Orignal
             # write2file += text + '<br>'

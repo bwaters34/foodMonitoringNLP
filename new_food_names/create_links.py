@@ -170,4 +170,4 @@ if __name__ == '__main__':
 	cl.create_language_desc()
 	cl.create_lanuage_of_food()
 	cl.create_food_desc()
-	cl.create_extra_food_names()
+	cl.create_extra_food_names(threshold=0.6)
