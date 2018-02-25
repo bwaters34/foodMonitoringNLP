@@ -40,7 +40,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 	langua = load("./data/food_desc_files/langua.pickle")
 
-	ark_parsed_data = ark_parser(fileName)
+	#ark_parsed_data = ark_parser(fileName)
 
 	unique_food_names = {}
 	f = file(fileName, 'r')
@@ -65,7 +65,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
-			print "LINE NO -> ", line_no
+			#print "LINE NO -> ", line_no
 			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no+1)
 			text = ''
 			edit_distance_i = i
@@ -157,6 +157,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
+							if word == food_data[1]: continue
 							distance = nltk.edit_distance(word, food_data[1])
 							k2 = distance/float(max(len(word), len(food_data))) 
 							if k2 <=0.3:
@@ -168,8 +169,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 								#with open("./notes/edit_distance_3.txt", "a") as myfile:
-								with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
-									myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
+								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
+								# 	myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
@@ -409,7 +410,6 @@ if __name__ == '__main__':
 	except:
 		print "none"
 		print sys.exc_info()
-	
 	# fileCounts = []
 	# all_files = load("C:\\Users\\priti\\OneDrive\\Documents\\CCPP\\FoodMonitoring-NLP\\data\\food_files.pickle")
 	# c = 0
