@@ -25,7 +25,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True):
+def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True):
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
@@ -35,9 +35,13 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
 	foodNames = load("./data/food_desc_files/food_names.pickle")
-
+	extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
+	print('adding extra names')
+	print(len(foodNames))
+	print(len(extraFoodNames))
+	foodNames.update(extraFoodNames)
+	print(len(foodNames))
 	foodGroup = load("./data/food_desc_files/food_group.pickle")
-
 	langua = load("./data/food_desc_files/langua.pickle")
 
 	#ark_parsed_data = ark_parser(fileName)
