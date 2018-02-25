@@ -21,6 +21,17 @@ def get_food_names_from_file(fileName):
     else:
         return []
 
+def get_all_food_names_in_solutions():
+    """
+
+    :return: a set of all food names across all solutions
+    """
+    directory_path = 'HSLLD/HV1/MT/'
+    all_food_names = set()
+    for filename in os.listdir(directory_path):
+        file_path = directory_path + '/' + filename
+        all_food_names = all_food_names.union(get_food_names_from_file(file_path))
+    return all_food_names
 
 if __name__ == "__main__":
     directory_path = 'HSLLD/HV1/MT/'
