@@ -1,0 +1,1426 @@
+Food Database Name, Transcript Food Name, edit distance, word relative length, food word relative edit distance
+peas,peas,0.0,1.0,0.0
+carrots,carrots,0.0,1.0,0.0
+beef stew,beef stew,0.0,1.0,0.0
+stew,stew,0.0,1.0,0.0
+beef,beef,0.0,1.0,0.0
+carrots,carrots,0.0,1.0,0.0
+carrots,carrots,0.0,1.0,0.0
+carrots,carrots,0.0,1.0,0.0
+carrot,carrot,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+salt,salt,0.0,1.0,0.0
+pepper,pepper,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+carrots,carrots,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+potato chips,potato chips,0.0,1.0,0.0
+cookie,cookie,0.0,1.0,0.0
+cookie,cookie,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+pepper,pepper,0.0,1.0,0.0
+soup,soup,0.0,1.0,0.0
+soup,soup,0.0,1.0,0.0
+pepper,pepper,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+peanut butter,peanut butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+peanut butter,peanut butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+celery,celery,0.0,1.0,0.0
+celery,celery,0.0,1.0,0.0
+celery,celery,0.0,1.0,0.0
+celery,celery,0.0,1.0,0.0
+peanut butter,peanut butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+goose,goose,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+sugar,sugar,0.0,1.0,0.0
+sugar,sugar,0.0,1.0,0.0
+sugar,sugar,0.0,1.0,0.0
+crackers,crackers,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+crackers,crackers,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+crackers,crackers,0.0,1.0,0.0
+sugar,sugar,0.0,1.0,0.0
+sugar,sugar,0.0,1.0,0.0
+crackers,crackers,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+ham,ham,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+bacon,bacon,0.0,1.0,0.0
+canadian bacon,canadian bacon,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+cheese,cheese,0.0,1.0,0.0
+cheese,cheese,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+muffin,muffin,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+muffin,muffin,0.0,1.0,0.0
+onions,onions,0.0,1.0,0.0
+onions,onions,0.0,1.0,0.0
+onions,onions,0.0,1.0,0.0
+onions,onions,0.0,1.0,0.0
+onions,onions,0.0,1.0,0.0
+onions,onions,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+muffin,muffin,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+sunshine,sunshine,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+meatballs,meatballs,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+cherries,cherries,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+pie,pie,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+ham,ham,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+pork,pork,0.0,1.0,0.0
+pork,pork,0.0,1.0,0.0
+egg,egg,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+shake,shake,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+oats,oats,0.0,1.0,0.0
+oats,oats,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+fried chicken,fried chicken,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+cabbage,cabbage,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+tartar sauce,tartar sauce,0.0,1.0,0.0
+sauce,sauce,0.0,1.0,0.0
+mayonnaise,mayonnaise,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+beans,beans,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+beans,beans,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+tomatoes,tomatoes,0.0,1.0,0.0
+tartar sauce,tartar sauce,0.0,1.0,0.0
+sauce,sauce,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+beans,beans,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+fish,fish,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+fish,fish,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+applesauce,applesauce,0.0,1.0,0.0
+salt,salt,0.0,1.0,0.0
+fat,fat,0.0,1.0,0.0
+fat,fat,0.0,1.0,0.0
+fat,fat,0.0,1.0,0.0
+fat,fat,0.0,1.0,0.0
+fat,fat,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+rice,rice,0.0,1.0,0.0
+rice,rice,0.0,1.0,0.0
+rice,rice,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+rice,rice,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+popcorn,popcorn,0.0,1.0,0.0
+sugar,sugar,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+tomatoes,tomatoes,0.0,1.0,0.0
+potatoes,potatoes,0.0,1.0,0.0
+tomatoes,tomatoes,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+tomatoes,tomatoes,0.0,1.0,0.0
+croutons,croutons,0.0,1.0,0.0
+croutons,croutons,0.0,1.0,0.0
+doughnuts,doughnuts,0.0,1.0,0.0
+doughnuts,doughnuts,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+croutons,croutons,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+croutons,croutons,0.0,1.0,0.0
+croutons,croutons,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+crackers,crackers,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+crackers,crackers,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+spaghetti,spaghetti,0.0,1.0,0.0
+peaches,peaches,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+cucumber,cucumber,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+tomatoes,tomatoes,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+tomatoes,tomatoes,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+dressing,dressing,0.0,1.0,0.0
+dressing,dressing,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+lettuce,lettuce,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+fish,fish,0.0,1.0,0.0
+fish,fish,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+mother's,mother's,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+egg,egg,0.0,1.0,0.0
+egg,egg,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+dip,dip,0.0,1.0,0.0
+dip,dip,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+peas,peas,0.0,1.0,0.0
+carrots,carrots,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate cake,chocolate cake,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+chocolate cake,chocolate cake,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+chocolate cake,chocolate cake,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+mustard,mustard,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+macaroni,macaroni,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+pizza,pizza,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+soup,soup,0.0,1.0,0.0
+soup,soup,0.0,1.0,0.0
+bread,bread,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+honey,honey,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+seeds,seeds,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+seeds,seeds,0.0,1.0,0.0
+seeds,seeds,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+ice cream cone,ice cream cone,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+pork,pork,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+fruit salad,fruit salad,0.0,1.0,0.0
+applesauce,applesauce,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+applesauce,applesauce,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+cream,cream,0.0,1.0,0.0
+ice cream,ice cream,0.0,1.0,0.0
+salt,salt,0.0,1.0,0.0
+salt,salt,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+butter,butter,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+corn,corn,0.0,1.0,0.0
+potato salad,potato salad,0.0,1.0,0.0
+potato salad,potato salad,0.0,1.0,0.0
+broccoli,broccoli,0.0,1.0,0.0
+applesauce,applesauce,0.0,1.0,0.0
+pork,pork,0.0,1.0,0.0
+water,water,0.0,1.0,0.0
+applesauce,applesauce,0.0,1.0,0.0
+biscuits,biscuits,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chocolate,chocolate,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+biscuits,biscuits,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+biscuits,biscuits,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+biscuits,biscuits,0.0,1.0,0.0
+biscuits,biscuits,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+eggs,eggs,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+cake,cake,0.0,1.0,0.0
+chicken,chicken,0.0,1.0,0.0
+milk,milk,0.0,1.0,0.0
+pumpkin,pumpkin,0.0,1.0,0.0
+pumpkin,pumpkin,0.0,1.0,0.0
+sausage,sausage,0.0,1.0,0.0
+meatballs,meatballs,0.0,1.0,0.0
+meatballs,meatballs,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+pepper,pepper,0.0,1.0,0.0
+salt,salt,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+egg,egg,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+duck,duck,0.0,1.0,0.0
+cookie,cookie,0.0,1.0,0.0
+cookie,cookie,0.0,1.0,0.0
+cookie,cookie,0.0,1.0,0.0
+gums,gums,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+turtle,turtle,0.0,1.0,0.0
+tea,tea,0.0,1.0,0.0
+tea,tea,0.0,1.0,0.0
+rice,rice,0.0,1.0,0.0
+spinach,spinach,0.0,1.0,0.0
+spinach,spinach,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+juice,juice,0.0,1.0,0.0
+spaghetti,spaghetti,0.0,1.0,0.0
+ice cream cones,ice cream cone,1.0,0.933,0.067
+ice cream cones,ice cream cone,1.0,0.933,0.067
+ice cream cones,ice cream cone,1.0,0.933,0.067
+ice cream cones,ice cream cone,1.0,0.933,0.067
+ice cream cones,ice cream cone,1.0,0.933,0.067
+ice cream cones,ice cream cone,1.0,0.933,0.067
+ice cream cones,ice cream cone,1.0,0.933,0.067
+strawberries,strawberries>,1.0,1.083,0.083
+milk shakes,milk shake,1.0,0.909,0.091
+applesauce,applesauce>,1.0,1.1,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream>,1.0,1.0,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+vegetables,vegetable,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice creams,ice cream,1.0,0.9,0.1
+ice cream,ice cream>,1.0,1.111,0.111
+tuna fish,tuna+fish,1.0,1.0,0.111
+meatballs,meatball,1.0,0.889,0.111
+meatballs,meatball,1.0,0.889,0.111
+meatballs,meatball],1.0,1.0,0.111
+saltines crackers,<saltine crackers,2.0,1.0,0.118
+desserts,dessert,1.0,0.875,0.125
+desserts,dessert,1.0,0.875,0.125
+desserts,dessert,1.0,0.875,0.125
+desserts,dessert,1.0,0.875,0.125
+crackers,crackers>,1.0,1.125,0.125
+crackers,crackers>,1.0,1.125,0.125
+broccoli,broccoli],1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+desserts,dessert>,1.0,1.0,0.125
+desserts,dessert,1.0,0.875,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+cucumber,cucumbers,1.0,1.125,0.125
+broccoli,broccoli>,1.0,1.125,0.125
+broccoli,broccoli>,1.0,1.125,0.125
+desserts,dessert,1.0,0.875,0.125
+broccoli,broccoli>,1.0,1.125,0.125
+desserts,dessert,1.0,0.875,0.125
+carrots,carrots>,1.0,1.143,0.143
+carrots,carrot,1.0,0.857,0.143
+peppers,pepper,1.0,0.857,0.143
+cookies,cookie,1.0,0.857,0.143
+cookies,cookie,1.0,0.857,0.143
+peppers,pepper,1.0,0.857,0.143
+peppers,pepper,1.0,0.857,0.143
+topping,tapping,1.0,1.0,0.143
+peanuts,peanut,1.0,0.857,0.143
+peanuts,peanut,1.0,0.857,0.143
+muffins,muffin,1.0,0.857,0.143
+muffins,muffin,1.0,0.857,0.143
+muffins,muffin,1.0,0.857,0.143
+oranges,orange,1.0,0.857,0.143
+oranges,orange,1.0,0.857,0.143
+cereals,cereal,1.0,0.857,0.143
+cereals,cereal,1.0,0.857,0.143
+cereals,cereal,1.0,0.857,0.143
+cockles,cackles,1.0,1.0,0.143
+oranges,orange,1.0,0.857,0.143
+oranges,orange,1.0,0.857,0.143
+oranges,orange,1.0,0.857,0.143
+oranges,orange,1.0,0.857,0.143
+cardoon,cartoon,1.0,1.0,0.143
+topping,popping,1.0,1.0,0.143
+topping,popping,1.0,1.0,0.143
+cardoon,cartoon,1.0,1.0,0.143
+topping,hopping,1.0,1.0,0.143
+topping,hopping,1.0,1.0,0.143
+topping,hopping,1.0,1.0,0.143
+topping,hopping,1.0,1.0,0.143
+oranges,orange,1.0,0.857,0.143
+peppers,pepper,1.0,0.857,0.143
+cookies,cookie,1.0,0.857,0.143
+cookies,cookie,1.0,0.857,0.143
+cookies,cookie,1.0,0.857,0.143
+oranges,orange,1.0,0.857,0.143
+candies,candles,1.0,1.0,0.143
+candies,candles,1.0,1.0,0.143
+candies,candles,1.0,1.0,0.143
+candies,candles,1.0,1.0,0.143
+smooth peanut butter,*mot: peanut butter,3.0,0.95,0.15
+peanut butter,pean(ut) butter,2.0,1.154,0.154
+rice crackers,fire crackers,2.0,1.0,0.154
+rice crackers,fire crackers,2.0,1.0,0.154
+carrot,carrots,1.0,1.167,0.167
+carrot,carrots,1.0,1.167,0.167
+carrot,carrots,1.0,1.167,0.167
+carrot,carrots,1.0,1.167,0.167
+carrot,carrots,1.0,1.167,0.167
+sugars,sugar,1.0,0.833,0.167
+sugars,sugar,1.0,0.833,0.167
+sugars,sugar,1.0,0.833,0.167
+sugars,sugar,1.0,0.833,0.167
+sugars,sugar,1.0,0.833,0.167
+apples,apple,1.0,0.833,0.167
+apples,apple,1.0,0.833,0.167
+muffin,<muffin,1.0,1.167,0.167
+grapes,grape,1.0,0.833,0.167
+grapes,grape>,1.0,1.0,0.167
+grapes,grape,1.0,0.833,0.167
+grapes,grape,1.0,0.833,0.167
+apples,apple,1.0,0.833,0.167
+spices,spice,1.0,0.833,0.167
+catsup,catsup>,1.0,1.167,0.167
+grapes,grapes>,1.0,1.167,0.167
+onions,onions>,1.0,1.167,0.167
+sugars,sugar,1.0,0.833,0.167
+apples,apple,1.0,0.833,0.167
+mutton,button,1.0,1.0,0.167
+squash,squish,1.0,1.0,0.167
+lemons,lemon,1.0,0.833,0.167
+carrot,carrots,1.0,1.167,0.167
+capers,papers,1.0,1.0,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+turtle,turtle>,1.0,1.167,0.167
+turtle,turtles,1.0,1.167,0.167
+capers,papers,1.0,1.0,0.167
+cheese food,cheese look,2.0,1.0,0.182
+spaghettios,spaghetti,2.0,0.818,0.182
+fruit salad,<fruit salad>,2.0,1.182,0.182
+sucker fish,sucker fast,2.0,1.0,0.182
+spaghettios,spaghetti,2.0,0.818,0.182
+chocolate cookie,chocolate cake,3.0,0.875,0.188
+chocolate cookie,chocolate cake,3.0,0.875,0.188
+chocolate cookie,chocolate cake,3.0,0.875,0.188
+pears,peas,1.0,0.8,0.2
+shake,share,1.0,1.0,0.2
+cream,scream,1.0,1.2,0.2
+papad,papa,1.0,0.8,0.2
+limes,lines,1.0,1.0,0.2
+moose,goose,1.0,1.0,0.2
+pears,ears,1.0,0.8,0.2
+pears,ears,1.0,0.8,0.2
+bread,break,1.0,1.0,0.2
+seeds,seed,1.0,0.8,0.2
+seeds,seed,1.0,0.8,0.2
+cream,dream,1.0,1.0,0.2
+rolls,roll,1.0,0.8,0.2
+rolls,roll,1.0,0.8,0.2
+rolls,roll,1.0,0.8,0.2
+rolls,roll,1.0,0.8,0.2
+pears,years,1.0,1.0,0.2
+pears,years,1.0,1.0,0.2
+table salt,table talk,2.0,1.0,0.2
+cress,dress,1.0,1.0,0.2
+sliced ham,spice ham,2.0,0.9,0.2
+pears,years,1.0,1.0,0.2
+honey,honey>,1.0,1.2,0.2
+braised chicken,fried chicken,3.0,0.867,0.2
+grilled chicken,fried chicken,3.0,0.867,0.2
+whale,while,1.0,1.0,0.2
+pears,years,1.0,1.0,0.2
+cooked potatoes,good potatoes,3.0,0.867,0.2
+juice,juice>,1.0,1.2,0.2
+honey,money,1.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+limes,times,1.0,1.0,0.2
+smelt,smell,1.0,1.0,0.2
+smelt,smell,1.0,1.0,0.2
+cream,cream>,1.0,1.2,0.2
+whale,while,1.0,1.0,0.2
+whole beef,whole week,2.0,1.0,0.2
+beets,beers,1.0,1.0,0.2
+beets,beers,1.0,1.0,0.2
+juice,juice>,1.0,1.2,0.2
+leeks,weeks,1.0,1.0,0.2
+leeks,weeks,1.0,1.0,0.2
+limes,times,1.0,1.0,0.2
+juice,juicy,1.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+pears,peas,1.0,0.8,0.2
+limes,times,1.0,1.0,0.2
+whole veal,whole year,2.0,1.0,0.2
+whole veal,whole year,2.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+limes,times,1.0,1.0,0.2
+dates,rates,1.0,1.0,0.2
+shake,share,1.0,1.0,0.2
+bacon,bacon],1.0,1.2,0.2
+dates,gates,1.0,1.0,0.2
+snack,smack,1.0,1.0,0.2
+pears,years,1.0,1.0,0.2
+pears,years,1.0,1.0,0.2
+pears,years,1.0,1.0,0.2
+pears,years,1.0,1.0,0.2
+whale,while,1.0,1.0,0.2
+bread,break,1.0,1.0,0.2
+bread,break,1.0,1.0,0.2
+nance,dance,1.0,1.0,0.2
+honey,money,1.0,1.0,0.2
+boiled chicken,fried chicken,3.0,0.929,0.214
+frozen chicken,fried chicken,3.0,0.929,0.214
+ice cream cone,ice cream too>,3.0,1.0,0.214
+ice cream cone,ice cream now>,3.0,1.0,0.214
+not chocolate cake,chocolate cake,4.0,0.778,0.222
+not chocolate cake,chocolate cake,4.0,0.778,0.222
+not chocolate cake,chocolate cake,4.0,0.778,0.222
+fast food,cat food,2.0,0.889,0.222
+fast food,cat food,2.0,0.889,0.222
+breakfast bar,breakfast (.),3.0,1.0,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+ice cream bar,ice cream bar[!],3.0,1.231,0.231
+ice cream bar,ice cream (.),3.0,1.0,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+rice crackers,fire crackers>,3.0,1.077,0.231
+milk crackers,fire crackers,3.0,1.0,0.231
+milk crackers,fire crackers,3.0,1.0,0.231
+rice crackers,fire crackers>,3.0,1.077,0.231
+rice crackers,firecrackers,3.0,0.923,0.231
+pan-fried chicken,fried chicken,4.0,0.765,0.235
+fried chicken kfc,fried chicken,4.0,0.765,0.235
+chocolate cookies,chocolate cake,4.0,0.824,0.235
+chocolate candies,chocolate cake,4.0,0.824,0.235
+chocolate cookies,chocolate cake,4.0,0.824,0.235
+chocolate candies,chocolate cake,4.0,0.824,0.235
+chocolate cookies,chocolate cake,4.0,0.824,0.235
+chocolate candies,chocolate cake,4.0,0.824,0.235
+owl,bowl,1.0,1.333,0.25
+gums,hums,1.0,1.0,0.25
+dumpling,mumbling,2.0,1.0,0.25
+yam,yum,1.0,1.0,0.25
+potatoes,potato,2.0,0.75,0.25
+cake,coke,1.0,1.0,0.25
+rice,ride,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+flan,flag,1.0,1.0,0.25
+bear,hear,1.0,1.0,0.25
+bear,hear,1.0,1.0,0.25
+flan,flag,1.0,1.0,0.25
+oil,o@l,1.0,1.0,0.25
+owl,o@l,1.0,1.0,0.25
+oil,o@l,1.0,1.0,0.25
+owl,o@l,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+pace,place,1.0,1.25,0.25
+whey,hey,1.0,0.75,0.25
+whey,hey,1.0,0.75,0.25
+whey,hey,1.0,0.75,0.25
+cake,care,1.0,1.0,0.25
+pork,fork,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+owl,bowl,1.0,1.333,0.25
+owl,bowl,1.0,1.333,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+mush,push,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+toppings,tapping,2.0,0.875,0.25
+milk,milk>,1.0,1.25,0.25
+pork,park,1.0,1.0,0.25
+chunky peanut butter,*chi: peanut butter,5.0,0.95,0.25
+cooked pizza,good pizza,3.0,0.833,0.25
+yam,yum,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+dove,move,1.0,1.0,0.25
+dove,move,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+duck,yuck,1.0,1.0,0.25
+milk,milk>,1.0,1.25,0.25
+pork,work,1.0,1.0,0.25
+yam,ham,1.0,1.0,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+lard,lord,1.0,1.0,0.25
+lard,lord,1.0,1.0,0.25
+lard,lord,1.0,1.0,0.25
+lard,lord,1.0,1.0,0.25
+dressing,dreaming,2.0,1.0,0.25
+dressing,dreaming,2.0,1.0,0.25
+dip,die,1.0,1.0,0.25
+pie,die,1.0,1.0,0.25
+pate,plate,1.0,1.25,0.25
+fat,eat,1.0,1.0,0.25
+pate,plate,1.0,1.25,0.25
+pate,plate,1.0,1.25,0.25
+pate,plate,1.0,1.25,0.25
+pate,plate,1.0,1.25,0.25
+fat,eat,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+sweet onions,want onions,3.0,0.917,0.25
+whey,hey,1.0,0.75,0.25
+owl,ow,1.0,0.667,0.25
+lard,lord,1.0,1.0,0.25
+owl,ow,1.0,0.667,0.25
+fat,eat,1.0,1.0,0.25
+dock,rock,1.0,1.0,0.25
+dock,rock,1.0,1.0,0.25
+dock,rock,1.0,1.0,0.25
+dock,rock,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+goat,coat,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+oil,o@l,1.0,1.0,0.25
+owl,o@l,1.0,1.0,0.25
+oil,o@l,1.0,1.0,0.25
+owl,o@l,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+mother's,brother's,2.0,1.125,0.25
+pace,face,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+tomatoes,tomato,2.0,0.75,0.25
+mother's,mother>,2.0,0.875,0.25
+mother's,father's,2.0,1.0,0.25
+milk,milk>,1.0,1.25,0.25
+pace,face,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+red potatoes,(.) potatoes,3.0,1.0,0.25
+raw potatoes,(.) potatoes,3.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+fat,fast,1.0,1.333,0.25
+fat,eat,1.0,1.0,0.25
+veal,meal,1.0,1.0,0.25
+seal,meal,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+yam,ham,1.0,1.0,0.25
+fat,mat,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+fat,mat,1.0,1.0,0.25
+eggs,egg,1.0,0.75,0.25
+pace,face,1.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+potatoes,(po)tatoes,2.0,1.25,0.25
+pork,work,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+oats,<oats,1.0,1.25,0.25
+feet chicken,fried chicken,3.0,1.083,0.25
+pace,face,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+cake,case,1.0,1.0,0.25
+collards,dollars,2.0,0.875,0.25
+pork,work,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+red potatoes,good potatoes,3.0,1.083,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+lard,lord,1.0,1.0,0.25
+cake,cakes,1.0,1.25,0.25
+fat,eat,1.0,1.0,0.25
+potatoes,tomatoes,2.0,1.0,0.25
+beef,beep,1.0,1.0,0.25
+beef,beep,1.0,1.0,0.25
+beef,beep,1.0,1.0,0.25
+beef,beep,1.0,1.0,0.25
+frozen bread,brown bread,3.0,0.917,0.25
+oats,boats,1.0,1.25,0.25
+pork,park,1.0,1.0,0.25
+pork,park,1.0,1.0,0.25
+oats,coats,1.0,1.25,0.25
+goat,coat,1.0,1.0,0.25
+mother's,mother,2.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+poi,pot,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+goat,coat,1.0,1.0,0.25
+oats,coats,1.0,1.25,0.25
+rice,ice,1.0,0.75,0.25
+cake,care,1.0,1.0,0.25
+owl,ow,1.0,0.667,0.25
+yam,yay,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pork,fork,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pork,park,1.0,1.0,0.25
+tea,ten,1.0,1.0,0.25
+tea,ten,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+goat,boat,1.0,1.0,0.25
+goat,boat,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+dove,move,1.0,1.0,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+whey,hey,1.0,0.75,0.25
+collards,dollars,2.0,0.875,0.25
+oats,boats,1.0,1.25,0.25
+potatoes,tomatoes,2.0,1.0,0.25
+red tomatoes,xxx tomatoes,3.0,1.0,0.25
+raw tomatoes,xxx tomatoes,3.0,1.0,0.25
+tomatoes,potatoes,2.0,1.0,0.25
+potatoes,tomatoes,2.0,1.0,0.25
+tomatoes,tomato,2.0,0.75,0.25
+potatoes,tomatoes,2.0,1.0,0.25
+glazed doughnuts,like doughnuts,4.0,0.875,0.25
+bear,year,1.0,1.0,0.25
+corn,corn>,1.0,1.25,0.25
+rye crackers,fire crackers,3.0,1.083,0.25
+dock,duck,1.0,1.0,0.25
+gums,guys,1.0,1.0,0.25
+rye crackers,fire crackers,3.0,1.083,0.25
+pace,place,1.0,1.25,0.25
+gums,guys,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+pace,place,1.0,1.25,0.25
+mother's,mother,2.0,0.75,0.25
+pork,park,1.0,1.0,0.25
+rice,ride,1.0,1.0,0.25
+pate,plate,1.0,1.25,0.25
+whey,hey,1.0,0.75,0.25
+fat,fit,1.0,1.0,0.25
+owl,bowl,1.0,1.333,0.25
+tomatoes,tomato,2.0,0.75,0.25
+cucumber,cucum(ber),2.0,1.25,0.25
+potatoes,tomatoes,2.0,1.0,0.25
+yam,yum,1.0,1.0,0.25
+yam,yum,1.0,1.0,0.25
+potatoes,tomatoes,2.0,1.0,0.25
+tomatoes,(to)matoes,2.0,1.25,0.25
+pace,page,1.0,1.0,0.25
+pate,page,1.0,1.0,0.25
+tomatoes,(to)matoes,2.0,1.25,0.25
+tomatoes,tomato>,2.0,0.875,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+fat,fast,1.0,1.333,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+duck,yuck,1.0,1.0,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+fat,<at,1.0,1.0,0.25
+bear,beat,1.0,1.0,0.25
+bear,beat,1.0,1.0,0.25
+cake,care,1.0,1.0,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+veal,meal,1.0,1.0,0.25
+seal,meal,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+pork,work,1.0,1.0,0.25
+cake,care,1.0,1.0,0.25
+cake,cape,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+eggs,egg,1.0,0.75,0.25
+eggs,egg,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+mother's,mother,2.0,0.75,0.25
+mother's,bothers,2.0,0.875,0.25
+fat,eat,1.0,1.0,0.25
+duck,yuck,1.0,1.0,0.25
+radishes,dishes,2.0,0.75,0.25
+radishes,dishes,2.0,0.75,0.25
+tea,ten,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+pate,plate,1.0,1.25,0.25
+whey,hey,1.0,0.75,0.25
+pate,plate,1.0,1.25,0.25
+tea,ten,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+pate,plate,1.0,1.25,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+owl,ow,1.0,0.667,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+lard,yard,1.0,1.0,0.25
+radishes,dishes,2.0,0.75,0.25
+radishes,dishes,2.0,0.75,0.25
+duck,dunk,1.0,1.0,0.25
+owl,bowl,1.0,1.333,0.25
+owl,bowl,1.0,1.333,0.25
+pate,plate,1.0,1.25,0.25
+pate,plate,1.0,1.25,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+dock,deck,1.0,1.0,0.25
+duck,deck,1.0,1.0,0.25
+duck,dunk,1.0,1.0,0.25
+duck,dunk,1.0,1.0,0.25
+duck,dunk,1.0,1.0,0.25
+duck,dunk,1.0,1.0,0.25
+duck,dunk,1.0,1.0,0.25
+duck,dunk,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+rice,ice,1.0,0.75,0.25
+pork,fork,1.0,1.0,0.25
+mother's,others,2.0,0.75,0.25
+tea,ta,1.0,0.667,0.25
+pate,pat,1.0,0.75,0.25
+fat,pat,1.0,1.0,0.25
+fish,dish,1.0,1.0,0.25
+gums,guys,1.0,1.0,0.25
+pork,fork,1.0,1.0,0.25
+pork,fork,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+broccoli,broccoli's,2.0,1.25,0.25
+fish,dish,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+gums,guys,1.0,1.0,0.25
+gums,guys,1.0,1.0,0.25
+rice,ice,1.0,0.75,0.25
+tea,ten,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pork,fork,1.0,1.0,0.25
+pork,fork,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+potato bread,potato salad,3.0,1.0,0.25
+potato bread,potato salad,3.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+gums,guys,1.0,1.0,0.25
+owl,ow,1.0,0.667,0.25
+pate,plate,1.0,1.25,0.25
+strawberries,strawberry,3.0,0.833,0.25
+chicken soup,chicken look,3.0,1.0,0.25
+pate,plate,1.0,1.25,0.25
+pork,work,1.0,1.0,0.25
+collards,dollars,2.0,0.875,0.25
+rice,nice,1.0,1.0,0.25
+lard,land,1.0,1.0,0.25
+mush,mushy,1.0,1.25,0.25
+fat,eat,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+fat,fast,1.0,1.333,0.25
+lard,land,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+bear,ear,1.0,0.75,0.25
+duck,yuck,1.0,1.0,0.25
+bear,year,1.0,1.0,0.25
+pie,pin,1.0,1.0,0.25
+pie,pin,1.0,1.0,0.25
+toppings,popping,2.0,0.875,0.25
+toppings,popping,2.0,0.875,0.25
+pie,pin,1.0,1.0,0.25
+pie,pin,1.0,1.0,0.25
+pie,pin,1.0,1.0,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+toppings,hopping,2.0,0.875,0.25
+whey,hey,1.0,0.75,0.25
+toppings,hopping,2.0,0.875,0.25
+toppings,hopping,2.0,0.875,0.25
+toppings,hopping,2.0,0.875,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+dove,love,1.0,1.0,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+fat,fan,1.0,1.0,0.25
+flan,fan,1.0,0.75,0.25
+seal,seat,1.0,1.0,0.25
+seal,seat,1.0,1.0,0.25
+seal,seat,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+eggs,<eggs,1.0,1.25,0.25
+cake,cake>,1.0,1.25,0.25
+pate,rate,1.0,1.0,0.25
+pate,rate,1.0,1.0,0.25
+pate,rate,1.0,1.0,0.25
+pate,rate,1.0,1.0,0.25
+egg,eggs,1.0,1.333,0.25
+fat,eat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+oats,cats,1.0,1.0,0.25
+cake,wake,1.0,1.0,0.25
+beef,bee,1.0,0.75,0.25
+gums,gum,1.0,0.75,0.25
+gums,gum,1.0,0.75,0.25
+gums,gum,1.0,0.75,0.25
+gums,gum,1.0,0.75,0.25
+bear,year,1.0,1.0,0.25
+mother's,mother,2.0,0.75,0.25
+pate,plate,1.0,1.25,0.25
+duck,yuck,1.0,1.0,0.25
+pace,face,1.0,1.0,0.25
+mother's,mother,2.0,0.75,0.25
+mother's,mother,2.0,0.75,0.25
+pate,ate,1.0,0.75,0.25
+cake,cage,1.0,1.0,0.25
+dip,tip,1.0,1.0,0.25
+pace,place,1.0,1.25,0.25
+duck,yuck,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+pate,ate,1.0,0.75,0.25
+pate,ate,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+gums,guns,1.0,1.0,0.25
+eggs,egg,1.0,0.75,0.25
+pate,ate,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+dock,duck,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+dock,duck,1.0,1.0,0.25
+cake,cage,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+lard,yard,1.0,1.0,0.25
+lard,yard,1.0,1.0,0.25
+gums,gum,1.0,0.75,0.25
+gums,gum,1.0,0.75,0.25
+gums,gum,1.0,0.75,0.25
+owl,ow,1.0,0.667,0.25
+green turtle,pretend turtle,3.0,1.167,0.25
+oil,o@l,1.0,1.0,0.25
+owl,o@l,1.0,1.0,0.25
+oil,o@l,1.0,1.0,0.25
+owl,o@l,1.0,1.0,0.25
+ham,hat,1.0,1.0,0.25
+fat,hat,1.0,1.0,0.25
+oats,hats,1.0,1.0,0.25
+ham,hat,1.0,1.0,0.25
+fat,hat,1.0,1.0,0.25
+ham,hat,1.0,1.0,0.25
+fat,hat,1.0,1.0,0.25
+ham,hat,1.0,1.0,0.25
+fat,hat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+milk,milk>,1.0,1.25,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+whey,hey,1.0,0.75,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+dock,rock,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+goat,coat,1.0,1.0,0.25
+fat,eat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+fat,cat,1.0,1.0,0.25
+cake,care,1.0,1.0,0.25
+owl,bowl,1.0,1.333,0.25
+owl,bowl,1.0,1.333,0.25
+owl,bowl,1.0,1.333,0.25
+american cheese,american hero,4.0,0.867,0.267
+broiler chicken,fried chicken,4.0,0.867,0.267
+breaded chicken,fried chicken,4.0,0.867,0.267
+boiled potatoes,good potatoes,4.0,0.867,0.267
+ice cream cones,ice cream too>,4.0,0.933,0.267
+plain doughnuts,like doughnuts,4.0,0.933,0.267
+wafers crackers,fire crackers,4.0,0.867,0.267
+wafers crackers,fire crackers,4.0,0.867,0.267
+orange babyfood,orange food,4.0,0.733,0.267
+ice cream cones,ice cream now>,4.0,0.933,0.267
+carrot cake,carrot haha,3.0,1.0,0.273
+whole seeds,whole mess,3.0,0.909,0.273
+cheese soup,cheese look,3.0,1.0,0.273
+yellow corn,yellow one,3.0,0.909,0.273
+yellow cake,yellow one,3.0,0.909,0.273
+water sauce,tartar sauce,3.0,1.091,0.273
+pasta sauce,tartar sauce,3.0,1.091,0.273
+water sauce,tartar sauce,3.0,1.091,0.273
+pasta sauce,tartar sauce,3.0,1.091,0.273
+white rolls,white ones,3.0,0.909,0.273
+apple juice,applesauce,3.0,0.909,0.273
+whole seeds,whole week,3.0,0.909,0.273
+orange fish,orange food,3.0,1.0,0.273
+apple juice,applesauce,3.0,0.909,0.273
+apple juice,applesauce,3.0,0.909,0.273
+apple juice,applesauce,3.0,0.909,0.273
+apple juice,applesauce,3.0,0.909,0.273
+ice cream sandwich,spice ham sandwich,5.0,1.0,0.278
+chocolate cake,chocolate (.),4.0,0.929,0.286
+chocolate milk,chocolate (.),4.0,0.929,0.286
+chocolate cake,chocolate (.),4.0,0.929,0.286
+chocolate milk,chocolate (.),4.0,0.929,0.286
+breakfast tart,breakfast (.),4.0,0.929,0.286
+breakfast bars,breakfast (.),4.0,0.929,0.286
+peanuts,pean(ut),2.0,1.143,0.286
+papayas,papa's,2.0,0.857,0.286
+muffins,<muffin,2.0,1.0,0.286
+oranges,<orange,2.0,1.0,0.286
+peaches,places,2.0,0.857,0.286
+tamales,tales,2.0,0.714,0.286
+tamales,tales,2.0,0.714,0.286
+pudding,kidding,2.0,1.0,0.286
+whole potatoes,*mot: potatoes,4.0,1.0,0.286
+white potatoes,*mot: potatoes,4.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+glazed chicken,fried chicken,4.0,0.929,0.286
+canned chicken,fried chicken,4.0,0.929,0.286
+stewed chicken,fried chicken,4.0,0.929,0.286
+cooked chicken,fried chicken,4.0,0.929,0.286
+ground chicken,fried chicken,4.0,0.929,0.286
+peppers,pampers,2.0,1.0,0.286
+candies,panties,2.0,1.0,0.286
+candies,panties,2.0,1.0,0.286
+candies,panties,2.0,1.0,0.286
+candies,panties,2.0,1.0,0.286
+candies,panties,2.0,1.0,0.286
+candies,panties,2.0,1.0,0.286
+whole potatoes,good potatoes,4.0,0.929,0.286
+baked potatoes,good potatoes,4.0,0.929,0.286
+candies,ladies,2.0,0.857,0.286
+raisins,raining,2.0,1.0,0.286
+raisins,raining,2.0,1.0,0.286
+raisins,raining,2.0,1.0,0.286
+cone ice cream,<some ice cream>,4.0,1.143,0.286
+ice cream cone,ice cream (.),4.0,0.929,0.286
+raisins,raining,2.0,1.0,0.286
+pickles,cackles,2.0,1.0,0.286
+tamales,tables,2.0,0.857,0.286
+peaches,teacher,2.0,1.0,0.286
+white potatoes,*chi: potatoes,4.0,1.0,0.286
+plain potatoes,*chi: potatoes,4.0,1.0,0.286
+plain croutons,*bri: croutons,4.0,1.0,0.286
+plain croutons,*fat: croutons,4.0,1.0,0.286
+cream crackers,fire crackers,4.0,0.929,0.286
+cream crackers,fire crackers,4.0,0.929,0.286
+candies,candle,2.0,0.857,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+celtuce,lettuce,2.0,1.0,0.286
+dark chocolate,*fat: chocolate,4.0,1.071,0.286
+chocolate milk,chocolate cake,4.0,1.0,0.286
+chocolate milk,chocolate cake,4.0,1.0,0.286
+chocolate milk,chocolate cake,4.0,1.0,0.286
+chocolate cake,chocolate [?],4.0,0.929,0.286
+chocolate milk,chocolate [?],4.0,0.929,0.286
+peppers,jeepers,2.0,1.0,0.286
+denny's,bunny's,2.0,1.0,0.286
+cone ice cream,*mot: ice cream,4.0,1.071,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+cone ice cream,*chi: ice cream,4.0,1.071,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+cone ice cream,(.) ice cream,4.0,0.929,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+cone ice cream,*mot: ice cream,4.0,1.071,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+ice cream cone,cream cone,4.0,0.714,0.286
+cardoon,pardon,2.0,0.857,0.286
+peanuts,plants,2.0,0.857,0.286
+swanson,season,2.0,0.857,0.286
+chicken,chicken's,2.0,1.286,0.286
+peaches,teachers,2.0,1.143,0.286
+peaches,teachers,2.0,1.143,0.286
+cardoon,cartoons,2.0,1.143,0.286
+cardoon,cartoons,2.0,1.143,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teachers,2.0,1.143,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+peppers,papers,2.0,0.857,0.286
+peaches,teacher,2.0,1.0,0.286
+cookies,cooking,2.0,1.0,0.286
+cookies,cooking,2.0,1.0,0.286
+peppers,papers,2.0,0.857,0.286
+peaches,teacher,2.0,1.0,0.286
+peaches,teacher,2.0,1.0,0.286
+flavored crackers,fire crackers,5.0,0.765,0.294
+fat-free crackers,fire crackers,5.0,0.765,0.294
+flavored crackers,fire crackers,5.0,0.765,0.294
+fat-free crackers,fire crackers,5.0,0.765,0.294
+chocolate cookies,chocolate <gives,5.0,0.941,0.294
+chocolate candies,chocolate <gives,5.0,0.941,0.294
+chocolate cereals,chocolate cake,5.0,0.824,0.294
+chocolate cereals,chocolate cake,5.0,0.824,0.294
+chocolate cereals,chocolate cake,5.0,0.824,0.294
+brown rice,brownie,3.0,0.7,0.3
+brown rice,brownie,3.0,0.7,0.3
+whole beef,whole mess,3.0,1.0,0.3
+whole veal,whole mess,3.0,1.0,0.3
+whole milk,whole mess,3.0,1.0,0.3
+hungry man,hungry (.),3.0,1.0,0.3
+hungry man,hungry (.),3.0,1.0,0.3
+green peas,green car,3.0,0.9,0.3
+smooth peanut butter,*chi: peanut butter,6.0,0.95,0.3
+chunky peanut butter,*mot: peanut butter,6.0,0.95,0.3
+dry cheese,xxx cheese,3.0,1.0,0.3
+raw onions,[!] onions,3.0,1.0,0.3
+raw onions,want onions,3.0,1.1,0.3
+whole beef,whole box,3.0,0.9,0.3
+whole pork,whole box,3.0,0.9,0.3
+black bear,black hey,3.0,0.9,0.3
+white fish,white right,3.0,1.1,0.3
+white rice,white right,3.0,1.1,0.3
+hungry man,hungry [!],3.0,1.0,0.3
+bacon pork,baby pork,3.0,0.9,0.3
+brain pork,baby pork,3.0,0.9,0.3
+belly pork,baby pork,3.0,0.9,0.3
+blade pork,baby pork,3.0,0.9,0.3
+baked pork,baby pork,3.0,0.9,0.3
+fish sauce,fish cake,3.0,0.9,0.3
+light cake,fish cake,3.0,0.9,0.3
+roll bread,brown bread,3.0,1.1,0.3
+fish sauce,fish stick,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+naya water,new water,3.0,0.9,0.3
+brain pork,brown work,3.0,1.0,0.3
+fish sauce,fish store,3.0,1.0,0.3
+green soup,green door,3.0,1.0,0.3
+whole veal,whole week,3.0,1.0,0.3
+whole milk,whole week,3.0,1.0,0.3
+whole pork,whole week,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,milk juice,3.0,1.0,0.3
+lime juice,nice juicy,3.0,1.0,0.3
+green soup,green food,3.0,1.0,0.3
+whole beef,whole year,3.0,1.0,0.3
+whole beef,whole year,3.0,1.0,0.3
+white corn,want corn,3.0,0.9,0.3
+sweet corn,want corn,3.0,0.9,0.3
+fast foods,cat food,3.0,0.8,0.3
+fast foods,cat food,3.0,0.8,0.3
+raw turtle,real turtles,3.0,1.2,0.3
+green soup,green blue,3.0,1.0,0.3
