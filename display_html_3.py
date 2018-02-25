@@ -15,7 +15,9 @@ import os
 import cal_calorie_given_food_name 
 from pprint import pprint 
 import nltk 
-import time 
+import time
+import wordnet_explorer
+
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -169,7 +171,14 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
-			if found_at_least:	
+
+			for substring in sentence_to_word_pairs:
+				if wordnet_explorer.descendant_of_food(substring):
+					print(substring)
+					print('FOUND')
+
+
+			if found_at_least:
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				#print('dic')
 				#print(dic)
@@ -301,7 +310,7 @@ def calculate_edit_distance(sentence, sentence_list_format, foodName, k = 0.3):
 	return_list = []
 	for word_pairs in sentence_list_format:
 		
-		if abs(len(word_pairs) - len(foodName)) <= 3:
+		if abs(len(word_pairs) - len(foodName)) <= 0:
 			distance = nltk.edit_distance(word_pairs, foodName)
 			if float(distance)/float(len(word_pairs)) < k:
 				start = sentence.find(word_pairs)

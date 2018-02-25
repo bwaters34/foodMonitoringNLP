@@ -177,7 +177,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
-			if found_at_least:	
+			if found_at_least:
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				print('dic')
 				print(dic)
