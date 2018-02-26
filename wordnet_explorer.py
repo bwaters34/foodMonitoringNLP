@@ -26,7 +26,10 @@ def descendant_of_food(word):
             # print(path_names)
             # print(food_synset_name)
             if food_synset_name in path_names:
+                print(path_names)
+                print(food_synset_name)
                 return True
+
     return False
 
 if __name__ == "__main__":

@@ -145,6 +145,16 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
             # print ("Temproray -> ", temp_i)
             # print ("Final i -> ", i)
 
+            if parser_type == 'stanford_POS' or 1:
+                # print('running stanford')
+                tags = pos_tag(word_tokenize(temp_i))
+                # Joining the tags
+                tags = join_tags(tags)
+            elif parser_type == 'ark_tweet_parser' and 0:
+                print('running ark')
+                # tags =  CMUTweetTagger.runtagger_parse([temp_i])
+                tags = join_tags(ark_parsed_data[line_no])
+
             for substring in sentence_to_word_pairs:
                 if wordnet_explorer.descendant_of_food(substring):
                     for match in re.finditer(substring, i):
@@ -176,15 +186,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                 pass
                 text += i[1:]
             # print ("Final text ->", text)
-            if parser_type == 'stanford_POS' and 0:
-                # print('running stanford')
-                tags = pos_tag(word_tokenize(temp_i))
-                # Joining the tags
-                tags = join_tags(tags)
-            elif parser_type == 'ark_tweet_parser' and 0:
-                print('running ark')
-                # tags =  CMUTweetTagger.runtagger_parse([temp_i])
-                tags = join_tags(ark_parsed_data[line_no])
+
             # tags = ''
             # tags1 = join_tags(tags)
 
