@@ -88,7 +88,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
             spans_found_on_line = []
             sentence_to_word_pairs = generate_pair(i)
             for word in foodNames:
-                if temp_i.__contains__(' ' + word + ' '):
+                if temp_i.__contains__(' ' + word + ' ') and word != "honey":
                     # print(tags)
                     print word
                     unique_food_names[word] = 1
@@ -155,15 +155,23 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                 # tags =  CMUTweetTagger.runtagger_parse([temp_i])
                 tags = join_tags(ark_parsed_data[line_no])
 
+
+            pos_tags_filename = "pos_tags/" + fileName
+            pos_tags_dict = pickle.load(open(pos_tags_filename)) # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
             for substring in sentence_to_word_pairs:
-                if wordnet_explorer.descendant_of_food(substring):
-                    for match in re.finditer(substring, i):
-                        food_match_indexes = match.span()
-                        index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                        spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
-                        print('FOUND')
-                        print(substring)
-                        found_at_least =  1
+                if substring != "honey":
+                    if wordnet_explorer.descendant_of_food(substring):
+                        for term, type, confidence in pos_tags_dict[current_line_number]:
+                            # assumes a word won't be tagged a different POS tag on the same line (sorry!)
+                            if term == substring and type == "N":
+                                for match in re.finditer(substring, i):
+                                    food_match_indexes = match.span()
+                                    index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                                    spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                                    print('FOUND')
+                                    print(substring)
+                                    found_at_least =  1
+                            break
 
 
             if found_at_least:
