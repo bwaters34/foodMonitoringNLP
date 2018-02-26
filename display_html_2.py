@@ -16,6 +16,7 @@ import cal_calorie_given_food_name
 import parse 
 import nltk 
 import time 
+from pyjarowinkler import distance
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -162,26 +163,29 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
 							if word == food_data[1]: continue
-							distance = nltk.edit_distance(word, food_data[1])
-							k2 = distance/float(max(len(word), len(food_data))) 
-							if k2 <=0.3:
+							# distance = nltk.edit_distance(word, food_data[1])
+							# k2 = distance/float(max(len(word), len(food_data))) 
+							# if k2 <=0.3:
 							#k2 = 3
 							#if distance <= k2:
+
+							k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+							if k3 > 0.90:
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 								#with open("./notes/edit_distance_3.txt", "a") as myfile:
-								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
-								# 	myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
+								with open("./notes/edit_distance_jaro.txt", "a") as myfile:
+									myfile.write(word +"," + food_data[1] + ","+ str(k3) + ", "+ str(k1) + " , "+ str(k3) + "\n")
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
-				print('dic')
-				print(dic)
+				#print('dic')
+				#print(dic)
 				for char_pos in dic:
 					if dic[char_pos] == 1:
 						text += '<mark>' +  i[char_pos] + '</mark>'
@@ -436,3 +440,4 @@ if __name__ == '__main__':
 	# 				hist_kws={"histtype": "step", "linewidth": 3,"alpha": 1, "color": "g"})
 	# plt.show()
 
+#786.390255213 secs
