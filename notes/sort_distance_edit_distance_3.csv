@@ -1,3 +1,4 @@
+Food Database Name, Transcript Food Name, edit distance, word relative length, food word relative edit distance
 ice cream cones,ice cream cone,1.0,0.933,0.067
 ice cream cones,ice cream cone,1.0,0.933,0.067
 ice cream cones,ice cream cone,1.0,0.933,0.067
@@ -16,7 +17,6 @@ ice creams,ice cream,1.0,0.9,0.1
 ice creams,ice cream,1.0,0.9,0.1
 ice creams,ice cream,1.0,0.9,0.1
 ice creams,ice cream,1.0,0.9,0.1
-Food Database Name, Transcript Food Name, edit distance, word relative length, food word relative edit distance
 ice creams,ice cream,1.0,0.9,0.1
 ice creams,ice cream,1.0,0.9,0.1
 ice creams,ice cream,1.0,0.9,0.1
