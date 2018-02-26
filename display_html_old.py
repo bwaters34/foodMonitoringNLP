@@ -4,7 +4,6 @@ import pickle
 import sys
 from collections import defaultdict
 import matplotlib.pyplot as plt
-import seaborn as sns
 from nltk import pos_tag, word_tokenize
 from os import path
 from collections import namedtuple
@@ -12,7 +11,7 @@ import solution_parser
 import CMUTweetTagger
 import os
 import cal_calorie_given_food_name
-
+import wordnet_explorer
 
 def load(fileName):
     with open(fileName, 'r') as f:
@@ -87,6 +86,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
             temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[4:])
             # temp_i = i[4:]
             spans_found_on_line = []
+            sentence_to_word_pairs = generate_pair(i)
             for word in foodNames:
                 if temp_i.__contains__(' ' + word + ' '):
                     # print(tags)
@@ -144,6 +144,18 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
             # print "word found", word, len(word), max_len, max_len_word
             # print ("Temproray -> ", temp_i)
             # print ("Final i -> ", i)
+
+            for substring in sentence_to_word_pairs:
+                if wordnet_explorer.descendant_of_food(substring):
+                    for match in re.finditer(substring, i):
+                        food_match_indexes = match.span()
+                        index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                        spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                        print('FOUND')
+                        print(substring)
+                        found_at_least =  1
+
+
             if found_at_least:
                 dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
                 print('dic')
@@ -258,6 +270,18 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
     results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos, num_false_neg=num_false_neg)
 
     return write2file, results
+
+def generate_pair(sentence):
+	#print sentence
+	sentence = sentence.strip().split()
+	#print sentence
+	return_sentence = []
+	for range_ in xrange(1, 3):
+		for i in xrange(0, len(sentence)):
+			if i + range_ <= len(sentence):
+				#print sentence[i: range_]
+				return_sentence.append(' '.join(sentence[i:i+range_]))
+	return return_sentence
 
 
 def provide_words_with_char_nos(sentence, line_no):

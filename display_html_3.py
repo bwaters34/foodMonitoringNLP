@@ -5,7 +5,6 @@ import pickle
 import sys 
 from collections import defaultdict 
 import matplotlib.pyplot as plt
-import seaborn as sns
 from nltk import pos_tag, word_tokenize
 from os import path
 from collections import namedtuple
@@ -99,13 +98,17 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 				start_time_generate_pairs = time.time()
 				
 				edit_distance_time = time.time()
-				food_pairs_edit_distance = calculate_edit_distance(i, sentence_to_word_pairs, word)
+				if False: # TODO: REMOVE THIS IF
+					food_pairs_edit_distance = calculate_edit_distance(i, sentence_to_word_pairs, word)
+				else:
+					food_pairs_edit_distance = []
 				edit_distance_final_time = time.time() - edit_distance_time
 				# if edit_distance_final_time - edit_distance_time > 0.5:
 				# 	print "Time greater than 1", food_pairs_edit_distance
 				#print food_pairs_edit_distance
 				#print "Time to Calculate edit distance -> ", time.time() - start_time_generate_pairs
 				#continue
+
 				if len(food_pairs_edit_distance) > 0:
 				#if temp_i.__contains__(' ' + word + ' '):
 					print "Time taken -> ", edit_distance_final_time, food_pairs_edit_distance
@@ -145,15 +148,16 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					#print(individual_food_words)
 
 
-					# for match in re.finditer(word, i):
-					# 	food_match_indexes = match.span()
-					# 	index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-					# 	spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
-					
-					for pairs in food_pairs_edit_distance:
-						index_of_food_names.append([pairs[2], pairs[3]])
-						spans_found_on_line.append([pairs[2], pairs[3]])
-					#Adding stuffs after reading documentation from USDA
+					for match in re.finditer(word, i):
+						food_match_indexes = match.span()
+						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+						spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+
+
+					# for pairs in food_pairs_edit_distance:
+					# 	index_of_food_names.append([pairs[2], pairs[3]])
+					# 	spans_found_on_line.append([pairs[2], pairs[3]])
+					# #Adding stuffs after reading documentation from USDA
 					#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
 					# food_id = foodNames[word]
 					# if food_id in foodGroup:
@@ -231,8 +235,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 			#Orignal 
 			#write2file += text + '<br>'
-	return 
-	write2file += "<hr>" + "Total Calories -> " + str(total_calorie) 
+	write2file += "<hr>" + "Total Calories -> " + str(total_calorie)
 	
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
@@ -298,7 +301,7 @@ def generate_pair(sentence):
 	sentence = sentence.strip().split()
 	#print sentence
 	return_sentence = []
-	for range_ in xrange(1, len(sentence)):
+	for range_ in xrange(1, 3):
 		for i in xrange(0, len(sentence)):
 			if i + range_ <= len(sentence):
 				#print sentence[i: range_]
@@ -310,7 +313,7 @@ def calculate_edit_distance(sentence, sentence_list_format, foodName, k = 0.3):
 	return_list = []
 	for word_pairs in sentence_list_format:
 		
-		if abs(len(word_pairs) - len(foodName)) <= 0:
+		if abs(len(word_pairs) - len(foodName)) <= 3:
 			distance = nltk.edit_distance(word_pairs, foodName)
 			if float(distance)/float(len(word_pairs)) < k:
 				start = sentence.find(word_pairs)
@@ -426,6 +429,8 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
 	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
 	return precision, recall, sum_true_pos, sum_false_pos, sum_false_neg
+
+
 
 
 if __name__ == '__main__':
