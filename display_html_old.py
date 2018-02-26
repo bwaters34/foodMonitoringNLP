@@ -65,6 +65,8 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
     if only_files_with_solutions:
         if not solution_set_loaded:
             return "solution set not found", None
+    pos_tags_filename = "pos_tags/" + fileName
+    pos_tags_dict = pickle.load(open(pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
     for line_no, i in enumerate(f):  # i is the current line (a string)
         calorie_text = ''
         food_id_group_pairs = []
@@ -120,11 +122,14 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                     # 		continue
                     # print(tags)
                     print(individual_food_words)
-
-                    for match in re.finditer(word, i):
-                        food_match_indexes = match.span()
-                        index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                        spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                    word_terms = word.split()
+                    for term, type, confidence in pos_tags_dict[current_line_number]:
+                        # assumes a word won't be tagged a different POS tag on the same line (sorry!)
+                        if term == word_terms and type == "N":
+                            for match in re.finditer(word, i):
+                                food_match_indexes = match.span()
+                                index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                                spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
                     # Adding stuffs after reading documentation from USDA
                     # print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
@@ -156,8 +161,6 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                 tags = join_tags(ark_parsed_data[line_no])
 
 
-            pos_tags_filename = "pos_tags/" + fileName
-            pos_tags_dict = pickle.load(open(pos_tags_filename)) # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
             for substring in sentence_to_word_pairs:
                 if substring != "honey":
                     if wordnet_explorer.descendant_of_food(substring):
