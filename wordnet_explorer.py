@@ -10,16 +10,26 @@ def get_hypernym_names_from_list_of_paths(list_of_paths):
     return synset_names_set
 
 
-def descendant_of_food(word):
+def descendant_of_food(word, setting = 'most_common', ):
     """
-
     :param word:
+    :param setting: parameters = 'most_common', 'majority_vote' and 'all'
     :return: True if the word is a descendant of "food" in WordNet 3.0, False if not
     """
-
+    if word == 'beef stew':
+        print("GOT")
     food_synset_names = [syn.name() for syn in wn.synsets('food')]
     synset_list = wn.synsets(word)
     just_nouns = list(filter(lambda x: x.pos() == 'n', synset_list))
+    if setting == 'most_common':
+        print('most common chosen')
+        just_nouns = just_nouns[0:1] # create list of just first element
+    # elif setting == 'all':
+    #     pass # don't change just_nouns
+    # elif setting == 'majority_vote':
+    #     pass
+    # else:
+    #     raise ValueError
     for synset in just_nouns:
         path_names = get_hypernym_names_from_list_of_paths(synset.hypernym_paths())
         for food_synset_name in food_synset_names:
@@ -29,7 +39,6 @@ def descendant_of_food(word):
                 print(path_names)
                 print(food_synset_name)
                 return True
-
     return False
 
 if __name__ == "__main__":

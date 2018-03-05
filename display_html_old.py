@@ -24,7 +24,7 @@ def save(variable, fileName):
 
 
 def read_file(fileName, parser_type=None, only_files_with_solutions=False,
-              base_accuracy_on_how_many_unique_food_items_detected=True):
+              base_accuracy_on_how_many_unique_food_items_detected=True, wordnet_setting ='most_common', use_pos_tags_for_wordnet = False):
     write2file = ''
     total_calorie = 0.0
     calorie = cal_calorie_given_food_name.food_to_calorie()
@@ -123,13 +123,17 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
                     # print(tags)
                     print(individual_food_words)
                     word_terms = word.split()
-                    for term, type, confidence in pos_tags_dict[current_line_number]:
-                        # assumes a word won't be tagged a different POS tag on the same line (sorry!)
-                        if term == word_terms and type == "N":
-                            for match in re.finditer(word, i):
-                                food_match_indexes = match.span()
-                                index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                                spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                    # for term, type, confidence in pos_tags_dict[current_line_number]:
+                    #     # assumes a word won't be tagged a different POS tag on the same line (sorry!)
+                    #     if term == word_terms and type == "N":
+                    #         for match in re.finditer(word, i):
+                    #             food_match_indexes = match.span()
+                    #             index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                    #             spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                    for match in re.finditer(word, i):
+                        food_match_indexes = match.span()
+                        index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                        spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
                     # Adding stuffs after reading documentation from USDA
                     # print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
@@ -163,19 +167,27 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
 
             for substring in sentence_to_word_pairs:
                 if substring != "honey":
-                    if wordnet_explorer.descendant_of_food(substring):
-                        for term, type, confidence in pos_tags_dict[current_line_number]:
-                            # assumes a word won't be tagged a different POS tag on the same line (sorry!)
-                            if term == substring and type == "N":
-                                for match in re.finditer(substring, i):
-                                    food_match_indexes = match.span()
-                                    index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                                    spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
-                                    print('FOUND')
-                                    print(substring)
-                                    found_at_least =  1
-                            break
-
+                    if wordnet_explorer.descendant_of_food(substring, wordnet_setting):
+                        assert len(pos_tags_dict[current_line_number]) != 0
+                        if use_pos_tags_for_wordnet:
+                            for term, type, confidence in pos_tags_dict[current_line_number]: # assumes a word won't be tagged a different POS tag on the same line (sorry!)
+                            # if pos_tagging is turned on, and term = substring, and type = noun, then add the matches. Otherwise if it's turned off, add the matches without checking.
+                                if term == substring and type == "N":
+                                    for match in re.finditer(substring, i):
+                                        food_match_indexes = match.span()
+                                        index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                                        spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                                        print('FOUND')
+                                        print(substring)
+                                        found_at_least = 1
+                        else:
+                            for match in re.finditer(substring, i):
+                                food_match_indexes = match.span()
+                                index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                                spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                                print('FOUND')
+                                print(substring)
+                                found_at_least = 1
 
             if found_at_least:
                 dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
@@ -394,7 +406,7 @@ def ark_parser(fileName):
     return var
 
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions=False):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions=False, wordnet_setting = 'most_common', use_pos_tags_for_wordnet = False):
     sum_true_pos = 0
     sum_false_pos = 0
     sum_false_neg = 0
@@ -402,7 +414,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions=Fa
     for filename in os.listdir(directory_path):
         file_path = directory_path + '/' + filename
         print(file_path)
-        html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions)
+        html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions, wordnet_setting=wordnet_setting, use_pos_tags_for_wordnet = use_pos_tags_for_wordnet)
         if results is not None:
             if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
                 sum_true_pos += results.num_true_pos
