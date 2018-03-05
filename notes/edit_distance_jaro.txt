@@ -1,0 +1,997 @@
+owl,bowl,0.92, 1.33333333333 , 0.92
+pears,peas,0.95, 0.8 , 0.95
+pea,peas,0.94, 1.33333333333 , 0.94
+carrot,carrots,0.97, 1.16666666667 , 0.97
+pecans,peas,0.91, 0.666666666667 , 0.91
+hummus,hums,0.92, 0.666666666667 , 0.92
+carrot,carrots,0.97, 1.16666666667 , 0.97
+carrots,carrots>,0.98, 1.14285714286 , 0.98
+carrot,carrots>,0.95, 1.33333333333 , 0.95
+carrot,carrots,0.97, 1.16666666667 , 0.97
+carrot,carrots,0.97, 1.16666666667 , 0.97
+carrots,carrot,0.97, 0.857142857143 , 0.97
+butterbur,butter bread,0.91, 1.33333333333 , 0.91
+butterbur,butter,0.93, 0.666666666667 , 0.93
+honeydew,honey,0.93, 0.625 , 0.93
+pepperoni,pepper,0.93, 0.666666666667 , 0.93
+peppers,pepper,0.97, 0.857142857143 , 0.97
+salted,salt,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+carrot,carrots,0.97, 1.16666666667 , 0.97
+butterbur,butter,0.93, 0.666666666667 , 0.93
+round,ground,0.94, 1.2 , 0.94
+headcheese,headache,0.92, 0.8 , 0.92
+shake,share,0.91, 1.0 , 0.91
+shark,share,0.92, 1.0 , 0.92
+brownies,brownie,0.98, 0.875 , 0.98
+brown rice,brownie,0.94, 0.7 , 0.94
+brownies,brownie,0.98, 0.875 , 0.98
+brown rice,brownie,0.94, 0.7 , 0.94
+cookie,coke,0.91, 0.666666666667 , 0.91
+potato chips snack,potato chips,0.93, 0.666666666667 , 0.93
+potatoes,potato,0.95, 0.75 , 0.95
+potato chips snacks,potato chips,0.93, 0.631578947368 , 0.93
+cookies,cookie,0.97, 0.857142857143 , 0.97
+cookies,cookie,0.97, 0.857142857143 , 0.97
+morel,more>,0.92, 1.0 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+whey,hey,0.92, 0.75 , 0.92
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+whole seeds,whole mess,0.92, 0.909090909091 , 0.92
+pace,place,0.94, 1.25 , 0.94
+whole veal,whole place,0.92, 1.1 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+cream,scream,0.94, 1.2 , 0.94
+whey,hey,0.92, 0.75 , 0.92
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+flowers,flower,0.97, 0.857142857143 , 0.97
+flowers,flower,0.97, 0.857142857143 , 0.97
+flowers,flower,0.97, 0.857142857143 , 0.97
+meat,eat,0.92, 0.75 , 0.92
+pepperoni,pepper,0.93, 0.666666666667 , 0.93
+peppers,pepper,0.97, 0.857142857143 , 0.97
+owl,bowl,0.92, 1.33333333333 , 0.92
+flowers,flower,0.97, 0.857142857143 , 0.97
+flowers,flower,0.97, 0.857142857143 , 0.97
+owl,bowl,0.92, 1.33333333333 , 0.92
+flan,fan,0.93, 0.75 , 0.93
+flan,fan,0.93, 0.75 , 0.93
+flan,fan,0.93, 0.75 , 0.93
+breakfast tart,breakfast,0.93, 0.642857142857 , 0.93
+breakfast bars,breakfast,0.93, 0.642857142857 , 0.93
+breakfast bar,breakfast (.),0.91, 1.0 , 0.91
+breakfast bar,breakfast,0.94, 0.692307692308 , 0.94
+spot,stop,0.93, 1.0 , 0.93
+pepperoni,pepper,0.93, 0.666666666667 , 0.93
+peppers,pepper,0.97, 0.857142857143 , 0.97
+tart,start,0.93, 1.25 , 0.93
+applesauce,applesauce>,0.98, 1.1 , 0.98
+meat,eat,0.92, 0.75 , 0.92
+spot,stop,0.93, 1.0 , 0.93
+topping,tapping,0.91, 1.0 , 0.91
+milk,milk>,0.96, 1.25 , 0.96
+meat,eat,0.92, 0.75 , 0.92
+chard,chair,0.91, 1.0 , 0.91
+whey,hey,0.92, 0.75 , 0.92
+spot,stop,0.93, 1.0 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+milk,milk>,0.96, 1.25 , 0.96
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+carp,car,0.94, 0.75 , 0.94
+meat,eat,0.92, 0.75 , 0.92
+carp,car,0.94, 0.75 , 0.94
+whey,hey,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+carp,car,0.94, 0.75 , 0.94
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+bread,break,0.92, 1.0 , 0.92
+chard,chair,0.91, 1.0 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+crude,rude,0.93, 0.8 , 0.93
+honeydew,honey,0.93, 0.625 , 0.93
+cheshire,cherries,0.91, 1.0 , 0.91
+cherry pie,cherries,0.92, 0.8 , 0.92
+honeydew,honey,0.93, 0.625 , 0.93
+honeydew,honey,0.93, 0.625 , 0.93
+white fish,white right,0.91, 1.1 , 0.91
+white rice,white right,0.91, 1.1 , 0.91
+tomatoes,tomato,0.95, 0.75 , 0.95
+mother's,mother>,0.92, 0.875 , 0.92
+hormel,home,0.91, 0.666666666667 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+milk,milk>,0.96, 1.25 , 0.96
+milk shakes,milk tastes,0.91, 1.0 , 0.91
+bass,ass,0.92, 0.75 , 0.92
+desserts,dessert,0.98, 0.875 , 0.98
+pike,pie,0.93, 0.75 , 0.93
+desserts,dessert,0.98, 0.875 , 0.98
+walnut,want,0.91, 0.666666666667 , 0.91
+honeydew,honey,0.93, 0.625 , 0.93
+cheese food,cheese look,0.93, 1.0 , 0.93
+raisin,rain,0.92, 0.666666666667 , 0.92
+apples,apple,0.97, 0.833333333333 , 0.97
+seeds,seed,0.96, 0.8 , 0.96
+seeded,seed,0.93, 0.666666666667 , 0.93
+raisin,rain,0.92, 0.666666666667 , 0.92
+apples,apple,0.97, 0.833333333333 , 0.97
+seeds,seed,0.96, 0.8 , 0.96
+seeded,seed,0.93, 0.666666666667 , 0.93
+strawberries,strawberries>,0.98, 1.08333333333 , 0.98
+strawberry,strawberries>,0.92, 1.3 , 0.92
+pate,plate,0.94, 1.25 , 0.94
+meat,eat,0.92, 0.75 , 0.92
+pate,plate,0.94, 1.25 , 0.94
+pate,plate,0.94, 1.25 , 0.94
+pate,plate,0.94, 1.25 , 0.94
+pate,plate,0.94, 1.25 , 0.94
+muffins,muffin,0.97, 0.857142857143 , 0.97
+muffins,muffin,0.97, 0.857142857143 , 0.97
+onion,onions,0.97, 1.2 , 0.97
+onion,onions,0.97, 1.2 , 0.97
+onion,onions,0.97, 1.2 , 0.97
+meat,eat,0.92, 0.75 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+spot,stop,0.93, 1.0 , 0.93
+onion,onions,0.97, 1.2 , 0.97
+onion,onions,0.97, 1.2 , 0.97
+onion,onions,0.97, 1.2 , 0.97
+honeydew,honey,0.93, 0.625 , 0.93
+muffin,<muffin,0.95, 1.16666666667 , 0.95
+muffins,muffin,0.97, 0.857142857143 , 0.97
+whey,hey,0.92, 0.75 , 0.92
+owl,ow,0.91, 0.666666666667 , 0.91
+owl,ow,0.91, 0.666666666667 , 0.91
+cod,cold,0.93, 1.33333333333 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+yellow hominy,yellow one,0.92, 0.769230769231 , 0.92
+yellow corn,yellow one,0.94, 0.909090909091 , 0.94
+yellow onions,yellow one,0.92, 0.769230769231 , 0.92
+yellow beans,yellow one,0.91, 0.833333333333 , 0.91
+yellow cornmeal,yellow one,0.93, 0.666666666667 , 0.93
+yellow cake,yellow one,0.91, 0.909090909091 , 0.91
+oranges,orange,0.97, 0.857142857143 , 0.97
+grapes,grape,0.97, 0.833333333333 , 0.97
+oranges,orange,0.97, 0.857142857143 , 0.97
+orange,<orange,0.95, 1.16666666667 , 0.95
+grapes,grape>,0.93, 1.0 , 0.93
+grapes,grape,0.97, 0.833333333333 , 0.97
+grapes,grape,0.97, 0.833333333333 , 0.97
+lettuce,letter,0.91, 0.857142857143 , 0.91
+lettuce,letter,0.91, 0.857142857143 , 0.91
+lettuce,letter,0.91, 0.857142857143 , 0.91
+honeydew,honey,0.93, 0.625 , 0.93
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+cod,cold,0.93, 1.33333333333 , 0.93
+cod,cold,0.93, 1.33333333333 , 0.93
+cod,cold,0.93, 1.33333333333 , 0.93
+rolls,roll,0.96, 0.8 , 0.96
+rolls,roll,0.96, 0.8 , 0.96
+rolls,roll,0.96, 0.8 , 0.96
+rolls,roll,0.96, 0.8 , 0.96
+bagels,bags,0.92, 0.666666666667 , 0.92
+american cheese,american hero,0.92, 0.866666666667 , 0.92
+american fish,american hero,0.91, 1.0 , 0.91
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+whey,hey,0.92, 0.75 , 0.92
+green,green>,0.97, 1.2 , 0.97
+honeydew,honey,0.93, 0.625 , 0.93
+oat,coat,0.92, 1.33333333333 , 0.92
+tamales,tales,0.92, 0.714285714286 , 0.92
+tamales,tales,0.92, 0.714285714286 , 0.92
+cod,cold,0.93, 1.33333333333 , 0.93
+honeydew,honey,0.93, 0.625 , 0.93
+pate,tape,0.92, 1.0 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+squash,squish,0.92, 1.0 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+fat,fast,0.93, 1.33333333333 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+lemonade,lemon,0.93, 0.625 , 0.93
+lemons,lemon,0.97, 0.833333333333 , 0.97
+melon,lemon,0.93, 1.0 , 0.93
+rice,ice,0.92, 0.75 , 0.92
+rice,ice,0.92, 0.75 , 0.92
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+mother's loaf,mother's,0.92, 0.615384615385 , 0.92
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+morel,more>,0.92, 1.0 , 0.92
+flan,fan,0.93, 0.75 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+juice,juicy,0.92, 1.0 , 0.92
+mussel,muscles,0.93, 1.16666666667 , 0.93
+capers,cape,0.93, 0.666666666667 , 0.93
+pace,cape,0.92, 1.0 , 0.92
+shark,sharks,0.97, 1.2 , 0.97
+pout,out,0.92, 0.75 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+salsa,salad,0.91, 1.0 , 0.91
+eggs,egg,0.94, 0.75 , 0.94
+sandwich spread,sandwiches,0.91, 0.666666666667 , 0.91
+eggs,egg,0.94, 0.75 , 0.94
+meat,eat,0.92, 0.75 , 0.92
+breakfast tart,breakfast,0.93, 0.642857142857 , 0.93
+breakfast bars,breakfast,0.93, 0.642857142857 , 0.93
+breakfast bar,breakfast,0.94, 0.692307692308 , 0.94
+meat,eat,0.92, 0.75 , 0.92
+root,robot,0.95, 1.25 , 0.95
+root,robot,0.95, 1.25 , 0.95
+root,robot,0.95, 1.25 , 0.95
+mother's,mother,0.95, 0.75 , 0.95
+meat,eat,0.92, 0.75 , 0.92
+breakfast tart,breakfast,0.93, 0.642857142857 , 0.93
+breakfast bars,breakfast,0.93, 0.642857142857 , 0.93
+breakfast bar,breakfast,0.94, 0.692307692308 , 0.94
+radishes,dishes,0.92, 0.75 , 0.92
+radishes,dishes,0.92, 0.75 , 0.92
+orange babyfood,orange food,0.95, 0.733333333333 , 0.95
+oranges,orange,0.97, 0.857142857143 , 0.97
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+pears,peas,0.95, 0.8 , 0.95
+pea,peas,0.94, 1.33333333333 , 0.94
+carrot,carrots,0.97, 1.16666666667 , 0.97
+pecans,peas,0.91, 0.666666666667 , 0.91
+pate,plate,0.94, 1.25 , 0.94
+whey,hey,0.92, 0.75 , 0.92
+pate,plate,0.94, 1.25 , 0.94
+whey,hey,0.92, 0.75 , 0.92
+broccoli,broccoli],0.98, 1.125 , 0.98
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+pate,plate,0.94, 1.25 , 0.94
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+mussel,muscles,0.93, 1.16666666667 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate beverages,chocolate <gives,0.91, 0.842105263158 , 0.91
+chocolate cookies,chocolate <gives,0.92, 0.941176470588 , 0.92
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate candies,chocolate <gives,0.92, 0.941176470588 , 0.92
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+chocolate cookies,chocolate broccoli,0.91, 1.05882352941 , 0.91
+chocolate cookie,chocolate broccoli,0.92, 1.125 , 0.92
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cookies,chocolate cake,0.94, 0.823529411765 , 0.94
+chocolate cereals,chocolate cake,0.92, 0.823529411765 , 0.92
+chocolate ice cream,chocolate cake,0.91, 0.736842105263 , 0.91
+chocolate cookie,chocolate cake,0.95, 0.875 , 0.95
+chocolate milk,chocolate cake,0.91, 1.0 , 0.91
+chocolate candies,chocolate cake,0.94, 0.823529411765 , 0.94
+chocolate chip snacks,chocolate cake,0.91, 0.666666666667 , 0.91
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cookies,chocolate cake,0.94, 0.823529411765 , 0.94
+chocolate cereals,chocolate cake,0.92, 0.823529411765 , 0.92
+chocolate ice cream,chocolate cake,0.91, 0.736842105263 , 0.91
+chocolate cookie,chocolate cake,0.95, 0.875 , 0.95
+chocolate milk,chocolate cake,0.91, 1.0 , 0.91
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate candies,chocolate cake,0.94, 0.823529411765 , 0.94
+chocolate chip snacks,chocolate cake,0.91, 0.666666666667 , 0.91
+chocolate cookies,chocolate cake,0.94, 0.823529411765 , 0.94
+chocolate cereals,chocolate cake,0.92, 0.823529411765 , 0.92
+chocolate ice cream,chocolate cake,0.91, 0.736842105263 , 0.91
+chocolate cookie,chocolate cake,0.95, 0.875 , 0.95
+chocolate milk,chocolate cake,0.91, 1.0 , 0.91
+chocolate candies,chocolate cake,0.94, 0.823529411765 , 0.94
+chocolate chip snacks,chocolate cake,0.91, 0.666666666667 , 0.91
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+mussel,muscles,0.93, 1.16666666667 , 0.93
+owl,ow,0.91, 0.666666666667 , 0.91
+mussel,muscles,0.93, 1.16666666667 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+tart,start,0.93, 1.25 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+tart,start,0.93, 1.25 , 0.93
+morel,more>,0.92, 1.0 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+lettuce,letter,0.91, 0.857142857143 , 0.91
+scup,cup,0.92, 0.75 , 0.92
+scup,cup,0.92, 0.75 , 0.92
+butterbur,butter,0.93, 0.666666666667 , 0.93
+whelk,wheel,0.91, 1.0 , 0.91
+round,ground,0.94, 1.2 , 0.94
+apple juice,applesauce,0.91, 0.909090909091 , 0.91
+desserts,dessert,0.98, 0.875 , 0.98
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+carp,cap,0.93, 0.75 , 0.93
+cockles,cackles,0.91, 1.0 , 0.91
+shoots,&=shoots,0.92, 1.33333333333 , 0.92
+shoots,&=shoots,0.92, 1.33333333333 , 0.92
+shoots,&=shoots,0.92, 1.33333333333 , 0.92
+shoots,&=shoots,0.92, 1.33333333333 , 0.92
+shoots,&=shoots,0.92, 1.33333333333 , 0.92
+shoots,shoot,0.97, 0.833333333333 , 0.97
+carp,cap,0.93, 0.75 , 0.93
+owl,ow,0.91, 0.666666666667 , 0.91
+juice,juice>,0.97, 1.2 , 0.97
+pate,tape,0.92, 1.0 , 0.92
+hormel,home,0.91, 0.666666666667 , 0.91
+mother's,mother,0.95, 0.75 , 0.95
+hormel,home,0.91, 0.666666666667 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+shoots,shoot,0.97, 0.833333333333 , 0.97
+pate,plate,0.94, 1.25 , 0.94
+spaghettios,spaghetti,0.96, 0.818181818182 , 0.96
+whey,hey,0.92, 0.75 , 0.92
+shellie,shells,0.91, 0.857142857143 , 0.91
+shellie,shells,0.91, 0.857142857143 , 0.91
+owl,bowl,0.92, 1.33333333333 , 0.92
+tomatoes,tomato,0.95, 0.75 , 0.95
+cucumber,cucum(ber),0.96, 1.25 , 0.96
+tomatoseed,tomatoes,0.94, 0.8 , 0.94
+tomatillos,tomatoes,0.92, 0.8 , 0.92
+tomatoseed,tomatoes,0.94, 0.8 , 0.94
+tomatillos,tomatoes,0.92, 0.8 , 0.92
+tomatoes,(to)matoes,0.93, 1.25 , 0.93
+salsa,salad,0.91, 1.0 , 0.91
+salsa,salad,0.91, 1.0 , 0.91
+salsa,salad,0.91, 1.0 , 0.91
+tomatoes,(to)matoes,0.93, 1.25 , 0.93
+salsa,salad,0.91, 1.0 , 0.91
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+tomatoes,tomato>,0.92, 0.875 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+morel,more>,0.92, 1.0 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+morel,more>,0.92, 1.0 , 0.92
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+yellow hominy,yellow things,0.91, 1.0 , 0.91
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+yellow hominy,yellow things,0.91, 1.0 , 0.91
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+yellow hominy,yellow thing,0.92, 0.923076923077 , 0.92
+pate,pat,0.94, 0.75 , 0.94
+butterbur,butter,0.93, 0.666666666667 , 0.93
+baby,baby>,0.96, 1.25 , 0.96
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+whole turkey,whole year,0.91, 0.833333333333 , 0.91
+whole veal,whole year,0.92, 1.0 , 0.92
+whole turkey,whole year,0.91, 0.833333333333 , 0.91
+whole veal,whole year,0.92, 1.0 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+broccoli,broccoli>,0.98, 1.125 , 0.98
+broccoli,broccoli>,0.98, 1.125 , 0.98
+broccoli,broccoli's,0.96, 1.25 , 0.96
+desserts,dessert,0.98, 0.875 , 0.98
+honeydew,honey+dew,0.98, 1.125 , 0.98
+honeydew,honey+dew,0.98, 1.125 , 0.98
+fruit salad,<fruit salad>,0.95, 1.18181818182 , 0.95
+salsa,salad,0.91, 1.0 , 0.91
+apple juice,applesauce,0.91, 0.909090909091 , 0.91
+apple juice,applesauce,0.91, 0.909090909091 , 0.91
+broccoli,broccoli>,0.98, 1.125 , 0.98
+pate,tape,0.92, 1.0 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+honeydew,honey+dew,0.98, 1.125 , 0.98
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cone,ice cream now>,0.93, 1.0 , 0.93
+ice cream cones,ice cream now>,0.91, 0.933333333333 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+salted,salt,0.93, 0.666666666667 , 0.93
+salt cereals,salt please,0.93, 0.916666666667 , 0.93
+salted,salt,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+salsa,salad,0.91, 1.0 , 0.91
+salsa,salad,0.91, 1.0 , 0.91
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+apple juice,applesauce,0.91, 0.909090909091 , 0.91
+chard,chair,0.91, 1.0 , 0.91
+whey,hey,0.92, 0.75 , 0.92
+owl,ow,0.91, 0.666666666667 , 0.91
+pate,plate,0.94, 1.25 , 0.94
+apple juice,applesauce,0.91, 0.909090909091 , 0.91
+whey,hey,0.92, 0.75 , 0.92
+table,table>,0.97, 1.2 , 0.97
+potato,potatoes,0.95, 1.33333333333 , 0.95
+potato,potatoes,0.95, 1.33333333333 , 0.95
+meat,eat,0.92, 0.75 , 0.92
+potato,potatoes,0.95, 1.33333333333 , 0.95
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+table salt,table talk,0.94, 1.0 , 0.94
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+dressing,dress,0.93, 0.625 , 0.93
+honeydew,honey,0.93, 0.625 , 0.93
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+fat,fast,0.93, 1.33333333333 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+salsa,salad,0.91, 1.0 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+apples,apple,0.97, 0.833333333333 , 0.97
+sliced ham,spice ham,0.91, 0.9 , 0.91
+spices,spice,0.97, 0.833333333333 , 0.97
+cookie,cook,0.93, 0.666666666667 , 0.93
+hormel,home,0.91, 0.666666666667 , 0.91
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+broccoli raab,broccoli,0.92, 0.615384615385 , 0.92
+malt,mat,0.93, 0.75 , 0.93
+meat,mat,0.93, 0.75 , 0.93
+hormel,home,0.91, 0.666666666667 , 0.91
+malt,mat,0.93, 0.75 , 0.93
+meat,mat,0.93, 0.75 , 0.93
+eggs,egg,0.94, 0.75 , 0.94
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+potato,potatoes,0.95, 1.33333333333 , 0.95
+meat,eat,0.92, 0.75 , 0.92
+potato,potatoes,0.95, 1.33333333333 , 0.95
+potato,potatoes,0.95, 1.33333333333 , 0.95
+potato,potatoes,0.95, 1.33333333333 , 0.95
+potato,potatoes,0.95, 1.33333333333 , 0.95
+potato,potatoes,0.95, 1.33333333333 , 0.95
+potatoes,(po)tatoes,0.93, 1.25 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+pate,tape,0.92, 1.0 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+milk shakes,milk shake,0.98, 0.909090909091 , 0.98
+milk shakes,milk shake xxx,0.92, 1.27272727273 , 0.92
+shark,shake,0.91, 1.0 , 0.91
+honeydew,honey,0.93, 0.625 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+oat,oats,0.94, 1.33333333333 , 0.94
+cereals,cereal,0.97, 0.857142857143 , 0.97
+oats,<oats,0.93, 1.25 , 0.93
+oat,oats,0.94, 1.33333333333 , 0.94
+honeydew,honey,0.93, 0.625 , 0.93
+honey,honey>,0.97, 1.2 , 0.97
+fried chicken popeyes,fried chicken,0.92, 0.619047619048 , 0.92
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+pan-fried chicken,fried chicken,0.92, 0.764705882353 , 0.92
+braised chicken,fried chicken,0.91, 0.866666666667 , 0.91
+fried chicken kfc,fried chicken,0.95, 0.764705882353 , 0.95
+grilled chicken,fried chicken,0.91, 0.866666666667 , 0.91
+sliced,slide,0.91, 0.833333333333 , 0.91
+sliced,slide,0.91, 0.833333333333 , 0.91
+sliced,slide,0.91, 0.833333333333 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+cooked potatoes,good potatoes,0.91, 0.866666666667 , 0.91
+potato,potatoes,0.95, 1.33333333333 , 0.95
+meat,eat,0.92, 0.75 , 0.92
+potato,potatoes,0.95, 1.33333333333 , 0.95
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+cereals,cereal,0.97, 0.857142857143 , 0.97
+cereals,cereal,0.97, 0.857142857143 , 0.97
+pate,tape,0.92, 1.0 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+biscuit,biscuits,0.98, 1.14285714286 , 0.98
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+strawberry kefir,strawberry,0.93, 0.625 , 0.93
+strawberries,strawberry,0.93, 0.833333333333 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chocolate cake,chocolate,0.93, 0.642857142857 , 0.93
+chocolate milk,chocolate,0.93, 0.642857142857 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+chicken bologna,chicken look,0.91, 0.8 , 0.91
+pate,plate,0.94, 1.25 , 0.94
+scup,cup,0.92, 0.75 , 0.92
+plantains,plants,0.93, 0.666666666667 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+hormel,home,0.91, 0.666666666667 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+biscuit,biscuits,0.98, 1.14285714286 , 0.98
+seasoned,season,0.95, 0.75 , 0.95
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+pate,tape,0.92, 1.0 , 0.92
+biscuits,bi(s)cuits>,0.93, 1.375 , 0.93
+biscuit,biscuits,0.98, 1.14285714286 , 0.98
+brownies,brown,0.93, 0.625 , 0.93
+brownies,brown,0.93, 0.625 , 0.93
+brownies,brown,0.93, 0.625 , 0.93
+mush,mushy,0.96, 1.25 , 0.96
+barbecue beans,barbecued calendars,0.91, 1.35714285714 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+chicken soup,chicken's,0.91, 0.75 , 0.91
+chicken,chicken's,0.96, 1.28571428571 , 0.96
+barbecue loaf,barbecue,0.92, 0.615384615385 , 0.92
+barbecue loaf,barbecue,0.92, 0.615384615385 , 0.92
+cookie,cook,0.93, 0.666666666667 , 0.93
+sucker fish,sucker fast,0.93, 1.0 , 0.93
+fat,fast,0.93, 1.33333333333 , 0.93
+hormel,home,0.91, 0.666666666667 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+bear,ear,0.92, 0.75 , 0.92
+cardoon,cartoons,0.91, 1.14285714286 , 0.91
+cardoon,cartoons,0.91, 1.14285714286 , 0.91
+pate,tape,0.92, 1.0 , 0.92
+pink,pin,0.94, 0.75 , 0.94
+pink,pin,0.94, 0.75 , 0.94
+cardoon,cartoon,0.93, 1.0 , 0.93
+pink,pin,0.94, 0.75 , 0.94
+cardoon,cartoon,0.93, 1.0 , 0.93
+pink,pin,0.94, 0.75 , 0.94
+pink,pin,0.94, 0.75 , 0.94
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+biscuit,biscuits,0.98, 1.14285714286 , 0.98
+biscuit,biscuits,0.98, 1.14285714286 , 0.98
+flan,fan,0.93, 0.75 , 0.93
+refrigerated bread,refrigerator,0.91, 0.666666666667 , 0.91
+minced,mind,0.92, 0.666666666667 , 0.92
+spot,stop,0.93, 1.0 , 0.93
+refrigerated bread,refrigerator,0.91, 0.666666666667 , 0.91
+refrigerated bread,refrigerator,0.91, 0.666666666667 , 0.91
+refrigerated bread,refrigerator,0.91, 0.666666666667 , 0.91
+cod,cold,0.93, 1.33333333333 , 0.93
+refrigerated bread,refrigerator,0.91, 0.666666666667 , 0.91
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+minced,mind,0.92, 0.666666666667 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+whey,hey,0.92, 0.75 , 0.92
+shoots,shoot,0.97, 0.833333333333 , 0.97
+rabbit,rabbit's,0.95, 1.33333333333 , 0.95
+rabbit,ra(bbit),0.93, 1.33333333333 , 0.93
+flan,fan,0.93, 0.75 , 0.93
+flan,fan,0.93, 0.75 , 0.93
+flan,fan,0.93, 0.75 , 0.93
+table,table>,0.97, 1.2 , 0.97
+flan,fan,0.93, 0.75 , 0.93
+flan,fan,0.93, 0.75 , 0.93
+lettuce,letter,0.91, 0.857142857143 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+lettuce,letter,0.91, 0.857142857143 , 0.91
+whey,hey,0.92, 0.75 , 0.92
+eggs,<eggs,0.93, 1.25 , 0.93
+cake,cake>,0.96, 1.25 , 0.96
+egg,eggs,0.94, 1.33333333333 , 0.94
+meat,eat,0.92, 0.75 , 0.92
+oranges,orange,0.97, 0.857142857143 , 0.97
+shake,share,0.91, 1.0 , 0.91
+shark,share,0.92, 1.0 , 0.92
+catsup,cats,0.93, 0.666666666667 , 0.93
+wakame,wake,0.92, 0.666666666667 , 0.92
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+pate,tape,0.92, 1.0 , 0.92
+beef,bee,0.94, 0.75 , 0.94
+beer,bee,0.94, 0.75 , 0.94
+gums,gum,0.94, 0.75 , 0.94
+gums,gum,0.94, 0.75 , 0.94
+gums,gum,0.94, 0.75 , 0.94
+gums,gum,0.94, 0.75 , 0.94
+mother's,mother,0.95, 0.75 , 0.95
+pate,plate,0.94, 1.25 , 0.94
+whey,hey,0.92, 0.75 , 0.92
+sugars,sugar,0.97, 0.833333333333 , 0.97
+chinese broccoli,chinese boy,0.91, 0.6875 , 0.91
+chinese broccoli,chinese boy,0.91, 0.6875 , 0.91
+oats,boats,0.93, 1.25 , 0.93
+apples,apple,0.97, 0.833333333333 , 0.97
+tomatoseed,tomatoes,0.94, 0.8 , 0.94
+tomatillos,tomatoes,0.92, 0.8 , 0.92
+potato,potatoes,0.95, 1.33333333333 , 0.95
+tomatoseed,tomatoes,0.94, 0.8 , 0.94
+tomatillos,tomatoes,0.92, 0.8 , 0.92
+honeydew,honey,0.93, 0.625 , 0.93
+tomatoes,tomato,0.95, 0.75 , 0.95
+tomatoseed,tomatoes,0.94, 0.8 , 0.94
+tomatillos,tomatoes,0.92, 0.8 , 0.92
+salsa,salad,0.91, 1.0 , 0.91
+vegetable soup,vegetable,0.93, 0.642857142857 , 0.93
+vegetable oil,vegetable,0.94, 0.692307692308 , 0.94
+vegetables,vegetable,0.98, 0.9 , 0.98
+salsa,salads,0.91, 1.2 , 0.91
+hormel,home,0.91, 0.666666666667 , 0.91
+whole seeds,whole week,0.91, 0.909090909091 , 0.91
+whole beef,whole week,0.92, 1.0 , 0.92
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+corn,corn>,0.96, 1.25 , 0.96
+salsa,salad,0.91, 1.0 , 0.91
+salsa,salad,0.91, 1.0 , 0.91
+carp,car,0.94, 0.75 , 0.94
+crackers,crackers>,0.98, 1.125 , 0.98
+rye crackers,fire crackers,0.92, 1.08333333333 , 0.92
+rye crackers,fire crackers,0.92, 1.08333333333 , 0.92
+crackers,crackers>,0.98, 1.125 , 0.98
+pace,place,0.94, 1.25 , 0.94
+romano,roman,0.97, 0.833333333333 , 0.97
+candies,candle,0.91, 0.857142857143 , 0.91
+beets,beers,0.91, 1.0 , 0.91
+beets,beers,0.91, 1.0 , 0.91
+beer,beers,0.96, 1.25 , 0.96
+beer,beers,0.96, 1.25 , 0.96
+pace,place,0.94, 1.25 , 0.94
+cookie,cooking,0.91, 1.16666666667 , 0.91
+cookie,cooking,0.91, 1.16666666667 , 0.91
+cookie,cook,0.93, 0.666666666667 , 0.93
+spot,stop,0.93, 1.0 , 0.93
+bread,break,0.92, 1.0 , 0.92
+cucumber,cucumbers,0.98, 1.125 , 0.98
+cucumber,cucumbers,0.98, 1.125 , 0.98
+cucumber,cucumbers,0.98, 1.125 , 0.98
+mustard oil,mustard,0.93, 0.636363636364 , 0.93
+horse,horses,0.97, 1.2 , 0.97
+capers,cars,0.91, 0.666666666667 , 0.91
+capers,cars,0.91, 0.666666666667 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+radishes,dishes,0.92, 0.75 , 0.92
+radishes,dishes,0.92, 0.75 , 0.92
+shake,shark,0.91, 1.0 , 0.91
+owl,bowl,0.92, 1.33333333333 , 0.92
+owl,bowl,0.92, 1.33333333333 , 0.92
+tuna fish,tuna+fish,0.96, 1.0 , 0.96
+pate,plate,0.94, 1.25 , 0.94
+pate,plate,0.94, 1.25 , 0.94
+honeydew,honey,0.93, 0.625 , 0.93
+desserts,dessert>,0.95, 1.0 , 0.95
+dessert,dessert>,0.98, 1.14285714286 , 0.98
+rice,ice,0.92, 0.75 , 0.92
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+round,ground,0.94, 1.2 , 0.94
+seedless,seeds,0.93, 0.625 , 0.93
+seedless,seeds,0.93, 0.625 , 0.93
+seedless,seeds,0.93, 0.625 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+chicken fat,chicken,0.93, 0.636363636364 , 0.93
+yellow corn,yellow green,0.91, 1.09090909091 , 0.91
+oranges,orange,0.97, 0.857142857143 , 0.97
+oranges,orange,0.97, 0.857142857143 , 0.97
+oranges,orange,0.97, 0.857142857143 , 0.97
+desserts,dessert,0.98, 0.875 , 0.98
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cones,ice cream cone,0.99, 0.933333333333 , 0.99
+cucumber,cucumbers,0.98, 1.125 , 0.98
+cucumber,cucumbers,0.98, 1.125 , 0.98
+cucumber,cucumbers,0.98, 1.125 , 0.98
+cucumber,cucumbers,0.98, 1.125 , 0.98
+cucumber,cucumbers,0.98, 1.125 , 0.98
+mother's,others,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+salted,salt,0.93, 0.666666666667 , 0.93
+pate,tape,0.92, 1.0 , 0.92
+spot,stop,0.93, 1.0 , 0.93
+chard,chair,0.91, 1.0 , 0.91
+sliced,slide,0.91, 0.833333333333 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+scup,cup,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+onions,onions>,0.97, 1.16666666667 , 0.97
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+oat,boat,0.92, 1.33333333333 , 0.92
+table,tables,0.97, 1.2 , 0.97
+oat,boat,0.92, 1.33333333333 , 0.92
+lobster,lobsters,0.98, 1.14285714286 , 0.98
+lobster,lobsters,0.98, 1.14285714286 , 0.98
+generic water,green water,0.93, 0.846153846154 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+oranges,orange,0.97, 0.857142857143 , 0.97
+meat,eat,0.92, 0.75 , 0.92
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+catsup,catsup>,0.97, 1.16666666667 , 0.97
+fish sauce,fish cakes,0.94, 1.0 , 0.94
+cake,cakes,0.96, 1.25 , 0.96
+breast,bread's,0.91, 1.16666666667 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+juice,juice>,0.97, 1.2 , 0.97
+minced,mine,0.92, 0.666666666667 , 0.92
+mince,mine,0.95, 0.8 , 0.95
+scup,cup,0.92, 0.75 , 0.92
+scup,cup,0.92, 0.75 , 0.92
+tomatoseed,tomatoes,0.94, 0.8 , 0.94
+tomatillos,tomatoes,0.92, 0.8 , 0.92
+horse,horns,0.91, 1.0 , 0.91
+horse,horns,0.91, 1.0 , 0.91
+fish sauce,fish cake,0.91, 0.9 , 0.91
+brown rice,brown bread,0.91, 1.1 , 0.91
+fish sticks fish,fish stick,0.93, 0.625 , 0.93
+original flavor dip,original <road,0.91, 0.736842105263 , 0.91
+original oil,original <road,0.91, 1.16666666667 , 0.91
+spot,stop,0.93, 1.0 , 0.93
+smelt,smell,0.92, 1.0 , 0.92
+white potatoes,white ones,0.91, 0.714285714286 , 0.91
+white corn,white ones,0.92, 1.0 , 0.92
+white cornmeal,white ones,0.91, 0.714285714286 , 0.91
+white beans,white ones,0.92, 0.909090909091 , 0.92
+white rolls,white ones,0.91, 0.909090909091 , 0.91
+grapes,grapes>,0.97, 1.16666666667 , 0.97
+smelt,smell,0.92, 1.0 , 0.92
+oats,boats,0.93, 1.25 , 0.93
+hormel,home,0.91, 0.666666666667 , 0.91
+oats,coats,0.93, 1.25 , 0.93
+raisin,rain,0.92, 0.666666666667 , 0.92
+raisin,rain,0.92, 0.666666666667 , 0.92
+oat,coat,0.92, 1.33333333333 , 0.92
+hormel,home,0.91, 0.666666666667 , 0.91
+mother's,mother,0.95, 0.75 , 0.95
+meat,eat,0.92, 0.75 , 0.92
+scup,cup,0.92, 0.75 , 0.92
+spot,pot,0.92, 0.75 , 0.92
+pout,pot,0.93, 0.75 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice cream bar,ice cream bar[!],0.96, 1.23076923077 , 0.96
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream cone,ice cream too>,0.91, 1.0 , 0.91
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+cream,cream>,0.97, 1.2 , 0.97
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream>,0.92, 0.769230769231 , 0.92
+ice creams,ice cream>,0.96, 1.0 , 0.96
+ice cream,ice cream>,0.98, 1.11111111111 , 0.98
+ice cream cone,ice cream>,0.91, 0.714285714286 , 0.91
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice cream bar,ice cream (.),0.91, 1.0 , 0.91
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice creams,ice cream (.),0.92, 1.3 , 0.92
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+cod,cold,0.93, 1.33333333333 , 0.93
+flowers,flower,0.97, 0.857142857143 , 0.97
+raisin,rain,0.92, 0.666666666667 , 0.92
+raisin,rain,0.92, 0.666666666667 , 0.92
+oat,coat,0.92, 1.33333333333 , 0.92
+oats,coats,0.93, 1.25 , 0.93
+feet,feet>,0.96, 1.25 , 0.96
+rice,ice,0.92, 0.75 , 0.92
+ice cream bar,ice cream,0.94, 0.692307692308 , 0.94
+ice creams,ice cream,0.98, 0.9 , 0.98
+ice cream cone,ice cream,0.93, 0.642857142857 , 0.93
+pumpkin pie,pumpkin,0.93, 0.636363636364 , 0.93
+pumpkin pie,pumpkin,0.93, 0.636363636364 , 0.93
+meatballs,&m meatballs,0.92, 1.33333333333 , 0.92
+hamburger rolls,hamburgers,0.93, 0.666666666667 , 0.93
+cookie,cook,0.93, 0.666666666667 , 0.93
+bacon,bacon],0.97, 1.2 , 0.97
+hormel,home,0.91, 0.666666666667 , 0.91
+mother's,mother,0.95, 0.75 , 0.95
+mother's,mother,0.95, 0.75 , 0.95
+pate,ate,0.92, 0.75 , 0.92
+chard,chair,0.91, 1.0 , 0.91
+crackers,crack,0.93, 0.625 , 0.93
+pace,place,0.94, 1.25 , 0.94
+monterey,monster,0.91, 0.875 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+chard,chair,0.91, 1.0 , 0.91
+chard,chair,0.91, 1.0 , 0.91
+meatballs,meatball,0.98, 0.888888888889 , 0.98
+pate,ate,0.92, 0.75 , 0.92
+pate,ate,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+pepperoni,pepper,0.93, 0.666666666667 , 0.93
+peppers,pepper,0.97, 0.857142857143 , 0.97
+salted,salt,0.93, 0.666666666667 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+shoots,shoot>,0.93, 1.0 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+mussel,muscles,0.93, 1.16666666667 , 0.93
+eggs,egg,0.94, 0.75 , 0.94
+roe,rope,0.93, 1.33333333333 , 0.93
+crackers,crack,0.93, 0.625 , 0.93
+pate,ate,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+chard,chair,0.91, 1.0 , 0.91
+whey,hey,0.92, 0.75 , 0.92
+liver,live,0.96, 0.8 , 0.96
+liver,live>,0.92, 1.0 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+brown rice,brownies,0.92, 0.8 , 0.92
+cookies,cookie,0.97, 0.857142857143 , 0.97
+cookies,cookie,0.97, 0.857142857143 , 0.97
+cookies,cookie,0.97, 0.857142857143 , 0.97
+pitanga,pinata,0.92, 0.857142857143 , 0.92
+pitanga,pinata,0.92, 0.857142857143 , 0.92
+gums,gum,0.94, 0.75 , 0.94
+gums,gum,0.94, 0.75 , 0.94
+gums,gum,0.94, 0.75 , 0.94
+owl,ow,0.91, 0.666666666667 , 0.91
+round,ground,0.94, 1.2 , 0.94
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+turtle,turtle>,0.97, 1.16666666667 , 0.97
+turtle,turtles,0.97, 1.16666666667 , 0.97
+meatballs,meatball,0.98, 0.888888888889 , 0.98
+meatballs,meatball],0.96, 1.0 , 0.96
+spot,stop,0.93, 1.0 , 0.93
+rice,ice,0.92, 0.75 , 0.92
+cod,cold,0.93, 1.33333333333 , 0.93
+scup,cup,0.92, 0.75 , 0.92
+rice,ice,0.92, 0.75 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+oat,coat,0.92, 1.33333333333 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+desserts,dessert,0.98, 0.875 , 0.98
+brown rice,brownies,0.92, 0.8 , 0.92
+spaghettios,spaghetti,0.96, 0.818181818182 , 0.96
+green beans,green blue,0.91, 0.909090909091 , 0.91
+green turtle,green blue,0.91, 0.833333333333 , 0.91
+brown rice,brownies,0.92, 0.8 , 0.92
+brown rice,brownies,0.92, 0.8 , 0.92
+candies,candles,0.94, 1.0 , 0.94
+candies,candles,0.94, 1.0 , 0.94
+brown rice,brownies,0.92, 0.8 , 0.92
+candies,candles,0.94, 1.0 , 0.94
+candies,candles,0.94, 1.0 , 0.94
+owl,bowl,0.92, 1.33333333333 , 0.92
+owl,bowl,0.92, 1.33333333333 , 0.92
+scup,cup,0.92, 0.75 , 0.92
+scup,cup,0.92, 0.75 , 0.92
+owl,bowl,0.92, 1.33333333333 , 0.92
+papad,papa,0.96, 0.8 , 0.96
+papaya,papa,0.93, 0.666666666667 , 0.93
+carp,car,0.94, 0.75 , 0.94
+carp,car,0.94, 0.75 , 0.94
+peanut butter keebler,peanut butter,0.92, 0.619047619048 , 0.92
+peanuts,peanut,0.97, 0.857142857143 , 0.97
+peanut butter cookies,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter candies,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter snacks,peanut butter,0.93, 0.65 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+peanut butter keebler,peanut butter,0.92, 0.619047619048 , 0.92
+peanuts,peanut,0.97, 0.857142857143 , 0.97
+peanut butter cookies,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter candies,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter snacks,peanut butter,0.93, 0.65 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+smooth peanut butter,*mot: peanut butter,0.91, 0.95 , 0.91
+peanut butter keebler,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter cookies,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter candies,peanut butter,0.92, 0.619047619048 , 0.92
+peanut butter snacks,peanut butter,0.93, 0.65 , 0.93
+butterbur,butter,0.93, 0.666666666667 , 0.93
+peanuts,pean(ut),0.92, 1.14285714286 , 0.92
+peanut butter,pean(ut) butter,0.97, 1.15384615385 , 0.97
+butterbur,butter,0.93, 0.666666666667 , 0.93
+pears,ears,0.93, 0.8 , 0.93
+pears,ears,0.93, 0.8 , 0.93
+hormel,home,0.91, 0.666666666667 , 0.91
+meat,eat,0.92, 0.75 , 0.92
+desserts,dessert,0.98, 0.875 , 0.98
+pate,tape,0.92, 1.0 , 0.92
+pate,tape,0.92, 1.0 , 0.92
+sugars,sugar,0.97, 0.833333333333 , 0.97
+sugars,sugar,0.97, 0.833333333333 , 0.97
+sugars,sugar,0.97, 0.833333333333 , 0.97
+bread,break,0.92, 1.0 , 0.92
+saltines crackers,<saltine crackers,0.96, 1.0 , 0.96
+milk,milk>,0.96, 1.25 , 0.96
+saltines,<saltine,0.92, 1.0 , 0.92
+sugars,sugar,0.97, 0.833333333333 , 0.97
+sugars,sugar,0.97, 0.833333333333 , 0.97
+pink,ink,0.92, 0.75 , 0.92
+carp,car,0.94, 0.75 , 0.94
+carp,car,0.94, 0.75 , 0.94
+flan,fan,0.93, 0.75 , 0.93
+carp,car,0.94, 0.75 , 0.94
+honeydew,honey,0.93, 0.625 , 0.93
+meat,eat,0.92, 0.75 , 0.92
+meat,eat,0.92, 0.75 , 0.92
+papayas,papa's,0.91, 0.857142857143 , 0.91

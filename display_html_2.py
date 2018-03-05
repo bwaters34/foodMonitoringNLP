@@ -16,6 +16,7 @@ import cal_calorie_given_food_name
 import parse 
 import nltk 
 import time 
+from pyjarowinkler import distance
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -44,7 +45,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	foodGroup = load("./data/food_desc_files/food_group.pickle")
 	langua = load("./data/food_desc_files/langua.pickle")
 
-	ark_parsed_data = ark_parser(fileName)
+	#ark_parsed_data = ark_parser(fileName)
 
 	unique_food_names = {}
 	f = file(fileName, 'r')
@@ -69,7 +70,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 		food_id_langua_pairs = []
 		current_line_number += 1
 		if i[0] == '*':
-			print "LINE NO -> ", line_no
+			#print "LINE NO -> ", line_no
 			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no+1)
 			text = ''
 			edit_distance_i = i
@@ -152,8 +153,16 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					# if word == 'tomatoes':
 					# 	print "DIAGONISING", sentence_pos_tags, word
 					for food_data in sentence_pos_tags:
+<<<<<<< HEAD
 						k1 = float(len(food_data[1]))/float(len(word))
 						if 0.6 < k1 and k1 < 1.4:
+=======
+						# k1 = float(len(food_data[1]))/float(len(word))
+						# if 0.6 < k1 and k1 < 1.4:
+						k1 = jaccard_distance(food_data[1], word)
+						if k1 < 0.3:	
+							#print "Crossed Jaccard Barrier", k1
+>>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
 						#if 0.6 < k and k < 1.4:
 						#k1 = abs(len(food_data[1]) - len(word)) 
 						#if k1 <= 3:
@@ -161,26 +170,42 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
+							if word == food_data[1]: continue
 							distance = nltk.edit_distance(word, food_data[1])
 							k2 = distance/float(max(len(word), len(food_data))) 
+<<<<<<< HEAD
 							if k2 <=0.3:
 							#k2 = 3
 							#if distance <= k2:
+=======
+							if k2 <0.25:
+								print "Crossed final ", k2
+							#k2 = 3
+							#if distance <= k2:
+
+							# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+							# if k3 > 0.90:
+>>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
+<<<<<<< HEAD
 								#with open("./notes/edit_distance_3.txt", "a") as myfile:
 								with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
+=======
+								with open("./notes/edit_distance_4.txt", "a") as myfile:
+								# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
+>>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
 									myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)
 			#print ("Final i -> ", i)
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
-				print('dic')
-				print(dic)
+				#print('dic')
+				#print(dic)
 				for char_pos in dic:
 					if dic[char_pos] == 1:
 						text += '<mark>' +  i[char_pos] + '</mark>'
@@ -311,6 +336,16 @@ def provide_words_with_char_nos(sentence, line_no):
 	return return_array, return_string
 
 
+def jaccard_distance(word1, word2):
+	# word1 = list(set(word1))
+	# word2 = list(set(word2))
+	# print word1, word2
+	word1_and_word2 = set(word1).intersection(word2)
+	# print word1_and_word2
+	word1_or_word2 = set(word1).union(word2)
+	# print word1_or_word2
+	return float(len(word1_and_word2))/float(len(word1_or_word2))
+
 def join_tags(sentence):
 	text = '     '
 	for i in sentence:
@@ -403,6 +438,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
+		
 		start = time.time()
 		fileName = 'HSLLD/HV1/MT/conmt1.cha'
 		html_format, results = read_file(fileName, 'ark_tweet_parser')
@@ -413,7 +449,7 @@ if __name__ == '__main__':
 	except:
 		print "none"
 		print sys.exc_info()
-	
+	# print jaccard_distance("pritish", "pritish yu")
 	# fileCounts = []
 	# all_files = load("C:\\Users\\priti\\OneDrive\\Documents\\CCPP\\FoodMonitoring-NLP\\data\\food_files.pickle")
 	# c = 0
@@ -436,3 +472,4 @@ if __name__ == '__main__':
 	# 				hist_kws={"histtype": "step", "linewidth": 3,"alpha": 1, "color": "g"})
 	# plt.show()
 
+#786.390255213 secs

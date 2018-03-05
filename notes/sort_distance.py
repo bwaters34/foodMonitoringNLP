@@ -17,7 +17,11 @@ class sorting():
         #Sorting 
         temp_2_array = sorted(temp_array, key = lambda x: x[4])
         print temp_2_array
+<<<<<<< HEAD
         self.write_2_file(temp_2_array, "sort_distance_30_percen_results.csv")
+=======
+        self.write_2_file(temp_2_array, "sort_distance_edit_distance_3.csv")
+>>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
         #print f
     
     def write_2_file(self, variable, fileName):
@@ -35,4 +39,8 @@ class sorting():
             f.write(temp_text)
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     sort = sorting("edit_distance_30_percen.txt")
+=======
+    sort = sorting("edit_distance_3.txt")
+>>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
