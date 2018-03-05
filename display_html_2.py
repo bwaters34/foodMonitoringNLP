@@ -17,7 +17,7 @@ import parse
 import nltk 
 import time 
 from pyjarowinkler import distance
-
+import levenshtein_distance_customized
 def load(fileName):
 	with open(fileName, 'r') as f:
 		return pickle.load(f) 
@@ -27,6 +27,13 @@ def save(variable, fileName):
 		pickle.dump(variable, f)
 
 def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True):
+	levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
+                            e=(3, 3, 1),
+                            i=(3, 3, 1),
+                            o=(3, 3, 1),
+                            u=(3, 3, 1),
+                            s=(0, 0, 1))
+
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
@@ -72,6 +79,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 		if i[0] == '*':
 			#print "LINE NO -> ", line_no
 			word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no+1)
+			# print "LOOK HERE", word_char_index, word_char_index_string_fromat
 			text = ''
 			edit_distance_i = i
 			i = i.lower()
@@ -80,7 +88,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#	if word not in foodNames:
 			#		text += word + ' '
 			#	else:
-			#		text += '<mark>'+word+'</mark> '
+			#		text += '<mark>'+word+'</mark> 's
 			#write2file += text + '<br>'
 			found_at_least = 0
 			index_of_food_names = []
@@ -153,51 +161,59 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					# if word == 'tomatoes':
 					# 	print "DIAGONISING", sentence_pos_tags, word
 					for food_data in sentence_pos_tags:
-<<<<<<< HEAD
+
 						k1 = float(len(food_data[1]))/float(len(word))
 						if 0.6 < k1 and k1 < 1.4:
-=======
 						# k1 = float(len(food_data[1]))/float(len(word))
 						# if 0.6 < k1 and k1 < 1.4:
-						k1 = jaccard_distance(food_data[1], word)
-						if k1 < 0.3:	
+						# k1 = jaccard_distance(food_data[1], word)
+						# if k1 < 0.3:	
 							#print "Crossed Jaccard Barrier", k1
->>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
 						#if 0.6 < k and k < 1.4:
 						#k1 = abs(len(food_data[1]) - len(word)) 
-						#if k1 <= 3:
+						#if k1 <= 3:s
 							# if word == 'tomatoes':
 							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
 							if word == food_data[1]: continue
-							distance = nltk.edit_distance(word, food_data[1])
+							# distance = nltk.edit_distance(word, food_data[1])
+							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
+							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+
+							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
+							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+
+							temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]])
+							temp2 = ''.join([x if x.isalpha() else ' ' for x in word])
+							# print "check -> ", word, food_data[1], temp, temp2, k1
+							
+							distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
 							k2 = distance/float(max(len(word), len(food_data))) 
-<<<<<<< HEAD
-							if k2 <=0.3:
+
+							if k2 <0.30:
 							#k2 = 3
 							#if distance <= k2:
-=======
-							if k2 <0.25:
-								print "Crossed final ", k2
+
+							
 							#k2 = 3
 							#if distance <= k2:
 
 							# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
 							# if k3 > 0.90:
->>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
+
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
-<<<<<<< HEAD
-								#with open("./notes/edit_distance_3.txt", "a") as myfile:
-								with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
-=======
-								with open("./notes/edit_distance_4.txt", "a") as myfile:
+
+								with open("./notes/edit_distance_customized.txt", "a") as myfile:
+								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
+
+								# with open("./notes/edit_distance_4.txt", "a") as myfile:
 								# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
->>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
+
 									myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
 			#print "word found", word, len(word), max_len, max_len_word
 			#print ("Temproray -> ", temp_i)

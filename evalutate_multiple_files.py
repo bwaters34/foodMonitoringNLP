@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-from display_html_old import *
-=======
+
 from display_html_2 import *
->>>>>>> 863057fdebcd115d9f0ebd065992c36b617826f4
+
 import time
 
 start_time = time.time()
