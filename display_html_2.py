@@ -27,13 +27,13 @@ def save(variable, fileName):
 		pickle.dump(variable, f)
 
 def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True):
-	levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
-                            e=(3, 3, 1),
-                            i=(3, 3, 1),
-                            o=(3, 3, 1),
-                            u=(3, 3, 1),
-                            s=(0, 0, 1))
-
+	# levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
+ #                            e=(3, 3, 1),
+ #                            i=(3, 3, 1),
+ #                            o=(3, 3, 1),
+ #                            u=(3, 3, 1),
+ #                            s=(0, 0, 1))
+ 	levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(s=(0, 0, 1))
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
@@ -208,7 +208,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
-								with open("./notes/edit_distance_customized.txt", "a") as myfile:
+								with open("./notes/edit_distance_30_only_s.txt", "a") as myfile:
 								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
 								# with open("./notes/edit_distance_4.txt", "a") as myfile:

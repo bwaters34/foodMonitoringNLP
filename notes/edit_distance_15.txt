@@ -1,0 +1,117 @@
+carrots,carrots>,1, 1.14285714286 , 0.142857142857
+carrots,carrot,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+brownies,brownie,1, 0.875 , 0.125
+brownies,brownie,1, 0.875 , 0.125
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+applesauce,applesauce>,1, 1.1 , 0.1
+topping,tapping,1, 1.0 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+strawberries,strawberries>,1, 1.08333333333 , 0.0833333333333
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+broccoli,broccoli],1, 1.125 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+cockles,cackles,1, 1.0 , 0.142857142857
+broccoli,broccoli>,1, 1.125 , 0.125
+broccoli,broccoli>,1, 1.125 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+honeydew,honey+dew,1, 1.125 , 0.125
+honeydew,honey+dew,1, 1.125 , 0.125
+broccoli,broccoli>,1, 1.125 , 0.125
+honeydew,honey+dew,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream,1, 0.9 , 0.1
+milk shakes,milk shake,1, 0.909090909091 , 0.0909090909091
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+cardoon,cartoon,1, 1.0 , 0.142857142857
+topping,popping,1, 1.0 , 0.142857142857
+topping,popping,1, 1.0 , 0.142857142857
+cardoon,cartoon,1, 1.0 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+vegetables,vegetable,1, 0.9 , 0.1
+crackers,crackers>,1, 1.125 , 0.125
+crackers,crackers>,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+tuna fish,tuna+fish,1, 1.0 , 0.111111111111
+desserts,dessert>,1, 1.0 , 0.125
+dessert,dessert>,1, 1.14285714286 , 0.142857142857
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+lobster,lobsters,1, 1.14285714286 , 0.142857142857
+lobster,lobsters,1, 1.14285714286 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream>,1, 1.0 , 0.1
+ice cream,ice cream>,1, 1.11111111111 , 0.111111111111
+ice creams,ice cream,1, 0.9 , 0.1
+ice creams,ice cream,1, 0.9 , 0.1
+flowers,flower,1, 0.857142857143 , 0.142857142857
+ice creams,ice cream,1, 0.9 , 0.1
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+meatballs,meatball],1, 1.0 , 0.111111111111
+desserts,dessert,1, 0.875 , 0.125
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+peanuts,peanut,1, 0.857142857143 , 0.142857142857
+peanuts,peanut,1, 0.857142857143 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+saltines crackers,<saltine crackers,2, 1.0 , 0.117647058824

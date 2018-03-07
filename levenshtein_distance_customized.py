@@ -41,10 +41,11 @@ class levenshtein_distance:
 
 if __name__ == '__main__':
 	pass	
-	ld = levenshtein_distance(a=(3, 3, 1),
-                            e=(3, 3, 1),
-                            i=(3, 3, 1),
-                            o=(3, 3, 1),
-                            u=(3, 3, 1),
-                            s=(0, 0, 1))
+	# ld = levenshtein_distance(a=(3, 3, 1),
+ #                            e=(3, 3, 1),
+ #                            i=(3, 3, 1),
+ #                            o=(3, 3, 1),
+ #                            u=(3, 3, 1),
+ #                            s=(0, 0, 1))
+ 	ld = levenshtein_distance(s = (0, 0, 1))
 	print ld.calculate_distance("abx", "xya")

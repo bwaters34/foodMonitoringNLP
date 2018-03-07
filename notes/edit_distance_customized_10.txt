@@ -1,0 +1,190 @@
+pea,peas,0, 1.33333333333 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrots,carrot,0, 0.857142857143 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+brownies,brownie,0, 0.875 , 0.0
+brownies,brownie,0, 0.875 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+spot,pots,0, 1.0 , 0.0
+cream,scream,0, 1.2 , 0.0
+flowers,flower,0, 0.857142857143 , 0.0
+flowers,flower,0, 0.857142857143 , 0.0
+flowers,flower,0, 0.857142857143 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+flowers,flower,0, 0.857142857143 , 0.0
+flowers,flower,0, 0.857142857143 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+tart,start,0, 1.25 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+mother's,mother>,0, 0.875 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+apples,apple,0, 0.833333333333 , 0.0
+seeds,seed,0, 0.8 , 0.0
+apples,apple,0, 0.833333333333 , 0.0
+seeds,seed,0, 0.8 , 0.0
+strawberries,strawberries>,1, 1.08333333333 , 0.0833333333333
+muffins,muffin,0, 0.857142857143 , 0.0
+muffins,muffin,0, 0.857142857143 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+muffins,muffin,0, 0.857142857143 , 0.0
+scup,cups,0, 1.0 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+rolls,roll,0, 0.8 , 0.0
+rolls,roll,0, 0.8 , 0.0
+rolls,roll,0, 0.8 , 0.0
+rolls,roll,0, 0.8 , 0.0
+fat,fast,0, 1.33333333333 , 0.0
+lemons,lemon,0, 0.833333333333 , 0.0
+shark,sharks,0, 1.2 , 0.0
+eggs,egg,0, 0.75 , 0.0
+eggs,egg,0, 0.75 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+scup,cups,0, 1.0 , 0.0
+scup,cups,0, 1.0 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+pea,peas,0, 1.33333333333 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+tart,start,0, 1.25 , 0.0
+tart,start,0, 1.25 , 0.0
+scup,cup,0, 0.75 , 0.0
+scup,cup,0, 0.75 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+shoots,shoot,0, 0.833333333333 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+shoots,shoot,0, 0.833333333333 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+scup,cups,0, 1.0 , 0.0
+scup,cups,0, 1.0 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+fat,fast,0, 1.33333333333 , 0.0
+apples,apple,0, 0.833333333333 , 0.0
+spices,spice,0, 0.833333333333 , 0.0
+eggs,egg,0, 0.75 , 0.0
+milk shakes,milk shake,0, 0.909090909091 , 0.0
+oat,oats,0, 1.33333333333 , 0.0
+cereals,cereal,0, 0.857142857143 , 0.0
+oat,oats,0, 1.33333333333 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+cereals,cereal,0, 0.857142857143 , 0.0
+cereals,cereal,0, 0.857142857143 , 0.0
+biscuit,biscuits,0, 1.14285714286 , 0.0
+scup,cup,0, 0.75 , 0.0
+biscuit,biscuits,0, 1.14285714286 , 0.0
+biscuit,biscuits,0, 1.14285714286 , 0.0
+fat,fast,0, 1.33333333333 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+biscuit,biscuits,0, 1.14285714286 , 0.0
+biscuit,biscuits,0, 1.14285714286 , 0.0
+shoots,shoot,0, 0.833333333333 , 0.0
+egg,eggs,0, 1.33333333333 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+gums,gum,0, 0.75 , 0.0
+gums,gum,0, 0.75 , 0.0
+gums,gum,0, 0.75 , 0.0
+gums,gum,0, 0.75 , 0.0
+sugars,sugar,0, 0.833333333333 , 0.0
+apples,apple,0, 0.833333333333 , 0.0
+vegetables,vegetable,0, 0.9 , 0.0
+beer,beers,0, 1.25 , 0.0
+beer,beers,0, 1.25 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+horse,horses,0, 1.2 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+tuna fish,tuna+fish,0, 1.0 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice cream cones,ice cream cone,0, 0.933333333333 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+cucumber,cucumbers,0, 1.125 , 0.0
+scup,cup,0, 0.75 , 0.0
+table,tables,0, 1.2 , 0.0
+lobster,lobsters,0, 1.14285714286 , 0.0
+lobster,lobsters,0, 1.14285714286 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+cake,cakes,0, 1.25 , 0.0
+scup,cup,0, 0.75 , 0.0
+scup,cup,0, 0.75 , 0.0
+scup,cup,0, 0.75 , 0.0
+spot,pot,0, 0.75 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+flowers,flower,0, 0.857142857143 , 0.0
+ice creams,ice cream,0, 0.9 , 0.0
+meatballs,meatball,0, 0.888888888889 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+eggs,egg,0, 0.75 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+gums,gum,0, 0.75 , 0.0
+gums,gum,0, 0.75 , 0.0
+gums,gum,0, 0.75 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+turtle,turtles,0, 1.16666666667 , 0.0
+meatballs,meatball,0, 0.888888888889 , 0.0
+scup,cup,0, 0.75 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+stalks,talk,0, 0.666666666667 , 0.0
+scup,cup,0, 0.75 , 0.0
+scup,cup,0, 0.75 , 0.0
+peanuts,peanut,0, 0.857142857143 , 0.0
+peanuts,peanut,0, 0.857142857143 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+sugars,sugar,0, 0.833333333333 , 0.0
+sugars,sugar,0, 0.833333333333 , 0.0
+sugars,sugar,0, 0.833333333333 , 0.0
+saltines crackers,<saltine crackers,1, 1.0 , 0.0588235294118
+sugars,sugar,0, 0.833333333333 , 0.0
+sugars,sugar,0, 0.833333333333 , 0.0

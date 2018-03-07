@@ -1,0 +1,108 @@
+#New System (Vowels and 's')
+k = 0.3
+precision: 0.138245033113
+recall 0.695833333333
+# true pos: 167
+# false pos: 1041
+# false neg: 73
+total runtime: 5599.19398904
+
+k = 0.25
+precision: 0.243647234679
+recall 0.679166666667
+# true pos: 163
+# false pos: 506
+# false neg: 77
+total runtime: 5447.31465602
+
+k = 0.20
+precision: 0.348017621145
+recall 0.658333333333
+# true pos: 158
+# false pos: 296
+# false neg: 82
+total runtime: 5736.89896488
+
+k = 0.15
+precision: 0.427027027027
+recall 0.658333333333
+# true pos: 158
+# false pos: 212
+# false neg: 82
+total runtime: 5599.74974298
+
+k = 0.10
+precision: 0.460641399417
+recall 0.658333333333
+# true pos: 158
+# false pos: 185
+# false neg: 82
+total runtime: 5541.62617707
+
+k = 0.5
+precision: 0.464912280702
+recall 0.6625
+# true pos: 159
+# false pos: 183
+# false neg: 81
+total runtime: 6016.33600497
+
+k = 0.0
+
+
+
+
+
+
+#Old System
+k = 0.3
+precision: 0.212598425197
+recall 0.675
+# true pos: 162
+# false pos: 600
+# false neg: 78
+total runtime: 5117.89831305
+
+k = 0.25
+precision: 0.365566037736
+recall 0.645833333333
+# true pos: 155
+# false pos: 269
+# false neg: 85
+total runtime: 5113.2577641
+
+k = 0.20
+precision: 0.460410557185
+recall 0.654166666667
+# true pos: 157
+# false pos: 184
+# false neg: 83
+total runtime: 5134.99892282
+
+k = 0.15
+precision: 0.498392282958
+recall 0.645833333333
+# true pos: 155
+# false pos: 156
+# false neg: 85
+total runtime: 5139.35492706
+
+k = 0.10
+precision: 0.519031141869
+recall 0.625
+# true pos: 150
+# false pos: 139
+# false neg: 90
+total runtime: 5125.87498212
+
+k = 0.05
+precision: 0.519031141869
+recall 0.625
+# true pos: 150
+# false pos: 139
+# false neg: 90
+total runtime: 5090.69223785
+
+
+
+

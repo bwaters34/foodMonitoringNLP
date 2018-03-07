@@ -1,0 +1,1458 @@
+owl,bowl,1, 1.33333333333 , 0.25
+pears,peas,1, 0.8 , 0.2
+pea,peas,1, 1.33333333333 , 0.25
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+gums,hums,1, 1.0 , 0.25
+beer,beef,1, 1.0 , 0.25
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrots,carrots>,1, 1.14285714286 , 0.142857142857
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrot cake,carrot haha,3, 1.0 , 0.272727272727
+carrots,carrot,1, 0.857142857143 , 0.142857142857
+horse,house,1, 1.0 , 0.2
+perch,porch,1, 1.0 , 0.2
+whiting,whining],2, 1.14285714286 , 0.285714285714
+malt,salt,1, 1.0 , 0.25
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+horse,house,1, 1.0 , 0.2
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+dumpling,mumbling,2, 1.0 , 0.25
+round,ground,1, 1.2 , 0.2
+yam,yum,1, 1.0 , 0.25
+shake,share,1, 1.0 , 0.2
+shark,share,1, 1.0 , 0.2
+brownies,brownie,1, 0.875 , 0.125
+brownies,brownie,1, 0.875 , 0.125
+potatoes,potato,2, 0.75 , 0.25
+cake,coke,1, 1.0 , 0.25
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+morel,more>,1, 1.0 , 0.2
+rice,ride,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+pike,bike,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+cod,god,1, 1.0 , 0.25
+flan,flag,1, 1.0 , 0.25
+bear,hear,1, 1.0 , 0.25
+bear,hear,1, 1.0 , 0.25
+flan,flag,1, 1.0 , 0.25
+eel,e@l,1, 1.0 , 0.25
+eel,e@l,1, 1.0 , 0.25
+oil,o@l,1, 1.0 , 0.25
+owl,o@l,1, 1.0 , 0.25
+oil,o@l,1, 1.0 , 0.25
+owl,o@l,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+chocolate cake,chocolate (.),4, 0.928571428571 , 0.285714285714
+chocolate milk,chocolate (.),4, 0.928571428571 , 0.285714285714
+chocolate cake,chocolate (.),4, 0.928571428571 , 0.285714285714
+chocolate milk,chocolate (.),4, 0.928571428571 , 0.285714285714
+whole seeds,whole mess,3, 0.909090909091 , 0.272727272727
+pace,place,1, 1.25 , 0.25
+whey,hey,1, 0.75 , 0.25
+whey,hey,1, 0.75 , 0.25
+cream,scream,1, 1.2 , 0.2
+whey,hey,1, 0.75 , 0.25
+cod,god,1, 1.0 , 0.25
+cod,god,1, 1.0 , 0.25
+cod,god,1, 1.0 , 0.25
+cod,god,1, 1.0 , 0.25
+mince,mine,1, 0.8 , 0.2
+flowers,flower,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+carp,care,1, 1.0 , 0.25
+cake,care,1, 1.0 , 0.25
+pork,fork,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+owl,bowl,1, 1.33333333333 , 0.25
+flowers,flower,1, 0.857142857143 , 0.142857142857
+flowers,flower,1, 0.857142857143 , 0.142857142857
+scup,soup,1, 1.0 , 0.25
+scup,soup,1, 1.0 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+breakfast tart,breakfast (.),4, 0.928571428571 , 0.285714285714
+breakfast bars,breakfast (.),4, 0.928571428571 , 0.285714285714
+breakfast bar,breakfast (.),3, 1.0 , 0.230769230769
+tart,part,1, 1.0 , 0.25
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+tart,start,1, 1.25 , 0.25
+mush,push,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+applesauce,applesauce>,1, 1.1 , 0.1
+oat,eat,1, 1.0 , 0.25
+meat,<eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+topping,tapping,1, 1.0 , 0.142857142857
+toppings,tapping,2, 0.875 , 0.25
+milk,milk>,1, 1.25 , 0.25
+pork,park,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+milk,milk>,1, 1.25 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+peach,beach,1, 1.0 , 0.2
+whey,hey,1, 0.75 , 0.25
+peach,beach,1, 1.0 , 0.2
+carp,car,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+carp,car,1, 0.75 , 0.25
+whey,hey,1, 0.75 , 0.25
+peach,beach,1, 1.0 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+peach,beach,1, 1.0 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+peach,beach,1, 1.0 , 0.2
+carp,car,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+peach,beach,1, 1.0 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+dock,rock,1, 1.0 , 0.25
+bread,break,1, 1.0 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+mother's,brother's,2, 1.125 , 0.25
+fan,man,1, 1.0 , 0.25
+crude,rude,1, 0.8 , 0.2
+root,room,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+tomatoes,tomato,2, 0.75 , 0.25
+potherb,mother>,2, 1.0 , 0.285714285714
+mother's,mother>,2, 0.875 , 0.25
+mother's,father's,2, 1.0 , 0.25
+milk,milk>,1, 1.25 , 0.25
+pudding,kidding,2, 1.0 , 0.285714285714
+bass,ass,1, 0.75 , 0.25
+root,boot,1, 1.0 , 0.25
+conch,couch,1, 1.0 , 0.2
+desserts,dessert,1, 0.875 , 0.125
+pike,pie,1, 0.75 , 0.25
+desserts,dessert,1, 0.875 , 0.125
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+chinese,cheese,2, 0.857142857143 , 0.285714285714
+chinese,cheese,2, 0.857142857143 , 0.285714285714
+cheese soup,cheese look,3, 1.0 , 0.272727272727
+cheese food,cheese look,2, 1.0 , 0.181818181818
+lard,lord,1, 1.0 , 0.25
+lard,lord,1, 1.0 , 0.25
+apples,apple,1, 0.833333333333 , 0.166666666667
+seeds,seed,1, 0.8 , 0.2
+apples,apple,1, 0.833333333333 , 0.166666666667
+seeds,seed,1, 0.8 , 0.2
+lard,lord,1, 1.0 , 0.25
+lard,lord,1, 1.0 , 0.25
+dressing,dreaming,2, 1.0 , 0.25
+strawberries,strawberries>,1, 1.08333333333 , 0.0833333333333
+dressing,dreaming,2, 1.0 , 0.25
+dip,die,1, 1.0 , 0.25
+pie,die,1, 1.0 , 0.25
+cream,dream,1, 1.0 , 0.2
+pate,plate,1, 1.25 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+pate,plate,1, 1.25 , 0.25
+pate,plate,1, 1.25 , 0.25
+pate,plate,1, 1.25 , 0.25
+pate,plate,1, 1.25 , 0.25
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+onion,onions,1, 1.2 , 0.2
+onion,onions,1, 1.2 , 0.2
+onion,onions,1, 1.2 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+kelp,help,1, 1.0 , 0.25
+onion,onions,1, 1.2 , 0.2
+onion,onions,1, 1.2 , 0.2
+sweet onions,want onions,3, 0.916666666667 , 0.25
+onion,onions,1, 1.2 , 0.2
+muffin,<muffin,1, 1.16666666667 , 0.166666666667
+muffins,<muffin,2, 1.0 , 0.285714285714
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+whey,hey,1, 0.75 , 0.25
+owl,ow,1, 0.666666666667 , 0.25
+lard,lord,1, 1.0 , 0.25
+owl,ow,1, 0.666666666667 , 0.25
+cod,cold,1, 1.33333333333 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+yellow corn,yellow one,3, 0.909090909091 , 0.272727272727
+yellow cake,yellow one,3, 0.909090909091 , 0.272727272727
+oranges,orange,1, 0.857142857143 , 0.142857142857
+grapes,grape,1, 0.833333333333 , 0.166666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+orange,<orange,1, 1.16666666667 , 0.166666666667
+oranges,<orange,2, 1.0 , 0.285714285714
+grapes,grape>,1, 1.0 , 0.166666666667
+grapes,grape,1, 0.833333333333 , 0.166666666667
+grapes,grape,1, 0.833333333333 , 0.166666666667
+mince,mine,1, 0.8 , 0.2
+cod,cold,1, 1.33333333333 , 0.25
+cod,cold,1, 1.33333333333 , 0.25
+cod,cold,1, 1.33333333333 , 0.25
+dock,rock,1, 1.0 , 0.25
+rolls,roll,1, 0.8 , 0.2
+dock,rock,1, 1.0 , 0.25
+rolls,roll,1, 0.8 , 0.2
+dock,rock,1, 1.0 , 0.25
+rolls,roll,1, 0.8 , 0.2
+dock,rock,1, 1.0 , 0.25
+rolls,roll,1, 0.8 , 0.2
+bass,bags,1, 1.0 , 0.25
+american cheese,american hero,4, 0.866666666667 , 0.266666666667
+pears,years,1, 1.0 , 0.2
+pears,years,1, 1.0 , 0.2
+meat,meet,1, 1.0 , 0.25
+feet,meet,1, 1.0 , 0.25
+mince,mine,1, 0.8 , 0.2
+whey,hey,1, 0.75 , 0.25
+green,green>,1, 1.2 , 0.2
+oat,coat,1, 1.33333333333 , 0.25
+goat,coat,1, 1.0 , 0.25
+rye,bye,1, 1.0 , 0.25
+peaches,places,2, 0.857142857143 , 0.285714285714
+tamales,tales,2, 0.714285714286 , 0.285714285714
+dock,duck,1, 1.0 , 0.25
+tamales,tales,2, 0.714285714286 , 0.285714285714
+dock,duck,1, 1.0 , 0.25
+oil,o@l,1, 1.0 , 0.25
+owl,o@l,1, 1.0 , 0.25
+oil,o@l,1, 1.0 , 0.25
+owl,o@l,1, 1.0 , 0.25
+cod,cold,1, 1.33333333333 , 0.25
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+squash,squish,1, 1.0 , 0.166666666667
+snapper,supper,2, 0.857142857143 , 0.285714285714
+whey,hey,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fat,fast,1, 1.33333333333 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+lemons,lemon,1, 0.833333333333 , 0.166666666667
+duck,yuck,1, 1.0 , 0.25
+rice,ice,1, 0.75 , 0.25
+rice,ice,1, 0.75 , 0.25
+fan,man,1, 1.0 , 0.25
+horse,house,1, 1.0 , 0.2
+oat,<at,1, 1.0 , 0.25
+fat,<at,1, 1.0 , 0.25
+leeks,weeks,1, 1.0 , 0.2
+leeks,weeks,1, 1.0 , 0.2
+morel,more>,1, 1.0 , 0.2
+meat,beat,1, 1.0 , 0.25
+bear,beat,1, 1.0 , 0.25
+meat,beat,1, 1.0 , 0.25
+bear,beat,1, 1.0 , 0.25
+carp,care,1, 1.0 , 0.25
+cake,care,1, 1.0 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+veal,meal,1, 1.0 , 0.25
+meat,meal,1, 1.0 , 0.25
+seal,meal,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+conch,couch,1, 1.0 , 0.2
+limes,times,1, 1.0 , 0.2
+juice,juicy,1, 1.0 , 0.2
+horse,house,1, 1.0 , 0.2
+pork,work,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+carp,care,1, 1.0 , 0.25
+cake,care,1, 1.0 , 0.25
+cake,cape,1, 1.0 , 0.25
+shark,sharks,1, 1.2 , 0.2
+pout,out,1, 0.75 , 0.25
+oat,out,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+eggs,egg,1, 0.75 , 0.25
+eggs,egg,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+root,robot,1, 1.25 , 0.25
+hard,hand,1, 1.0 , 0.25
+root,robot,1, 1.25 , 0.25
+hard,hand,1, 1.0 , 0.25
+root,robot,1, 1.25 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+honey,money,1, 1.0 , 0.2
+potherb,mother,2, 0.857142857143 , 0.285714285714
+mother's,mother,2, 0.75 , 0.25
+potherb,bothers,2, 1.0 , 0.285714285714
+mother's,bothers,2, 0.875 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+duck,yuck,1, 1.0 , 0.25
+honey,money,1, 1.0 , 0.2
+hard,hand,1, 1.0 , 0.25
+soft,sort,1, 1.0 , 0.25
+radishes,dishes,2, 0.75 , 0.25
+radishes,dishes,2, 0.75 , 0.25
+tea,ten,1, 1.0 , 0.25
+orange fish,orange food,3, 1.0 , 0.272727272727
+orange babyfood,orange food,4, 0.733333333333 , 0.266666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+whey,hey,1, 0.75 , 0.25
+pears,peas,1, 0.8 , 0.2
+pea,peas,1, 1.33333333333 , 0.25
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+pate,plate,1, 1.25 , 0.25
+whey,hey,1, 0.75 , 0.25
+spot,spit,1, 1.0 , 0.25
+pate,plate,1, 1.25 , 0.25
+limes,times,1, 1.0 , 0.2
+tea,ten,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+broccoli,broccoli],1, 1.125 , 0.125
+pate,plate,1, 1.25 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+soft,sort,1, 1.0 , 0.25
+chocolate cookies,chocolate <gives,5, 0.941176470588 , 0.294117647059
+chocolate candies,chocolate <gives,5, 0.941176470588 , 0.294117647059
+ling,line,1, 1.0 , 0.25
+dark chocolate,*fat: chocolate,4, 1.07142857143 , 0.285714285714
+chocolate cookies,chocolate cake,4, 0.823529411765 , 0.235294117647
+chocolate cereals,chocolate cake,5, 0.823529411765 , 0.294117647059
+chocolate cookie,chocolate cake,3, 0.875 , 0.1875
+chocolate milk,chocolate cake,4, 1.0 , 0.285714285714
+chocolate candies,chocolate cake,4, 0.823529411765 , 0.235294117647
+not chocolate cake,chocolate cake,4, 0.777777777778 , 0.222222222222
+chocolate cookies,chocolate cake,4, 0.823529411765 , 0.235294117647
+chocolate cereals,chocolate cake,5, 0.823529411765 , 0.294117647059
+chocolate cookie,chocolate cake,3, 0.875 , 0.1875
+chocolate milk,chocolate cake,4, 1.0 , 0.285714285714
+chocolate candies,chocolate cake,4, 0.823529411765 , 0.235294117647
+not chocolate cake,chocolate cake,4, 0.777777777778 , 0.222222222222
+chocolate cookies,chocolate cake,4, 0.823529411765 , 0.235294117647
+chocolate cereals,chocolate cake,5, 0.823529411765 , 0.294117647059
+chocolate cookie,chocolate cake,3, 0.875 , 0.1875
+chocolate milk,chocolate cake,4, 1.0 , 0.285714285714
+chocolate candies,chocolate cake,4, 0.823529411765 , 0.235294117647
+not chocolate cake,chocolate cake,4, 0.777777777778 , 0.222222222222
+chocolate cake,chocolate [?],4, 0.928571428571 , 0.285714285714
+chocolate milk,chocolate [?],4, 0.928571428571 , 0.285714285714
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+owl,ow,1, 0.666666666667 , 0.25
+peppers,jeepers,2, 1.0 , 0.285714285714
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+tart,start,1, 1.25 , 0.25
+tart,start,1, 1.25 , 0.25
+morel,more>,1, 1.0 , 0.2
+snapper,supper,2, 0.857142857143 , 0.285714285714
+scup,cup,1, 0.75 , 0.25
+scup,cup,1, 0.75 , 0.25
+raisins,raining,2, 1.0 , 0.285714285714
+pike,bike,1, 1.0 , 0.25
+pike,bike,1, 1.0 , 0.25
+pike,bike,1, 1.0 , 0.25
+pike,bike,1, 1.0 , 0.25
+pike,bike,1, 1.0 , 0.25
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+round,ground,1, 1.2 , 0.2
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+carp,care,1, 1.0 , 0.25
+cake,care,1, 1.0 , 0.25
+apple juice,applesauce,3, 0.909090909091 , 0.272727272727
+desserts,dessert,1, 0.875 , 0.125
+mince,mine,1, 0.8 , 0.2
+carp,cap,1, 0.75 , 0.25
+pickles,cackles,2, 1.0 , 0.285714285714
+cockles,cackles,1, 1.0 , 0.142857142857
+horse,house,1, 1.0 , 0.2
+snapper,supper,2, 0.857142857143 , 0.285714285714
+shoots,shoot,1, 0.833333333333 , 0.166666666667
+carp,cap,1, 0.75 , 0.25
+owl,ow,1, 0.666666666667 , 0.25
+juice,juice>,1, 1.2 , 0.2
+snapper,supper,2, 0.857142857143 , 0.285714285714
+potherb,mother,2, 0.857142857143 , 0.285714285714
+mother's,mother,2, 0.75 , 0.25
+pork,park,1, 1.0 , 0.25
+pink,pick,1, 1.0 , 0.25
+rice,ride,1, 1.0 , 0.25
+shellie,shells>,2, 1.0 , 0.285714285714
+maitake,mistake,2, 1.0 , 0.285714285714
+toffee,coffee,1, 1.0 , 0.166666666667
+shoots,shoot,1, 0.833333333333 , 0.166666666667
+toffee,coffee,1, 1.0 , 0.166666666667
+pate,plate,1, 1.25 , 0.25
+rye,bye,1, 1.0 , 0.25
+spaghettios,spaghetti,2, 0.818181818182 , 0.181818181818
+mutton,button,1, 1.0 , 0.166666666667
+whey,hey,1, 0.75 , 0.25
+shellie,shells,2, 0.857142857143 , 0.285714285714
+shellie,shells,2, 0.857142857143 , 0.285714285714
+fat,fit,1, 1.0 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+tomatoes,tomato,2, 0.75 , 0.25
+cucumber,cucum(ber),2, 1.25 , 0.25
+celtuce,lettuce,2, 1.0 , 0.285714285714
+celtuce,lettuce,2, 1.0 , 0.285714285714
+celtuce,lettuce,2, 1.0 , 0.285714285714
+celtuce,lettuce,2, 1.0 , 0.285714285714
+potatoes,tomatoes,2, 1.0 , 0.25
+yam,yum,1, 1.0 , 0.25
+yam,yum,1, 1.0 , 0.25
+celtuce,lettuce,2, 1.0 , 0.285714285714
+potatoes,tomatoes,2, 1.0 , 0.25
+celtuce,lettuce,2, 1.0 , 0.285714285714
+tomatoes,(to)matoes,2, 1.25 , 0.25
+ginger,finger,1, 1.0 , 0.166666666667
+pace,page,1, 1.0 , 0.25
+pate,page,1, 1.0 , 0.25
+sage,page,1, 1.0 , 0.25
+celtuce,lettuce,2, 1.0 , 0.285714285714
+tomatoes,(to)matoes,2, 1.25 , 0.25
+celtuce,lettuce,2, 1.0 , 0.285714285714
+celtuce,lettuce,2, 1.0 , 0.285714285714
+celtuce,lettuce,2, 1.0 , 0.285714285714
+celtuce,lettuce,2, 1.0 , 0.285714285714
+cod,cow,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+mince,mine,1, 0.8 , 0.2
+tomatoes,tomato>,2, 0.875 , 0.25
+oat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+morel,more>,1, 1.0 , 0.2
+root,room,1, 1.0 , 0.25
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+morel,more>,1, 1.0 , 0.2
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+oat,pat,1, 1.0 , 0.25
+pate,pat,1, 0.75 , 0.25
+fat,pat,1, 1.0 , 0.25
+fish,dish,1, 1.0 , 0.25
+baby,baby>,1, 1.25 , 0.25
+gums,guys,1, 1.0 , 0.25
+pork,fork,1, 1.0 , 0.25
+pork,fork,1, 1.0 , 0.25
+cod,cob,1, 1.0 , 0.25
+cod,cob,1, 1.0 , 0.25
+whole veal,whole year,2, 1.0 , 0.2
+bear,year,1, 1.0 , 0.25
+whole veal,whole year,2, 1.0 , 0.2
+bear,year,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+cod,cob,1, 1.0 , 0.25
+broccoli,broccoli>,1, 1.125 , 0.125
+meat,<eat,1, 1.0 , 0.25
+broccoli,broccoli>,1, 1.125 , 0.125
+broccoli,broccoli's,2, 1.25 , 0.25
+desserts,dessert,1, 0.875 , 0.125
+honeydew,honey+dew,1, 1.125 , 0.125
+honeydew,honey+dew,1, 1.125 , 0.125
+fruit salad,<fruit salad>,2, 1.18181818182 , 0.181818181818
+apple juice,applesauce,3, 0.909090909091 , 0.272727272727
+meat,<eat,1, 1.0 , 0.25
+cod,cob,1, 1.0 , 0.25
+apple juice,applesauce,3, 0.909090909091 , 0.272727272727
+fish,dish,1, 1.0 , 0.25
+broccoli,broccoli>,1, 1.125 , 0.125
+bear,year,1, 1.0 , 0.25
+gums,guys,1, 1.0 , 0.25
+cod,cob,1, 1.0 , 0.25
+gums,guys,1, 1.0 , 0.25
+honeydew,honey+dew,1, 1.125 , 0.125
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cone,ice cream now>,3, 1.0 , 0.214285714286
+ice cream cones,ice cream now>,4, 0.933333333333 , 0.266666666667
+tea,ten,1, 1.0 , 0.25
+meat,<eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+pork,fork,1, 1.0 , 0.25
+pork,fork,1, 1.0 , 0.25
+malt,salt,1, 1.0 , 0.25
+malt,salt,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+potato bread,potato salad,3, 1.0 , 0.25
+potato bread,potato salad,3, 1.0 , 0.25
+apple juice,applesauce,3, 0.909090909091 , 0.272727272727
+root,room,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+gums,guys,1, 1.0 , 0.25
+owl,ow,1, 0.666666666667 , 0.25
+pate,plate,1, 1.25 , 0.25
+apple juice,applesauce,3, 0.909090909091 , 0.272727272727
+whey,hey,1, 0.75 , 0.25
+kelp,help,1, 1.0 , 0.25
+table,table>,1, 1.2 , 0.2
+whole potatoes,*mot: potatoes,4, 1.0 , 0.285714285714
+white potatoes,*mot: potatoes,4, 1.0 , 0.285714285714
+tomatoes,potatoes,2, 1.0 , 0.25
+red potatoes,(.) potatoes,3, 1.0 , 0.25
+raw potatoes,(.) potatoes,3, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+peaches,teacher,2, 1.0 , 0.285714285714
+fan,van,1, 1.0 , 0.25
+fan,van,1, 1.0 , 0.25
+fan,van,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+table salt,table talk,2, 1.0 , 0.2
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+cress,dress,1, 1.0 , 0.2
+mince,mine,1, 0.8 , 0.2
+fat,fast,1, 1.33333333333 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+veal,meal,1, 1.0 , 0.25
+meat,meal,1, 1.0 , 0.25
+seal,meal,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+ice cream sandwich,spice ham sandwich,5, 1.0 , 0.277777777778
+apples,apple,1, 0.833333333333 , 0.166666666667
+yam,ham,1, 1.0 , 0.25
+sliced ham,spice ham,2, 0.9 , 0.2
+spices,spice,1, 0.833333333333 , 0.166666666667
+malt,mat,1, 0.75 , 0.25
+oat,mat,1, 1.0 , 0.25
+meat,mat,1, 0.75 , 0.25
+fat,mat,1, 1.0 , 0.25
+pears,years,1, 1.0 , 0.2
+horse,house,1, 1.0 , 0.2
+bear,year,1, 1.0 , 0.25
+bear,year,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+malt,mat,1, 0.75 , 0.25
+oat,mat,1, 1.0 , 0.25
+meat,mat,1, 0.75 , 0.25
+fat,mat,1, 1.0 , 0.25
+eggs,egg,1, 0.75 , 0.25
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+potatoes,(po)tatoes,2, 1.25 , 0.25
+feet,feed,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+milk shakes,milk shake,1, 0.909090909091 , 0.0909090909091
+tart,part,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,oats,1, 1.33333333333 , 0.25
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+oats,<oats,1, 1.25 , 0.25
+oat,oats,1, 1.33333333333 , 0.25
+honey,honey>,1, 1.2 , 0.2
+fan,man,1, 1.0 , 0.25
+glazed chicken,fried chicken,4, 0.928571428571 , 0.285714285714
+boiled chicken,fried chicken,3, 0.928571428571 , 0.214285714286
+canned chicken,fried chicken,4, 0.928571428571 , 0.285714285714
+stewed chicken,fried chicken,4, 0.928571428571 , 0.285714285714
+feet chicken,fried chicken,3, 1.08333333333 , 0.25
+frozen chicken,fried chicken,3, 0.928571428571 , 0.214285714286
+broiler chicken,fried chicken,4, 0.866666666667 , 0.266666666667
+pan-fried chicken,fried chicken,4, 0.764705882353 , 0.235294117647
+braised chicken,fried chicken,3, 0.866666666667 , 0.2
+cooked chicken,fried chicken,4, 0.928571428571 , 0.285714285714
+breaded chicken,fried chicken,4, 0.866666666667 , 0.266666666667
+fried chicken kfc,fried chicken,4, 0.764705882353 , 0.235294117647
+ground chicken,fried chicken,4, 0.928571428571 , 0.285714285714
+grilled chicken,fried chicken,3, 0.866666666667 , 0.2
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+whale,while,1, 1.0 , 0.2
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+cake,case,1, 1.0 , 0.25
+collards,dollars,2, 0.875 , 0.25
+eel,e@l,1, 1.0 , 0.25
+eel,e@l,1, 1.0 , 0.25
+pears,years,1, 1.0 , 0.2
+peppers,pampers,2, 1.0 , 0.285714285714
+candies,panties,2, 1.0 , 0.285714285714
+candies,panties,2, 1.0 , 0.285714285714
+candies,panties,2, 1.0 , 0.285714285714
+candies,panties,2, 1.0 , 0.285714285714
+candies,panties,2, 1.0 , 0.285714285714
+candies,panties,2, 1.0 , 0.285714285714
+horse,house,1, 1.0 , 0.2
+pork,work,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+boiled potatoes,good potatoes,4, 0.866666666667 , 0.266666666667
+cooked potatoes,good potatoes,3, 0.866666666667 , 0.2
+whole potatoes,good potatoes,4, 0.928571428571 , 0.285714285714
+red potatoes,good potatoes,3, 1.08333333333 , 0.25
+baked potatoes,good potatoes,4, 0.928571428571 , 0.285714285714
+tomatoes,potatoes,2, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+tomatoes,potatoes,2, 1.0 , 0.25
+mince,mine,1, 0.8 , 0.2
+candies,ladies,2, 0.857142857143 , 0.285714285714
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+strawberries,strawberry,3, 0.833333333333 , 0.25
+chicken soup,chicken look,3, 1.0 , 0.25
+pate,plate,1, 1.25 , 0.25
+cardoon,pardon,2, 0.857142857143 , 0.285714285714
+scup,cup,1, 0.75 , 0.25
+peanuts,plants,2, 0.857142857143 , 0.285714285714
+pork,work,1, 1.0 , 0.25
+collards,dollars,2, 0.875 , 0.25
+honey,money,1, 1.0 , 0.2
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+seasoned,season,2, 0.75 , 0.25
+swanson,season,2, 0.857142857143 , 0.285714285714
+rice,nice,1, 1.0 , 0.25
+lard,land,1, 1.0 , 0.25
+round,sound,1, 1.0 , 0.2
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+tart,part,1, 1.0 , 0.25
+mush,mushy,1, 1.25 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+chicken,chicken's,2, 1.28571428571 , 0.285714285714
+limes,times,1, 1.0 , 0.2
+bear,year,1, 1.0 , 0.25
+sucker fish,sucker fast,2, 1.0 , 0.181818181818
+fat,fast,1, 1.33333333333 , 0.25
+peaches,teachers,2, 1.14285714286 , 0.285714285714
+peaches,teachers,2, 1.14285714286 , 0.285714285714
+lard,land,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+bear,ear,1, 0.75 , 0.25
+duck,yuck,1, 1.0 , 0.25
+bear,year,1, 1.0 , 0.25
+cardoon,cartoons,2, 1.14285714286 , 0.285714285714
+cardoon,cartoons,2, 1.14285714286 , 0.285714285714
+pink,pins,1, 1.0 , 0.25
+pink,pin,1, 0.75 , 0.25
+pie,pin,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+pink,pin,1, 0.75 , 0.25
+pie,pin,1, 1.0 , 0.25
+cardoon,cartoon,1, 1.0 , 0.142857142857
+topping,popping,1, 1.0 , 0.142857142857
+toppings,popping,2, 0.875 , 0.25
+topping,popping,1, 1.0 , 0.142857142857
+toppings,popping,2, 0.875 , 0.25
+pink,pin,1, 0.75 , 0.25
+pie,pin,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+cardoon,cartoon,1, 1.0 , 0.142857142857
+pink,pin,1, 0.75 , 0.25
+pie,pin,1, 1.0 , 0.25
+pink,pin,1, 0.75 , 0.25
+pie,pin,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+biscuit,biscuits,1, 1.14285714286 , 0.142857142857
+hard,hand,1, 1.0 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+cod,cold,1, 1.33333333333 , 0.25
+horse,house,1, 1.0 , 0.2
+cloves,closes,1, 1.0 , 0.166666666667
+mince,mine,1, 0.8 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+topping,hopping,1, 1.0 , 0.142857142857
+toppings,hopping,2, 0.875 , 0.25
+fan,man,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+shoots,shoot,1, 0.833333333333 , 0.166666666667
+fan,man,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+topping,hopping,1, 1.0 , 0.142857142857
+toppings,hopping,2, 0.875 , 0.25
+topping,hopping,1, 1.0 , 0.142857142857
+toppings,hopping,2, 0.875 , 0.25
+fan,man,1, 1.0 , 0.25
+topping,hopping,1, 1.0 , 0.142857142857
+toppings,hopping,2, 0.875 , 0.25
+fan,fun,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+dove,love,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+table,table>,1, 1.2 , 0.2
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+meat,seat,1, 1.0 , 0.25
+seal,seat,1, 1.0 , 0.25
+peaches,teacher,2, 1.0 , 0.285714285714
+meat,seat,1, 1.0 , 0.25
+meat,seat,1, 1.0 , 0.25
+seal,seat,1, 1.0 , 0.25
+seal,seat,1, 1.0 , 0.25
+peaches,teacher,2, 1.0 , 0.285714285714
+peaches,teacher,2, 1.0 , 0.285714285714
+peaches,teacher,2, 1.0 , 0.285714285714
+peaches,teacher,2, 1.0 , 0.285714285714
+peaches,teachers,2, 1.14285714286 , 0.285714285714
+peaches,teacher,2, 1.0 , 0.285714285714
+whey,hey,1, 0.75 , 0.25
+hard,hand,1, 1.0 , 0.25
+dates,rates,1, 1.0 , 0.2
+eggs,<eggs,1, 1.25 , 0.25
+cake,cake>,1, 1.25 , 0.25
+pate,rate,1, 1.0 , 0.25
+pate,rate,1, 1.0 , 0.25
+pate,rate,1, 1.0 , 0.25
+pate,rate,1, 1.0 , 0.25
+egg,eggs,1, 1.33333333333 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fast food,cat food,2, 0.888888888889 , 0.222222222222
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+root,foot,1, 1.0 , 0.25
+oranges,orange,1, 0.857142857143 , 0.142857142857
+shake,share,1, 1.0 , 0.2
+shark,share,1, 1.0 , 0.2
+fast food,cat food,2, 0.888888888889 , 0.222222222222
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+oats,cats,1, 1.0 , 0.25
+cake,wake,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+beef,bee,1, 0.75 , 0.25
+beer,bee,1, 0.75 , 0.25
+gums,gum,1, 0.75 , 0.25
+gums,gum,1, 0.75 , 0.25
+gums,gum,1, 0.75 , 0.25
+gums,gum,1, 0.75 , 0.25
+potherb,mother,2, 0.857142857143 , 0.285714285714
+bear,year,1, 1.0 , 0.25
+mother's,mother,2, 0.75 , 0.25
+pate,plate,1, 1.25 , 0.25
+whey,hey,1, 0.75 , 0.25
+collards,dollars,2, 0.875 , 0.25
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+oats,boats,1, 1.25 , 0.25
+root,foot,1, 1.0 , 0.25
+apples,apple,1, 0.833333333333 , 0.166666666667
+potatoes,tomatoes,2, 1.0 , 0.25
+red tomatoes,xxx tomatoes,3, 1.0 , 0.25
+raw tomatoes,xxx tomatoes,3, 1.0 , 0.25
+white potatoes,*chi: potatoes,4, 1.0 , 0.285714285714
+plain potatoes,*chi: potatoes,4, 1.0 , 0.285714285714
+tomatoes,potatoes,2, 1.0 , 0.25
+potatoes,tomatoes,2, 1.0 , 0.25
+tomatoes,tomato,2, 0.75 , 0.25
+potatoes,tomatoes,2, 1.0 , 0.25
+vegetables,vegetable,1, 0.9 , 0.1
+plain croutons,*bri: croutons,4, 1.0 , 0.285714285714
+glazed doughnuts,like doughnuts,4, 0.875 , 0.25
+plain doughnuts,like doughnuts,4, 0.933333333333 , 0.266666666667
+peach,beach,1, 1.0 , 0.2
+whole seeds,whole week,3, 0.909090909091 , 0.272727272727
+whole beef,whole week,2, 1.0 , 0.2
+peach,beach,1, 1.0 , 0.2
+bear,year,1, 1.0 , 0.25
+mince,mine,1, 0.8 , 0.2
+corn,corn>,1, 1.25 , 0.25
+plain croutons,*fat: croutons,4, 1.0 , 0.285714285714
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+carp,car,1, 0.75 , 0.25
+rice crackers,fire crackers>,3, 1.07692307692 , 0.230769230769
+rice crackers,fire crackers,2, 1.0 , 0.153846153846
+crackers,crackers>,1, 1.125 , 0.125
+flavored crackers,fire crackers,5, 0.764705882353 , 0.294117647059
+milk crackers,fire crackers,3, 1.0 , 0.230769230769
+rye crackers,fire crackers,3, 1.08333333333 , 0.25
+fat-free crackers,fire crackers,5, 0.764705882353 , 0.294117647059
+wafers crackers,fire crackers,4, 0.866666666667 , 0.266666666667
+cream crackers,fire crackers,4, 0.928571428571 , 0.285714285714
+cod,god,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+gums,guys,1, 1.0 , 0.25
+rice crackers,fire crackers,2, 1.0 , 0.153846153846
+flavored crackers,fire crackers,5, 0.764705882353 , 0.294117647059
+milk crackers,fire crackers,3, 1.0 , 0.230769230769
+rye crackers,fire crackers,3, 1.08333333333 , 0.25
+fat-free crackers,fire crackers,5, 0.764705882353 , 0.294117647059
+wafers crackers,fire crackers,4, 0.866666666667 , 0.266666666667
+cream crackers,fire crackers,4, 0.928571428571 , 0.285714285714
+rice crackers,fire crackers>,3, 1.07692307692 , 0.230769230769
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+crackers,crackers>,1, 1.125 , 0.125
+pace,place,1, 1.25 , 0.25
+gums,guys,1, 1.0 , 0.25
+romano,roman,1, 0.833333333333 , 0.166666666667
+candies,candle,2, 0.857142857143 , 0.285714285714
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+beets,beers,1, 1.0 , 0.2
+beets,beers,1, 1.0 , 0.2
+beer,beers,1, 1.25 , 0.25
+beer,beers,1, 1.25 , 0.25
+pace,place,1, 1.25 , 0.25
+ham,hat,1, 1.0 , 0.25
+oat,hat,1, 1.0 , 0.25
+fat,hat,1, 1.0 , 0.25
+oats,hats,1, 1.0 , 0.25
+ham,hat,1, 1.0 , 0.25
+oat,hat,1, 1.0 , 0.25
+fat,hat,1, 1.0 , 0.25
+pea,tea,1, 1.0 , 0.25
+cookies,cooking,2, 1.0 , 0.285714285714
+pea,tea,1, 1.0 , 0.25
+cookies,cooking,2, 1.0 , 0.285714285714
+ham,hat,1, 1.0 , 0.25
+oat,hat,1, 1.0 , 0.25
+fat,hat,1, 1.0 , 0.25
+ham,hat,1, 1.0 , 0.25
+oat,hat,1, 1.0 , 0.25
+fat,hat,1, 1.0 , 0.25
+bread,break,1, 1.0 , 0.2
+snapper,supper,2, 0.857142857143 , 0.285714285714
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+horse,horses,1, 1.2 , 0.2
+carp,cars,1, 1.0 , 0.25
+carp,cars,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+hard,yard,1, 1.0 , 0.25
+lard,yard,1, 1.0 , 0.25
+denny's,bunny's,2, 1.0 , 0.285714285714
+snapper,supper,2, 0.857142857143 , 0.285714285714
+snapper,supper,2, 0.857142857143 , 0.285714285714
+radishes,dishes,2, 0.75 , 0.25
+radishes,dishes,2, 0.75 , 0.25
+duck,dunk,1, 1.0 , 0.25
+feet,feed,1, 1.0 , 0.25
+scup,soup,1, 1.0 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+scup,soup,1, 1.0 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+tuna fish,tuna+fish,1, 1.0 , 0.111111111111
+pate,plate,1, 1.25 , 0.25
+pate,plate,1, 1.25 , 0.25
+desserts,dessert>,1, 1.0 , 0.125
+dessert,dessert>,1, 1.14285714286 , 0.142857142857
+rice,ice,1, 0.75 , 0.25
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+cone ice cream,*mot: ice cream,4, 1.07142857143 , 0.285714285714
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+cone ice cream,*chi: ice cream,4, 1.07142857143 , 0.285714285714
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+cod,cob,1, 1.0 , 0.25
+round,ground,1, 1.2 , 0.2
+dock,deck,1, 1.0 , 0.25
+duck,deck,1, 1.0 , 0.25
+duck,dunk,1, 1.0 , 0.25
+duck,dunk,1, 1.0 , 0.25
+duck,dunk,1, 1.0 , 0.25
+duck,dunk,1, 1.0 , 0.25
+duck,dunk,1, 1.0 , 0.25
+duck,dunk,1, 1.0 , 0.25
+bear,year,1, 1.0 , 0.25
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+cone ice cream,(.) ice cream,4, 0.928571428571 , 0.285714285714
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+cone ice cream,*mot: ice cream,4, 1.07142857143 , 0.285714285714
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cone,cream cone,4, 0.714285714286 , 0.285714285714
+ice cream cones,ice cream cone,1, 0.933333333333 , 0.0666666666667
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+pork,fork,1, 1.0 , 0.25
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+potherb,others,2, 0.857142857143 , 0.285714285714
+mother's,others,2, 0.75 , 0.25
+tea,ta,1, 0.666666666667 , 0.25
+yam,yay,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+pork,fork,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+malt,salt,1, 1.0 , 0.25
+pork,park,1, 1.0 , 0.25
+fan,fun,1, 1.0 , 0.25
+whale,while,1, 1.0 , 0.2
+tea,ten,1, 1.0 , 0.25
+tea,ten,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+meat,eat,1, 0.75 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fat,eat,1, 1.0 , 0.25
+fat,eat,1, 1.0 , 0.25
+scup,cup,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+oat,fat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fan,fat,1, 1.0 , 0.25
+oat,fat,1, 1.0 , 0.25
+fan,fat,1, 1.0 , 0.25
+oat,fat,1, 1.0 , 0.25
+fan,fat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+oat,fat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fan,fat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,fat,1, 1.0 , 0.25
+fan,fat,1, 1.0 , 0.25
+onions,onions>,1, 1.16666666667 , 0.166666666667
+root,room,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+boar,boat,1, 1.0 , 0.25
+oat,boat,1, 1.33333333333 , 0.25
+tamales,tables,2, 0.857142857143 , 0.285714285714
+table,tables,1, 1.2 , 0.2
+goat,boat,1, 1.0 , 0.25
+boar,boat,1, 1.0 , 0.25
+oat,boat,1, 1.33333333333 , 0.25
+goat,boat,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+lobster,lobsters,1, 1.14285714286 , 0.142857142857
+lobster,lobsters,1, 1.14285714286 , 0.142857142857
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+masa,mama,1, 1.0 , 0.25
+dove,move,1, 1.0 , 0.25
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+praline,praise,2, 0.857142857143 , 0.285714285714
+lard,lord,1, 1.0 , 0.25
+ginger,singer,1, 1.0 , 0.166666666667
+catsup,catsup>,1, 1.16666666667 , 0.166666666667
+cake,cakes,1, 1.25 , 0.25
+fan,wan,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+kelp,help,1, 1.0 , 0.25
+water sauce,tartar sauce,3, 1.09090909091 , 0.272727272727
+pasta sauce,tartar sauce,3, 1.09090909091 , 0.272727272727
+juice,juice>,1, 1.2 , 0.2
+mince,mine,1, 0.8 , 0.2
+scup,cup,1, 0.75 , 0.25
+scup,cup,1, 0.75 , 0.25
+potatoes,tomatoes,2, 1.0 , 0.25
+honey,money,1, 1.0 , 0.2
+honey,money,1, 1.0 , 0.2
+honey,money,1, 1.0 , 0.2
+fan,man,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+honey,money,1, 1.0 , 0.2
+beef,beep,1, 1.0 , 0.25
+beef,beep,1, 1.0 , 0.25
+beer,beep,1, 1.0 , 0.25
+beer,beep,1, 1.0 , 0.25
+beef,beep,1, 1.0 , 0.25
+beef,beep,1, 1.0 , 0.25
+beer,beep,1, 1.0 , 0.25
+beer,beep,1, 1.0 , 0.25
+horse,house,1, 1.0 , 0.2
+water sauce,tartar sauce,3, 1.09090909091 , 0.272727272727
+pasta sauce,tartar sauce,3, 1.09090909091 , 0.272727272727
+frozen bread,brown bread,3, 0.916666666667 , 0.25
+stock,stick,1, 1.0 , 0.2
+limes,times,1, 1.0 , 0.2
+smelt,smell,1, 1.0 , 0.2
+white rolls,white ones,3, 0.909090909091 , 0.272727272727
+grapes,grapes>,1, 1.16666666667 , 0.166666666667
+smelt,smell,1, 1.0 , 0.2
+oats,boats,1, 1.25 , 0.25
+liver,river,1, 1.0 , 0.2
+raisins,raining,2, 1.0 , 0.285714285714
+pork,park,1, 1.0 , 0.25
+pork,park,1, 1.0 , 0.25
+raisins,raining,2, 1.0 , 0.285714285714
+raisins,raining,2, 1.0 , 0.285714285714
+fan,man,1, 1.0 , 0.25
+oats,coats,1, 1.25 , 0.25
+oat,coat,1, 1.33333333333 , 0.25
+goat,coat,1, 1.0 , 0.25
+potherb,mother,2, 0.857142857143 , 0.285714285714
+mother's,mother,2, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+scup,cup,1, 0.75 , 0.25
+spot,pot,1, 0.75 , 0.25
+pout,pot,1, 0.75 , 0.25
+poi,pot,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream bar,ice cream bar[!],3, 1.23076923077 , 0.230769230769
+ice creams,ice cream,1, 0.9 , 0.1
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cone,ice cream too>,3, 1.0 , 0.214285714286
+ice cream cones,ice cream too>,4, 0.933333333333 , 0.266666666667
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+cream,cream>,1, 1.2 , 0.2
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream>,1, 1.0 , 0.1
+cone ice cream,<some ice cream>,4, 1.14285714286 , 0.285714285714
+ice cream,ice cream>,1, 1.11111111111 , 0.111111111111
+rice,ice,1, 0.75 , 0.25
+ice cream bar,ice cream (.),3, 1.0 , 0.230769230769
+ice creams,ice cream,1, 0.9 , 0.1
+ice cream cone,ice cream (.),4, 0.928571428571 , 0.285714285714
+ice creams,ice cream,1, 0.9 , 0.1
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+horse,house,1, 1.0 , 0.2
+cod,cold,1, 1.33333333333 , 0.25
+flowers,flower,1, 0.857142857143 , 0.142857142857
+fan,man,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+oat,coat,1, 1.33333333333 , 0.25
+goat,coat,1, 1.0 , 0.25
+oats,coats,1, 1.25 , 0.25
+feet,feet>,1, 1.25 , 0.25
+abalone,baloney,2, 1.0 , 0.285714285714
+rice,ice,1, 0.75 , 0.25
+ice creams,ice cream,1, 0.9 , 0.1
+duck,yuck,1, 1.0 , 0.25
+bacon,bacon],1, 1.2 , 0.2
+mace,face,1, 1.0 , 0.25
+pace,face,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+potherb,mother,2, 0.857142857143 , 0.285714285714
+mother's,mother,2, 0.75 , 0.25
+potherb,mother,2, 0.857142857143 , 0.285714285714
+mother's,mother,2, 0.75 , 0.25
+pate,ate,1, 0.75 , 0.25
+sage,cage,1, 1.0 , 0.25
+cake,cage,1, 1.0 , 0.25
+stock,stick,1, 1.0 , 0.2
+eel,eee,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+masa,mask,1, 1.0 , 0.25
+masa,mask,1, 1.0 , 0.25
+masa,mask,1, 1.0 , 0.25
+dip,tip,1, 1.0 , 0.25
+pace,place,1, 1.25 , 0.25
+duck,yuck,1, 1.0 , 0.25
+lobster,monster,2, 1.0 , 0.285714285714
+muenster,monster,2, 0.875 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+kelp,help,1, 1.0 , 0.25
+kelp,help,1, 1.0 , 0.25
+kelp,help,1, 1.0 , 0.25
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+pate,ate,1, 0.75 , 0.25
+pate,ate,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+malt,salt,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+peaches,teacher,2, 1.0 , 0.285714285714
+horse,house,1, 1.0 , 0.2
+horse,house,1, 1.0 , 0.2
+mullet,bullet,1, 1.0 , 0.166666666667
+gums,guns,1, 1.0 , 0.25
+shoots,shoot>,1, 1.0 , 0.166666666667
+eggs,egg,1, 0.75 , 0.25
+roe,rope,1, 1.33333333333 , 0.25
+pate,ate,1, 0.75 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+whey,hey,1, 0.75 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+tart,part,1, 1.0 , 0.25
+dock,duck,1, 1.0 , 0.25
+liver,live,1, 0.8 , 0.2
+sage,cage,1, 1.0 , 0.25
+cake,cage,1, 1.0 , 0.25
+maitake,mistake,2, 1.0 , 0.285714285714
+liver,live>,1, 1.0 , 0.2
+horse,house,1, 1.0 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+dates,gates,1, 1.0 , 0.2
+hard,yard,1, 1.0 , 0.25
+lard,yard,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+fan,man,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+hard,yard,1, 1.0 , 0.25
+lard,yard,1, 1.0 , 0.25
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+snack,smack,1, 1.0 , 0.2
+gums,gum,1, 0.75 , 0.25
+gums,gum,1, 0.75 , 0.25
+gums,gum,1, 0.75 , 0.25
+owl,ow,1, 0.666666666667 , 0.25
+capers,papers,1, 1.0 , 0.166666666667
+peppers,papers,2, 0.857142857143 , 0.285714285714
+green turtle,pretend turtle,3, 1.16666666667 , 0.25
+round,ground,1, 1.2 , 0.2
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtle>,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+meatballs,meatball],1, 1.0 , 0.111111111111
+pears,years,1, 1.0 , 0.2
+pears,years,1, 1.0 , 0.2
+pears,years,1, 1.0 , 0.2
+pears,years,1, 1.0 , 0.2
+oil,o@l,1, 1.0 , 0.25
+owl,o@l,1, 1.0 , 0.25
+oil,o@l,1, 1.0 , 0.25
+owl,o@l,1, 1.0 , 0.25
+whale,while,1, 1.0 , 0.2
+peaches,teacher,2, 1.0 , 0.285714285714
+rice,ice,1, 0.75 , 0.25
+cod,cold,1, 1.33333333333 , 0.25
+scup,cup,1, 0.75 , 0.25
+horse,house,1, 1.0 , 0.2
+rice,ice,1, 0.75 , 0.25
+peaches,teacher,2, 1.0 , 0.285714285714
+bass,pass,1, 1.0 , 0.25
+capers,papers,1, 1.0 , 0.166666666667
+root,room,1, 1.0 , 0.25
+peppers,papers,2, 0.857142857143 , 0.285714285714
+oat,coat,1, 1.33333333333 , 0.25
+goat,coat,1, 1.0 , 0.25
+nance,dance,1, 1.0 , 0.2
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+desserts,dessert,1, 0.875 , 0.125
+spaghettios,spaghetti,2, 0.818181818182 , 0.181818181818
+honey,money,1, 1.0 , 0.2
+peaches,teacher,2, 1.0 , 0.285714285714
+peaches,teacher,2, 1.0 , 0.285714285714
+fan,man,1, 1.0 , 0.25
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+oat,cat,1, 1.0 , 0.25
+fat,cat,1, 1.0 , 0.25
+carp,care,1, 1.0 , 0.25
+cake,care,1, 1.0 , 0.25
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+pink,sink,1, 1.0 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+scup,cup,1, 0.75 , 0.25
+scup,cup,1, 0.75 , 0.25
+pink,sink,1, 1.0 , 0.25
+owl,bowl,1, 1.33333333333 , 0.25
+masa,mama,1, 1.0 , 0.25
+papad,papa,1, 0.8 , 0.2
+napa,papa,1, 1.0 , 0.25
+carp,car,1, 0.75 , 0.25
+carp,car,1, 0.75 , 0.25
+limes,lines,1, 1.0 , 0.2
+sheanut,peanut,2, 0.857142857143 , 0.285714285714
+peanuts,peanut,1, 0.857142857143 , 0.142857142857
+chunky peanut butter,*chi: peanut butter,5, 0.95 , 0.25
+sheanut,peanut,2, 0.857142857143 , 0.285714285714
+peanuts,peanut,1, 0.857142857143 , 0.142857142857
+smooth peanut butter,*mot: peanut butter,3, 0.95 , 0.15
+peanuts,pean(ut),2, 1.14285714286 , 0.285714285714
+peanut butter,pean(ut) butter,2, 1.15384615385 , 0.153846153846
+moose,goose,1, 1.0 , 0.2
+cooked pizza,good pizza,3, 0.833333333333 , 0.25
+yam,yum,1, 1.0 , 0.25
+pears,ears,1, 0.8 , 0.2
+pears,ears,1, 0.8 , 0.2
+pork,work,1, 1.0 , 0.25
+dove,move,1, 1.0 , 0.25
+dove,move,1, 1.0 , 0.25
+rice crackers,firecrackers,3, 0.923076923077 , 0.230769230769
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+fat,eat,1, 1.0 , 0.25
+duck,yuck,1, 1.0 , 0.25
+desserts,dessert,1, 0.875 , 0.125
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+bread,break,1, 1.0 , 0.2
+ginger,finger,1, 1.0 , 0.166666666667
+saltines crackers,<saltine crackers,2, 1.0 , 0.117647058824
+milk,milk>,1, 1.25 , 0.25
+saltines,<saltine,2, 1.0 , 0.25
+root,room,1, 1.0 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+hard,hand,1, 1.0 , 0.25
+hard,hand,1, 1.0 , 0.25
+pink,ink,1, 0.75 , 0.25
+hard,hand,1, 1.0 , 0.25
+pork,work,1, 1.0 , 0.25
+yam,ham,1, 1.0 , 0.25
+carp,car,1, 0.75 , 0.25
+carp,car,1, 0.75 , 0.25
+fat,fan,1, 1.0 , 0.25
+flan,fan,1, 0.75 , 0.25
+carp,car,1, 0.75 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+fat,eat,1, 1.0 , 0.25
+oat,eat,1, 1.0 , 0.25
+meat,eat,1, 0.75 , 0.25
+snapper,supper,2, 0.857142857143 , 0.285714285714
+fat,eat,1, 1.0 , 0.25
+papayas,papa's,2, 0.857142857143 , 0.285714285714
