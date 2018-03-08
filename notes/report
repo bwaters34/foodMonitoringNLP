@@ -1,4 +1,5 @@
 #New System (Vowels and 's')
+#System No 1
 k = 0.3
 precision: 0.138245033113
 recall 0.695833333333
@@ -47,7 +48,7 @@ recall 0.6625
 # false neg: 81
 total runtime: 6016.33600497
 
-k = 0.0
+
 
 
 
@@ -55,6 +56,7 @@ k = 0.0
 
 
 #Old System
+#System No 2
 k = 0.3
 precision: 0.212598425197
 recall 0.675
@@ -106,3 +108,71 @@ total runtime: 5090.69223785
 
 
 
+#System with only 's'. 's' insertion and deletion with 0
+#System No: 3
+k = 0.30
+precision: 0.136150234742
+recall 0.725
+# true pos: 174
+# false pos: 1104
+# false neg: 66
+total runtime: 6224.51915097
+
+k = 0.25
+precision: 0.234463276836
+recall 0.691666666667
+# true pos: 166
+# false pos: 542
+# false neg: 74
+total runtime: 6469.36764407
+
+
+k = 0.20 
+precision: 0.335416666667
+recall 0.670833333333
+# true pos: 161
+# false pos: 319
+# false neg: 79
+total runtime: 6352.85474205
+
+
+k = 0.15
+precision: 0.429333333333
+recall 0.670833333333
+# true pos: 161
+# false pos: 214
+# false neg: 79
+total runtime: 5933.1177768
+
+k = 0.10
+precision: 0.460641399417
+recall 0.658333333333
+# true pos: 158
+# false pos: 185
+# false neg: 82
+total runtime: 6363.58425903
+
+k = 0.05
+precision: 0.464912280702
+recall 0.6625
+# true pos: 159
+# false pos: 183
+# false neg: 81
+total runtime: 6487.74274993
+
+k = 0.00
+precision: 0.519031141869
+recall 0.625
+# true pos: 150
+# false pos: 139
+# false neg: 90
+total runtime: 6396.54969192
+
+
+#After implementing Twitter_food_calorie_lexicon_All
+precision: 0.523333333333
+recall 0.654166666667
+# true pos: 157
+# false pos: 143
+# false neg: 83
+total runtime: 186.507198095

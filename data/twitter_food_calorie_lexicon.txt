@@ -1,0 +1,433 @@
+pizza	477.8	Fast Foods
+tea	16.84	Beverages
+coffee	34.4	Beverages
+ice cream	157.24	Dairy
+icecream	157.24	Dairy
+sour cream	67.24	Dairy
+chicken	488.12	Poultry
+cheese	176.64	Dairy
+cola	65.84	Beverages
+egg	147.76	Dairy
+ham	128.2	Meats
+tart	292.08	Sweets
+wine	76.52	Alcoholic Beverages
+beer	119.24	Alcoholic Beverages
+corn	168.72	Cereal Grains and Pasta
+rice	159.16	Cereal Grains and Pasta
+bacon	121.8	Meats
+soup	117.6	Soups
+milk	198.56	Dairy
+rib	383.84	Meats
+pea	65.36	Vegetables
+snack	132.88	Snacks
+sauce	62.12	Soups
+cereal	152.4	Breakfast Cereals
+banana	101.869	Fruits
+cookie	215.88	Sweets
+meat	194.08	Meats
+fish	230.68	Seafood
+fruit	91.36	Fruits
+chocolate	139.2	Sweets
+fast food	409.1666666666667	Fast Foods
+potatoes	128.72	Vegetables
+peanut	164.32	Nuts
+oat	187.84	Cereal Grains and Pasta
+beef	181.36	Meats
+chili	156.76	Soups
+vanilla	128.12	Spices and Herbs
+strawberry	109.6	Fruits
+butter	124.6	Dairy
+pumpkin	110.28	Vegetables
+hot dog	259.44	Fast Foods
+sausage	266.88	Meats
+ginger	51.32	Spices and Herbs
+pork	181.56	Meats
+chocolate covered	174.92	Sweets
+potato	128.72	Vegetables
+pasta	342.84	Cereal Grains and Pasta
+strawberries	109.6	Fruits
+crackers	55.88	Baked Products
+olive	30.16	Vegetables
+sweet potato	133.4	Vegetables
+garlic	66.64	Vegetables
+turkey	267.96	Poultry
+yogurt	105.24	Dairy
+juice	67.84	Beverages
+pickles	11.72	Vegetables
+cinnamon	146.6	Spices and Herbs
+pepper	26.92	Spices and Herbs
+vegetables	92.2	Vegetables
+salmon	149.64	Seafood
+pineapple	107.76	Fruits
+chicken noodle soup	111.12	Soups
+crab	108.44	Seafood
+lemonade	104.44	Beverages
+spinach	117.6	Vegetables
+pepperoni	320.92	Meats
+yam	143.8	Vegetables
+mozzarella	118.08	Dairy
+hamburger	380.44	Fast Foods
+oyster	107.64	Seafood
+orange juice	116.44	Beverages
+tomatoes	28.28	Vegetables
+coconut	133.04	Fruits
+ice cream sandwich	150.4	Dairy
+carrots	37.08	Vegetables
+tomato	28.28	Vegetables
+almond milk	64.48	Beverages
+wheat	205.04	Cereal Grains and Pasta
+cheddar	118.92	Dairy
+watermelon	83.36	Fruits
+ice cream cone	197.96	Dairy
+peppers	26.92	Vegetables
+vegetable	92.2	Vegetables
+parmesan	248.8	Dairy
+apples	95.84	Fruits
+peaches	101.92	Fruits
+chard	49.8	Vegetables
+lettuce	8.6	Vegetables
+peppermint	54.16	Spices and Herbs
+tomato soup	107.04	Soups
+kale	50.16	Vegetables
+mushroom	43.12	Vegetables
+potato salad	213.48	Vegetables
+squash	30.52	Vegetables
+chicken breast	178.0	Poultry
+ginger ale	94.48	Alcoholic Beverages
+green beans	34.08	Vegetables
+grapes	103.32	Fruits
+fruit salad	98.76	Fruits
+teriyaki	203.52	Sauces
+onions	46.76	Vegetables
+root	85.88	Vegetables
+cucumber	9.64	Vegetables
+pretzels	148.92	Snacks
+oats	187.84	Breakfast Cereals
+brisket	223.28	Meats
+carrot	37.08	Vegetables
+hash brown	200.52	Fast Foods
+zucchini	95.8	Vegetables
+beans	109.52	Legumes
+ancho	169.2	Spices and Herbs
+gravy	146.44	Sauces
+strawberry banana	182.68	Fruits
+ramen noodle	628.32	Cereal Grains and Pasta
+oranges	76.36	Fruits
+goose	377.84	Poultry
+broccoli	39.56	Vegetables
+turkey bacon	215.64	Meats
+potato soup	193.24	Soups
+eggplant	136.48	Vegetables
+peas	65.36	Vegetables
+granola	237.84	Breakfast Cereals
+honey mustard	122.24	Sauces
+onion rings	430.28	Fast Foods
+pears	92.12	Fruits
+mustard	7.04	Spices and Herbs
+sesame	52	Spices and Herbs
+pate	108.52	Poultry
+ravioli	287.12	Cereal Grains and Pasta
+lima	148.8	Legumes
+black bean	121.68	Legumes
+almond butter	179.2	Nuts
+shoulder	287.96	Meats
+veal	401.64	Meats
+almonds	161.32	Nuts
+hazelnut	136.88	Nuts
+jalapeno	14.12	Vegetables
+goat	114.08	Meats
+sprite	172.92	Beverages
+coconut milk	83.52	Beverages
+grapefruit	64.6	Fruits
+walnut	194.16	Nuts
+vinegar	5.76	Sauces
+root beer	102.08	Beverages
+avocado	165.96	Vegetables
+wasabi	130.76	Spices and Herbs
+rosemary	1	Spices and Herbs
+almond	161.32	Nuts
+buttermilk	115.52	Dairy
+salad dressing	91.0	Sauces
+plum	91.76	Fruits
+olives	30.16	Vegetables
+ice cream bar	186.16	Dairy
+yolk	247.92	Eggs
+cider	139.48	Beverages
+cream soda	112.76	Beverages
+red bull	64.4375	Beverages
+nance	31.0	Fruits
+lemon juice	3.68	Beverages
+chocolate syrup	84.76	Sweets
+scotch	144.8	Alcoholic Beverages
+chorizo	204.4	Meats
+cauliflower	23.291666666666668	Vegetables
+cocoa butter	373.3333333333333	Fats and Oils
+applesauce	82.24	Fruits
+red wine	77.64	Alcoholic Beverages
+sunflower	167.66666666666666	Fats and Oils
+barbecue	137.95833333333334	Meats
+cabbage	20.92	Vegetables
+sheep	127.66666666666667	Meats
+coconut water	76.56	Fruits
+blueberries	133.16	Fruits
+chicken rice	190.08	Cereal Grains and Pasta
+pastrami	179.04347826086956	Meats
+basil	104.96	Spices and Herbs
+ricotta	108.28	Dairy
+taro	95.84	Vegetables
+raspberries	99.56	Fruits
+apple juice	121.96	Fruits
+feta	96.88	Dairy
+romano	173.64	Dairy
+lemons	78.44	Fruits
+mace	5.333333333333333	Spices and Herbs
+cheese sauce	107.04	Dairy
+vegetable soup	104.12	Soups
+celery	15.32	Vegetables
+avocados	165.96	Vegetables
+energy drink	83.96	Beverages
+mangos	126.2	Fruits
+edamame	118.84	Vegetables
+salami	125.64	Meats
+chicken noodle	100.04	Soups
+provolone	106.28	Dairy
+raisins	122.36	Fruits
+mayonnaise	131.16	Fats and Oils
+spices	71.36	Spices and Herbs
+ranch dressing	174.56	Sauces
+colby	102.32	Dairy
+edam	145.72	Dairy
+coconut cream	306.56	Fruits
+asparagus	26.84	Vegetables
+papaya	163.56	Fruits
+brussels sprouts	40.08	Vegetables
+eggnog	167.92	Dairy
+spaghetti sauce	70.68	Sauces
+okra	40.88	Vegetables
+pimento	65.44	Dairy
+cherries	94.08	Fruits
+canadian bacon	97.0	Meats
+monterey	215.52	Dairy
+walnuts	194.16	Nuts
+cranberries	118.92	Fruits
+tenderloin	200.72	Meats
+bologna	124.32	Meats
+morel	41.3	Vegetables
+soft serve	126.68	Dairy
+loin	193.52	Meats
+pork tenderloin	175.96	Meats
+clam chowder	203.92	Soups
+potato wedges	228.4	Vegetables
+baby food	64.4	Baby Foods
+bacon grease	254.0	Fats and Oils
+plantains	182.2	Fruits
+balsamic	71.04	Sauces
+gouda	115.6	Dairy
+chicken liver	196.88	Meats
+parsley	44.44	Spices and Herbs
+cheese food	72.76	Dairy
+cream of wheat	236.28	Breakfast Cereals
+chicken broth	18.36	Soups
+whey	131.0	Dairy
+serrano	48.16	Vegetables
+cereals	152.4	Breakfast Cereals
+nestle	222.6	Sweets
+italian dressing	117.12	Sauces
+quail	107.1	Poultry
+limeade	115.36	Beverages
+saffron	160.04	Spices and Herbs
+turkey sausage	259.84	Meats
+pineapple juice	123.24	Fruits
+thyme	4	Spices and Herbs
+sardine	142.4	Seafood
+sauerkraut	11.32	Vegetables
+grape soda	145.625	Beverages
+kashi	184.28	Breakfast Cereals
+oxtail	99.33333333333333	Soups
+chicken patty	209.56	Poultry
+lime juice	32.28	Fruits
+chives	73.2	Vegetables
+kellogg	161.36	Breakfast Cereals
+fennel	164.52	Spices and Herbs
+potato pancakes	204.84	Vegetables
+limes	49.36	Fruits
+pecans	183.56	Nuts
+kidney	118.6	Meats
+shallots	99.84	Vegetables
+milk shake	419.04	Dairy
+gruyere	193.0	Dairy
+oregano	31.28	Spices and Herbs
+gazpacho	85.95	Soups
+blackberries	93.8	Fruits
+rib eye	352.48	Meats
+split pea soup	161.76	Soups
+lentils	154.2	Legumes
+figs	104.16	Fruits
+broccoli cheese soup	218.6	Soups
+beets	43.52	Vegetables
+rhubarb	109.52	Fruits
+paprika	2.0	Spices and Herbs
+tarragon	207.24	Spices and Herbs
+pork beef	117.79166666666667	Meats
+tomato bisque	181.32	Soups
+pine nuts	201.84	Nuts
+carissa	12.0	Fruits
+portabella	321.52	Vegetables
+chicken roll	315.6666666666667	Poultry
+beef stroganoff	236.48	Meats
+vanilla extract	38.36363636363637	Spices and Herbs
+mustard seed	5	Spices and Herbs
+french onion soup	236.6	Soups
+cranberry sauce	84.12	Fruits
+watercress	98.04166666666667	Vegetables
+chili powder	2.0	Spices and Herbs
+dulce de leche	189.88	Sweets
+plums	91.76	Fruits
+herring	142.36	Seafood
+arugula	210.2	Vegetables
+cheese spread	73.8	Dairy
+kielbasa	150.8	Meats
+orange peel	77	Fruits
+russet	126.44	Vegetables
+mustard greens	30.24	Vegetables
+poultry	102.28	Poultry
+daiquiri	215.88	Alcoholic Beverages
+radishes	27.16	Vegetables
+scrapple	157.27272727272728	Meats
+mung	178.8	Vegetables
+ground turkey	173.28	Poultry
+grapefruit juice	111.76	Fruits
+turkey breast	84.0	Poultry
+muenster	166.6	Dairy
+sesame seeds	118.12	Nuts
+gerber	56.6	Baby Foods
+pina colada	227.08	Alcoholic Beverages
+hot chili	83.44	Vegetables
+vanilla flavor	242.24	Spices and Herbs
+corn flakes	174.68	Breakfast Cereals
+minestrone soup	137.36	Soups
+broccoli cheese	233.32	Soups
+poppy seed	5	Spices and Herbs
+carrot juice	96.4	Vegetables
+nutmeg	5	Spices and Herbs
+honeydew	66.28	Fruits
+vegetable oil	120.36	Fats and Oils
+savoy	111.26666666666667	Vegetables
+head cheese	87.45454545454545	Dairy
+pork sausage	176.16	Meats
+beef noodle	148.0	Soups
+chicken mushroom	441.72	Soups
+cream of mushroom	132.72	Soups
+bratwurst	242.4	Meats
+cream of mushroom soup	214.12	Soups
+collards	44.84	Vegetables
+fontina	172.96	Dairy
+grape juice	151.96	Fruits
+turmeric	5	Spices and Herbs
+lima beans	101.84	Legumes
+gizzard	136.14285714285714	Poultry
+turkey ham	74.12	Poultry
+pomegranates	107.52	Fruits
+clementines	77.26086956521739	Fruits
+beef noodle soup	102.0	Soups
+turnip greens	39.6	Vegetables
+fruit cocktail	89.72	Fruits
+shiitake	95.08	Vegetables
+chia seeds	79.84	Nuts
+pork chicken	185.5625	Meats
+fava	144.6	Legumes
+ice cream cookie sandwich	504.11764705882354	Dairy
+breaded	158.32	Spices and Herbs
+turnips	32.24	Vegetables
+melons	47.32	Fruits
+nectarines	65.68	Fruits
+kelp	25.46153846153846	Vegetables
+beef pork	204.32	Meats
+worcestershire	6.76	Sauces
+cheshire	112.6	Dairy
+leeks	84.64	Vegetables
+cream of chicken	127.6	Soups
+succotash	132.14285714285714	Legumes
+capers	2.08	Vegetables
+cloves	58.16	Spices and Herbs
+chocolate powder	135.28571428571428	Sweets
+ginger root	26.166666666666668	Vegetables
+pheasant	239.3	Poultry
+persimmons	87.35714285714286	Fruits
+peach mango	114.96	Beverages
+wakame	47.25	Vegetables
+parsnips	129.12	Vegetables
+margarine	86.88	Fats and Oils
+radicchio	19.227272727272727	Vegetables
+farina	175.24	Breakfast Cereals
+gourd	91.23529411764706	Vegetables
+flank	193.16666666666666	Meats
+cress	279.28	Vegetables
+durian	239.25	Fruits
+tangerines	70.92	Fruits
+grape leaves	68.43478260869566	Vegetables
+tomato juice	50.0	Vegetables
+chanterelle	36.77777777777778	Vegetables
+chicken vegetable	143.0	Soups
+creamy tomato soup	233.66666666666666	Soups
+artichokes	63.76	Vegetables
+beef broth	17.6	Soups
+cream of broccoli soup	165.68	Soups
+spearmint	76.0	Spices and Herbs
+butternuts	110.32	Nuts
+pumpkin pie spice	68.5	Spices and Herbs
+cardamom	18	Spices and Herbs
+chicken dumplings	202.76	Poultry
+cream of chicken soup	102.44	Soups
+chicken gumbo	123.28	Soups
+sofrito	89.54545454545455	Soups
+prunes	88.44	Vegetables
+jujube	141.0	Sweets
+macadamia nuts	214.76	Nuts
+pomegranate juice	130.88	Fruits
+shellie	101.25	Legumes
+beef sausage	198.24	Meats
+polish sausage	227.8	Meats
+jackfruit	100.75	Fruits
+cashew butter	182.44	Nuts
+new england clam chowder	193.28	Soups
+macaroni cheese	349.08	Cereal Grains and Pasta
+apricots	113.24	Fruits
+roselle	28.0	Fruits
+endive	13.545454545454545	Vegetables
+corn pudding	194.0	Cereal Grains and Pasta
+hearts of palm	32.12	Vegetables
+nopales	46.5	Vegetables
+mortadella	143.16666666666666	Meats
+hoisin	56.72	Sauces
+soybean	143.76	Legumes
+top sirloin	368.16	Meats
+russian dressing	115.0	Sauces
+onion powder	0.8888888888888888	Spices and Herbs
+spirulina	100.72727272727273	Vegetables
+chestnuts	82.4	Nuts
+orange drink	107.92	Beverages
+tahitian	138.6086956521739	Vegetables
+soybeans	143.76	Legumes
+escarole	64.57142857142857	Vegetables
+vegetable beef soup	123.36	Soups
+thousand island dressing	160.08	Sauces
+roquefort	103.93333333333334	Dairy
+thousand island	152.76	Sauces
+dark meat	252.92	Meats
+tequila sunrise	147.33333333333334	Alcoholic Beverages
+whiskey sour	125.5	Alcoholic Beverages
+vegetable beef	106.12	Soups
+cheese product	44.0	Dairy
+shortening	247.52	Fats and Oils
+cocoa mix	119.08	Sweets
+honey mustard dressing	171.04	Sauces
+lemon peel	67.8	Fruits
+chicken corn chowder	204.72	Soups
+chicken noodles soup	111.12	Soups
+slimfast	168.64	Beverages
+peas carrots	56.64	Vegetables
+oat bran	150.6	Breakfast Cereals
+chicken rice soup	82.07692307692308	Soups
+green leaf	65.27777777777777	Vegetables
+mixed nuts	193.16	Nuts

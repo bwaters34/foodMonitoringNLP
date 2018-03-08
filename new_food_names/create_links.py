@@ -163,11 +163,33 @@ class create_links:
 		with  open(base_add+'/'+fileName, 'rb') as f:
 			return pickle.load(f)
 
+	def food_names_Yelena_Mejova(self):
+		food_words = {}
+		file_loc = 	"../data/twitter_food_calorie_lexicon.txt"
+		f = file(file_loc, "r")
+		for line in f:
+			line =  line.split('\t')
+			food_words[line[0]] = None
+		pprint(food_words)
+		self.save(food_words, "all_food_words_by_Yelena_Mejova.pickle")
+		
+	def food_names_Yelena_Mejova_for_sure_food(self):
+		food_words = {}
+		file_loc = 	"../data/twitter_food_calorie_lexicon.txt"
+		f = file(file_loc, "r")
+		for line in f:
+			line =  line.split('\t')
+			food_words[line[0]] = None
+		pprint(food_words)
+		self.save(food_words, "for_sure_food_words_by_Yelena_Mejova.pickle")
 
 if __name__ == '__main__':
 	cl = create_links("../data/sr28asc/")
-	cl.create_food_group()
-	cl.create_language_desc()
-	cl.create_lanuage_of_food()
-	cl.create_food_desc()
-	cl.create_extra_food_names(threshold=0.6)
+	# cl.create_food_group()
+	# cl.create_language_desc()
+	# cl.create_lanuage_of_food()
+	# cl.create_food_desc()
+	# cl.create_extra_food_names(threshold=0.6)
+	# print cl.retrieve("extra_food_names.pickle")
+	# cl.food_names_Yelena_Mejova()
+	cl.food_names_Yelena_Mejova_for_sure_food()

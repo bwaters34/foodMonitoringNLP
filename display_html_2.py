@@ -45,9 +45,15 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	foodNames = load("./data/food_desc_files/food_names.pickle")
 	extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
 	print('adding extra names')
+	# Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
+	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+	print ("Added names by Yelena Mejova")
+
 	print(len(foodNames))
 	print(len(extraFoodNames))
-	foodNames.update(extraFoodNames)
+	# foodNames.update(extraFoodNames)
+	# foodNames.update(Yelena_Mejova_food_names)
+
 	print(len(foodNames))
 	foodGroup = load("./data/food_desc_files/food_group.pickle")
 	langua = load("./data/food_desc_files/langua.pickle")
@@ -188,10 +194,11 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							temp2 = ''.join([x if x.isalpha() else ' ' for x in word])
 							# print "check -> ", word, food_data[1], temp, temp2, k1
 							
-							distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+							distance = 1
 							k2 = distance/float(max(len(word), len(food_data))) 
 
-							if k2 <0.30:
+							if k2 <0.00:
 							#k2 = 3
 							#if distance <= k2:
 
@@ -204,7 +211,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 								found_at_least = 1
 								# if word == 'tomatoes':
-								# 	print word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
+								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
