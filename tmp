@@ -1,248 +1,614 @@
-xxx .	E ,	0.5822 0.9648	xxx .
-Adam !	^ ,	0.9814 0.9903	Adam !
-sit on the end stool .	V P D N N ,	0.9660 0.9394 0.9987 0.9431 0.9958 0.9977	sit on the end stool .
-xxx .	E ,	0.5822 0.9648	xxx .
-yeah .	! ,	0.9986 0.9970	yeah .
-alright that's enough Adam .	! L A ^ ,	0.9367 0.9930 0.7207 0.9816 0.9953	alright that's enough Adam .
-what ?	O ,	0.9171 0.9924	what ?
-yours is over there in the big bowl .	O V P R P D A N ,	0.9774 0.9997 0.6266 0.8724 0.9974 0.9997 0.9552 0.9994 0.9990	yours is over there in the big bowl .
-no !	! ,	0.9847 0.9990	no !
-you wanna sit here ?	O V V R ,	0.9968 0.9984 0.9963 0.9748 0.9987	you wanna sit here ?
-xxx .	E ,	0.5822 0.9648	xxx .
-this is mine .	O V O ,	0.9526 0.9982 0.9499 0.9972	this is mine .
-oh we can eat Kim ?	! O V V ^ ,	0.9955 0.9970 0.9997 0.9959 0.9995 0.9946	oh we can eat Kim ?
-she's not eating ?	L R V ,	0.9930 0.9972 0.9930 0.9966	she's not eating ?
-Adam there's more in that one over there .	^ L R P D $ P R ,	0.9910 0.6201 0.5046 0.9976 0.8952 0.8887 0.9690 0.8677 0.9985	Adam there's more in that one over there .
-that's why I gave it to you .	L R O V O P O ,	0.9924 0.9773 0.9994 1.0000 0.9923 0.9947 0.9986 0.9995	that's why I gave it to you .
-( be)cause there's more in it .	, P L A P O ,	0.9736 0.9933 0.7321 0.5823 0.9969 0.9937 0.9989	(be)cause there's more in it .
-this is mine .	O V O ,	0.9526 0.9982 0.9499 0.9972	this is mine .
-okay you can have that one .	! O V V D $ ,	0.9469 0.9984 0.9997 0.9999 0.7852 0.8614 0.9974	okay you can have that one .
-Kim got lots_of carrots and peas in the xxx .	^ V N N & N P D N ,	0.9987 0.9891 0.8144 0.9942 0.9973 0.9193 0.9991 0.9903 0.9107 0.9981	Kim got lots_of carrots and peas in the xxx .
-0 [= ! hums with his mouth full ] .	$ E , V P D N A , ,	0.9816 0.9666 0.9877 0.9362 0.9990 0.9996 0.9976 0.9701 0.9935 0.9959	0 [=! hums with his mouth full] .
-and I think Adam gonna eat them .	& O V ^ V V O ,	0.9994 0.9992 0.9998 0.9986 0.9888 0.9998 0.9751 0.9984	and I think Adam gonna eat them .
-xxx you gonna eat them all up .	E O V V O D T ,	0.4267 0.9975 0.9996 0.9998 0.9315 0.7888 0.3864 0.9980	xxx you gonna eat them all up .
-uhoh .	! ,	0.9933 0.9962	uhoh .
-0 [= ! humming with mouth full ] .	$ E , V P N A , ,	0.9816 0.9666 0.9906 0.9983 0.9945 0.9891 0.9748 0.9931 0.9969	0 [=! humming with mouth full] .
-here she comes .	R O V ,	0.8813 0.9993 0.9960 0.9978	here she comes .
-Adam's not gonna eat her beef stew .	Z R V V D N N ,	0.5542 0.9908 0.9976 0.9996 0.9466 0.9973 0.9976 0.9987	Adam's not gonna eat her beef stew .
-see the carrots in there ?	V D N P R ,	0.9815 0.9996 0.9898 0.9956 0.8592 0.9977	see the carrots in there ?
-see this ?	V D ,	0.9786 0.5521 0.9945	see this ?
-here let's get xxx [ > ] .	R L V E , E , ,	0.9547 0.9916 0.9989 0.7240 0.6588 0.6043 0.7541 0.9962	here let's get xxx [>] .
-< I have my xxx carrots > [ < ] .	~ O V D N N E E ~ , ,	0.9526 0.9988 1.0000 0.9683 0.6161 0.9951 0.5184 0.5350 0.7815 0.9822 0.9964	<I have my xxx carrots> [<] .
-we don't want Adam eating xxx .	O V V ^ V N ,	0.9968 1.0000 0.9999 0.9984 0.9946 0.4278 0.9982	we don't want Adam eating xxx .
-see if we can < find some more of > [ > ] the carrots in here .	V P O V ~ V D A P E E E , D N P R ,	0.9695 0.9988 0.9991 0.9995 0.8126 0.9971 0.9505 0.8776 0.9936 0.3188 0.5345 0.9532 0.8048 0.9987 0.9913 0.9906 0.9476 0.9990	see if we can <find some more of> [>] the carrots in here .
-< 0 [= ! mummbling with mouth full] > [ < ] .	~ $ E , V P N A E E ~ , ,	0.9288 0.9882 0.9603 0.9944 0.9997 0.9937 0.9891 0.9564 0.4991 0.5350 0.7713 0.9737 0.9952	<0 [=! mummbling with mouth full]> [<] .
-you good Adam ?	O A ^ ,	0.9771 0.9980 0.9917 0.9960	you good Adam ?
-yeah .	! ,	0.9986 0.9970	yeah .
-here you go here's some of the carrots right on top !	R O V R D P D N R P N ,	0.9346 0.9996 0.9976 0.6293 0.7764 0.9979 0.9991 0.9865 0.5178 0.9875 0.5594 0.9986	here you go here's some of the carrots right on top !
-here's one right here .	L $ R R ,	0.8547 0.9312 0.6844 0.9853 0.9987	here's one right here .
-yeah !	! ,	0.9994 0.9967	yeah !
-xxx away .	E R ,	0.5755 0.9118 0.9980	xxx away .
-(.) go away daddy .	^ V R N ,	0.3470 0.9856 0.9896 0.9767 0.9985	(.) go away daddy .
-Adam that's not nice .	^ L R A ,	0.9912 0.9966 0.9994 0.9908 0.9987	Adam that's not nice .
-& = hums .	& , N ,	0.9893 0.8613 0.5904 0.9985	&=hums .
-I have a carrot haha [ x 2 ] & = singing .	O V D N ! , E $ , & , V ,	0.9983 0.9999 0.9976 0.9963 0.9765 0.9727 0.4544 0.6731 0.9916 0.9942 0.9091 0.9952 0.9987	I have a carrot haha [x 2] &=singing .
-is this a good xxx ?	V O D A E ,	0.9983 0.7067 0.9832 0.9927 0.4523 0.9641	is this a good xxx ?
-yes .	! ,	0.9961 0.9972	yes .
-< in two more days > [ > ] in two more days you'll [ ! ] be going away and then you won't see me .	~ P $ A N E E E , P $ A N L , , , V V R & R O V V O ,	0.8939 0.9808 0.9572 0.9183 0.9976 0.6053 0.5345 0.9532 0.8374 0.9721 0.9645 0.9085 0.9936 0.9555 0.9628 0.9901 0.9786 0.9957 0.9955 0.9792 0.9972 0.9839 0.9985 0.9959 0.9997 0.9880 0.9959	<in two more days> [>] in two more days you'll [!] be going away and then you won't see me .
-xxx [ < ] .	E , ~ , ,	0.8981 0.6622 0.9720 0.9847 0.9962	xxx [<] .
-( be)cause you're going to see Grandma .	, P L V P V N ,	0.9736 0.9978 0.9864 0.9961 0.9865 0.9908 0.7061 0.9987	(be)cause you're going to see Grandma .
-xxx .	E ,	0.5822 0.9648	xxx .
-& = babbles .	& , N ,	0.9893 0.8796 0.7362 0.9992	&=babbles .
-you won't see me in two more days ( be)cause I'll be here and you'll be down at Grandma's house .	O V V O P $ A N , P L V R & L V R P Z N ,	0.9899 0.9952 0.9997 0.9895 0.9074 0.9645 0.9085 0.9986 0.9903 0.9818 0.9836 0.9992 0.9976 0.9981 0.9888 0.9998 0.6895 0.9981 0.6694 0.9419 0.9981	you won't see me in two more days (be)cause I'll be here and you'll be down at Grandma's house .
-won't you miss your dad ?	V O V D N ,	0.9914 0.9996 0.9996 0.9865 0.9971 0.9977	won't you miss your dad ?
-Adam you want some butter bread ?	^ O V D N N ,	0.9671 0.9983 0.9999 0.9933 0.9583 0.9990 0.9976	Adam you want some butter bread ?
-no .	! ,	0.9704 0.9989	no .
-thanks xxx .	N E ,	0.8580 0.4414 0.9721	thanks xxx .
-did you like playing those words yesterday with Cindy ?	V O V V D N N P ^ ,	0.9986 0.9973 0.7696 0.9991 0.9691 0.9901 0.8369 0.9992 0.9996 0.9955	did you like playing those words yesterday with Cindy ?
-yes .	! ,	0.9961 0.9972	yes .
-say sled !	V N ,	0.9111 0.7957 0.9990	say sled !
-sled .	N ,	0.8605 0.9985	sled .
-say right !	V ! ,	0.9711 0.6211 0.9987	say right !
-right !	! ,	0.8987 0.9985	right !
-good .	A ,	0.9670 0.9980	good .
-say witch !	V N ,	0.8855 0.9141 0.9988	say witch !
-witch !	N ,	0.9076 0.9986	witch !
-Mom xxx sit down .	N E V T ,	0.7517 0.4566 0.9886 0.8366 0.9981	Mom xxx sit down .
-well you sit down in here until everyone's finished eating .	! O V T P R P L V V ,	0.7410 0.9993 0.9995 0.7994 0.9687 0.9416 0.9974 0.6405 0.9783 0.9895 0.9980	well you sit down in here until everyone's finished eating .
-I wanna sit down on the porch & = whining !	O V V T P D N & , V ,	0.9976 0.9993 0.9990 0.9043 0.9967 0.9994 0.9954 0.9915 0.9120 0.9959 0.9989	I wanna sit down on the porch &=whining !
-how was your party < in school today > [ > ] ?	R V D N ~ P N N E E E , ,	0.9627 0.9989 0.9959 0.9970 0.5409 0.9862 0.9980 0.9973 0.5356 0.5345 0.9597 0.4989 0.9952	how was your party <in school today> [>] ?
-< there's no kids out > [ < ] there honey .	~ L D N P E E ~ , R N ,	0.9403 0.4997 0.9831 0.9989 0.8180 0.3891 0.5350 0.8293 0.9851 0.3856 0.6891 0.9974	<there's no kids out> [<] there honey .
-Adam ?	^ ,	0.9901 0.9951	Adam ?
-0 [= ! crying and whining ] .	$ E , V & V , ,	0.9816 0.9666 0.9904 0.9994 0.9981 0.9984 0.9968 0.9962	0 [=! crying and whining] .
-did you like your party in school ?	V O V D N P N ,	0.9986 0.9973 0.8484 0.9815 0.9979 0.9977 0.9969 0.9980	did you like your party in school ?
-Kim did you go to the party at Adam's school ?	^ V O V P D N P Z N ,	0.9986 0.9993 0.9986 0.9984 0.9984 0.9991 0.9966 0.9997 0.8858 0.9921 0.9980	Kim did you go to the party at Adam's school ?
-< Kim > [ > ] ?	~ ^ ^ , E , ,	0.9409 0.9977 0.3081 0.9707 0.5563 0.4947 0.9959	<Kim> [>] ?
-< let me > [ < ] see the salt and pepper .	~ V O E E ~ , V D N & N ,	0.9359 0.9987 0.9995 0.5269 0.5350 0.8293 0.9862 0.9962 0.9994 0.9061 0.9982 0.7949 0.9975	<let me> [<] see the salt and pepper .
-(..) can I go back out xxx I wanna go to xxx .	, V O V R P E O V V P V ,	0.3794 0.9985 0.9988 0.9994 0.9760 0.5713 0.4414 0.9947 0.9981 0.9987 0.9734 0.3872 0.9969	(..) can I go back out xxx I wanna go to xxx .
-sure you don't want any butter and bread Adam ?	A O V V D N & N ^ ,	0.6638 0.9978 1.0000 1.0000 0.9946 0.9883 0.9981 0.9786 0.9539 0.9955	sure you don't want any butter and bread Adam ?
-xxx yeah .	E ! ,	0.7848 0.9956 0.9975	xxx yeah .
-no no no (.) xxx .	! ! ! E E ,	0.6674 0.4752 0.4331 0.4408 0.9319 0.9527	no no no (.) xxx .
-0 [= ! mumbling sounds ] .	$ E , V V , ,	0.9816 0.9666 0.9904 0.9992 0.6902 0.9838 0.9959	0 [=! mumbling sounds] .
-you stay in the house .	O V P D N ,	0.9963 0.9955 0.9521 0.9993 0.9921 0.9986	you stay in the house .
-you stay in here .	O V P R ,	0.9963 0.9955 0.7478 0.8655 0.9987	you stay in here .
-& = whines .	& , V ,	0.9893 0.8613 0.6745 0.9978	&=whines .
-you want butter bread ?	O V N N ,	0.9980 0.9993 0.9576 0.9993 0.9981	you want butter bread ?
-you want some bread and butter ?	O V D N & N ,	0.9980 0.9999 0.9931 0.9902 0.9985 0.9713 0.9976	you want some bread and butter ?
-yeah & = whines .	! & , V ,	0.9932 0.9900 0.8694 0.5803 0.9977	yeah &=whines .
-eat some carrots on there I'll give you the bread and butter .	V D N P R L V O D N & N ,	0.9797 0.9938 0.9891 0.9970 0.7196 0.9804 0.9999 0.9978 0.9996 0.9950 0.9980 0.9857 0.9983	eat some carrots on there I'll give you the bread and butter .
-& = mumbling .	& , V ,	0.9893 0.8762 0.9925 0.9990	&=mumbling .
-0 [= ! mumbles and hums ] .	$ E , V & N , ,	0.9816 0.9666 0.9877 0.8278 0.9960 0.4809 0.9930 0.9962	0 [=! mumbles and hums] .
-Mom ?	N ,	0.8668 0.9977	Mom ?
-what ?	O ,	0.9171 0.9924	what ?
-there's your bread and butter right there .	L D N & N R R ,	0.7242 0.9880 0.9987 0.9979 0.9382 0.6876 0.9231 0.9981	there's your bread and butter right there .
-0 [= ! mumbling and singing ] .	$ E , V & V , ,	0.9816 0.9666 0.9904 0.9988 0.9982 0.9970 0.9968 0.9962	0 [=! mumbling and singing] .
-did you like the party at Adam's school (.) Kim ?	V O V D N P Z N G ^ ,	0.9986 0.9973 0.7106 0.9989 0.9966 0.9997 0.8821 0.9866 0.4184 0.9981 0.9961	did you like the party at Adam's school (.) Kim ?
-did you have fun ?	V O V N ,	0.9986 0.9993 0.9972 0.8835 0.9985	did you have fun ?
-did you tell Dad that I go t_t o go outside and play with you ?	V O V N P O V E P V R & V P O ,	0.9986 0.9985 0.9950 0.7802 0.9771 0.9992 0.9974 0.3248 0.7620 0.9905 0.9078 0.9959 0.9881 0.9991 0.9983 0.9996	did you tell Dad that I got_to go outside and play with you ?
-in your play area ?	P D N N ,	0.9852 0.9285 0.8521 0.9849 0.9978	in your play area ?
-< Daddy went out > [//] mommy went outside and played with me .	~ N V T G G N V R & V P O ,	0.9112 0.8063 0.9986 0.7991 0.2820 0.3032 0.7603 0.9975 0.7558 0.9968 0.9982 0.9998 0.9982 0.9991	<Daddy went out> [//] mommy went outside and played with me .
-< at school > [ > ] ?	~ P N E E E , ,	0.8931 0.9976 0.9917 0.6033 0.5345 0.9749 0.5753 0.9960	<at school> [>] ?
-< tell him what > [ < ] [//] tell him what we played .	~ V O O E E ~ , , V O O O V ,	0.9355 0.9978 0.9946 0.9807 0.5341 0.5350 0.8293 0.9815 0.2883 0.9981 0.9946 0.9461 0.9974 0.9979 0.9982	<tell him what> [<] [//] tell him what we played .
-I played bikes [ ? ] .	O V N , , , ,	0.9978 0.9978 0.9855 0.9919 0.9879 0.8880 0.9959	I played bikes [?] .
-no we didn't ride the bikes .	! O V V D N ,	0.8465 0.9942 0.9999 0.9993 0.9997 0.9972 0.9986	no we didn't ride the bikes .
-Jeanine said no .	^ V ! ,	0.9973 0.9926 0.9437 0.9991	Jeanine said no .
-what did we do ?	O V O V ,	0.9965 0.9965 0.9989 0.9980 0.9976	what did we do ?
-I played balloon .	O V N ,	0.9978 0.9964 0.9008 0.9982	I played balloon .
-we hit the balloon and we tried not to let it hit the ground .	O V D N & O V R P V O V D N ,	0.9953 0.9996 0.9992 0.8576 0.9973 0.9963 0.9984 0.9986 0.9951 0.9999 0.9968 0.9992 0.9996 0.9070 0.9989	we hit the balloon and we tried not to let it hit the ground .
-and two of them flew away .	& $ P O V R ,	0.9984 0.9767 0.9967 0.9581 0.9946 0.9744 0.9979	and two of them flew away .
-I < did too > [ > ] .	O ~ V R E E E , ,	0.9937 0.7999 0.9916 0.9611 0.4858 0.5345 0.9732 0.8062 0.9969	I <did too> [>] .
-yeah [ < ] !	! , ~ , ,	0.9951 0.9843 0.9720 0.9661 0.9970	yeah [<] !
-xxx .	E ,	0.5822 0.9648	xxx .
-yum .	! ,	0.9850 0.9969	yum .
-did you play too Kim played also ?	V O V R ^ V R ,	0.9986 0.9987 0.9975 0.9437 0.9972 0.9915 0.9970 0.9972	did you play too Kim played also ?
-bunny bunny bunny .	N N N ,	0.7239 0.9382 0.9956 0.9983	bunny bunny bunny .
-Kim hit the balloon and it went up in the air huh ?	^ V D N & O V T P D N ! ,	0.9978 0.9950 0.9992 0.8576 0.9982 0.9975 0.9997 0.9024 0.9967 0.9993 0.9917 0.8582 0.9975	Kim hit the balloon and it went up in the air huh ?
-was it fun Kim ?	V O A ^ ,	0.9989 0.8265 0.7206 0.9961 0.9963	was it fun Kim ?
-did you know today was the last day of school ?	V O V N V D A N P N ,	0.9986 0.9994 0.9980 0.9811 0.9960 0.9997 0.9953 0.9998 0.9983 0.9911 0.9980	did you know today was the last day of school ?
-yeah .	! ,	0.9986 0.9970	yeah .
-aren't you gonna miss all the kids ?	V O V V X D N ,	0.9744 0.9996 0.9996 0.9991 0.5218 0.9998 0.9826 0.9983	aren't you gonna miss all the kids ?
-you miss Jan ?	O V ^ ,	0.9982 0.9930 0.9998 0.9953	you miss Jan ?
-I miss Jan .	O V ^ ,	0.9984 0.9970 0.9998 0.9958	I miss Jan .
-you miss Jan ?	O V ^ ,	0.9982 0.9930 0.9998 0.9953	you miss Jan ?
-xxx ?	E ,	0.7103 0.9715	xxx ?
-cut pieces and + ...	N N & & ,	0.6702 0.9836 0.9978 0.4854 0.6223	cut pieces and +...
-did you tell Daddy we saw a movie today and you were in it ?	V O V N O V D N N & O V P O ,	0.9986 0.9985 0.9950 0.8184 0.9880 0.9997 0.9978 0.9982 0.9893 0.9952 0.9992 0.9989 0.9819 0.9927 0.9988	did you tell Daddy we saw a movie today and you were in it ?
-on the V_C_R ?	P D N ,	0.9931 0.9991 0.9434 0.9983	on the V_C_R ?
-& = humming .	& , V ,	0.9893 0.8752 0.9510 0.9984	&=humming .
-you were in a movie Adam ?	O V P D N ^ ,	0.9945 0.9990 0.9399 0.9971 0.9954 0.9908 0.9957	you were in a movie Adam ?
-what movie & = whining ?	O N & , V ,	0.7379 0.9967 0.9915 0.9113 0.9955 0.9986	what movie &=whining ?
-you didn't tell me that .	O V V O O ,	0.9970 1.0000 0.9999 0.9993 0.5495 0.9984	you didn't tell me that .
-was Adam in the movie ?	V ^ P D N ,	0.9894 0.9945 0.9792 0.9993 0.9978 0.9976	was Adam in the movie ?
-you didn't tell me [ ! ] that .	O V V O , , , O ,	0.9970 1.0000 0.9999 0.9990 0.9888 0.9901 0.9831 0.8153 0.9990	you didn't tell me [!] that .
-I'm not in < the movie > [ > ] .	L R P ~ D N E E E , ,	0.9981 0.9968 0.9714 0.8373 0.9992 0.9986 0.6126 0.5345 0.9577 0.7950 0.9964	I'm not in <the movie> [>] .
-< what was it a movie of > [ < ] ?	~ O V O D N P E E ~ , ,	0.9385 0.9939 0.9996 0.9810 0.9967 0.9995 0.9937 0.3188 0.5350 0.7680 0.9751 0.9934	<what was it a movie of> [<] ?
-they just videotaped the class .	O R V D N ,	0.9886 0.9996 0.9696 0.9992 0.9987 0.9981	they just videotaped the class .
-I'm not in the movie .	L R P D N ,	0.9981 0.9968 0.9964 0.9993 0.9993 0.9979	I'm not in the movie .
-Adam ?	^ ,	0.9901 0.9951	Adam ?
-0 [= ! sings in harsh growly tone ] .	$ E , V P A A N , ,	0.9816 0.9666 0.9905 0.9796 0.8090 0.9973 0.8756 0.9986 0.9944 0.9959	0 [=! sings in harsh growly tone] .
-they showed it today .	O V O N ,	0.9925 1.0000 0.9932 0.9641 0.9978	they showed it today .
-when did they tape it ?	R V O V O ,	0.8799 0.9959 0.6275 0.8014 0.9400 0.9987	when did they tape it ?
-I want to be in the movie !	O V P V P D N ,	0.9983 0.9999 0.9855 0.9995 0.9913 0.9991 0.9988 0.9989	I want to be in the movie !
-I don't know .	O V V ,	0.9976 1.0000 0.9986 0.9981	I don't know .
-Adam don't play with it eat it .	^ V V P O V O ,	0.9929 0.9996 0.9995 0.9988 0.9975 0.9992 0.9884 0.9990	Adam don't play with it eat it .
-< did they have > [/] did they have the reading time included ?	~ V O V E E V O V D V N V ,	0.9346 0.9969 0.9952 0.9989 0.2508 0.3916 0.9967 0.9952 0.9999 0.9990 0.4761 0.9829 0.9748 0.9989	<did they have> [/] did they have the reading time included ?
-0 [= ! babbles nonsense words ] .	$ E , V N N , ,	0.9816 0.9666 0.9917 0.6423 0.9274 0.9952 0.9928 0.9962	0 [=! babbles nonsense words] .
-I don't want this !	O V V O ,	0.9976 1.0000 1.0000 0.8220 0.9989	I don't want this !
-xxx .	E ,	0.5822 0.9648	xxx .
-you wanna pull xxx ?	O V V E ,	0.9968 0.9985 0.9619 0.4994 0.9764	you wanna pull xxx ?
-Daddy pull it for you .	N V O P O ,	0.8857 0.9917 0.9778 0.9992 0.9991 0.9994	Daddy pull it for you .
-you want me to break it half so you can have two pieces ?	O V O P V O R P O V V $ N ,	0.9980 1.0000 0.9983 0.9801 0.9996 0.9336 0.6284 0.8841 0.9996 0.9997 0.9989 0.9681 0.9946 0.9990	you want me to break it half so you can have two pieces ?
-no & = whining !	! & , V ,	0.6739 0.9865 0.8844 0.9914 0.9989	no &=whining !
-okay .	! ,	0.9741 0.9977	okay .
-nuke @d [ ? ] everybody on the xxx .	^ @ , , , N P D N ,	0.4045 0.9934 0.9509 0.9878 0.9291 0.9742 0.9989 0.9889 0.9107 0.9981	nuke@d [?] everybody on the xxx .
-everybody in the center [ ? ] .	N P D N , , , ,	0.9331 0.9988 0.9992 0.9811 0.9895 0.9820 0.9134 0.9962	everybody in the center [?] .
-what ?	O ,	0.9171 0.9924	what ?
-xxx .	E ,	0.5822 0.9648	xxx .
-< Adam please don't> [ > ] do that with your spoon .	~ ^ V V , E , V O P D N ,	0.9409 0.9958 0.9715 0.9975 0.9786 0.4438 0.7893 0.9991 0.8803 0.9988 0.9968 0.9978 0.9981	<Adam please don't> [>] do that with your spoon .
-xxx [ < ] .	E , ~ , ,	0.8981 0.6622 0.9720 0.9847 0.9962	xxx [<] .
-you can still chew it .	O V R V O ,	0.9969 0.9997 0.9948 0.9989 0.9838 0.9986	you can still chew it .
-it gives me a headache it's too loud .	O V O D N L R A ,	0.9960 1.0000 0.9959 0.9900 0.9925 0.9948 0.9987 0.9900 0.9988	it gives me a headache it's too loud .
-dada .	^ ,	0.6991 0.9944	dada .
-for me ?	P O ,	0.9989 0.9978 0.9982	for me ?
-a little piece for me ?	D A N P O ,	0.9956 0.9980 0.9949 0.9998 0.9982 0.9980	a little piece for me ?
-you < gonna > [//] wanna share ?	O ~ V G G V V ,	0.9896 0.4762 0.9881 0.2556 0.2683 0.9843 0.8939 0.9971	you <gonna> [//] wanna share ?
-oh thanks Kim .	! N ^ ,	0.9957 0.6481 0.9993 0.9954	oh thanks Kim .
-xxx .	E ,	0.5822 0.9648	xxx .
-oh !	! ,	0.9994 0.9921	oh !
-thank you .	V O ,	0.9631 0.9987 0.9995	thank you .
-a num @o num @o num @o num @o !	D G @ G @ G @ G @ ,	0.9362 0.4757 0.9956 0.4796 0.9950 0.5121 0.9950 0.5240 0.9950 0.9960	a num@o num@o num@o num@o !
-xxx .	E ,	0.5822 0.9648	xxx .
-everybody out of the circle .	N P P D N ,	0.8943 0.9639 0.9976 0.9988 0.9985 0.9984	everybody out of the circle .
-really ?	R ,	0.9969 0.9957	really ?
-I'm the xxx I'm the xxx .	L D N L D N ,	0.9885 0.9765 0.5600 0.9763 0.9780 0.8556 0.9982	I'm the xxx I'm the xxx .
-Adam ?	^ ,	0.9901 0.9951	Adam ?
-everybody out of the circle .	N P P D N ,	0.8943 0.9639 0.9976 0.9988 0.9985 0.9984	everybody out of the circle .
-are you finished eating ?	V O V V ,	0.9964 0.9996 0.9995 0.9636 0.9974	are you finished eating ?
-yeah xxx .	! E ,	0.9968 0.4532 0.9721	yeah xxx .
-Adam I what did you eat at your party ?	^ O O V O V P D N ,	0.9537 0.9858 0.9943 0.9993 0.9989 0.9984 0.9983 0.9944 0.9979 0.9976	Adam I what did you eat at your party ?
-I don't know .	O V V ,	0.9976 1.0000 0.9986 0.9981	I don't know .
-xxx .	E ,	0.5822 0.9648	xxx .
-a brownie .	D N ,	0.9860 0.9738 0.9987	a brownie .
-a brownie .	D N ,	0.9860 0.9738 0.9987	a brownie .
-thank you .	V O ,	0.9631 0.9987 0.9995	thank you .
-what else ?	O R ,	0.9757 0.8472 0.9976	what else ?
-potato chips (.) and coke .	N N G & N ,	0.9135 0.9876 0.2262 0.9984 0.9912 0.9982	potato chips (.) and coke .
-what did Mommy make ?	O V ^ V ,	0.9965 0.9890 0.5985 0.6755 0.9973	what did Mommy make ?
-Mommy ate a cookie and I ate a cookie .	N V D N & O V D N ,	0.4791 0.9923 0.9966 0.9939 0.9982 0.9991 0.9998 0.9962 0.9989 0.9985	Mommy ate a cookie and I ate a cookie .
-0 [= ! slurping sounds ] .	$ E , V V , ,	0.9816 0.9666 0.9900 0.9508 0.6365 0.9838 0.9959	0 [=! slurping sounds] .
-0 [= ! heavy hiss-like breathing ] .	$ E , A N V , ,	0.9816 0.9666 0.9906 0.9075 0.7806 0.7374 0.9945 0.9962	0 [=! heavy hiss-like breathing] .
-doodadoo @b & = humming .	^ @ & , V ,	0.2546 0.9797 0.9881 0.9099 0.9763 0.9978	doodadoo@b &=humming .
-how many more days ( un)til we see Grandma ?	R A A N , P O V N ,	0.9945 0.9556 0.7757 0.9984 0.9866 0.9971 0.9991 0.9954 0.7567 0.9979	how many more days (un)til we see Grandma ?
-three !	$ ,	0.8722 0.9970	three !
-nope wrong .	! A ,	0.9799 0.9589 0.9988	nope wrong .
-yeah .	! ,	0.9986 0.9970	yeah .
-< how many more > [//] how many more days [ > ] til we see Grandma ?	~ R A A , , R A A N , E , P O V N ,	0.8996 0.9946 0.8890 0.6997 0.2822 0.4168 0.9972 0.9130 0.8251 0.9988 0.9830 0.4438 0.7699 0.9434 0.9981 0.9968 0.5089 0.9983	<how many more> [//] how many more days [>] til we see Grandma ?
-yes [ > ] !	! , E , ,	0.9832 0.9846 0.3811 0.5510 0.9970	yes [>] !
-two [ < ] .	$ , ~ , ,	0.9627 0.9814 0.9720 0.9847 0.9962	two [<] .
-& aw you weren't supposed to tell Mom .	& ! O V A P V N ,	0.9914 0.8893 0.9900 0.9969 0.9165 0.9986 0.9905 0.8826 0.9987	&aw you weren't supposed to tell Mom .
-yesterday was three today is two .	N V $ N V $ ,	0.7774 0.9962 0.7617 0.9987 0.9981 0.9348 0.9974	yesterday was three today is two .
-tomorrow will be one more day .	N V V $ A N ,	0.9319 0.9948 0.9990 0.9116 0.9572 0.9990 0.9989	tomorrow will be one more day .
-how many more days Kim ?	R A A N ^ ,	0.9945 0.9556 0.7757 0.9955 0.9975 0.9946	how many more days Kim ?
-xxx three .	E $ ,	0.8704 0.8917 0.9973	xxx three .
-four five .	$ $ ,	0.7786 0.5509 0.9971	four five .
-one two .	$ $ ,	0.9496 0.9470 0.9973	one two .
-two [ > ] .	$ , E , ,	0.9627 0.9803 0.3811 0.7604 0.9962	two [>] .
-two [ < ] .	$ , ~ , ,	0.9627 0.9814 0.9720 0.9847 0.9962	two [<] .
-xxx .	E ,	0.5822 0.9648	xxx .
-Mommy can tell a fib .	N V V D N ,	0.4972 0.9974 0.9993 0.9883 0.8763 0.9972	Mommy can tell a fib .
-Mommy two days we're going to Grandma's .	N $ N L V P Z ,	0.4165 0.9721 0.9925 0.9278 0.9941 0.9686 0.5269 0.9973	Mommy two days we're going to Grandma's .
-no [/] no .	! , ! ,	0.6995 0.5953 0.8486 0.9991	no [/] no .
-you & g go away .	O & V V R ,	0.9938 0.9831 0.3324 0.9816 0.9971 0.9974	you &g go away .
-Mommy .	N ,	0.7911 0.9983	Mommy .
-say two days we're going Grandma's .	V $ N L V N ,	0.9521 0.9605 0.9925 0.9278 0.9718 0.4835 0.9986	say two days we're going Grandma's .
-two days we're going to Grandma's .	$ N L V P Z ,	0.9816 0.9899 0.9344 0.9931 0.9440 0.5067 0.9971	two days we're going to Grandma's .
-alright .	! ,	0.9793 0.9973	alright .
-two days we're going to & = sings +/ .	$ N L V P & , V , ,	0.9816 0.9899 0.9344 0.9931 0.8624 0.9870 0.8932 0.8804 0.3514 0.9960	two days we're going to &=sings +/.
-it's gonna be a long long long long ride .	L V V D A A A A N ,	0.9954 0.9929 0.9998 0.9675 0.9159 0.6680 0.6680 0.8520 0.9672 0.9989	it's gonna be a long long long long ride .
-0 [= ! driving sounds with tune ] .	$ E , V V P N , ,	0.9816 0.9666 0.9906 0.9948 0.9010 0.9986 0.8369 0.9924 0.9969	0 [=! driving sounds with tune] .
-xxx walk walk then drive around here xxx drive around here at all .	E V V R V R R E V R R P D ,	0.6903 0.8960 0.7928 0.9832 0.8749 0.6860 0.9878 0.6132 0.7088 0.6860 0.9918 0.9985 0.7829 0.9980	xxx walk walk then drive around here xxx drive around here at all .
-we're gonna drive around < you xxx everything > [ > ] .	L V V P ~ O V N E E E , ,	0.9568 0.9922 0.9769 0.3862 0.8408 0.9928 0.8504 0.9702 0.5696 0.5345 0.9597 0.6916 0.9952	we're gonna drive around <you xxx everything> [>] .
-xxx [ < ] .	E , ~ , ,	0.8981 0.6622 0.9720 0.9847 0.9962	xxx [<] .
-mm mm mm & = singing .	G G G & , V ,	0.3707 0.7576 0.5530 0.9862 0.9036 0.9952 0.9989	mm mm mm &=singing .
-I want go outside xxx .	O V V R E ,	0.9983 0.9998 0.9907 0.7248 0.4943 0.9527	I want go outside xxx .
-I was thinking of it today too .	O V V P O N R ,	0.9983 0.9999 0.9860 0.9943 0.9965 0.8826 0.9738 0.9972	I was thinking of it today too .
-no Adam you didn't finish .	! ^ O V V ,	0.5694 0.9218 0.9979 0.9999 0.9956 0.9975	no Adam you didn't finish .
-no !	! ,	0.9847 0.9990	no !
-Adam !	^ ,	0.9814 0.9903	Adam !
-no .	! ,	0.9704 0.9989	no .
-alright I'm going to give it to Kim .	! L V P V O P ^ ,	0.9736 0.9976 0.9951 0.9859 0.9999 0.9905 0.9898 0.9996 0.9967	alright I'm going to give it to Kim .
-he should either have his socks off or his sneakers on .	O V D V D N P & D N P ,	0.9944 0.9999 0.3999 0.9934 0.9997 0.9844 0.4997 0.9899 0.9982 0.9851 0.9792 0.9954	he should either have his socks off or his sneakers on .
-xxx .	E ,	0.5822 0.9648	xxx .
-I'll eat it honey .	L V O N ,	0.9858 0.9998 0.8886 0.7666 0.9985	I'll eat it honey .
-xxx .	E ,	0.5822 0.9648	xxx .
-yep alright well you don't have_to skitch @f your bread in it just put it on the table if you don't want it Kim .	! ! ! O V V ^ @ D N P O R V O P D N P O V V O ^ ,	0.9927 0.9575 0.6412 0.9994 0.9999 0.9996 0.6163 0.9958 0.9410 0.9995 0.9980 0.9976 0.9995 0.9984 0.9720 0.9766 0.9993 0.9909 0.9997 0.9997 1.0000 1.0000 0.9877 0.9977 0.9942	yep alright well you don't have_to skitch@f your bread in it just put it on the table if you don't want it Kim .
-I have my own xxx .	O V D A N ,	0.9983 1.0000 0.9993 0.6077 0.4608 0.9978	I have my own xxx .
-your own what ?	D A O ,	0.9639 0.6975 0.9592 0.9940	your own what ?
-my own xxx .	D A N ,	0.9972 0.7908 0.6909 0.9983	my own xxx .
-well see [///] what bike is that for ?	! V , O N V O P ,	0.6526 0.9202 0.2833 0.7290 0.9939 0.9989 0.9200 0.9814 0.9966	well see [///] what bike is that for ?
-not his .	R D ,	0.9535 0.7323 0.9946	not his .
-Adam that doesn't belong to you .	^ O V V P O ,	0.9798 0.4702 0.9989 0.9995 0.9943 0.9988 0.9995	Adam that doesn't belong to you .
-xxx .	E ,	0.5822 0.9648	xxx .
-< bring it out > [//] no bring it outside right now Adam someone could looking for it and crying ( be)cause they can't find it .	~ V O T G G D V O R R R ^ N V V P O & V , P O V V O ,	0.9347 0.9998 0.9846 0.8566 0.2820 0.2876 0.6519 0.9860 0.9881 0.5333 0.9580 0.9907 0.9952 0.9559 0.9983 0.9983 0.9993 0.9985 0.9945 0.9982 0.9961 0.9978 0.9960 0.9999 0.9999 0.9745 0.9971	<bring it out> [//] no bring it outside right now Adam someone could looking for it and crying (be)cause they can't find it .
-xxx .	E ,	0.5822 0.9648	xxx .
-Adam if you don't finish your dinner (.) you don't get anything else to eat tonight .	^ P O V V D N P O V V N R P V N ,	0.9906 0.9980 0.9997 1.0000 0.9999 0.9931 0.9931 0.3215 0.9991 1.0000 0.9999 0.9868 0.9424 0.9960 0.9962 0.6028 0.9982	Adam if you don't finish your dinner (.) you don't get anything else to eat tonight .
-I don't want any of those things .	O V V D P D N ,	0.9976 1.0000 1.0000 0.9056 0.9975 0.9809 0.9989 0.9986	I don't want any of those things .
-xxx like it .	E P O ,	0.6469 0.7550 0.9980 0.9990	xxx like it .
-xxx .	E ,	0.5822 0.9648	xxx .
-I have my chicken Spices .	O V D N N ,	0.9983 1.0000 0.9982 0.9704 0.9968 0.9983	I have my chicken Spices.
+609
+got
+good
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('bubble_gum.n.01.bubble_gum') bubble gum)
+(Lemma('citrus.n.01.citrus') citrus)
+(Lemma('taffy.n.01.taffy') taffy)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('nutriment.n.01.nourishment') nourishment)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('nutriment.n.01.sustenance') sustenance)
+(Lemma('bird.n.02.bird') birds)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('vegetable.n.01.vegetable') vegetable)
+(Lemma('nutriment.n.01.sustenance') sustenance)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('tea.n.01.tea') tea)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('strawberry.n.01.strawberry') strawberries)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('salad.n.01.salad') salad)
+(Lemma('greens.n.01.greens') greens)
+(Lemma('tomato.n.01.tomato') tomato)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('pear.n.01.pear') pear)
+(Lemma('melon.n.01.melon') melon)
+(Lemma('bartlett.n.03.bartlett_pear') Bartlett pear)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('pear.n.01.pear') pear)
+(Lemma('orange.n.01.orange') orange)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('avocado.n.01.avocado') avocados)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('avocado.n.01.avocado') avocados)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('avocado.n.01.avocado') avocado)
+(Lemma('eggplant.n.01.eggplant') egg plant)
+(Lemma('avocado.n.01.avocado') Avocados)
+(Lemma('food.n.01.nutrient') nutrients)
+(Lemma('vitamin.n.01.vitamin') vitamins)
+(Lemma('vitamin_c.n.01.vitamin_C') C)
+(Lemma('vitamin_e.n.01.vitamin_E') vitamin E)
+(Lemma('b-complex_vitamin.n.01.B_vitamin') B vitamins)
+(Lemma('vitamin_b1.n.01.thiamin') thiamin)
+(Lemma('vitamin_b2.n.01.riboflavin') riboflavin)
+(Lemma('avocado.n.01.avocado') avocados)
+(Lemma('diet.n.01.diet') diets)
+(Lemma('avocado.n.01.avocado') avocados)
+(Lemma('sage.n.02.sage') sage)
+(Lemma('bourbon.n.02.bourbon') Bourbon)
+(Lemma('whiskey.n.01.whiskey') whiskey)
+(Lemma('bread_dough.n.01.bread_dough') bread dough)
+(Lemma('corn_syrup.n.01.corn_syrup') corn syrup)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('beverage.n.01.beverage') beverage)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('food.n.01.food') foods)
+(Lemma('soft_drink.n.01.soft_drink') soft drinks)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('currant.n.01.currant') currants)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('concoction.n.01.mixture') mixture)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('loaf_of_bread.n.01.loaf') loaf)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('loaf_of_bread.n.01.loaf') loaf)
+(Lemma('culture_medium.n.01.medium') medium)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('food.n.01.food') foods)
+(Lemma('rutabaga.n.01.rutabaga') rutabaga)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('salt.n.02.salt') salt)
+(Lemma('vitamin.n.01.vitamin') vitamin)
+(Lemma('diet.n.01.diet') diet)
+(Lemma('food.n.01.food') food)
+(Lemma('beef.n.02.beef') beef)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('porterhouse.n.01.porterhouse') Porterhouse)
+(Lemma('sirloin.n.01.sirloin') sirloin)
+(Lemma('steak.n.01.steak') steak)
+(Lemma('sweet_orange.n.01.sweet_orange') sweet oranges)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('grape.n.01.grape') grapes)
+(Lemma('grape.n.01.grape') grape)
+(Lemma('vegetable.n.01.vegetable') vegetable)
+(Lemma('vegetable.n.01.vegetable') vegetables)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('food.n.01.food') food)
+(Lemma('sauce.n.01.sauce') sauces)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('blueberry_pie.n.01.blueberry_pie') blueberry pie)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('food.n.01.food') food)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('food.n.01.food') food)
+(Lemma('biscuit.n.01.biscuit') biscuits)
+(Lemma('cookie.n.01.cookie') cookies)
+(Lemma('candy.n.01.candy') candies)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('meat.n.01.meat') meat)
+(Lemma('brandy.n.01.brandy') brandy)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('flour.n.01.flour') flour)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('brandy.n.01.brandy') brandy)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('cocoa.n.01.chocolate') chocolate)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('matzo.n.01.unleavened_bread') unleavened bread)
+(Lemma('matzo.n.01.unleavened_bread') unleavened bread)
+(Lemma('beef.n.02.beef') beef)
+(Lemma('hardbake.n.01.hardbake') hardbake)
+(Lemma('brittle.n.01.toffee') toffee)
+(Lemma('barley.n.01.barley') barley)
+(Lemma('sugar.n.01.sugar') sugar)
+(Lemma('sardine.n.01.sardine') sardines)
+(Lemma('bitters.n.01.bitters') bitters)
+(Lemma('condensed_milk.n.01.condensed_milk') condensed milk)
+(Lemma('loblolly.n.01.loblolly') loblolly)
+(Lemma('hardtack.n.01.hardtack') hardtack)
+(Lemma('beef.n.02.beef') beef)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('mouton.n.01.mutton') mutton)
+(Lemma('mouton.n.01.mutton') mutton)
+(Lemma('hardtack.n.01.hardtack') hardtack)
+(Lemma('chicken.n.01.chicken') Chicken)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('slop.n.01.slop') slop)
+(Lemma('sowbelly.n.01.sowbelly') sowbelly)
+(Lemma('lobscouse.n.01.lobscuse') lob-scuse)
+(Lemma('hardtack.n.01.hardtack') hardtack)
+(Lemma('lobscouse.n.01.lobscouse') lobscouse)
+(Lemma('lobscouse.n.01.lobscuse') lob-scuse)
+(Lemma('chicken.n.01.chicken') Chicken)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('toast.n.01.toast') toast)
+(Lemma('egg.n.02.eggs') eggs)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('sweet_roll.n.01.sweet_roll') sweet rolls)
+(Lemma('supper.n.01.supper') suppers)
+(Lemma('black_olive.n.01.black_olive') black olives)
+(Lemma('sandwich.n.01.sandwich') sandwich)
+(Lemma('loaf_of_bread.n.01.loaf') loaf)
+(Lemma('dark_bread.n.01.dark_bread') dark bread)
+(Lemma('butter.n.01.butter') butter)
+(Lemma('jam.n.01.jam') jam)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('sugar.n.01.sugar') sugar)
+(Lemma('continental_breakfast.n.01.petit_dejeuner') petit dejeuner)
+(Lemma('sugar.n.01.sugar') sugar)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('marmalade.n.01.marmalade') marmalade)
+(Lemma('bread.n.01.bread') bread)
+(Lemma('butter.n.01.butter') butter)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('loaf_of_bread.n.01.loaf_of_bread') loaves of bread)
+(Lemma('cheese.n.01.cheese') cheese)
+(Lemma('egg.n.02.eggs') eggs)
+(Lemma('orange.n.01.orange') oranges)
+(Lemma('orange.n.01.orange') oranges)
+(Lemma('vermouth.n.01.vermouth') Vermouth)
+(Lemma('pie.n.01.pie') pies)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('produce.n.01.produce') produce)
+(Lemma('milk.n.02.milk') milk)
+(Lemma('brandy.n.01.brandy') brandy)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') Whisky)
+(Lemma('blackberry.n.01.blackberry') blackberry)
+(Lemma('corn.n.03.corn') corn)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('lemonade.n.01.lemonade') lemonade)
+(Lemma('gelatin.n.02.jelly') jelly)
+(Lemma('berry.n.01.berry') berry)
+(Lemma('choice_morsel.n.01.tidbit') tidbits)
+(Lemma('berry.n.01.berry') berry)
+(Lemma('lentil.n.01.lentil') lentils)
+(Lemma('black_bread.n.01.black_bread') black bread)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('sausage.n.01.sausage') sausages)
+(Lemma('taffy.n.01.taffy') taffy)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('beverage.n.01.drink') drink)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('ice_cream.n.01.ice_cream') ice cream)
+(Lemma('tea.n.01.tea') tea)
+(Lemma('sushi.n.01.sushi') sushi)
+(Lemma('broth.n.01.stock') stock)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('port.n.02.port') port)
+(Lemma('wine.n.01.wine') wines)
+(Lemma('wine.n.01.wine') wines)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('wine.n.01.wine') wine)
+(Lemma('vintage.n.01.vintage') vintage)
+(Lemma('tea.n.01.tea') tea)
+(Lemma('sherry.n.01.sherry') sherry)
+(Lemma('scotch_and_soda.n.01.Scotch_and_soda') Scotch-and-soda)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('porkchop.n.01.porkchop') pork chops)
+(Lemma('fish.n.02.fish') fish)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('whiskey.n.01.whiskey') whiskey)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('lemon.n.01.lemon') lemons)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('dish.n.02.dish') dish)
+(Lemma('blowfish.n.01.blowfish') Blowfish)
+(Lemma('green_bean.n.01.green_bean') green beans)
+(Lemma('butter.n.01.butter') butter)
+(Lemma('bean.n.01.bean') beans)
+(Lemma('bean.n.01.bean') beans)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('dough.n.01.dough') dough)
+(Lemma('dough.n.01.dough') dough)
+(Lemma('dough.n.01.dough') dough)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('liquor.n.01.spirits') spirits)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('corn_flake.n.01.corn_flake') corn flakes)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('food.n.01.food') food)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('wine.n.01.wine') wine)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('leg_of_lamb.n.01.leg_of_lamb') leg of lamb)
+(Lemma('herb.n.02.herb') herbs)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('soup.n.01.soup') soup)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('chicken.n.01.chicken') chickens)
+(Lemma('ice_water.n.01.ice_water') ice water)
+(Lemma('ice_water.n.01.ice_water') ice water)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('steak.n.01.steak') steak)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('ice_water.n.01.ice_water') ice water)
+(Lemma('wine.n.01.wine') wine)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('breakfast.n.01.breakfast') breakfasts)
+(Lemma('peanut_butter.n.01.peanut_butter') peanut butter)
+(Lemma('sandwich.n.01.sandwich') sandwich)
+(Lemma('peanut_butter.n.01.peanut_butter') peanut butter)
+(Lemma('fried_egg.n.01.fried_egg') fried eggs)
+(Lemma('bacon.n.01.bacon') bacon)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('citron.n.01.citron') citron)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('apple.n.01.apple') apple)
+(Lemma('soft_drink.n.01.soft_drink') soft drinks)
+(Lemma('waffle.n.01.waffle') waffles)
+(Lemma('whiskey.n.01.whiskey') whiskey)
+(Lemma('meat.n.01.meat') meat)
+(Lemma('alcohol.n.01.alcohol') alcohol)
+(Lemma('alcohol.n.01.alcohol') alcohol)
+(Lemma('juice.n.01.juice') juice)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('bite.n.04.snack') snack)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('cud.n.01.cud') cud)
+(Lemma('tomato_paste.n.01.tomato_paste') tomato paste)
+(Lemma('wine.n.01.wine') wine)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('salt.n.02.salt') salt)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('fish.n.02.fish') fish)
+(Lemma('lemon.n.01.lemon') lemon)
+(Lemma('lemon.n.01.lemon') lemon)
+(Lemma('fish.n.02.fish') fish)
+(Lemma('lemon.n.01.lemon') lemon)
+(Lemma('tea.n.02.tea') tea)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('champagne.n.01.champagne') champagne)
+(Lemma('whiskey.n.01.whiskey') whiskey)
+(Lemma('whiskey.n.01.whiskey') whiskey)
+(Lemma('cabbage.n.01.cabbage') cabbage)
+(Lemma('oatmeal.n.01.oatmeal') oatmeal)
+(Lemma('martini.n.01.martini') martinis)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('dessert.n.01.dessert') dessert)
+(Lemma('coconut.n.01.coconut') coconut)
+(Lemma('radish.n.01.radish') radish)
+(Lemma('coconut.n.01.coconut') coconut)
+(Lemma('dessert.n.01.dessert') dessert)
+(Lemma('sherry.n.01.sherry') sherry)
+(Lemma('sherry.n.01.sherry') sherry)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('lemon_meringue_pie.n.01.lemon_meringue_pie')
+  lemon-meringue
+  pie)
+(Lemma('english_muffin.n.01.English_muffin') English muffins)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('rice.n.01.rice') rice)
+(Lemma('applejack.n.01.applejack') applejack)
+(Lemma('pizza.n.01.pizza') pizza)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('rice.n.01.rice') rice)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('ration.n.01.ration') rations)
+(Lemma('vitamin.n.01.vitamin') vitamins)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('milk.n.01.milk') Milk)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('milk.n.01.milk') Milk)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('ration.n.01.ration') ration)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('mix.n.01.premix') premix)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('ration.n.01.ration') ration)
+(Lemma('mix.n.01.premix') premix)
+(Lemma('ration.n.01.ration') ration)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('concentrate.n.02.concentrate') concentrates)
+(Lemma('mix.n.01.premix') premix)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feeds)
+(Lemma('ration.n.01.ration') ration)
+(Lemma('creep_feed.n.01.creep_feed') creep feeds)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('eatage.n.01.pasture') pasture)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') Feed)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('beverage.n.01.beverage') beverage)
+(Lemma('sandwich.n.01.sandwich') sandwiches)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('coffee_break.n.01.coffee_break') Coffee breaks)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('soup.n.01.soup') soup)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('food.n.01.food') food)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('bathtub_gin.n.01.bathtub_gin') bathtub gin)
+(Lemma('food.n.01.food') food)
+(Lemma('vegetable.n.01.vegetable') vegetables)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('feed.n.01.feed') feed)
+(Lemma('vegetable.n.01.vegetable') vegetables)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('produce.n.01.produce') produce)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('commissariat.n.01.provisions') provisions)
+(Lemma('egg.n.02.eggs') eggs)
+(Lemma('food.n.01.food') food)
+(Lemma('barley.n.01.barley') barley)
+(Lemma('pea.n.01.pea') peas)
+(Lemma('chicken.n.01.chicken') chickens)
+(Lemma('food.n.01.food') food)
+(Lemma('food.n.01.food') food)
+(Lemma('pork.n.01.pork') pork)
+(Lemma('flour.n.01.flour') flour)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('pemmican.n.01.pemmican') pemmican)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('pea.n.01.pea') peas)
+(Lemma('egg.n.02.eggs') eggs)
+(Lemma('pork.n.01.pork') poark)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('whiskey.n.01.whiskey') whiskey)
+(Lemma('vinegar.n.01.vinegar') vinegar)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('alcohol.n.01.alcohol') alcohol)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('liquor.n.01.booze') booze)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('mess.n.04.mess') mess)
+(Lemma('tea.n.01.tea') tea)
+(Lemma('chicken.n.01.chicken') chickens)
+(Lemma('egg.n.02.eggs') eggs)
+(Lemma('wine.n.01.wine') wine)
+(Lemma('rice.n.01.rice') rice)
+(Lemma('wine.n.01.wine') wine)
+(Lemma('dainty.n.01.delicacy') delicacies)
+(Lemma('food.n.01.food') food)
+(Lemma('lunch.n.01.lunch') Lunch)
+(Lemma('pear.n.01.pear') pears)
+(Lemma('tea.n.01.tea') tea)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('hay.n.01.hay') Hay)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('pieplant.n.01.rhubarb') Rhu-beb)
+(Lemma('pieplant.n.01.rhubarb') rhu-beb)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('food.n.03.food_for_thought') food for thought)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('lunch.n.01.luncheon') luncheon)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('food.n.01.food') Food)
+(Lemma('sugar.n.01.sugar') sugar)
+(Lemma('meal.n.01.meal') meals)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('drinking_water.n.01.drinking_water') drinking water)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('liver.n.02.liver') liver)
+(Lemma('dish.n.02.dish') dish)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') Coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('rice.n.01.rice') rice)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('rice.n.01.rice') rice)
+(Lemma('salt.n.02.salt') salt)
+(Lemma('chicken.n.01.chicken') chickens)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('pea.n.01.pea') peas)
+(Lemma('egg.n.02.egg') eggs)
+(Lemma('cornmeal.n.01.cornmeal') cornmeal)
+(Lemma('salt.n.02.salt') salt)
+(Lemma('ham.n.01.ham') hams)
+(Lemma('side.n.09.side') sides)
+(Lemma('bacon.n.01.bacon') bacon)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('chicken.n.01.chicken') chickens)
+(Lemma('chicken.n.01.chicken') chicken)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('chicken.n.01.chicken') chickens)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('dinner.n.01.dinner') Dinner)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('biscuit.n.01.biscuit') biscuits)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('toast.n.01.toast') toast)
+(Lemma('toast.n.01.toast') toast)
+(Lemma('toast.n.01.toast') toast)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('toast.n.01.toast') toast)
+(Lemma('martini.n.01.martini') martinis)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('lunch.n.01.lunch') lunch)
+(Lemma('champagne.n.01.champagne') champagne)
+(Lemma('champagne.n.01.champagne') champagne)
+(Lemma('champagne.n.01.champagne') champagne)
+(Lemma('champagne.n.01.champagne') champagne)
+(Lemma('champagne.n.01.champagne') champagne)
+(Lemma('chewing_gum.n.01.gum') gum)
+(Lemma('juice.n.01.juice') juice)
+(Lemma('orange.n.01.orange') orange)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('whiskey.n.01.whisky') whisky)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('biscuit.n.01.biscuit') biscuits)
+(Lemma('supper.n.01.supper') Supper)
+(Lemma('chow.n.02.chuck') chuck)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('hay.n.01.hay') hay)
+(Lemma('liquor.n.01.liquor') liquor)
+(Lemma('grain.n.02.grain') grain)
+(Lemma('supper.n.01.supper') supper)
+(Lemma('salt.n.02.salt') salt)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('coca_cola.n.01.Coca_Cola') Co-cola)
+(Lemma('daiquiri.n.01.daiquiri') dack-rihs)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('beer.n.01.beer') beer)
+(Lemma('honey.n.01.honey') honey)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('beverage.n.01.drink') drink)
+(Lemma('food.n.01.food') food)
+(Lemma('chip.n.04.crisp') crisp)
+(Lemma('bacon.n.01.bacon') bacon)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('flour.n.01.flour') flour)
+(Lemma('mess.n.03.mess') messes)
+(Lemma('biscuit.n.01.biscuit') biscuits)
+(Lemma('jam.n.01.jam') jams)
+(Lemma('jelly.n.02.jelly') jellies)
+(Lemma('tomato.n.01.tomato') tomatoes)
+(Lemma('egg.n.02.eggs') eggs)
+(Lemma('meal.n.01.meal') meal)
+(Lemma('bacon.n.01.bacon') bacon)
+(Lemma('coffee.n.01.java') java)
+(Lemma('ham_and_eggs.n.01.ham_and_eggs') ham and eggs)
+(Lemma('bread.n.01.bread') bread)
+(Lemma('berry.n.01.berry') berry)
+(Lemma('milk.n.01.milk') milk)
+(Lemma('dinner.n.01.dinner') dinner)
+(Lemma('breakfast.n.01.breakfast') breakfast)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('cookie.n.01.biscuit') biscuits)
+(Lemma('coffee.n.01.coffee') coffee)
+(Lemma('beverage.n.01.drink') drink)
