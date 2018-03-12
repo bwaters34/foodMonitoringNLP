@@ -20,14 +20,14 @@ def string_is_descendant_of_food(word, setting = 'most_common', ):
     synset_list = wn.synsets(word)
     just_nouns = list(filter(lambda x: x.pos() == 'n', synset_list))
     if setting == 'most_common':
-        print('most common chosen')
+        # print('most common chosen')
         just_nouns = just_nouns[0:1] # create list of just first element
-    # elif setting == 'all':
-    #     pass # don't change just_nouns
-    # elif setting == 'majority_vote':
-    #     pass
-    # else:
-    #     raise ValueError
+    elif setting == 'all':
+        pass # don't change just_nouns
+    elif setting == 'majority_vote':
+        pass
+    else:
+        raise ValueError
     for synset in just_nouns:
         if synset_is_descendant_of_food(synset):
             return True

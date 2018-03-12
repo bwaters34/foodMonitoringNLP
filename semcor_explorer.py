@@ -8,7 +8,7 @@ import nltk
 from nltk.corpus import semcor
 from nltk.corpus import wordnet as wn
 import wordnet_explorer
-import cPickle as pickle
+import pickle
 
 
 
@@ -42,20 +42,20 @@ print(len(all_food_indices))
 # food_indices = [35050, 35116, 38264, 38274, 38796, 80708, 81263, 81280, 82740, 95048, 102446, 138019, 138031, 138055, 138340, 138602, 193462, 240796, 242029, 246213, 249430, 257990, 258536, 258541, 273428, 291348, 324837, 399172]
 chunks = semcor.tagged_chunks(tag='sem')
 print('got')
-just_food = set([chunks[i].label().name() for i in all_food_indices])
+just_food = [chunks[i].label().name() for i in all_food_indices]
+just_food_edited = set([' '.join(x.split('_')) for x in just_food])
 print('good')
-for x in just_food:
-    print(x)
 
 foodNames = load("./data/food_desc_files/food_names.pickle")
-
+with open("./data/food_desc_files/semcor_food_names.pickle", 'wb') as f:
+    pickle.dump(just_food_edited, f)
 
 number_new_entries = 0
-for item in just_food:
+for item in just_food_edited:
     if item not in just_food:
         print(item)
         number_new_entries+=1
-
+print(number_new_entries)
 
 
 

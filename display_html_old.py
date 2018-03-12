@@ -42,6 +42,12 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
     print(len(extraFoodNames))
     foodNames.update(extraFoodNames)
     print(len(foodNames))
+    # semcorFoodNames = dict.fromkeys(load("./data/food_desc_files/semcor_food_names.pickle"),0)
+    # foodNames.update(semcorFoodNames)
+    print(len(foodNames))
+    umass_dictionary = {'coke', 0}
+    # foodNames.update(umass_dictionary)
+
     foodGroup = load("./data/food_desc_files/food_group.pickle")
 
     langua = load("./data/food_desc_files/langua.pickle")
@@ -50,7 +56,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
 
     unique_food_names = {}
     f = file(fileName, 'r')
-    current_line_number = 0
+    current_line_number = 0  
     predicted_food_labels_set = set()  # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
     solution_set_loaded = False
     solution_file_path = path.join('solutions', fileName)
@@ -167,7 +173,7 @@ def read_file(fileName, parser_type=None, only_files_with_solutions=False,
 
             for substring in sentence_to_word_pairs:
                 if substring != "honey":
-                    if wordnet_explorer.descendant_of_food(substring, wordnet_setting):
+                    if wordnet_explorer.string_is_descendant_of_food(substring, wordnet_setting):
                         assert len(pos_tags_dict[current_line_number]) != 0
                         if use_pos_tags_for_wordnet:
                             for term, type, confidence in pos_tags_dict[current_line_number]: # assumes a word won't be tagged a different POS tag on the same line (sorry!)
