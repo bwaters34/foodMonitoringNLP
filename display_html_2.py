@@ -49,8 +49,10 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	foodNames = load("./data/food_desc_files/food_names.pickle")
 	extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
 	print('adding extra names')
-	# Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
-	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+	Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
+	# foodNames = Yelena_Mejova_food_names
+	# Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+	# foodNames = Yelena_Mejova_food_names
 	print ("Added names by Yelena Mejova")
 
 	print(len(foodNames))
@@ -113,11 +115,12 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#FOR EDIT DISTANCE
 			pos_tags = pos_tags_dict[current_line_number]
 			if POS_TAGS == 'penn-treebank':
-				sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tag(edit_distance_i.split()))
+				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag(edit_distance_i.split()))
 			elif POS_TAGS == 'ark':
-				sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tags_dict[current_line_number])
+				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tags_dict[current_line_number])
 			else:
 				raise ValueError
+
 			#print "ATTENTION", sentence_pos_tags
 			if len(sentence_pos_tags) > 0:
 				# if word == 'carrot':
@@ -192,7 +195,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							t.append(temp_words)
 						food_id_langua_pairs.append([word + " " + food_id, t])
 						#food_id_langua_pairs = 
-					print("food -> ", food_id_group_pairs)
+					# print("food -> ", food_id_group_pairs)
 				#Checking for EDIT Distance
 					for food_data in sentence_pos_tags:  # TODO: renable string matching
 
@@ -218,18 +221,49 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
 							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
 
-							temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]])
-							temp2 = ''.join([x if x.isalpha() else ' ' for x in word])
-							# print "check -> ", word, food_data[1], temp, temp2, k1
 
-							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-							distance = 1
-							k2 = distance / float(max(len(word), len(food_data)))
 
-							if k2 < 0.00:
-								# k2 = 3
-								# if distance <= k2:
+							temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+							temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
 
+							#Manual checking 
+							# k2 = 0 
+							# if len(temp) > 2 and len(temp2) > 2:
+							# 	if temp[-1] == 's' or temp2[-1] == 's':
+							# 		if temp[:-1] == temp2:
+							# 			print "yes if 1", temp[:-1], temp2
+							# 			k2 = 1
+							# 		elif temp == temp2[:-1]:
+							# 			k2 = 1
+							# 		else:
+							# 			pass
+							# 	elif temp == temp2:
+							# 		k2 =1
+							# 	else:
+							# 		pass
+
+							# if len(temp) > 2 and len(temp2) > 2:
+							# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
+							# 		if temp[:-2] == temp2:
+							# 			k2 = 1
+							# 		elif temp == temp2[:-2]:
+							# 			k2 = 1
+							# 		else:
+							# 			pass
+							# 	elif temp == temp2:
+							# 		k2 =1
+							# 	else:
+							# 		pass
+
+								# print "check -> ", word, food_data[1], temp, temp2, k1
+							
+							distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+							# distance = 0
+							k2 = distance/float(max(len(word), len(food_data))) 
+							# if k2  == 1:
+							if k2 < 0.15:
+							#k2 = 3
+							#if distance <= k2:
 
 								# k2 = 3
 								# if distance <= k2:
@@ -243,8 +277,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
-								with open("./notes/edit_distance_30_only_s.txt", "a") as myfile:
-									# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
+								with open("./notes/new_parsing_rule_15_1and4_backup.txt", "a") as myfile:
+								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
 									# with open("./notes/edit_distance_4.txt", "a") as myfile:
 									# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
@@ -277,9 +311,10 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 				text += i[1:] 
 			#print ("Final text ->", text)
 			tags = ''
-			if parser_type == 'stanford_POS' and 0:
+			if parser_type == 'stanford_POS' or 1:
 				# print('running stanford')
 				tags = pos_tag(word_tokenize(temp_i))
+				print("tags initial-> ", tags)				
 				#Joining the tags
 				tags = join_tags(tags)
 			elif parser_type == 'ark_tweet_parser' and 0:
@@ -289,7 +324,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 				#tags = ''
 				#tags1 = join_tags(tags)
 
-			#print("tags -> ", tags1)
+			print("tags -> ", tags)
 			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
 
 			#print ("pairs -> ", word_char_index)

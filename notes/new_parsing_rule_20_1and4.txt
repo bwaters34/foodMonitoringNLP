@@ -1,0 +1,186 @@
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+carrots,carrot,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+spices,Spices,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+topping,tapping,1, 1.0 , 0.142857142857
+butter,better,1, 1.0 , 0.166666666667
+desserts,dessert,1, 0.875 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+white cheese,with cheese,2, 0.916666666667 , 0.166666666667
+goat cheese,good cheese,2, 1.0 , 0.181818181818
+cheese food,cheese look,2, 1.0 , 0.181818181818
+gouda cheese,good cheese,2, 0.916666666667 , 0.166666666667
+apples,apple,1, 0.833333333333 , 0.166666666667
+apples,apple,1, 0.833333333333 , 0.166666666667
+raw strawberries,uh strawberries,3, 0.9375 , 0.1875
+butter,better,1, 1.0 , 0.166666666667
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+butter,better,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+whole onions,those onions,2, 1.0 , 0.166666666667
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+grapes,grape,1, 0.833333333333 , 0.166666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+grapes,grape,1, 0.833333333333 , 0.166666666667
+grapes,grape,1, 0.833333333333 , 0.166666666667
+grapes,grape,1, 0.833333333333 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+squash,squish,1, 1.0 , 0.166666666667
+squash,squish,1, 1.0 , 0.166666666667
+raw chicken,was chicken,2, 1.0 , 0.181818181818
+butter,better,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+topping,popping,1, 1.0 , 0.142857142857
+barley,Harley,1, 1.0 , 0.166666666667
+carrot,carrots,1, 1.16666666667 , 0.166666666667
+chocolate cookie,chocolate cake,3, 0.875 , 0.1875
+chocolate cookie,chocolate cake,3, 0.875 , 0.1875
+chocolate cookie,chocolate cake,3, 0.875 , 0.1875
+butter,better,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+cockles,cackles,1, 1.0 , 0.142857142857
+mutton,button,1, 1.0 , 0.166666666667
+ginger,finger,1, 1.0 , 0.166666666667
+desserts,dessert,1, 0.875 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+wing chicken,want chicken,2, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+sprite,Sprite,1, 1.0 , 0.166666666667
+slimfast,slim fast,1, 1.125 , 0.125
+apples,apple,1, 0.833333333333 , 0.166666666667
+spices,spice,1, 0.833333333333 , 0.166666666667
+sprite,Sprite,1, 1.0 , 0.166666666667
+pork chicken,more chicken,2, 1.0 , 0.166666666667
+pork chicken,more chicken,2, 1.0 , 0.166666666667
+pork chicken,more chicken,2, 1.0 , 0.166666666667
+red potatoes,her potatoes,2, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+milk shakes,milk shake,1, 0.909090909091 , 0.0909090909091
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+mutton,button,1, 1.0 , 0.166666666667
+whole potatoes,those potatoes,2, 1.0 , 0.142857142857
+oats cereals,eats cereal,2, 0.916666666667 , 0.166666666667
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+butter,better,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+barbecue,barbecued,1, 1.125 , 0.125
+barbecue,barbecued,1, 1.125 , 0.125
+barbecue loaf,barbecue of,2, 0.846153846154 , 0.153846153846
+sucker fish,sucker fast,2, 1.0 , 0.181818181818
+cardoon,cartoon,1, 1.0 , 0.142857142857
+cardoon,cartoon,1, 1.0 , 0.142857142857
+topping,popping,1, 1.0 , 0.142857142857
+cardoon,cartoon,1, 1.0 , 0.142857142857
+cloves,closes,1, 1.0 , 0.166666666667
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+butter,better,1, 1.0 , 0.166666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+chicken fat,chicken for,2, 1.0 , 0.181818181818
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+apples,apple,1, 0.833333333333 , 0.166666666667
+vegetables,vegetable,1, 0.9 , 0.1
+vegetable,vegetables,1, 1.11111111111 , 0.111111111111
+rice crackers,fire crackers,2, 1.0 , 0.153846153846
+rice crackers,fire crackers,2, 1.0 , 0.153846153846
+romano,roman,1, 0.833333333333 , 0.166666666667
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+pork chicken,more chicken,2, 1.0 , 0.166666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+butter,better,1, 1.0 , 0.166666666667
+cloves,loves,1, 0.833333333333 , 0.166666666667
+oranges,orange,1, 0.857142857143 , 0.142857142857
+ginger,singer,1, 1.0 , 0.166666666667
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+butter,better,1, 1.0 , 0.166666666667
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+hot sausage,that sausage,2, 1.09090909091 , 0.181818181818
+hamburger,hamburgers,1, 1.11111111111 , 0.111111111111
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+butter,better,1, 1.0 , 0.166666666667
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+capers,papers,1, 1.0 , 0.166666666667
+butter,better,1, 1.0 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+turtle,turtles,1, 1.16666666667 , 0.166666666667
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+meatballs,meatball,1, 0.888888888889 , 0.111111111111
+capers,papers,1, 1.0 , 0.166666666667
+desserts,dessert,1, 0.875 , 0.125
+spaghettios,spaghetti,2, 0.818181818182 , 0.181818181818
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+candies,candles,1, 1.0 , 0.142857142857
+peanuts,peanut,1, 0.857142857143 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+ginger,finger,1, 1.0 , 0.166666666667
+rye crackers,my crackers,2, 0.916666666667 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+sugars,sugar,1, 0.833333333333 , 0.166666666667
+rice crackers,like crackers,2, 1.0 , 0.153846153846
+canadian bacon,Canadian bacon,1, 1.0 , 0.0714285714286

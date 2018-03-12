@@ -176,3 +176,62 @@ recall 0.654166666667
 # false pos: 143
 # false neg: 83
 total runtime: 186.507198095
+
+#Original Results
+precision: 0.752688172043
+recall 0.583333333333
+# true pos: 140
+# false pos: 46
+# false neg: 100
+total runtime: 171.722841024
+
+#Results by adding only Twitter_food_calorie_lexicon 
+precision: 0.719626168224
+recall 0.641666666667
+# true pos: 154
+# false pos: 60
+# false neg: 86
+total runtime: 179.809031963
+
+#Results by only Twitter_food_calorie_lexicon
+precision: 0.794117647059
+recall 0.45
+# true pos: 108
+# false pos: 28
+# false neg: 132
+total runtime: 31.2873220444
+
+#Database -> Twitter_food + USDA FDA + levenhtein with 's no penalty' + threshld - 0.15
+precision: 0.600746268657
+recall 0.670833333333
+# true pos: 161
+# false pos: 107
+# false neg: 79
+total runtime: 3635.37472415
+
+
+#Trying: 
+false negatives: ['(to)matoes', 'cucum(ber)', 'diet dressing', 'diet soda', 'dressing', 'milk juice', 'salad', 'spaghetti', 'supper', 'water']
+
+
+
+
+#Levenshtien No Patterns. K = 0.2
+precision: 0.573529411765
+recall 0.65
+# true pos: 156
+# false pos: 116
+# false neg: 84
+total runtime: 6087.7603991
+
+
+#Levenshtien only 's' No Patterns K = 0.15 (tab 2)
+
+
+
+
+
+
+
+
+#Levenshtien No Patterns K = 0.15 (tab 3)

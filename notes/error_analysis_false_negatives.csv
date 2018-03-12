@@ -1,0 +1,50 @@
+Transcript Word, Possible Error reason (only false negatives)
+brownie, 2nd columns - brownies
+butter bread, not in database
+coke, not in database
+sandwich, sandwich spread
+skim milk, milk in database
+popsicle, popsicle scribblers
+Strawberry, in third column
+vitamin, no comments
+candy, third column
+cantaloupe, second column
+chocolate broccoli, broccoli in database
+egg salad, egg and salad separately in database
+lemon, lemons (fault of levenshtein)
+lollipop, not in database
+salad, database has salad dressing
+tootsie roll, 2nd column of database
+(to)matoes, tomatoes (Levenshtien distance problem)
+cucum(ber), levenshtien prob
+diet dressing, not in database
+diet soda, not in database
+milk juice, not in database
+honeydew, 2nd column
+ketchup, catsup present
+nut and honey, not present
+spice ham sandwich, not present as a single word
+gum drop, 2nd column
+mcdonald, not present
+quick, not present
+beers
+cotton candy
+french fries, not in database
+pepsi, in 5th col
+salad, salad dressing
+salads, salad dressing
+tuna, 2nd column
+tuna+fish, interesting didn't get detected
+brown bread, not in database
+concord grapes, grapefruit
+cupcake, not in database
+sausage, interesting didn't detect
+brownies, 2nd col
+calzone, not in database
+jelly, jellyfish in database
+macaroni salad, not in database
+oatmeal, not in database
+pean(ut) butter, levenshtien distance fault
+peanut butter and jelly, compound too tough to detect
+saltine crackers, only crackers exist
+steak, not in datbase
