@@ -143,3 +143,13 @@ braised chicken,fried chicken,2, 0.866666666667 , 0.133333333333
 oranges,orange,1, 0.857142857143 , 0.142857142857
 oranges,orange,1, 0.857142857143 , 0.142857142857
 oranges,orange,1, 0.857142857143 , 0.142857142857
+desserts,dessert,1, 0.875 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
