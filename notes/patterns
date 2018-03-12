@@ -1,0 +1,108 @@
+adding extra names
+Added names by Yelena Mejova
+9758
+400
+9970
+loading solution set
+('tags initial-> ', [('hot', 'JJ'), ('12', 'CD')])
+('tags -> ', '     (hot->JJ) (12->CD) ')
+('tags initial-> ', [('what', 'WP'), ('do', 'VBP'), ('you', 'PRP'), ('want', 'VB'), ('to', 'TO'), ('drink', 'VB')])
+('tags -> ', '     (what->WP) (do->VBP) (you->PRP) (want->VB) (to->TO) (drink->VB) ')
+milk
+milk milk 46
+[('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN')])
+('tags -> ', '     (milk->NN) ')
+juice
+juice juice 52
+[('m', 'NN'), ('juice', 'NN')]
+['juice']
+('tags initial-> ', [('m', 'NN'), ('juice', 'NN')])
+('tags -> ', '     (m->NN) (juice->NN) ')
+('tags initial-> ', [('okay', 'NN')])
+('tags -> ', '     (okay->NN) ')
+milk
+milk milk 46
+[('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN')])
+('tags -> ', '     (milk->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('zzz', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('zzz', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('zzz', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) (zzz->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) ')
+('tags initial-> ', [('oops', 'NNS')])
+('tags -> ', '     (oops->NNS) ')
+('tags initial-> ', [('xxx', 'JJ'), ('jake', 'NN'), ('wants', 'VBZ'), ('xxx', 'JJ'), ('xxx', 'NNP'), ('supper', 'NN')])
+('tags -> ', '     (xxx->JJ) (jake->NN) (wants->VBZ) (xxx->JJ) (xxx->NNP) (supper->NN) ')
+juice
+juice juice 52
+[('no', 'DT'), ('juice', 'NN')]
+['juice']
+('tags initial-> ', [('no', 'DT'), ('juice', 'NN')])
+('tags -> ', '     (no->DT) (juice->NN) ')
+('tags initial-> ', [('i', 'NN'), ('shouldn', 'VBP'), ('t', 'NNS'), ('have', 'VBP'), ('asked', 'VBN'), ('you', 'PRP')])
+('tags -> ', '     (i->NN) (shouldn->VBP) (t->NNS) (have->VBP) (asked->VBN) (you->PRP) ')
+('tags initial-> ', [('i', 'NN'), ('shouldn', 'VBP'), ('t', 'NNS'), ('have', 'VBP'), ('offered', 'VBN')])
+('tags -> ', '     (i->NN) (shouldn->VBP) (t->NNS) (have->VBP) (offered->VBN) ')
+('tags initial-> ', [('all', 'DT'), ('done', 'VBN')])
+('tags -> ', '     (all->DT) (done->VBN) ')
+('tags initial-> ', [('oh', 'UH'), ('my', 'PRP$'), ('goodness', 'NN')])
+('tags -> ', '     (oh->UH) (my->PRP$) (goodness->NN) ')
+('tags initial-> ', [('well', 'RB'), ('you', 'PRP'), ('eat', 'VBP'), ('some', 'DT'), ('supper', 'NN'), ('now', 'RB'), ('before', 'IN'), ('i', 'NNS'), ('give', 'VBP'), ('you', 'PRP'), ('more', 'JJR'), ('okay', 'JJ'), ('11', 'CD')])
+('tags -> ', '     (well->RB) (you->PRP) (eat->VBP) (some->DT) (supper->NN) (now->RB) (before->IN) (i->NNS) (give->VBP) (you->PRP) (more->JJR) (okay->JJ) (11->CD) ')
+('tags initial-> ', [('mama', 'NN'), ('i', 'NN'), ('can', 'MD'), ('t', 'VB'), ('see', 'VB'), ('the', 'DT'), ('t', 'NN'), ('v', 'NN')])
+('tags -> ', '     (mama->NN) (i->NN) (can->MD) (t->VB) (see->VB) (the->DT) (t->NN) (v->NN) ')
+('tags initial-> ', [('oh', 'UH'), ('god', 'NN'), ('xxx', 'NNP'), ('terrible', 'JJ'), ('huh', 'NN')])
+('tags -> ', '     (oh->UH) (god->NN) (xxx->NNP) (terrible->JJ) (huh->NN) ')
+('tags initial-> ', [('conner', 'NN'), ('s', 'NN'), ('by', 'IN'), ('the', 'DT'), ('t', 'NN'), ('v', 'NN'), ('that', 'WDT'), ('s', 'VBZ'), ('not', 'RB'), ('fair', 'JJ')])
+('tags -> ', '     (conner->NN) (s->NN) (by->IN) (the->DT) (t->NN) (v->NN) (that->WDT) (s->VBZ) (not->RB) (fair->JJ) ')
+('tags initial-> ', [('i', 'NN'), ('know', 'VBP')])
+('tags -> ', '     (i->NN) (know->VBP) ')
+('tags initial-> ', [('i', 'NN'), ('ll', 'VBP'), ('go', 'VBP'), ('turn', 'VB'), ('it', 'PRP'), ('off', 'RP'), ('because', 'IN'), ('jake', 'NN'), ('s', 'NN'), ('missing', 'VBG'), ('it', 'PRP'), ('anyway', 'RB')])
+('tags -> ', '     (i->NN) (ll->VBP) (go->VBP) (turn->VB) (it->PRP) (off->RP) (because->IN) (jake->NN) (s->NN) (missing->VBG) (it->PRP) (anyway->RB) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('we', 'PRP'), ('ll', 'VBP'), ('watch', 'VB'), ('it', 'PRP'), ('after', 'IN'), ('you', 'PRP'), ('eat', 'VBP')])
+('tags -> ', '     (we->PRP) (ll->VBP) (watch->VB) (it->PRP) (after->IN) (you->PRP) (eat->VBP) ')
+('tags initial-> ', [('you', 'PRP'), ('won', 'VBD'), ('t', 'PRP'), ('miss', 'VB'), ('it', 'PRP')])
+('tags -> ', '     (you->PRP) (won->VBD) (t->PRP) (miss->VB) (it->PRP) ')
+none
+(<type 'exceptions.KeyboardInterrupt'>, KeyboardInterrupt(), <traceback object at 0x7fd2bba5e5a8>)

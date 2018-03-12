@@ -1,0 +1,840 @@
+[['NN', 'NN'],
+ ['NN'],
+ ['NN', 'NNS'],
+ ['NNS'],
+ ['JJ', 'NN'],
+ ['NN', 'NN', 'NN'],
+ ['JJ', 'NN', 'NN'],
+ ['JJ', 'NNS'],
+ ['VBN', 'NNS'],
+ ['VBN', 'NN'],
+ ['JJ', 'NN', 'NNS'],
+ ['NN', 'NN', 'NNS'],
+ ['NNS', 'NN'],
+ ['NNP', 'IN']]
+adding extra names
+Added names by Yelena Mejova
+9758
+400
+9970
+loading solution set
+milk
+milk milk 46
+[('milk', 'NN')]
+['milk']
+('food -> ', [])
+none
+(<type 'exceptions.KeyboardInterrupt'>, KeyboardInterrupt(), <traceback object at 0x7f8a46171d88>)
+adding extra names
+Added names by Yelena Mejova
+9758
+400
+9970
+loading solution set
+('tags initial-> ', [('hot', 'JJ'), ('12', 'CD')])
+('tags -> ', '     (hot->JJ) (12->CD) ')
+('tags initial-> ', [('what', 'WP'), ('do', 'VBP'), ('you', 'PRP'), ('want', 'VB'), ('to', 'TO'), ('drink', 'VB')])
+('tags -> ', '     (what->WP) (do->VBP) (you->PRP) (want->VB) (to->TO) (drink->VB) ')
+milk
+milk milk 46
+[('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN')])
+('tags -> ', '     (milk->NN) ')
+juice
+juice juice 52
+[('m', 'NN'), ('juice', 'NN')]
+['juice']
+('tags initial-> ', [('m', 'NN'), ('juice', 'NN')])
+('tags -> ', '     (m->NN) (juice->NN) ')
+('tags initial-> ', [('okay', 'NN')])
+('tags -> ', '     (okay->NN) ')
+milk
+milk milk 46
+[('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN')])
+('tags -> ', '     (milk->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('zzz', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('zzz', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('zzz', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) (zzz->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) ')
+juice
+juice juice 52
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['juice']
+milk
+milk milk 46
+[('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN'), ('juice', 'NN'), ('milk', 'NN')])
+('tags -> ', '     (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) (juice->NN) (milk->NN) ')
+('tags initial-> ', [('oops', 'NNS')])
+('tags -> ', '     (oops->NNS) ')
+('tags initial-> ', [('xxx', 'JJ'), ('jake', 'NN'), ('wants', 'VBZ'), ('xxx', 'JJ'), ('xxx', 'NNP'), ('supper', 'NN')])
+('tags -> ', '     (xxx->JJ) (jake->NN) (wants->VBZ) (xxx->JJ) (xxx->NNP) (supper->NN) ')
+juice
+juice juice 52
+[('no', 'DT'), ('juice', 'NN')]
+['juice']
+('tags initial-> ', [('no', 'DT'), ('juice', 'NN')])
+('tags -> ', '     (no->DT) (juice->NN) ')
+('tags initial-> ', [('i', 'NN'), ('shouldn', 'VBP'), ('t', 'NNS'), ('have', 'VBP'), ('asked', 'VBN'), ('you', 'PRP')])
+('tags -> ', '     (i->NN) (shouldn->VBP) (t->NNS) (have->VBP) (asked->VBN) (you->PRP) ')
+('tags initial-> ', [('i', 'NN'), ('shouldn', 'VBP'), ('t', 'NNS'), ('have', 'VBP'), ('offered', 'VBN')])
+('tags -> ', '     (i->NN) (shouldn->VBP) (t->NNS) (have->VBP) (offered->VBN) ')
+('tags initial-> ', [('all', 'DT'), ('done', 'VBN')])
+('tags -> ', '     (all->DT) (done->VBN) ')
+('tags initial-> ', [('oh', 'UH'), ('my', 'PRP$'), ('goodness', 'NN')])
+('tags -> ', '     (oh->UH) (my->PRP$) (goodness->NN) ')
+('tags initial-> ', [('well', 'RB'), ('you', 'PRP'), ('eat', 'VBP'), ('some', 'DT'), ('supper', 'NN'), ('now', 'RB'), ('before', 'IN'), ('i', 'NNS'), ('give', 'VBP'), ('you', 'PRP'), ('more', 'JJR'), ('okay', 'JJ'), ('11', 'CD')])
+('tags -> ', '     (well->RB) (you->PRP) (eat->VBP) (some->DT) (supper->NN) (now->RB) (before->IN) (i->NNS) (give->VBP) (you->PRP) (more->JJR) (okay->JJ) (11->CD) ')
+('tags initial-> ', [('mama', 'NN'), ('i', 'NN'), ('can', 'MD'), ('t', 'VB'), ('see', 'VB'), ('the', 'DT'), ('t', 'NN'), ('v', 'NN')])
+('tags -> ', '     (mama->NN) (i->NN) (can->MD) (t->VB) (see->VB) (the->DT) (t->NN) (v->NN) ')
+('tags initial-> ', [('oh', 'UH'), ('god', 'NN'), ('xxx', 'NNP'), ('terrible', 'JJ'), ('huh', 'NN')])
+('tags -> ', '     (oh->UH) (god->NN) (xxx->NNP) (terrible->JJ) (huh->NN) ')
+('tags initial-> ', [('conner', 'NN'), ('s', 'NN'), ('by', 'IN'), ('the', 'DT'), ('t', 'NN'), ('v', 'NN'), ('that', 'WDT'), ('s', 'VBZ'), ('not', 'RB'), ('fair', 'JJ')])
+('tags -> ', '     (conner->NN) (s->NN) (by->IN) (the->DT) (t->NN) (v->NN) (that->WDT) (s->VBZ) (not->RB) (fair->JJ) ')
+('tags initial-> ', [('i', 'NN'), ('know', 'VBP')])
+('tags -> ', '     (i->NN) (know->VBP) ')
+('tags initial-> ', [('i', 'NN'), ('ll', 'VBP'), ('go', 'VBP'), ('turn', 'VB'), ('it', 'PRP'), ('off', 'RP'), ('because', 'IN'), ('jake', 'NN'), ('s', 'NN'), ('missing', 'VBG'), ('it', 'PRP'), ('anyway', 'RB')])
+('tags -> ', '     (i->NN) (ll->VBP) (go->VBP) (turn->VB) (it->PRP) (off->RP) (because->IN) (jake->NN) (s->NN) (missing->VBG) (it->PRP) (anyway->RB) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('we', 'PRP'), ('ll', 'VBP'), ('watch', 'VB'), ('it', 'PRP'), ('after', 'IN'), ('you', 'PRP'), ('eat', 'VBP')])
+('tags -> ', '     (we->PRP) (ll->VBP) (watch->VB) (it->PRP) (after->IN) (you->PRP) (eat->VBP) ')
+('tags initial-> ', [('you', 'PRP'), ('won', 'VBD'), ('t', 'PRP'), ('miss', 'VB'), ('it', 'PRP')])
+('tags -> ', '     (you->PRP) (won->VBD) (t->PRP) (miss->VB) (it->PRP) ')
+('tags initial-> ', [('and', 'CC'), ('then', 'RB'), ('you', 'PRP'), ('can', 'MD'), ('turn', 'VB'), ('it', 'PRP'), ('right', 'RB'), ('back', 'RB'), ('on', 'IN')])
+('tags -> ', '     (and->CC) (then->RB) (you->PRP) (can->MD) (turn->VB) (it->PRP) (right->RB) (back->RB) (on->IN) ')
+('tags initial-> ', [('it', 'PRP'), ('doesn', 'VBZ'), ('t', 'JJ'), ('go', 'VBP'), ('over', 'IN'), ('it', 'PRP'), ('s', 'VBZ'), ('a', 'DT'), ('tape', 'NN')])
+('tags -> ', '     (it->PRP) (doesn->VBZ) (t->JJ) (go->VBP) (over->IN) (it->PRP) (s->VBZ) (a->DT) (tape->NN) ')
+('tags initial-> ', [('we', 'PRP'), ('gon', 'VBP'), ('na', 'TO'), ('miss', 'VB'), ('it', 'PRP'), ('on', 'IN'), ('xxx', 'NN'), ('or', 'CC'), ('it', 'PRP'), ('stay', 'VB'), ('on', 'IN'), ('all', 'DT'), ('day', 'NN')])
+('tags -> ', '     (we->PRP) (gon->VBP) (na->TO) (miss->VB) (it->PRP) (on->IN) (xxx->NN) (or->CC) (it->PRP) (stay->VB) (on->IN) (all->DT) (day->NN) ')
+('tags initial-> ', [('no', 'DT'), ('you', 'PRP'), ('ll', 'VBP'), ('see', 'VB'), ('it', 'PRP'), ('right', 'RB'), ('where', 'WRB'), ('she', 'PRP'), ('shut', 'VBD'), ('it', 'PRP'), ('off', 'RP'), ('it', 'PRP'), ('ll', 'VBD'), ('go', 'VB'), ('right', 'JJ'), ('back', 'RB'), ('on', 'IN')])
+('tags -> ', '     (no->DT) (you->PRP) (ll->VBP) (see->VB) (it->PRP) (right->RB) (where->WRB) (she->PRP) (shut->VBD) (it->PRP) (off->RP) (it->PRP) (ll->VBD) (go->VB) (right->JJ) (back->RB) (on->IN) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBD'), ('the', 'DT'), ('good', 'JJ'), ('thing', 'NN'), ('about', 'IN'), ('it', 'PRP')])
+('tags -> ', '     (that->DT) (s->VBD) (the->DT) (good->JJ) (thing->NN) (about->IN) (it->PRP) ')
+('tags initial-> ', [('yeah', 'NN'), ('conner', 'NN'), ('because', 'IN'), ('mama', 'NN'), ('s', 'NN')])
+('tags -> ', '     (yeah->NN) (conner->NN) (because->IN) (mama->NN) (s->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('don', 'VBP'), ('t', 'JJ'), ('miss', 'VBP'), ('any', 'DT')])
+('tags -> ', '     (you->PRP) (don->VBP) (t->JJ) (miss->VBP) (any->DT) ')
+('tags initial-> ', [('if', 'IN'), ('you', 'PRP'), ('have', 'VBP'), ('to', 'TO'), ('go', 'VB'), ('out', 'RP'), ('you', 'PRP'), ('just', 'RB'), ('turn', 'VB'), ('it', 'PRP'), ('off', 'RP'), ('and', 'CC'), ('when', 'WRB'), ('you', 'PRP'), ('come', 'VBP'), ('back', 'RB'), ('you', 'PRP'), ('pick', 'VBP'), ('up', 'RP'), ('from', 'IN'), ('where', 'WRB'), ('it', 'PRP'), ('was', 'VBD'), ('on', 'IN'), ('before', 'IN')])
+('tags -> ', '     (if->IN) (you->PRP) (have->VBP) (to->TO) (go->VB) (out->RP) (you->PRP) (just->RB) (turn->VB) (it->PRP) (off->RP) (and->CC) (when->WRB) (you->PRP) (come->VBP) (back->RB) (you->PRP) (pick->VBP) (up->RP) (from->IN) (where->WRB) (it->PRP) (was->VBD) (on->IN) (before->IN) ')
+('tags initial-> ', [('yeah', 'NN')])
+('tags -> ', '     (yeah->NN) ')
+('tags initial-> ', [('i', 'JJ'), ('ll', 'VBP'), ('tell', 'VBP'), ('you', 'PRP'), ('this', 'DT'), ('xxx', 'NN')])
+('tags -> ', '     (i->JJ) (ll->VBP) (tell->VBP) (you->PRP) (this->DT) (xxx->NN) ')
+('tags initial-> ', [('xxx', 'NNS'), ('alright', 'VBD')])
+('tags -> ', '     (xxx->NNS) (alright->VBD) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'JJ'), ('believe', 'VBP'), ('may', 'MD'), ('s', 'VB'), ('not', 'RB'), ('home', 'NN')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->JJ) (believe->VBP) (may->MD) (s->VB) (not->RB) (home->NN) ')
+('tags initial-> ', [('w', 'NN'), ('w', 'NN')])
+('tags -> ', '     (w->NN) (w->NN) ')
+('tags initial-> ', [('should', 'MD'), ('go', 'VB'), ('chasing', 'NN'), ('after', 'IN'), ('her', 'PRP$')])
+('tags -> ', '     (should->MD) (go->VB) (chasing->NN) (after->IN) (her->PRP$) ')
+('tags initial-> ', [('i', 'NN'), ('put', 'VBD'), ('the', 'DT'), ('medicine', 'NN'), ('there', 'RB'), ('because', 'IN'), ('i', 'NN'), ('have', 'VBP'), ('to', 'TO'), ('xxx', 'VB')])
+('tags -> ', '     (i->NN) (put->VBD) (the->DT) (medicine->NN) (there->RB) (because->IN) (i->NN) (have->VBP) (to->TO) (xxx->VB) ')
+('tags initial-> ', [('is', 'VBZ'), ('jessie', 'NN'), ('coming', 'VBG'), ('back', 'RB'), ('there', 'RB'), ('with', 'IN'), ('her', 'PRP$')])
+('tags -> ', '     (is->VBZ) (jessie->NN) (coming->VBG) (back->RB) (there->RB) (with->IN) (her->PRP$) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('well', 'RB'), ('jessie', 'JJ'), ('s', 'NN'), ('mother', 'NN'), ('was', 'VBD'), ('gon', 'VBG'), ('na', 'TO'), ('either', 'DT'), ('pick', 'NN'), ('her', 'PRP$'), ('up', 'RP'), ('here', 'RB'), ('or', 'CC'), ('at', 'IN'), ('the', 'DT'), ('park', 'NN')])
+('tags -> ', '     (well->RB) (jessie->JJ) (s->NN) (mother->NN) (was->VBD) (gon->VBG) (na->TO) (either->DT) (pick->NN) (her->PRP$) (up->RP) (here->RB) (or->CC) (at->IN) (the->DT) (park->NN) ')
+('tags initial-> ', [('and', 'CC'), ('uh', 'VB'), ('she', 'PRP'), ('was', 'VBD'), ('gon', 'VBG'), ('na', 'TO'), ('pick', 'VB'), ('her', 'PRP$'), ('up', 'RP'), ('at', 'IN'), ('five', 'CD'), ('thirty', 'NN')])
+('tags -> ', '     (and->CC) (uh->VB) (she->PRP) (was->VBD) (gon->VBG) (na->TO) (pick->VB) (her->PRP$) (up->RP) (at->IN) (five->CD) (thirty->NN) ')
+('tags initial-> ', [('so', 'RB'), ('i', 'JJ'), ('imagine', 'VBP'), ('her', 'PRP$'), ('mom', 'NN'), ('s', 'NN'), ('gon', 'NN'), ('na', 'TO'), ('give', 'VB'), ('may', 'MD'), ('a', 'DT'), ('ride', 'NN'), ('home', 'NN'), ('and', 'CC'), ('i', 'JJ'), ('imagine', 'NN'), ('she', 'PRP'), ('must', 'MD'), ('be', 'VB'), ('picking', 'VBG'), ('her', 'PRP$'), ('up', 'IN'), ('about', 'RB'), ('now', 'RB'), ('otherwise', 'VB'), ('it', 'PRP'), ('s', 'VB'), ('all', 'DT'), ('screwed', 'VBD'), ('up', 'RP')])
+('tags -> ', '     (so->RB) (i->JJ) (imagine->VBP) (her->PRP$) (mom->NN) (s->NN) (gon->NN) (na->TO) (give->VB) (may->MD) (a->DT) (ride->NN) (home->NN) (and->CC) (i->JJ) (imagine->NN) (she->PRP) (must->MD) (be->VB) (picking->VBG) (her->PRP$) (up->IN) (about->RB) (now->RB) (otherwise->VB) (it->PRP) (s->VB) (all->DT) (screwed->VBD) (up->RP) ')
+('tags initial-> ', [('xxx', 'NNS'), ('have', 'VBP'), ('to', 'TO'), ('have', 'VB'), ('a', 'DT'), ('talk', 'NN'), ('with', 'IN'), ('her', 'PRP$'), ('about', 'IN'), ('not', 'RB'), ('coming', 'VBG'), ('home', 'NN')])
+('tags -> ', '     (xxx->NNS) (have->VBP) (to->TO) (have->VB) (a->DT) (talk->NN) (with->IN) (her->PRP$) (about->IN) (not->RB) (coming->VBG) (home->NN) ')
+('tags initial-> ', [('she', 'PRP'), ('doesn', 'VBD'), ('t', 'NNS'), ('have', 'VBP'), ('a', 'DT'), ('watch', 'NN'), ('on', 'IN'), ('but', 'CC'), ('still', 'RB'), ('an', 'DT'), ('hour', 'NN'), ('s', 'NN'), ('a', 'DT'), ('big', 'JJ'), ('difference', 'NN'), ('from', 'IN'), ('a', 'DT'), ('half', 'NN'), ('an', 'DT'), ('hour', 'NN')])
+('tags -> ', '     (she->PRP) (doesn->VBD) (t->NNS) (have->VBP) (a->DT) (watch->NN) (on->IN) (but->CC) (still->RB) (an->DT) (hour->NN) (s->NN) (a->DT) (big->JJ) (difference->NN) (from->IN) (a->DT) (half->NN) (an->DT) (hour->NN) ')
+('tags initial-> ', [('what', 'WP')])
+('tags -> ', '     (what->WP) ')
+('tags initial-> ', [('i', 'NN'), ('told', 'VBD'), ('her', 'PRP$'), ('i', 'NN'), ('was', 'VBD'), ('there', 'RB'), ('at', 'IN'), ('quarter', 'NN'), ('of', 'IN'), ('five', 'CD'), ('and', 'CC'), ('i', 'NN'), ('said', 'VBD'), ('come', 'JJ'), ('home', 'NN'), ('at', 'IN'), ('five', 'CD'), ('i', 'NNS'), ('mean', 'VBP'), ('in', 'IN'), ('a', 'DT'), ('half', 'NN'), ('an', 'DT'), ('hour', 'NN')])
+('tags -> ', '     (i->NN) (told->VBD) (her->PRP$) (i->NN) (was->VBD) (there->RB) (at->IN) (quarter->NN) (of->IN) (five->CD) (and->CC) (i->NN) (said->VBD) (come->JJ) (home->NN) (at->IN) (five->CD) (i->NNS) (mean->VBP) (in->IN) (a->DT) (half->NN) (an->DT) (hour->NN) ')
+('tags initial-> ', [('yeah', 'RB'), ('well', 'RB'), ('she', 'PRP'), ('don', 'VBZ'), ('t', 'NN'), ('know', 'VBD'), ('a', 'DT'), ('half', 'JJ'), ('hour', 'NN')])
+('tags -> ', '     (yeah->RB) (well->RB) (she->PRP) (don->VBZ) (t->NN) (know->VBD) (a->DT) (half->JJ) (hour->NN) ')
+('tags initial-> ', [('she', 'PRP'), ('ought', 'MD'), ('to', 'TO'), ('carry', 'VB'), ('a', 'DT'), ('watch', 'NN'), ('around', 'IN'), ('with', 'IN'), ('her', 'PRP$')])
+('tags -> ', '     (she->PRP) (ought->MD) (to->TO) (carry->VB) (a->DT) (watch->NN) (around->IN) (with->IN) (her->PRP$) ')
+('tags initial-> ', [('she', 'PRP'), ('has', 'VBZ'), ('a', 'DT'), ('watch', 'NN')])
+('tags -> ', '     (she->PRP) (has->VBZ) (a->DT) (watch->NN) ')
+('tags initial-> ', [('conner', 'NN')])
+('tags -> ', '     (conner->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('like', 'IN'), ('it', 'PRP')])
+('tags -> ', '     (you->PRP) (like->IN) (it->PRP) ')
+('tags initial-> ', [('is', 'VBZ'), ('it', 'PRP'), ('your', 'PRP$'), ('favorite', 'JJ')])
+('tags -> ', '     (is->VBZ) (it->PRP) (your->PRP$) (favorite->JJ) ')
+('tags initial-> ', [('huh', 'NN')])
+('tags -> ', '     (huh->NN) ')
+milk
+milk milk 46
+[('more', 'RBR'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('more', 'RBR'), ('milk', 'NN')])
+('tags -> ', '     (more->RBR) (milk->NN) ')
+('tags initial-> ', [('hm', 'NN')])
+('tags -> ', '     (hm->NN) ')
+milk
+milk milk 46
+[('say', 'NN'), ('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('more', 'JJR'), ('milk', 'NN'), ('please', 'NN')]
+['milk']
+('tags initial-> ', [('say', 'NN'), ('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('more', 'JJR'), ('milk', 'NN'), ('please', 'NN')])
+('tags -> ', '     (say->NN) (can->MD) (i->VB) (have->VBP) (more->JJR) (milk->NN) (please->NN) ')
+milk
+milk milk 46
+[('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('more', 'JJR'), ('milk', 'NN'), ('please', 'NN')]
+['milk']
+('tags initial-> ', [('can', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('more', 'JJR'), ('milk', 'NN'), ('please', 'NN')])
+('tags -> ', '     (can->MD) (i->VB) (have->VBP) (more->JJR) (milk->NN) (please->NN) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('whoop', 'NN')])
+('tags -> ', '     (whoop->NN) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('boy', 'NN'), ('i', 'NN'), ('think', 'VBP'), ('i', 'NNS'), ('gave', 'VBD'), ('you', 'PRP'), ('guys', 'VB'), ('too', 'RB'), ('much', 'JJ')])
+('tags -> ', '     (boy->NN) (i->NN) (think->VBP) (i->NNS) (gave->VBD) (you->PRP) (guys->VB) (too->RB) (much->JJ) ')
+('tags initial-> ', [('i', 'NNS'), ('hope', 'VBP'), ('you', 'PRP'), ('can', 'MD'), ('eat', 'VB'), ('that', 'IN'), ('all', 'DT')])
+('tags -> ', '     (i->NNS) (hope->VBP) (you->PRP) (can->MD) (eat->VB) (that->IN) (all->DT) ')
+('tags initial-> ', [('that', 'IN'), ('s', 'VBD'), ('good', 'JJ'), ('for', 'IN'), ('you', 'PRP'), ('you', 'PRP'), ('know', 'VBP')])
+('tags -> ', '     (that->IN) (s->VBD) (good->JJ) (for->IN) (you->PRP) (you->PRP) (know->VBP) ')
+('tags initial-> ', [('you', 'PRP'), ('gon', 'VBP'), ('na', 'TO'), ('try', 'VB'), ('to', 'TO'), ('eat', 'VB'), ('it', 'PRP'), ('all', 'DT'), ('up', 'RP')])
+('tags -> ', '     (you->PRP) (gon->VBP) (na->TO) (try->VB) (to->TO) (eat->VB) (it->PRP) (all->DT) (up->RP) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('yeah', 'NN')])
+('tags -> ', '     (yeah->NN) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NNS'), ('like', 'IN'), ('the', 'DT'), ('xxx', 'NN'), ('ones', 'NNS')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NNS) (like->IN) (the->DT) (xxx->NN) (ones->NNS) ')
+('tags initial-> ', [('the', 'DT'), ('xxx', 'NN')])
+('tags -> ', '     (the->DT) (xxx->NN) ')
+('tags initial-> ', [('the', 'DT'), ('what', 'WP')])
+('tags -> ', '     (the->DT) (what->WP) ')
+('tags initial-> ', [('the', 'DT'), ('shells', 'NNS')])
+('tags -> ', '     (the->DT) (shells->NNS) ')
+('tags initial-> ', [('xxx', 'JJ'), ('th', 'IN'), ('these', 'DT'), ('ones', 'NNS'), ('right', 'RB'), ('here', 'RB')])
+('tags -> ', '     (xxx->JJ) (th->IN) (these->DT) (ones->NNS) (right->RB) (here->RB) ')
+('tags initial-> ', [('just', 'RB'), ('like', 'IN'), ('the', 'DT'), ('shells', 'NNS')])
+('tags -> ', '     (just->RB) (like->IN) (the->DT) (shells->NNS) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+water
+water water 18
+[('xxx', 'NN'), ('just', 'RB'), ('a', 'DT'), ('quick', 'JJ'), ('glass', 'NN'), ('of', 'IN'), ('water', 'NN'), ('and', 'CC'), ('we', 'PRP'), ('re', 'VBP'), ('gon', 'VB'), ('na', 'TO'), ('go', 'VB'), ('back', 'RB')]
+['water']
+('tags initial-> ', [('xxx', 'NN'), ('just', 'RB'), ('a', 'DT'), ('quick', 'JJ'), ('glass', 'NN'), ('of', 'IN'), ('water', 'NN'), ('and', 'CC'), ('we', 'PRP'), ('re', 'VBP'), ('gon', 'VB'), ('na', 'TO'), ('go', 'VB'), ('back', 'RB')])
+('tags -> ', '     (xxx->NN) (just->RB) (a->DT) (quick->JJ) (glass->NN) (of->IN) (water->NN) (and->CC) (we->PRP) (re->VBP) (gon->VB) (na->TO) (go->VB) (back->RB) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('yeah', 'RB'), ('um', 'JJ'), ('what', 'WP'), ('what', 'WP'), ('s', 'VBZ'), ('this', 'DT'), ('business', 'NN'), ('of', 'IN'), ('an', 'DT'), ('hour', 'NN')])
+('tags -> ', '     (yeah->RB) (um->JJ) (what->WP) (what->WP) (s->VBZ) (this->DT) (business->NN) (of->IN) (an->DT) (hour->NN) ')
+('tags initial-> ', [('i', 'NN'), ('said', 'VBD'), ('an', 'DT'), ('half', 'NN'), ('an', 'DT'), ('hour', 'NN')])
+('tags -> ', '     (i->NN) (said->VBD) (an->DT) (half->NN) (an->DT) (hour->NN) ')
+('tags initial-> ', [('well', 'RB'), ('we', 'PRP'), ('i', 'VBP'), ('had', 'VBD'), ('to', 'TO'), ('we', 'PRP'), ('ready', 'JJ'), ('to', 'TO'), ('ready', 'VB'), ('to', 'TO'), ('pick', 'VB'), ('her', 'PRP$'), ('up', 'NN'), ('and', 'CC'), ('what', 'WP'), ('the', 'DT'), ('heck', 'NN'), ('is', 'VBZ'), ('xxx', 'JJ'), ('stuff', 'NN')])
+('tags -> ', '     (well->RB) (we->PRP) (i->VBP) (had->VBD) (to->TO) (we->PRP) (ready->JJ) (to->TO) (ready->VB) (to->TO) (pick->VB) (her->PRP$) (up->NN) (and->CC) (what->WP) (the->DT) (heck->NN) (is->VBZ) (xxx->JJ) (stuff->NN) ')
+coffee
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7ff9bf782ab8>)
+[('that', 'DT'), ('s', 'VBZ'), ('that', 'IN'), ('coffee', 'NN'), ('i', 'NN'), ('made', 'VBN'), ('by', 'IN'), ('mistake', 'NN')]
+['coffee']
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('that', 'IN'), ('coffee', 'NN'), ('i', 'NN'), ('made', 'VBN'), ('by', 'IN'), ('mistake', 'NN')])
+('tags -> ', '     (that->DT) (s->VBZ) (that->IN) (coffee->NN) (i->NN) (made->VBN) (by->IN) (mistake->NN) ')
+('tags initial-> ', [('shoot', 'NN')])
+('tags -> ', '     (shoot->NN) ')
+coffee
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7ff9bf7150e0>)
+[('this', 'DT'), ('dumb', 'JJ'), ('coffee', 'NN'), ('mix', 'NN')]
+['coffee']
+('tags initial-> ', [('this', 'DT'), ('dumb', 'JJ'), ('coffee', 'NN'), ('mix', 'NN')])
+('tags -> ', '     (this->DT) (dumb->JJ) (coffee->NN) (mix->NN) ')
+('tags initial-> ', [('hold', 'NN'), ('on', 'IN')])
+('tags -> ', '     (hold->NN) (on->IN) ')
+fruit
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7ff9bf71a9e0>)
+[('there', 'RB'), ('s', 'JJ'), ('um', 'JJ'), ('fruit', 'NN'), ('punch', 'NN'), ('in', 'IN'), ('the', 'DT'), ('yellow', 'JJ'), ('jug', 'NN'), ('10', 'CD')]
+['fruit']
+('tags initial-> ', [('there', 'RB'), ('s', 'JJ'), ('um', 'JJ'), ('fruit', 'NN'), ('punch', 'NN'), ('in', 'IN'), ('the', 'DT'), ('yellow', 'JJ'), ('jug', 'NN'), ('10', 'CD')])
+('tags -> ', '     (there->RB) (s->JJ) (um->JJ) (fruit->NN) (punch->NN) (in->IN) (the->DT) (yellow->JJ) (jug->NN) (10->CD) ')
+milk
+milk milk 46
+[('little', 'JJ'), ('milk', 'NN')]
+['milk']
+('tags initial-> ', [('little', 'JJ'), ('milk', 'NN')])
+('tags -> ', '     (little->JJ) (milk->NN) ')
+milk
+milk milk 46
+[('milk', 'NN'), ('mama', 'NN')]
+['milk']
+('tags initial-> ', [('milk', 'NN'), ('mama', 'NN')])
+('tags -> ', '     (milk->NN) (mama->NN) ')
+('tags initial-> ', [('may', 'MD'), ('go', 'VB'), ('go', 'VB'), ('wash', 'NN'), ('up', 'RB'), ('and', 'CC'), ('i', 'VB'), ('ll', 'VBP'), ('get', 'VB'), ('your', 'PRP$'), ('plate', 'NN'), ('ready', 'NN')])
+('tags -> ', '     (may->MD) (go->VB) (go->VB) (wash->NN) (up->RB) (and->CC) (i->VB) (ll->VBP) (get->VB) (your->PRP$) (plate->NN) (ready->NN) ')
+('tags initial-> ', [('okay', 'JJ'), ('let', 'VB'), ('me', 'PRP'), ('drink', 'VB'), ('this', 'DT')])
+('tags -> ', '     (okay->JJ) (let->VB) (me->PRP) (drink->VB) (this->DT) ')
+('tags initial-> ', [('here', 'RB')])
+('tags -> ', '     (here->RB) ')
+('tags initial-> ', [('jake', 'NN'), ('not', 'RB'), ('eating', 'VBG')])
+('tags -> ', '     (jake->NN) (not->RB) (eating->VBG) ')
+('tags initial-> ', [('bye', 'NN')])
+('tags -> ', '     (bye->NN) ')
+('tags initial-> ', [('bye', 'NN')])
+('tags -> ', '     (bye->NN) ')
+('tags initial-> ', [('bye', 'NN'), ('jessie', 'NN')])
+('tags -> ', '     (bye->NN) (jessie->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('want', 'VBP'), ('that', 'IN')])
+('tags -> ', '     (you->PRP) (want->VBP) (that->IN) ')
+('tags initial-> ', [('i', 'NN'), ('ll', 'VBP'), ('get', 'VB'), ('it', 'PRP'), ('for', 'IN'), ('you', 'PRP')])
+('tags -> ', '     (i->NN) (ll->VBP) (get->VB) (it->PRP) (for->IN) (you->PRP) ')
+('tags initial-> ', [('what', 'WP'), ('s', 'VBD'), ('that', 'IN')])
+('tags -> ', '     (what->WP) (s->VBD) (that->IN) ')
+('tags initial-> ', [('what', 'WP'), ('s', 'VBD'), ('that', 'IN')])
+('tags -> ', '     (what->WP) (s->VBD) (that->IN) ')
+spaghetti
+spaghetti spaghetti 100
+[('spaghetti', 'NNS'), ('on', 'IN'), ('his', 'PRP$'), ('shirt', 'NN')]
+['spaghetti']
+('tags initial-> ', [('spaghetti', 'NNS'), ('on', 'IN'), ('his', 'PRP$'), ('shirt', 'NN')])
+('tags -> ', '     (spaghetti->NNS) (on->IN) (his->PRP$) (shirt->NN) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('try', 'NN'), ('to', 'TO'), ('eat', 'VB'), ('my', 'PRP$'), ('belly', 'RB'), ('button', 'VB')])
+('tags -> ', '     (try->NN) (to->TO) (eat->VB) (my->PRP$) (belly->RB) (button->VB) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('come', 'VB'), ('on', 'IN'), ('you', 'PRP'), ('guys', 'VBP'), ('don', 'JJ'), ('t', 'JJ'), ('fool', 'NN'), ('at', 'IN'), ('the', 'DT'), ('table', 'NN')])
+('tags -> ', '     (come->VB) (on->IN) (you->PRP) (guys->VBP) (don->JJ) (t->JJ) (fool->NN) (at->IN) (the->DT) (table->NN) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('hey', 'NN')])
+('tags -> ', '     (hey->NN) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('stop', 'VB'), ('it', 'PRP')])
+('tags -> ', '     (stop->VB) (it->PRP) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('didn', 'VBP'), ('t', 'JJ'), ('buy', 'NN'), ('xxx', 'NNP'), ('diet', 'NN'), ('soda', 'NN')])
+('tags -> ', '     (you->PRP) (didn->VBP) (t->JJ) (buy->NN) (xxx->NNP) (diet->NN) (soda->NN) ')
+('tags initial-> ', [('yes', 'RB'), ('i', 'NN'), ('did', 'VBD')])
+('tags -> ', '     (yes->RB) (i->NN) (did->VBD) ')
+peaches
+peaches peaches 72
+[('behind', 'IN'), ('the', 'DT'), ('peaches', 'NNS')]
+['peaches']
+('tags initial-> ', [('behind', 'IN'), ('the', 'DT'), ('peaches', 'NNS')])
+('tags -> ', '     (behind->IN) (the->DT) (peaches->NNS) ')
+('tags initial-> ', [('look', 'NN'), ('at', 'IN'), ('conner', 'NN'), ('i', 'NN'), ('did', 'VBD'), ('on', 'IN'), ('your', 'PRP$'), ('arm', 'NN')])
+('tags -> ', '     (look->NN) (at->IN) (conner->NN) (i->NN) (did->VBD) (on->IN) (your->PRP$) (arm->NN) ')
+('tags initial-> ', [('right', 'RB'), ('there', 'EX')])
+('tags -> ', '     (right->RB) (there->EX) ')
+('tags initial-> ', [('mama', 'NN')])
+('tags -> ', '     (mama->NN) ')
+('tags initial-> ', [('uh', 'JJ'), ('my', 'PRP$'), ('belly', 'RB'), ('hurts', 'NNS')])
+('tags -> ', '     (uh->JJ) (my->PRP$) (belly->RB) (hurts->NNS) ')
+('tags initial-> ', [('well', 'RB'), ('then', 'RB'), ('go', 'VB'), ('slower', 'JJR')])
+('tags -> ', '     (well->RB) (then->RB) (go->VB) (slower->JJR) ')
+('tags initial-> ', [('no', 'DT'), ('i', 'JJ'), ('don', 'VBP'), ('t', 'JJ'), ('wan', 'NN'), ('t', 'NN'), ('t', 'VBZ'), ('a', 'DT')])
+('tags -> ', '     (no->DT) (i->JJ) (don->VBP) (t->JJ) (wan->NN) (t->NN) (t->VBZ) (a->DT) ')
+('tags initial-> ', [('well', 'RB'), ('take', 'VB'), ('a', 'DT'), ('little', 'JJ'), ('rest', 'NN'), ('and', 'CC'), ('then', 'RB'), ('eat', 'VB'), ('more', 'RBR')])
+('tags -> ', '     (well->RB) (take->VB) (a->DT) (little->JJ) (rest->NN) (and->CC) (then->RB) (eat->VB) (more->RBR) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('it', 'PRP')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NN) (want->VBP) (it->PRP) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+milk
+milk milk 46
+[('xxx', 'NN'), ('because', 'IN'), ('you', 'PRP'), ('drank', 'VBP'), ('all', 'DT'), ('of', 'IN'), ('that', 'DT'), ('milk', 'NN'), ('so', 'RB'), ('fast', 'RB'), ('that', 'IN'), ('s', 'NN'), ('probably', 'RB'), ('why', 'WRB')]
+['milk']
+('tags initial-> ', [('xxx', 'NN'), ('because', 'IN'), ('you', 'PRP'), ('drank', 'VBP'), ('all', 'DT'), ('of', 'IN'), ('that', 'DT'), ('milk', 'NN'), ('so', 'RB'), ('fast', 'RB'), ('that', 'IN'), ('s', 'NN'), ('probably', 'RB'), ('why', 'WRB')])
+('tags -> ', '     (xxx->NN) (because->IN) (you->PRP) (drank->VBP) (all->DT) (of->IN) (that->DT) (milk->NN) (so->RB) (fast->RB) (that->IN) (s->NN) (probably->RB) (why->WRB) ')
+milk
+milk milk 46
+[('you', 'PRP'), ('drank', 'VBP'), ('all', 'PDT'), ('that', 'DT'), ('milk', 'NN'), ('up', 'RP')]
+['milk']
+('tags initial-> ', [('you', 'PRP'), ('drank', 'VBP'), ('all', 'PDT'), ('that', 'DT'), ('milk', 'NN'), ('up', 'RP')])
+('tags -> ', '     (you->PRP) (drank->VBP) (all->PDT) (that->DT) (milk->NN) (up->RP) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('thank', 'NN'), ('you', 'PRP')])
+('tags -> ', '     (thank->NN) (you->PRP) ')
+('tags initial-> ', [('you', 'PRP'), ('re', 'VBP'), ('welcome', 'JJ')])
+('tags -> ', '     (you->PRP) (re->VBP) (welcome->JJ) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('is', 'VBZ'), ('it', 'PRP'), ('hot', 'JJ')])
+('tags -> ', '     (is->VBZ) (it->PRP) (hot->JJ) ')
+('tags initial-> ', [('is', 'VBZ'), ('it', 'PRP'), ('good', 'JJ')])
+('tags -> ', '     (is->VBZ) (it->PRP) (good->JJ) ')
+('tags initial-> ', [('mhm', 'NN')])
+('tags -> ', '     (mhm->NN) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('on', 'IN'), ('may', 'MD'), ('s', 'VB'), ('diet', 'NN')])
+('tags -> ', '     (that->DT) (s->VBZ) (on->IN) (may->MD) (s->VB) (diet->NN) ')
+('tags initial-> ', [('yep', 'NN')])
+('tags -> ', '     (yep->NN) ')
+('tags initial-> ', [('i', 'NN'), ('m', 'NN'), ('being', 'VBG'), ('good', 'JJ')])
+('tags -> ', '     (i->NN) (m->NN) (being->VBG) (good->JJ) ')
+('tags initial-> ', [('xxx', 'JJ'), ('favorite', 'JJ'), ('thing', 'NN'), ('was', 'VBD'), ('shells', 'NNS'), ('9', 'CD')])
+('tags -> ', '     (xxx->JJ) (favorite->JJ) (thing->NN) (was->VBD) (shells->NNS) (9->CD) ')
+('tags initial-> ', [('whoa', 'NN')])
+('tags -> ', '     (whoa->NN) ')
+('tags initial-> ', [('those', 'DT'), ('shells', 'NNS'), ('are', 'VBP')])
+('tags -> ', '     (those->DT) (shells->NNS) (are->VBP) ')
+tomato
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7ff9bf715098>)
+[('here', 'RB'), ('have', 'VBP'), ('a', 'DT'), ('tomato', 'NN'), ('jake', 'NN')]
+['tomato']
+('tags initial-> ', [('here', 'RB'), ('have', 'VBP'), ('a', 'DT'), ('tomato', 'NN'), ('jake', 'NN')])
+('tags -> ', '     (here->RB) (have->VBP) (a->DT) (tomato->NN) (jake->NN) ')
+('tags initial-> ', [('mama', 'NN')])
+('tags -> ', '     (mama->NN) ')
+('tags initial-> ', [('no', 'DT'), ('no', 'DT'), ('no', 'DT'), ('no', 'DT'), ('no', 'DT')])
+('tags -> ', '     (no->DT) (no->DT) (no->DT) (no->DT) (no->DT) ')
+('tags initial-> ', [('wh', 'NN'), ('where', 'WRB'), ('you', 'PRP'), ('found', 'VBD'), ('these', 'DT')])
+('tags -> ', '     (wh->NN) (where->WRB) (you->PRP) (found->VBD) (these->DT) ')
+('tags initial-> ', [('at', 'IN'), ('the', 'DT'), ('grocery', 'NN'), ('store', 'NN')])
+('tags -> ', '     (at->IN) (the->DT) (grocery->NN) (store->NN) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('no', 'DT'), ('what', 'WP')])
+('tags -> ', '     (no->DT) (what->WP) ')
+('tags initial-> ', [('they', 'PRP'), ('fit', 'VBP'), ('on', 'IN'), ('your', 'PRP$'), ('thumb', 'NN'), ('huh', 'NN')])
+('tags -> ', '     (they->PRP) (fit->VBP) (on->IN) (your->PRP$) (thumb->NN) (huh->NN) ')
+('tags initial-> ', [('yeah', 'NN')])
+('tags -> ', '     (yeah->NN) ')
+('tags initial-> ', [('like', 'IN'), ('on', 'IN'), ('me', 'PRP'), ('too', 'RB'), ('but', 'CC')])
+('tags -> ', '     (like->IN) (on->IN) (me->PRP) (too->RB) (but->CC) ')
+('tags initial-> ', [('fit', 'NN'), ('on', 'IN'), ('your', 'PRP$'), ('tongue', 'NN')])
+('tags -> ', '     (fit->NN) (on->IN) (your->PRP$) (tongue->NN) ')
+('tags initial-> ', [('oh', 'RB'), ('good', 'JJ'), ('well', 'NN'), ('it', 'PRP'), ('s', 'VBZ'), ('a', 'DT'), ('good', 'JJ'), ('thing', 'NN'), ('they', 'PRP'), ('fit', 'VBP'), ('on', 'IN'), ('your', 'PRP$'), ('tongue', 'NN')])
+('tags -> ', '     (oh->RB) (good->JJ) (well->NN) (it->PRP) (s->VBZ) (a->DT) (good->JJ) (thing->NN) (they->PRP) (fit->VBP) (on->IN) (your->PRP$) (tongue->NN) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('look', 'NN'), ('i', 'NN'), ('want', 'VBP'), ('xxx', 'NN')])
+('tags -> ', '     (look->NN) (i->NN) (want->VBP) (xxx->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('what', 'WP')])
+('tags -> ', '     (you->PRP) (what->WP) ')
+('tags initial-> ', [('i', 'NN'), ('want', 'VBP'), ('a', 'DT'), ('bowl', 'NN')])
+('tags -> ', '     (i->NN) (want->VBP) (a->DT) (bowl->NN) ')
+('tags initial-> ', [('oh', 'NN')])
+('tags -> ', '     (oh->NN) ')
+('tags initial-> ', [('don', 'NN'), ('t', 'NN'), ('talk', 'NN'), ('with', 'IN'), ('food', 'NN'), ('in', 'IN'), ('your', 'PRP$'), ('mouth', 'NN')])
+('tags -> ', '     (don->NN) (t->NN) (talk->NN) (with->IN) (food->NN) (in->IN) (your->PRP$) (mouth->NN) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('give', 'VB'), ('me', 'PRP'), ('some', 'DT'), ('xxx', 'VBP')])
+('tags -> ', '     (give->VB) (me->PRP) (some->DT) (xxx->VBP) ')
+('tags initial-> ', [('you', 'PRP'), ('want', 'VBP'), ('more', 'JJR'), ('right', 'JJ')])
+('tags -> ', '     (you->PRP) (want->VBP) (more->JJR) (right->JJ) ')
+tomato
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7ff9bf70ca70>)
+[('another', 'DT'), ('tomato', 'NN')]
+['tomato']
+('tags initial-> ', [('another', 'DT'), ('tomato', 'NN')])
+('tags -> ', '     (another->DT) (tomato->NN) ')
+cucumber
+cucumber cucumber 12
+[('cucumber', 'NN')]
+['cucumber']
+('tags initial-> ', [('cucumber', 'NN')])
+('tags -> ', '     (cucumber->NN) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('more', 'RBR'), ('cucum', 'JJ'), ('ber', 'NN')])
+('tags -> ', '     (more->RBR) (cucum->JJ) (ber->NN) ')
+lettuce
+lettuce lettuce 16
+[('some', 'DT'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('some', 'DT'), ('lettuce', 'NN')])
+('tags -> ', '     (some->DT) (lettuce->NN) ')
+lettuce
+lettuce lettuce 16
+[('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('lettuce', 'NN')])
+('tags -> ', '     (lettuce->NN) ')
+lettuce
+lettuce lettuce 16
+[('i', 'NNS'), ('like', 'VBP'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('i', 'NNS'), ('like', 'VBP'), ('lettuce', 'NN')])
+('tags -> ', '     (i->NNS) (like->VBP) (lettuce->NN) ')
+('tags initial-> ', [('alright', 'RB'), ('hold', 'NN'), ('on', 'IN')])
+('tags -> ', '     (alright->RB) (hold->NN) (on->IN) ')
+('tags initial-> ', [('the', 'DT'), ('doctor', 'NN'), ('come', 'NN')])
+('tags -> ', '     (the->DT) (doctor->NN) (come->NN) ')
+lettuce
+lettuce lettuce 16
+[('there', 'RB'), ('s', 'VBZ'), ('a', 'DT'), ('whole', 'JJ'), ('bowl', 'NN'), ('with', 'IN'), ('two', 'CD'), ('tomatoes', 'NNS'), ('and', 'CC'), ('a', 'DT'), ('piece', 'NN'), ('of', 'IN'), ('lettuce', 'NN')]
+['lettuce']
+tomatoes
+tomatoes tomatoes 213
+[('there', 'RB'), ('s', 'VBZ'), ('a', 'DT'), ('whole', 'JJ'), ('bowl', 'NN'), ('with', 'IN'), ('two', 'CD'), ('tomatoes', 'NNS'), ('and', 'CC'), ('a', 'DT'), ('piece', 'NN'), ('of', 'IN'), ('lettuce', 'NN')]
+['tomatoes']
+('tags initial-> ', [('there', 'RB'), ('s', 'VBZ'), ('a', 'DT'), ('whole', 'JJ'), ('bowl', 'NN'), ('with', 'IN'), ('two', 'CD'), ('tomatoes', 'NNS'), ('and', 'CC'), ('a', 'DT'), ('piece', 'NN'), ('of', 'IN'), ('lettuce', 'NN')])
+('tags -> ', '     (there->RB) (s->VBZ) (a->DT) (whole->JJ) (bowl->NN) (with->IN) (two->CD) (tomatoes->NNS) (and->CC) (a->DT) (piece->NN) (of->IN) (lettuce->NN) ')
+('tags initial-> ', [('ah', 'NN'), ('yum', 'NN'), ('yum', 'NN')])
+('tags -> ', '     (ah->NN) (yum->NN) (yum->NN) ')
+('tags initial-> ', [('don', 'NN'), ('t', 'NN'), ('use', 'IN'), ('your', 'PRP$'), ('hands', 'NNS')])
+('tags -> ', '     (don->NN) (t->NN) (use->IN) (your->PRP$) (hands->NNS) ')
+('tags initial-> ', [('you', 'PRP'), ('gon', 'VBP'), ('na', 'TO'), ('um', 'VB')])
+('tags -> ', '     (you->PRP) (gon->VBP) (na->TO) (um->VB) ')
+('tags initial-> ', [('hold', 'NN'), ('on', 'IN')])
+('tags -> ', '     (hold->NN) (on->IN) ')
+lettuce
+lettuce lettuce 16
+[('conner', 'NN'), ('do', 'VBP'), ('you', 'PRP'), ('want', 'VB'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('conner', 'NN'), ('do', 'VBP'), ('you', 'PRP'), ('want', 'VB'), ('lettuce', 'NN')])
+('tags -> ', '     (conner->NN) (do->VBP) (you->PRP) (want->VB) (lettuce->NN) ')
+('tags initial-> ', [('i', 'NN'), ('do', 'VBP'), ('it', 'PRP')])
+('tags -> ', '     (i->NN) (do->VBP) (it->PRP) ')
+tomatoes
+tomatoes tomatoes 213
+[('and', 'CC'), ('do', 'VB'), ('you', 'PRP'), ('want', 'VB'), ('tomatoes', 'NNS'), ('too', 'RB')]
+['tomatoes']
+('tags initial-> ', [('and', 'CC'), ('do', 'VB'), ('you', 'PRP'), ('want', 'VB'), ('tomatoes', 'NNS'), ('too', 'RB')])
+('tags -> ', '     (and->CC) (do->VB) (you->PRP) (want->VB) (tomatoes->NNS) (too->RB) ')
+lettuce
+lettuce lettuce 16
+[('no', 'DT'), ('just', 'RB'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('no', 'DT'), ('just', 'RB'), ('lettuce', 'NN')])
+('tags -> ', '     (no->DT) (just->RB) (lettuce->NN) ')
+('tags initial-> ', [('no', 'DT'), ('to', 'TO'), ('matoes', 'VB')])
+('tags -> ', '     (no->DT) (to->TO) (matoes->VB) ')
+('tags initial-> ', [('alright', 'NN')])
+('tags -> ', '     (alright->NN) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('all', 'DT')])
+('tags -> ', '     (that->DT) (s->VBZ) (all->DT) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('all', 'PDT'), ('that', 'DT'), ('s', 'VBP'), ('all', 'PDT'), ('that', 'IN'), ('all', 'DT')])
+('tags -> ', '     (that->DT) (s->VBZ) (all->PDT) (that->DT) (s->VBP) (all->PDT) (that->IN) (all->DT) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('all', 'DT')])
+('tags -> ', '     (that->DT) (s->VBZ) (all->DT) ')
+('tags initial-> ', [('i', 'NN'), ('love', 'VBP'), ('you', 'PRP')])
+('tags -> ', '     (i->NN) (love->VBP) (you->PRP) ')
+dressing
+dressing dressing 169
+[('i', 'JJ'), ('don', 'VBP'), ('t', 'NNS'), ('have', 'VBP'), ('any', 'DT'), ('diet', 'JJ'), ('dressing', 'NN'), ('for', 'IN'), ('you', 'PRP'), ('may', 'MD')]
+['dressing']
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NNS'), ('have', 'VBP'), ('any', 'DT'), ('diet', 'JJ'), ('dressing', 'NN'), ('for', 'IN'), ('you', 'PRP'), ('may', 'MD')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NNS) (have->VBP) (any->DT) (diet->JJ) (dressing->NN) (for->IN) (you->PRP) (may->MD) ')
+('tags initial-> ', [('why', 'WRB')])
+('tags -> ', '     (why->WRB) ')
+('tags initial-> ', [('what', 'WP'), ('is', 'VBZ'), ('that', 'DT')])
+('tags -> ', '     (what->WP) (is->VBZ) (that->DT) ')
+dressing
+dressing dressing 169
+[('oh', 'IN'), ('you', 'PRP'), ('can', 'MD'), ('t', 'VB'), ('have', 'VB'), ('dressing', 'VBG'), ('on', 'IN'), ('your', 'PRP$'), ('salad', 'NN')]
+['dressing']
+('tags initial-> ', [('oh', 'IN'), ('you', 'PRP'), ('can', 'MD'), ('t', 'VB'), ('have', 'VB'), ('dressing', 'VBG'), ('on', 'IN'), ('your', 'PRP$'), ('salad', 'NN')])
+('tags -> ', '     (oh->IN) (you->PRP) (can->MD) (t->VB) (have->VB) (dressing->VBG) (on->IN) (your->PRP$) (salad->NN) ')
+('tags initial-> ', [('uhuh', 'NN')])
+('tags -> ', '     (uhuh->NN) ')
+dressing
+dressing dressing 169
+[('put', 'VB'), ('your', 'PRP$'), ('finger', 'NN'), ('dressing', 'VBG')]
+['dressing']
+('tags initial-> ', [('put', 'VB'), ('your', 'PRP$'), ('finger', 'NN'), ('dressing', 'VBG')])
+('tags -> ', '     (put->VB) (your->PRP$) (finger->NN) (dressing->VBG) ')
+('tags initial-> ', [('yeah', 'NN'), ('but', 'CC'), ('it', 'PRP'), ('defeats', 'VBZ'), ('the', 'DT'), ('purpose', 'NN'), ('to', 'TO')])
+('tags -> ', '     (yeah->NN) (but->CC) (it->PRP) (defeats->VBZ) (the->DT) (purpose->NN) (to->TO) ')
+('tags initial-> ', [('there', 'EX'), ('was', 'VBD'), ('one', 'CD'), ('page', 'NN'), ('in', 'IN'), ('here', 'RB')])
+('tags -> ', '     (there->EX) (was->VBD) (one->CD) (page->NN) (in->IN) (here->RB) ')
+('tags initial-> ', [('huh', 'NN')])
+('tags -> ', '     (huh->NN) ')
+('tags initial-> ', [('there', 'EX'), ('was', 'VBD'), ('one', 'CD'), ('piece', 'NN'), ('of', 'IN'), ('paper', 'NN'), ('in', 'IN'), ('here', 'RB'), ('with', 'IN'), ('the', 'DT'), ('diet', 'NN')])
+('tags -> ', '     (there->EX) (was->VBD) (one->CD) (piece->NN) (of->IN) (paper->NN) (in->IN) (here->RB) (with->IN) (the->DT) (diet->NN) ')
+('tags initial-> ', [('it', 'PRP'), ('s', 'RB'), ('right', 'RB'), ('there', 'EX')])
+('tags -> ', '     (it->PRP) (s->RB) (right->RB) (there->EX) ')
+('tags initial-> ', [('there', 'RB')])
+('tags -> ', '     (there->RB) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('like', 'IN'), ('that', 'DT')])
+('tags -> ', '     (like->IN) (that->DT) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NNS'), ('like', 'IN'), ('that', 'DT'), ('one', 'CD'), ('mom', 'NN')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NNS) (like->IN) (that->DT) (one->CD) (mom->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('didn', 'VBP'), ('t', 'VB'), ('you', 'PRP'), ('put', 'VB'), ('th', 'RP'), ('th', 'NN'), ('xxx', 'NN')])
+('tags -> ', '     (you->PRP) (didn->VBP) (t->VB) (you->PRP) (put->VB) (th->RP) (th->NN) (xxx->NN) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('it', 'PRP')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NN) (want->VBP) (it->PRP) ')
+dressing
+dressing dressing 169
+[('oh', 'IN'), ('you', 'PRP'), ('didn', 'VBP'), ('t', 'JJ'), ('want', 'VBP'), ('the', 'DT'), ('dressing', 'NN')]
+['dressing']
+('tags initial-> ', [('oh', 'IN'), ('you', 'PRP'), ('didn', 'VBP'), ('t', 'JJ'), ('want', 'VBP'), ('the', 'DT'), ('dressing', 'NN')])
+('tags -> ', '     (oh->IN) (you->PRP) (didn->VBP) (t->JJ) (want->VBP) (the->DT) (dressing->NN) ')
+('tags initial-> ', [('no', 'DT'), ('i', 'NN'), ('didn', 'VBP'), ('t', 'NN'), ('wanted', 'VBD'), ('it', 'PRP')])
+('tags -> ', '     (no->DT) (i->NN) (didn->VBP) (t->NN) (wanted->VBD) (it->PRP) ')
+lettuce
+lettuce lettuce 16
+[('you', 'PRP'), ('just', 'RB'), ('want', 'VBP'), ('the', 'DT'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('you', 'PRP'), ('just', 'RB'), ('want', 'VBP'), ('the', 'DT'), ('lettuce', 'NN')])
+('tags -> ', '     (you->PRP) (just->RB) (want->VBP) (the->DT) (lettuce->NN) ')
+('tags initial-> ', [('yeah', 'NN')])
+('tags -> ', '     (yeah->NN) ')
+('tags initial-> ', [('w', 'NN'), ('w', 'NN'), ('with', 'IN'), ('salad', 'NN')])
+('tags -> ', '     (w->NN) (w->NN) (with->IN) (salad->NN) ')
+('tags initial-> ', [('oh', 'UH'), ('come', 'NN'), ('on', 'IN')])
+('tags -> ', '     (oh->UH) (come->NN) (on->IN) ')
+('tags initial-> ', [('with', 'IN'), ('salad', 'NN')])
+('tags -> ', '     (with->IN) (salad->NN) ')
+('tags initial-> ', [('sit', 'NN')])
+('tags -> ', '     (sit->NN) ')
+('tags initial-> ', [('with', 'IN'), ('salad', 'NN'), ('with', 'IN'), ('some', 'DT'), ('more', 'RBR'), ('to', 'TO'), ('matoes', 'VB')])
+('tags -> ', '     (with->IN) (salad->NN) (with->IN) (some->DT) (more->RBR) (to->TO) (matoes->VB) ')
+('tags initial-> ', [('okay', 'NN')])
+('tags -> ', '     (okay->NN) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('no', 'DT'), ('no', 'DT'), ('no', 'DT'), ('no', 'DT')])
+('tags -> ', '     (no->DT) (no->DT) (no->DT) (no->DT) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('one', 'CD'), ('more', 'JJR')])
+('tags -> ', '     (one->CD) (more->JJR) ')
+('tags initial-> ', [('two', 'CD'), ('mores', 'NNS'), ('c', 'VBP')])
+('tags -> ', '     (two->CD) (mores->NNS) (c->VBP) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+lettuce
+lettuce lettuce 16
+[('xxx', 'NN'), ('lettuce', 'NN'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('xxx', 'NN'), ('lettuce', 'NN'), ('lettuce', 'NN')])
+('tags -> ', '     (xxx->NN) (lettuce->NN) (lettuce->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('hurt', 'VBP'), ('me', 'PRP')])
+('tags -> ', '     (you->PRP) (hurt->VBP) (me->PRP) ')
+('tags initial-> ', [('i', 'JJ'), ('m', 'NN'), ('sorry', 'NN')])
+('tags -> ', '     (i->JJ) (m->NN) (sorry->NN) ')
+lettuce
+lettuce lettuce 16
+[('i', 'NN'), ('want', 'VBP'), ('two', 'CD'), ('more', 'JJR'), ('the', 'DT'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('i', 'NN'), ('want', 'VBP'), ('two', 'CD'), ('more', 'JJR'), ('the', 'DT'), ('lettuce', 'NN')])
+('tags -> ', '     (i->NN) (want->VBP) (two->CD) (more->JJR) (the->DT) (lettuce->NN) ')
+('tags initial-> ', [('okay', 'NNS'), ('jake', 'NN')])
+('tags -> ', '     (okay->NNS) (jake->NN) ')
+('tags initial-> ', [('okay', 'NN'), ('conner', 'NN')])
+('tags -> ', '     (okay->NN) (conner->NN) ')
+lettuce
+lettuce lettuce 16
+[('you', 'PRP'), ('like', 'IN'), ('the', 'DT'), ('lettuce', 'NN')]
+['lettuce']
+('tags initial-> ', [('you', 'PRP'), ('like', 'IN'), ('the', 'DT'), ('lettuce', 'NN')])
+('tags -> ', '     (you->PRP) (like->IN) (the->DT) (lettuce->NN) ')
+('tags initial-> ', [('you', 'PRP'), ('like', 'VBP'), ('a', 'DT'), ('little', 'JJ'), ('bunny', 'JJ'), ('rabbit', 'NN')])
+('tags -> ', '     (you->PRP) (like->VBP) (a->DT) (little->JJ) (bunny->JJ) (rabbit->NN) ')
+('tags initial-> ', [('no', 'DT'), ('zzz', 'NN')])
+('tags -> ', '     (no->DT) (zzz->NN) ')
+dressing
+dressing dressing 169
+[('you', 'PRP'), ('have', 'VBP'), ('plenty', 'NN'), ('of', 'IN'), ('dressing', 'VBG'), ('there', 'EX'), ('jake', 'NN')]
+['dressing']
+('tags initial-> ', [('you', 'PRP'), ('have', 'VBP'), ('plenty', 'NN'), ('of', 'IN'), ('dressing', 'VBG'), ('there', 'EX'), ('jake', 'NN')])
+('tags -> ', '     (you->PRP) (have->VBP) (plenty->NN) (of->IN) (dressing->VBG) (there->EX) (jake->NN) ')
+('tags initial-> ', [('i', 'NN'), ('know', 'VBP'), ('that', 'IN'), ('but', 'CC'), ('i', 'VB'), ('want', 'VBP'), ('more', 'JJR')])
+('tags -> ', '     (i->NN) (know->VBP) (that->IN) (but->CC) (i->VB) (want->VBP) (more->JJR) ')
+('tags initial-> ', [('i', 'NN'), ('i', 'VBP'), ('i', 'VBP'), ('don', 'VBP'), ('t', 'NNS'), ('like', 'IN'), ('that', 'DT'), ('on', 'IN')])
+('tags -> ', '     (i->NN) (i->VBP) (i->VBP) (don->VBP) (t->NNS) (like->IN) (that->DT) (on->IN) ')
+('tags initial-> ', [('oh', 'IN'), ('you', 'PRP'), ('got', 'VBD'), ('it', 'PRP'), ('all', 'DT'), ('over', 'IN'), ('you', 'PRP')])
+('tags -> ', '     (oh->IN) (you->PRP) (got->VBD) (it->PRP) (all->DT) (over->IN) (you->PRP) ')
+fat
+fat fat 900
+[('i', 'NN'), ('m', 'VBP'), ('a', 'DT'), ('fat', 'JJ'), ('cow', 'NN')]
+['fat']
+('tags initial-> ', [('i', 'NN'), ('m', 'VBP'), ('a', 'DT'), ('fat', 'JJ'), ('cow', 'NN')])
+('tags -> ', '     (i->NN) (m->VBP) (a->DT) (fat->JJ) (cow->NN) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('sweet', 'JJ'), ('and', 'CC'), ('spicy', 'NN')])
+('tags -> ', '     (that->DT) (s->VBZ) (sweet->JJ) (and->CC) (spicy->NN) ')
+('tags initial-> ', [('and', 'CC'), ('spicy', 'VB'), ('yes', 'NNS')])
+('tags -> ', '     (and->CC) (spicy->VB) (yes->NNS) ')
+('tags initial-> ', [('spicy', 'NN'), ('for', 'IN'), ('your', 'PRP$'), ('tongue', 'NN')])
+('tags -> ', '     (spicy->NN) (for->IN) (your->PRP$) (tongue->NN) ')
+('tags initial-> ', [('little', 'JJ'), ('bit', 'NN')])
+('tags -> ', '     (little->JJ) (bit->NN) ')
+('tags initial-> ', [('and', 'CC'), ('this', 'DT'), ('is', 'VBZ'), ('spicy', 'NN')])
+('tags -> ', '     (and->CC) (this->DT) (is->VBZ) (spicy->NN) ')
+('tags initial-> ', [('do', 'VB'), ('you', 'PRP'), ('know', 'VB'), ('where', 'WRB'), ('the', 'DT'), ('other', 'JJ'), ('part', 'NN'), ('of', 'IN'), ('the', 'DT'), ('um', 'JJ'), ('paper', 'NN'), ('of', 'IN'), ('my', 'PRP$'), ('diet', 'NN'), ('is', 'VBZ')])
+('tags -> ', '     (do->VB) (you->PRP) (know->VB) (where->WRB) (the->DT) (other->JJ) (part->NN) (of->IN) (the->DT) (um->JJ) (paper->NN) (of->IN) (my->PRP$) (diet->NN) (is->VBZ) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('xxx', 'CC'), ('full', 'JJ')])
+('tags -> ', '     (xxx->CC) (full->JJ) ')
+('tags initial-> ', [('yeah', 'NN'), ('i', 'NN'), ('had', 'VBD'), ('that', 'DT'), ('little', 'JJ'), ('piece', 'NN'), ('xxx', 'NNP'), ('my', 'PRP$'), ('lunch', 'NN'), ('and', 'CC'), ('when', 'WRB'), ('i', 'NN'), ('got', 'VBD'), ('to', 'TO'), ('my', 'PRP$'), ('drink', 'NN'), ('and', 'CC'), ('when', 'WRB'), ('i', 'NN'), ('got', 'VBD'), ('to', 'TO'), ('the', 'DT'), ('end', 'NN'), ('of', 'IN'), ('the', 'DT'), ('salad', 'NN'), ('i', 'NN'), ('was', 'VBD'), ('full', 'JJ')])
+('tags -> ', '     (yeah->NN) (i->NN) (had->VBD) (that->DT) (little->JJ) (piece->NN) (xxx->NNP) (my->PRP$) (lunch->NN) (and->CC) (when->WRB) (i->NN) (got->VBD) (to->TO) (my->PRP$) (drink->NN) (and->CC) (when->WRB) (i->NN) (got->VBD) (to->TO) (the->DT) (end->NN) (of->IN) (the->DT) (salad->NN) (i->NN) (was->VBD) (full->JJ) ')
+('tags initial-> ', [('your', 'PRP$'), ('stomach', 'NN'), ('is', 'VBZ'), ('shrinking', 'VBG')])
+('tags -> ', '     (your->PRP$) (stomach->NN) (is->VBZ) (shrinking->VBG) ')
+('tags initial-> ', [('i', 'NN'), ('know', 'VBP')])
+('tags -> ', '     (i->NN) (know->VBP) ')
+('tags initial-> ', [('shrinking', 'VBG'), ('on', 'IN'), ('the', 'DT'), ('inside', 'NN'), ('and', 'CC'), ('then', 'RB'), ('after', 'IN'), ('it', 'PRP'), ('shrinks', 'VBZ'), ('on', 'IN'), ('the', 'DT'), ('inside', 'NN'), ('it', 'PRP'), ('ll', 'VBZ'), ('shrink', 'NN'), ('on', 'IN'), ('the', 'DT'), ('outside', 'NN')])
+('tags -> ', '     (shrinking->VBG) (on->IN) (the->DT) (inside->NN) (and->CC) (then->RB) (after->IN) (it->PRP) (shrinks->VBZ) (on->IN) (the->DT) (inside->NN) (it->PRP) (ll->VBZ) (shrink->NN) (on->IN) (the->DT) (outside->NN) ')
+('tags initial-> ', [('good', 'JJ')])
+('tags -> ', '     (good->JJ) ')
+('tags initial-> ', [('i', 'JJ'), ('m', 'VBP'), ('all', 'DT'), ('done', 'VBN')])
+('tags -> ', '     (i->JJ) (m->VBP) (all->DT) (done->VBN) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('this', 'DT')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NN) (want->VBP) (this->DT) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('this', 'DT')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NN) (want->VBP) (this->DT) ')
+('tags initial-> ', [('yes', 'RB'), ('you', 'PRP'), ('can', 'MD'), ('eat', 'VB'), ('some', 'DT'), ('more', 'RBR')])
+('tags -> ', '     (yes->RB) (you->PRP) (can->MD) (eat->VB) (some->DT) (more->RBR) ')
+('tags initial-> ', [('hm', 'NN')])
+('tags -> ', '     (hm->NN) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'JJ'), ('wan', 'NN'), ('t', 'NN'), ('t', 'VBZ'), ('a', 'DT')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->JJ) (wan->NN) (t->NN) (t->VBZ) (a->DT) ')
+('tags initial-> ', [('you', 'PRP'), ('did', 'VBD'), ('alright', 'RB'), ('but', 'CC'), ('couldn', 'JJ'), ('t', 'NN'), ('you', 'PRP'), ('eat', 'VBP'), ('a', 'DT'), ('little', 'RB'), ('more', 'RBR')])
+('tags -> ', '     (you->PRP) (did->VBD) (alright->RB) (but->CC) (couldn->JJ) (t->NN) (you->PRP) (eat->VBP) (a->DT) (little->RB) (more->RBR) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('a', 'DT'), ('couple', 'NN'), ('more', 'RBR'), ('bites', 'NNS')])
+('tags -> ', '     (a->DT) (couple->NN) (more->RBR) (bites->NNS) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'JJ'), ('want', 'VBP'), ('more', 'JJR')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->JJ) (want->VBP) (more->JJR) ')
+('tags initial-> ', [('could', 'MD'), ('i', 'VB'), ('have', 'VBP'), ('a', 'DT')])
+('tags -> ', '     (could->MD) (i->VB) (have->VBP) (a->DT) ')
+('tags initial-> ', [('alright', 'NN'), ('conner', 'NN'), ('go', 'VBP'), ('wash', 'VBZ'), ('up', 'RP'), ('then', 'RB')])
+('tags -> ', '     (alright->NN) (conner->NN) (go->VBP) (wash->VBZ) (up->RP) (then->RB) ')
+('tags initial-> ', [('i', 'JJ'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('mine', 'NN'), ('ma', 'NN'), ('i', 'JJ'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('it', 'PRP')])
+('tags -> ', '     (i->JJ) (don->VBP) (t->NN) (want->VBP) (mine->NN) (ma->NN) (i->JJ) (don->VBP) (t->NN) (want->VBP) (it->PRP) ')
+('tags initial-> ', [('jake', 'NN'), ('you', 'PRP'), ('didn', 'VBP'), ('t', 'JJ'), ('eat', 'NN'), ('salad', 'NN')])
+('tags -> ', '     (jake->NN) (you->PRP) (didn->VBP) (t->JJ) (eat->NN) (salad->NN) ')
+tomato
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7ff9bf709e60>)
+[('this', 'DT'), ('is', 'VBZ'), ('a', 'DT'), ('big', 'JJ'), ('tomato', 'NN')]
+['tomato']
+('tags initial-> ', [('this', 'DT'), ('is', 'VBZ'), ('a', 'DT'), ('big', 'JJ'), ('tomato', 'NN')])
+('tags -> ', '     (this->DT) (is->VBZ) (a->DT) (big->JJ) (tomato->NN) ')
+('tags initial-> ', [('i', 'NN'), ('did', 'VBD'), ('a', 'DT'), ('i', 'NN'), ('eat', 'VBP'), ('the', 'DT'), ('i', 'NN'), ('eat', 'VBP'), ('the', 'DT'), ('i', 'NN'), ('eat', 'VBP'), ('that', 'WDT'), ('right', 'RB'), ('here', 'RB')])
+('tags -> ', '     (i->NN) (did->VBD) (a->DT) (i->NN) (eat->VBP) (the->DT) (i->NN) (eat->VBP) (the->DT) (i->NN) (eat->VBP) (that->WDT) (right->RB) (here->RB) ')
+('tags initial-> ', [('xxx', 'NN')])
+('tags -> ', '     (xxx->NN) ')
+('tags initial-> ', [('i', 'NN'), ('eat', 'VBP'), ('that', 'WDT'), ('right', 'RB'), ('there', 'EX')])
+('tags -> ', '     (i->NN) (eat->VBP) (that->WDT) (right->RB) (there->EX) ')
+('tags initial-> ', [('xxx', 'NN'), ('you', 'PRP'), ('have', 'VBP'), ('to', 'TO'), ('eat', 'VB'), ('some', 'DT'), ('more', 'RBR')])
+('tags -> ', '     (xxx->NN) (you->PRP) (have->VBP) (to->TO) (eat->VB) (some->DT) (more->RBR) ')
+('tags initial-> ', [('xxx', 'NN'), ('no', 'DT')])
+('tags -> ', '     (xxx->NN) (no->DT) ')
+('tags initial-> ', [('yeah', 'NN')])
+('tags -> ', '     (yeah->NN) ')
+('tags initial-> ', [('no', 'DT'), ('but', 'CC'), ('i', 'RB'), ('have', 'VBP'), ('a', 'DT'), ('belly', 'RB'), ('ache', 'NN')])
+('tags -> ', '     (no->DT) (but->CC) (i->RB) (have->VBP) (a->DT) (belly->RB) (ache->NN) ')
+('tags initial-> ', [('why', 'WRB'), ('don', 'NN'), ('t', 'NN'), ('you', 'PRP'), ('go', 'VBP'), ('blow', 'VB'), ('your', 'PRP$'), ('nose', 'NN')])
+('tags -> ', '     (why->WRB) (don->NN) (t->NN) (you->PRP) (go->VBP) (blow->VB) (your->PRP$) (nose->NN) ')
+('tags initial-> ', [('i', 'JJ'), ('m', 'VBP'), ('all', 'DT'), ('done', 'VBN')])
+('tags -> ', '     (i->JJ) (m->VBP) (all->DT) (done->VBN) ')
+('tags initial-> ', [('no', 'DT'), ('you', 'PRP'), ('re', 'VBP'), ('not', 'RB')])
+('tags -> ', '     (no->DT) (you->PRP) (re->VBP) (not->RB) ')
+('tags initial-> ', [('yes', 'NNS'), ('am', 'VBP')])
+('tags -> ', '     (yes->NNS) (am->VBP) ')
+('tags initial-> ', [('conner', 'NN'), ('you', 'PRP'), ('stay', 'VBP'), ('out', 'IN'), ('of', 'IN'), ('this', 'DT')])
+('tags -> ', '     (conner->NN) (you->PRP) (stay->VBP) (out->IN) (of->IN) (this->DT) ')
+('tags initial-> ', [('jake', 'NN'), ('go', 'VB'), ('blow', 'IN'), ('your', 'PRP$'), ('nose', 'JJ'), ('and', 'CC'), ('we', 'PRP'), ('ll', 'VBP'), ('see', 'VB'), ('maybe', 'RB'), ('your', 'PRP$'), ('belly', 'RB'), ('will', 'MD'), ('have', 'VB'), ('more', 'JJR'), ('room', 'NN'), ('after', 'IN'), ('that', 'DT')])
+('tags -> ', '     (jake->NN) (go->VB) (blow->IN) (your->PRP$) (nose->JJ) (and->CC) (we->PRP) (ll->VBP) (see->VB) (maybe->RB) (your->PRP$) (belly->RB) (will->MD) (have->VB) (more->JJR) (room->NN) (after->IN) (that->DT) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('you', 'PRP'), ('haven', 'VBP'), ('t', 'JJ'), ('eat', 'NN'), ('anything', 'NN')])
+('tags -> ', '     (you->PRP) (haven->VBP) (t->JJ) (eat->NN) (anything->NN) ')
+('tags initial-> ', [('did', 'VBD'), ('you', 'PRP'), ('wash', 'VB'), ('your', 'PRP$'), ('face', 'NN'), ('conner', 'NN')])
+('tags -> ', '     (did->VBD) (you->PRP) (wash->VB) (your->PRP$) (face->NN) (conner->NN) ')
+('tags initial-> ', [('yeah', 'NN'), ('i', 'NN'), ('did', 'VBD'), ('i', 'RB'), ('eat', 'VB'), ('one', 'CD'), ('right', 'NN'), ('here', 'RB'), ('and', 'CC'), ('one', 'CD'), ('right', 'NN'), ('there', 'RB'), ('and', 'CC'), ('one', 'CD'), ('right', 'NN'), ('here', 'RB')])
+('tags -> ', '     (yeah->NN) (i->NN) (did->VBD) (i->RB) (eat->VB) (one->CD) (right->NN) (here->RB) (and->CC) (one->CD) (right->NN) (there->RB) (and->CC) (one->CD) (right->NN) (here->RB) ')
+('tags initial-> ', [('xxx', 'NN'), ('i', 'NN'), ('got', 'VBD'), ('xxx', 'JJ'), ('eat', 'NN'), ('on', 'IN'), ('your', 'PRP$'), ('face', 'NN'), ('jake', 'NN')])
+('tags -> ', '     (xxx->NN) (i->NN) (got->VBD) (xxx->JJ) (eat->NN) (on->IN) (your->PRP$) (face->NN) (jake->NN) ')
+('tags initial-> ', [('one', 'CD'), ('right', 'NN'), ('here', 'RB'), ('one', 'CD'), ('right', 'NN'), ('here', 'RB'), ('and', 'CC'), ('one', 'CD'), ('right', 'NN'), ('here', 'RB')])
+('tags -> ', '     (one->CD) (right->NN) (here->RB) (one->CD) (right->NN) (here->RB) (and->CC) (one->CD) (right->NN) (here->RB) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('one', 'CD'), ('right', 'NN'), ('here', 'RB'), ('and', 'CC'), ('one', 'CD'), ('right', 'NN'), ('here', 'RB'), ('and', 'CC'), ('one', 'CD'), ('right', 'NN'), ('here', 'RB')])
+('tags -> ', '     (one->CD) (right->NN) (here->RB) (and->CC) (one->CD) (right->NN) (here->RB) (and->CC) (one->CD) (right->NN) (here->RB) ')
+('tags initial-> ', [('how', 'WRB'), ('many', 'JJ'), ('does', 'VBZ'), ('that', 'DT'), ('make', 'VB')])
+('tags -> ', '     (how->WRB) (many->JJ) (does->VBZ) (that->DT) (make->VB) ')
+('tags initial-> ', [('three', 'CD')])
+('tags -> ', '     (three->CD) ')
+('tags initial-> ', [('that', 'DT'), ('s', 'VBZ'), ('all', 'DT')])
+('tags -> ', '     (that->DT) (s->VBZ) (all->DT) ')
+('tags initial-> ', [('how', 'WRB'), ('about', 'RB'), ('three', 'CD'), ('more', 'JJR'), ('then', 'RB')])
+('tags -> ', '     (how->WRB) (about->RB) (three->CD) (more->JJR) (then->RB) ')
+('tags initial-> ', [('don', 'NN'), ('t', 'NN'), ('wan', 'NN'), ('t', 'NN'), ('t', 'VBZ'), ('a', 'DT')])
+('tags -> ', '     (don->NN) (t->NN) (wan->NN) (t->NN) (t->VBZ) (a->DT) ')
+('tags initial-> ', [('one', 'CD'), ('more', 'JJR')])
+('tags -> ', '     (one->CD) (more->JJR) ')
+('tags initial-> ', [('one', 'CD'), ('more', 'JJR')])
+('tags -> ', '     (one->CD) (more->JJR) ')
+('tags initial-> ', [('three', 'CD'), ('more', 'JJR')])
+('tags -> ', '     (three->CD) (more->JJR) ')
+('tags initial-> ', [('one', 'CD'), ('more', 'JJR')])
+('tags -> ', '     (one->CD) (more->JJR) ')
+('tags initial-> ', [('one', 'CD'), ('more', 'JJR'), ('then', 'RB'), ('go', 'VB'), ('blow', 'IN'), ('your', 'PRP$'), ('nose', 'NN'), ('and', 'CC'), ('come', 'VB'), ('back', 'RB'), ('and', 'CC'), ('have', 'VBP'), ('three', 'CD'), ('more', 'JJR')])
+('tags -> ', '     (one->CD) (more->JJR) (then->RB) (go->VB) (blow->IN) (your->PRP$) (nose->NN) (and->CC) (come->VB) (back->RB) (and->CC) (have->VBP) (three->CD) (more->JJR) ')
+('tags initial-> ', [('no', 'DT')])
+('tags -> ', '     (no->DT) ')
+('tags initial-> ', [('zzz', 'NN')])
+('tags -> ', '     (zzz->NN) ')
+('tags initial-> ', [('pretend', 'NN'), ('crying', 'NN')])
+('tags -> ', '     (pretend->NN) (crying->NN) ')
+('tags initial-> ', [('jake', 'NN')])
+('tags -> ', '     (jake->NN) ')
+('tags initial-> ', [('alright', 'RB'), ('eat', 'VB'), ('one', 'CD'), ('more', 'JJR'), ('and', 'CC'), ('go', 'VB'), ('blow', 'VB'), ('your', 'PRP$'), ('nose', 'NN')])
+('tags -> ', '     (alright->RB) (eat->VB) (one->CD) (more->JJR) (and->CC) (go->VB) (blow->VB) (your->PRP$) (nose->NN) ')
+('tags initial-> ', [('xxx', 'NN'), ('i', 'NN'), ('don', 'VBP'), ('t', 'NN'), ('want', 'VBP'), ('to', 'TO'), ('eat', 'VB'), ('no', 'DT'), ('more', 'JJR')])
+('tags -> ', '     (xxx->NN) (i->NN) (don->VBP) (t->NN) (want->VBP) (to->TO) (eat->VB) (no->DT) (more->JJR) ')
+('tags initial-> ', [('well', 'RB'), ('then', 'RB'), ('i', 'VB'), ('m', 'NN'), ('gon', 'NN'), ('na', 'TO'), ('save', 'VB'), ('it', 'PRP'), ('for', 'IN'), ('lunch', 'NN'), ('tomorrow', 'NN')])
+('tags -> ', '     (well->RB) (then->RB) (i->VB) (m->NN) (gon->NN) (na->TO) (save->VB) (it->PRP) (for->IN) (lunch->NN) (tomorrow->NN) ')
+('tags initial-> ', [('okay', 'NN')])
+('tags -> ', '     (okay->NN) ')
+('tags initial-> ', [('wash', 'VB'), ('your', 'PRP$'), ('hands', 'NNS'), ('and', 'CC'), ('face', 'NN'), ('too', 'RB')])
+('tags -> ', '     (wash->VB) (your->PRP$) (hands->NNS) (and->CC) (face->NN) (too->RB) ')
+loading solution set
+calculating
+set([(51, (63, 68)), (889, (19, 26)), (819, (29, 37)), (48, (6, 16)), (722, (9, 19)), (686, (66, 73)), (51, (47, 51)), (686, (42, 50)), (44, (6, 16)), (390, (13, 17)), (51, (69, 73)), (51, (6, 10)), (36, (6, 10)), (48, (17, 21)), (719, (14, 21)), (39, (6, 16)), (394, (6, 10)), (51, (58, 62)), (578, (18, 24)), (368, (18, 24)), (654, (14, 20)), (51, (52, 57)), (291, (22, 26)), (769, (26, 34)), (80, (24, 30)), (441, (6, 15)), (51, (36, 40)), (658, (6, 14)), (44, (17, 21)), (828, (30, 37)), (901, (25, 33)), (51, (30, 35)), (51, (15, 20)), (486, (17, 24)), (869, (18, 25)), (30, (16, 21)), (288, (26, 30)), (671, (6, 13)), (760, (47, 52)), (479, (25, 34)), (527, (26, 30)), (51, (25, 29)), (675, (13, 20)), (665, (11, 21)), (745, (23, 36)), (346, (32, 37)), (869, (10, 17)), (760, (24, 32)), (847, (32, 42)), (51, (41, 46)), (281, (11, 15)), (878, (26, 33)), (521, (46, 50)), (26, (6, 10)), (62, (10, 15)), (715, (22, 30)), (39, (17, 21)), (668, (11, 18)), (708, (25, 32))])
+[((26, (6, 10)), '*CHI:\tmilk [!] .\n'), ((30, (16, 21)), '*JAK:\t<&m> [//] juice .\n'), ((36, (6, 10)), '*FAT:\tmilk .\n'), ((39, (6, 16)), '*MOT:\tmilk juice milk .\n'), ((39, (17, 21)), '*MOT:\tmilk juice milk .\n'), ((44, (6, 16)), '*CHI:\tmilk juice milk zzz .\n'), ((44, (17, 21)), '*CHI:\tmilk juice milk zzz .\n'), ((48, (6, 16)), '*FAT:\tmilk juice milk .\n'), ((48, (17, 21)), '*FAT:\tmilk juice milk .\n'), ((51, (6, 10)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (15, 20)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (25, 29)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (30, 35)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (36, 40)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (41, 46)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (47, 51)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (52, 57)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (58, 62)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (63, 68)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (69, 73)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((62, (10, 15)), '*JAK:\t<no juice> [<] .\n'), ((80, (24, 30)), '*MOT:\twell you eat some supper now before I give you more okay (11.) ?\n'), ((281, (11, 15)), '*CHI:\tmore milk (.) .\n'), ((288, (26, 30)), '*MOT:\tsay can I have more milk please .\n'), ((291, (22, 26)), '*CHI:\tcan I have more milk please .\n'), ((346, (32, 37)), "*SIS:\txxx just a quick glass of water and we're gonna go back .\n"), ((368, (18, 24)), "*MOT:\tthat's that coffee I made by mistake .\n"), ((390, (13, 17)), '*CHI:\tlittle milk ?\n'), ((394, (6, 10)), '*CHI:\tmilk Mama ?\n'), ((441, (6, 15)), '*MOT:\tspaghetti on his shirt .\n'), ((479, (25, 34)), "*SIS:\tyou didn't buy xxx diet soda ?\n"), ((486, (17, 24)), '*MOT:\tbehind the peaches .\n'), ((521, (46, 50)), "*MOT:\t<xxx> [<] because you drank all of that milk so fast that's probably why .\n"), ((527, (26, 30)), '*JAK:\tyou drank all that <milk> [>] up .\n'), ((578, (18, 24)), '*MOT:\there have a tomato Jake .\n'), ((654, (14, 20)), '*MOT:\tanother tomato ?\n'), ((658, (6, 14)), '*MOT:\tcucumber ?\n'), ((665, (11, 21)), '*CHI:\tmore cucum(ber) .\n'), ((668, (11, 18)), '*MOT:\tsome lettuce .\n'), ((671, (6, 13)), '*MOT:\tlettuce ?\n'), ((675, (13, 20)), '*JAK:\tI like lettuce !\n'), ((686, (42, 50)), "*SIS:\t<there's a whole bowl> [<] with two tomatoes and a piece of lettuce .\n"), ((686, (66, 73)), "*SIS:\t<there's a whole bowl> [<] with two tomatoes and a piece of lettuce .\n"), ((708, (25, 32)), '*MOT:\tConner do you want lettuce ?\n'), ((715, (22, 30)), '*MOT:\tand do you want tomatoes too ?\n'), ((719, (14, 21)), '*CHI:\tno just lettuce .\n'), ((722, (9, 19)), '*CHI:\tno (to)matoes !\n'), ((745, (23, 36)), "*MOT:\tI don't have any diet dressing for you May .\n"), ((760, (24, 32)), "*MOT:\toh you can't have dressing <on your> [>] salad ?\n"), ((760, (47, 52)), "*MOT:\toh you can't have dressing <on your> [>] salad ?\n"), ((769, (26, 34)), '*SIS:\tput your finger [?] dressing .\n'), ((819, (29, 37)), "*MOT:\toh you didn't want the dressing ?\n"), ((828, (30, 37)), '*MOT:\t<you just> [<] want the lettuce ?\n'), ((847, (32, 42)), '*JAK:\twith salad with some more (to)matoes .\n'), ((869, (10, 17)), '*CHI:\txxx lettuce lettuce .\n'), ((869, (18, 25)), '*CHI:\txxx lettuce lettuce .\n'), ((878, (26, 33)), '*JAK:\tI want two more the lettuce .\n'), ((889, (19, 26)), '*MOT:\tyou like the lettuce ?\n'), ((901, (25, 33)), '*MOT:\tyou have plenty of dressing there Jake .\n')]
+set([(51, (63, 68)), (889, (19, 26)), (48, (6, 10)), (39, (11, 16)), (44, (11, 16)), (51, (36, 40)), (686, (66, 73)), (51, (47, 51)), (686, (42, 50)), (377, (20, 26)), (527, (26, 30)), (448, (26, 32)), (390, (13, 17)), (51, (69, 73)), (51, (6, 10)), (36, (6, 10)), (48, (17, 21)), (719, (14, 21)), (394, (6, 10)), (51, (58, 62)), (578, (18, 24)), (368, (18, 24)), (654, (14, 20)), (819, (29, 37)), (51, (52, 57)), (291, (22, 26)), (769, (26, 34)), (915, (12, 15)), (441, (6, 15)), (708, (25, 32)), (658, (6, 14)), (26, (6, 10)), (769, (15, 21)), (828, (30, 37)), (901, (25, 33)), (51, (30, 35)), (51, (15, 20)), (486, (17, 24)), (869, (18, 25)), (30, (16, 21)), (288, (26, 30)), (745, (28, 36)), (521, (46, 50)), (671, (6, 13)), (384, (19, 24)), (44, (6, 10)), (39, (6, 10)), (51, (25, 29)), (675, (13, 20)), (1028, (21, 27)), (346, (32, 37)), (869, (10, 17)), (760, (24, 32)), (51, (41, 46)), (281, (11, 15)), (878, (26, 33)), (48, (11, 16)), (44, (17, 21)), (62, (10, 15)), (715, (22, 30)), (39, (17, 21)), (668, (11, 18))])
+[((26, (6, 10)), '*CHI:\tmilk [!] .\n'), ((30, (16, 21)), '*JAK:\t<&m> [//] juice .\n'), ((36, (6, 10)), '*FAT:\tmilk .\n'), ((39, (6, 10)), '*MOT:\tmilk juice milk .\n'), ((39, (11, 16)), '*MOT:\tmilk juice milk .\n'), ((39, (17, 21)), '*MOT:\tmilk juice milk .\n'), ((44, (6, 10)), '*CHI:\tmilk juice milk zzz .\n'), ((44, (11, 16)), '*CHI:\tmilk juice milk zzz .\n'), ((44, (17, 21)), '*CHI:\tmilk juice milk zzz .\n'), ((48, (6, 10)), '*FAT:\tmilk juice milk .\n'), ((48, (11, 16)), '*FAT:\tmilk juice milk .\n'), ((48, (17, 21)), '*FAT:\tmilk juice milk .\n'), ((51, (6, 10)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (15, 20)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (25, 29)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (30, 35)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (36, 40)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (41, 46)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (47, 51)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (52, 57)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (58, 62)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (63, 68)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((51, (69, 73)), '*JAK:\tmilk (.) juice (.) milk juice milk juice milk juice milk juice milk .\n'), ((62, (10, 15)), '*JAK:\t<no juice> [<] .\n'), ((281, (11, 15)), '*CHI:\tmore milk (.) .\n'), ((288, (26, 30)), '*MOT:\tsay can I have more milk please .\n'), ((291, (22, 26)), '*CHI:\tcan I have more milk please .\n'), ((346, (32, 37)), "*SIS:\txxx just a quick glass of water and we're gonna go back .\n"), ((368, (18, 24)), "*MOT:\tthat's that coffee I made by mistake .\n"), ((377, (20, 26)), '*SIS:\tthis dumb [?] coffee mix .\n'), ((384, (19, 24)), "*MOT:\tthere's &-um fruit punch in the yellow jug (10.) .\n"), ((390, (13, 17)), '*CHI:\tlittle milk ?\n'), ((394, (6, 10)), '*CHI:\tmilk Mama ?\n'), ((441, (6, 15)), '*MOT:\tspaghetti on his shirt .\n'), ((448, (26, 32)), '*JAK:\ttry to eat my belly button .\n'), ((486, (17, 24)), '*MOT:\tbehind the peaches .\n'), ((521, (46, 50)), "*MOT:\t<xxx> [<] because you drank all of that milk so fast that's probably why .\n"), ((527, (26, 30)), '*JAK:\tyou drank all that <milk> [>] up .\n'), ((578, (18, 24)), '*MOT:\there have a tomato Jake .\n'), ((654, (14, 20)), '*MOT:\tanother tomato ?\n'), ((658, (6, 14)), '*MOT:\tcucumber ?\n'), ((668, (11, 18)), '*MOT:\tsome lettuce .\n'), ((671, (6, 13)), '*MOT:\tlettuce ?\n'), ((675, (13, 20)), '*JAK:\tI like lettuce !\n'), ((686, (42, 50)), "*SIS:\t<there's a whole bowl> [<] with two tomatoes and a piece of lettuce .\n"), ((686, (66, 73)), "*SIS:\t<there's a whole bowl> [<] with two tomatoes and a piece of lettuce .\n"), ((708, (25, 32)), '*MOT:\tConner do you want lettuce ?\n'), ((715, (22, 30)), '*MOT:\tand do you want tomatoes too ?\n'), ((719, (14, 21)), '*CHI:\tno just lettuce .\n'), ((745, (28, 36)), "*MOT:\tI don't have any diet dressing for you May .\n"), ((760, (24, 32)), "*MOT:\toh you can't have dressing <on your> [>] salad ?\n"), ((769, (15, 21)), '*SIS:\tput your finger [?] dressing .\n'), ((769, (26, 34)), '*SIS:\tput your finger [?] dressing .\n'), ((819, (29, 37)), "*MOT:\toh you didn't want the dressing ?\n"), ((828, (30, 37)), '*MOT:\t<you just> [<] want the lettuce ?\n'), ((869, (10, 17)), '*CHI:\txxx lettuce lettuce .\n'), ((869, (18, 25)), '*CHI:\txxx lettuce lettuce .\n'), ((878, (26, 33)), '*JAK:\tI want two more the lettuce .\n'), ((889, (19, 26)), '*MOT:\tyou like the lettuce ?\n'), ((901, (25, 33)), '*MOT:\tyou have plenty of dressing there Jake .\n'), ((915, (12, 15)), "*CHI:\tI'm a fat cow !\n"), ((1028, (21, 27)), '*MOT:\t<this is a big tomato> [<] .\n')]
+calculating accuracy and recall
+correct labels:
+set(['diet soda', 'peaches', 'coffee', 'salad', 'lettuce', 'diet dressing', '(to)matoes', 'cucum(ber)', 'water', 'juice', 'cucumber', 'tomato', 'supper', 'dressing', 'milk juice', 'spaghetti', 'milk', 'tomatoes'])
+predicted labels:
+set(['tomato', 'peaches', 'coffee', 'lettuce', 'button', 'fat', 'water', 'juice', 'fruit', 'cucumber', 'finger', 'dressing', 'spaghetti', 'milk', 'tomatoes'])
+file:HSLLD/HV1/MT/conmt1.cha
+precision: 0.733333333333
+recall: 0.611111111111
+true positives:['coffee', 'cucumber', 'dressing', 'juice', 'lettuce', 'milk', 'peaches', 'spaghetti', 'tomato', 'tomatoes', 'water']
+false positives: ['button', 'fat', 'finger', 'fruit']
+false negatives: ['(to)matoes', 'cucum(ber)', 'diet dressing', 'diet soda', 'milk juice', 'salad', 'supper']
+# true pos: 11
+# false pos: 4
+# false neg: 7
+Time taken to run the script 249.458487034

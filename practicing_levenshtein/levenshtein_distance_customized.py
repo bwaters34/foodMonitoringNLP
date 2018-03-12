@@ -1,6 +1,6 @@
 class levenshtein_distance:
 	def __init__(self, **weight_dict):
-		alphabet = "abcdefghijklmnopqrstuvwxyz"
+		alphabet = "abcdefghijklmnopqrstuvwxyz "
 		self.w = dict( (x, (1, 1, 1)) for x in alphabet + alphabet.upper())
 		if weight_dict:
 			self.w.update(weight_dict) 
