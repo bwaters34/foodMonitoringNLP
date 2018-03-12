@@ -212,3 +212,26 @@ total runtime: 3635.37472415
 
 #Trying: 
 false negatives: ['(to)matoes', 'cucum(ber)', 'diet dressing', 'diet soda', 'dressing', 'milk juice', 'salad', 'spaghetti', 'supper', 'water']
+
+
+
+
+#Levenshtien No Patterns. K = 0.2
+precision: 0.573529411765
+recall 0.65
+# true pos: 156
+# false pos: 116
+# false neg: 84
+total runtime: 6087.7603991
+
+
+#Levenshtien only 's' No Patterns K = 0.15 (tab 2)
+
+
+
+
+
+
+
+
+#Levenshtien No Patterns K = 0.15 (tab 3)

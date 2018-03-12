@@ -1,0 +1,136 @@
+carrots,carrot,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+cookies,cookie,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+pea,peas,0, 1.33333333333 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+topping,tapping,1, 1.0 , 0.142857142857
+carrot,carrots,0, 1.16666666667 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+carrots,carrot,0, 0.857142857143 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+cookies,cookie,0, 0.857142857143 , 0.0
+desserts,dessert,1, 0.875 , 0.125
+desserts,dessert,1, 0.875 , 0.125
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+muffins,muffin,1, 0.857142857143 , 0.142857142857
+cream,scream,0, 1.2 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+peppers,pepper,0, 0.857142857143 , 0.0
+oranges,orange,1, 0.857142857143 , 0.142857142857
+oranges,orange,1, 0.857142857143 , 0.142857142857
+tart,start,0, 1.25 , 0.0
+topping,tapping,1, 1.0 , 0.142857142857
+toppings,tapping,1, 0.875 , 0.125
+tomatoes,tomato,1, 0.75 , 0.125
+mother's,mother,1, 0.75 , 0.125
+desserts,dessert,0, 0.875 , 0.0
+desserts,dessert,0, 0.875 , 0.0
+topping,popping,1, 1.0 , 0.142857142857
+apples,apple,0, 0.833333333333 , 0.0
+seeds,seed,0, 0.8 , 0.0
+apples,apple,0, 0.833333333333 , 0.0
+seeds,seed,0, 0.8 , 0.0
+muffins,muffin,0, 0.857142857143 , 0.0
+muffins,muffin,0, 0.857142857143 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+onion,onions,0, 1.2 , 0.0
+smelt,melt,0, 0.8 , 0.0
+muffins,muffin,0, 0.857142857143 , 0.0
+muffins,muffin,0, 0.857142857143 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+oranges,orange,0, 0.857142857143 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+grapes,grape,0, 0.833333333333 , 0.0
+cockles,cackles,1, 1.0 , 0.142857142857
+rolls,roll,0, 0.8 , 0.0
+rolls,roll,0, 0.8 , 0.0
+rolls,roll,0, 0.8 , 0.0
+rolls,roll,0, 0.8 , 0.0
+fat,fast,0, 1.33333333333 , 0.0
+fat,fast,0, 1.33333333333 , 0.0
+fat,fast,0, 1.33333333333 , 0.0
+desserts,dessert,1, 0.875 , 0.125
+fat,fast,0, 1.33333333333 , 0.0
+tart,start,0, 1.25 , 0.0
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+peppers,pepper,1, 0.857142857143 , 0.142857142857
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,1, 0.9 , 0.1
+icecream,ice cream,1, 1.125 , 0.125
+eggs,egg,0, 0.75 , 0.0
+topping,popping,1, 1.0 , 0.142857142857
+toppings,popping,1, 0.875 , 0.125
+eggs,egg,0, 0.75 , 0.0
+slimfast,slim fast,1, 1.125 , 0.125
+mother's,mother,1, 0.75 , 0.125
+parsley,Harley,1, 0.857142857143 , 0.142857142857
+milk shakes,milk shake,1, 0.909090909091 , 0.0909090909091
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+pea,peas,0, 1.33333333333 , 0.0
+carrot,carrots,0, 1.16666666667 , 0.0
+tart,start,0, 1.25 , 0.0
+tart,start,0, 1.25 , 0.0
+whole potatoes,those potatoes,2, 1.0 , 0.142857142857
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+cereals,cereal,1, 0.857142857143 , 0.142857142857
+tart,start,0, 1.25 , 0.0
+cockles,cackles,1, 1.0 , 0.142857142857
+swanson,was on,1, 0.857142857143 , 0.142857142857
+barbecue,barbecued,1, 1.125 , 0.125
+mother's,mother,1, 0.75 , 0.125
+barbecue,barbecued,1, 1.125 , 0.125
+fat,fast,0, 1.33333333333 , 0.0
+tomatoes,tomato,1, 0.75 , 0.125
+tomatoes,tomato,1, 0.75 , 0.125
+cardoon,cartoon,1, 1.0 , 0.142857142857
+cardoon,cartoon,1, 1.0 , 0.142857142857
+topping,popping,1, 1.0 , 0.142857142857
+tomatoes,tomato,1, 0.75 , 0.125
+cardoon,cartoon,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+potatoes,potato,1, 0.75 , 0.125
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+topping,hopping,1, 1.0 , 0.142857142857
+desserts,dessert,0, 0.875 , 0.0
+swanson,was on,1, 0.857142857143 , 0.142857142857
+ice creams,ice cream,0, 0.9 , 0.0
+icecream,ice cream,1, 1.125 , 0.125
+peppers,pepper,0, 0.857142857143 , 0.0
+potatoes,potato,1, 0.75 , 0.125
+potatoes,potato,1, 0.75 , 0.125
+oranges,orange,1, 0.857142857143 , 0.142857142857
+ice creams,ice cream,0, 0.9 , 0.0
+icecream,ice cream,1, 1.125 , 0.125
+ice creams,ice cream,0, 0.9 , 0.0
+icecream,ice cream,1, 1.125 , 0.125
+slimfast,slim fast,1, 1.125 , 0.125
+fat,fast,0, 1.33333333333 , 0.0
+vegetables,vegetable,1, 0.9 , 0.1
+vegetable,vegetables,1, 1.11111111111 , 0.111111111111
+apples,apple,0, 0.833333333333 , 0.0
+spices,spice,0, 0.833333333333 , 0.0
+tart,start,0, 1.25 , 0.0
+eggs,egg,0, 0.75 , 0.0
+tart,start,0, 1.25 , 0.0
+cucumber,cucumbers,1, 1.125 , 0.125
+cucumber,cucumbers,1, 1.125 , 0.125
+sweet potatoes,want potatoes,2, 0.928571428571 , 0.142857142857

@@ -186,15 +186,15 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 							#print "yes", food_data[1], word
 							#PERFORM EDIT DISTANCE
 							if word == food_data[1]: continue
-							distance = nltk.edit_distance(word, food_data[1])
+							# distance = nltk.edit_distance(word, food_data[1])
 							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
 							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
 
 							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
 							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
 
-							# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-							# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
+							temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+							temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
 
 							#Manual checking 
 							# k2 = 0 
@@ -227,12 +227,11 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 								# print "check -> ", word, food_data[1], temp, temp2, k1
 							
-							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+							distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
 							# distance = 0
 							k2 = distance/float(max(len(word), len(food_data))) 
-
 							# if k2  == 1:
-							if k2 < 0.25:
+							if k2 < 0.15:
 							#k2 = 3
 							#if distance <= k2:
 
@@ -249,7 +248,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
-								with open("./notes/new_parsing_rule_25_1and4_backup.txt", "a") as myfile:
+								with open("./notes/new_parsing_rule_15_1and4_backup.txt", "a") as myfile:
 								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
 								# with open("./notes/edit_distance_4.txt", "a") as myfile:
