@@ -18,6 +18,8 @@ import nltk
 import time 
 from pyjarowinkler import distance
 import levenshtein_distance_customized
+import wordnet_explorer
+
 def load(fileName):
 	with open(fileName, 'r') as f:
 		return pickle.load(f) 
@@ -66,6 +68,10 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
 	solution_set_loaded = False
 	solution_file_path = path.join('solutions', fileName)
+	pos_tags_filename = "pos_tags/" + fileName
+	pos_tags_dict = pickle.load(open(
+		pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
+
 	try:
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
@@ -166,65 +172,75 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					# 	print "CARROT"
 					# if word == 'tomatoes':
 					# 	print "DIAGONISING", sentence_pos_tags, word
+
 					for food_data in sentence_pos_tags:
-
-						k1 = float(len(food_data[1]))/float(len(word))
-						if 0.6 < k1 and k1 < 1.4:
-						# k1 = float(len(food_data[1]))/float(len(word))
-						# if 0.6 < k1 and k1 < 1.4:
-						# k1 = jaccard_distance(food_data[1], word)
-						# if k1 < 0.3:	
-							#print "Crossed Jaccard Barrier", k1
-						#if 0.6 < k and k < 1.4:
-						#k1 = abs(len(food_data[1]) - len(word)) 
-						#if k1 <= 3:s
-							# if word == 'tomatoes':
-							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
-							#print "yes", food_data[1], word
-							#PERFORM EDIT DISTANCE
-							if word == food_data[1]: continue
-							# distance = nltk.edit_distance(word, food_data[1])
-							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
-							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
-
-							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
-							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
-
-							temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]])
-							temp2 = ''.join([x if x.isalpha() else ' ' for x in word])
-							# print "check -> ", word, food_data[1], temp, temp2, k1
-							
-							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-							distance = 1
-							k2 = distance/float(max(len(word), len(food_data))) 
-
-							if k2 <0.00:
-							#k2 = 3
-							#if distance <= k2:
-
-							
-							#k2 = 3
-							#if distance <= k2:
-
-							# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
-							# if k3 > 0.90:
-
-								found_at_least = 1
-								# if word == 'tomatoes':
-								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-								index_of_food_names.append([food_data[2], food_data[3]])
-								spans_found_on_line.append([food_data[2], food_data[3]])
-
-								with open("./notes/edit_distance_30_only_s.txt", "a") as myfile:
-								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
-
-								# with open("./notes/edit_distance_4.txt", "a") as myfile:
-								# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
-
-									myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
-			#print "word found", word, len(word), max_len, max_len_word
-			#print ("Temproray -> ", temp_i)
-			#print ("Final i -> ", i)
+						candidate_word = food_data[1]
+						if candidate_word == word:
+							continue # we already guessed it
+						if wordnet_explorer.string_is_descendant_of_food(candidate_word):
+							# it might be food!
+							index_of_food_names.append([food_data[2], food_data[3]])
+							spans_found_on_line.append([food_data[2], food_data[3]])
+							found_at_least = 1
+			# 		for food_data in sentence_pos_tags: # TODO: renable string matching
+            #
+			# 			k1 = float(len(food_data[1]))/float(len(word))
+			# 			if 0.6 < k1 and k1 < 1.4:
+			# 			# k1 = float(len(food_data[1]))/float(len(word))
+			# 			# if 0.6 < k1 and k1 < 1.4:
+			# 			# k1 = jaccard_distance(food_data[1], word)
+			# 			# if k1 < 0.3:
+			# 				#print "Crossed Jaccard Barrier", k1
+			# 			#if 0.6 < k and k < 1.4:
+			# 			#k1 = abs(len(food_data[1]) - len(word))
+			# 			#if k1 <= 3:s
+			# 				# if word == 'tomatoes':
+			# 				# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
+			# 				#print "yes", food_data[1], word
+			# 				#PERFORM EDIT DISTANCE
+			# 				if word == food_data[1]: continue
+			# 				# distance = nltk.edit_distance(word, food_data[1])
+			# 				# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
+			# 				# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+            #
+			# 				# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
+			# 				# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+            #
+			# 				temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]])
+			# 				temp2 = ''.join([x if x.isalpha() else ' ' for x in word])
+			# 				# print "check -> ", word, food_data[1], temp, temp2, k1
+            #
+			# 				# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+			# 				distance = 1
+			# 				k2 = distance/float(max(len(word), len(food_data)))
+            #
+			# 				if k2 <0.00:
+			# 				#k2 = 3
+			# 				#if distance <= k2:
+            #
+            #
+			# 				#k2 = 3
+			# 				#if distance <= k2:
+            #
+			# 				# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+			# 				# if k3 > 0.90:
+            #
+			# 					found_at_least = 1
+			# 					# if word == 'tomatoes':
+			# 					# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
+			# 					index_of_food_names.append([food_data[2], food_data[3]])
+			# 					spans_found_on_line.append([food_data[2], food_data[3]])
+            #
+			# 					with open("./notes/edit_distance_30_only_s.txt", "a") as myfile:
+			# 					# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
+            #
+			# 					# with open("./notes/edit_distance_4.txt", "a") as myfile:
+			# 					# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
+            #
+			# 						myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
+			# #print "word found", word, len(word), max_len, max_len_word
+			# #print ("Temproray -> ", temp_i)
+			# #print ("Final i -> ", i)
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				#print('dic')
@@ -253,7 +269,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			elif parser_type == 'ark_tweet_parser' and 0:
 				print('running ark')
 				#tags =  CMUTweetTagger.runtagger_parse([temp_i])
-				tags = join_tags(ark_parsed_data[line_no])
+				# tags = join_tags(ark_parsed_data[line_no])
 				#tags = ''
 				#tags1 = join_tags(tags)
 

@@ -33,8 +33,7 @@ class parse:
 
 if __name__ == '__main__':
 	par = parse()
-	text = "I love University of Massachusetts, Amherst in"
+	text = "the red dog went to the store."
 	pos  = pos_tag(text.split())
 	print par.pattern_matching(text, pos)
-
 
