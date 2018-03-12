@@ -25,7 +25,7 @@ def string_is_descendant_of_food(word, setting = 'most_common', ):
     elif setting == 'all':
         pass # don't change just_nouns
     elif setting == 'majority_vote':
-        pass
+        pass # not implemented yet
     else:
         raise ValueError
     for synset in just_nouns:
@@ -40,8 +40,8 @@ def synset_is_descendant_of_food(synset):
         # print(path_names)
         # print(food_synset_name)
         if food_synset_name in path_names:
-            print(path_names)
-            print(food_synset_name)
+            # print(path_names)
+            # print(food_synset_name)
             return True
     return False
 
