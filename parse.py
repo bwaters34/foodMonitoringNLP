@@ -2,7 +2,7 @@ from pprint import pprint
 from nltk import pos_tag
 
 class parse:
-	def __init__(self, pattern = 'penn-treebank'):
+	def __init__(self, pattern = 'nltk'):
 		if pattern == 'ark':
 			self.pattern = './patterns_ark'
 		else:

@@ -20,7 +20,6 @@ from pyjarowinkler import distance
 import levenshtein_distance_customized
 import wordnet_explorer
 
-POS_TAGS = 'ark'
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -30,7 +29,18 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True):
+def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'
+):
+	"""
+
+	:param fileName: Name of file to be read
+	:param parser_type:
+	:param only_files_with_solutions: If True, we only bother parsing files with solutions (for example, if we only care about precision and recall, we don't care about
+	:param base_accuracy_on_how_many_unique_food_items_detected:
+	:param use_second_column: if True, then a subset of phrases/words from the second column thought to be most-foodlike are added to the set of food names. This usually increases recall slightly and tanks precision. See create_extra_food_names() in create_links.py for more details.
+	:param pos_tags_setting: if "nltk", then the default nltk perceptron POS tagger is used. If "ark", then the Ark Tweet NLP tagger is used (http://www.cs.cmu.edu/~ark/TweetNLP/).
+	:return: write2file, a string that is a valid HTML file of the original transcript with food matches highlighted, and results, a namedtuple with attributes num_true_pos, num_false_pos, and num_false_neg
+	"""
 	# levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
  #                            e=(3, 3, 1),
  #                            i=(3, 3, 1),
@@ -41,7 +51,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
-	par = parse.parse(pattern=POS_TAGS)
+	par = parse.parse(pattern=pos_tags_setting)
 
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -57,7 +67,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 	print(len(foodNames))
 	print(len(extraFoodNames))
-	# foodNames.update(extraFoodNames)
+	if use_second_column:
+		foodNames.update(extraFoodNames)
 	foodNames.update(Yelena_Mejova_food_names)
 
 	print(len(foodNames))
@@ -114,9 +125,9 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 			#FOR EDIT DISTANCE
 			pos_tags = pos_tags_dict[current_line_number]
-			if POS_TAGS == 'penn-treebank':
+			if pos_tags_setting == 'nltk':
 				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag(edit_distance_i.split()))
-			elif POS_TAGS == 'ark':
+			elif pos_tags_setting == 'ark':
 				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tags_dict[current_line_number])
 			else:
 				raise ValueError
@@ -314,7 +325,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			if parser_type == 'stanford_POS' or 1:
 				# print('running stanford')
 				tags = pos_tag(word_tokenize(temp_i))
-				print("tags initial-> ", tags)				
+				print("tags initial-> ", tags)
 				#Joining the tags
 				tags = join_tags(tags)
 			elif parser_type == 'ark_tweet_parser' and 0:
@@ -341,7 +352,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					for ledger in pairs[1]:
 						food_ledger_langua += ledger.lower() + ",  "
 					food_ledger_langua += "<br>" + "<br>"
-			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua  
+			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua
 
 			#Orignal 
 			#write2file += text + '<br>'
