@@ -514,7 +514,7 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False):
+def evaluate_all_files_in_directory(directory_path, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'):
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
@@ -522,7 +522,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions)
+		html_format, results = read_file(file_path, only_files_with_solutions, base_accuracy_on_how_many_unique_food_items_detected, use_second_column, pos_tags_setting)
 		if results is not None:
 			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
 				sum_true_pos += results.num_true_pos
