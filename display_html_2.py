@@ -29,7 +29,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'
 ):
 	"""
 
@@ -320,42 +320,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			else:
 				pass
 				text += i[1:] 
-			#print ("Final text ->", text)
-			tags = ''
-			if parser_type == 'stanford_POS' or 1:
-				# print('running stanford')
-				tags = pos_tag(word_tokenize(temp_i))
-				print("tags initial-> ", tags)
-				#Joining the tags
-				tags = join_tags(tags)
-			elif parser_type == 'ark_tweet_parser' and 0:
-				print('running ark')
-				#tags =  CMUTweetTagger.runtagger_parse([temp_i])
-				# tags = join_tags(ark_parsed_data[line_no])
-				#tags = ''
-				#tags1 = join_tags(tags)
 
-			print("tags -> ", tags)
-			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
-
-			#print ("pairs -> ", word_char_index)
-
-			food_tags = ''
-			if len(food_id_group_pairs):
-				for pairs in food_id_group_pairs:
-					food_tags += "<mark>" + pairs[0] + "</mark>" + "----> " + pairs[1] + "<br>"
-			food_ledger_langua = ''
-			if len(food_id_langua_pairs):
-				for pairs in food_id_langua_pairs:
-					food_name_langua = pairs[0]
-					food_ledger_langua += "<mark>" + food_name_langua + "----></mark>"
-					for ledger in pairs[1]:
-						food_ledger_langua += ledger.lower() + ",  "
-					food_ledger_langua += "<br>" + "<br>"
-			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua
-
-			#Orignal 
-			#write2file += text + '<br>'
 	write2file += "<hr>" + "Total Calories -> " + str(total_calorie) 
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
@@ -514,7 +479,7 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-def evaluate_all_files_in_directory(directory_path, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'):
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
@@ -542,7 +507,7 @@ if __name__ == '__main__':
 		
 		start = time.time()
 		fileName = 'HSLLD/HV1/MT/conmt1.cha'
-		html_format, results = read_file(fileName, 'ark_tweet_parser')
+		html_format, results = read_file(fileName)
 		#print "HTNL Format", html_format
 		print "Time taken to run the script", time.time() -start
 		front_end.wrapStringInHTMLWindows(body = html_format)
