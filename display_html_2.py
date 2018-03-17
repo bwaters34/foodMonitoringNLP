@@ -1,5 +1,8 @@
 #https://seaborn.pydata.org/generated/seaborn.distplot.html
-import re 
+import re
+
+from matplotlib.axes._base import _AxesBase
+
 import front_end 
 import pickle 
 import sys 
@@ -29,10 +32,8 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'
-):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common'):
 	"""
-
 	:param fileName: Name of file to be read
 	:param parser_type:
 	:param only_files_with_solutions: If True, we only bother parsing files with solutions (for example, if we only care about precision and recall, we don't care about
@@ -133,23 +134,24 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				raise ValueError
 
 			#print "ATTENTION", sentence_pos_tags
-			if len(sentence_pos_tags) > 0:
-				# if word == 'carrot':
-				# 	print "CARROT"
-				# if word == 'tomatoes':
-				# 	print "DIAGONISING", sentence_pos_tags, word
-				print('candidates to check:')
-				print(len(sentence_pos_tags))
-				for food_data in sentence_pos_tags:
-					candidate_word = food_data[1]
-					# if candidate_word == word:
-					# 	continue  # we already guessed it
-					if wordnet_explorer.string_is_descendant_of_food(candidate_word):
-						print('descended from food: {}'.format(str(food_data)))
-						# it might be food!
-						index_of_food_names.append([food_data[2], food_data[3]])
-						spans_found_on_line.append([food_data[2], food_data[3]])
-						found_at_least = 1
+			if use_wordnet:
+				if len(sentence_pos_tags) > 0:
+					# if word == 'carrot':
+					# 	print "CARROT"
+					# if word == 'tomatoes':
+					# 	print "DIAGONISING", sentence_pos_tags, word
+					print('candidates to check:')
+					print(len(sentence_pos_tags))
+					for food_data in sentence_pos_tags:
+						candidate_word = food_data[1]
+						# if candidate_word == word:
+						# 	continue  # we already guessed it
+						if wordnet_explorer.string_is_descendant_of_food(candidate_word, wordnet_setting):
+							print('descended from food: {}'.format(str(food_data)))
+							# it might be food!
+							index_of_food_names.append([food_data[2], food_data[3]])
+							spans_found_on_line.append([food_data[2], food_data[3]])
+							found_at_least = 1
 
 
 			for word in foodNames:
@@ -479,7 +481,7 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark'):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common'):
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
