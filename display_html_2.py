@@ -53,7 +53,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 	print(len(foodNames))
 	print(len(extraFoodNames))
-	# foodNames.update(extraFoodNames)
+	foodNames.update(extraFoodNames)
 	foodNames.update(Yelena_Mejova_food_names)
 
 	print(len(foodNames))
@@ -248,7 +248,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
-								with open("./notes/new_parsing_rule_15_1and4_backup.txt", "a") as myfile:
+								with open("./notes/new_parsing_rule_15_all_three_databases.txt", "a") as myfile:
 								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
 								# with open("./notes/edit_distance_4.txt", "a") as myfile:

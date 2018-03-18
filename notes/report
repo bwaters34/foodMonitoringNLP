@@ -226,6 +226,12 @@ total runtime: 6087.7603991
 
 
 #Levenshtien only 's' No Patterns K = 0.15 (tab 2)
+precision: 0.580291970803
+recall 0.6625
+# true pos: 159
+# false pos: 115
+# false neg: 81
+total runtime: 8763.21253014
 
 
 
@@ -235,3 +241,19 @@ total runtime: 6087.7603991
 
 
 #Levenshtien No Patterns K = 0.15 (tab 3)
+precision: 0.681034482759
+recall 0.658333333333
+# true pos: 158
+# false pos: 74
+# false neg: 82
+total runtime: 5944.734725
+
+
+
+#All three databases, No patterns, Only 's' Levenshtein, K = 0.15, (tab 4)
+precision: 0.380841121495
+recall 0.679166666667
+# true pos: 163
+# false pos: 265
+# false neg: 77
+total runtime: 8561.87252307
