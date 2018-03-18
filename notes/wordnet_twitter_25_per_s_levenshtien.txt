@@ -1,0 +1,6 @@
+broccoli,broccoli's,1, 1.25 , 0.125
+ginger ale,ginger+ale,0, 1.0 , 0.0
+tuna fish,tuna+fish,0, 1.0 , 0.0
+water,wat(er,1, 1.2 , 0.2
+ice cream bar,ice cream bar[,0, 1.07692307692 , 0.0
+meatballs,m meatballs,2, 1.22222222222 , 0.222222222222

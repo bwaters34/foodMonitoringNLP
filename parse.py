@@ -2,8 +2,11 @@ from pprint import pprint
 from nltk import pos_tag
 
 class parse:
-	def __init__(self):
-		self.pattern = './patterns'
+	def __init__(self, pattern = 'nltk'):
+		if pattern == 'ark':
+			self.pattern = './patterns_ark'
+		else:
+			self.pattern = './patterns'
 		self.pattern = self.read_file()
 	
 	def read_file(self):
@@ -73,5 +76,4 @@ if __name__ == '__main__':
 	# print "Final Array: ", par.pattern_matching(text, pos)
 	# pprint(par.pattern_matching(text, pos))
 	par.generate_max_two_words(text, pos)
-
 

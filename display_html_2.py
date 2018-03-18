@@ -1,5 +1,8 @@
 #https://seaborn.pydata.org/generated/seaborn.distplot.html
-import re 
+import re
+
+from matplotlib.axes._base import _AxesBase
+
 import front_end 
 import pickle 
 import sys 
@@ -18,6 +21,9 @@ import nltk
 import time 
 from pyjarowinkler import distance
 import levenshtein_distance_customized
+import wordnet_explorer
+
+
 def load(fileName):
 	with open(fileName, 'r') as f:
 		return pickle.load(f) 
@@ -26,7 +32,16 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, parser_type = None, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'nltk', use_wordnet = True, wordnet_setting = 'most_common'):
+	"""
+	:param fileName: Name of file to be read
+	:param parser_type:
+	:param only_files_with_solutions: If True, we only bother parsing files with solutions (for example, if we only care about precision and recall, we don't care about
+	:param base_accuracy_on_how_many_unique_food_items_detected:
+	:param use_second_column: if True, then a subset of phrases/words from the second column thought to be most-foodlike are added to the set of food names. This usually increases recall slightly and tanks precision. See create_extra_food_names() in create_links.py for more details.
+	:param pos_tags_setting: if "nltk", then the default nltk perceptron POS tagger is used. If "ark", then the Ark Tweet NLP tagger is used (http://www.cs.cmu.edu/~ark/TweetNLP/).
+	:return: write2file, a string that is a valid HTML file of the original transcript with food matches highlighted, and results, a namedtuple with attributes num_true_pos, num_false_pos, and num_false_neg
+	"""
 	# levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
  #                            e=(3, 3, 1),
  #                            i=(3, 3, 1),
@@ -37,7 +52,7 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
-	par = parse.parse()
+	par = parse.parse(pattern=pos_tags_setting)
 
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -54,6 +69,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	print(len(foodNames))
 	print(len(extraFoodNames))
 	foodNames.update(extraFoodNames)
+	if use_second_column:
+		foodNames.update(extraFoodNames)
 	foodNames.update(Yelena_Mejova_food_names)
 
 	print(len(foodNames))
@@ -68,6 +85,10 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
 	solution_set_loaded = False
 	solution_file_path = path.join('solutions', fileName)
+	pos_tags_filename = "pos_tags/" + fileName
+	pos_tags_dict = pickle.load(open(
+		pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
+	# TODO: let parser support ark pos tags
 	try:
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
@@ -105,9 +126,36 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			spans_found_on_line = []
 
 			#FOR EDIT DISTANCE
-			# sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tag(edit_distance_i.split()))
-			sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag(edit_distance_i.split()))
+			pos_tags = pos_tags_dict[current_line_number]
+			if pos_tags_setting == 'nltk':
+				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag(edit_distance_i.split()))
+			elif pos_tags_setting == 'ark':
+				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tags_dict[current_line_number])
+			else:
+				raise ValueError
+			print sentence_pos_tags
 			#print "ATTENTION", sentence_pos_tags
+			if use_wordnet:
+				if len(sentence_pos_tags) > 0:
+					# if word == 'carrot':
+					# 	print "CARROT"
+					# if word == 'tomatoes':
+					# 	print "DIAGONISING", sentence_pos_tags, word
+					# print('candidates to check:')
+					# print(len(sentence_pos_tags))
+					for food_data in sentence_pos_tags:
+						if len(food_data[1]) <4: continue
+						candidate_word = food_data[1]
+						# if candidate_word == word:
+						# 	continue  # we already guessed it
+						if wordnet_explorer.string_is_descendant_of_food(candidate_word, wordnet_setting):
+							print('descended from food: {}'.format(str(food_data)))
+							# it might be food!
+							index_of_food_names.append([food_data[2], food_data[3]])
+							spans_found_on_line.append([food_data[2], food_data[3]])
+							found_at_least = 1
+
+
 			for word in foodNames:
 				if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
@@ -139,8 +187,8 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 					# 		pass
 					# 	else:
 					# 		continue
-					print(tags)
-					print(individual_food_words)
+					# print(tags)
+					# print(individual_food_words)
 
 
 					for match in re.finditer(word, i):
@@ -164,37 +212,34 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 						#food_id_langua_pairs = 
 					# print("food -> ", food_id_group_pairs)
 				#Checking for EDIT Distance
-				if len(sentence_pos_tags) > 0:
-					# if word == 'carrot':
-					# 	print "CARROT"
-					# if word == 'tomatoes':
-					# 	print "DIAGONISING", sentence_pos_tags, word
-					for food_data in sentence_pos_tags:
+					for food_data in sentence_pos_tags:  # TODO: renable string matching
 
-						k1 = float(len(food_data[1]))/float(len(word))
+						k1 = float(len(food_data[1])) / float(len(word))
 						if 0.6 < k1 and k1 < 1.4:
-						# k1 = float(len(food_data[1]))/float(len(word))
-						# if 0.6 < k1 and k1 < 1.4:
-						# k1 = jaccard_distance(food_data[1], word)
-						# if k1 < 0.3:	
-							#print "Crossed Jaccard Barrier", k1
-						#if 0.6 < k and k < 1.4:
-						#k1 = abs(len(food_data[1]) - len(word)) 
-						#if k1 <= 3:s
+							# k1 = float(len(food_data[1]))/float(len(word))
+							# if 0.6 < k1 and k1 < 1.4:
+							# k1 = jaccard_distance(food_data[1], word)
+							# if k1 < 0.3:
+							# print "Crossed Jaccard Barrier", k1
+							# if 0.6 < k and k < 1.4:
+							# k1 = abs(len(food_data[1]) - len(word))
+							# if k1 <= 3:s
 							# if word == 'tomatoes':
 							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
-							#print "yes", food_data[1], word
-							#PERFORM EDIT DISTANCE
+							# print "yes", food_data[1], word
+							# PERFORM EDIT DISTANCE
 							if word == food_data[1]: continue
-							# distance = nltk.edit_distance(word, food_data[1])
+							distance = nltk.edit_distance(word, food_data[1])
 							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
 							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
 
 							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
 							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
 
-							temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-							temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
+
+
+							# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+							# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
 
 							#Manual checking 
 							# k2 = 0 
@@ -227,20 +272,19 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 
 								# print "check -> ", word, food_data[1], temp, temp2, k1
 							
-							distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
 							# distance = 0
 							k2 = distance/float(max(len(word), len(food_data))) 
 							# if k2  == 1:
-							if k2 < 0.15:
+							if k2 < 0.25:
 							#k2 = 3
 							#if distance <= k2:
 
-							
-							#k2 = 3
-							#if distance <= k2:
+								# k2 = 3
+								# if distance <= k2:
 
-							# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
-							# if k3 > 0.90:
+								# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+								# if k3 > 0.90:
 
 								found_at_least = 1
 								# if word == 'tomatoes':
@@ -248,16 +292,19 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 								index_of_food_names.append([food_data[2], food_data[3]])
 								spans_found_on_line.append([food_data[2], food_data[3]])
 
-								with open("./notes/new_parsing_rule_15_all_three_databases.txt", "a") as myfile:
+								with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt", "a") as myfile:
 								# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
-								# with open("./notes/edit_distance_4.txt", "a") as myfile:
-								# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
+									# with open("./notes/edit_distance_4.txt", "a") as myfile:
+									# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
 
-									myfile.write(word +"," + food_data[1] + ","+ str(distance) + ", "+ str(k1) + " , "+ str(k2) + "\n")
-			#print "word found", word, len(word), max_len, max_len_word
-			#print ("Temproray -> ", temp_i)
-			#print ("Final i -> ", i)
+									myfile.write(
+										word + "," + food_data[1] + "," + str(distance) + ", " + str(k1) + " , " + str(
+											k2) + "\n")
+								# print "word found", word, len(word), max_len, max_len_word
+								# print ("Temproray -> ", temp_i)
+								# print ("Final i -> ", i)
+
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				#print('dic')
@@ -273,45 +320,11 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 				for tup in tuples_list:
 					set_elem = (current_line_number, tup) # add line number so we know where in the document we got it
 					predicted_food_labels_set.add(set_elem)
+
 			else:
 				pass
 				text += i[1:] 
-			#print ("Final text ->", text)
-			tags = ''
-			if parser_type == 'stanford_POS' or 1:
-				# print('running stanford')
-				tags = pos_tag(word_tokenize(temp_i))
-				print("tags initial-> ", tags)				
-				#Joining the tags
-				tags = join_tags(tags)
-			elif parser_type == 'ark_tweet_parser' and 0:
-				print('running ark')
-				#tags =  CMUTweetTagger.runtagger_parse([temp_i])
-				tags = join_tags(ark_parsed_data[line_no])
-				#tags = ''
-				#tags1 = join_tags(tags)
 
-			print("tags -> ", tags)
-			#print("pairs ---> ", food_id_langua_pairs, len(food_id_langua_pairs))
-
-			#print ("pairs -> ", word_char_index)
-
-			food_tags = ''
-			if len(food_id_group_pairs):
-				for pairs in food_id_group_pairs:
-					food_tags += "<mark>" + pairs[0] + "</mark>" + "----> " + pairs[1] + "<br>"
-			food_ledger_langua = ''
-			if len(food_id_langua_pairs):
-				for pairs in food_id_langua_pairs:
-					food_name_langua = pairs[0]
-					food_ledger_langua += "<mark>" + food_name_langua + "----></mark>"
-					for ledger in pairs[1]:
-						food_ledger_langua += ledger.lower() + ",  "
-					food_ledger_langua += "<br>" + "<br>"
-			write2file += text + word_char_index_string_fromat + '<br>' + tags + '<br>' + food_tags + '<br>' + food_ledger_langua  
-
-			#Orignal 
-			#write2file += text + '<br>'
 	write2file += "<hr>" + "Total Calories -> " + str(total_calorie) 
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
@@ -470,7 +483,7 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common'):
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
@@ -478,7 +491,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions)
+		html_format, results = read_file(file_path, only_files_with_solutions, base_accuracy_on_how_many_unique_food_items_detected, use_second_column, pos_tags_setting)
 		if results is not None:
 			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
 				sum_true_pos += results.num_true_pos
@@ -498,8 +511,8 @@ if __name__ == '__main__':
 		
 		start = time.time()
 		fileName = 'HSLLD/HV1/MT/conmt1.cha'
-		html_format, results = read_file(fileName, 'ark_tweet_parser')
-		#print "HTNL Format", html_format
+		html_format, results = read_file(fileName)
+		#print "HTNL Format", html_formatf
 		print "Time taken to run the script", time.time() -start
 		front_end.wrapStringInHTMLWindows(body = html_format)
 
