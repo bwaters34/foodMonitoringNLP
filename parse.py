@@ -10,7 +10,7 @@ class parse:
 		pattern = self.pattern
 		pattern = open(pattern, 'r').read().strip().split('\n')
 		pattern = [x.strip().split('+') for x in pattern]
-		pprint(pattern)
+		# pprint(pattern)
 		return pattern
 
 	def pattern_matching(self, sentence, sentence_pos_tag):

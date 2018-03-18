@@ -68,9 +68,9 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 	predicted_food_labels_set = set() # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
 	solution_set_loaded = False
 	solution_file_path = path.join('solutions', fileName)
-	pos_tags_filename = "pos_tags/" + fileName
-	pos_tags_dict = pickle.load(open(
-		pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
+	# pos_tags_filename = "pos_tags/" + fileName
+	# pos_tags_dict = pickle.load(open(
+	# 	pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
 
 	try:
 		print('loading solution set')
@@ -111,7 +111,17 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 			#FOR EDIT DISTANCE
 			sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tag(edit_distance_i.split()))
 			#print "ATTENTION", sentence_pos_tags
+			for food_data in sentence_pos_tags:
+				candidate_word = food_data[1]
+				# if candidate_word == word:
+				# 	continue  # we already guessed it
+				if wordnet_explorer.string_is_descendant_of_food(candidate_word):
+					# it might be food!
+					index_of_food_names.append([food_data[2], food_data[3]])
+					spans_found_on_line.append([food_data[2], food_data[3]])
+					found_at_least = 1
 			for word in foodNames:
+
 				if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
 					print word
@@ -167,21 +177,13 @@ def read_file(fileName, parser_type = None, only_files_with_solutions = False, b
 						#food_id_langua_pairs = 
 					print("food -> ", food_id_group_pairs)
 				#Checking for EDIT Distance
-				if len(sentence_pos_tags) > 0:
+				# if len(sentence_pos_tags) > 0:
 					# if word == 'carrot':
 					# 	print "CARROT"
 					# if word == 'tomatoes':
 					# 	print "DIAGONISING", sentence_pos_tags, word
 
-					for food_data in sentence_pos_tags:
-						candidate_word = food_data[1]
-						if candidate_word == word:
-							continue # we already guessed it
-						if wordnet_explorer.string_is_descendant_of_food(candidate_word):
-							# it might be food!
-							index_of_food_names.append([food_data[2], food_data[3]])
-							spans_found_on_line.append([food_data[2], food_data[3]])
-							found_at_least = 1
+
 			# 		for food_data in sentence_pos_tags: # TODO: renable string matching
             #
 			# 			k1 = float(len(food_data[1]))/float(len(word))
