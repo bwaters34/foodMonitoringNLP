@@ -23,8 +23,8 @@ class training_classifier:
 		self.pos_data, self.neg_data, self.data = self.load_training_data()
 		new_data = self.pos_data + self.neg_data[0:2*len(self.pos_data)]
 		print "Time taken to load", time.time() - start
-		# self.check(self.data)
-		self.check(new_data)
+		# self.check(new_data)
+		self.check(self.data)
 
 	def generate_training_data(self, sentences, n = 2):
 		self.dataset_pos = []
@@ -100,12 +100,18 @@ class training_classifier:
 		train_y = np.asarray(train_y)
 		X_train, X_test, Y_train, Y_test = train_test_split(train_x, train_y, test_size = 0.3, random_state = 42)
 		logistic = LogisticRegression()
+
+		start = time.time()
 		logistic.fit(X_train, Y_train)
 		predicited = logistic.predict(X_test)
 		print metrics.accuracy_score(Y_test, predicited)
 		print metrics.classification_report(Y_test, predicited)
+		print logistic.score(X_test, Y_test)
+		self.Embeddings.save("LogisticRegressionModel_full_neg", logistic)
+
 		# print train_x[0]
 		print train_x.shape, train_y.shape
+		print "Time taken for the prediction ", time.time() - start
 		start = time.time()
 		predicited = cross_validation.cross_val_predict(LogisticRegression(), train_x, train_y)
 		print metrics.accuracy_score(train_y, predicited)

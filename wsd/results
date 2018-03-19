@@ -30,3 +30,25 @@ Time taken to load 26.1141860485
           1       0.89      0.94      0.91      2307
 
 avg / total       0.94      0.94      0.94      6975
+
+
+
+(647529, 5, 100)
+0.993045367267
+             precision    recall  f1-score   support
+
+          0       0.99      1.00      1.00    191970
+          1       0.88      0.47      0.62      2289
+
+avg / total       0.99      0.99      0.99    194259
+
+
+
+
+
+precision: 0.694063926941
+recall 0.633333333333
+# true pos: 152
+# false pos: 67
+# false neg: 88
+total runtime: 70.0349521637
