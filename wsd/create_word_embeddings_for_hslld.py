@@ -9,19 +9,36 @@ from matplotlib import pyplot
 class wordEmbeddings:
 	def __init__(self):
 		self.database_from_HSLLD = [] 
+		self.dimension_size = 100
 		self.food_words = self.load("data/food_desc_files/food_names.pickle")
+		self.food_words_twitter = self.load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
+		self.food_words.update(self.food_words_twitter)
 
 		self.HSLLD_file_Loc = self.load('food_files.pickle')
 		self.HSLLD_file_Loc = self.correct_file_location(self.HSLLD_file_Loc)
 		self.Read_files_from_HSLLD = self.read_files_HSLLD(self.HSLLD_file_Loc)
 		
 		print "Lenght of sentences HSLLD:", len(self.database_from_HSLLD)
-		self.sentences_to_wordEmbeddings(self.database_from_HSLLD)
+		# self.sentences_to_wordEmbeddings_practice(self.database_from_HSLLD)
+
+	def all_sentences(self):
+		return self.database_from_HSLLD
+
+	def food_words_database(self):
+		return self.food_words
 
 	def load(self, fileLocaiton):
 		fileLocaiton = "../"+fileLocaiton
 		with open(fileLocaiton, 'r') as f:
 			return pickle.load(f)
+
+	def from_this_folder_load(self, fileLocaiton):
+		with open(fileLocaiton, 'r') as f:
+			return pickle.load(f)
+
+	def save(self, fileLocaiton, variable):
+		with open(fileLocaiton, 'w') as f:
+			pickle.dump(variable, f)
 
 	def correct_file_location(self, fileLocaiton):
 		for index, fileLoc in enumerate(fileLocaiton):
@@ -38,8 +55,11 @@ class wordEmbeddings:
 					sentences = sentences[6:]
 					self.database_from_HSLLD.append(sentences.split())
 
-	def sentences_to_wordEmbeddings(self, sentence, min_word_count = 1):
-		model = Word2Vec(sentence, size = 100, min_count = min_word_count)
+	def sentences_to_wordEmbeddings(self):
+		return Word2Vec.load('word_embeddings_HSLLD.bin')
+
+	def sentences_to_wordEmbeddings_practice(self, sentence, min_word_count = 1):
+		model = Word2Vec(sentence, size = self.dimension_size, min_count = min_word_count)
 		model.save('word_embeddings_HSLLD.bin')
 		# new_model = Word2Vec.load('word_embeddings_HSLLD.bin')
 		print(model)
