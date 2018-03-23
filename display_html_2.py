@@ -293,9 +293,9 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					# print("food -> ", food_id_group_pairs)
 				#Checking for EDIT Distance
 					for food_data in sentence_pos_tags:  # TODO: renable string matching
-
+						print "Sentence pos tags", sentence_pos_tags
 						k1 = float(len(food_data[1])) / float(len(word))
-						if 0.6 < k1 and k1 < 1.4 and 0:
+						if 0.6 < k1 and k1 < 1.4:
 							# k1 = float(len(food_data[1]))/float(len(word))
 							# if 0.6 < k1 and k1 < 1.4:
 							# k1 = jaccard_distance(food_data[1], word)
