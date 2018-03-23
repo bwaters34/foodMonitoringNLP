@@ -58,15 +58,15 @@ class training_classifier:
 				self.dataset.append([sent_format, y_val])
 			# 	print sent[index_j]," ",
 			# print ""
-		self.Embeddings.save("Dataset_pos", self.dataset_pos)
-		self.Embeddings.save("Dataset_neg", self.dataset_neg)
-		self.Embeddings.save("Dataset", self.dataset)
+		self.Embeddings.save("Dataset_pos_without_20_labels", self.dataset_pos)
+		self.Embeddings.save("Dataset_neg_without_20_labels", self.dataset_neg)
+		self.Embeddings.save("Dataset_without_20_labels", self.dataset)
 
 		# pprint(self.dataset)
 	def load_training_data(self):
-		pos = self.Embeddings.from_this_folder_load("Dataset_pos")
-		neg = self.Embeddings.from_this_folder_load("Dataset_neg")
-		data = self.Embeddings.from_this_folder_load("Dataset")
+		pos = self.Embeddings.from_this_folder_load("Dataset_pos_without_20_labels")
+		neg = self.Embeddings.from_this_folder_load("Dataset_neg_without_20_labels")
+		data = self.Embeddings.from_this_folder_load("Dataset_without_20_labels")
 		return pos, neg, data 
 
 	def check(self, training_data, split = 0.7):
@@ -118,8 +118,8 @@ class training_classifier:
 		print metrics.accuracy_score(Y_test, predicited)
 		print metrics.classification_report(Y_test, predicited)
 		print logistic.score(X_test, Y_test)
-		self.Embeddings.save("LogisticRegressionModel_double_neg_Google_Embeddings", logistic)
-		print "Saved Google Embeddings on double negative data"
+		self.Embeddings.save("LogisticRegression_double_neg_Google_no_data_label", logistic)
+		print "Saved Google Embeddings on double negative data without 20 label dataset"
 
 		# print train_x[0]
 		print train_x.shape, train_y.shape

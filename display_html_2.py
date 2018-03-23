@@ -71,7 +71,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 		Word2Vec_model = model_google
 		
 		Word2Vec_words = Word2Vec_model.vocab
-		model = load('./wsd/LogisticRegressionModel_double_neg_Google_Embeddings')
+		model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label')
 	else:
 		Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
 		Word2Vec_words = list(Word2Vec_model.wv.vocab)
