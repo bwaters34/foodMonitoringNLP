@@ -24,6 +24,8 @@ import levenshtein_distance_customized
 import wordnet_explorer
 from gensim.models import Word2Vec 
 import gensim 
+from namedtuples import Accuracy
+
 
 #Word2Vec
 use_Google = 1
@@ -458,9 +460,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	#return write2file, unique_food_names
 	#namedtuple()
 
-	Accuracy = namedtuple('Accuracy',
-						  'num_true_pos num_false_pos num_false_neg')  # makes returning multiple values more clear
-	results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos, num_false_neg=num_false_neg)
+	results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos, num_false_neg=num_false_neg, false_pos_list=false_pos_list, false_neg_list=false_neg_list)
 
 
 	return write2file, results
@@ -567,7 +567,8 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
-
+	list_of_false_pos_lists = []
+	list_of_false_neg_lists = []
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
@@ -579,10 +580,15 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 				sum_false_pos += results.num_false_pos
 			if results.num_false_neg is not None:
 				sum_false_neg += results.num_false_neg
-
+			if results.false_pos_list is not None:
+				list_of_false_pos_lists.append(results.false_pos_list)
+			if results.false_pos_list is not None:
+				list_of_false_neg_lists.append(results.false_neg_list)
+	combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg, false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
 	precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
 	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
-	return precision, recall, sum_true_pos, sum_false_pos, sum_false_neg
+
+	return precision, recall, combined_results
 
 
 if __name__ == '__main__':
