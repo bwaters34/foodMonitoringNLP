@@ -3,3 +3,17 @@ tuna fish,tuna+fish,1, 1.0 , 0.111111111111
 water,wat(er,1, 1.2 , 0.2
 ice cream bar,ice cream bar[,1, 1.07692307692 , 0.0769230769231
 meatballs,m meatballs,2, 1.22222222222 , 0.222222222222
+spices,Spices,1, 1.0 , 0.166666666667
+sprite,Sprite,1, 1.0 , 0.166666666667
+sprite,Sprite,1, 1.0 , 0.166666666667
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+honey,Honey,1, 1.0 , 0.2
+meatballs,m meatballs,2, 1.22222222222 , 0.222222222222
+canadian bacon,Canadian bacon,1, 1.0 , 0.0714285714286

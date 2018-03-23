@@ -2,7 +2,7 @@
 import re
 
 from matplotlib.axes._base import _AxesBase
-
+import numpy as np 
 import front_end 
 import pickle 
 import sys 
@@ -22,7 +22,16 @@ import time
 from pyjarowinkler import distance
 import levenshtein_distance_customized
 import wordnet_explorer
+from gensim.models import Word2Vec 
+import gensim 
 
+#Word2Vec
+use_Google = 1
+if use_Google:
+	print "Loading Google Pre-Trained Word Embeddings"
+	start = time.time()
+	model_google = gensim.models.KeyedVectors.load_word2vec_format('/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz', binary=True)
+	print "Time taken to load google Embeddings", time.time() - start
 
 def load(fileName):
 	with open(fileName, 'r') as f:
@@ -32,7 +41,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'nltk', use_wordnet = True, wordnet_setting = 'most_common'):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_pretrained_Google_embeddings = "True"):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -53,6 +62,21 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
 	par = parse.parse(pattern=pos_tags_setting)
+
+	#WSD
+	unknown_tag = {}
+	unknown_tag['unk'] = np.zeros(300)
+	if use_pretrained_Google_embeddings:
+		start = time.time()
+		Word2Vec_model = model_google
+		
+		Word2Vec_words = Word2Vec_model.vocab
+		model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label')
+	else:
+		Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
+		Word2Vec_words = list(Word2Vec_model.wv.vocab)
+		model = load('./wsd/LogisticRegressionModel_twice_neg')
+	
 
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -101,6 +125,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 		if not solution_set_loaded:
 			return "solution set not found", None
 	for line_no, i in enumerate(f): # i is the current line (a string)
+		wsd_i = i
 		calorie_text = ''
 		food_id_group_pairs = []
 		food_id_langua_pairs = []
@@ -131,6 +156,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag(edit_distance_i.split()))
 			elif pos_tags_setting == 'ark':
 				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tags_dict[current_line_number])
+			# elif:
+			# 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)				
 			else:
 				raise ValueError
 			print sentence_pos_tags
@@ -155,11 +182,63 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 							spans_found_on_line.append([food_data[2], food_data[3]])
 							found_at_least = 1
 
+			wsd_i = wsd_i[6:]
+			wsd_i = wsd_i.split()
+			n = 2
+			for to_append in xrange(n):
+				wsd_i.append("unk")
+				wsd_i.insert(0, "unk")
 
 			for word in foodNames:
 				if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
 					print word
+					
+					#WSD
+					if len(word.split()) == 1:
+						#WSD applicable
+						try:
+							if use_pretrained_Google_embeddings:
+								print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
+								# wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+								wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in wsd_i]
+								# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
+								print "Step 0.1", wsd_i_temp, wsd_i, word
+								food_place_index = wsd_i_temp.index(word)	
+								print "Step 1 ", food_place_index
+
+								sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
+								print "Step 2", sent_format
+								# sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
+								sent_word2vec_format = [Word2Vec_model.word_vec(wsd_word) if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
+								testing_array = np.asarray(sent_word2vec_format)
+								testing_array = testing_array.reshape(1, 1500)
+								print "Intermediate step -> ", testing_array.shape
+								prediciton = model.predict(testing_array)
+								print "Step 3", testing_array.shape, prediciton
+								if prediciton == 0: 
+									print "Predicted not a food", wsd_i, word
+									continue
+								
+							else:
+								print "Step 0", wsd_i, word
+								food_place_index = wsd_i.index(word)	
+								print "Step 1 ", food_place_index
+								sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
+								print "Step 2", sent_format
+								sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
+								testing_array = np.asarray(sent_word2vec_format)
+								testing_array = testing_array.reshape(1, 500)
+								print "Intermediate step -> ", testing_array.shape
+								prediciton = model.predict(testing_array)
+								print "Step 3", testing_array.shape, prediciton
+								if prediciton == 0: 
+									print "Predicted not a food", wsd_i, word
+									continue
+									# continue
+						except:
+							print "Couldn't run WSD", sys.exc_info()
+
 					unique_food_names[word] = 1
 					found_at_least = 1
 					
@@ -192,6 +271,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 
 					for match in re.finditer(word, i):
+						# print "Sentence -> ", temp_i, "matches -> ", match
 						food_match_indexes = match.span()
 						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
 						spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
@@ -215,7 +295,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					for food_data in sentence_pos_tags:  # TODO: renable string matching
 
 						k1 = float(len(food_data[1])) / float(len(word))
-						if 0.6 < k1 and k1 < 1.4:
+						if 0.6 < k1 and k1 < 1.4 and 0:
 							# k1 = float(len(food_data[1]))/float(len(word))
 							# if 0.6 < k1 and k1 < 1.4:
 							# k1 = jaccard_distance(food_data[1], word)

@@ -1,0 +1,66 @@
+(647529, 5, 100)
+(647529, 500) (647529,)
+0.992667509872
+             precision    recall  f1-score   support
+
+          0       0.99      1.00      1.00    639779
+          1       0.87      0.46      0.60      7750
+
+avg / total       0.99      0.99      0.99    647529
+
+
+Probably testing on the same data
+(23250, 5, 100)
+(23250, 500) (23250,)
+0.93376344086
+             precision    recall  f1-score   support
+
+          0       0.96      0.94      0.95     15500
+          1       0.88      0.92      0.90      7750
+
+avg / total       0.93      0.93      0.93     23250
+
+
+Time taken to load 26.1141860485
+(23250, 5, 100)
+0.941505376344
+             precision    recall  f1-score   support
+
+          0       0.97      0.94      0.96      4668
+          1       0.89      0.94      0.91      2307
+
+avg / total       0.94      0.94      0.94      6975
+
+
+
+(647529, 5, 100)
+0.993045367267
+             precision    recall  f1-score   support
+
+          0       0.99      1.00      1.00    191970
+          1       0.88      0.47      0.62      2289
+
+avg / total       0.99      0.99      0.99    194259
+
+
+
+
+With WSD:
+precision: 0.694063926941
+recall 0.633333333333
+# true pos: 152
+# false pos: 67
+# false neg: 88
+total runtime: 70.0349521637
+
+
+Without WSD:
+precision: 0.660944206009
+recall 0.641666666667
+# true pos: 154
+# false pos: 79
+# false neg: 86
+total runtime: 71.0846951008
+
+Precision Improve: 3.31%
+Recall Drop: 0.8%
