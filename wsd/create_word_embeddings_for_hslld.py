@@ -4,12 +4,13 @@ import os
 from gensim.models import Word2Vec 
 from sklearn.decomposition import PCA 
 from matplotlib import pyplot 
-
+import time 
+import gensim 
 
 class wordEmbeddings:
 	def __init__(self):
 		self.database_from_HSLLD = [] 
-		self.dimension_size = 100
+		self.dimension_size = 300
 		self.food_words = self.load("data/food_desc_files/food_names.pickle")
 		self.food_words_twitter = self.load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
 		self.food_words.update(self.food_words_twitter)
@@ -55,12 +56,17 @@ class wordEmbeddings:
 					sentences = sentences[6:]
 					self.database_from_HSLLD.append(sentences.split())
 
-	def sentences_to_wordEmbeddings(self):
-		return Word2Vec.load('word_embeddings_HSLLD.bin')
+	def sentences_to_wordEmbeddings(self, google_word_embeddings = 0):
+		if google_word_embeddings:
+			start = time.time()
+			model = gensim.models.KeyedVectors.load_word2vec_format('/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz', binary=True)
+			print "Time to load data ", time.time() - start
+			return model
+		return Word2Vec.load('word_embeddings_HSLLD_300.bin')
 
 	def sentences_to_wordEmbeddings_practice(self, sentence, min_word_count = 1):
 		model = Word2Vec(sentence, size = self.dimension_size, min_count = min_word_count)
-		model.save('word_embeddings_HSLLD.bin')
+		model.save('word_embeddings_HSLLD_300.bin')
 		# new_model = Word2Vec.load('word_embeddings_HSLLD.bin')
 		print(model)
 		words = list(model.wv.vocab)
