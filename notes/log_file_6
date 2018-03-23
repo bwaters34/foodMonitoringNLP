@@ -13695,3 +13695,33 @@ recall 0.6375
 # false pos: 59
 # false neg: 87
 total runtime: 38.8911309242
+
+
+Lenght of sentences HSLLD: 102016
+Time to load data  169.416944981
+time to upload Embeddings into RAM 169.416962862
+Time taken to load 20.6121928692
+(21579, 5, 300)
+(15105, 1500) (15105,)
+0.993975903614
+             precision    recall  f1-score   support
+
+          0       1.00      0.99      1.00      4339
+          1       0.99      0.99      0.99      2135
+
+avg / total       0.99      0.99      0.99      6474
+
+0.993975903614
+Saved Google Embeddings on double negative data without 20 label dataset
+(21579, 1500) (21579,)
+Time taken for the prediction  3.77538490295
+0.993512210946
+             precision    recall  f1-score   support
+
+          0       1.00      0.99      1.00     14386
+          1       0.99      0.99      0.99      7193
+
+avg / total       0.99      0.99      0.99     21579
+
+Time taken for the prediction  10.4714090824
+
