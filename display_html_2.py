@@ -200,9 +200,13 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 						try:
 							if use_pretrained_Google_embeddings:
 								print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
-								wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+								# wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+								wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in wsd_i]
+								# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
+								print "Step 0.1", wsd_i_temp, wsd_i, word
 								food_place_index = wsd_i_temp.index(word)	
 								print "Step 1 ", food_place_index
+
 								sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
 								print "Step 2", sent_format
 								# sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
