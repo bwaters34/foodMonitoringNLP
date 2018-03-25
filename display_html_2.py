@@ -43,7 +43,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -51,6 +51,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	:param base_accuracy_on_how_many_unique_food_items_detected:
 	:param use_second_column: if True, then a subset of phrases/words from the second column thought to be most-foodlike are added to the set of food names. This usually increases recall slightly and tanks precision. See create_extra_food_names() in create_links.py for more details.
 	:param pos_tags_setting: if "nltk", then the default nltk perceptron POS tagger is used. If "ark", then the Ark Tweet NLP tagger is used (http://www.cs.cmu.edu/~ark/TweetNLP/).
+	:param use_wordnet: if True,
 	:return: write2file, a string that is a valid HTML file of the original transcript with food matches highlighted, and results, a namedtuple with attributes num_true_pos, num_false_pos, and num_false_neg
 	"""
 	# levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
@@ -95,8 +96,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	print ("Added names by Yelena Mejova")
 
 	print(len(foodNames))
-	print(len(extraFoodNames))
-	foodNames.update(extraFoodNames)
 	if use_second_column:
 		foodNames.update(extraFoodNames)
 	foodNames.update(Yelena_Mejova_food_names)
@@ -567,7 +566,7 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common', ):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False):
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
@@ -577,8 +576,8 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting)
-		if results is not None:
+		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching)
+		if results is not None: # there wasn't a solution set for that file
 			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
 				sum_true_pos += results.num_true_pos
 			if results.num_false_pos is not None:
