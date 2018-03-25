@@ -157,9 +157,9 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			#FOR EDIT DISTANCE
 			pos_tags = pos_tags_dict[current_line_number]
 			if pos_tags_setting == 'nltk':
-				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag(edit_distance_i.split()))
+				sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tag(edit_distance_i.split()))
 			elif pos_tags_setting == 'ark':
-				sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tags_dict[current_line_number])
+				sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tags_dict[current_line_number])
 			# elif:
 			# 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)				
 			else:
@@ -569,7 +569,6 @@ def ark_parser(fileName):
 
 def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = True, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common', ):
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
-	print(parameters_used)
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
