@@ -32,7 +32,9 @@ use_Google = 0
 if use_Google:
 	print "Loading Google Pre-Trained Word Embeddings"
 	start = time.time()
-	model_google = gensim.models.KeyedVectors.load_word2vec_format('/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz', binary=True)
+	# word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
+	word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
+	model_google = gensim.models.KeyedVectors.load_word2vec_format(word2vec_filepath, binary=True)
 	print "Time taken to load google Embeddings", time.time() - start
 
 def load(fileName):
