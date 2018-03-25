@@ -6,7 +6,7 @@ from pprint import pprint
 import time 
 from random import shuffle
 from create_word_embeddings_for_hslld import wordEmbeddings
-
+import re
 
 class training_classifier:
 	def __init__(self, Embeddings, use_Google_pre_Trained_Embeddings = 0):
@@ -76,6 +76,7 @@ class training_classifier:
 			temp = []
 			if self.use_Google_Embeddings:
 				# model.Word2Vec_model['rice']
+				data = [" ".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in data]
 				temp = [self.Word2Vec_model.word_vec(word) if word in self.Word2Vec_model.vocab else self.unknown_tag['unk'] for word in data]
 			else:	
 				temp = [self.Word2Vec_model[word] if word !='unk' else self.unknown_tag['unk'] for word in data]
@@ -118,8 +119,8 @@ class training_classifier:
 		print metrics.accuracy_score(Y_test, predicited)
 		print metrics.classification_report(Y_test, predicited)
 		print logistic.score(X_test, Y_test)
-		self.Embeddings.save("LogisticRegression_double_neg_Google_no_data_label", logistic)
-		print "Saved Google Embeddings on double negative data without 20 label dataset"
+		self.Embeddings.save("LogisticRegression_double_neg_Google_no_data_label_aggressive", logistic)
+		print "Saved Google Embeddings on double negative data without 20 label dataset and also comparing cases like <apple"
 
 		# print train_x[0]
 		print train_x.shape, train_y.shape
