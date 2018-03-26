@@ -70,10 +70,10 @@ class parse:
 
 
 if __name__ == '__main__':
-	par = parse()
-	text = "I love University of Massachusetts, Amherst in."
+	par = parse(pattern='ntlk')
+	# text = "I love University of Massachusetts, Amherst in."
+	text = "The red dog went to the store"
 	pos  = pos_tag(text.split())
-	# print "Final Array: ", par.pattern_matching(text, pos)
-	# pprint(par.pattern_matching(text, pos))
-	par.generate_max_two_words(text, pos)
+	print "Final Array: ", par.pattern_matching(text, pos)
+	pprint(par.pattern_matching(text, pos))
 

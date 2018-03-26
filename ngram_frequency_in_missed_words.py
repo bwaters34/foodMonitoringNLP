@@ -16,4 +16,24 @@ results = list(cnt.iteritems())
 x, y = ([ a for a,b in results], [ b for a,b in results ])
 print(x)
 print(y)
-ax = sns.barplot(x,y)
+y_percent = [elem / float(sum(y)) for elem in y]
+ax = sns.barplot(x,y_percent, )
+ax.set(xlabel='ngram length', ylabel='frequency (%)')
+ax.set(title='Size of ngrams in False Negatives')
+print(y_percent)
+# unique_only = list(set(flat_list))
+# print(len(unique_only))
+# print(len(flat_list))
+# size_of_ngram = [len(word.split()) for word in unique_only]
+# cnt = Counter()
+# for num in size_of_ngram:
+#     cnt[num] +=1
+# print(cnt)
+#
+# results = list(cnt.iteritems())
+# x, y = ([ a for a,b in results], [ b for a,b in results ])
+# print(x)
+# print(y)
+# ax = sns.barplot(x,y, )
+# ax.set(xlabel='ngram length', ylabel='frequency')
+# ax.set(title='Size of ngrams in False Negatives (unique words)')

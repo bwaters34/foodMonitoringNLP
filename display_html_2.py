@@ -32,8 +32,8 @@ use_Google = 0
 if use_Google:
 	print "Loading Google Pre-Trained Word Embeddings"
 	start = time.time()
-	# word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
-	word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
+	word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
+	# word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
 	model_google = gensim.models.KeyedVectors.load_word2vec_format(word2vec_filepath, binary=True)
 	print "Time taken to load google Embeddings", time.time() - start
 
@@ -194,11 +194,18 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				wsd_i.append("unk")
 				wsd_i.insert(0, "unk")
 
+			if len(sentence_pos_tags) > 0:
+				candidate_word = food_data[1]
+				if candidate_word in foodNames:
+					index_of_food_names.append([food_data[2], food_data[3]])
+					spans_found_on_line.append([food_data[2], food_data[3]])
+					found_at_least = 1
+
 			for word in foodNames:
 				if temp_i.__contains__(' ' + word + ' '):
 					# print(tags)
 					print word
-					
+
 					#WSD
 					if len(word.split()) == 1:
 						#WSD applicable
@@ -265,22 +272,14 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					tags = pos_tag(word_tokenize(temp_i))
 					individual_food_words = word.split()
 					last_word = individual_food_words[-1]
-					# for word, label in tags:
-					# 	if word == last_word and check_if_noun(label):
-					# 		index_of_food_names.append([c, c + len(word) + 1])
-					# 		print('chose word: '+ word)
-					# 		pass
-					# 	else:
-					# 		continue
-					# print(tags)
-					# print(individual_food_words)
 
 
-					for match in re.finditer(word, i):
-						# print "Sentence -> ", temp_i, "matches -> ", match
-						food_match_indexes = match.span()
-						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-						spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+
+					# for match in re.finditer(word, i):
+					# 	# print "Sentence -> ", temp_i, "matches -> ", match
+					# 	food_match_indexes = match.span()
+					# 	index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+					# 	spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 						
 					#Adding stuffs after reading documentation from USDA
 					#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
@@ -523,11 +522,6 @@ def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 		for i in xrange(meeting_schedules[0], meeting_schedules[1]):
 			dic[i] = 1 
 	return dic
-
-def check_if_noun(tag):
-	if tag == 'NN' or tag == 'NNS' or tag == 'NNP' or tag == 'NNPS':
-		return True
-	return False
 
 def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
 	Sequence = namedtuple('Sequence', ['start', 'end', 'size'])
