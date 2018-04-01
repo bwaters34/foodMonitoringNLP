@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/display_html_2.py" line="113" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/display_html_2.py" line="117" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="31b543f5-a4ae-4078-9dbb-b36fb6c7fd06" name="Default" comment="" />
+    <list default="true" id="31b543f5-a4ae-4078-9dbb-b36fb6c7fd06" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/food_desc_files/wordnet_food_words.pickle" afterPath="$PROJECT_DIR$/data/food_desc_files/wordnet_food_words.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/display_html_2.py" afterPath="$PROJECT_DIR$/display_html_2.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/evalutate_multiple_files.py" afterPath="$PROJECT_DIR$/evalutate_multiple_files.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/most_recent_results.pickle" afterPath="$PROJECT_DIR$/most_recent_results.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/phrasemachine.py" afterPath="$PROJECT_DIR$/phrasemachine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wordnet_explorer.py" afterPath="$PROJECT_DIR$/wordnet_explorer.py" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,16 +26,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="display_html_2.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="display_html_2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/display_html_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+            <state relative-caret-position="246">
+              <caret line="793" column="32" lean-forward="false" selection-start-line="793" selection-start-column="32" selection-end-line="793" selection-end-column="32" />
               <folding>
                 <element signature="e#60#69#0" expanded="true" />
-                <element signature="e#8285#10519#0" expanded="false" />
-                <element signature="e#12298#15679#0" expanded="false" />
-                <element signature="e#15708#16307#0" expanded="false" />
+                <element signature="e#16436#18710#0" expanded="false" />
+                <element signature="e#20510#23891#0" expanded="false" />
+                <element signature="e#23920#24519#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -55,26 +63,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="all_food_words_from_all_solutions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/all_food_words_from_all_solutions.py">
+      <file leaf-file-name="wordnet_explorer.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wordnet_explorer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            <state relative-caret-position="255">
+              <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
               <folding>
-                <element signature="e#0#22#0" expanded="true" />
+                <element signature="e#0#40#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="wordnet_explorer.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wordnet_explorer.py">
+      <file leaf-file-name="display_html_3.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/display_html_3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1170">
-              <caret line="78" column="45" lean-forward="false" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-              <folding>
-                <element signature="e#0#40#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="240">
+              <caret line="107" column="58" lean-forward="true" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -101,11 +107,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="evalutate_multiple_files.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="evalutate_multiple_files.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/evalutate_multiple_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="80">
+              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
               </folding>
@@ -116,8 +122,8 @@
       <file leaf-file-name="phrasemachine.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phrasemachine.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="351" column="43" lean-forward="true" selection-start-line="351" selection-start-column="43" selection-end-line="351" selection-end-column="43" />
+            <state relative-caret-position="101">
+              <caret line="321" column="71" lean-forward="false" selection-start-line="321" selection-start-column="71" selection-end-line="321" selection-end-column="71" />
               <folding>
                 <element signature="e#108#151#0" expanded="true" />
               </folding>
@@ -146,10 +152,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>token_patter</find>
-      <find>tomat</find>
-      <find>or 1</find>
-      <find>tokenize</find>
       <find>get_solution</find>
       <find>False</find>
       <find>false_pos</find>
@@ -176,6 +178,10 @@
       <find>wordnet_exp</find>
       <find>dict</find>
       <find>'tokens'</find>
+      <find>pos_tags_dict</find>
+      <find>if len(word.split()) == 1:</find>
+      <find>def read_</find>
+      <find>ark_</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -200,10 +206,10 @@
         <option value="$PROJECT_DIR$/all_food_words_from_all_solutions.py" />
         <option value="$PROJECT_DIR$/namedtuples.py" />
         <option value="$PROJECT_DIR$/ngram_frequency_in_missed_words.py" />
+        <option value="$PROJECT_DIR$/phrasemachine.py" />
         <option value="$PROJECT_DIR$/wordnet_explorer.py" />
         <option value="$PROJECT_DIR$/display_html_2.py" />
         <option value="$PROJECT_DIR$/evalutate_multiple_files.py" />
-        <option value="$PROJECT_DIR$/phrasemachine.py" />
       </list>
     </option>
   </component>
@@ -317,7 +323,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.phrasemachine">
+  <component name="RunManager" selected="Python.wordnet_explorer">
     <configuration default="false" name="evalutate_multiple_files" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -546,10 +552,10 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.phrasemachine" />
-        <item index="1" class="java.lang.String" itemvalue="Python.evalutate_multiple_files" />
-        <item index="2" class="java.lang.String" itemvalue="Python.display_html_2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.wordnet_explorer" />
+        <item index="0" class="java.lang.String" itemvalue="Python.wordnet_explorer" />
+        <item index="1" class="java.lang.String" itemvalue="Python.phrasemachine" />
+        <item index="2" class="java.lang.String" itemvalue="Python.evalutate_multiple_files" />
+        <item index="3" class="java.lang.String" itemvalue="Python.display_html_2" />
         <item index="4" class="java.lang.String" itemvalue="Python.ngram_frequency_in_missed_words" />
       </list>
     </recent_temporary>
@@ -630,7 +636,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/display_html_2.py</url>
-          <line>320</line>
+          <line>532</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -640,17 +646,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/display_html_2.py</url>
-          <line>596</line>
+          <line>808</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/wordnet_explorer.py</url>
-          <line>110</line>
+          <line>112</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/phrasemachine.py</url>
-          <line>351</line>
+          <line>352</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
@@ -661,7 +667,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="36" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -725,9 +731,9 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#60#69#0" expanded="true" />
-            <element signature="e#8285#10519#0" expanded="false" />
-            <element signature="e#12298#15679#0" expanded="false" />
-            <element signature="e#15708#16307#0" expanded="false" />
+            <element signature="e#16436#18710#0" expanded="false" />
+            <element signature="e#20510#23891#0" expanded="false" />
+            <element signature="e#23920#24519#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -941,13 +947,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/display_html_3.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="28" column="19" lean-forward="false" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -957,7 +956,7 @@
         <state relative-caret-position="60">
           <caret line="6" column="22" lean-forward="false" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
-            <element signature="e#0#22#0" expanded="true" />
+            <element signature="e#0#22#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -995,41 +994,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wordnet_explorer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1170">
-          <caret line="78" column="45" lean-forward="false" selection-start-line="78" selection-start-column="45" selection-end-line="78" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/compare_wordnet_to_new_wordnet.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evalutate_multiple_files.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding>
-            <element signature="e#1#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/phrasemachine.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="351" column="43" lean-forward="true" selection-start-line="351" selection-start-column="43" selection-end-line="351" selection-end-column="43" />
-          <folding>
-            <element signature="e#108#151#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,15 +1012,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/wordnet_explorer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="106" column="64" lean-forward="true" selection-start-line="106" selection-start-column="64" selection-end-line="106" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/display_html_3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="107" column="58" lean-forward="true" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phrasemachine.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="101">
+          <caret line="321" column="71" lean-forward="false" selection-start-line="321" selection-start-column="71" selection-end-line="321" selection-end-column="71" />
+          <folding>
+            <element signature="e#108#151#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/display_html_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="146" column="4" lean-forward="false" selection-start-line="146" selection-start-column="4" selection-end-line="146" selection-end-column="4" />
+        <state relative-caret-position="246">
+          <caret line="793" column="32" lean-forward="false" selection-start-line="793" selection-start-column="32" selection-end-line="793" selection-end-column="32" />
           <folding>
             <element signature="e#60#69#0" expanded="true" />
-            <element signature="e#8285#10519#0" expanded="false" />
-            <element signature="e#12298#15679#0" expanded="false" />
-            <element signature="e#15708#16307#0" expanded="false" />
+            <element signature="e#16436#18710#0" expanded="false" />
+            <element signature="e#20510#23891#0" expanded="false" />
+            <element signature="e#23920#24519#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evalutate_multiple_files.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#1#29#0" expanded="true" />
           </folding>
         </state>
       </provider>

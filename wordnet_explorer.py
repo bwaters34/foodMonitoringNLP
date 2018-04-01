@@ -106,8 +106,10 @@ def get_all_descendants_of_food_from_wordnet():
         wordnet_format_name = synset.name() # example: "sour_mash.n.02"
         name_without_periods = wordnet_format_name.split('.')[0]
         name = name_without_periods.replace('_', ' ')
-        new_food_names.add(name)
+        if string_is_descendant_of_food(name, 'most_common'):
+            new_food_names.add(name)
     food_names_dict = dict.fromkeys(new_food_names, None)
+    print(len(food_names_dict))
     with open('data/food_desc_files/wordnet_food_words.pickle', 'wb') as f:
         pickle.dump(food_names_dict, f)
 

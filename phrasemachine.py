@@ -329,7 +329,8 @@ def ark_get_phrases_wrapper(ark_pos_tags_list):
         tokens.append(token)
         pos_tags.append(tag)
     phrases_dict = get_phrases(tokens=tokens, postags=pos_tags, minlen=1)
-    return phrases_dict
+    phrases = phrases_dict['counts'].keys()
+    return phrases
 
 if __name__ == "__main__":
     fileName ="HSLLD/HV1/MT/admmt1.cha"
