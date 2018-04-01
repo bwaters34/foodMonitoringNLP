@@ -1,6 +1,9 @@
 import all_food_words_from_all_solutions
 from nltk.corpus import wordnet as wn
-
+from collections import deque
+from pprint import pprint
+import random
+import cPickle as pickle
 
 def get_hypernym_names_from_list_of_paths(list_of_paths):
     flat_list = [item for sublist in list_of_paths for item in sublist]
@@ -45,7 +48,7 @@ def synset_is_descendant_of_food(synset):
             return True
     return False
 
-if __name__ == "__main__":
+def calculate_percentage_of_solutions_in_wordnet():
     food_names_set = all_food_words_from_all_solutions.get_all_food_names_in_solutions()
 
     num_foods_with_wordnet_entries = 0
@@ -76,5 +79,41 @@ if __name__ == "__main__":
             names_not_in_wordnet.append(name)
 
     print(num_foods_with_wordnet_entries / float(len(food_names_set)))
+
+def get_all_descendants_of_food_from_wordnet():
+    food_synsets = wn.synsets('food')[:2] # ignore "food for thought" sense
+
+    queue = deque(food_synsets)
+    seen_before = set()
+    synsets_found = []
+    for syn in food_synsets:
+        seen_before.add(syn)
+        synsets_found.append(syn)
+    while len(queue) > 0:
+        elem = queue.pop()
+        neighbors = elem.hyponyms()
+        for neighbor in neighbors:
+            if neighbor not in seen_before:
+                synsets_found.append(neighbor)
+                queue.append(neighbor)
+                seen_before.add(neighbor)
+        if len(queue) % 100 == 0:
+            print(len(queue))
+    print(synsets_found)
+    print(len(synsets_found))
+    new_food_names = set()
+    for synset in synsets_found:
+        wordnet_format_name = synset.name() # example: "sour_mash.n.02"
+        name_without_periods = wordnet_format_name.split('.')[0]
+        name = name_without_periods.replace('_', ' ')
+        if string_is_descendant_of_food(name, 'most_common'):
+            new_food_names.add(name)
+    food_names_dict = dict.fromkeys(new_food_names, None)
+    print(len(food_names_dict))
+    with open('data/food_desc_files/wordnet_food_words.pickle', 'wb') as f:
+        pickle.dump(food_names_dict, f)
+
+if __name__ == "__main__":
+    get_all_descendants_of_food_from_wordnet()
 
 
