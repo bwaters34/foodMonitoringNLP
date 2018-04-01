@@ -71,7 +71,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 		Word2Vec_model = model_google
 		
 		Word2Vec_words = Word2Vec_model.vocab
-		model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label')
+		model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label_aggressive')
 	else:
 		Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
 		Word2Vec_words = list(Word2Vec_model.wv.vocab)
@@ -200,12 +200,18 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 						try:
 							if use_pretrained_Google_embeddings:
 								print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
-								# wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+
+								wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+
+								# wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
+
 								wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in wsd_i]
+								
 								# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
 								print "Step 0.1", wsd_i_temp, wsd_i, word
 								food_place_index = wsd_i_temp.index(word)	
-								print "Step 1 ", food_place_index
+								# wsd_i_temp[food_place_index] = "EmptyWordHereZeroEmbedding"
+								print "Step 1 ", food_place_index, wsd_i_temp
 
 								sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
 								print "Step 2", sent_format
