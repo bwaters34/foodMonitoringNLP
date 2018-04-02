@@ -89,7 +89,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
 	foodNames = load("./data/food_desc_files/food_names.pickle")
-	extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
 	# print('adding extra names')
 	Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
 	# foodNames = Yelena_Mejova_food_names
@@ -99,6 +98,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 	# print(len(foodNames))
 	if use_second_column:
+		extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
 		foodNames.update(extraFoodNames)
 	foodNames.update(Yelena_Mejova_food_names)
 	if use_wordnet_food_names:
