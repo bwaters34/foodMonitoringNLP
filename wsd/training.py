@@ -48,8 +48,10 @@ class training_classifier:
 			for index_j in xrange(n, len(sent)-n):
 				y_val = 0
 				sent_format = sent[index_j-n:index_j+n+1]
+
 				if sent[index_j] in self.food_words:
 					y_val = 1
+					sent[index_j] = 'EmptyWordHereZeroEmbedding'
 					self.dataset_pos.append([sent_format, y_val])
 				else:
 					y_val = 0
@@ -58,9 +60,9 @@ class training_classifier:
 				self.dataset.append([sent_format, y_val])
 			# 	print sent[index_j]," ",
 			# print ""
-		self.Embeddings.save("Dataset_pos_without_20_labels", self.dataset_pos)
-		self.Embeddings.save("Dataset_neg_without_20_labels", self.dataset_neg)
-		self.Embeddings.save("Dataset_without_20_labels", self.dataset)
+		self.Embeddings.save("Dataset_pos_without_20_labels_no_context", self.dataset_pos)
+		self.Embeddings.save("Dataset_neg_without_20_labels_no_context", self.dataset_neg)
+		self.Embeddings.save("Dataset_without_20_labels_no_context", self.dataset)
 
 		# pprint(self.dataset)
 	def load_training_data(self):
