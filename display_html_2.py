@@ -108,7 +108,15 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 		for word in banned_words:
 			wordnet_food_names.pop(word)
 		foodNames.update(wordnet_food_names)
-
+	# add plurals to everything
+	plural_foods = []
+	for name in foodNames:
+		if name[-1] != 's': # if word doesn't end with s
+			plural_name = name + 's'
+			plural_foods.append(plural_name)
+	for name in plural_foods:
+		if name not in foodNames: # make sure we're not overwriting anything
+			foodNames[name] = None
 	# print(len(foodNames))
 	foodGroup = load("./data/food_desc_files/food_group.pickle")
 	langua = load("./data/food_desc_files/langua.pickle")
