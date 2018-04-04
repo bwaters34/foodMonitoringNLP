@@ -199,415 +199,216 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				wsd_i.insert(0, "unk")
 
 
-
 			if use_pattern_matching:
 				pos_tags = pos_tags_dict[current_line_number]
-				phrases = phrasemachine.ark_get_phrases_wrapper(pos_tags)
-				for word in phrases:
-					if word in foodNames:
-						# print(tags)
-						# print word
-
-						# WSD
-						if len(word.split()) == 1:
-							# WSD applicable
-							if use_word2vec_model:
-								try:
-									if use_pretrained_Google_embeddings:
-										print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
-
-										wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
-
-										# wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
-
-										wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for
-													  temp_w_for_emb in wsd_i]
-
-										# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
-										print "Step 0.1", wsd_i_temp, wsd_i, word
-										food_place_index = wsd_i_temp.index(word)
-										# wsd_i_temp[food_place_index] = "EmptyWordHereZeroEmbedding"
-										print "Step 1 ", food_place_index, wsd_i_temp
-
-										sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
-										print "Step 2", sent_format
-										# sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-										sent_word2vec_format = [
-											Word2Vec_model.word_vec(wsd_word) if wsd_word in Word2Vec_words else
-											unknown_tag['unk'] for wsd_word in sent_format]
-										testing_array = np.asarray(sent_word2vec_format)
-										testing_array = testing_array.reshape(1, 1500)
-										print "Intermediate step -> ", testing_array.shape
-										prediciton = model.predict(testing_array)
-										print "Step 3", testing_array.shape, prediciton
-										if prediciton == 0:
-											print "Predicted not a food", wsd_i, word
-											continue
-
-									else:
-										print "Step 0", wsd_i, word
-										food_place_index = wsd_i.index(word)
-										print "Step 1 ", food_place_index
-										sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
-										print "Step 2", sent_format
-										sent_word2vec_format = [
-											Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag[
-												'unk'] for wsd_word in sent_format]
-										testing_array = np.asarray(sent_word2vec_format)
-										testing_array = testing_array.reshape(1, 500)
-										print "Intermediate step -> ", testing_array.shape
-										prediciton = model.predict(testing_array)
-										print "Step 3", testing_array.shape, prediciton
-										if prediciton == 0:
-											print "Predicted not a food", wsd_i, word
-											continue
-								except:
-									print "Couldn't run WSD", sys.exc_info()
-
-						unique_food_names[word] = 1
-						found_at_least = 1
-
-						# #Previous Setting
-						# c =  i.find(word)
-						# index_of_food_names.append([c, c + len(word) + 1])
-
-						# #removed the plus one
-						# spans_found_on_line.append((c, c + len(word)))
-						try:
-							temp_calorie = calorie.cal_calorie(word)
-							total_calorie += temp_calorie
-							calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
-						except:
-							print sys.exc_info()
-							print('no calories detected for food word')
-							pass
-
-
-						individual_food_words = word.split()
-						# for word, label in tags:
-						# 	if word == last_word and check_if_noun(label):
-						# 		index_of_food_names.append([c, c + len(word) + 1])
-						# 		print('chose word: '+ word)
-						# 		pass
-						# 	else:
-						# 		continue
-						# print(tags)
-						# print(individual_food_words)
-
-
-						for match in re.finditer(word, i):
-							# print "Sentence -> ", temp_i, "matches -> ", match
-							food_match_indexes = match.span()
-							index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-							spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
-
-						# Adding stuffs after reading documentation from USDA
-						# print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
-						food_id = foodNames[word]
-						if food_id in foodGroup:
-							food_group_for_food_id = foodGroup[food_id]
-							food_id_group_pairs.append([word, food_group_for_food_id])
-
-						if food_id in langua:
-							temp_langua = langua[food_id]
-							t = []
-							for temp_words in temp_langua:
-								t.append(temp_words)
-							food_id_langua_pairs.append([word + " " + food_id, t])
-						# food_id_langua_pairs =
-						# print("food -> ", food_id_group_pairs)
-						# Checking for EDIT Distance
-						if use_edit_distance_matching:
-							for food_data in sentence_pos_tags:  # TODO: renable string matching
-								# print "Sentence pos tags", sentence_pos_tags
-								k1 = float(len(food_data[1])) / float(len(word))
-								if 0.6 < k1 and k1 < 1.4:
-									# k1 = float(len(food_data[1]))/float(len(word))
-									# if 0.6 < k1 and k1 < 1.4:
-									# k1 = jaccard_distance(food_data[1], word)
-									# if k1 < 0.3:
-									# print "Crossed Jaccard Barrier", k1
-									# if 0.6 < k and k < 1.4:
-									# k1 = abs(len(food_data[1]) - len(word))
-									# if k1 <= 3:s
-									# if word == 'tomatoes':
-									# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
-									# print "yes", food_data[1], word
-									# PERFORM EDIT DISTANCE
-									if word == food_data[1]: continue
-									distance = nltk.edit_distance(word, food_data[1])
-									# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
-									# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
-
-									# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
-									# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
-
-
-
-									# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-									# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
-
-									# Manual checking
-									# k2 = 0
-									# if len(temp) > 2 and len(temp2) > 2:
-									# 	if temp[-1] == 's' or temp2[-1] == 's':
-									# 		if temp[:-1] == temp2:
-									# 			print "yes if 1", temp[:-1], temp2
-									# 			k2 = 1
-									# 		elif temp == temp2[:-1]:
-									# 			k2 = 1
-									# 		else:
-									# 			pass
-									# 	elif temp == temp2:
-									# 		k2 =1
-									# 	else:
-									# 		pass
-
-									# if len(temp) > 2 and len(temp2) > 2:
-									# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
-									# 		if temp[:-2] == temp2:
-									# 			k2 = 1
-									# 		elif temp == temp2[:-2]:
-									# 			k2 = 1
-									# 		else:
-									# 			pass
-									# 	elif temp == temp2:
-									# 		k2 =1
-									# 	else:
-									# 		pass
-
-									# print "check -> ", word, food_data[1], temp, temp2, k1
-
-									# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-									# distance = 0
-									k2 = distance / float(max(len(word), len(food_data)))
-									# if k2  == 1:
-									if k2 < 0.25:
-										# k2 = 3
-										# if distance <= k2:
-
-										# k2 = 3
-										# if distance <= k2:
-
-										# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
-										# if k3 > 0.90:
-
-										found_at_least = 1
-										# if word == 'tomatoes':
-										# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-										index_of_food_names.append([food_data[2], food_data[3]])
-										spans_found_on_line.append([food_data[2], food_data[3]])
-
-										with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt",
-												  "a") as myfile:
-											# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
-
-											# with open("./notes/edit_distance_4.txt", "a") as myfile:
-											# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
-
-											myfile.write(
-												word + "," + food_data[1] + "," + str(distance) + ", " + str(
-													k1) + " , " + str(
-													k2) + "\n")
-										# print "word found", word, len(word), max_len, max_len_word
-										# print ("Temproray -> ", temp_i)
-										# print ("Final i -> ", i)
+				words = get_list_of_phrases_in_foodnames(pos_tags, foodNames)
 			else:
-				for word in foodNames:
-					if temp_i.__contains__(' ' + word + ' '):
-						# print(tags)
-						# print word
-
-						#WSD
-						if len(word.split()) == 1:
-							#WSD applicable
-							if use_word2vec_model:
-								try:
-									if use_pretrained_Google_embeddings:
-										print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
-										# wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
-										wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in wsd_i]
-										# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
-										print "Step 0.1", wsd_i_temp, wsd_i, word
-										food_place_index = wsd_i_temp.index(word)
-										print "Step 1 ", food_place_index
-
-										sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
-										print "Step 2", sent_format
-										# sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-										sent_word2vec_format = [Word2Vec_model.word_vec(wsd_word) if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-										testing_array = np.asarray(sent_word2vec_format)
-										testing_array = testing_array.reshape(1, 1500)
-										print "Intermediate step -> ", testing_array.shape
-										prediciton = model.predict(testing_array)
-										print "Step 3", testing_array.shape, prediciton
-										if prediciton == 0:
-											print "Predicted not a food", wsd_i, word
-											continue
-
-									else:
-										print "Step 0", wsd_i, word
-										food_place_index = wsd_i.index(word)
-										print "Step 1 ", food_place_index
-										sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
-										print "Step 2", sent_format
-										sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-										testing_array = np.asarray(sent_word2vec_format)
-										testing_array = testing_array.reshape(1, 500)
-										print "Intermediate step -> ", testing_array.shape
-										prediciton = model.predict(testing_array)
-										print "Step 3", testing_array.shape, prediciton
-										if prediciton == 0:
-											print "Predicted not a food", wsd_i, word
-											continue
-											# continue
-								except:
-									print "Couldn't run WSD", sys.exc_info()
-
-						unique_food_names[word] = 1
-						found_at_least = 1
-
-						# #Previous Setting
-						# c =  i.find(word)
-						# index_of_food_names.append([c, c + len(word) + 1])
-
-						# #removed the plus one
-						# spans_found_on_line.append((c, c + len(word)))
+				words = get_list_of_foodnames_in_sentence(foodNames, temp_i)
+			# WSD
+			for word in words:
+				if len(word.split()) == 1:
+					# WSD applicable
+					if use_word2vec_model:
 						try:
-							temp_calorie = calorie.cal_calorie(word)
-							total_calorie += temp_calorie
-							calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
+							if use_pretrained_Google_embeddings:
+								print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
+
+								wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+
+								# wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
+
+								wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for
+											  temp_w_for_emb in wsd_i]
+
+								# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
+								print "Step 0.1", wsd_i_temp, wsd_i, word
+								food_place_index = wsd_i_temp.index(word)
+								# wsd_i_temp[food_place_index] = "EmptyWordHereZeroEmbedding"
+								print "Step 1 ", food_place_index, wsd_i_temp
+
+								sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
+								print "Step 2", sent_format
+								# sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
+								sent_word2vec_format = [
+									Word2Vec_model.word_vec(wsd_word) if wsd_word in Word2Vec_words else
+									unknown_tag['unk'] for wsd_word in sent_format]
+								testing_array = np.asarray(sent_word2vec_format)
+								testing_array = testing_array.reshape(1, 1500)
+								print "Intermediate step -> ", testing_array.shape
+								prediciton = model.predict(testing_array)
+								print "Step 3", testing_array.shape, prediciton
+								if prediciton == 0:
+									print "Predicted not a food", wsd_i, word
+									continue
+
+							else:
+								print "Step 0", wsd_i, word
+								food_place_index = wsd_i.index(word)
+								print "Step 1 ", food_place_index
+								sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
+								print "Step 2", sent_format
+								sent_word2vec_format = [
+									Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag[
+										'unk'] for wsd_word in sent_format]
+								testing_array = np.asarray(sent_word2vec_format)
+								testing_array = testing_array.reshape(1, 500)
+								print "Intermediate step -> ", testing_array.shape
+								prediciton = model.predict(testing_array)
+								print "Step 3", testing_array.shape, prediciton
+								if prediciton == 0:
+									print "Predicted not a food", wsd_i, word
+									continue
 						except:
-							print sys.exc_info()
-							pass
+							print "Couldn't run WSD", sys.exc_info()
 
-						individual_food_words = word.split()
-						# for word, label in tags:
-						# 	if word == last_word and check_if_noun(label):
-						# 		index_of_food_names.append([c, c + len(word) + 1])
-						# 		print('chose word: '+ word)
-						# 		pass
-						# 	else:
-						# 		continue
-						# print(tags)
-						# print(individual_food_words)
+				unique_food_names[word] = 1
+				found_at_least = 1
+
+				# #Previous Setting
+				# c =  i.find(word)
+				# index_of_food_names.append([c, c + len(word) + 1])
+
+				# #removed the plus one
+				# spans_found_on_line.append((c, c + len(word)))
+				try:
+					temp_calorie = calorie.cal_calorie(word)
+					total_calorie += temp_calorie
+					calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
+				except:
+					print sys.exc_info()
+					print('no calories detected for food word')
+					pass
 
 
-						for match in re.finditer(word, i):
-							# print "Sentence -> ", temp_i, "matches -> ", match
-							food_match_indexes = match.span()
-							index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-							spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+				individual_food_words = word.split()
+				# for word, label in tags:
+				# 	if word == last_word and check_if_noun(label):
+				# 		index_of_food_names.append([c, c + len(word) + 1])
+				# 		print('chose word: '+ word)
+				# 		pass
+				# 	else:
+				# 		continue
+				# print(tags)
+				# print(individual_food_words)
 
-						#Adding stuffs after reading documentation from USDA
-						#print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
-						food_id = foodNames[word]
-						if food_id in foodGroup:
-							food_group_for_food_id = foodGroup[food_id]
-							food_id_group_pairs.append([word, food_group_for_food_id])
 
-						if food_id in langua:
-							temp_langua = langua[food_id]
-							t = []
-							for temp_words in temp_langua:
-								t.append(temp_words)
-							food_id_langua_pairs.append([word + " " + food_id, t])
-							#food_id_langua_pairs =
-						# print("food -> ", food_id_group_pairs)
-					#Checking for EDIT Distance
-					if use_edit_distance_matching:
-						for food_data in sentence_pos_tags:  # TODO: renable string matching
-							# print "Sentence pos tags", sentence_pos_tags
-							k1 = float(len(food_data[1])) / float(len(word))
-							if 0.6 < k1 and k1 < 1.4:
-								# k1 = float(len(food_data[1]))/float(len(word))
-								# if 0.6 < k1 and k1 < 1.4:
-								# k1 = jaccard_distance(food_data[1], word)
-								# if k1 < 0.3:
-								# print "Crossed Jaccard Barrier", k1
-								# if 0.6 < k and k < 1.4:
-								# k1 = abs(len(food_data[1]) - len(word))
-								# if k1 <= 3:s
+				for match in re.finditer(word, i):
+					# print "Sentence -> ", temp_i, "matches -> ", match
+					food_match_indexes = match.span()
+					index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+					spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+
+				# Adding stuffs after reading documentation from USDA
+				# print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
+				food_id = foodNames[word]
+				if food_id in foodGroup:
+					food_group_for_food_id = foodGroup[food_id]
+					food_id_group_pairs.append([word, food_group_for_food_id])
+
+				if food_id in langua:
+					temp_langua = langua[food_id]
+					t = []
+					for temp_words in temp_langua:
+						t.append(temp_words)
+					food_id_langua_pairs.append([word + " " + food_id, t])
+				# food_id_langua_pairs =
+				# print("food -> ", food_id_group_pairs)
+				# Checking for EDIT Distance
+				if use_edit_distance_matching:
+					for food_data in sentence_pos_tags:  # TODO: renable string matching
+						# print "Sentence pos tags", sentence_pos_tags
+						k1 = float(len(food_data[1])) / float(len(word))
+						if 0.6 < k1 and k1 < 1.4:
+							# k1 = float(len(food_data[1]))/float(len(word))
+							# if 0.6 < k1 and k1 < 1.4:
+							# k1 = jaccard_distance(food_data[1], word)
+							# if k1 < 0.3:
+							# print "Crossed Jaccard Barrier", k1
+							# if 0.6 < k and k < 1.4:
+							# k1 = abs(len(food_data[1]) - len(word))
+							# if k1 <= 3:s
+							# if word == 'tomatoes':
+							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
+							# print "yes", food_data[1], word
+							# PERFORM EDIT DISTANCE
+							if word == food_data[1]: continue
+							distance = nltk.edit_distance(word, food_data[1])
+							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
+							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+
+							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
+							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+
+
+
+							# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+							# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
+
+							# Manual checking
+							# k2 = 0
+							# if len(temp) > 2 and len(temp2) > 2:
+							# 	if temp[-1] == 's' or temp2[-1] == 's':
+							# 		if temp[:-1] == temp2:
+							# 			print "yes if 1", temp[:-1], temp2
+							# 			k2 = 1
+							# 		elif temp == temp2[:-1]:
+							# 			k2 = 1
+							# 		else:
+							# 			pass
+							# 	elif temp == temp2:
+							# 		k2 =1
+							# 	else:
+							# 		pass
+
+							# if len(temp) > 2 and len(temp2) > 2:
+							# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
+							# 		if temp[:-2] == temp2:
+							# 			k2 = 1
+							# 		elif temp == temp2[:-2]:
+							# 			k2 = 1
+							# 		else:
+							# 			pass
+							# 	elif temp == temp2:
+							# 		k2 =1
+							# 	else:
+							# 		pass
+
+							# print "check -> ", word, food_data[1], temp, temp2, k1
+
+							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+							# distance = 0
+							k2 = distance / float(max(len(word), len(food_data)))
+							# if k2  == 1:
+							if k2 < 0.25:
+								# k2 = 3
+								# if distance <= k2:
+
+								# k2 = 3
+								# if distance <= k2:
+
+								# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+								# if k3 > 0.90:
+
+								found_at_least = 1
 								# if word == 'tomatoes':
-								# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
-								# print "yes", food_data[1], word
-								# PERFORM EDIT DISTANCE
-								if word == food_data[1]: continue
-								distance = nltk.edit_distance(word, food_data[1])
-								# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
-								# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
+								index_of_food_names.append([food_data[2], food_data[3]])
+								spans_found_on_line.append([food_data[2], food_data[3]])
 
-								# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
-								# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
-
-
-
-								# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-								# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
-
-								#Manual checking
-								# k2 = 0
-								# if len(temp) > 2 and len(temp2) > 2:
-								# 	if temp[-1] == 's' or temp2[-1] == 's':
-								# 		if temp[:-1] == temp2:
-								# 			print "yes if 1", temp[:-1], temp2
-								# 			k2 = 1
-								# 		elif temp == temp2[:-1]:
-								# 			k2 = 1
-								# 		else:
-								# 			pass
-								# 	elif temp == temp2:
-								# 		k2 =1
-								# 	else:
-								# 		pass
-
-								# if len(temp) > 2 and len(temp2) > 2:
-								# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
-								# 		if temp[:-2] == temp2:
-								# 			k2 = 1
-								# 		elif temp == temp2[:-2]:
-								# 			k2 = 1
-								# 		else:
-								# 			pass
-								# 	elif temp == temp2:
-								# 		k2 =1
-								# 	else:
-								# 		pass
-
-									# print "check -> ", word, food_data[1], temp, temp2, k1
-
-								# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-								# distance = 0
-								k2 = distance/float(max(len(word), len(food_data)))
-								# if k2  == 1:
-								if k2 < 0.25:
-								#k2 = 3
-								#if distance <= k2:
-
-									# k2 = 3
-									# if distance <= k2:
-
-									# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
-									# if k3 > 0.90:
-
-									found_at_least = 1
-									# if word == 'tomatoes':
-									# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-									index_of_food_names.append([food_data[2], food_data[3]])
-									spans_found_on_line.append([food_data[2], food_data[3]])
-
-									with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt", "a") as myfile:
+								with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt",
+										  "a") as myfile:
 									# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
-										# with open("./notes/edit_distance_4.txt", "a") as myfile:
-										# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
+									# with open("./notes/edit_distance_4.txt", "a") as myfile:
+									# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
 
-										myfile.write(
-											word + "," + food_data[1] + "," + str(distance) + ", " + str(k1) + " , " + str(
-												k2) + "\n")
-									# print "word found", word, len(word), max_len, max_len_word
-									# print ("Temproray -> ", temp_i)
-									# print ("Final i -> ", i)
+									myfile.write(
+										word + "," + food_data[1] + "," + str(distance) + ", " + str(
+											k1) + " , " + str(
+											k2) + "\n")
+								# print "word found", word, len(word), max_len, max_len_word
+								# print ("Temproray -> ", temp_i)
+								# print ("Final i -> ", i)
 
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
@@ -687,6 +488,14 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 	return write2file, results
 
+def get_list_of_phrases_in_foodnames(pos_tags, foodnames_dict):
+	phrases = phrasemachine.ark_get_phrases_wrapper(pos_tags)
+	words = list(filter(lambda x: x in foodnames_dict, phrases))  # filter out noun phrases that are not in foodNames
+	return words
+
+def get_list_of_foodnames_in_sentence(foodnames_dict, sentence):
+	words = list(filter(lambda x: sentence.__contains__(' ' + x + ' '), sentence))
+	return words
 
 def provide_words_with_char_nos(sentence, line_no):
 	temp_char = ''

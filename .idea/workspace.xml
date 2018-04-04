@@ -23,8 +23,8 @@
       <file leaf-file-name="display_html_2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/display_html_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+            <state relative-caret-position="277">
+              <caret line="286" column="51" lean-forward="true" selection-start-line="286" selection-start-column="51" selection-end-line="286" selection-end-column="51" />
               <folding>
                 <element signature="e#60#69#0" expanded="true" />
               </folding>
@@ -143,13 +143,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>model_goog</find>
-      <find>model</find>
-      <find>def evalu</find>
-      <find>nltk</find>
-      <find>par.</find>
-      <find>read_file</find>
-      <find>false_pos_list</find>
       <find>use_second_</find>
       <find>evaluate</find>
       <find>use_wordnet_</find>
@@ -173,6 +166,13 @@
       <find>calorie</find>
       <find>calori</find>
       <find>start = time.time()</find>
+      <find>use_pattern_</find>
+      <find>def ge</find>
+      <find>if use_pattern_</find>
+      <find>def  get</find>
+      <find>contains</find>
+      <find>def</find>
+      <find>foodname</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -626,18 +626,13 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/display_html_2.py</url>
-          <line>477</line>
-          <option name="timeStamp" value="13" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/new_food_names/create_links.py</url>
           <line>86</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/display_html_2.py</url>
-          <line>753</line>
+          <line>562</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -1037,8 +1032,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/display_html_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="72" column="38" lean-forward="true" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        <state relative-caret-position="277">
+          <caret line="286" column="51" lean-forward="true" selection-start-line="286" selection-start-column="51" selection-end-line="286" selection-end-column="51" />
           <folding>
             <element signature="e#60#69#0" expanded="true" />
           </folding>
