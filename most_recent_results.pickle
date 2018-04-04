@@ -7,9 +7,9 @@ p2
 c__builtin__
 tuple
 p3
-(I169
+(I168
 I57
-I71
+I72
 (lp4
 (lp5
 S'egg'
@@ -208,107 +208,109 @@ S'popsicle'
 p117
 aS'popsicles'
 p118
-aa(lp119
+aS'vitamin'
+p119
+aa(lp120
 S'(to)matoes'
-p120
-aS'cucum(ber)'
 p121
-aS'diet dressing'
+aS'cucum(ber)'
 p122
-aS'diet soda'
+aS'diet dressing'
 p123
-aS'milk juice'
-p124
-aS'supper'
-p125
-aa(lp126
-S'gum drop'
-p127
-aS'mcdonald'
-p128
-aS'quick'
-p129
-aa(lp130
-a(lp131
-S'(po)tatoes'
-p132
-aS'diet slice'
-p133
 aS'diet soda'
+p124
+aS'milk juice'
+p125
+aS'supper'
+p126
+aa(lp127
+S'gum drop'
+p128
+aS'mcdonald'
+p129
+aS'quick'
+p130
+aa(lp131
+a(lp132
+S'(po)tatoes'
+p133
+aS'diet slice'
 p134
-aS'diet sprite'
+aS'diet soda'
 p135
-aS'ginger+ale'
+aS'diet sprite'
 p136
-aS'koolaid'
+aS'ginger+ale'
 p137
-aS'milk shake'
+aS'koolaid'
 p138
-aS'nut and honey'
+aS'milk shake'
 p139
-aS'oats and bran cereal'
+aS'nut and honey'
 p140
-aS'oats and honey'
+aS'oats and bran cereal'
 p141
-aS'popsicles'
+aS'oats and honey'
 p142
-aS'pork chops'
+aS'popsicles'
 p143
-aS'slim fast'
+aS'pork chops'
 p144
-aS'soda'
+aS'slim fast'
 p145
-aS'sodas'
+aS'soda'
 p146
-aS'spice ham sandwich'
+aS'sodas'
 p147
-aa(lp148
-a(lp149
+aS'spice ham sandwich'
+p148
+aa(lp149
 a(lp150
 a(lp151
+a(lp152
 S'calzone'
-p152
-aS'macaroni salad'
 p153
-aS'pean(ut) butter'
+aS'macaroni salad'
 p154
-aS'peanut butter and jelly'
+aS'pean(ut) butter'
 p155
-aS'saltine crackers'
+aS'peanut butter and jelly'
 p156
-aa(lp157
+aS'saltine crackers'
+p157
+aa(lp158
 S'corn on the cob'
-p158
-aS'fudgesicle'
 p159
-aS'fudgesicles'
+aS'fudgesicle'
 p160
-aS'honey+dew'
+aS'fudgesicles'
 p161
-aS'ketchup'
+aS'honey+dew'
 p162
-aS'popsicle'
+aS'ketchup'
 p163
-aS'pork chop'
-p164
-aS'porkchops'
-p165
-aa(lp166
-S'brownies'
-p167
-aa(lp168
-a(lp169
-S'corn on the cob'
-p170
-aS'cucumbers'
-p171
-aS'ice cone'
-p172
 aS'popsicle'
+p164
+aS'pork chop'
+p165
+aS'porkchops'
+p166
+aa(lp167
+S'brownies'
+p168
+aa(lp169
+a(lp170
+S'corn on the cob'
+p171
+aS'cucumbers'
+p172
+aS'ice cone'
 p173
-aS'tuna'
+aS'popsicle'
 p174
-aS'tuna+fish'
+aS'tuna'
 p175
-aattRp176
+aS'tuna+fish'
+p176
+aattRp177
 .

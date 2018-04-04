@@ -101,7 +101,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	foodNames.update(Yelena_Mejova_food_names)
 	if use_wordnet_food_names:
 		wordnet_food_names = load("./data/food_desc_files/wordnet_food_words.pickle")
-		banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food']
+		# should 'diet' be in the banned words? 'meat'? 'refreshment'? 'takeout'?
+		banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
 		for word in banned_words:
 			wordnet_food_names.pop(word)
 		foodNames.update(wordnet_food_names)

@@ -114,6 +114,11 @@ def get_all_descendants_of_food_from_wordnet():
         pickle.dump(food_names_dict, f)
 
 if __name__ == "__main__":
-    get_all_descendants_of_food_from_wordnet()
-
+    with open('data/food_desc_files/wordnet_food_words.pickle', 'rb') as f:
+        wordnet_food_names = pickle.load(f)
+    print(len(wordnet_food_names))
+    food_list = wordnet_food_names.keys()
+    food_list = sorted(food_list)
+    for i, food in enumerate(food_list):
+        print(i,food)
 
