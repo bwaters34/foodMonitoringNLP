@@ -65,9 +65,9 @@ class create_links:
 		matrix = tfidf.fit_transform(food_names) # each column corresponds with a word in the vocab, each row is a document
 		vocab_dict = tfidf.vocabulary_
 
-		print(matrix._shape)
+		# print(matrix._shape)
 		index = column -1
-		print(food_names_as_lists)
+		# print(food_names_as_lists)
 		# if our food name list has enough elements (i.e. if we want the third element in the description, this food name
 		# has length >= 3), add it with its line number to the list.
 		food_names_from_specified_column = [(x[0][index], x[1]) for x in food_names_as_lists if len(x[0]) >= column]
@@ -75,15 +75,19 @@ class create_links:
 		single_words_only = [x for x in whitespace_removed if len(x[0].split()) <= 1]
 		food_names_dict = {}
 		print(len(single_words_only))
+		print(single_words_only)
+		print(len(set(single_words_only)))
 		for word, index in single_words_only:
-
 			try: # TODO: This is a hack! Problem: TF-IDF vectorizer tokenizes words using whitespace but also hyphens and other things, while we only use whitespace. This means we get keyerrors on certain words
 				col = vocab_dict[word]
 				value = matrix[index,col]
 			except KeyError:
+				print(word)
+				print('broken')
 				continue
 			if value > threshold:
 				food_names_dict[word] = None # dummy value
+		print('size of dictionary:{}'.format(len(food_names_dict)))
 		return food_names_dict
 
 	def create_lists(self, sentence):

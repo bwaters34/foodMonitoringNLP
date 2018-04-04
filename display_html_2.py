@@ -27,6 +27,8 @@ import gensim
 from namedtuples import Accuracy
 import phrasemachine
 
+
+
 #Word2Vec
 use_Google = 0
 if use_Google:
@@ -188,8 +190,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 						if wordnet_explorer.string_is_descendant_of_food(candidate_word, wordnet_setting):
 							# print('descended from food: {}'.format(str(food_data)))
 							# it might be food!
-							index_of_food_names.append([food_data[2], food_data[3]])
-							spans_found_on_line.append([food_data[2], food_data[3]])
+							index_of_food_names.append((food_data[2], food_data[3]))
+							spans_found_on_line.append((food_data[2], food_data[3]))
 							found_at_least = 1
 
 			wsd_i = wsd_i[6:]
@@ -393,8 +395,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-								index_of_food_names.append([food_data[2], food_data[3]])
-								spans_found_on_line.append([food_data[2], food_data[3]])
+								index_of_food_names.append((food_data[2], food_data[3]))
+								spans_found_on_line.append((food_data[2], food_data[3]))
 
 								with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt",
 										  "a") as myfile:
@@ -421,7 +423,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					else:
 						text += i[char_pos]
 				text += calorie_text
-
+				if False:
+					spans_found_on_line = span_merger(spans_found_on_line)
 				tuples_list = give_largest_non_overlapping_sequences(spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
 				for tup in tuples_list:
 					set_elem = (current_line_number, tup) # add line number so we know where in the document we got it
@@ -555,6 +558,37 @@ def check_if_noun(tag):
 	if tag == 'NN' or tag == 'NNS' or tag == 'NNP' or tag == 'NNPS':
 		return True
 	return False
+
+def span_merger(list_of_spans):
+	"""
+	Adds spans to the original list that are one space apart. For example, if the phrase "beef stew" returned spans [(0,4), (5,9)], we would create a new span (0,9) and return [(0,4), (5,9)].
+	Relies on the idea that whitespace is of length 1 !!!
+	:return: the original list_of_spans, with new spans that are old spans merged together. Only merges once! does not merge recursively!
+	"""
+	starting_spans = {}
+	ending_spans = {}
+	merged_spans = []
+	for span in list_of_spans:
+		start, end = span
+		if start in starting_spans:
+			starting_spans[start].append(span)
+		else:
+			starting_spans[start] = [span]
+		if end in ending_spans:
+			ending_spans[end].append(span)
+		else:
+			ending_spans[end] = [span]
+	for end in ending_spans:
+		if end+1 in starting_spans: # we can merge a span! possibly more than one span!
+			# get indexes of spans to merge
+			spans_to_merge = [(span1,span2) for span1 in ending_spans[end] for span2 in starting_spans[end+1]]
+			for first_span, second_span in spans_to_merge:
+				new_start = first_span[0]
+				new_end = second_span[1]
+				new_span = (new_start, new_end)
+				merged_spans.append(new_span)
+	return list_of_spans + merged_spans
+
 
 def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
 	Sequence = namedtuple('Sequence', ['start', 'end', 'size'])
