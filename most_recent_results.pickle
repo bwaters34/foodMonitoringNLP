@@ -8,291 +8,303 @@ c__builtin__
 tuple
 p3
 (I174
-I54
-I66
+I61
+I65
 (lp4
 (lp5
 S'egg'
 p6
 aS'fish'
 p7
-aS"mother's"
+aS'lollipops'
 p8
-aa(lp9
-S'chicken spices'
-p10
-aS'honey'
-p11
-aa(lp12
+aS"mother's"
+p9
+aa(lp10
 S'honey'
-p13
-aS'sunshine'
+p11
+aS'spices'
+p12
+aa(lp13
+S'honey'
 p14
-aS'tea'
+aS'sunshine'
 p15
-aa(lp16
+aS'tea'
+p16
+aa(lp17
 S'apple'
-p17
-aS'candy'
 p18
-aS'crackers'
+aS'candy'
 p19
-aS'duck'
+aS'crackers'
 p20
-aS'vegetable'
-p21
-aa(lp22
-S'bear'
-p23
-aS'bread'
-p24
-aS'fish'
-p25
-aS'grapes'
-p26
-aS'honey'
-p27
-aS'water'
-p28
-aa(lp29
-S'duck'
-p30
-aS'fish'
-p31
-aS'meat'
-p32
-aS'water'
-p33
-aa(lp34
-a(lp35
-S'candy'
-p36
-aS'turtle'
-p37
-aa(lp38
-S'apple'
-p39
 aS'duck'
+p21
+aS'vegetable'
+p22
+aa(lp23
+S'bear'
+p24
+aS'bread'
+p25
+aS'cakes'
+p26
+aS'fish'
+p27
+aS'grapes'
+p28
+aS'honey'
+p29
+aS'water'
+p30
+aa(lp31
+S'duck'
+p32
+aS'fish'
+p33
+aS'lobsters'
+p34
+aS'meat'
+p35
+aS'water'
+p36
+aa(lp37
+a(lp38
+S'candy'
+p39
+aS'turtle'
 p40
-aS'grape'
+aS'turtles'
 p41
-aS'honey'
-p42
-aa(lp43
-S'coffee mix'
+aa(lp42
+S'apple'
+p43
+aS'duck'
 p44
-aS'diet'
+aS'grape'
 p45
-aS'fruit'
+aS'honey'
 p46
-aS'lettuce lettuce'
-p47
-aa(lp48
-S'barbecue'
+aa(lp47
+S'diet'
+p48
+aS'fruit'
 p49
-aS'honey'
+aS'mix'
 p50
-aS"mcdonald's"
-p51
-aa(lp52
-S'tonic'
-p53
-aa(lp54
-S'cabbage'
-p55
-aS'diet'
-p56
-aS'egg'
-p57
-aS'ham sandwich'
-p58
+aa(lp51
+S'barbecue'
+p52
 aS'honey'
+p53
+aS"mcdonald's"
+p54
+aa(lp55
+S'tonic'
+p56
+aa(lp57
+S'cabbage'
+p58
+aS'diet'
 p59
-aS'pork'
+aS'egg'
 p60
-aS"van's"
+aS'ham'
 p61
-aa(lp62
-S'snap'
+aS'honey'
+p62
+aS'pork'
 p63
-aa(lp64
-a(lp65
-S'meat'
+aS'sandwich'
+p64
+aS'sprite'
+p65
+aS"van's"
 p66
 aa(lp67
-S'butter'
+S'snap'
 p68
+aa(lp69
+a(lp70
+S'meat'
+p71
+aa(lp72
+S'butter'
+p73
 aS'goose'
-p69
-aS'honey'
-p70
-aa(lp71
-S'pork'
-p72
-aa(lp73
-S'duck'
 p74
-aa(lp75
-a(lp76
-S'honey'
+aS'honey'
+p75
+aS'macaroni'
+p76
+aS'salad'
 p77
-aS'seeds'
-p78
-aS'water'
+aa(lp78
+S'pork'
 p79
 aa(lp80
-(lp81
-S'cantaloupe'
-p82
-aS'ice cube'
-p83
-aS'lollipop'
+S'duck'
+p81
+aa(lp82
+a(lp83
+S'honey'
 p84
-aS'tootsie roll'
+aS'seeds'
 p85
-aa(lp86
-S'brownie'
-p87
-aS'chicken'
-p88
-aS'coke'
+aS'water'
+p86
+aa(lp87
+(lp88
+S'cantaloupe'
 p89
-aa(lp90
-S'skim milk'
+aS'chocolate broccoli'
+p90
+aS'egg salad'
 p91
-aa(lp92
-S'beers'
+aS'ice cube'
+p92
+aS'lollipop'
 p93
-aS'cotton candy'
+aS'tootsie roll'
 p94
-aS'french fries'
-p95
-aS'salads'
+aa(lp95
+S'brownie'
 p96
-aa(lp97
-S'brown bread'
+aS'butter bread'
+p97
+aS'coke'
 p98
-aS'concord grapes'
-p99
-aS'fish cakes'
+aa(lp99
+S'skim milk'
 p100
-aS'fish stick'
-p101
-aS'ice cream bar'
+aa(lp101
+S'cotton candy'
 p102
-aa(lp103
-S'soda'
-p104
-aa(lp105
-S'orange'
+aS'french fries'
+p103
+aa(lp104
+S'brown bread'
+p105
+aS'concord grapes'
 p106
-aa(lp107
-S'cupcakes'
+aS'fish cake'
+p107
+aS'fish cakes'
 p108
-aS'hamburgers'
+aS'fish stick'
 p109
-aa(lp110
-S'popsicle'
-p111
-aS'popsicles'
+aS'ice cream bar'
+p110
+aa(lp111
+S'soda'
 p112
-aS'vitamin'
-p113
-aa(lp114
-S'(to)matoes'
-p115
-aS'cucum(ber)'
-p116
-aS'diet dressing'
+aa(lp113
+S'orange'
+p114
+aa(lp115
+a(lp116
+S'popsicle'
 p117
-aS'diet soda'
+aS'popsicles'
 p118
-aS'supper'
+aS'vitamin'
 p119
 aa(lp120
-S'gum drop'
+S'(to)matoes'
 p121
-aS'mcdonald'
+aS'cucum(ber)'
 p122
-aS'quick'
+aS'diet dressing'
 p123
-aa(lp124
-a(lp125
-S'(po)tatoes'
-p126
-aS'diet slice'
-p127
 aS'diet soda'
+p124
+aS'supper'
+p125
+aa(lp126
+S'gum drop'
+p127
+aS'mcdonald'
 p128
-aS'ginger+ale'
+aS'quick'
 p129
-aS'koolaid'
-p130
-aS'milk shake'
-p131
-aS'nut and honey'
+aa(lp130
+a(lp131
+S'(po)tatoes'
 p132
-aS'oats and bran cereal'
+aS'diet slice'
 p133
-aS'oats and honey'
+aS'diet soda'
 p134
-aS'popsicles'
+aS'diet sprite'
 p135
-aS'pork chops'
+aS'ginger+ale'
 p136
-aS'slim fast'
+aS'koolaid'
 p137
-aS'soda'
+aS'milk shake'
 p138
-aS'sodas'
+aS'nut and honey'
 p139
-aS'spice ham sandwich'
+aS'oats and bran cereal'
 p140
-aa(lp141
-a(lp142
-a(lp143
-a(lp144
-S'calzone'
+aS'oats and honey'
+p141
+aS'popsicles'
+p142
+aS'pork chops'
+p143
+aS'slim fast'
+p144
+aS'soda'
 p145
-aS'pean(ut) butter'
+aS'sodas'
 p146
-aS'peanut butter and jelly'
+aS'spice ham sandwich'
 p147
-aS'saltine crackers'
-p148
-aa(lp149
-S'corn on the cob'
-p150
-aS'fudgesicle'
-p151
-aS'fudgesicles'
+aa(lp148
+a(lp149
+a(lp150
+a(lp151
+S'calzone'
 p152
-aS'honey+dew'
+aS'macaroni salad'
 p153
-aS'ketchup'
+aS'pean(ut) butter'
 p154
-aS'popsicle'
+aS'peanut butter and jelly'
 p155
-aS'pork chop'
+aS'saltine crackers'
 p156
-aS'porkchops'
-p157
-aa(lp158
-S'brownies'
-p159
-aa(lp160
-a(lp161
+aa(lp157
 S'corn on the cob'
+p158
+aS'fudgesicle'
+p159
+aS'fudgesicles'
+p160
+aS'honey+dew'
+p161
+aS'ketchup'
 p162
-aS'cucumbers'
-p163
-aS'ice cone'
-p164
 aS'popsicle'
-p165
-aS'tuna'
+p163
+aS'pork chop'
+p164
+aa(lp165
+S'brownies'
 p166
+aa(lp167
+a(lp168
+S'corn on the cob'
+p169
+aS'ice cone'
+p170
+aS'popsicle'
+p171
+aS'tuna'
+p172
 aS'tuna+fish'
-p167
-aattRp168
+p173
+aattRp174
 .
