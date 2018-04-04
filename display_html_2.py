@@ -71,19 +71,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	#WSD
 	unknown_tag = {}
 	unknown_tag['unk'] = np.zeros(300)
-<<<<<<< HEAD
-	if use_pretrained_Google_embeddings:
-		start = time.time()
-		Word2Vec_model = model_google
-		
-		Word2Vec_words = Word2Vec_model.vocab
-		model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label_aggressive')
-	else:
-		Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
-		Word2Vec_words = list(Word2Vec_model.wv.vocab)
-		model = load('./wsd/LogisticRegressionModel_twice_neg')
-=======
-
 	if use_word2vec_model:
 		if use_pretrained_Google_embeddings:
 			start = time.time()
@@ -95,8 +82,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
 			Word2Vec_words = list(Word2Vec_model.wv.vocab)
 			model = load('./wsd/LogisticRegressionModel_twice_neg')
->>>>>>> fe16d6dd25ed6143c4a0d2e2cf0c039997e44366
-	
 
 	#Previous versions
 	#foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
@@ -230,13 +215,19 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								try:
 									if use_pretrained_Google_embeddings:
 										print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
-										# wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+
+										wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+
+										# wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
+
 										wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for
 													  temp_w_for_emb in wsd_i]
+
 										# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
 										print "Step 0.1", wsd_i_temp, wsd_i, word
 										food_place_index = wsd_i_temp.index(word)
-										print "Step 1 ", food_place_index
+										# wsd_i_temp[food_place_index] = "EmptyWordHereZeroEmbedding"
+										print "Step 1 ", food_place_index, wsd_i_temp
 
 										sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
 										print "Step 2", sent_format
@@ -270,7 +261,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 										if prediciton == 0:
 											print "Predicted not a food", wsd_i, word
 											continue
-										# continue
 								except:
 									print "Couldn't run WSD", sys.exc_info()
 
@@ -284,59 +274,14 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 						# #removed the plus one
 						# spans_found_on_line.append((c, c + len(word)))
 						try:
-<<<<<<< HEAD
-							if use_pretrained_Google_embeddings:
-								print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
-
-								wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
-
-								# wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
-
-								wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in wsd_i]
-								
-								# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
-								print "Step 0.1", wsd_i_temp, wsd_i, word
-								food_place_index = wsd_i_temp.index(word)	
-								# wsd_i_temp[food_place_index] = "EmptyWordHereZeroEmbedding"
-								print "Step 1 ", food_place_index, wsd_i_temp
-
-								sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
-								print "Step 2", sent_format
-								# sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-								sent_word2vec_format = [Word2Vec_model.word_vec(wsd_word) if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-								testing_array = np.asarray(sent_word2vec_format)
-								testing_array = testing_array.reshape(1, 1500)
-								print "Intermediate step -> ", testing_array.shape
-								prediciton = model.predict(testing_array)
-								print "Step 3", testing_array.shape, prediciton
-								if prediciton == 0: 
-									print "Predicted not a food", wsd_i, word
-									continue
-								
-							else:
-								print "Step 0", wsd_i, word
-								food_place_index = wsd_i.index(word)	
-								print "Step 1 ", food_place_index
-								sent_format = wsd_i[food_place_index-n:food_place_index+n+1]
-								print "Step 2", sent_format
-								sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
-								testing_array = np.asarray(sent_word2vec_format)
-								testing_array = testing_array.reshape(1, 500)
-								print "Intermediate step -> ", testing_array.shape
-								prediciton = model.predict(testing_array)
-								print "Step 3", testing_array.shape, prediciton
-								if prediciton == 0: 
-									print "Predicted not a food", wsd_i, word
-									continue
-									# continue
-=======
 							temp_calorie = calorie.cal_calorie(word)
 							total_calorie += temp_calorie
-							calorie_text += '<br><mark>' + word + "</mark>-> " + str(temp_calorie)
->>>>>>> fe16d6dd25ed6143c4a0d2e2cf0c039997e44366
+							calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
 						except:
 							print sys.exc_info()
+							print('no calories detected for food word')
 							pass
+
 
 						individual_food_words = word.split()
 						# for word, label in tags:
