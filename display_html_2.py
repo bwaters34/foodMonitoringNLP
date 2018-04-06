@@ -119,8 +119,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			if name not in foodNames: # make sure we're not overwriting anything
 				foodNames[name] = None
 		# print(len(foodNames))
-		foodGroup = load("./data/food_desc_files/food_group.pickle")
-		langua = load("./data/food_desc_files/langua.pickle")
+	foodGroup = load("./data/food_desc_files/food_group.pickle")
+	langua = load("./data/food_desc_files/langua.pickle")
 
 	#ark_parsed_data = ark_parser(fileName)
 

@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31b543f5-a4ae-4078-9dbb-b36fb6c7fd06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/display_html_2.py" afterPath="$PROJECT_DIR$/display_html_2.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,10 +23,12 @@
       <file leaf-file-name="display_html_2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/display_html_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="116" column="48" lean-forward="true" selection-start-line="116" selection-start-column="48" selection-end-line="116" selection-end-column="48" />
+            <state relative-caret-position="185">
+              <caret line="119" column="38" lean-forward="true" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
               <folding>
                 <element signature="e#60#69#0" expanded="true" />
+                <marker date="1523034677508" expanded="true" signature="5073:5506" ph="..." />
+                <marker date="1523034677508" expanded="true" signature="5264:5363" ph="..." />
               </folding>
             </state>
           </provider>
@@ -672,6 +673,8 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#60#69#0" expanded="true" />
+            <marker date="1523034677508" expanded="true" signature="5073:5506" ph="..." />
+            <marker date="1523034677508" expanded="true" signature="5264:5363" ph="..." />
           </folding>
         </state>
       </provider>
@@ -994,10 +997,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/display_html_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="116" column="48" lean-forward="true" selection-start-line="116" selection-start-column="48" selection-end-line="116" selection-end-column="48" />
+        <state relative-caret-position="185">
+          <caret line="119" column="38" lean-forward="true" selection-start-line="119" selection-start-column="38" selection-end-line="119" selection-end-column="38" />
           <folding>
             <element signature="e#60#69#0" expanded="true" />
+            <marker date="1523034677508" expanded="true" signature="5073:5506" ph="..." />
+            <marker date="1523034677508" expanded="true" signature="5264:5363" ph="..." />
           </folding>
         </state>
       </provider>
