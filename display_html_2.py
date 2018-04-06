@@ -109,7 +109,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			wordnet_food_names.pop(word)
 		foodNames.update(wordnet_food_names)
 	# add plurals to everything
-	if False:
+	if True:
 		plural_foods = []
 		for name in foodNames:
 			if name[-1] != 's': # if word doesn't end with s
@@ -432,7 +432,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					else:
 						text += i[char_pos]
 				text += calorie_text
-				if False:
+				if True:
 					spans_found_on_line = span_merger(spans_found_on_line)
 				tuples_list = give_largest_non_overlapping_sequences(spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
 				for tup in tuples_list:
