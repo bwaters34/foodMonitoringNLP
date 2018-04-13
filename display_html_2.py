@@ -90,11 +90,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
 	foodNames = load("./data/food_desc_files/food_names.pickle")
 	# print('adding extra names')
-<<<<<<< HEAD
-	# Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
-=======
-	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
->>>>>>> ffc82d059776760fae444cf5c0b2c6ed261b5c77
 	# foodNames = Yelena_Mejova_food_names
 	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
 	# foodNames = Yelena_Mejova_food_names
@@ -646,11 +641,8 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-<<<<<<< HEAD
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = True, use_wordnet_food_names = False, use_pattern_matching=False):
-=======
+
 def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True):
->>>>>>> ffc82d059776760fae444cf5c0b2c6ed261b5c77
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0

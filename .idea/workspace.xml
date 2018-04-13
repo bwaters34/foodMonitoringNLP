@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/display_html_2.py" line="104" mnemonic="0" />
+    <bookmark url="file://$PROJECT_DIR$/display_html_2.py" line="99" mnemonic="0" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="31b543f5-a4ae-4078-9dbb-b36fb6c7fd06" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/display_html_2.py" afterPath="$PROJECT_DIR$/display_html_2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/most_recent_results.pickle" afterPath="$PROJECT_DIR$/most_recent_results.pickle" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,8 +23,8 @@
       <file leaf-file-name="display_html_2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/display_html_2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="644" column="21" lean-forward="true" selection-start-line="644" selection-start-column="21" selection-end-line="644" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
               <folding>
                 <element signature="e#60#69#0" expanded="true" />
               </folding>
@@ -37,8 +35,8 @@
       <file leaf-file-name="training.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsd/training.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+            <state relative-caret-position="435">
+              <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -49,8 +47,8 @@
       <file leaf-file-name="create_word_embeddings_for_hslld.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wsd/create_word_embeddings_for_hslld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+            <state relative-caret-position="180">
+              <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -111,7 +109,7 @@
       <file leaf-file-name="evalutate_multiple_files.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evalutate_multiple_files.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
+            <state relative-caret-position="105">
               <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
               <folding>
                 <element signature="e#1#29#0" expanded="true" />
@@ -124,7 +122,7 @@
         <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1247972723/__builtin__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="210">
-              <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+              <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -596,7 +594,7 @@
       <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11888112" sideWeight="0.15666902" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.49752998" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33426574" sideWeight="0.4890614" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30769232" sideWeight="0.4890614" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24982357" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32867134" sideWeight="0.49470714" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -652,11 +650,6 @@
           <url>file://$PROJECT_DIR$/phrasemachine.py</url>
           <line>352</line>
           <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/display_html_2.py</url>
-          <line>107</line>
-          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -1007,15 +1000,15 @@
     <entry file="file://$USER_HOME$/.PyCharmCE2016.3/system/python_stubs/-1247972723/__builtin__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
-          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wsd/training.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="29" column="64" lean-forward="true" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+        <state relative-caret-position="435">
+          <caret line="29" column="64" lean-forward="false" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -1024,15 +1017,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wsd/create_word_embeddings_for_hslld.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+        <state relative-caret-position="180">
+          <caret line="18" column="30" lean-forward="false" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/evalutate_multiple_files.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="105">
           <caret line="7" column="45" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="45" />
           <folding>
             <element signature="e#1#29#0" expanded="true" />
@@ -1042,8 +1035,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/display_html_2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="644" column="21" lean-forward="true" selection-start-line="644" selection-start-column="21" selection-end-line="644" selection-end-column="21" />
+        <state relative-caret-position="165">
+          <caret line="32" column="14" lean-forward="false" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding>
             <element signature="e#60#69#0" expanded="true" />
           </folding>
