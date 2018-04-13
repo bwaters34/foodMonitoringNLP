@@ -24,7 +24,7 @@ class training_classifier:
 		print "time to upload Embeddings into RAM", time.time() - start
 
 		# print type(self.Word2Vec_model['apple'])
-		# self.generate_training_data(self.raw_sentences)
+		self.generate_training_data(self.raw_sentences)
 		start = time.time()
 		self.pos_data, self.neg_data, self.data = self.load_training_data()
 		new_data = self.pos_data + self.neg_data[0:2*len(self.pos_data)]
@@ -60,15 +60,15 @@ class training_classifier:
 				self.dataset.append([sent_format, y_val])
 			# 	print sent[index_j]," ",
 			# print ""
-		self.Embeddings.save("Dataset_pos_without_20_labels_no_context", self.dataset_pos)
-		self.Embeddings.save("Dataset_neg_without_20_labels_no_context", self.dataset_neg)
-		self.Embeddings.save("Dataset_without_20_labels_no_context", self.dataset)
+		self.Embeddings.save("Dataset_pos_without_20_labels_wordnet_banned_words", self.dataset_pos)
+		self.Embeddings.save("Dataset_neg_without_20_labels_wordnet_banned_words", self.dataset_neg)
+		self.Embeddings.save("Dataset_without_20_labels_wordnet_banned_words", self.dataset)
 
 		# pprint(self.dataset)
 	def load_training_data(self):
-		pos = self.Embeddings.from_this_folder_load("Dataset_pos_without_20_labels")
-		neg = self.Embeddings.from_this_folder_load("Dataset_neg_without_20_labels")
-		data = self.Embeddings.from_this_folder_load("Dataset_without_20_labels")
+		pos = self.Embeddings.from_this_folder_load("Dataset_pos_without_20_labels_wordnet_banned_words")
+		neg = self.Embeddings.from_this_folder_load("Dataset_neg_without_20_labels_wordnet_banned_words")
+		data = self.Embeddings.from_this_folder_load("Dataset_without_20_labels_wordnet_banned_words")
 		return pos, neg, data 
 
 	def check(self, training_data, split = 0.7):
@@ -78,7 +78,8 @@ class training_classifier:
 			temp = []
 			if self.use_Google_Embeddings:
 				# model.Word2Vec_model['rice']
-				data = [" ".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in data]
+				# data = [" ".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in data]
+				data = [temp_w_for_emb.lower() for temp_w_for_emb in data]
 				temp = [self.Word2Vec_model.word_vec(word) if word in self.Word2Vec_model.vocab else self.unknown_tag['unk'] for word in data]
 			else:	
 				temp = [self.Word2Vec_model[word] if word !='unk' else self.unknown_tag['unk'] for word in data]
@@ -121,8 +122,8 @@ class training_classifier:
 		print metrics.accuracy_score(Y_test, predicited)
 		print metrics.classification_report(Y_test, predicited)
 		print logistic.score(X_test, Y_test)
-		self.Embeddings.save("LogisticRegression_double_neg_Google_no_data_label_aggressive", logistic)
-		print "Saved Google Embeddings on double negative data without 20 label dataset and also comparing cases like <apple"
+		self.Embeddings.save("LogisticRegression_double_neg_Google_no_testing_set_wordnet_banned_fewer_twitter", logistic)
+		print "Saved Google Embeddings on double negative data without 20 label dataset and also comparing cases like <apple along with wordnet"
 
 		# print train_x[0]
 		print train_x.shape, train_y.shape

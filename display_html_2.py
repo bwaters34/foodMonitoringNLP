@@ -30,12 +30,12 @@ import phrasemachine
 
 
 #Word2Vec
-use_Google = 0
+use_Google = 1
 if use_Google:
 	print "Loading Google Pre-Trained Word Embeddings"
 	start = time.time()
-	# word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
-	word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
+	word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
+	# word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
 	model_google = gensim.models.KeyedVectors.load_word2vec_format(word2vec_filepath, binary=True)
 	print "Time taken to load google Embeddings", time.time() - start
 
@@ -79,7 +79,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			Word2Vec_model = model_google
 
 			Word2Vec_words = Word2Vec_model.vocab
-			model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label')
+			model = load('./wsd/LogisticRegression_double_neg_Google_no_testing_set_wordnet_banned_fewer_twitter')
 		else:
 			Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
 			Word2Vec_words = list(Word2Vec_model.wv.vocab)
@@ -90,9 +90,9 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
 	foodNames = load("./data/food_desc_files/food_names.pickle")
 	# print('adding extra names')
-	Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
+	# Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
 	# foodNames = Yelena_Mejova_food_names
-	# Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
 	# foodNames = Yelena_Mejova_food_names
 	# print ("Added names by Yelena Mejova")
 
@@ -229,8 +229,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 								# wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
 
-								wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for
-											  temp_w_for_emb in wsd_i]
+								# wsd_i_temp = ["".join(re.split("[^a-zA-Z]*", temp_w_for_emb.lower())) for temp_w_for_emb in wsd_i]
 
 								# [" ".join(re.split("['a-zA-Z]*", dummy_word)) dummy_word for wsd_i_temp]
 								print "Step 0.1", wsd_i_temp, wsd_i, word
@@ -249,8 +248,14 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								print "Intermediate step -> ", testing_array.shape
 								prediciton = model.predict(testing_array)
 								print "Step 3", testing_array.shape, prediciton
-								if prediciton == 0:
-									print "Predicted not a food", wsd_i, word
+
+								pred_prob = model.predict_proba(testing_array)
+								print "Step 4 The probability ->", pred_prob
+								# if prediciton == 0:
+								# 	print "Predicted not a food", wsd_i, word
+								# 	continue
+								if pred_prob[0][1] <0.30:
+									print "Predicted not a food ", wsd_i, word
 									continue
 
 							else:
@@ -406,9 +411,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
 								index_of_food_names.append((food_data[2], food_data[3]))
 								spans_found_on_line.append((food_data[2], food_data[3]))
-
-								with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt",
-										  "a") as myfile:
+								print "Edit distance added word -> ", word, food_data
+								with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt", "a") as myfile:
 									# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
 									# with open("./notes/edit_distance_4.txt", "a") as myfile:
@@ -638,7 +642,7 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = True, use_wordnet_food_names = False, use_pattern_matching=False):
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
