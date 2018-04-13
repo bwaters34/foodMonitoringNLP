@@ -7,9 +7,15 @@ p2
 c__builtin__
 tuple
 p3
+<<<<<<< HEAD
 (I178
 I55
 I61
+=======
+(I180
+I57
+I59
+>>>>>>> ffc82d059776760fae444cf5c0b2c6ed261b5c77
 (lp4
 (lp5
 S'chicken spices'
@@ -116,6 +122,7 @@ aS'fish'
 p64
 aS'grapes'
 p65
+<<<<<<< HEAD
 aS'honey'
 p66
 aS'water'
@@ -285,6 +292,173 @@ p161
 aS'peanut butter and jelly'
 p162
 aS'saltine crackers'
+=======
+aa(lp66
+a(lp67
+a(lp68
+S'meat'
+p69
+aa(lp70
+S'butter'
+p71
+aS'goose'
+p72
+aS'honey'
+p73
+aa(lp74
+S'pork'
+p75
+aa(lp76
+S'duck'
+p77
+aa(lp78
+a(lp79
+S'honey'
+p80
+aS'seeds'
+p81
+aS'water'
+p82
+aa(lp83
+(lp84
+S'cantaloupe'
+p85
+aS'ice cube'
+p86
+aS'lollipop'
+p87
+aS'tootsie roll'
+p88
+aa(lp89
+S'brownie'
+p90
+aS'chicken'
+p91
+aS'coke'
+p92
+aa(lp93
+S'skim milk'
+p94
+aa(lp95
+S'cotton candy'
+p96
+aS'french fries'
+p97
+aa(lp98
+S'brown bread'
+p99
+aS'concord grapes'
+p100
+aS'fish stick'
+p101
+aS'ice cream bar'
+p102
+aa(lp103
+S'soda'
+p104
+aa(lp105
+S'orange'
+p106
+aa(lp107
+a(lp108
+S'popsicle'
+p109
+aS'popsicles'
+p110
+aS'vitamin'
+p111
+aa(lp112
+S'(to)matoes'
+p113
+aS'cucum(ber)'
+p114
+aS'diet dressing'
+p115
+aS'diet soda'
+p116
+aS'supper'
+p117
+aa(lp118
+S'gum drop'
+p119
+aS'mcdonald'
+p120
+aS'quick'
+p121
+aa(lp122
+a(lp123
+S'(po)tatoes'
+p124
+aS'diet slice'
+p125
+aS'diet soda'
+p126
+aS'ginger+ale'
+p127
+aS'koolaid'
+p128
+aS'milk shake'
+p129
+aS'nut and honey'
+p130
+aS'oats and bran cereal'
+p131
+aS'oats and honey'
+p132
+aS'popsicles'
+p133
+aS'pork chops'
+p134
+aS'slim fast'
+p135
+aS'soda'
+p136
+aS'sodas'
+p137
+aS'spice ham sandwich'
+p138
+aa(lp139
+a(lp140
+a(lp141
+a(lp142
+S'calzone'
+p143
+aS'pean(ut) butter'
+p144
+aS'peanut butter and jelly'
+p145
+aS'saltine crackers'
+p146
+aa(lp147
+S'corn on the cob'
+p148
+aS'fudgesicle'
+p149
+aS'fudgesicles'
+p150
+aS'honey+dew'
+p151
+aS'ketchup'
+p152
+aS'popsicle'
+p153
+aS'pork chop'
+p154
+aa(lp155
+S'brownies'
+p156
+aa(lp157
+a(lp158
+S'corn on the cob'
+p159
+aS'ice cone'
+p160
+aS'popsicle'
+p161
+aS'tuna'
+p162
+aS'tuna+fish'
+>>>>>>> ffc82d059776760fae444cf5c0b2c6ed261b5c77
 p163
 aattRp164
 .

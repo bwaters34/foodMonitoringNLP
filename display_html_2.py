@@ -47,7 +47,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, ):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, use_span_merging=True, use_plurals = True):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -90,7 +90,11 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	#foodNames = load('.\\data\\nltk_food_dictionary.pickle')
 	foodNames = load("./data/food_desc_files/food_names.pickle")
 	# print('adding extra names')
+<<<<<<< HEAD
 	# Yelena_Mejova_food_names = load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
+=======
+	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+>>>>>>> ffc82d059776760fae444cf5c0b2c6ed261b5c77
 	# foodNames = Yelena_Mejova_food_names
 	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
 	# foodNames = Yelena_Mejova_food_names
@@ -109,7 +113,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			wordnet_food_names.pop(word)
 		foodNames.update(wordnet_food_names)
 	# add plurals to everything
-	if True:
+	if use_plurals:
 		plural_foods = []
 		for name in foodNames:
 			if name[-1] != 's': # if word doesn't end with s
@@ -436,7 +440,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					else:
 						text += i[char_pos]
 				text += calorie_text
-				if True:
+				if use_span_merging:
 					spans_found_on_line = span_merger(spans_found_on_line)
 				tuples_list = give_largest_non_overlapping_sequences(spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
 				for tup in tuples_list:
@@ -642,7 +646,11 @@ def ark_parser(fileName):
 	var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
 	return var
 
+<<<<<<< HEAD
 def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = True, use_wordnet_food_names = False, use_pattern_matching=False):
+=======
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True):
+>>>>>>> ffc82d059776760fae444cf5c0b2c6ed261b5c77
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
@@ -652,7 +660,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching)
+		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals)
 		if results is not None: # there wasn't a solution set for that file
 			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
 				sum_true_pos += results.num_true_pos
