@@ -104,7 +104,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	if use_wordnet_food_names:
 		wordnet_food_names = load("./data/food_desc_files/wordnet_food_words.pickle")
 		# should 'diet' be in the banned words? 'meat'? 'refreshment'? 'takeout'?
-		banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
+		banned_words = ['diet','dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
 		for word in banned_words:
 			wordnet_food_names.pop(word)
 		foodNames.update(wordnet_food_names)
@@ -144,7 +144,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	# if we only want files with solutions, and no solution set is found, break early so we don't need to parse the file for food words.
 	if only_files_with_solutions:
 		if not solution_set_loaded:
-			return "solution set not found", None
+			return "solution set not found", None, None, None
 	for line_no, i in enumerate(f): # i is the current line (a string)
 		wsd_i = i
 		calorie_text = ''
@@ -499,7 +499,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos, num_false_neg=num_false_neg, false_pos_list=false_pos_list, false_neg_list=false_neg_list)
 
 
-	return write2file, results
+	return write2file, results, predicted_food_labels_set, solution_set_loaded
 
 def get_list_of_phrases_in_foodnames(pos_tags, foodnames_dict):
 	phrases = phrasemachine.ark_get_phrases_wrapper(pos_tags)
@@ -602,6 +602,7 @@ def span_merger(list_of_spans):
 def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
 	Sequence = namedtuple('Sequence', ['start', 'end', 'size'])
 	list_of_named_sequences = [Sequence(start = x[0], end = x[1], size = x[1] - x[0] - 1) for x in list_of_start_end_tuples] # size is -1 because the end number represents the index of the character AFTER the last character in the sequence.
+	# TODO: make this stable?
 	sorted_by_size_sequences = sorted(list_of_named_sequences, key=lambda seq: seq.size) # smallest size is first, largest size is last
 	non_overlapping_sequences = []
 	while len(sorted_by_size_sequences) > 0:
@@ -648,18 +649,20 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals)
-		if results is not None: # there wasn't a solution set for that file
-			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
-				sum_true_pos += results.num_true_pos
-			if results.num_false_pos is not None:
-				sum_false_pos += results.num_false_pos
-			if results.num_false_neg is not None:
-				sum_false_neg += results.num_false_neg
-			if results.false_pos_list is not None:
-				list_of_false_pos_lists.append(results.false_pos_list)
-			if results.false_pos_list is not None:
-				list_of_false_neg_lists.append(results.false_neg_list)
+		html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals)
+		print('predicted spans:')
+		print(predicted_spans)
+		if found_solution: # there wasn't a solution set for that file
+			# if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
+			sum_true_pos += results.num_true_pos
+			# if results.num_false_pos is not None:
+			sum_false_pos += results.num_false_pos
+			# if results.num_false_neg is not None:
+			sum_false_neg += results.num_false_neg
+			# if results.false_pos_list is not None:
+			list_of_false_pos_lists.append(results.false_pos_list)
+			# if results.false_pos_list is not None:
+			list_of_false_neg_lists.append(results.false_neg_list)
 	combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg, false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
 	precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
 	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
