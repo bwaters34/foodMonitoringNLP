@@ -5,7 +5,7 @@ import cPickle as pickle
 
 start_time = time.time()
 directory = 'HSLLD/HV1/MT/'
-precision, recall, results = evaluate_all_files_in_directory(directory, only_files_with_solutions=True, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=True, use_word2vec_model = True)
+precision, recall, results = evaluate_all_files_in_directory(directory, only_files_with_solutions=True, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=True)
 
 true_pos = results.num_true_pos
 false_pos = results.num_false_pos

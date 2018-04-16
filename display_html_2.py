@@ -30,7 +30,7 @@ import phrasemachine
 
 
 #Word2Vec
-use_Google = 1
+use_Google = 0
 if use_Google:
 	print "Loading Google Pre-Trained Word Embeddings"
 	start = time.time()
@@ -47,7 +47,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, use_span_merging=True, use_plurals = True):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -91,7 +91,10 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	foodNames = load("./data/food_desc_files/food_names.pickle")
 	# print('adding extra names')
 	# foodNames = Yelena_Mejova_food_names
-	Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+	if use_twitter_dataset:
+		Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+		foodNames.update(Yelena_Mejova_food_names)
+
 	# foodNames = Yelena_Mejova_food_names
 	# print ("Added names by Yelena Mejova")
 
@@ -99,14 +102,14 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	if use_second_column:
 		extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
 		foodNames.update(extraFoodNames)
-	foodNames.update(Yelena_Mejova_food_names)
 	if use_wordnet_food_names:
 		wordnet_food_names = load("./data/food_desc_files/wordnet_food_words.pickle")
 		# should 'diet' be in the banned words? 'meat'? 'refreshment'? 'takeout'?
-		banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
-		for word in banned_words:
-			wordnet_food_names.pop(word)
-		foodNames.update(wordnet_food_names)
+		if remove_banned_words:
+			banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
+			for word in banned_words:
+				wordnet_food_names.pop(word)
+			foodNames.update(wordnet_food_names)
 	# add plurals to everything
 	if use_plurals:
 		plural_foods = []
@@ -217,6 +220,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				words = get_list_of_foodnames_in_sentence(foodNames, temp_i)
 			# WSD
 			for word in words:
+				if word == 'i':
+					print('huh')
 				if len(word.split()) == 1:
 					# WSD applicable
 					if use_word2vec_model:
@@ -316,6 +321,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 				# Adding stuffs after reading documentation from USDA
 				# print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
+				print(word)
 				food_id = foodNames[word]
 				if food_id in foodGroup:
 					food_group_for_food_id = foodGroup[food_id]
@@ -510,7 +516,7 @@ def get_list_of_phrases_in_foodnames(pos_tags, foodnames_dict):
 	return words
 
 def get_list_of_foodnames_in_sentence(foodnames_dict, sentence):
-	words = list(filter(lambda x: sentence.__contains__(' ' + x + ' '), sentence))
+	words = list(filter(lambda x: sentence.__contains__(' ' + x + ' '), foodnames_dict))
 	return words
 
 def provide_words_with_char_nos(sentence, line_no):
@@ -642,7 +648,7 @@ def ark_parser(fileName):
 	return var
 
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = True, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True):
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
@@ -652,7 +658,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals)
+		html_format, results = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals, use_twitter_dataset = use_twitter_dataset, remove_banned_words=remove_banned_words)
 		if results is not None: # there wasn't a solution set for that file
 			if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
 				sum_true_pos += results.num_true_pos
