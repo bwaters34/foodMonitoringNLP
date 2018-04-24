@@ -29,7 +29,7 @@ class wordEmbeddings:
 		return self.database_from_HSLLD
 
 	def names_of_file_with_hand_labels(self):
-		loc = "../solutions/HSLLD/HV1/MT/"
+		loc = "solutions/HSLLD/HV1/MT/"
 		list_of_files = os.listdir(loc)
 		return list_of_files
 
@@ -37,7 +37,6 @@ class wordEmbeddings:
 		return self.food_words
 
 	def load(self, fileLocaiton):
-		fileLocaiton = "../"+fileLocaiton
 		with open(fileLocaiton, 'r') as f:
 			return pickle.load(f)
 
@@ -51,7 +50,7 @@ class wordEmbeddings:
 
 	def correct_file_location(self, fileLocaiton):
 		for index, fileLoc in enumerate(fileLocaiton):
-			fileLocaiton[index] = "../"+fileLoc
+			fileLocaiton[index] = fileLoc
 			if not os.path.exists(fileLocaiton[index]):
 				print "Path of the file doesn't exist", fileLocaiton[index]
 		return fileLocaiton

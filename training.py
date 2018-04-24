@@ -44,7 +44,7 @@ class training_classifier:
         self.data_X = []
         self.data_Y = []
 
-        directory_path = '../HSLLD/HV1/MT/'
+        directory_path = 'HSLLD/HV1/MT/'
         for filename in os.listdir(directory_path):
             file_path = directory_path + '/' + filename
             print(file_path)
