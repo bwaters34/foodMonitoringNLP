@@ -11,15 +11,15 @@ class wordEmbeddings:
 	def __init__(self):
 		self.database_from_HSLLD = [] 
 		self.dimension_size = 300
-		self.food_words = self.load("data/food_desc_files/food_names.pickle")
-		self.food_words_twitter = self.load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
-		self.food_words.update(self.food_words_twitter)
+		# self.food_words = self.load("data/food_desc_files/food_names.pickle")
+		# self.food_words_twitter = self.load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
+		# self.food_words.update(self.food_words_twitter)
 
-		self.HSLLD_file_Loc = self.load('food_files.pickle')
+		# self.HSLLD_file_Loc = self.load('food_files.pickle')
 		# self.names_of_file_with_hand_labels()
 
-		self.HSLLD_file_Loc = self.correct_file_location(self.HSLLD_file_Loc)
-		self.Read_files_from_HSLLD = self.read_files_HSLLD(self.HSLLD_file_Loc)
+		# self.HSLLD_file_Loc = self.correct_file_location(self.HSLLD_file_Loc)
+		# self.Read_files_from_HSLLD = self.read_files_HSLLD(self.HSLLD_file_Loc) # we do this in training.py now
 		
 		print "Lenght of sentences HSLLD:", len(self.database_from_HSLLD)
 		# self.sentences_to_wordEmbeddings_practice(self.database_from_HSLLD)

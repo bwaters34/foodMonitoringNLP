@@ -4,23 +4,27 @@ from sklearn.cross_validation import train_test_split
 import numpy as np
 from pprint import pprint
 import time
-from random import shuffle
+from random import shuffle, sample
 from create_word_embeddings_for_hslld import wordEmbeddings
 import re
 import os
 from display_html_2 import read_file
 import solution_parser
+import sys
 
 class training_classifier:
-    def __init__(self, Embeddings, use_Google_pre_Trained_Embeddings=0):
+    def __init__(self, Embeddings, use_Google_pre_Trained_Embeddings=0, only_use_string_matching = False):
+        """
+        only_use_string_matching: If True, we don't do pattern mapping or anything when calling read_file, just assume any match against the dictionary is a correct match.
+        """
+
+        self.only_use_string_matching = only_use_string_matching
         self.use_Google_Embeddings = use_Google_pre_Trained_Embeddings
         self.unknown_tag = {}
         self.unknown_tag['unk'] = np.zeros(Embeddings.dimension_size)
         # print self.unknown_tag.shape
         self.Embeddings = Embeddings
         self.raw_sentences = self.Embeddings.all_sentences()
-        self.food_words = self.Embeddings.food_words_database()
-
         # Word Embeddings
         start = time.time()
         self.Word2Vec_model = self.Embeddings.sentences_to_wordEmbeddings(
@@ -31,7 +35,15 @@ class training_classifier:
         self.generate_training_data(self.raw_sentences)
         start = time.time()
         self.pos_data, self.neg_data, self.data = self.load_training_data()
-        new_data = self.pos_data + self.neg_data[0:2 * len(self.pos_data)]
+        print('pos')
+        print(self.pos_data[:5])
+        print('neg')
+        print(self.neg_data[:5])
+        print('rest')
+        print(self.data[:5])
+        random_sample_neg_data = sample(self.neg_data, 2*len(self.pos_data))
+        new_data = self.pos_data + random_sample_neg_data
+        print(new_data[:5])
         print "Time taken to load", time.time() - start
         self.check(new_data)
 
@@ -48,12 +60,17 @@ class training_classifier:
         for filename in os.listdir(directory_path):
             file_path = directory_path + '/' + filename
             print(file_path)
-            html_format, results, predicted_spans, found_solution = read_file(file_path, use_word2vec_model=False, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=True)
-            if not found_solution:  # don't use ones we are using as a solution set
+            if self.only_use_string_matching:
+                html_format, results, predicted_spans, found_solution = read_file(file_path, use_word2vec_model=False, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=False)
+            else:
+                html_format, results, predicted_spans, found_solution = read_file(file_path, use_word2vec_model=False, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=True)
+            if found_solution:  # don't use ones we are using as a solution set
+                continue
+            else: # we don't have the solution, so we won't overfit
                 predicted_spans = list(predicted_spans) # previously was a set
                 spans_and_lines = solution_parser.get_corresponding_lines(file_path, predicted_spans)
                 spans_dict = {} # keys are line numbers, values are lists of spans on the line
-                for line, span in spans_and_lines:
+                for span, line in spans_and_lines:
                     line_number = span[0]
                     solution_span = span[1]
                     if line_number in spans_dict:
@@ -63,44 +80,55 @@ class training_classifier:
             with open(file_path) as f:
                 lines = f.readlines()
             for line_number, line in enumerate(lines, start=1): # as lines start on line 1
-                matches = [(m.group(0), (m.start(), m.end())) for m in re.finditer(r'\S+', line)] # example: on input "This is a sentence", returns [('This', (0, 4)), ('is', (5, 7)), ('a', (8, 9)), ('sentence', (10, 18)).
-                word_is_predicted = [0 * len(matches)] # list of zeroes
-                if line_number in spans_dict:
-                    spans_on_current_line = matches[1]
-                    list_of_predicted_spans = spans_dict[line_number]
-                    for i, curr_span in enumerate(spans_on_current_line):
-                        for pred_span in list_of_predicted_spans:
-                            curr_start, curr_end = curr_span
-                            pred_start, pred_end = pred_span
-                            if not (curr_end <= pred_start) and not (pred_end <=curr_start): # must be overlapping
-                                word_is_predicted[i] = 1
-                                break # skip to next span in spans_on_current_line
+                if line[0] == '*':
+                    # line = ' '.join(line.split())[1:] # remove first *CHI: marker # JK we can't remove the first marker, that breaks the span stuff
+                    matches = [(m.group(0), (m.start(), m.end())) for m in re.finditer(r'\S+', line)] # example: on input "This is a sentence", returns [('This', (0, 4)), ('is', (5, 7)), ('a', (8, 9)), ('sentence', (10, 18)).
+                    word_is_predicted = [0] * len(matches) # list of zeroes
+                    sent, spans_on_current_line = ([ a for a,b in matches ], [ b for a,b in matches ])
+                    print(line_number)
+                    print(spans_dict)
+                    if line_number in spans_dict:
+                        list_of_predicted_spans = spans_dict[line_number]
+                        for i, curr_span in enumerate(spans_on_current_line):
+                            for pred_span in list_of_predicted_spans:
+                                curr_start, curr_end = curr_span
+                                pred_start, pred_end = pred_span
+                                if not (curr_end <= pred_start) and not (pred_end <=curr_start): # must be overlapping
+                                    word_is_predicted[i] = 1
+                                    break # skip to next span in spans_on_current_line
 
-            # TOD0: idea: if span is [6:15], do [0:6].split(), [6:15].split(), [15:20].split() where only the middle one is labeled 1?
-                sent = matches[1]
-                for to_append in xrange(n):
-                    sent.append("unk")
-                    sent.insert(0, "unk")
-                # print sent
-                for index_j in xrange(n, len(sent) - n):
-                    y_val = 0
-                    original_index = index_j - 2
-                    sent_format = sent[index_j - n:index_j + n + 1]
+                    for to_append in xrange(n):
+                        sent.append("unk")
+                        sent.insert(0, "unk")
+                        # word_is_predicted.append(0)
+                        # word_is_predicted.insert(0,0)
+                    # print sent
+                    for index_j in xrange(n, len(sent) - n):
+                        y_val = word_is_predicted[index_j - n]
+                        # original_index = index_j - n
+                        sent_format = sent[index_j - n:index_j + n + 1]
+                        if y_val == 1:
+                            self.dataset_pos.append([sent_format, y_val])
+                        else:
+                            self.dataset_neg.append([sent_format, y_val])
+                        # if word_is_predicted[original_index] == 1:
+                        #     y_val = 1
+                        #     sent[index_j] = 'EmptyWordHereZeroEmbedding'
+                        #     self.dataset_pos.append([sent_format, y_val])
+                        # else:
+                        #     y_val = 0
+                        #     self.dataset_neg.append([sent_format, y_val])
 
-                    if word_is_predicted[original_index] == 1:
-                        y_val = 1
-                        sent[index_j] = 'EmptyWordHereZeroEmbedding'
-                        self.dataset_pos.append([sent_format, y_val])
-                    else:
-                        y_val = 0
-                        self.dataset_neg.append([sent_format, y_val])
-
-                    self.dataset.append([sent_format, y_val])
-                # 	print sent[index_j]," ",
-                # print ""
-        self.Embeddings.save("Dataset_pos_without_20_labels_no_context", self.dataset_pos)
-        self.Embeddings.save("Dataset_neg_without_20_labels_no_context", self.dataset_neg)
-        self.Embeddings.save("Dataset_without_20_labels_no_context", self.dataset)
+                        self.dataset.append([sent_format, y_val])
+                    # 	print sent[index_j]," ",
+                    # print ""
+        print('saving files:')
+        print(len(self.dataset_pos))
+        print(len(self.dataset_neg))
+        print(len(self.dataset))
+        self.Embeddings.save("Dataset_pos_without_20_labels", self.dataset_pos)
+        self.Embeddings.save("Dataset_neg_without_20_labels", self.dataset_neg)
+        self.Embeddings.save("Dataset_without_20_labels", self.dataset)
 
     # pprint(self.dataset)
     def load_training_data(self):
@@ -162,7 +190,8 @@ class training_classifier:
         print metrics.classification_report(Y_test, predicited)
         print logistic.score(X_test, Y_test)
         self.Embeddings.save("LogisticRegression_double_neg_Google_no_data_label_aggressive", logistic)
-        print "Saved Google Embeddings on double negative data without 20 label dataset and also comparing cases like <apple"
+        # print "Saved Google Embeddings on double negative data without 20 label dataset and also comparing cases like <apple"
+        print 'Saved google embeddings on double negative data without 20 label dataset with pattern_mapping: {}'.format(not self.only_use_string_matching)
 
         # print train_x[0]
         print train_x.shape, train_y.shape
@@ -176,4 +205,4 @@ class training_classifier:
 
 if __name__ == '__main__':
     Embeddings = wordEmbeddings()
-    classifier = training_classifier(Embeddings, 1)
+    classifier = training_classifier(Embeddings, 1, True)

@@ -105,9 +105,9 @@ def get_corresponding_lines(file_name, solution_set):
 
 def convert_solution_set_to_set_of_food_names(file_path, solution_set):
 	food_names = set()
-	print(solution_set)
+	# print(solution_set)
 	tuples_and_lines = get_corresponding_lines(file_path, list(solution_set))
-	print(tuples_and_lines)
+	# print(tuples_and_lines)
 	for t_and_l in tuples_and_lines:
 		solution_tuple, line = t_and_l
 		substring_indexes = solution_tuple[1]

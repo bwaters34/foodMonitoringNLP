@@ -1,7 +1,7 @@
 #https://seaborn.pydata.org/generated/seaborn.distplot.html
 import re
 
-from matplotlib.axes._base import _AxesBase
+# from matplotlib.axes._base import _AxesBase
 import numpy as np 
 import front_end 
 import pickle 
@@ -30,12 +30,12 @@ import phrasemachine
 
 
 #Word2Vec
-use_Google = 0
+use_Google = 1
 if use_Google:
 	print "Loading Google Pre-Trained Word Embeddings"
 	start = time.time()
-	# word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
-	word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
+	word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
+	# word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
 	model_google = gensim.models.KeyedVectors.load_word2vec_format(word2vec_filepath, binary=True)
 	print "Time taken to load google Embeddings", time.time() - start
 
@@ -79,7 +79,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			Word2Vec_model = model_google
 
 			Word2Vec_words = Word2Vec_model.vocab
-			model = load('./wsd/LogisticRegression_double_neg_Google_no_data_label')
+			model = load('LogisticRegression_double_neg_Google_no_data_label_aggressive')
 		else:
 			Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
 			Word2Vec_words = list(Word2Vec_model.wv.vocab)
@@ -447,6 +447,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
 	num_false_neg = None
+	false_pos_list = []
+	false_neg_list = []
 	if solution_set_loaded:
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
