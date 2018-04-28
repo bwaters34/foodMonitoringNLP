@@ -11,24 +11,6 @@ class wordEmbeddings:
 	def __init__(self):
 		self.database_from_HSLLD = [] 
 		self.dimension_size = 300
-<<<<<<< HEAD:create_word_embeddings_for_hslld.py
-		# self.food_words = self.load("data/food_desc_files/food_names.pickle")
-		# self.food_words_twitter = self.load("./data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
-		# self.food_words.update(self.food_words_twitter)
-=======
-		self.food_words = self.load("data/food_desc_files/food_names.pickle")
-		# self.food_words_twitter = self.load("data/food_desc_files/all_food_words_by_Yelena_Mejova.pickle")
-		self.food_words_twitter = self.load("data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
-		self.food_words_wordnet = self.load('data/food_desc_files/wordnet_food_words.pickle')
-		self.food_words.update(self.food_words_twitter)
-		self.food_words.update(self.food_words_wordnet)
-		banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
-
-		for word in banned_words:
-			if word in self.food_words:
-				self.food_words.pop(word)
->>>>>>> origin/master:wsd/create_word_embeddings_for_hslld.py
-
 		# self.HSLLD_file_Loc = self.load('food_files.pickle')
 		# self.names_of_file_with_hand_labels()
 

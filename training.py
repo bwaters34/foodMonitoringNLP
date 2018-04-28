@@ -205,4 +205,4 @@ class training_classifier:
 
 if __name__ == '__main__':
     Embeddings = wordEmbeddings()
-    classifier = training_classifier(Embeddings, 1, True)
+    classifier = training_classifier(Embeddings, 1)
