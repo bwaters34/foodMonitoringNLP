@@ -30,7 +30,7 @@ import phrasemachine
 
 
 #Word2Vec
-use_Google = 1
+use_Google = 0
 if use_Google:
 	print "Loading Google Pre-Trained Word Embeddings"
 	start = time.time()
@@ -47,7 +47,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3, levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -215,9 +215,13 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 			if use_pattern_matching:
 				pos_tags = pos_tags_dict[current_line_number]
-				words = get_list_of_phrases_in_foodnames(pos_tags, foodNames)
+				if use_edit_distance_matching:
+					words = phrasemachine.ark_get_phrases_wrapper(pos_tags)
+				else:
+					words = get_list_of_phrases_in_foodnames(pos_tags, foodNames)
 			else:
 				words = get_list_of_foodnames_in_sentence(foodNames, temp_i)
+
 			# WSD
 			for word in words:
 				if word == 'i':
@@ -258,7 +262,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								# if prediciton == 0:
 								# 	print "Predicted not a food", wsd_i, word
 								# 	continue
-								if pred_prob[0][1] <0.30:
+								if pred_prob[0][1] < log_reg_threshold:
 									print "Predicted not a food ", wsd_i, word
 									continue
 
@@ -312,34 +316,34 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				# print(tags)
 				# print(individual_food_words)
 
-
-				for match in re.finditer(word, i):
-					# print "Sentence -> ", temp_i, "matches -> ", match
-					food_match_indexes = match.span()
-					index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-					spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+				if not use_edit_distance_matching:
+					for match in re.finditer(word, i):
+						# print "Sentence -> ", temp_i, "matches -> ", match
+						food_match_indexes = match.span()
+						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+						spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
 				# Adding stuffs after reading documentation from USDA
 				# print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
 				print(word)
-				food_id = foodNames[word]
-				if food_id in foodGroup:
-					food_group_for_food_id = foodGroup[food_id]
-					food_id_group_pairs.append([word, food_group_for_food_id])
+				if not use_edit_distance_matching:
+					food_id = foodNames[word]
+					if food_id in foodGroup:
+						food_group_for_food_id = foodGroup[food_id]
+						food_id_group_pairs.append([word, food_group_for_food_id])
 
-				if food_id in langua:
-					temp_langua = langua[food_id]
-					t = []
-					for temp_words in temp_langua:
-						t.append(temp_words)
-					food_id_langua_pairs.append([word + " " + food_id, t])
-				# food_id_langua_pairs =
-				# print("food -> ", food_id_group_pairs)
-				# Checking for EDIT Distance
+					if food_id in langua:
+						temp_langua = langua[food_id]
+						t = []
+						for temp_words in temp_langua:
+							t.append(temp_words)
+						food_id_langua_pairs.append([word + " " + food_id, t])
+					# food_id_langua_pairs =
+					# print("food -> ", food_id_group_pairs)
+					# Checking for EDIT Distance
 				if use_edit_distance_matching:
-					for food_data in sentence_pos_tags:  # TODO: renable string matching
-						# print "Sentence pos tags", sentence_pos_tags
-						k1 = float(len(food_data[1])) / float(len(word))
+					for foodname in foodNames:
+						k1 = float(len(word)) / float(len(foodname))
 						if 0.6 < k1 and k1 < 1.4:
 							# k1 = float(len(food_data[1]))/float(len(word))
 							# if 0.6 < k1 and k1 < 1.4:
@@ -353,11 +357,11 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
 							# print "yes", food_data[1], word
 							# PERFORM EDIT DISTANCE
-							if word == food_data[1]: continue
-							distance = nltk.edit_distance(word, food_data[1])
+							if word == foodname: continue
+							ld = levenshtein_distance_customized.get_levenshtein_distance_object(setting=levenshtein_setting)
+							distance = ld.calculate_distance(word, foodname)
 							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
 							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
-
 							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
 							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
 
@@ -399,9 +403,9 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
 							# distance = 0
-							k2 = distance / float(max(len(word), len(food_data)))
+							k2 = distance / float(max(len(word), len(foodname)))
 							# if k2  == 1:
-							if k2 < 0.25:
+							if k2 < levenshtein_threshold:
 								# k2 = 3
 								# if distance <= k2:
 
@@ -414,19 +418,22 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-								index_of_food_names.append((food_data[2], food_data[3]))
-								spans_found_on_line.append((food_data[2], food_data[3]))
-								print "Edit distance added word -> ", word, food_data
-								with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt", "a") as myfile:
+								for match in re.finditer(word, i):
+				# print "Sentence -> ", temp_i, "matches -> ", match
+									food_match_indexes = match.span()
+									index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+									spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+								# print "Edit distance added word -> ", word, food_data
+								# with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt", "a") as myfile:
 									# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
 
 									# with open("./notes/edit_distance_4.txt", "a") as myfile:
 									# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
 
-									myfile.write(
-										word + "," + food_data[1] + "," + str(distance) + ", " + str(
-											k1) + " , " + str(
-											k2) + "\n")
+									# myfile.write(
+										# word + "," + food_data[1] + "," + str(distance) + ", " + str(
+											# k1) + " , " + str(
+											# k2) + "\n")
 								# print "word found", word, len(word), max_len, max_len_word
 								# print ("Temproray -> ", temp_i)
 								# print ("Final i -> ", i)
@@ -651,7 +658,7 @@ def ark_parser(fileName):
 	return var
 
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True):
+def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3,  levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
 	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
@@ -661,7 +668,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals)
+		html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals, log_reg_threshold = log_reg_threshold, levenshtein_threshold = levenshtein_threshold, levenshtein_setting = levenshtein_setting)
 		print('predicted spans:')
 		print(predicted_spans)
 		if found_solution: # there wasn't a solution set for that file

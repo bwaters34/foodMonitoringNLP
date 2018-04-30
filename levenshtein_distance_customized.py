@@ -1,7 +1,10 @@
+from collections import defaultdict
+
 class levenshtein_distance:
 	def __init__(self, **weight_dict):
 		alphabet = "abcdefghijklmnopqrstuvwxyz "
-		self.w = dict( (x, (1, 1, 1)) for x in alphabet + alphabet.upper())
+		self.w = defaultdict(lambda:(1,1,1))
+		# self.w = dict( (x, (1, 1, 1)) for x in alphabet + alphabet.upper())
 		if weight_dict:
 			self.w.update(weight_dict) 
 		# print self.w 
@@ -39,8 +42,26 @@ class levenshtein_distance:
 		for i in array:
 			print i 
 
+def get_levenshtein_distance_object(setting = 'system1'):
+	if setting == 'system1':
+		ld = levenshtein_distance(a=(3, 3, 1),
+                            e=(3, 3, 1),
+                            i=(3, 3, 1),
+                            o=(3, 3, 1),
+                            u=(3, 3, 1),
+                            s=(0, 0, 1))
+		return ld
+	elif setting == 'system2':
+		ld = levenshtein_distance()
+		return ld
+	elif setting == 'system3':
+		ld = levenshtein_distance(s = (0, 0, 1))
+		return ld
+	else:
+		print(setting)
+		raise ValueError
+
 if __name__ == '__main__':
-	pass	
 	# ld = levenshtein_distance(a=(3, 3, 1),
  #                            e=(3, 3, 1),
  #                            i=(3, 3, 1),
@@ -49,3 +70,5 @@ if __name__ == '__main__':
  #                            s=(0, 0, 1))
  	ld = levenshtein_distance(s = (0, 0, 1))
 	print ld.calculate_distance("abx", "xya")
+	a = get_levenshtein_distance_object(setting = 'system3')
+	print(a.calculate_distance('cat', 'cats'))

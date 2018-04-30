@@ -1,0 +1,2230 @@
+HSLLD/HV1/MT//zanmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//zanmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//arlmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//arlmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jenmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jenmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jasmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jasmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//trumt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//trumt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//chamt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//chamt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//maymt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//maymt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//admmt1.cha
+loading solution set
+carrots carrots 35
+carrots
+peas peas 116
+peas
+beef stew beef stew 99
+beef stew
+beef beef 310
+beef
+stew stew 32
+stew
+carrots carrots 35
+carrots
+carrots carrots 35
+carrots
+carrots carrots 35
+carrots
+carrots carrots 35
+carrots
+carrot carrot 341
+carrot
+butter butter 499
+butter
+bread bread 186
+bread
+honey honey 304
+honey
+pepper pepper 27
+pepper
+salt salt 0
+salt
+butter butter 499
+butter
+bread bread 186
+bread
+butter butter 499
+butter
+bread bread 186
+bread
+butter butter 499
+butter
+bread bread 186
+bread
+butter butter 499
+butter
+carrots carrots 35
+carrots
+bread bread 186
+bread
+butter butter 499
+butter
+bread bread 186
+bread
+potato chips potato chips 487
+potato chips
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09619ea8>)
+no calories detected for food word
+potato
+cookie cookie 507
+cookie
+honey honey 304
+honey
+bread bread 186
+bread
+chicken chicken 234
+chicken
+spices spices 312
+spices
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['butter', 'pepper', 'potato chips', 'coke', 'carrots', 'butter bread', 'peas', 'brownie', 'carrot', 'cookie', 'chicken', 'salt', 'beef stew', 'bread'])
+predicted labels:
+set(['butter', 'chicken spices', 'pepper', 'potato chips', 'carrots', 'butter bread', 'peas', 'honey', 'carrot', 'cookie', 'salt', 'beef stew', 'bread'])
+file:HSLLD/HV1/MT//admmt1.cha
+precision: 0.846153846154
+recall: 0.785714285714
+true positives:['beef stew', 'bread', 'butter', 'butter bread', 'carrot', 'carrots', 'cookie', 'peas', 'pepper', 'potato chips', 'salt']
+false positives: ['chicken spices', 'honey']
+false negatives: ['brownie', 'chicken', 'coke']
+# true pos: 11
+# false pos: 2
+# false neg: 3
+predicted spans:
+set([(196, (25, 37)), (253, (38, 43)), (79, (34, 38)), (651, (18, 24)), (806, (18, 23)), (308, (30, 36)), (115, (21, 28)), (284, (30, 36)), (869, (16, 30)), (329, (29, 35)), (121, (48, 55)), (155, (15, 21)), (644, (6, 18)), (79, (22, 29)), (284, (41, 46)), (276, (27, 31)), (810, (55, 60)), (314, (50, 55)), (134, (37, 44)), (276, (36, 42)), (329, (19, 24)), (314, (60, 66)), (308, (20, 25)), (99, (31, 40)), (651, (37, 43)), (104, (14, 21)), (305, (15, 27)), (314, (15, 22))])
+HSLLD/HV1/MT//aimmt1.cha
+loading solution set
+milk milk 46
+milk
+chocolate chocolate 598
+chocolate
+milk milk 46
+milk
+chocolate chocolate 598
+chocolate
+chocolate chocolate 598
+chocolate
+milk milk 46
+milk
+chocolate chocolate 598
+chocolate
+milk milk 46
+milk
+chocolate chocolate 598
+chocolate
+milk milk 46
+milk
+chocolate chocolate 598
+chocolate
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+potatoes potatoes 62
+potatoes
+pepper pepper 27
+pepper
+pepper pepper 27
+pepper
+soup soup 72
+soup
+soup soup 72
+soup
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095762d8>)
+no calories detected for food word
+meat
+pepper pepper 27
+pepper
+applesauce applesauce 76
+applesauce
+water water 18
+water
+water water 18
+water
+water water 18
+water
+milk milk 46
+milk
+milk milk 46
+milk
+milk milk 46
+milk
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['pepper', 'soup', 'potatoes', 'chocolate', 'water', 'juice', 'applesauce', 'milk'])
+predicted labels:
+set(['pepper', 'meat', 'soup', 'potatoes', 'chocolate', 'water', 'juice', 'applesauce', 'milk'])
+file:HSLLD/HV1/MT//aimmt1.cha
+precision: 0.888888888889
+recall: 1.0
+true positives:['applesauce', 'chocolate', 'juice', 'milk', 'pepper', 'potatoes', 'soup', 'water']
+false positives: ['meat']
+false negatives: []
+# true pos: 8
+# false pos: 1
+# false neg: 0
+predicted spans:
+set([(887, (15, 24)), (1771, (29, 33)), (884, (19, 23)), (884, (28, 37)), (1633, (10, 14)), (2031, (22, 27)), (1499, (6, 14)), (881, (15, 24)), (2046, (18, 23)), (1409, (10, 15)), (881, (6, 10)), (2180, (29, 33)), (1399, (32, 37)), (864, (21, 30)), (1549, (18, 24)), (1545, (22, 28)), (2276, (20, 24)), (2284, (20, 24)), (1468, (32, 37)), (1481, (20, 25)), (864, (39, 43)), (887, (6, 10)), (852, (21, 25)), (1991, (32, 42)), (873, (14, 23)), (2043, (16, 21)), (860, (27, 36)), (1841, (6, 12)), (1386, (26, 31)), (1630, (24, 28))])
+HSLLD/HV1/MT//tamtp1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//tamtp1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//raumt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//raumt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//mitmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//mitmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//joymt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//joymt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//rosmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//rosmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//deamt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//deamt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//trimt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//trimt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//catmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//catmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//gremt1.cha
+loading solution set
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096c56c8>)
+no calories detected for food word
+sandwich
+milk milk 46
+milk
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096be488>)
+no calories detected for food word
+sandwich
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096bee18>)
+no calories detected for food word
+sandwich
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096af098>)
+no calories detected for food word
+sandwich
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096bec68>)
+no calories detected for food word
+sandwich
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['sandwich', 'milk'])
+predicted labels:
+set(['sandwich', 'milk'])
+file:HSLLD/HV1/MT//gremt1.cha
+precision: 1.0
+recall: 1.0
+true positives:['milk', 'sandwich']
+false positives: []
+false negatives: []
+# true pos: 2
+# false pos: 0
+# false neg: 0
+predicted spans:
+set([(24, (15, 23)), (78, (32, 40)), (355, (14, 22)), (224, (94, 102)), (309, (37, 45)), (44, (18, 22))])
+HSLLD/HV1/MT//karmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//karmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//annmt1.cha
+loading solution set
+sunshine sunshine 416
+sunshine
+honey honey 304
+honey
+meatballs meatballs 197
+meatballs
+bread bread 186
+bread
+cherries cherries 83
+cherries
+honey honey 304
+honey
+honey honey 304
+honey
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09933f80>)
+no calories detected for food word
+tomato
+tea tea 2
+tea
+tea tea 2
+tea
+milk milk 46
+milk
+milk milk 46
+milk
+milk milk 46
+milk
+milk milk 46
+milk
+pie pie 290
+pie
+honey honey 304
+honey
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['tomato', 'skim milk', 'meatballs', 'pie', 'cherries', 'milk', 'bread'])
+predicted labels:
+set(['tomato', 'tea', 'sunshine', 'meatballs', 'pie', 'honey', 'cherries', 'milk', 'bread'])
+file:HSLLD/HV1/MT//annmt1.cha
+precision: 0.666666666667
+recall: 0.857142857143
+true positives:['bread', 'cherries', 'meatballs', 'milk', 'pie', 'tomato']
+false positives: ['honey', 'sunshine', 'tea']
+false negatives: ['skim milk']
+# true pos: 6
+# false pos: 3
+# false neg: 1
+predicted spans:
+set([(183, (25, 30)), (111, (40, 48)), (226, (27, 35)), (734, (52, 55)), (662, (19, 23)), (655, (27, 31)), (640, (11, 15)), (667, (11, 15)), (166, (29, 38)), (230, (11, 16)), (469, (25, 28)), (384, (10, 16)), (313, (11, 16)), (798, (6, 11)), (460, (25, 28)), (667, (40, 44)), (147, (11, 16)), (111, (18, 26))])
+HSLLD/HV1/MT//tommt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//tommt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//kevmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//kevmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jammt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jammt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//anamt1.cha
+loading solution set
+juice juice 52
+juice
+cheese cheese 280
+cheese
+cheese cheese 280
+cheese
+cheese cheese 280
+cheese
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09792908>)
+no calories detected for food word
+apple
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09792d40>)
+no calories detected for food word
+apple
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+strawberries strawberries 96
+strawberries
+milk milk 46
+milk
+muffin muffin 255
+muffin
+water water 18
+water
+muffin muffin 255
+muffin
+onions onions 26
+onions
+onions onions 26
+onions
+onions onions 26
+onions
+onions onions 26
+onions
+onions onions 26
+onions
+honey honey 304
+honey
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+muffin muffin 255
+muffin
+muffin muffin 255
+muffin
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+juice juice 52
+juice
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097b5758>)
+no calories detected for food word
+grape
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097b9f38>)
+no calories detected for food word
+grape
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09508248>)
+no calories detected for food word
+grape
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09508680>)
+no calories detected for food word
+grape
+duck duck 84
+duck
+honey honey 304
+honey
+honey honey 304
+honey
+duck duck 84
+duck
+duck duck 84
+duck
+honey honey 304
+honey
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['cheese', 'popsicle', 'muffin', 'vitamin', 'popsicles', 'water', 'juice', 'strawberries', 'onions', 'milk'])
+predicted labels:
+set(['cheese', 'grape', 'apple', 'muffin', 'water', 'juice', 'honey', 'strawberries', 'duck', 'onions', 'milk'])
+file:HSLLD/HV1/MT//anamt1.cha
+precision: 0.636363636364
+recall: 0.7
+true positives:['cheese', 'juice', 'milk', 'muffin', 'onions', 'strawberries', 'water']
+false positives: ['apple', 'duck', 'grape', 'honey']
+false negatives: ['popsicle', 'popsicles', 'vitamin']
+# true pos: 7
+# false pos: 4
+# false neg: 3
+predicted spans:
+set([(163, (11, 15)), (2346, (24, 29)), (723, (57, 62)), (69, (28, 34)), (733, (29, 34)), (618, (19, 25)), (1955, (28, 33)), (47, (21, 27)), (101, (75, 80)), (850, (34, 39)), (661, (16, 21)), (1054, (11, 16)), (755, (58, 63)), (1235, (24, 28)), (505, (19, 25)), (510, (17, 23)), (1071, (15, 20)), (163, (26, 38)), (133, (23, 28)), (438, (14, 20)), (745, (8, 14)), (1057, (10, 15)), (2175, (19, 23)), (93, (75, 80)), (505, (41, 47)), (137, (10, 15)), (2188, (10, 14)), (1315, (10, 15)), (658, (14, 19)), (401, (19, 24)), (714, (57, 62)), (739, (20, 26)), (1026, (77, 82)), (608, (25, 31)), (53, (27, 33)), (390, (14, 20)), (1041, (25, 30)), (37, (18, 23)), (623, (26, 32)), (763, (31, 36)), (160, (15, 20))])
+HSLLD/HV1/MT//joemt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//joemt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//stnmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//stnmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//zenmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//zenmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//sarmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//sarmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//megmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//megmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jebmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jebmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//davmt1.cha
+loading solution set
+broccoli broccoli 30
+broccoli
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09979170>)
+no calories detected for food word
+lemon
+juice juice 52
+juice
+fish fish 305
+fish
+fish fish 305
+fish
+fish fish 305
+fish
+fish fish 305
+fish
+fish fish 305
+fish
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09979560>)
+no calories detected for food word
+sandwich
+chicken chicken 234
+chicken
+mother's mother's 469
+mother's
+chicken chicken 234
+chicken
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09979f38>)
+no calories detected for food word
+sandwich
+chicken chicken 234
+chicken
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b099706c8>)
+no calories detected for food word
+sandwich
+juice juice 52
+juice
+water water 18
+water
+water water 18
+water
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b099697e8>)
+no calories detected for food word
+salad
+egg egg 357
+egg
+egg egg 357
+egg
+juice juice 52
+juice
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+carrots carrots 35
+carrots
+peas peas 116
+peas
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09969b90>)
+no calories detected for food word
+salad
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b099799e0>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09969e18>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b099792d8>)
+no calories detected for food word
+lollipops
+chocolate chocolate 598
+chocolate
+chocolate chocolate 598
+chocolate
+chocolate chocolate 598
+chocolate
+chocolate chocolate 598
+chocolate
+broccoli broccoli 30
+broccoli
+chocolate chocolate 598
+chocolate
+chocolate cake chocolate cake 371
+chocolate cake
+cake cake 412
+cake
+chocolate chocolate 598
+chocolate
+chocolate cake chocolate cake 371
+chocolate cake
+cake cake 412
+cake
+chocolate chocolate 598
+chocolate
+chocolate cake chocolate cake 371
+chocolate cake
+cake cake 412
+cake
+chocolate chocolate 598
+chocolate
+chocolate chocolate 598
+chocolate
+broccoli broccoli 30
+broccoli
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['cantaloupe', 'sandwich', 'lemon', 'salad', 'tootsie roll', 'carrots', 'egg salad', 'candy', 'peas', 'water', 'juice', 'lollipop', 'chocolate broccoli', 'ice cube', 'chocolate cake', 'chicken', 'chocolate', 'broccoli'])
+predicted labels:
+set(['sandwich', 'lemon', 'lollipops', 'salad', "mother's", 'fish', 'carrots', 'egg salad', 'candy', 'peas', 'water', 'juice', 'chocolate broccoli', 'chocolate cake', 'chicken', 'chocolate', 'egg', 'broccoli'])
+file:HSLLD/HV1/MT//davmt1.cha
+precision: 0.777777777778
+recall: 0.777777777778
+true positives:['broccoli', 'candy', 'carrots', 'chicken', 'chocolate', 'chocolate broccoli', 'chocolate cake', 'egg salad', 'juice', 'lemon', 'peas', 'salad', 'sandwich', 'water']
+false positives: ['egg', 'fish', 'lollipops', "mother's"]
+false negatives: ['cantaloupe', 'ice cube', 'lollipop', 'tootsie roll']
+# true pos: 14
+# false pos: 4
+# false neg: 4
+predicted spans:
+set([(528, (30, 34)), (2278, (6, 11)), (1253, (26, 35)), (369, (21, 25)), (2304, (10, 19)), (657, (61, 68)), (1868, (43, 51)), (231, (6, 11)), (634, (10, 18)), (2288, (21, 30)), (2048, (17, 25)), (2006, (53, 61)), (1936, (62, 69)), (1904, (44, 52)), (1887, (26, 34)), (601, (67, 75)), (1012, (6, 11)), (534, (38, 42)), (2347, (13, 27)), (2350, (20, 34)), (2339, (27, 45)), (1876, (20, 28)), (565, (32, 40)), (2270, (17, 22)), (1536, (40, 45)), (2354, (22, 36)), (2319, (6, 15)), (1936, (43, 48)), (585, (25, 32)), (541, (18, 22)), (2541, (48, 56)), (609, (24, 31)), (221, (16, 24)), (2359, (19, 28)), (2326, (19, 28)), (435, (20, 24)), (830, (11, 19)), (2288, (61, 70)), (973, (31, 36)), (1019, (22, 27)), (1936, (74, 78)), (1262, (36, 39)), (2084, (42, 50)), (289, (17, 22))])
+HSLLD/HV1/MT//brimt1.cha
+loading solution set
+butter butter 499
+butter
+noodles noodles 138
+noodles
+applesauce applesauce 76
+applesauce
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['butter', 'noodles', 'applesauce'])
+predicted labels:
+set(['butter', 'noodles', 'applesauce'])
+file:HSLLD/HV1/MT//brimt1.cha
+precision: 1.0
+recall: 1.0
+true positives:['applesauce', 'butter', 'noodles']
+false positives: []
+false negatives: []
+# true pos: 3
+# false pos: 0
+# false neg: 0
+predicted spans:
+set([(452, (20, 30)), (148, (45, 52)), (148, (31, 37))])
+HSLLD/HV1/MT//vicmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//vicmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//devmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//devmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//conmt1.cha
+loading solution set
+milk milk 46
+milk
+juice juice 52
+juice
+milk milk 46
+milk
+juice juice 52
+juice
+milk milk 46
+milk
+juice juice 52
+juice
+milk milk 46
+milk
+juice juice 52
+juice
+milk milk 46
+milk
+juice juice 52
+juice
+milk milk 46
+milk
+juice juice 52
+juice
+milk milk 46
+milk
+milk milk 46
+milk
+milk milk 46
+milk
+water water 18
+water
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09689290>)
+no calories detected for food word
+coffee
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09689758>)
+no calories detected for food word
+mix
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09689248>)
+no calories detected for food word
+coffee
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09689320>)
+no calories detected for food word
+fruit
+milk milk 46
+milk
+milk milk 46
+milk
+spaghetti spaghetti 100
+spaghetti
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0968a710>)
+no calories detected for food word
+diet
+peaches peaches 72
+peaches
+milk milk 46
+milk
+milk milk 46
+milk
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0968aab8>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0968a320>)
+no calories detected for food word
+tomato
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0968a3f8>)
+no calories detected for food word
+tomato
+cucumber cucumber 12
+cucumber
+lettuce lettuce 16
+lettuce
+lettuce lettuce 16
+lettuce
+lettuce lettuce 16
+lettuce
+lettuce lettuce 16
+lettuce
+tomatoes tomatoes 213
+tomatoes
+lettuce lettuce 16
+lettuce
+tomatoes tomatoes 213
+tomatoes
+lettuce lettuce 16
+lettuce
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0967fc68>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09653290>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0968a710>)
+no calories detected for food word
+diet
+dressing dressing 169
+dressing
+lettuce lettuce 16
+lettuce
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0967f998>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096535f0>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09653518>)
+no calories detected for food word
+salad
+lettuce lettuce 16
+lettuce
+lettuce lettuce 16
+lettuce
+lettuce lettuce 16
+lettuce
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09653368>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096538c0>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096533b0>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09653170>)
+no calories detected for food word
+tomato
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['diet soda', 'peaches', 'coffee', 'salad', 'lettuce', 'diet dressing', '(to)matoes', 'cucum(ber)', 'water', 'juice', 'cucumber', 'tomato', 'supper', 'dressing', 'spaghetti', 'milk', 'tomatoes'])
+predicted labels:
+set(['tomato', 'peaches', 'coffee', 'coffee mix', 'salad', 'lettuce', 'lettuce lettuce', 'diet', 'water', 'juice', 'fruit', 'cucumber', 'dressing', 'milk juice', 'spaghetti', 'milk', 'tomatoes'])
+file:HSLLD/HV1/MT//conmt1.cha
+precision: 0.705882352941
+recall: 0.705882352941
+true positives:['coffee', 'cucumber', 'dressing', 'juice', 'lettuce', 'milk', 'peaches', 'salad', 'spaghetti', 'tomato', 'tomatoes', 'water']
+false positives: ['coffee mix', 'diet', 'fruit', 'lettuce lettuce', 'milk juice']
+false negatives: ['(to)matoes', 'cucum(ber)', 'diet dressing', 'diet soda', 'supper']
+# true pos: 12
+# false pos: 5
+# false neg: 5
+predicted spans:
+set([(558, (22, 26)), (760, (47, 52)), (819, (29, 37)), (281, (11, 15)), (786, (52, 56)), (521, (46, 50)), (686, (42, 50)), (44, (6, 16)), (390, (13, 17)), (51, (69, 73)), (51, (6, 10)), (36, (6, 10)), (479, (25, 29)), (48, (17, 21)), (719, (14, 21)), (39, (6, 16)), (394, (6, 10)), (578, (18, 24)), (368, (18, 24)), (654, (14, 20)), (48, (6, 16)), (291, (22, 26)), (745, (23, 27)), (869, (10, 25)), (441, (6, 15)), (30, (16, 21)), (658, (6, 14)), (44, (17, 21)), (828, (30, 37)), (51, (58, 68)), (889, (19, 26)), (51, (15, 20)), (486, (17, 24)), (51, (47, 57)), (288, (26, 30)), (39, (17, 21)), (1028, (21, 27)), (835, (30, 35)), (671, (6, 13)), (384, (19, 24)), (527, (26, 30)), (686, (66, 73)), (1023, (27, 32)), (675, (13, 20)), (841, (11, 16)), (346, (32, 37)), (847, (11, 16)), (51, (25, 35)), (878, (26, 33)), (377, (20, 30)), (934, (63, 67)), (26, (6, 10)), (62, (10, 15)), (715, (22, 30)), (51, (36, 46)), (668, (11, 18)), (708, (25, 32)), (946, (108, 113))])
+HSLLD/HV1/MT//emimt1.cha
+loading solution set
+butter butter 499
+butter
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836050>)
+no calories detected for food word
+porkchops
+pork pork 541
+pork
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836248>)
+no calories detected for food word
+porkchop
+corn corn 419
+corn
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836098>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836248>)
+no calories detected for food word
+potato
+potato salad potato salad 143
+potato salad
+broccoli broccoli 30
+broccoli
+corn corn 419
+corn
+applesauce applesauce 76
+applesauce
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836710>)
+no calories detected for food word
+porkchops
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0984ce60>)
+no calories detected for food word
+porkchops
+corn corn 419
+corn
+corn corn 419
+corn
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098363f8>)
+no calories detected for food word
+porkchops
+corn corn 419
+corn
+water water 18
+water
+corn corn 419
+corn
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+broccoli broccoli 30
+broccoli
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098363b0>)
+no calories detected for food word
+fruit
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836518>)
+no calories detected for food word
+salad
+fruit salad fruit salad 86
+fruit salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095765f0>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0994e8c0>)
+no calories detected for food word
+fruit
+fruit salad fruit salad 86
+fruit salad
+applesauce applesauce 76
+applesauce
+corn corn 419
+corn
+corn corn 419
+corn
+applesauce applesauce 76
+applesauce
+broccoli broccoli 30
+broccoli
+corn corn 419
+corn
+butter butter 499
+butter
+butter butter 499
+butter
+corn corn 419
+corn
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+pepper pepper 27
+pepper
+salt salt 0
+salt
+salt salt 0
+salt
+butter butter 499
+butter
+butter butter 499
+butter
+butter butter 499
+butter
+corn corn 419
+corn
+corn corn 419
+corn
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09836998>)
+no calories detected for food word
+salad
+potato salad potato salad 143
+potato salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09576488>)
+no calories detected for food word
+potato
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095560e0>)
+no calories detected for food word
+salad
+potato salad potato salad 143
+potato salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0994e8c0>)
+no calories detected for food word
+potato
+broccoli broccoli 30
+broccoli
+applesauce applesauce 76
+applesauce
+pork pork 541
+pork
+water water 18
+water
+applesauce applesauce 76
+applesauce
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['butter', 'porkchop', 'porkchops', 'applesauce', 'fruit salad', 'pork chop', 'corn', 'fudgesicle', 'pepper', 'potato salad', 'ketchup', 'water', 'corn on the cob', 'honey+dew', 'fudgesicles', 'salt', 'broccoli', 'ice cream', 'popsicle'])
+predicted labels:
+set(['butter', 'pork', 'porkchops', 'fruit salad', 'corn', 'porkchop', 'potato salad', 'water', 'applesauce', 'pepper', 'salt', 'broccoli', 'ice cream'])
+file:HSLLD/HV1/MT//emimt1.cha
+precision: 0.923076923077
+recall: 0.631578947368
+true positives:['applesauce', 'broccoli', 'butter', 'corn', 'fruit salad', 'ice cream', 'pepper', 'porkchop', 'porkchops', 'potato salad', 'salt', 'water']
+false positives: ['pork']
+false negatives: ['corn on the cob', 'fudgesicle', 'fudgesicles', 'honey+dew', 'ketchup', 'popsicle', 'pork chop']
+# true pos: 12
+# false pos: 1
+# false neg: 7
+predicted spans:
+set([(706, (20, 28)), (1534, (32, 42)), (691, (24, 28)), (966, (20, 26)), (823, (27, 37)), (523, (27, 37)), (335, (13, 21)), (573, (31, 35)), (329, (29, 37)), (1203, (6, 10)), (442, (11, 15)), (1508, (18, 23)), (425, (19, 27)), (627, (26, 30)), (1218, (18, 24)), (740, (38, 49)), (586, (20, 29)), (1499, (10, 14)), (783, (21, 25)), (1228, (61, 65)), (984, (28, 32)), (700, (19, 27)), (1337, (16, 26)), (563, (22, 26)), (527, (32, 41)), (384, (26, 34)), (734, (7, 18)), (836, (16, 24)), (969, (17, 23)), (943, (22, 26)), (1209, (20, 26)), (1206, (25, 29)), (1311, (11, 23)), (679, (6, 11)), (350, (16, 25)), (1203, (15, 21)), (798, (21, 25)), (703, (11, 19)), (257, (6, 12)), (1314, (13, 25)), (359, (25, 29)), (1318, (10, 18)), (1215, (18, 24)), (425, (45, 57)), (1074, (43, 52)), (753, (24, 34)), (425, (81, 85)), (547, (15, 24)), (1233, (29, 33))])
+HSLLD/HV1/MT//kurmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//kurmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//mormt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//mormt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//aprmt1.cha
+loading solution set
+corn corn 419
+corn
+potatoes potatoes 62
+potatoes
+potatoes potatoes 62
+potatoes
+milk milk 46
+milk
+water water 18
+water
+milk milk 46
+milk
+potatoes potatoes 62
+potatoes
+chicken chicken 234
+chicken
+van's van's 471
+van's
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+honey honey 304
+honey
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096a8518>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096a8b90>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096a8cb0>)
+no calories detected for food word
+sprite
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096a8b48>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096a8e18>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096a8f80>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096bdd40>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782098>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782200>)
+no calories detected for food word
+sandwich
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782098>)
+no calories detected for food word
+apple
+ham ham 141
+ham
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782368>)
+no calories detected for food word
+sprite
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782098>)
+no calories detected for food word
+diet
+broccoli broccoli 30
+broccoli
+pork pork 541
+pork
+broccoli broccoli 30
+broccoli
+egg egg 357
+egg
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+potatoes potatoes 62
+potatoes
+potatoes potatoes 62
+potatoes
+potatoes potatoes 62
+potatoes
+water water 18
+water
+potatoes potatoes 62
+potatoes
+water water 18
+water
+potatoes potatoes 62
+potatoes
+water water 18
+water
+potatoes potatoes 62
+potatoes
+chicken chicken 234
+chicken
+corn corn 419
+corn
+corn corn 419
+corn
+milk milk 46
+milk
+milk milk 46
+milk
+honey honey 304
+honey
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097824d0>)
+no calories detected for food word
+cereal
+oats oats 389
+oats
+honey honey 304
+honey
+oats oats 389
+oats
+honey honey 304
+honey
+chicken chicken 234
+chicken
+fried chicken fried chicken 234
+fried chicken
+cabbage cabbage 28
+cabbage
+potatoes potatoes 62
+potatoes
+potatoes potatoes 62
+potatoes
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b096bd638>)
+no calories detected for food word
+diet
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782a70>)
+no calories detected for food word
+cereal
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09782cf8>)
+no calories detected for food word
+cereal
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['diet soda', 'milk shake', 'apple', 'fried chicken', 'slim fast', 'chicken', 'oats and honey', 'milk', 'ice cream', 'ginger+ale', 'oats and bran cereal', 'popsicles', 'nut and honey', 'diet sprite', 'corn', 'water', 'cereal', '(po)tatoes', 'broccoli', 'koolaid', 'salad', 'oats', 'potatoes', 'sodas', 'spice ham sandwich', 'pork chops', 'soda', 'diet slice'])
+predicted labels:
+set(["van's", 'honey', 'diet sprite', 'cabbage', 'apple', 'salad', 'oats', 'potatoes', 'corn', 'pork', 'diet', 'broccoli', 'water', 'fried chicken', 'cereal', 'ham sandwich', 'chicken', 'egg', 'milk', 'ice cream'])
+file:HSLLD/HV1/MT//aprmt1.cha
+precision: 0.65
+recall: 0.464285714286
+true positives:['apple', 'broccoli', 'cereal', 'chicken', 'corn', 'diet sprite', 'fried chicken', 'ice cream', 'milk', 'oats', 'potatoes', 'salad', 'water']
+false positives: ['cabbage', 'diet', 'egg', 'ham sandwich', 'honey', 'pork', "van's"]
+false negatives: ['(po)tatoes', 'diet slice', 'diet soda', 'ginger+ale', 'koolaid', 'milk shake', 'nut and honey', 'oats and bran cereal', 'oats and honey', 'popsicles', 'pork chops', 'slim fast', 'soda', 'sodas', 'spice ham sandwich']
+# true pos: 13
+# false pos: 7
+# false neg: 15
+predicted spans:
+set([(1000, (31, 35)), (571, (64, 68)), (1059, (27, 40)), (1034, (30, 35)), (873, (6, 13)), (190, (30, 35)), (1022, (6, 11)), (621, (68, 72)), (551, (26, 31)), (590, (91, 96)), (876, (6, 10)), (793, (17, 25)), (802, (18, 26)), (1728, (23, 29)), (507, (66, 70)), (621, (95, 103)), (1707, (40, 44)), (825, (24, 29)), (267, (23, 31)), (833, (19, 27)), (783, (36, 43)), (1486, (9, 16)), (1682, (32, 40)), (833, (47, 52)), (1677, (38, 46)), (879, (6, 10)), (590, (47, 59)), (790, (25, 32)), (1034, (21, 25)), (1034, (7, 11)), (500, (24, 29)), (530, (30, 34)), (1037, (27, 32)), (858, (66, 74)), (190, (21, 25)), (270, (19, 26)), (533, (6, 17)), (621, (35, 39)), (70, (21, 25)), (598, (27, 38)), (443, (15, 24)), (172, (6, 10)), (1031, (6, 10)), (533, (33, 37)), (548, (28, 33)), (805, (15, 23)), (997, (28, 32)), (99, (28, 36)), (403, (45, 50)), (1031, (20, 26)), (583, (72, 76)), (433, (103, 112)), (533, (18, 22)), (838, (33, 38)), (618, (17, 25)), (85, (6, 14)), (830, (35, 43)), (709, (18, 21)), (1710, (18, 24)), (771, (28, 35))])
+HSLLD/HV1/MT//termt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//termt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//ethmt1.cha
+loading solution set
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0952f098>)
+no calories detected for food word
+meat
+biscuits biscuits 263
+biscuits
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0952c098>)
+no calories detected for food word
+strawberry
+chocolate chocolate 598
+chocolate
+chocolate chocolate 598
+chocolate
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+biscuits biscuits 263
+biscuits
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0952c6c8>)
+no calories detected for food word
+barbecue
+chicken chicken 234
+chicken
+honey honey 304
+honey
+biscuits biscuits 263
+biscuits
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0952ca28>)
+no calories detected for food word
+barbecue
+chicken chicken 234
+chicken
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0952cd40>)
+no calories detected for food word
+barbecue
+honey honey 304
+honey
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+biscuits biscuits 263
+biscuits
+honey honey 304
+honey
+honey honey 304
+honey
+cake cake 412
+cake
+cake cake 412
+cake
+eggs eggs 131
+eggs
+cake cake 412
+cake
+eggs eggs 131
+eggs
+honey honey 304
+honey
+eggs eggs 131
+eggs
+honey honey 304
+honey
+cake cake 412
+cake
+cake cake 412
+cake
+mcdonald's mcdonald's 222
+mcdonald's
+fish fish 305
+fish
+white fish white fish 119
+white fish
+honey honey 304
+honey
+chicken chicken 234
+chicken
+honey honey 304
+honey
+milk milk 46
+milk
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['meat', 'mcdonald', 'gum drop', 'eggs', 'chocolate', 'strawberry', 'cake', 'quick', 'chicken', 'biscuits', 'milk', 'white fish'])
+predicted labels:
+set(['meat', 'eggs', "mcdonald's", 'chocolate', 'honey', 'strawberry', 'white fish', 'cake', 'barbecue', 'chicken', 'biscuits', 'milk'])
+file:HSLLD/HV1/MT//ethmt1.cha
+precision: 0.75
+recall: 0.75
+true positives:['biscuits', 'cake', 'chicken', 'chocolate', 'eggs', 'meat', 'milk', 'strawberry', 'white fish']
+false positives: ['barbecue', 'honey', "mcdonald's"]
+false negatives: ['gum drop', 'mcdonald', 'quick']
+# true pos: 9
+# false pos: 3
+# false neg: 3
+predicted spans:
+set([(317, (10, 17)), (2568, (27, 31)), (2568, (12, 16)), (2644, (6, 11)), (513, (41, 46)), (784, (81, 89)), (168, (6, 15)), (2732, (6, 16)), (1940, (24, 29)), (2861, (11, 16)), (2975, (56, 61)), (425, (16, 23)), (2716, (6, 16)), (2559, (13, 17)), (410, (46, 54)), (1504, (55, 63)), (775, (53, 60)), (309, (10, 17)), (584, (32, 40)), (2537, (91, 95)), (2637, (30, 34)), (1171, (39, 44)), (137, (19, 27)), (171, (19, 26)), (2633, (17, 22)), (2559, (23, 27)), (393, (59, 67)), (3082, (14, 18)), (164, (18, 28)), (2897, (26, 33)), (2654, (27, 31)), (2732, (23, 33)), (1504, (43, 50)), (1504, (25, 33)), (33, (63, 67)), (775, (24, 32)), (2644, (41, 45)), (1943, (29, 34)), (1464, (28, 35)), (387, (25, 32)), (164, (32, 41))])
+HSLLD/HV1/MT//casmt1.cha
+loading solution set
+milk milk 46
+milk
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09807f38>)
+no calories detected for food word
+pepsi
+milk milk 46
+milk
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097e69e0>)
+no calories detected for food word
+pepsi
+popcorn popcorn 429
+popcorn
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097e6f38>)
+no calories detected for food word
+candy
+popcorn popcorn 429
+popcorn
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5170>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f53f8>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5758>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5830>)
+no calories detected for food word
+candy
+sugar sugar 399
+sugar
+water water 18
+water
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f59e0>)
+no calories detected for food word
+apple
+tomatoes tomatoes 213
+tomatoes
+potatoes potatoes 62
+potatoes
+tomatoes tomatoes 213
+tomatoes
+honey honey 304
+honey
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5ef0>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5950>)
+no calories detected for food word
+tomato
+tomatoes tomatoes 213
+tomatoes
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097d2f38>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097d27a0>)
+no calories detected for food word
+vegetable
+croutons croutons 465
+croutons
+croutons croutons 465
+croutons
+vegetables vegetables 37
+vegetables
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097d2710>)
+no calories detected for food word
+salads
+doughnuts doughnuts 403
+doughnuts
+corn corn 419
+corn
+croutons croutons 465
+croutons
+corn corn 419
+corn
+croutons croutons 465
+croutons
+croutons croutons 465
+croutons
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5f80>)
+no calories detected for food word
+salad
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5908>)
+no calories detected for food word
+salad
+corn corn 419
+corn
+crackers crackers 453
+crackers
+duck duck 84
+duck
+crackers crackers 453
+crackers
+crackers crackers 453
+crackers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097f5128>)
+no calories detected for food word
+beers
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['tomato', 'honey', 'salad', 'corn', 'potatoes', 'cotton candy', 'vegetables', 'doughnuts', 'french fries', 'sugar', 'water', 'croutons', 'beers', 'pepsi', 'popcorn', 'salads', 'milk', 'tomatoes'])
+predicted labels:
+set(['tomato', 'honey', 'croutons', 'apple', 'salad', 'corn', 'potatoes', 'vegetables', 'doughnuts', 'candy', 'sugar', 'water', 'vegetable', 'beers', 'pepsi', 'duck', 'popcorn', 'crackers', 'salads', 'milk', 'tomatoes'])
+file:HSLLD/HV1/MT//casmt1.cha
+precision: 0.761904761905
+recall: 0.888888888889
+true positives:['beers', 'corn', 'croutons', 'doughnuts', 'honey', 'milk', 'pepsi', 'popcorn', 'potatoes', 'salad', 'salads', 'sugar', 'tomato', 'tomatoes', 'vegetables', 'water']
+false positives: ['apple', 'candy', 'crackers', 'duck', 'vegetable']
+false negatives: ['cotton candy', 'french fries']
+# true pos: 16
+# false pos: 5
+# false neg: 2
+predicted spans:
+set([(641, (33, 41)), (446, (20, 26)), (697, (14, 18)), (176, (37, 42)), (109, (24, 29)), (17, (25, 29)), (727, (39, 47)), (727, (63, 71)), (52, (31, 36)), (26, (10, 15)), (103, (39, 44)), (52, (12, 19)), (689, (46, 51)), (654, (6, 14)), (17, (52, 56)), (354, (6, 14)), (73, (10, 17)), (751, (23, 27)), (481, (23, 32)), (647, (11, 15)), (775, (16, 24)), (79, (21, 26)), (125, (21, 26)), (26, (23, 27)), (17, (39, 44)), (377, (21, 26)), (270, (21, 26)), (431, (11, 16)), (437, (6, 14)), (593, (15, 19)), (647, (30, 34)), (685, (32, 37)), (407, (54, 62)), (119, (20, 25)), (343, (31, 39)), (377, (36, 41)), (364, (32, 40)), (443, (18, 28)), (819, (99, 104)), (819, (49, 54)), (677, (36, 44)), (819, (35, 40)), (440, (6, 14)), (392, (53, 59)), (434, (8, 17)), (770, (48, 56)), (481, (71, 80)), (775, (38, 46))])
+HSLLD/HV1/MT//gilmt1.cha
+loading solution set
+tea tea 2
+tea
+tea tea 2
+tea
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['tea'])
+predicted labels:
+set(['tea'])
+file:HSLLD/HV1/MT//gilmt1.cha
+precision: 1.0
+recall: 1.0
+true positives:['tea']
+false positives: []
+false negatives: []
+# true pos: 1
+# false pos: 0
+# false neg: 0
+predicted spans:
+set([(121, (36, 39)), (90, (29, 32))])
+HSLLD/HV1/MT//alimt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//alimt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//paumt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//paumt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//melmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//melmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//diamt1.cha
+loading solution set
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09756a28>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0977c710>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0977c9e0>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0977cfc8>)
+no calories detected for food word
+meat
+mustard mustard 60
+mustard
+corn corn 419
+corn
+macaroni macaroni 128
+macaroni
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+water water 18
+water
+soup soup 72
+soup
+soup soup 72
+soup
+bread bread 186
+bread
+milk milk 46
+milk
+honey honey 304
+honey
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+corn corn 419
+corn
+corn corn 419
+corn
+corn corn 419
+corn
+seeds seeds 592
+seeds
+seeds seeds 592
+seeds
+seeds seeds 592
+seeds
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09756b00>)
+no calories detected for food word
+meat
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0975bcb0>)
+no calories detected for food word
+meat
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+chicken chicken 234
+chicken
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0975b200>)
+no calories detected for food word
+steak
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream cone ice cream cone 354
+ice cream cone
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098db248>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09766758>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0977f3f8>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09766cb0>)
+no calories detected for food word
+cucumbers
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09766f80>)
+no calories detected for food word
+cucumbers
+milk milk 46
+milk
+juice juice 52
+juice
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['steak', 'mustard', 'ice cream cone', 'juice', 'corn', 'popsicle', 'cucumbers', 'meat', 'soup', 'tuna+fish', 'corn on the cob', 'macaroni', 'ice cone', 'chicken', 'tuna', 'bread', 'milk', 'pizza'])
+predicted labels:
+set(['honey', 'steak', 'meat', 'ice cream cone', 'juice', 'corn', 'cucumbers', 'water', 'soup', 'chicken', 'seeds', 'macaroni', 'mustard', 'bread', 'milk', 'pizza'])
+file:HSLLD/HV1/MT//diamt1.cha
+precision: 0.8125
+recall: 0.722222222222
+true positives:['bread', 'chicken', 'corn', 'cucumbers', 'ice cream cone', 'juice', 'macaroni', 'meat', 'milk', 'mustard', 'pizza', 'soup', 'steak']
+false positives: ['honey', 'seeds', 'water']
+false negatives: ['corn on the cob', 'ice cone', 'popsicle', 'tuna', 'tuna+fish']
+# true pos: 13
+# false pos: 3
+# false neg: 5
+predicted spans:
+set([(811, (35, 40)), (212, (6, 14)), (692, (29, 34)), (802, (41, 45)), (749, (6, 20)), (232, (6, 11)), (1281, (6, 15)), (1237, (33, 42)), (1248, (6, 15)), (662, (35, 39)), (1284, (6, 15)), (700, (6, 10)), (1342, (32, 36)), (930, (50, 54)), (826, (10, 15)), (753, (6, 20)), (1218, (22, 36)), (935, (16, 23)), (1194, (6, 20)), (1207, (27, 41)), (304, (6, 11)), (1212, (20, 34)), (241, (6, 11)), (1191, (15, 29)), (941, (30, 35)), (927, (11, 15)), (659, (80, 84)), (36, (11, 20)), (1273, (6, 15)), (32, (6, 15)), (1351, (36, 41)), (67, (23, 30)), (938, (6, 13)), (199, (10, 14)), (720, (6, 11)), (771, (6, 10)), (29, (10, 19)), (941, (17, 24)), (818, (14, 19)), (811, (63, 67)), (55, (11, 15))])
+HSLLD/HV1/MT//remmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//remmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//monmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//monmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//seamt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//seamt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jermt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jermt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//brnmt1.cha
+loading solution set
+salt salt 0
+salt
+salt salt 0
+salt
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09560170>)
+no calories detected for food word
+meat
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09560440>)
+no calories detected for food word
+meat
+fat fat 900
+fat
+fat fat 900
+fat
+onions onions 26
+onions
+corn corn 419
+corn
+fish fish 305
+fish
+water water 18
+water
+duck duck 84
+duck
+water water 18
+water
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098eb0e0>)
+no calories detected for food word
+lobsters
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09560908>)
+no calories detected for food word
+lobsters
+water water 18
+water
+water water 18
+water
+corn corn 419
+corn
+rice rice 147
+rice
+rice rice 147
+rice
+corn corn 419
+corn
+rice rice 147
+rice
+corn corn 419
+corn
+rice rice 147
+rice
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['salt', 'corn', 'fat', 'soda', 'rice', 'onions'])
+predicted labels:
+set(['lobsters', 'meat', 'salt', 'corn', 'fat', 'water', 'duck', 'rice', 'onions', 'fish'])
+file:HSLLD/HV1/MT//brnmt1.cha
+precision: 0.5
+recall: 0.833333333333
+true positives:['corn', 'fat', 'onions', 'rice', 'salt']
+false positives: ['duck', 'fish', 'lobsters', 'meat', 'water']
+false negatives: ['soda']
+# true pos: 5
+# false pos: 5
+# false neg: 1
+predicted spans:
+set([(1233, (24, 28)), (645, (52, 56)), (915, (20, 25)), (713, (10, 16)), (1215, (49, 53)), (895, (56, 60)), (895, (118, 123)), (1151, (20, 24)), (187, (13, 17)), (1169, (23, 27)), (184, (32, 36)), (1148, (13, 17)), (668, (21, 24)), (895, (106, 110)), (907, (11, 16)), (719, (6, 10)), (1233, (15, 19)), (921, (12, 17)), (637, (50, 54)), (1215, (40, 44)), (912, (14, 22)), (674, (17, 20)), (907, (40, 48))])
+HSLLD/HV1/MT//todmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//todmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jeamt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jeamt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//rilmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//rilmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//guymt1.cha
+loading solution set
+rice rice 147
+rice
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b099557a0>)
+no calories detected for food word
+meat
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09955908>)
+no calories detected for food word
+meat
+spinach spinach 34
+spinach
+spinach spinach 34
+spinach
+juice juice 52
+juice
+juice juice 52
+juice
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['orange', 'juice', 'rice', 'meat', 'spinach'])
+predicted labels:
+set(['juice', 'rice', 'meat', 'spinach'])
+file:HSLLD/HV1/MT//guymt1.cha
+precision: 1.0
+recall: 0.8
+true positives:['juice', 'meat', 'rice', 'spinach']
+false positives: []
+false negatives: ['orange']
+# true pos: 4
+# false pos: 0
+# false neg: 1
+predicted spans:
+set([(21, (27, 31)), (63, (18, 25)), (38, (20, 24)), (35, (28, 32)), (262, (17, 22)), (99, (18, 25)), (255, (17, 22))])
+HSLLD/HV1/MT//astmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//astmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//jesmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jesmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//bramt1.cha
+loading solution set
+butter butter 499
+butter
+margarine margarine 717
+margarine
+butter butter 499
+butter
+butter butter 499
+butter
+butter butter 499
+butter
+catsup catsup 101
+catsup
+fish fish 305
+fish
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09793b00>)
+no calories detected for food word
+cakes
+juice juice 52
+juice
+sauce sauce 29
+sauce
+tartar sauce tartar sauce 211
+tartar sauce
+mayonnaise mayonnaise 231
+mayonnaise
+milk milk 46
+milk
+juice juice 52
+juice
+butter butter 499
+butter
+juice juice 52
+juice
+beans beans 105
+beans
+juice juice 52
+juice
+beans beans 105
+beans
+juice juice 52
+juice
+juice juice 52
+juice
+tomatoes tomatoes 213
+tomatoes
+sauce sauce 29
+sauce
+tartar sauce tartar sauce 211
+tartar sauce
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097c93f8>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097b0128>)
+no calories detected for food word
+candy
+cake cake 412
+cake
+fish fish 305
+fish
+beans beans 105
+beans
+bread bread 186
+bread
+fish fish 305
+fish
+grapes grapes 76
+grapes
+fish fish 305
+fish
+fish fish 305
+fish
+fish fish 305
+fish
+fish fish 305
+fish
+bear bear 130
+bear
+milk milk 46
+milk
+milk milk 46
+milk
+honey honey 304
+honey
+fish fish 305
+fish
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097933f8>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097bb878>)
+no calories detected for food word
+candy
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097b0098>)
+no calories detected for food word
+candy
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097b0638>)
+no calories detected for food word
+candy
+fish fish 305
+fish
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b097b0908>)
+no calories detected for food word
+candy
+fish fish 305
+fish
+water water 18
+water
+honey honey 304
+honey
+cake cake 412
+cake
+ice cream ice cream 265
+ice cream
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09793680>)
+no calories detected for food word
+candy
+cream cream 72
+cream
+milk milk 46
+milk
+fish fish 305
+fish
+ice cream ice cream 265
+ice cream
+cream cream 72
+cream
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['butter', 'fish cakes', 'brown bread', 'catsup', 'tartar sauce', 'cake', 'ice cream bar', 'candy', 'ice cream', 'juice', 'beans', 'concord grapes', 'fish cake', 'fish stick', 'margarine', 'mayonnaise', 'milk', 'tomatoes'])
+predicted labels:
+set(['butter', 'water', 'fish cakes', 'catsup', 'tartar sauce', 'fish', 'candy', 'honey', 'juice', 'beans', 'bear', 'grapes', 'fish cake', 'cake', 'margarine', 'mayonnaise', 'ice cream', 'milk', 'tomatoes', 'bread'])
+file:HSLLD/HV1/MT//bramt1.cha
+precision: 0.7
+recall: 0.777777777778
+true positives:['beans', 'butter', 'cake', 'candy', 'catsup', 'fish cake', 'fish cakes', 'ice cream', 'juice', 'margarine', 'mayonnaise', 'milk', 'tartar sauce', 'tomatoes']
+false positives: ['bear', 'bread', 'fish', 'grapes', 'honey', 'water']
+false negatives: ['brown bread', 'concord grapes', 'fish stick', 'ice cream bar']
+# true pos: 14
+# false pos: 6
+# false neg: 4
+predicted spans:
+set([(454, (20, 25)), (1169, (30, 34)), (220, (16, 22)), (1593, (9, 14)), (1153, (28, 32)), (721, (18, 23)), (1413, (52, 56)), (471, (6, 11)), (1218, (37, 41)), (457, (10, 15)), (1506, (27, 31)), (181, (7, 13)), (1639, (44, 49)), (1599, (30, 34)), (725, (17, 22)), (1713, (94, 98)), (1585, (54, 63)), (477, (14, 19)), (1726, (34, 38)), (1537, (20, 29)), (1519, (98, 103)), (1017, (38, 44)), (159, (16, 22)), (159, (26, 35)), (1713, (81, 90)), (249, (6, 11)), (1562, (15, 24)), (433, (11, 16)), (429, (6, 10)), (830, (21, 25)), (1585, (30, 34)), (1573, (53, 62)), (1579, (14, 19)), (813, (36, 41)), (461, (20, 25)), (2121, (50, 54)), (451, (12, 17)), (1263, (41, 45)), (228, (14, 24)), (1582, (18, 23)), (1164, (22, 26)), (1469, (18, 22)), (1524, (21, 26)), (793, (23, 28)), (1713, (57, 62)), (513, (6, 14)), (185, (51, 57)), (1702, (11, 16)), (379, (14, 24)), (1528, (26, 35)), (1500, (12, 17)), (675, (14, 26)), (1569, (6, 15)), (775, (30, 39)), (373, (39, 51)), (438, (20, 26)), (169, (6, 12)), (2121, (14, 23))])
+HSLLD/HV1/MT//geomt1.cha
+loading solution set
+pumpkin pumpkin 15
+pumpkin
+pumpkin pumpkin 15
+pumpkin
+sausage sausage 324
+sausage
+meatballs meatballs 197
+meatballs
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b89e0>)
+no calories detected for food word
+meat
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8cb0>)
+no calories detected for food word
+meat
+meatballs meatballs 197
+meatballs
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8ef0>)
+no calories detected for food word
+hamburgers
+bacon bacon 309
+bacon
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495290>)
+no calories detected for food word
+meatball
+duck duck 84
+duck
+duck duck 84
+duck
+pepper pepper 27
+pepper
+salt salt 0
+salt
+duck duck 84
+duck
+egg egg 357
+egg
+duck duck 84
+duck
+duck duck 84
+duck
+cookie cookie 507
+cookie
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495b48>)
+no calories detected for food word
+cupcakes
+cookie cookie 507
+cookie
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495cf8>)
+no calories detected for food word
+cupcake
+cookie cookie 507
+cookie
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495ef0>)
+no calories detected for food word
+cupcakes
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495518>)
+no calories detected for food word
+cupcake
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b094953f8>)
+no calories detected for food word
+candy
+gums gums 332
+gums
+turtle turtle 89
+turtle
+turtle turtle 89
+turtle
+turtle turtle 89
+turtle
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b82d8>)
+no calories detected for food word
+turtles
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8ea8>)
+no calories detected for food word
+turtles
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8cf8>)
+no calories detected for food word
+turtles
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8f38>)
+no calories detected for food word
+turtles
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8050>)
+no calories detected for food word
+turtles
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8e60>)
+no calories detected for food word
+turtles
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b8908>)
+no calories detected for food word
+turtles
+turtle turtle 89
+turtle
+turtle turtle 89
+turtle
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095c69e0>)
+no calories detected for food word
+turtles
+turtle turtle 89
+turtle
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495950>)
+no calories detected for food word
+meatball
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b09495368>)
+no calories detected for food word
+meatball
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['sausage', 'cupcakes', 'meat', 'meatballs', 'bacon', 'pepper', 'cupcake', 'gums', 'cookie', 'duck', 'meatball', 'salt', 'egg', 'hamburgers', 'pumpkin'])
+predicted labels:
+set(['turtle', 'sausage', 'cupcakes', 'meat', 'turtles', 'meatballs', 'bacon', 'pepper', 'candy', 'cupcake', 'gums', 'cookie', 'duck', 'meatball', 'salt', 'egg', 'hamburgers', 'pumpkin'])
+file:HSLLD/HV1/MT//geomt1.cha
+precision: 0.833333333333
+recall: 1.0
+true positives:['bacon', 'cookie', 'cupcake', 'cupcakes', 'duck', 'egg', 'gums', 'hamburgers', 'meat', 'meatball', 'meatballs', 'pepper', 'pumpkin', 'salt', 'sausage']
+false positives: ['candy', 'turtle', 'turtles']
+false negatives: []
+# true pos: 15
+# false pos: 3
+# false neg: 0
+predicted spans:
+set([(2811, (11, 18)), (98, (18, 25)), (1048, (52, 56)), (2744, (40, 47)), (2838, (54, 60)), (2757, (14, 21)), (2844, (16, 22)), (1343, (9, 12)), (2802, (20, 27)), (944, (8, 12)), (2963, (46, 54)), (121, (21, 30)), (2419, (58, 64)), (2761, (28, 35)), (2713, (44, 50)), (951, (49, 53)), (2428, (21, 28)), (2765, (29, 36)), (111, (14, 18)), (25, (6, 13)), (102, (25, 34)), (2838, (22, 28)), (142, (27, 37)), (2433, (24, 30)), (2419, (28, 36)), (987, (28, 32)), (2891, (18, 24)), (2441, (48, 55)), (1801, (37, 41)), (22, (6, 13)), (118, (17, 21)), (1523, (17, 21)), (2722, (40, 46)), (2437, (36, 44)), (2891, (29, 35)), (2824, (49, 56)), (2838, (33, 39)), (909, (22, 30)), (2428, (46, 52)), (2555, (18, 22)), (2533, (55, 60)), (2934, (8, 16)), (984, (14, 20)), (182, (52, 57)), (2734, (20, 26)), (2886, (28, 35))])
+HSLLD/HV1/MT//brtmt1.cha
+loading solution set
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0974b9e0>)
+no calories detected for food word
+tonic
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0974bab8>)
+no calories detected for food word
+tonic
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098c2248>)
+no calories detected for food word
+tonic
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098c2320>)
+no calories detected for food word
+meat
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098c2170>)
+no calories detected for food word
+meat
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098c2488>)
+no calories detected for food word
+meat
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['meat'])
+predicted labels:
+set(['tonic', 'meat'])
+file:HSLLD/HV1/MT//brtmt1.cha
+precision: 0.5
+recall: 1.0
+true positives:['meat']
+false positives: ['tonic']
+false negatives: []
+# true pos: 1
+# false pos: 1
+# false neg: 0
+predicted spans:
+set([(178, (11, 16)), (240, (6, 10)), (99, (44, 49)), (104, (45, 50)), (230, (16, 20)), (237, (6, 10))])
+HSLLD/HV1/MT//jacmt1.cha
+loading solution set
+duck duck 84
+duck
+duck duck 84
+duck
+duck duck 84
+duck
+spaghetti spaghetti 100
+spaghetti
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['spaghetti', 'brownies'])
+predicted labels:
+set(['spaghetti', 'duck'])
+file:HSLLD/HV1/MT//jacmt1.cha
+precision: 0.5
+recall: 0.5
+true positives:['spaghetti']
+false positives: ['duck']
+false negatives: ['brownies']
+# true pos: 1
+# false pos: 1
+# false neg: 1
+predicted spans:
+set([(46, (26, 30)), (218, (26, 30)), (329, (34, 43)), (53, (30, 34))])
+HSLLD/HV1/MT//jusmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//jusmt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//tammt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//tammt1.cha
+predicted spans:
+None
+HSLLD/HV1/MT//allmt1.cha
+loading solution set
+butter butter 499
+butter
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098f4248>)
+no calories detected for food word
+jelly
+peanut butter peanut butter 590
+peanut butter
+butter butter 499
+butter
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098f4518>)
+no calories detected for food word
+jelly
+peanut butter peanut butter 590
+peanut butter
+celery celery 18
+celery
+celery celery 18
+celery
+celery celery 18
+celery
+celery celery 18
+celery
+butter butter 499
+butter
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098f4f80>)
+no calories detected for food word
+peanut
+peanut butter peanut butter 590
+peanut butter
+butter butter 499
+butter
+goose goose 133
+goose
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+cheese cheese 280
+cheese
+pizza pizza 274
+pizza
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0990b758>)
+no calories detected for food word
+steak
+pizza pizza 274
+pizza
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095c6440>)
+no calories detected for food word
+steak
+pizza pizza 274
+pizza
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b094f0440>)
+no calories detected for food word
+steak
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0984ccb0>)
+no calories detected for food word
+steak
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+pizza pizza 274
+pizza
+milk milk 46
+milk
+sugar sugar 399
+sugar
+sugar sugar 399
+sugar
+sugar sugar 399
+sugar
+crackers crackers 453
+crackers
+milk milk 46
+milk
+milk milk 46
+milk
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095338c0>)
+no calories detected for food word
+oatmeal
+crackers crackers 453
+crackers
+milk milk 46
+milk
+crackers crackers 453
+crackers
+milk milk 46
+milk
+sugar sugar 399
+sugar
+sugar sugar 399
+sugar
+sugar sugar 399
+sugar
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b094954d0>)
+no calories detected for food word
+jelly
+crackers crackers 453
+crackers
+milk milk 46
+milk
+milk milk 46
+milk
+ham ham 141
+ham
+honey honey 304
+honey
+pizza pizza 274
+pizza
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b095b88c0>)
+no calories detected for food word
+steak
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0984c560>)
+no calories detected for food word
+steak
+pizza pizza 274
+pizza
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b0984c758>)
+no calories detected for food word
+steak
+pizza pizza 274
+pizza
+macaroni macaroni 128
+macaroni
+(<type 'exceptions.ZeroDivisionError'>, ZeroDivisionError('float division by zero',), <traceback object at 0x7f3b098ebb00>)
+no calories detected for food word
+salad
+bacon bacon 309
+bacon
+canadian bacon canadian bacon 146
+canadian bacon
+loading solution set
+calculating
+calculating accuracy and recall
+correct labels:
+set(['cheese', 'ham', 'macaroni salad', 'sugar', 'jelly', 'oatmeal', 'milk', 'celery', 'peanut butter and jelly', 'calzone', 'saltine crackers', 'crackers', 'steak', 'canadian bacon', 'pean(ut) butter', 'peanut butter', 'pizza'])
+predicted labels:
+set(['butter', 'goose', 'macaroni salad', 'ham', 'cheese', 'jelly', 'oatmeal', 'sugar', 'celery', 'honey', 'crackers', 'steak', 'canadian bacon', 'milk', 'peanut butter', 'pizza'])
+file:HSLLD/HV1/MT//allmt1.cha
+precision: 0.8125
+recall: 0.764705882353
+true positives:['canadian bacon', 'celery', 'cheese', 'crackers', 'ham', 'jelly', 'macaroni salad', 'milk', 'oatmeal', 'peanut butter', 'pizza', 'steak', 'sugar']
+false positives: ['butter', 'goose', 'honey']
+false negatives: ['calzone', 'pean(ut) butter', 'peanut butter and jelly', 'saltine crackers']
+# true pos: 13
+# false pos: 3
+# false neg: 4
+predicted spans:
+set([(721, (6, 11)), (666, (29, 34)), (205, (21, 26)), (1048, (15, 23)), (1161, (18, 23)), (216, (9, 14)), (684, (20, 25)), (235, (64, 69)), (936, (20, 24)), (991, (50, 54)), (137, (51, 57)), (1121, (29, 34)), (1167, (19, 27)), (939, (21, 26)), (1045, (16, 24)), (235, (22, 27)), (1552, (6, 11)), (222, (31, 37)), (1149, (26, 31)), (1045, (29, 33)), (1113, (22, 27)), (628, (24, 29)), (1180, (35, 39)), (122, (6, 12)), (247, (25, 30)), (741, (25, 30)), (107, (24, 29)), (1167, (32, 36)), (1039, (23, 30)), (1540, (6, 11)), (145, (15, 21)), (1568, (6, 11)), (1568, (16, 21)), (1592, (13, 27)), (1446, (34, 39)), (134, (11, 17)), (693, (25, 30)), (213, (10, 15)), (244, (22, 27)), (955, (13, 18)), (1020, (24, 28)), (100, (6, 19)), (107, (6, 19)), (131, (22, 28)), (1565, (6, 11)), (141, (19, 32)), (252, (19, 24)), (1565, (16, 21)), (100, (24, 29)), (1237, (30, 33)), (1581, (27, 41)), (991, (37, 45)), (945, (21, 26)), (1048, (28, 32)), (705, (18, 23)), (225, (16, 21))])
+HSLLD/HV1/MT//sopmt1.cha
+loading solution set
+no solution file found for: solutions/HSLLD/HV1/MT//sopmt1.cha
+predicted spans:
+None
+{'use_pattern_matching': True, 'use_plurals': True, 'use_second_column': False, 'use_wordnet': False, 'use_wordnet_food_names': True, 'base_accuracy_on_how_many_unique_food_items_detected': True, 'levenshtein_setting': 'system2', 'use_span_merging': True, 'use_word2vec_model': False, 'directory_path': 'HSLLD/HV1/MT/', 'only_files_with_solutions': True, 'use_pretrained_Google_embeddings': True, 'log_reg_threshold': 0.3, 'remove_banned_words': True, 'use_twitter_dataset': True, 'levenshtein_threshold': 0.25, 'use_edit_distance_matching': False, 'wordnet_setting': 'most_common', 'pos_tags_setting': 'ark'}
+precision: 0.759493670886
+recall 0.753138075314
+# true pos: 180
+# false pos: 57
+# false neg: 59
+false positives: [['chicken spices', 'honey'], ['meat'], [], ['honey', 'sunshine', 'tea'], ['apple', 'duck', 'grape', 'honey'], ['egg', 'fish', 'lollipops', "mother's"], [], ['coffee mix', 'diet', 'fruit', 'lettuce lettuce', 'milk juice'], ['pork'], ['cabbage', 'diet', 'egg', 'ham sandwich', 'honey', 'pork', "van's"], ['barbecue', 'honey', "mcdonald's"], ['apple', 'candy', 'crackers', 'duck', 'vegetable'], [], ['honey', 'seeds', 'water'], ['duck', 'fish', 'lobsters', 'meat', 'water'], [], ['bear', 'bread', 'fish', 'grapes', 'honey', 'water'], ['candy', 'turtle', 'turtles'], ['tonic'], ['duck'], ['butter', 'goose', 'honey']]
+false negatives: [['brownie', 'chicken', 'coke'], [], [], ['skim milk'], ['popsicle', 'popsicles', 'vitamin'], ['cantaloupe', 'ice cube', 'lollipop', 'tootsie roll'], [], ['(to)matoes', 'cucum(ber)', 'diet dressing', 'diet soda', 'supper'], ['corn on the cob', 'fudgesicle', 'fudgesicles', 'honey+dew', 'ketchup', 'popsicle', 'pork chop'], ['(po)tatoes', 'diet slice', 'diet soda', 'ginger+ale', 'koolaid', 'milk shake', 'nut and honey', 'oats and bran cereal', 'oats and honey', 'popsicles', 'pork chops', 'slim fast', 'soda', 'sodas', 'spice ham sandwich'], ['gum drop', 'mcdonald', 'quick'], ['cotton candy', 'french fries'], [], ['corn on the cob', 'ice cone', 'popsicle', 'tuna', 'tuna+fish'], ['soda'], ['orange'], ['brown bread', 'concord grapes', 'fish stick', 'ice cream bar'], [], [], ['brownies'], ['calzone', 'pean(ut) butter', 'peanut butter and jelly', 'saltine crackers']]
+total runtime: 13.8465499878
