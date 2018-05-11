@@ -216,11 +216,11 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			if use_pattern_matching:
 				pos_tags = pos_tags_dict[current_line_number]
 				if use_edit_distance_matching:
-					words = phrasemachine.ark_get_phrases_wrapper(pos_tags)
+					words = phrasemachine.ark_get_phrases_wrapper(pos_tags) # all noun phrases in sentence
 				else:
-					words = get_list_of_phrases_in_foodnames(pos_tags, foodNames)
+					words = get_list_of_phrases_in_foodnames(pos_tags, foodNames) # all noun phrases that are also food words!
 			else:
-				words = get_list_of_foodnames_in_sentence(foodNames, temp_i)
+				words = get_list_of_foodnames_in_sentence(foodNames, temp_i) # all food words in the sentence (may or may not have correct POS tag)
 
 			# WSD
 			for word in words:
@@ -316,8 +316,18 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				# print(tags)
 				# print(individual_food_words)
 
-				if not use_edit_distance_matching:
-					for match in re.finditer(word, i):
+				if use_edit_distance_matching:
+					# guess food words
+					 food_words_in_sentence = list(filter(lambda x: x in foodNames, words))  # filter out noun phrases that are not in foodNames
+					 for food_word in food_words_in_sentence:
+						for match in re.finditer(re.escape(food_word), i):
+						# print "Sentence -> ", temp_i, "matches -> ", match
+							food_match_indexes = match.span()
+							index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+							spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+ 	
+				else:
+					for match in re.finditer(re.escape(word), i):
 						# print "Sentence -> ", temp_i, "matches -> ", match
 						food_match_indexes = match.span()
 						index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
@@ -418,7 +428,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 								found_at_least = 1
 								# if word == 'tomatoes':
 								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-								for match in re.finditer(word, i):
+								for match in re.finditer(re.escape(word), i):
 				# print "Sentence -> ", temp_i, "matches -> ", match
 									food_match_indexes = match.span()
 									index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])

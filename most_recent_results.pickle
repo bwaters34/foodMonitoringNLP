@@ -1,290 +1,5530 @@
 ccopy_reg
 _reconstructor
-p1
+p0
 (cnamedtuples
 Accuracy
-p2
+p1
 c__builtin__
 tuple
-p3
-(I180
-I57
-I59
+p2
+(I194
+I2690
+I45
+(lp3
 (lp4
-(lp5
-S'chicken spices'
+S'adam'
+p5
+aS'adam in the movie'
 p6
-aS'honey'
+aS'adam someone'
 p7
-aa(lp8
-S'meat'
+aS"adam's"
+p8
+aS'air'
 p9
-aa(lp10
-a(lp11
-S'honey'
+aS'anything'
+p10
+aS'babbles'
+p11
+aS'balloon'
 p12
-aS'sunshine'
+aS'big bowl'
 p13
-aS'tea'
+aS'bike'
 p14
-aa(lp15
-S'apple'
+aS'bikes'
+p15
+aS'bread adam'
 p16
-aS'duck'
+aS'bunny bunny bunny'
 p17
-aS'grape'
+aS'chicken spices'
 p18
-aS'honey'
+aS'circle'
 p19
-aa(lp20
-S'egg'
+aS'class'
+p20
+aS'cut pieces'
 p21
-aS'fish'
+aS'dad'
 p22
-aS'lollipops'
+aS'dada'
 p23
-aS"mother's"
+aS'daddy'
 p24
-aa(lp25
-a(lp26
-S'coffee mix'
+aS'days'
+p25
+aS'dinner'
+p26
+aS'doodadoo'
 p27
-aS'diet'
+aS'end stool'
 p28
-aS'fruit'
+aS'enough adam'
 p29
-aS'lettuce lettuce'
+aS'everybody'
 p30
-aS'milk juice'
+aS'everybody in the center'
 p31
-aa(lp32
-S'pork'
+aS'everybody on the xxx'
+p32
+aS'everything'
 p33
-aa(lp34
-S'cabbage'
+aS'fib'
+p34
+aS'fun'
 p35
-aS'diet'
+aS'fun kim'
 p36
-aS'egg'
+aS'good adam'
 p37
-aS'ham sandwich'
+aS'grandma'
 p38
-aS'honey'
+aS"grandma's"
 p39
-aS'pork'
+aS"grandma's house"
 p40
-aS"van's"
+aS'ground'
 p41
-aa(lp42
-S'barbecue'
+aS'harsh growly tone'
+p42
+aS'headache'
 p43
-aS'honey'
+aS'heavy hiss-like'
 p44
-aS"mcdonald's"
+aS'honey'
 p45
-aa(lp46
-S'apple'
+aS'house'
+p46
+aS'hums'
 p47
-aS'candy'
+aS'jan'
 p48
-aS'crackers'
+aS'jeanine'
 p49
-aS'duck'
+aS'kids'
 p50
-aS'vegetable'
+aS'kim'
 p51
-aa(lp52
-a(lp53
-S'honey'
+aS'last day of school'
+p52
+aS'little piece'
+p53
+aS'long long long long ride'
 p54
-aS'seeds'
+aS'lots_of carrots'
 p55
-aS'water'
+aS'many more days'
 p56
-aa(lp57
-S'duck'
+aS'many more days kim'
+p57
+aS'mom'
 p58
-aS'fish'
+aS'mommy'
 p59
-aS'lobsters'
+aS'more day'
 p60
-aS'meat'
+aS'more days'
 p61
-aS'water'
+aS'mouth'
 p62
-aa(lp63
-a(lp64
-S'bear'
+aS'movie'
+p63
+aS'movie adam'
+p64
+aS'movie today'
 p65
-aS'bread'
+aS'nonsense words'
 p66
-aS'fish'
+aS'nuke'
 p67
-aS'grapes'
+aS'own xxx'
 p68
-aS'honey'
+aS'party'
 p69
-aS'water'
+aS"party at adam's school"
 p70
-aa(lp71
-S'candy'
+aS'party in school'
+p71
+aS'peas in the xxx'
 p72
-aS'turtle'
+aS'pieces'
 p73
-aS'turtles'
+aS'play area'
 p74
-aa(lp75
-S'tonic'
+aS'porch'
+p75
+aS'school'
 p76
-aa(lp77
-S'duck'
+aS'school today'
+p77
+aS'skitch'
 p78
-aa(lp79
-S'butter'
+aS'sled'
+p79
+aS'sneakers'
 p80
-aS'goose'
+aS'socks'
 p81
-aS'honey'
+aS'spoon'
 p82
-aa(lp83
-(lp84
-S'brownie'
+aS'table'
+p83
+aS'thanks'
+p84
+aS'thanks kim'
 p85
-aS'chicken'
+aS'things'
 p86
-aS'coke'
+aS'time'
 p87
-aa(lp88
-a(lp89
-a(lp90
-S'skim milk'
+aS'today'
+p88
+aS'tomorrow'
+p89
+aS'tonight'
+p90
+aS'top'
 p91
-aa(lp92
-S'popsicle'
+aS'tune'
+p92
+aS'v_c_r'
 p93
-aS'popsicles'
+aS'witch'
 p94
-aS'vitamin'
+aS'words yesterday with cindy'
 p95
-aa(lp96
-S'cantaloupe'
+aS'xxx'
+p96
+aS'xxx carrots'
 p97
-aS'ice cube'
+aS'yesterday'
 p98
-aS'lollipop'
-p99
-aS'tootsie roll'
+aa(lp99
+S'[/] mommy'
 p100
-aa(lp101
-a(lp102
-S'(to)matoes'
+aS'afternoon'
+p101
+aS'aimee'
+p102
+aS'aimee >'
 p103
-aS'cucum(ber)'
+aS'allegiance to the flag of the united_states_of_america'
 p104
-aS'diet dressing'
+aS'allegiance to the flag of united_states_of_amer(ica'
 p105
-aS'diet soda'
+aS'aloppa'
 p106
-aS'supper'
+aS'alphabet'
 p107
-aa(lp108
-S'corn on the cob'
+aS'arm'
+p108
+aS'arms'
 p109
-aS'fudgesicle'
+aS'babies'
 p110
-aS'fudgesicles'
+aS'baby'
 p111
-aS'honey+dew'
+aS'bath'
 p112
-aS'ketchup'
+aS'bath+room'
 p113
-aS'popsicle'
+aS'bathing'
 p114
-aS'pork chop'
+aS'beatin(g'
 p115
-aa(lp116
-S'(po)tatoes'
+aS'bed'
+p116
+aS'bedtime'
 p117
-aS'diet slice'
+aS'better stay'
 p118
-aS'diet soda'
+aS'bit'
 p119
-aS'ginger+ale'
+aS'blouse'
 p120
-aS'koolaid'
+aS'boowa'
 p121
-aS'milk shake'
+aS'bottle'
 p122
-aS'nut and honey'
+aS'bowl'
 p123
-aS'oats and bran cereal'
+aS'boy'
 p124
-aS'oats and honey'
+aS'daddy'
 p125
-aS'popsicles'
+aS'daddy look_it'
 p126
-aS'pork chops'
+aS'day'
 p127
-aS'slim fast'
+aS'dinner'
 p128
-aS'soda'
+aS'dinnertime'
 p129
-aS'sodas'
+aS'do good do xxx'
 p130
-aS'spice ham sandwich'
+aS'downstairs'
 p131
-aa(lp132
-S'gum drop'
+aS'drawer'
+p132
+aS'eating'
 p133
-aS'mcdonald'
+aS'elizabeth'
 p134
-aS'quick'
+aS'father in heaven'
 p135
-aa(lp136
-S'cotton candy'
+aS'flower'
+p136
+aS'food'
 p137
-aS'french fries'
+aS'food aimee'
 p138
-aa(lp139
-a(lp140
-S'corn on the cob'
+aS'food tonight'
+p139
+aS'fork'
+p140
+aS'frutti'
 p141
-aS'ice cone'
+aS'god'
 p142
-aS'popsicle'
+aS'gold'
 p143
-aS'tuna'
+aS'good (.)'
 p144
-aS'tuna+fish'
+aS'good boy'
 p145
-aa(lp146
-S'soda'
+aS'grace'
+p146
+aS'great (.) god'
 p147
-aa(lp148
-S'orange'
+aS'hands'
+p148
+aS'happy bir(thday'
 p149
-aa(lp150
-S'brown bread'
+aS'happy birthday'
+p150
+aS'help'
 p151
-aS'concord grapes'
+aS'home'
 p152
-aS'fish stick'
+aS'hot (.)'
 p153
-aS'ice cream bar'
+aS'hungry (.)'
 p154
-aa(lp155
-a(lp156
-a(lp157
-S'brownies'
+aS'junior'
+p155
+aS'junior (.)'
+p156
+aS'junk'
+p157
+aS'justice'
 p158
-aa(lp159
-S'calzone'
+aS'kind of xxx'
+p159
+aS'liberty'
 p160
-aS'pean(ut) butter'
+aS'little bit'
 p161
-aS'peanut butter and jelly'
+aS'little bit tonight'
 p162
-aS'saltine crackers'
+aS'little forks'
 p163
-aattRp164
+aS'look_it'
+p164
+aS'lots'
+p165
+aS'lutti'
+p166
+aS'mean boy'
+p167
+aS'minute'
+p168
+aS'mom'
+p169
+aS'mommy'
+p170
+aS'mommy (.)'
+p171
+aS'more xxx'
+p172
+aS'mosquito'
+p173
+aS'mouth'
+p174
+aS'nation under god'
+p175
+aS'nobody'
+p176
+aS'own meat'
+p177
+aS'park'
+p178
+aS'part'
+p179
+aS'people'
+p180
+aS'pepper (.)'
+p181
+aS'pledge alle(giance'
+p182
+aS'pots'
+p183
+aS'prayers'
+p184
+aS'pretty stuff'
+p185
+aS'republic'
+p186
+aS'rest'
+p187
+aS'robbie'
+p188
+aS'room'
+p189
+aS'school'
+p190
+aS'school teacher'
+p191
+aS'school today'
+p192
+aS'school tomorrow'
+p193
+aS'shoes'
+p194
+aS'shoes for daddy'
+p195
+aS'skirt'
+p196
+aS'something'
+p197
+aS'something for breakfast'
+p198
+aS'song'
+p199
+aS'soup bowl'
+p200
+aS'spoon'
+p201
+aS'stomach'
+p202
+aS'stuff'
+p203
+aS'supper time'
+p204
+aS'table'
+p205
+aS'thing'
+p206
+aS'time'
+p207
+aS'today'
+p208
+aS'tomorrow'
+p209
+aS'walk'
+p210
+aS'water xxx'
+p211
+aS'whole mess of this whole place'
+p212
+aS'whole thing'
+p213
+aS'www (.)'
+p214
+aS'xxx'
+p215
+aS'xxx junior xxx'
+p216
+aS'young man'
+p217
+aS'zoo'
+p218
+aS'zoo tomorrow'
+p219
+aS'zoo tomorrow zoo tomorrow'
+p220
+aa(lp221
+S'(.) beach'
+p222
+aS'(.) car'
+p223
+aS'(.) chi'
+p224
+aS'[/] by the beach'
+p225
+aS'airplane noises'
+p226
+aS'anything'
+p227
+aS'beach'
+p228
+aS'big car'
+p229
+aS'car'
+p230
+aS'chair'
+p231
+aS'chi'
+p232
+aS'cries'
+p233
+aS'daddy'
+p234
+aS'front'
+p235
+aS'girls at [/] (.)'
+p236
+aS'good boy'
+p237
+aS'growl'
+p238
+aS'high pitched noises'
+p239
+aS'lydia'
+p240
+aS'marky'
+p241
+aS'mom'
+p242
+aS'mot'
+p243
+aS'mouth'
+p244
+aS'name'
+p245
+aS'noises'
+p246
+aS'room'
+p247
+aS'stuff'
+p248
+aS'table'
+p249
+aS'touch'
+p250
+aS'xxx'
+p251
+aa(lp252
+S'anna'
+p253
+aS'anna (.)'
+p254
+aS'babbles'
+p255
+aS'bachelor on the roam'
+p256
+aS'bed'
+p257
+aS'big mouth'
+p258
+aS"bill o'brien"
+p259
+aS'bob'
+p260
+aS"bob's"
+p261
+aS'bobby'
+p262
+aS'boot in the ass'
+p263
+aS'boy'
+p264
+aS'brother'
+p265
+aS"brother (.) no (.) brother's"
+p266
+aS'bucks'
+p267
+aS'call'
+p268
+aS'couch'
+p269
+aS'dad today'
+p270
+aS"darlene's"
+p271
+aS'dessert'
+p272
+aS'door'
+p273
+aS'face'
+p274
+aS'face cloth'
+p275
+aS'father'
+p276
+aS"father's"
+p277
+aS'gasps'
+p278
+aS'giggles'
+p279
+aS'girl'
+p280
+aS'girl+friend'
+p281
+aS'good girl'
+p282
+aS'good meatballs'
+p283
+aS'grandmother'
+p284
+aS'gross milk'
+p285
+aS'home'
+p286
+aS'honey'
+p287
+aS'hour'
+p288
+aS'june'
+p289
+aS'kevin'
+p290
+aS'kevin (.) kevin'
+p291
+aS'kid'
+p292
+aS'kids'
+p293
+aS'kind'
+p294
+aS'kind of food'
+p295
+aS'last night'
+p296
+aS'last night before a little old man'
+p297
+aS'little old man'
+p298
+aS'little teaspoon'
+p299
+aS'loser'
+p300
+aS'mary'
+p301
+aS'messy bessie'
+p302
+aS'mom'
+p303
+aS'mom (.) no (.)'
+p304
+aS"mom'd"
+p305
+aS'more bread'
+p306
+aS'more cherries'
+p307
+aS'morning'
+p308
+aS'mother'
+p309
+aS'nana'
+p310
+aS'night'
+p311
+aS'nothing'
+p312
+aS"o'clock"
+p313
+aS"o'clock at night"
+p314
+aS'only sunshine'
+p315
+aS'phone'
+p316
+aS'phone with chip'
+p317
+aS'radio'
+p318
+aS'room'
+p319
+aS'second shift'
+p320
+aS'sil'
+p321
+aS'sil mary'
+p322
+aS'slobby'
+p323
+aS'small yell]'
+p324
+aS'somethin(g)'
+p325
+aS'something'
+p326
+aS'song'
+p327
+aS'song xxx'
+p328
+aS'spoiled rotten little baby'
+p329
+aS'stomach'
+p330
+aS'stupid girl'
+p331
+aS'summer long xxx'
+p332
+aS'sun +/'
+p333
+aS'sunshine'
+p334
+aS'supper'
+p335
+aS'table'
+p336
+aS'tea parties'
+p337
+aS'tea parties at night'
+p338
+aS'things'
+p339
+aS'thirty'
+p340
+aS'time'
+p341
+aS'top of the stairs'
+p342
+aS'upstairs'
+p343
+aS'upstairs babe'
+p344
+aS'v_c_r'
+p345
+aS'vicious kids'
+p346
+aS'way'
+p347
+aS'white right bob'
+p348
+aS'words'
+p349
+aS'work with bell phone'
+p350
+aS'write+up in the paper after the play'
+p351
+aS'www'
+p352
+aS'xxx'
+p353
+aS'yyy'
+p354
+aa(lp355
+S'(.) clothes'
+p356
+aS'(.) juice'
+p357
+aS'(.) phone'
+p358
+aS'[///] mom'
+p359
+aS'[/] in a box'
+p360
+aS'american hero'
+p361
+aS'appetite'
+p362
+aS'apple seed'
+p363
+aS'baby'
+p364
+aS'better mariana'
+p365
+aS'bills'
+p366
+aS'bingo'
+p367
+aS'bit'
+p368
+aS'box'
+p369
+aS'boxes'
+p370
+aS'boy'
+p371
+aS'carmen'
+p372
+aS'change'
+p373
+aS'clothes'
+p374
+aS'coat'
+p375
+aS'cold mariana'
+p376
+aS'cough'
+p377
+aS'cubby'
+p378
+aS'cups'
+p379
+aS'daughters with a belt'
+p380
+aS'day'
+p381
+aS'dinner'
+p382
+aS'doctor'
+p383
+aS'dog'
+p384
+aS'dog name'
+p385
+aS'donald duck'
+p386
+aS'donald_duck'
+p387
+aS'dream'
+p388
+aS'duck tales'
+p389
+aS'duck_tales'
+p390
+aS'eat'
+p391
+aS'eliza'
+p392
+aS'face'
+p393
+aS'first grade'
+p394
+aS'first honey'
+p395
+aS'food'
+p396
+aS"food's"
+p397
+aS'funny mariana'
+p398
+aS'g_i_joe'
+p399
+aS'ghost'
+p400
+aS'ghosts'
+p401
+aS'glad (.)'
+p402
+aS'good boy'
+p403
+aS'good cheese'
+p404
+aS'good lord'
+p405
+aS'good mama'
+p406
+aS'good mommy'
+p407
+aS'grape'
+p408
+aS'great mariana'
+p409
+aS'guys'
+p410
+aS'hair'
+p411
+aS'hands'
+p412
+aS'hiccups'
+p413
+aS'honey'
+p414
+aS'jackie'
+p415
+aS'joe (.)'
+p416
+aS'joey (.)'
+p417
+aS'kindergarten'
+p418
+aS'kindergarten (.)'
+p419
+aS'letter'
+p420
+aS'letter mikey'
+p421
+aS'letter yesterday'
+p422
+aS'little bit'
+p423
+aS'look_it'
+p424
+aS'lord'
+p425
+aS'lot of things'
+p426
+aS'love tales'
+p427
+aS'mama'
+p428
+aS'many things'
+p429
+aS'mariana'
+p430
+aS'mariana mariana'
+p431
+aS'mariana xxx'
+p432
+aS'matter honey'
+p433
+aS'mickey mouse'
+p434
+aS'mickey_mouse'
+p435
+aS'mickey_mouse dog'
+p436
+aS'mikey'
+p437
+aS'mikey (.)'
+p438
+aS"mikey's"
+p439
+aS"mikey's school"
+p440
+aS'mom'
+p441
+aS'mommy'
+p442
+aS'mommy (.)'
+p443
+aS'more'
+p444
+aS'more juice'
+p445
+aS'more popsicles'
+p446
+aS'more sips'
+p447
+aS'more years'
+p448
+aS'more years mikey'
+p449
+aS'much pain'
+p450
+aS'name'
+p451
+aS'ngo'
+p452
+aS'nice lady'
+p453
+aS'nice school bag'
+p454
+aS'nuhhuh'
+p455
+aS'nuhhuh (.)'
+p456
+aS"one's mickey mouse"
+p457
+aS'ones'
+p458
+aS'onions mikey'
+p459
+aS'paper'
+p460
+aS'pedro'
+p461
+aS'picnic'
+p462
+aS'pink (.)'
+p463
+aS'places'
+p464
+aS'plate'
+p465
+aS'pluto'
+p466
+aS'pocketbook'
+p467
+aS'popsicle mariana'
+p468
+aS'popsicles in the box'
+p469
+aS'problem mariana'
+p470
+aS'program'
+p471
+aS'puerto rico'
+p472
+aS'rain'
+p473
+aS'real mommy'
+p474
+aS'right (.)'
+p475
+aS'rock'
+p476
+aS'rose'
+p477
+aS'school'
+p478
+aS'school bag'
+p479
+aS'school bags from mikey'
+p480
+aS'school mikey'
+p481
+aS"school's"
+p482
+aS'second winner'
+p483
+aS'something'
+p484
+aS'song'
+p485
+aS'spoon'
+p486
+aS'steps'
+p487
+aS'stomach'
+p488
+aS'store'
+p489
+aS'summer'
+p490
+aS'sun'
+p491
+aS'switch'
+p492
+aS't_v'
+p493
+aS'table'
+p494
+aS'teeth'
+p495
+aS'teresa'
+p496
+aS'thanks'
+p497
+aS'things'
+p498
+aS'things mariana'
+p499
+aS'throat'
+p500
+aS'time'
+p501
+aS'today'
+p502
+aS'tomorrow'
+p503
+aS'toys'
+p504
+aS'true mikey'
+p505
+aS"tummy's"
+p506
+aS'whole box in the freezer'
+p507
+aS'whole bunch'
+p508
+aS'word'
+p509
+aS'xxx'
+p510
+aS'yesterday'
+p511
+aS'zzz'
+p512
+aa(lp513
+S'(.) at the dinner table'
+p514
+aS'(.) music'
+p515
+aS'(.) nice florets'
+p516
+aS'(.) tape'
+p517
+aS"> [/] at your mother's house"
+p518
+aS'[//]'
+p519
+aS'anybody'
+p520
+aS'anything'
+p521
+aS'anything today'
+p522
+aS'anything yesterday'
+p523
+aS'anyways'
+p524
+aS'batteries'
+p525
+aS'better today'
+p526
+aS'big pieces'
+p527
+aS'big smile'
+p528
+aS'birthday'
+p529
+aS'bite'
+p530
+aS'bites'
+p531
+aS'bites of breakfast'
+p532
+aS'boy'
+p533
+aS'breakfast in the cafeteria at school'
+p534
+aS'cantaloupe chi'
+p535
+aS'cape'
+p536
+aS'cars'
+p537
+aS'chewy tootsie roll'
+p538
+aS'chi'
+p539
+aS'christmas'
+p540
+aS'chutes'
+p541
+aS'color'
+p542
+aS'correct thing'
+p543
+aS'couch for a little while'
+p544
+aS'count'
+p545
+aS'couple'
+p546
+aS'cups'
+p547
+aS'daddy'
+p548
+aS'day'
+p549
+aS'day after tomorrow chi'
+p550
+aS'day on friday'
+p551
+aS'del:icious'
+p552
+aS'delicious broccoli'
+p553
+aS'delicious cantaloupe'
+p554
+aS'different jesse'
+p555
+aS'dinner table'
+p556
+aS'dishes'
+p557
+aS'dog'
+p558
+aS'drink'
+p559
+aS"egg salad's>"
+p560
+aS'experimenters'
+p561
+aS'extra money'
+p562
+aS'f father_name'
+p563
+aS'fan'
+p564
+aS'father_name'
+p565
+aS'fever'
+p566
+aS'few weeks'
+p567
+aS'fingernails'
+p568
+aS'fish'
+p569
+aS'fish right'
+p570
+aS'food'
+p571
+aS'food in your mouth'
+p572
+aS'friday'
+p573
+aS'game'
+p574
+aS'games'
+p575
+aS'giggles'
+p576
+aS'gob'
+p577
+aS'good idea'
+p578
+aS'good sandwich'
+p579
+aS'good supper'
+p580
+aS'great supper'
+p581
+aS'green food'
+p582
+aS'guy on the motorcycle'
+p583
+aS'guys'
+p584
+aS'hand'
+p585
+aS'hankering for egg salad'
+p586
+aS'harley davidson'
+p587
+aS'house'
+p588
+aS'hums'
+p589
+aS'hunhunh'
+p590
+aS'jeepers'
+p591
+aS'jesse'
+p592
+aS'jesse at school'
+p593
+aS'kennan'
+p594
+aS'kennan lisa'
+p595
+aS'kind'
+p596
+aS'kind of a long time'
+p597
+aS'kinds of stuff'
+p598
+aS'ladders'
+p599
+aS'lady'
+p600
+aS'letter to mary'
+p601
+aS'line'
+p602
+aS'lisa'
+p603
+aS'little (.)'
+p604
+aS'little (.) tree of broccoli'
+p605
+aS'little bit'
+p606
+aS'little muscles'
+p607
+aS'little red light'
+p608
+aS'little tree'
+p609
+aS'little trees'
+p610
+aS'lollipops'
+p611
+aS'long long time'
+p612
+aS'lot'
+p613
+aS'lunch'
+p614
+aS'ma'
+p615
+aS'man'
+p616
+aS'many times'
+p617
+aS'many toys'
+p618
+aS'matter'
+p619
+aS'meal'
+p620
+aS'memory game'
+p621
+aS'mess'
+p622
+aS'minute'
+p623
+aS'money'
+p624
+aS'month'
+p625
+aS'more bites'
+p626
+aS'more broccoli'
+p627
+aS'more cantaloupe'
+p628
+aS'more food'
+p629
+aS'more games'
+p630
+aS'more months'
+p631
+aS'more sandwich'
+p632
+aS'mother'
+p633
+aS'mouth'
+p634
+aS'muscle inside +/'
+p635
+aS'muscles'
+p636
+aS'muscles (.) the only way'
+p637
+aS'music'
+p638
+aS'name'
+p639
+aS'new food'
+p640
+aS'new toys'
+p641
+aS'news'
+p642
+aS'nice juicy cantaloupe'
+p643
+aS'nice thing'
+p644
+aS'noise'
+p645
+aS'orange food'
+p646
+aS'other children'
+p647
+aS'other stuff'
+p648
+aS'party'
+p649
+aS'piece'
+p650
+aS'piece of broccoli'
+p651
+aS'plate'
+p652
+aS'plates'
+p653
+aS'provincetown'
+p654
+aS'puny today'
+p655
+aS'red light'
+p656
+aS'rest of your cantaloupe'
+p657
+aS'robot hand'
+p658
+aS'ruff'
+p659
+aS'sandwiches'
+p660
+aS'school'
+p661
+aS'screeches'
+p662
+aS'set of dishes'
+p663
+aS'shertainly'
+p664
+aS'sick pony'
+p665
+aS'skin'
+p666
+aS'somebody'
+p667
+aS'someone'
+p668
+aS'something'
+p669
+aS'son of a gun'
+p670
+aS'sort'
+p671
+aS'spoons'
+p672
+aS'stomach'
+p673
+aS'store'
+p674
+aS'superman cape'
+p675
+aS'supper'
+p676
+aS'table'
+p677
+aS'taste'
+p678
+aS'teeth'
+p679
+aS'telescope'
+p680
+aS'thanks mommy'
+p681
+aS'thing'
+p682
+aS'throat'
+p683
+aS'time'
+p684
+aS'times'
+p685
+aS'tiny bit'
+p686
+aS'today'
+p687
+aS'tongue'
+p688
+aS'top'
+p689
+aS'toy'
+p690
+aS"toy day's"
+p691
+aS'toy tray'
+p692
+aS'toys'
+p693
+aS'tramp'
+p694
+aS'tray'
+p695
+aS'tree'
+p696
+aS'try'
+p697
+aS'tummy'
+p698
+aS"tummy's"
+p699
+aS'tummy+ache'
+p700
+aS'voice'
+p701
+aS'way'
+p702
+aS'weeks'
+p703
+aS'whistles'
+p704
+aS'whole bunch'
+p705
+aS'whole bunch of questions'
+p706
+aS'whole bunch of sharks'
+p707
+aS'whole thing'
+p708
+aS"willn't>"
+p709
+aS'work'
+p710
+aS'work tomorrow'
+p711
+aS'www'
+p712
+aS'xxx'
+p713
+aS'yelps'
+p714
+aS'yesterday'
+p715
+aS'young women'
+p716
+aa(lp717
+S'big wheel'
+p718
+aS'bike'
+p719
+aS'bite'
+p720
+aS'bite brian'
+p721
+aS'bites'
+p722
+aS'boating'
+p723
+aS'books'
+p724
+aS'books from the library today'
+p725
+aS'brain'
+p726
+aS'brian'
+p727
+aS'butter on the noodles'
+p728
+aS'cackles'
+p729
+aS'cap'
+p730
+aS'cap gun'
+p731
+aS"cat's"
+p732
+aS'colors brian'
+p733
+aS'cup'
+p734
+aS'dessert'
+p735
+aS'dinner'
+p736
+aS'enough'
+p737
+aS'firecrackers'
+p738
+aS'firecrackers at night'
+p739
+aS'firecrackers though (.)'
+p740
+aS'freeze'
+p741
+aS'ground'
+p742
+aS'gun sean'
+p743
+aS'july'
+p744
+aS'legos'
+p745
+aS'lightning'
+p746
+aS'little basket'
+p747
+aS'little bike'
+p748
+aS'little house'
+p749
+aS'mom'
+p750
+aS'monday'
+p751
+aS'more sean'
+p752
+aS'only thunder'
+p753
+aS'other night brian'
+p754
+aS'paintings on the floor'
+p755
+aS"plate's"
+p756
+aS'red bike'
+p757
+aS'ryan'
+p758
+aS'sean'
+p759
+aS'shoots'
+p760
+aS'silly kid'
+p761
+aS'snap things'
+p762
+aS'somethin(g'
+p763
+aS'song'
+p764
+aS"sunday's"
+p765
+aS'supper'
+p766
+aS'taperecorder'
+p767
+aS'thunder'
+p768
+aS'time'
+p769
+aS'today'
+p770
+aS"today's"
+p771
+aS'tomorrow'
+p772
+aS'toy'
+p773
+aS'way'
+p774
+aS'week end fourth of july'
+p775
+aS'xxx'
+p776
+aS'zzz'
+p777
+aa(lp778
+S'(.) conner'
+p779
+aS'anything'
+p780
+aS'arm'
+p781
+aS'belly'
+p782
+aS'belly button'
+p783
+aS'big difference from a half'
+p784
+aS'big tomato'
+p785
+aS'bowl'
+p786
+aS'boy'
+p787
+aS'business of an hour'
+p788
+aS'coffee mix'
+p789
+aS'conner'
+p790
+aS"conner's by the t_v"
+p791
+aS'couple'
+p792
+aS'day'
+p793
+aS'diet'
+p794
+aS'doctor'
+p795
+aS'drink'
+p796
+aS'end of the salad'
+p797
+aS'face'
+p798
+aS'face jake'
+p799
+aS'fat cow'
+p800
+aS'favorite thing'
+p801
+aS'finger'
+p802
+aS'food in your mouth'
+p803
+aS'fool at the table'
+p804
+aS'fruit punch in the yellow jug'
+p805
+aS'god'
+p806
+aS'good thing'
+p807
+aS'grocery store'
+p808
+aS'guys'
+p809
+aS'half'
+p810
+aS'hands'
+p811
+aS'heck'
+p812
+aS'home'
+p813
+aS'hour'
+p814
+aS"hour's"
+p815
+aS'jake'
+p816
+aS"jake's"
+p817
+aS'jessie'
+p818
+aS"jessie's mother"
+p819
+aS'lettuce lettuce'
+p820
+aS'little bit'
+p821
+aS'little bunny rabbit'
+p822
+aS'little milk'
+p823
+aS'little piece'
+p824
+aS'little rest'
+p825
+aS'lunch'
+p826
+aS'lunch tomorrow'
+p827
+aS'mama'
+p828
+aS"mama's>"
+p829
+aS'may'
+p830
+aS"may's"
+p831
+aS"may's diet"
+p832
+aS'medicine'
+p833
+aS'milk juice milk'
+p834
+aS'milk juice milk juice milk juice milk juice milk'
+p835
+aS'milk mama'
+p836
+aS'mistake'
+p837
+aS'mom'
+p838
+aS"mom's"
+p839
+aS'more (.)'
+p840
+aS'more cucum(ber'
+p841
+aS'more milk'
+p842
+aS'more room'
+p843
+aS'mores'
+p844
+aS'nose'
+p845
+aS'ones'
+p846
+aS'other part'
+p847
+aS'outside'
+p848
+aS'page'
+p849
+aS'paper of my diet'
+p850
+aS'park'
+p851
+aS'piece of lettuce'
+p852
+aS'piece of paper'
+p853
+aS'plate'
+p854
+aS'plenty'
+p855
+aS'purpose'
+p856
+aS'quarter'
+p857
+aS'quick glass of water'
+p858
+aS'ride home'
+p859
+aS'shells'
+p860
+aS'shoot'
+p861
+aS'spaghetti on his shirt'
+p862
+aS'stomach'
+p863
+aS'stuff'
+p864
+aS't)a'
+p865
+aS't_v'
+p866
+aS'talk'
+p867
+aS'tape'
+p868
+aS'thirty'
+p869
+aS'thumb'
+p870
+aS'to)matoes'
+p871
+aS'tomato jake'
+p872
+aS'tongue'
+p873
+aS'watch'
+p874
+aS'whole bowl'
+p875
+aS'xxx'
+p876
+aS'xxx diet soda'
+p877
+aS'xxx ones'
+p878
+aS'zzz'
+p879
+aa(lp880
+S'(.) corn on the cob'
+p881
+aS'alone emily'
+p882
+aS'amanda'
+p883
+aS'ashtray'
+p884
+aS'baby+sitter'
+p885
+aS'brian'
+p886
+aS"brian's"
+p887
+aS"broccoli's"
+p888
+aS'bum'
+p889
+aS'chair'
+p890
+aS'chi'
+p891
+aS"chi's"
+p892
+aS'christmas time'
+p893
+aS'church'
+p894
+aS'clothes'
+p895
+aS'corn heather'
+p896
+aS'corn on the cob heather'
+p897
+aS'counter'
+p898
+aS'cups'
+p899
+aS'dad'
+p900
+aS'daddy'
+p901
+aS'dessert'
+p902
+aS'dish'
+p903
+aS'dish heather'
+p904
+aS'emily'
+p905
+aS"emily's"
+p906
+aS"emily's thing"
+p907
+aS'enough stuff for a fruit salad'
+p908
+aS'everything'
+p909
+aS'food'
+p910
+aS'fork'
+p911
+aS'frank'
+p912
+aS'freddie'
+p913
+aS'freddy'
+p914
+aS'friends'
+p915
+aS'fun'
+p916
+aS'girl susan'
+p917
+aS'good girl'
+p918
+aS'guys'
+p919
+aS'half'
+p920
+aS'heather'
+p921
+aS"heather's"
+p922
+aS"heather's plate"
+p923
+aS'home'
+p924
+aS'hot pat'
+p925
+aS'idea'
+p926
+aS'jean'
+p927
+aS'kids'
+p928
+aS'lady'
+p929
+aS'language'
+p930
+aS'little brian'
+p931
+aS'long time'
+p932
+aS'lot'
+p933
+aS'matter'
+p934
+aS'meeting'
+p935
+aS'minutes'
+p936
+aS'mom'
+p937
+aS'mommy'
+p938
+aS'more'
+p939
+aS'more applesauce'
+p940
+aS'more broccoli'
+p941
+aS'more corn on the cob'
+p942
+aS'more porkchops'
+p943
+aS'more potato salad'
+p944
+aS'mouth'
+p945
+aS"mouth's"
+p946
+aS'napkins'
+p947
+aS'nine'
+p948
+aS'nobody'
+p949
+aS"o'clock"
+p950
+aS'okay guys'
+p951
+aS'other day'
+p952
+aS'other day with that lady jean'
+p953
+aS'own baby'
+p954
+aS'paper napkins'
+p955
+aS'parkway'
+p956
+aS'pat'
+p957
+aS'pat (.)'
+p958
+aS"pat's"
+p959
+aS'people'
+p960
+aS'pepper mom'
+p961
+aS'player'
+p962
+aS'radio'
+p963
+aS'regular church'
+p964
+aS'room'
+p965
+aS'shower'
+p966
+aS'somebody'
+p967
+aS'spoon'
+p968
+aS'spoon emily'
+p969
+aS'study on language'
+p970
+aS'study on xxx'
+p971
+aS'summer'
+p972
+aS'susan'
+p973
+aS'table'
+p974
+aS'tape'
+p975
+aS'tim'
+p976
+aS'time'
+p977
+aS'tooth'
+p978
+aS'toys'
+p979
+aS'water mommy'
+p980
+aS'whole year supply'
+p981
+aS'whole year supply mommy'
+p982
+aS'xxx'
+p983
+aS'xxx mom'
+p984
+aS'year'
+p985
+aS'yellow thing'
+p986
+aS'yellow things'
+p987
+aa(lp988
+S'(.) april'
+p989
+aS'(.) baby pork chops'
+p990
+aS'(.) god'
+p991
+aS'(.) letters to your numbers'
+p992
+aS'(.) more water'
+p993
+aS'(.) pork chops'
+p994
+aS'(.) potatoes'
+p995
+aS'(.) salad'
+p996
+aS'air'
+p997
+aS'airplane'
+p998
+aS'animals'
+p999
+aS'anybody'
+p1000
+aS'anything'
+p1001
+aS'appetite'
+p1002
+aS'april'
+p1003
+aS'april lips'
+p1004
+aS'august'
+p1005
+aS'auntie'
+p1006
+aS'auntie mabel'
+p1007
+aS'auntie mabel (.)'
+p1008
+aS'auntie mabel [///] everybody'
+p1009
+aS'auntie mary'
+p1010
+aS'auntie mary +/'
+p1011
+aS"auntie's"
+p1012
+aS'babies'
+p1013
+aS'baby'
+p1014
+aS'baby panties'
+p1015
+aS"baby's panties"
+p1016
+aS"backbone'd"
+p1017
+aS'bar'
+p1018
+aS'barbie doll'
+p1019
+aS'bath +/'
+p1020
+aS'bed'
+p1021
+aS'big mouth'
+p1022
+aS'big slide'
+p1023
+aS'birthday october'
+p1024
+aS"body's"
+p1025
+aS'book'
+p1026
+aS'bottle'
+p1027
+aS'bran cereal'
+p1028
+aS'brockton fair'
+p1029
+aS'building'
+p1030
+aS"bus driver's>"
+p1031
+aS'buttons'
+p1032
+aS'cabbage patch'
+p1033
+aS'case'
+p1034
+aS'cat'
+p1035
+aS'cat in the book'
+p1036
+aS'cat inside the red book'
+p1037
+aS'certain sounds'
+p1038
+aS'christmas time'
+p1039
+aS'computer'
+p1040
+aS'computer screen'
+p1041
+aS'corner'
+p1042
+aS'couple of time'
+p1043
+aS'dad'
+p1044
+aS'day'
+p1045
+aS'days'
+p1046
+aS'delicious honey'
+p1047
+aS'diet ginger+ale'
+p1048
+aS'diet sodas'
+p1049
+aS'diet sprite diet slice'
+p1050
+aS'diet sprite for lunch'
+p1051
+aS'diet today'
+p1052
+aS'dinner'
+p1053
+aS'dog'
+p1054
+aS'doll panties'
+p1055
+aS'dollars'
+p1056
+aS'dress'
+p1057
+aS'drink'
+p1058
+aS'early thursday'
+p1059
+aS'elka'
+p1060
+aS'enough april'
+p1061
+aS'enough babies'
+p1062
+aS'enough potatoes'
+p1063
+aS'enough toys at home'
+p1064
+aS'enough water'
+p1065
+aS'erica'
+p1066
+aS'everybody'
+p1067
+aS'everything'
+p1068
+aS'everything diet'
+p1069
+aS'exercise'
+p1070
+aS'face'
+p1071
+aS'fair'
+p1072
+aS'family reunion'
+p1073
+aS'few years'
+p1074
+aS'firm'
+p1075
+aS'floor'
+p1076
+aS'folks'
+p1077
+aS'food'
+p1078
+aS'food tomorrow'
+p1079
+aS'foods'
+p1080
+aS'form'
+p1081
+aS'friday'
+p1082
+aS'games'
+p1083
+aS'girls'
+p1084
+aS'god'
+p1085
+aS'good potatoes'
+p1086
+aS'grace'
+p1087
+aS'grandma'
+p1088
+aS'granski'
+p1089
+aS'great big mess'
+p1090
+aS'gwen'
+p1091
+aS'gwenski'
+p1092
+aS'habit'
+p1093
+aS'habit of every day'
+p1094
+aS'hair'
+p1095
+aS'hair thursday'
+p1096
+aS'hands'
+p1097
+aS'head'
+p1098
+aS'home'
+p1099
+aS'honey'
+p1100
+aS'hospital egg crate thing'
+p1101
+aS'house'
+p1102
+aS'joanna'
+p1103
+aS'joey'
+p1104
+aS'keys'
+p1105
+aS'kids'
+p1106
+aS'kind'
+p1107
+aS'koolaid milk'
+p1108
+aS'ladies'
+p1109
+aS'ladybug'
+p1110
+aS'last time gwen'
+p1111
+aS'letters'
+p1112
+aS'little friend'
+p1113
+aS'little girl name'
+p1114
+aS'lot'
+p1115
+aS'lunch'
+p1116
+aS'man'
+p1117
+aS'mandi'
+p1118
+aS'many days'
+p1119
+aS'mat'
+p1120
+aS'math'
+p1121
+aS'mattapan'
+p1122
+aS'meal'
+p1123
+aS'mine'
+p1124
+aS'minute'
+p1125
+aS'mommy'
+p1126
+aS'monica'
+p1127
+aS'more chicken'
+p1128
+aS'more fried chicken'
+p1129
+aS'morgan street'
+p1130
+aS'morning'
+p1131
+aS'mouth'
+p1132
+aS'music'
+p1133
+aS'name'
+p1134
+aS'napkin'
+p1135
+aS'new cereal'
+p1136
+aS'new york'
+p1137
+aS'next friday'
+p1138
+aS'next sunday'
+p1139
+aS'next weekend'
+p1140
+aS'nice beautiful style'
+p1141
+aS'nice ones'
+p1142
+aS'nice thing'
+p1143
+aS'nice thing that gregory'
+p1144
+aS'nice toy'
+p1145
+aS'night'
+p1146
+aS'noncooking diet'
+p1147
+aS'none'
+p1148
+aS'nothin(g'
+p1149
+aS'nothing'
+p1150
+aS'nut'
+p1151
+aS"o'clock on a sunday"
+p1152
+aS'old xxx'
+p1153
+aS'only thing'
+p1154
+aS'other day for the baby'
+p1155
+aS'other kids name'
+p1156
+aS'other time'
+p1157
+aS'pamper'
+p1158
+aS'panties'
+p1159
+aS'parers'
+p1160
+aS'part of the program'
+p1161
+aS'pennsylvania to the xxx'
+p1162
+aS"people's"
+p1163
+aS'po)tatoes'
+p1164
+aS'portrait'
+p1165
+aS'potatoes april'
+p1166
+aS'pounds'
+p1167
+aS'priscilla'
+p1168
+aS'problems'
+p1169
+aS'ricky'
+p1170
+aS'ricky (.)'
+p1171
+aS'salad for the last week'
+p1172
+aS'salina'
+p1173
+aS'school'
+p1174
+aS'school day thing that friday'
+p1175
+aS'school today'
+p1176
+aS'skim milk'
+p1177
+aS'somethin(g'
+p1178
+aS'something'
+p1179
+aS'spot'
+p1180
+aS'state house'
+p1181
+aS'store tomorrow'
+p1182
+aS'stories'
+p1183
+aS'story'
+p1184
+aS'story about the cat'
+p1185
+aS'story about the dog'
+p1186
+aS'stuff'
+p1187
+aS'stuff on this table'
+p1188
+aS'sunday'
+p1189
+aS'table'
+p1190
+aS'tape recorder'
+p1191
+aS'teacher'
+p1192
+aS'tenth'
+p1193
+aS'texas instrument'
+p1194
+aS'texas instrument toys'
+p1195
+aS'thing in front'
+p1196
+aS'things'
+p1197
+aS'time'
+p1198
+aS'today'
+p1199
+aS'tomorrow'
+p1200
+aS'tomorrow afternoon thanksgiving'
+p1201
+aS'tomorrow night'
+p1202
+aS"tomorrow's tomorrow"
+p1203
+aS'try'
+p1204
+aS'tyrone (.)'
+p1205
+aS'van'
+p1206
+aS"van driver's name"
+p1207
+aS"van's name april"
+p1208
+aS'veronica'
+p1209
+aS'water in that thing'
+p1210
+aS'way'
+p1211
+aS'way of life'
+p1212
+aS'week'
+p1213
+aS'weekend'
+p1214
+aS'weekend in new york'
+p1215
+aS'weekends'
+p1216
+aS'weight'
+p1217
+aS'while'
+p1218
+aS'whole big package of potatoes'
+p1219
+aS'wonder'
+p1220
+aS'work'
+p1221
+aS'work early tomorrow'
+p1222
+aS'wrong (.) number'
+p1223
+aS'www'
+p1224
+aS'xxx'
+p1225
+aS'year'
+p1226
+aS'years'
+p1227
+aS'zayres yesterday gwen'
+p1228
+aa(lp1229
+S'&-uh colleges'
+p1230
+aS'(.) ashes'
+p1231
+aS'(.) chicken'
+p1232
+aS'(rab)bit'
+p1233
+aS'[//]'
+p1234
+aS'almanac'
+p1235
+aS'almanac atlas'
+p1236
+aS'anything'
+p1237
+aS'arrow'
+p1238
+aS'ashes'
+p1239
+aS'astronomical rate'
+p1240
+aS'audio tape'
+p1241
+aS'back'
+p1242
+aS'balloons'
+p1243
+aS'barbecue'
+p1244
+aS'barbecued calendars'
+p1245
+aS'bath+room'
+p1246
+aS'bert'
+p1247
+aS'bi(s)cuits'
+p1248
+aS'big cabin'
+p1249
+aS'bird'
+p1250
+aS'birthday'
+p1251
+aS'birthday present'
+p1252
+aS'birthday present honey in august'
+p1253
+aS'birthday yesterday'
+p1254
+aS'bl(ue'
+p1255
+aS'blow'
+p1256
+aS'book'
+p1257
+aS'book about hotels'
+p1258
+aS'books'
+p1259
+aS'boy'
+p1260
+aS'brendan'
+p1261
+aS'bro'
+p1262
+aS"bro's dinner"
+p1263
+aS'brook'
+p1264
+aS"brook's birthday today"
+p1265
+aS'bugs bunny'
+p1266
+aS'busy bee'
+p1267
+aS'busy wake'
+p1268
+aS'busy week'
+p1269
+aS'cabin'
+p1270
+aS'cabin for the song'
+p1271
+aS'cabin in the wood (.)'
+p1272
+aS'cabin in the woods'
+p1273
+aS'cake tonight'
+p1274
+aS'cake with eggs'
+p1275
+aS'calendar'
+p1276
+aS'calendars'
+p1277
+aS'can'
+p1278
+aS'can of cat food'
+p1279
+aS'can of cat+food'
+p1280
+aS'cartoon'
+p1281
+aS'cartoons'
+p1282
+aS'cat food'
+p1283
+aS'cats'
+p1284
+aS'chi'
+p1285
+aS'chicken munchkin'
+p1286
+aS"chicken's"
+p1287
+aS'christmas'
+p1288
+aS'christmas present'
+p1289
+aS'christmas present yesterday'
+p1290
+aS'christmas time'
+p1291
+aS'christopher'
+p1292
+aS'cigarette'
+p1293
+aS'coals'
+p1294
+aS'cold weather'
+p1295
+aS'color something'
+p1296
+aS'concert'
+p1297
+aS'confrontation'
+p1298
+aS'countries'
+p1299
+aS'couple of minutes'
+p1300
+aS'couple of pieces'
+p1301
+aS'couple times in the warm weather'
+p1302
+aS'cup'
+p1303
+aS'cush'
+p1304
+aS'daddy'
+p1305
+aS"daddy's"
+p1306
+aS'day'
+p1307
+aS'different thing'
+p1308
+aS'dinner'
+p1309
+aS'dinner time'
+p1310
+aS'dinosaur'
+p1311
+aS'dinosaur cup'
+p1312
+aS'dinosaur placement'
+p1313
+aS'dinosaurs'
+p1314
+aS'dollars'
+p1315
+aS'drink'
+p1316
+aS'dylan'
+p1317
+aS"dylan's in his last minute thing"
+p1318
+aS"dylan's napkin"
+p1319
+aS'ear'
+p1320
+aS"earling's"
+p1321
+aS'economics'
+p1322
+aS'emotional side'
+p1323
+aS'encore'
+p1324
+aS'encore last night'
+p1325
+aS'encores'
+p1326
+aS'end'
+p1327
+aS'enough chicken'
+p1328
+aS'enough to [/]'
+p1329
+aS'ernie'
+p1330
+aS'everything'
+p1331
+aS'eyes'
+p1332
+aS'facts'
+p1333
+aS'fall'
+p1334
+aS'families'
+p1335
+aS'fan'
+p1336
+aS'federal prisoners'
+p1337
+aS'first barbecue of the year'
+p1338
+aS'first day of spring'
+p1339
+aS'first thing'
+p1340
+aS'first time'
+p1341
+aS'fishing rod down honey'
+p1342
+aS'fit on the tape'
+p1343
+aS'floor'
+p1344
+aS'food'
+p1345
+aS'freezer'
+p1346
+aS'friday'
+p1347
+aS'friends'
+p1348
+aS'fun song'
+p1349
+aS'gail'
+p1350
+aS'game'
+p1351
+aS'good (.)'
+p1352
+aS'good boy'
+p1353
+aS'good idea'
+p1354
+aS'good memory nathaniel'
+p1355
+aS'good thank'
+p1356
+aS'grass'
+p1357
+aS'greedy brother'
+p1358
+aS'gum drop gum drop'
+p1359
+aS'guy'
+p1360
+aS'hair of my gum gum drop'
+p1361
+aS'hand'
+p1362
+aS'hands'
+p1363
+aS'happy birthday'
+p1364
+aS'head'
+p1365
+aS'hell'
+p1366
+aS'henry'
+p1367
+aS'home'
+p1368
+aS'home from the library yesterday'
+p1369
+aS'home with christopher'
+p1370
+aS'honey'
+p1371
+aS'hot(el'
+p1372
+aS'hotel'
+p1373
+aS'house today'
+p1374
+aS'huge rate'
+p1375
+aS'hungary'
+p1376
+aS'hunter'
+p1377
+aS'information'
+p1378
+aS'inside'
+p1379
+aS'ireland'
+p1380
+aS'january'
+p1381
+aS'judy'
+p1382
+aS'karen'
+p1383
+aS'kathy +/'
+p1384
+aS'kind'
+p1385
+aS'kitchen'
+p1386
+aS'landscape'
+p1387
+aS'last year'
+p1388
+aS'layers'
+p1389
+aS'letter'
+p1390
+aS'letter to the other teacher'
+p1391
+aS'library'
+p1392
+aS'light'
+p1393
+aS'light golden brown'
+p1394
+aS'light golden brown across the top (.)'
+p1395
+aS'lights'
+p1396
+aS'little bit'
+p1397
+aS'little cassette'
+p1398
+aS'little man by a window'
+p1399
+aS'little man by the window'
+p1400
+aS'little points'
+p1401
+aS'little ra(bbit'
+p1402
+aS'little rabbit'
+p1403
+aS'little stuff points'
+p1404
+aS'living room'
+p1405
+aS'liz'
+p1406
+aS'long thing'
+p1407
+aS'lot of bone'
+p1408
+aS'lot of stuff'
+p1409
+aS'lot of things'
+p1410
+aS'love'
+p1411
+aS'low +/'
+p1412
+aS'lowest suicide rate'
+p1413
+aS'm(om)'
+p1414
+aS'ma'
+p1415
+aS'magic penny'
+p1416
+aS'many people in the sand yard'
+p1417
+aS'mars'
+p1418
+aS'mass eye'
+p1419
+aS'mat(ch'
+p1420
+aS'match'
+p1421
+aS'math class schedule'
+p1422
+aS"mcdonald's"
+p1423
+aS"mcdonald's>"
+p1424
+aS'medium golden brown'
+p1425
+aS'melanie'
+p1426
+aS'mexico'
+p1427
+aS'michael'
+p1428
+aS"michael's birthday"
+p1429
+aS'mind'
+p1430
+aS'minutes'
+p1431
+aS'mom'
+p1432
+aS'mommy'
+p1433
+aS'money'
+p1434
+aS'month'
+p1435
+aS'mother'
+p1436
+aS'mouth'
+p1437
+aS'mummy'
+p1438
+aS'mummy home'
+p1439
+aS'mushy part'
+p1440
+aS'name'
+p1441
+aS'napkin'
+p1442
+aS'napkins'
+p1443
+aS'nathaniel'
+p1444
+aS'new flavor'
+p1445
+aS'new placemat'
+p1446
+aS'new york bit'
+p1447
+aS'newer information'
+p1448
+aS'next month'
+p1449
+aS'next time'
+p1450
+aS'night'
+p1451
+aS'nights of the museum school'
+p1452
+aS'nine point'
+p1453
+aS'noise'
+p1454
+aS'nose'
+p1455
+aS'nose in nathaniel land'
+p1456
+aS'ocean white flavor'
+p1457
+aS'old placemat today'
+p1458
+aS'one'
+p1459
+aS'ones'
+p1460
+aS'open center'
+p1461
+aS'other kids'
+p1462
+aS'other lights'
+p1463
+aS'other love song'
+p1464
+aS'other presents'
+p1465
+aS'other sweets'
+p1466
+aS'other teacher'
+p1467
+aS"other teacher's"
+p1468
+aS'other teachers'
+p1469
+aS'other way'
+p1470
+aS'oven'
+p1471
+aS'overhead fan'
+p1472
+aS'overhead light'
+p1473
+aS'own sweets'
+p1474
+aS'pardon'
+p1475
+aS'part'
+p1476
+aS'part of the xxx'
+p1477
+aS'part series with andy cervick'
+p1478
+aS'pee+pee'
+p1479
+aS'penny part'
+p1480
+aS'people'
+p1481
+aS'philip flack'
+p1482
+aS'phone'
+p1483
+aS'piece'
+p1484
+aS'piece of chicken'
+p1485
+aS'pin cush'
+p1486
+aS'pin cushion'
+p1487
+aS'pin cushion guy'
+p1488
+aS'pin cushion man'
+p1489
+aS'pins'
+p1490
+aS'plants'
+p1491
+aS'plate'
+p1492
+aS'playdough in everything'
+p1493
+aS'pleiades moon'
+p1494
+aS'pocket'
+p1495
+aS'point'
+p1496
+aS'present'
+p1497
+aS'present yesterday'
+p1498
+aS'presents that mac'
+p1499
+aS'rabbit'
+p1500
+aS"rabbit's"
+p1501
+aS"rabbit's foot"
+p1502
+aS'rate'
+p1503
+aS're)frige(rator'
+p1504
+aS're)frigerator'
+p1505
+aS'real calendar'
+p1506
+aS'reason'
+p1507
+aS'refrigerator'
+p1508
+aS'rest'
+p1509
+aS'rickety chairs'
+p1510
+aS'room'
+p1511
+aS'rosy pocket'
+p1512
+aS'school'
+p1513
+aS'school today'
+p1514
+aS'season'
+p1515
+aS'seat'
+p1516
+aS'seats in nathaniel land'
+p1517
+aS'second part of love'
+p1518
+aS'second side'
+p1519
+aS'second side of the tape'
+p1520
+aS'show'
+p1521
+aS'show xxx'
+p1522
+aS'side'
+p1523
+aS'sky'
+p1524
+aS'sleeves'
+p1525
+aS'snow'
+p1526
+aS'social studies'
+p1527
+aS'something'
+p1528
+aS'something for dylan'
+p1529
+aS'son'
+p1530
+aS'son christopher'
+p1531
+aS'song'
+p1532
+aS'sorry harve'
+p1533
+aS'sound'
+p1534
+aS'spill'
+p1535
+aS'spring vacation'
+p1536
+aS'stu(ff)'
+p1537
+aS'stuff'
+p1538
+aS'sucker'
+p1539
+aS'suicide rates'
+p1540
+aS'sun'
+p1541
+aS'sun set'
+p1542
+aS'sunday'
+p1543
+aS"suzanne's sister"
+p1544
+aS'sweatshirt'
+p1545
+aS'symbolic cash'
+p1546
+aS't_v'
+p1547
+aS'table'
+p1548
+aS'tape'
+p1549
+aS'tape recorder'
+p1550
+aS'tapes'
+p1551
+aS'teacher'
+p1552
+aS'teachers'
+p1553
+aS'television'
+p1554
+aS'tension'
+p1555
+aS'thanks'
+p1556
+aS'thanks hon'
+p1557
+aS'thing'
+p1558
+aS'thing in back of your toy'
+p1559
+aS'things'
+p1560
+aS'thirty'
+p1561
+aS'time'
+p1562
+aS'time people'
+p1563
+aS'today'
+p1564
+aS'today [/] today'
+p1565
+aS'tomorrow'
+p1566
+aS'tonight'
+p1567
+aS'tops'
+p1568
+aS'toy'
+p1569
+aS'toy at our table'
+p1570
+aS'toy mom'
+p1571
+aS'toybox'
+p1572
+aS'toys at our table'
+p1573
+aS'toys at the table munchkin'
+p1574
+aS'tummy'
+p1575
+aS'vacation time'
+p1576
+aS'venus (.)'
+p1577
+aS'video'
+p1578
+aS'video tapes with &-uh cartoons'
+p1579
+aS'warm weather'
+p1580
+aS'way'
+p1581
+aS'way from the other room'
+p1582
+aS'weather'
+p1583
+aS'week'
+p1584
+aS'west berlin'
+p1585
+aS'west germany'
+p1586
+aS'while'
+p1587
+aS'white fish ocean white fish flavor'
+p1588
+aS'whole bunch'
+p1589
+aS'wind'
+p1590
+aS'window up front'
+p1591
+aS'work'
+p1592
+aS'world'
+p1593
+aS'wrong seat'
+p1594
+aS'www'
+p1595
+aS'xxx'
+p1596
+aS'year'
+p1597
+aS'yearbook'
+p1598
+aS'yesterday'
+p1599
+aS'yucky boy'
+p1600
+aa(lp1601
+S'&p'
+p1602
+aS'[//] stanley'
+p1603
+aS'act'
+p1604
+aS'amelia'
+p1605
+aS'ann'
+p1606
+aS'anybody'
+p1607
+aS'anything'
+p1608
+aS'apple circus brian'
+p1609
+aS'aside'
+p1610
+aS'baby'
+p1611
+aS'back xxx in my mouth'
+p1612
+aS'ball'
+p1613
+aS'basketball game'
+p1614
+aS'beach'
+p1615
+aS'boats'
+p1616
+aS'booze brian (.)'
+p1617
+aS'bran brian'
+p1618
+aS'brendan'
+p1619
+aS"brendan's mom"
+p1620
+aS'brian'
+p1621
+aS'bugs'
+p1622
+aS'candy'
+p1623
+aS'cape'
+p1624
+aS'cape in july for a week'
+p1625
+aS'car'
+p1626
+aS'casey'
+p1627
+aS'casey tomatoes'
+p1628
+aS'celtics'
+p1629
+aS'chinese boy'
+p1630
+aS'chinese girl'
+p1631
+aS'circus'
+p1632
+aS'circus with the xxx'
+p1633
+aS'circuses'
+p1634
+aS'corn brian'
+p1635
+aS'croutons brian'
+p1636
+aS'cubby'
+p1637
+aS'dad'
+p1638
+aS'daddy'
+p1639
+aS'daniel'
+p1640
+aS'danny ainge'
+p1641
+aS'david'
+p1642
+aS'days'
+p1643
+aS'dollar'
+p1644
+aS'dollars'
+p1645
+aS'drink'
+p1646
+aS'duck'
+p1647
+aS'everybody'
+p1648
+aS'everything'
+p1649
+aS'face'
+p1650
+aS'favorites'
+p1651
+aS'fingers'
+p1652
+aS'fire'
+p1653
+aS'fire crackers'
+p1654
+aS'firecrackers'
+p1655
+aS'firecrackers at xxx'
+p1656
+aS'foot'
+p1657
+aS'george'
+p1658
+aS'god'
+p1659
+aS'good boy casey'
+p1660
+aS'good everybody'
+p1661
+aS'good mom'
+p1662
+aS'good time at the circus brian'
+p1663
+aS'grass'
+p1664
+aS'guy'
+p1665
+aS'guys'
+p1666
+aS'hands'
+p1667
+aS'home'
+p1668
+aS'insect'
+p1669
+aS'intermission'
+p1670
+aS'j_c'
+p1671
+aS'july fourth'
+p1672
+aS'july fourth weekend'
+p1673
+aS'kate'
+p1674
+aS'kay'
+p1675
+aS'kids hands'
+p1676
+aS'larry'
+p1677
+aS'light'
+p1678
+aS'lighthouse for a whole week'
+p1679
+aS'little bit sick today'
+p1680
+aS'little round small things'
+p1681
+aS'long time'
+p1682
+aS'mick'
+p1683
+aS'mikey'
+p1684
+aS'mom'
+p1685
+aS'nina'
+p1686
+aS'nobody'
+p1687
+aS'none honey'
+p1688
+aS'nothing'
+p1689
+aS'ones'
+p1690
+aS'other kids'
+p1691
+aS'own (.)'
+p1692
+aS'paper'
+p1693
+aS'parents'
+p1694
+aS'pepsi in the milk'
+p1695
+aS'peter'
+p1696
+aS'pieces'
+p1697
+aS'place'
+p1698
+aS'red stuff'
+p1699
+aS'rockets'
+p1700
+aS'roman candle'
+p1701
+aS'ryan'
+p1702
+aS'same circus'
+p1703
+aS'same thing'
+p1704
+aS'sasha'
+p1705
+aS'school'
+p1706
+aS'school tomorrow'
+p1707
+aS'shopping tomorrow'
+p1708
+aS'sick yesterday'
+p1709
+aS'something'
+p1710
+aS'stan'
+p1711
+aS'stanley'
+p1712
+aS"steak's"
+p1713
+aS'stomach'
+p1714
+aS"strap's"
+p1715
+aS'stuff'
+p1716
+aS'sunday'
+p1717
+aS'thing'
+p1718
+aS'time'
+p1719
+aS'toys'
+p1720
+aS'uncle'
+p1721
+aS'vegetable'
+p1722
+aS'way'
+p1723
+aS'weekend'
+p1724
+aS'weekends'
+p1725
+aS'whole bunch'
+p1726
+aS'xxx'
+p1727
+aS'xxx missus reilly'
+p1728
+aS'xxx tomatoes'
+p1729
+aS'year'
+p1730
+aa(lp1731
+S'blocks'
+p1732
+aS'blocks chi'
+p1733
+aS'blocks chi >'
+p1734
+aS'bro'
+p1735
+aS'call'
+p1736
+aS'chi'
+p1737
+aS'chi (.)'
+p1738
+aS'cook'
+p1739
+aS'eee'
+p1740
+aS'fire hat'
+p1741
+aS'fireman'
+p1742
+aS'hat'
+p1743
+aS'hat]'
+p1744
+aS'hats'
+p1745
+aS'kitchen'
+p1746
+aS"old lady's hat"
+p1747
+aS'phone'
+p1748
+aS'something'
+p1749
+aS'stuff'
+p1750
+aS'toys'
+p1751
+aa(lp1752
+S'(.) dunk'
+p1753
+aS'(.) ice cream cone'
+p1754
+aS'(.) side'
+p1755
+aS'(.) tuna+fish'
+p1756
+aS'[//]'
+p1757
+aS'alley'
+p1758
+aS'alligator'
+p1759
+aS'arms'
+p1760
+aS'auntie'
+p1761
+aS'balloon'
+p1762
+aS'balloon (.)'
+p1763
+aS'beg(inning'
+p1764
+aS'belly'
+p1765
+aS'big girl'
+p1766
+aS'big pool'
+p1767
+aS'bikes'
+p1768
+aS'boom'
+p1769
+aS'bowl of soup'
+p1770
+aS'bridget'
+p1771
+aS'bunny'
+p1772
+aS"bunny's"
+p1773
+aS'cars'
+p1774
+aS'chi'
+p1775
+aS'chi (.)'
+p1776
+aS'colors'
+p1777
+aS'cucumbers (.)'
+p1778
+aS'cucumbers chi'
+p1779
+aS'dad'
+p1780
+aS'daddy'
+p1781
+aS'daddy in (.) with daddy (.)'
+p1782
+aS'daddy xxx'
+p1783
+aS"daddy's"
+p1784
+aS"daddy's big pool"
+p1785
+aS"daddy's pool"
+p1786
+aS"david's"
+p1787
+aS'deck'
+p1788
+aS'dessert'
+p1789
+aS'different pool than that pool'
+p1790
+aS'dishes'
+p1791
+aS'donna'
+p1792
+aS'dunk'
+p1793
+aS'enough'
+p1794
+aS'farm'
+p1795
+aS'fast enough'
+p1796
+aS'favorite'
+p1797
+aS'fireworks'
+p1798
+aS'fork'
+p1799
+aS'girls'
+p1800
+aS'glass'
+p1801
+aS'glass of milk'
+p1802
+aS'good girl'
+p1803
+aS'helicopters'
+p1804
+aS'honey'
+p1805
+aS'horses'
+p1806
+aS'ice cream cone tomorrow'
+p1807
+aS'jack'
+p1808
+aS'little bites'
+p1809
+aS'long time'
+p1810
+aS'lunch today'
+p1811
+aS'mama'
+p1812
+aS'mom'
+p1813
+aS"mom's"
+p1814
+aS'mommy'
+p1815
+aS'more chicken'
+p1816
+aS'more cucumbers'
+p1817
+aS'more meat'
+p1818
+aS'more meat donna'
+p1819
+aS'motorcycles'
+p1820
+aS'mouth'
+p1821
+aS'nanny'
+p1822
+aS'next year'
+p1823
+aS'nothing'
+p1824
+aS'olly'
+p1825
+aS'other colors'
+p1826
+aS'other night chi'
+p1827
+aS'others'
+p1828
+aS'plate'
+p1829
+aS'plenty'
+p1830
+aS'pool'
+p1831
+aS'pool after supper'
+p1832
+aS'pool today'
+p1833
+aS'pool while mama'
+p1834
+aS'pool with daddy'
+p1835
+aS'pool with daddy (.)'
+p1836
+aS'pretty colors'
+p1837
+aS'purple'
+p1838
+aS'sandy'
+p1839
+aS'seeds'
+p1840
+aS'seeds in the ground'
+p1841
+aS'shark'
+p1842
+aS'sky'
+p1843
+aS'star'
+p1844
+aS'star (.)'
+p1845
+aS'supper'
+p1846
+aS'things'
+p1847
+aS'things last night'
+p1848
+aS'time for supper'
+p1849
+aS'today with daddy in the pool'
+p1850
+aS'tomorrow'
+p1851
+aS'truck'
+p1852
+aS'water wings'
+p1853
+aS'way'
+p1854
+aS'white (.)'
+p1855
+aS'wubby'
+p1856
+aS'yard today (.)'
+p1857
+aa(lp1858
+S'&e'
+p1859
+aS'(.) momma'
+p1860
+aS'(.) mommy'
+p1861
+aS'(.) mommy god'
+p1862
+aS'[/] at the trip'
+p1863
+aS'[/] on my heart'
+p1864
+aS'[/] than [/] than a window'
+p1865
+aS'amy'
+p1866
+aS'anything'
+p1867
+aS'bed without my drink'
+p1868
+aS'belt'
+p1869
+aS'big huge castle'
+p1870
+aS'blood'
+p1871
+aS'boat'
+p1872
+aS'book'
+p1873
+aS'bottle'
+p1874
+aS'bren'
+p1875
+aS'brenda'
+p1876
+aS'bubble'
+p1877
+aS'bubble mommy'
+p1878
+aS'carmen'
+p1879
+aS"carmen's"
+p1880
+aS'chair'
+p1881
+aS'church'
+p1882
+aS'coughs'
+p1883
+aS'cup'
+p1884
+aS'dirty song'
+p1885
+aS'dirty stuff'
+p1886
+aS'door'
+p1887
+aS'downstairs'
+p1888
+aS'drinks'
+p1889
+aS'duck in the water'
+p1890
+aS'ear+rings at anyways'
+p1891
+aS'everything'
+p1892
+aS'f for drink'
+p1893
+aS'fat bren'
+p1894
+aS'fish'
+p1895
+aS'food'
+p1896
+aS'fork'
+p1897
+aS'forty'
+p1898
+aS'fun mommy'
+p1899
+aS'fun park'
+p1900
+aS'george washington'
+p1901
+aS"george's island"
+p1902
+aS"george's island today"
+p1903
+aS'god'
+p1904
+aS'good night'
+p1905
+aS'green door'
+p1906
+aS'green water'
+p1907
+aS'hand'
+p1908
+aS'hands'
+p1909
+aS'heart'
+p1910
+aS'heaven'
+p1911
+aS'lips'
+p1912
+aS'little bitty baby'
+p1913
+aS'little door'
+p1914
+aS'little piece'
+p1915
+aS'little while'
+p1916
+aS'lobsters'
+p1917
+aS'lot'
+p1918
+aS'lot of chairs'
+p1919
+aS'lot of food'
+p1920
+aS'lot of fun'
+p1921
+aS'mama'
+p1922
+aS'man'
+p1923
+aS'meat'
+p1924
+aS'meat brenda xxx'
+p1925
+aS'mess'
+p1926
+aS'mo'
+p1927
+aS'mom'
+p1928
+aS'momma'
+p1929
+aS'momma on tv'
+p1930
+aS'mommy'
+p1931
+aS"mommy lisette's"
+p1932
+aS'mommy xxx'
+p1933
+aS'mouth'
+p1934
+aS'move'
+p1935
+aS'name'
+p1936
+aS'natalie'
+p1937
+aS'nine'
+p1938
+aS'nothing'
+p1939
+aS'numbers'
+p1940
+aS'people'
+p1941
+aS'robinson'
+p1942
+aS'room'
+p1943
+aS'room for food'
+p1944
+aS'room for my xxx'
+p1945
+aS'sailboat'
+p1946
+aS'school'
+p1947
+aS'school today'
+p1948
+aS'shay'
+p1949
+aS'shayla'
+p1950
+aS'someone'
+p1951
+aS'something'
+p1952
+aS'song'
+p1953
+aS'spoon'
+p1954
+aS'stuff'
+p1955
+aS'table'
+p1956
+aS'tables'
+p1957
+aS'tape'
+p1958
+aS'teeth'
+p1959
+aS'thirty nine'
+p1960
+aS'thirty six'
+p1961
+aS'throat'
+p1962
+aS'unintelligible sounds'
+p1963
+aS'untelligible'
+p1964
+aS'upstairs'
+p1965
+aS'wat(er'
+p1966
+aS'water'
+p1967
+aS'way'
+p1968
+aS'wings'
+p1969
+aS'word'
+p1970
+aS'xxx'
+p1971
+aS'xxx mommy'
+p1972
+aa(lp1973
+S'big boy'
+p1974
+aS'book bag'
+p1975
+aS'bubble'
+p1976
+aS'chi'
+p1977
+aS'church'
+p1978
+aS'clothes'
+p1979
+aS'food'
+p1980
+aS'fred krueger'
+p1981
+aS'ketchup'
+p1982
+aS'little kids'
+p1983
+aS'lunch'
+p1984
+aS'mom'
+p1985
+aS'mommy'
+p1986
+aS'popeye'
+p1987
+aS'popeye xxx'
+p1988
+aS'school today'
+p1989
+aS'way'
+p1990
+aS'xxx'
+p1991
+aa(lp1992
+S'&e'
+p1993
+aS'(.) on the other side of the arboretum'
+p1994
+aS'[//]'
+p1995
+aS'ammunition'
+p1996
+aS'angels'
+p1997
+aS'anything'
+p1998
+aS'arboretum'
+p1999
+aS'arboretum (.)'
+p2000
+aS'awoh'
+p2001
+aS'bambi'
+p2002
+aS'bed for [/] for a long long time'
+p2003
+aS'bells'
+p2004
+aS'belly'
+p2005
+aS'berenstein bear'
+p2006
+aS'big cup'
+p2007
+aS'big heavy shoes'
+p2008
+aS'big phony baloney'
+p2009
+aS'blanket'
+p2010
+aS'blankets'
+p2011
+aS'blue bells'
+p2012
+aS'blue ones'
+p2013
+aS'boats'
+p2014
+aS'book'
+p2015
+aS'boots'
+p2016
+aS'botanical name'
+p2017
+aS'bra'
+p2018
+aS'brad'
+p2019
+aS'brave'
+p2020
+aS'brave star'
+p2021
+aS'brave star book'
+p2022
+aS'brave star brad'
+p2023
+aS'brave star brave star'
+p2024
+aS'brave star brave star brave star brave brad'
+p2025
+aS'brown boots'
+p2026
+aS"brown bread's"
+p2027
+aS'brown work shoes'
+p2028
+aS'bunch'
+p2029
+aS'bureau drawers with his winter coat'
+p2030
+aS'charlie chaplin'
+p2031
+aS'church'
+p2032
+aS'coat'
+p2033
+aS'cough'
+p2034
+aS'couple of times'
+p2035
+aS'covers'
+p2036
+aS'cup'
+p2037
+aS'dad'
+p2038
+aS'dad (.)'
+p2039
+aS'dancers'
+p2040
+aS'dark'
+p2041
+aS'day'
+p2042
+aS'different story'
+p2043
+aS'dinner'
+p2044
+aS'energy'
+p2045
+aS'energy in the clouds'
+p2046
+aS'enough candy today lovey'
+p2047
+aS'enough juice'
+p2048
+aS'everybody'
+p2049
+aS'fingers'
+p2050
+aS'first juice'
+p2051
+aS'fish man'
+p2052
+aS'fish store'
+p2053
+aS'flowers'
+p2054
+aS'flowers today'
+p2055
+aS'good singer'
+p2056
+aS'good song'
+p2057
+aS'good thing'
+p2058
+aS'groucho marx'
+p2059
+aS'half'
+p2060
+aS'head'
+p2061
+aS'hill'
+p2062
+aS'home'
+p2063
+aS'home with our feet'
+p2064
+aS'honey'
+p2065
+aS'horns'
+p2066
+aS'horse'
+p2067
+aS"horse's>"
+p2068
+aS'house'
+p2069
+aS'ice cream bar['
+p2070
+aS'irish music'
+p2071
+aS'jesus'
+p2072
+aS'kiddo'
+p2073
+aS'kind of ice cream'
+p2074
+aS'kitchen'
+p2075
+aS'lady'
+p2076
+aS'legs'
+p2077
+aS'light purple [/]'
+p2078
+aS'lightning'
+p2079
+aS'lilac ones'
+p2080
+aS'lilacs'
+p2081
+aS'little bit'
+p2082
+aS'little cup'
+p2083
+aS'little holes'
+p2084
+aS'lord'
+p2085
+aS'lot'
+p2086
+aS'lot of thoughts'
+p2087
+aS'lovey'
+p2088
+aS'lunch'
+p2089
+aS'main'
+p2090
+aS'main house'
+p2091
+aS'mama'
+p2092
+aS'mama xxx'
+p2093
+aS'man'
+p2094
+aS'man xxx'
+p2095
+aS'mayonnaise in the jar'
+p2096
+aS'minutes'
+p2097
+aS'mirror mommy'
+p2098
+aS'mom'
+p2099
+aS'mommy'
+p2100
+aS'money'
+p2101
+aS'money brad (.)'
+p2102
+aS'money in xxx'
+p2103
+aS'mother'
+p2104
+aS'mouth'
+p2105
+aS'music'
+p2106
+aS'name of the little bells flower'
+p2107
+aS'new book'
+p2108
+aS'new coats'
+p2109
+aS'new water gun to the preschool'
+p2110
+aS'pages'
+p2111
+aS'park'
+p2112
+aS'people'
+p2113
+aS'picnic'
+p2114
+aS'piece'
+p2115
+aS'pink ones'
+p2116
+aS'problem'
+p2117
+aS'purple ones'
+p2118
+aS'rain'
+p2119
+aS'rain boots'
+p2120
+aS'rain boots red ones'
+p2121
+aS'rain coat'
+p2122
+aS'rain coats'
+p2123
+aS'red ones'
+p2124
+aS'rest'
+p2125
+aS'right feet'
+p2126
+aS'right pot'
+p2127
+aS'river'
+p2128
+aS'road'
+p2129
+aS'shoe'
+p2130
+aS'shoes on the wrong feet'
+p2131
+aS'someone'
+p2132
+aS'something'
+p2133
+aS'songs'
+p2134
+aS'sore belly'
+p2135
+aS'spare'
+p2136
+aS'spoon'
+p2137
+aS'star'
+p2138
+aS'star (.)'
+p2139
+aS'star (.) brave (.) brave['
+p2140
+aS'store'
+p2141
+aS'story'
+p2142
+aS'supper'
+p2143
+aS'taste like the ones'
+p2144
+aS'thanks'
+p2145
+aS'throat'
+p2146
+aS'thunder'
+p2147
+aS'time'
+p2148
+aS'time for supper'
+p2149
+aS'top'
+p2150
+aS'top of the hill'
+p2151
+aS'town'
+p2152
+aS'tree'
+p2153
+aS'umbrella'
+p2154
+aS'upstairs bowling'
+p2155
+aS'vacuum'
+p2156
+aS'video show'
+p2157
+aS'voice'
+p2158
+aS'way'
+p2159
+aS'way way'
+p2160
+aS'white ones'
+p2161
+aS'winter boots'
+p2162
+aS'wrong feet'
+p2163
+aS'xxx'
+p2164
+aS'zzz'
+p2165
+aa(lp2166
+S'&an'
+p2167
+aS'(.) in the chair'
+p2168
+aS'(.) kind'
+p2169
+aS'(.) somebody'
+p2170
+aS'(.) somethin(g'
+p2171
+aS'+^ chi'
+p2172
+aS'+^ mark'
+p2173
+aS'> [/]'
+p2174
+aS'[//]'
+p2175
+aS'[/] (.)'
+p2176
+aS'ad address'
+p2177
+aS'address'
+p2178
+aS'airplane'
+p2179
+aS'anthony'
+p2180
+aS'anthony in kindergarten'
+p2181
+aS"anthony's"
+p2182
+aS'anyone'
+p2183
+aS'anything'
+p2184
+aS'arm'
+p2185
+aS'arms'
+p2186
+aS'audience'
+p2187
+aS'aunt julie'
+p2188
+aS'baby'
+p2189
+aS'baby stacie'
+p2190
+aS"baby's name"
+p2191
+aS'bad (.) mood'
+p2192
+aS'bad mood'
+p2193
+aS'bath+room'
+p2194
+aS'beth'
+p2195
+aS'bethany'
+p2196
+aS'big boy'
+p2197
+aS'big muscles'
+p2198
+aS'big tree'
+p2199
+aS'birdie'
+p2200
+aS'birt'
+p2201
+aS'birthday'
+p2202
+aS'birthday par:ty'
+p2203
+aS'bite'
+p2204
+aS'blood'
+p2205
+aS'body'
+p2206
+aS'boom'
+p2207
+aS'boy'
+p2208
+aS'brand+new sneakers'
+p2209
+aS'brian'
+p2210
+aS'brian (.)'
+p2211
+aS'broken record'
+p2212
+aS'brother'
+p2213
+aS'building'
+p2214
+aS'bullet'
+p2215
+aS'bullets'
+p2216
+aS'bum+bum'
+p2217
+aS'bwuh'
+p2218
+aS'cage'
+p2219
+aS'candy'
+p2220
+aS'chair'
+p2221
+aS'chi'
+p2222
+aS'chi (.)'
+p2223
+aS'clear throat'
+p2224
+aS'clouds'
+p2225
+aS'cough'
+p2226
+aS'coughs'
+p2227
+aS'cousin'
+p2228
+aS'cousins'
+p2229
+aS"cousins's name"
+p2230
+aS'crack'
+p2231
+aS"daddy's name"
+p2232
+aS'danny'
+p2233
+aS'david'
+p2234
+aS'dean'
+p2235
+aS'door'
+p2236
+aS'eee'
+p2237
+aS'everybody'
+p2238
+aS'eyes'
+p2239
+aS'face'
+p2240
+aS'fake turtles'
+p2241
+aS'feet'
+p2242
+aS'fingers'
+p2243
+aS'first name in school'
+p2244
+aS'first number of your telephone number'
+p2245
+aS'fl place'
+p2246
+aS'floor'
+p2247
+aS'food'
+p2248
+aS'forest'
+p2249
+aS'fours years'
+p2250
+aS'frankenstein'
+p2251
+aS'friends'
+p2252
+aS'fuel'
+p2253
+aS'full name'
+p2254
+aS"fun over aunt julie's"
+p2255
+aS'funny little kid'
+p2256
+aS'funny mask'
+p2257
+aS'gates'
+p2258
+aS'giggles'
+p2259
+aS'good batman'
+p2260
+aS'good job'
+p2261
+aS'goodness'
+p2262
+aS'grandfather'
+p2263
+aS'grandma'
+p2264
+aS'ground'
+p2265
+aS'gulps'
+p2266
+aS'gum'
+p2267
+aS'gun'
+p2268
+aS'guns'
+p2269
+aS'guys'
+p2270
+aS'hand'
+p2271
+aS'hands'
+p2272
+aS'hard chi'
+p2273
+aS'head'
+p2274
+aS'help'
+p2275
+aS'high part'
+p2276
+aS'hill'
+p2277
+aS'hit'
+p2278
+aS'holes'
+p2279
+aS'home'
+p2280
+aS'house'
+p2281
+aS'hug'
+p2282
+aS'hunters'
+p2283
+aS'hunters shootin(g'
+p2284
+aS'imit:brass'
+p2285
+aS'imit:tiger'
+p2286
+aS'imit:trombone'
+p2287
+aS'imit:trumpet'
+p2288
+aS'indians'
+p2289
+aS'instruments'
+p2290
+aS'jake adams fluellen'
+p2291
+aS'jason'
+p2292
+aS'jennifer'
+p2293
+aS"julie's"
+p2294
+aS'junk food'
+p2295
+aS'kemid kimberly'
+p2296
+aS'kenny'
+p2297
+aS'kim'
+p2298
+aS"kimberly's mother"
+p2299
+aS'knife'
+p2300
+aS'l peter'
+p2301
+aS'lap'
+p2302
+aS'last name'
+p2303
+aS'last week'
+p2304
+aS'legs'
+p2305
+aS'lips'
+p2306
+aS'little brother'
+p2307
+aS'little jennifer'
+p2308
+aS'little part'
+p2309
+aS'little paul'
+p2310
+aS'little while'
+p2311
+aS'lot of people'
+p2312
+aS'loud noise'
+p2313
+aS'lowell massachusetts'
+p2314
+aS'ma'
+p2315
+aS'machine'
+p2316
+aS'mama'
+p2317
+aS'mama hug'
+p2318
+aS'man'
+p2319
+aS'mar'
+p2320
+aS'mark'
+p2321
+aS'mask'
+p2322
+aS'meadow'
+p2323
+aS'miano'
+p2324
+aS'mime'
+p2325
+aS'minute'
+p2326
+aS'mistake'
+p2327
+aS'mo mommy'
+p2328
+aS'mom'
+p2329
+aS"mommy's name"
+p2330
+aS'monique'
+p2331
+aS'monster'
+p2332
+aS'more brownies'
+p2333
+aS'mother'
+p2334
+aS'mouth'
+p2335
+aS'muscles'
+p2336
+aS'music'
+p2337
+aS'name'
+p2338
+aS'name in school'
+p2339
+aS'names'
+p2340
+aS'next number'
+p2341
+aS'nice man'
+p2342
+aS'nice story'
+p2343
+aS'nice turtle'
+p2344
+aS'nice turtle toys'
+p2345
+aS'nicholas'
+p2346
+aS'noise'
+p2347
+aS'noises'
+p2348
+aS'nose'
+p2349
+aS'number'
+p2350
+aS'other kids'
+p2351
+aS'own parts'
+p2352
+aS'p peter'
+p2353
+aS'paper'
+p2354
+aS'papers today'
+p2355
+aS'part'
+p2356
+aS'parts'
+p2357
+aS'pe peter'
+p2358
+aS'people'
+p2359
+aS'pete'
+p2360
+aS'pete peter'
+p2361
+aS'peter'
+p2362
+aS'peter l'
+p2363
+aS'peter peter'
+p2364
+aS'peter to (.)'
+p2365
+aS'piano'
+p2366
+aS'pinata'
+p2367
+aS'point'
+p2368
+aS'poo+poo'
+p2369
+aS'pretend turtle'
+p2370
+aS'pretend turtles'
+p2371
+aS'proper way'
+p2372
+aS'real turtles'
+p2373
+aS'relatives'
+p2374
+aS'rest'
+p2375
+aS'richard'
+p2376
+aS'right in the head'
+p2377
+aS'rope'
+p2378
+aS'sad mask'
+p2379
+aS'same (.)'
+p2380
+aS'same thing'
+p2381
+aS'school'
+p2382
+aS'series of yelps'
+p2383
+aS'shoot shoot'
+p2384
+aS'side of her cheek'
+p2385
+aS'sing-song'
+p2386
+aS'sister'
+p2387
+aS'sky'
+p2388
+aS'smack'
+p2389
+aS'sneaker'
+p2390
+aS'sneakers'
+p2391
+aS'somethin(g'
+p2392
+aS'something'
+p2393
+aS'special (.)'
+p2394
+aS'splash'
+p2395
+aS'stacie'
+p2396
+aS'ste:ven'
+p2397
+aS'stevie'
+p2398
+aS'story'
+p2399
+aS'supper'
+p2400
+aS't toy'
+p2401
+aS'tail turtles'
+p2402
+aS'teacher'
+p2403
+aS'teeth'
+p2404
+aS'telephone number'
+p2405
+aS'thanks'
+p2406
+aS'thing'
+p2407
+aS'things'
+p2408
+aS'throat'
+p2409
+aS'ti tiger'
+p2410
+aS'ti:ger'
+p2411
+aS'tiger'
+p2412
+aS'tiger noises'
+p2413
+aS'time at school'
+p2414
+aS'tip'
+p2415
+aS'toy'
+p2416
+aS'toys'
+p2417
+aS'tree'
+p2418
+aS'trees'
+p2419
+aS'trombone'
+p2420
+aS'trombones'
+p2421
+aS'trumpets'
+p2422
+aS'turtle'
+p2423
+aS'turtles'
+p2424
+aS'twist'
+p2425
+aS'wa'
+p2426
+aS'way'
+p2427
+aS'weekend'
+p2428
+aS'wolf'
+p2429
+aS'wolf (.)'
+p2430
+aS'wolf at that point'
+p2431
+aS'wolf in a zoo'
+p2432
+aS'woods'
+p2433
+aS'world'
+p2434
+aS'www'
+p2435
+aS'xxx'
+p2436
+aS'yard'
+p2437
+aS'years'
+p2438
+aS'zoo'
+p2439
+aa(lp2440
+S'boys'
+p2441
+aS'brave girl today'
+p2442
+aS'brittany'
+p2443
+aS'bus pass'
+p2444
+aS'carmen'
+p2445
+aS"carmen's> [//]"
+p2446
+aS'cup'
+p2447
+aS'food'
+p2448
+aS'friends in school'
+p2449
+aS"fun at auntie vi's house"
+p2450
+aS'fun at the clinic'
+p2451
+aS'fun today'
+p2452
+aS'god'
+p2453
+aS'good god'
+p2454
+aS'ice xxx'
+p2455
+aS'jason'
+p2456
+aS'jose'
+p2457
+aS'lionel'
+p2458
+aS'little piece'
+p2459
+aS'miguel'
+p2460
+aS'mom'
+p2461
+aS'more drink'
+p2462
+aS'more ice'
+p2463
+aS'more tonic'
+p2464
+aS'murmur'
+p2465
+aS'name'
+p2466
+aS'names'
+p2467
+aS'nothing'
+p2468
+aS'piece'
+p2469
+aS'school tomorrow'
+p2470
+aS'teacher'
+p2471
+aS'theodore'
+p2472
+aS'time'
+p2473
+aS'today'
+p2474
+aS'tonic'
+p2475
+aS'xxx'
+p2476
+aa(lp2477
+S'(.) spaghetti'
+p2478
+aS'[/] mommy'
+p2479
+aS'accident'
+p2480
+aS'anything'
+p2481
+aS'b(us)'
+p2482
+aS'bath+room door'
+p2483
+aS'beautiful monkey'
+p2484
+aS'birthday party'
+p2485
+aS'blow'
+p2486
+aS'book'
+p2487
+aS'books'
+p2488
+aS'bowl'
+p2489
+aS'bowl in the sink'
+p2490
+aS'bowls'
+p2491
+aS'bro'
+p2492
+aS'brownies for dessert'
+p2493
+aS'bus'
+p2494
+aS'bus driver'
+p2495
+aS"bus driver's name"
+p2496
+aS'bus man'
+p2497
+aS'candles'
+p2498
+aS'candles bro'
+p2499
+aS'candles in the brownies'
+p2500
+aS'cat'
+p2501
+aS'ceiling'
+p2502
+aS'chi'
+p2503
+aS'chi tony'
+p2504
+aS'coat'
+p2505
+aS'color'
+p2506
+aS"color's that jeff"
+p2507
+aS'counter by accident'
+p2508
+aS'cup'
+p2509
+aS'cup in the sink'
+p2510
+aS'cute monkey'
+p2511
+aS'dance'
+p2512
+aS'drink'
+p2513
+aS'duck'
+p2514
+aS'duck tape'
+p2515
+aS'eat'
+p2516
+aS'eddie >[<'
+p2517
+aS'everyone like your hair+cut'
+p2518
+aS'friday'
+p2519
+aS'funky monkey'
+p2520
+aS'girl'
+p2521
+aS'girls'
+p2522
+aS'good boy'
+p2523
+aS'guys'
+p2524
+aS'half'
+p2525
+aS'howard'
+p2526
+aS'jeff'
+p2527
+aS'jeffrey'
+p2528
+aS'joe'
+p2529
+aS'lisa'
+p2530
+aS'little bit'
+p2531
+aS'look_it'
+p2532
+aS'lot of money for those doctor seuss books'
+p2533
+aS'm(ommy'
+p2534
+aS'maggie'
+p2535
+aS'mama'
+p2536
+aS"mama tony's"
+p2537
+aS'mom'
+p2538
+aS'mommy'
+p2539
+aS'monkey'
+p2540
+aS'next time'
+p2541
+aS'no jeff'
+p2542
+aS'nonsense'
+p2543
+aS'other day'
+p2544
+aS'papers in the other room'
+p2545
+aS'paul'
+p2546
+aS'red yellow green blue'
+p2547
+aS'rhonda'
+p2548
+aS'rhonda in today jeff'
+p2549
+aS'right mama'
+p2550
+aS'ronnie'
+p2551
+aS"ronnie's"
+p2552
+aS"roy's"
+p2553
+aS'school'
+p2554
+aS'school today'
+p2555
+aS'sergeant lee seymore'
+p2556
+aS'show'
+p2557
+aS'sink'
+p2558
+aS'store'
+p2559
+aS'tape'
+p2560
+aS'teacher'
+p2561
+aS'thing'
+p2562
+aS'time'
+p2563
+aS'today'
+p2564
+aS'today in school'
+p2565
+aS'today maggie'
+p2566
+aS'tomorrow'
+p2567
+aS'tony'
+p2568
+aS"tony's"
+p2569
+aS'wall'
+p2570
+aS'wild things'
+p2571
+aS'xxx'
+p2572
+aa(lp2573
+S'(.) oatmeal'
+p2574
+aS'(.) time'
+p2575
+aS'[//]'
+p2576
+aS'alli'
+p2577
+aS'allison'
+p2578
+aS'bag'
+p2579
+aS'bang'
+p2580
+aS'bed'
+p2581
+aS'bed against the wall'
+p2582
+aS'bed last night'
+p2583
+aS'belt'
+p2584
+aS'belt for her car'
+p2585
+aS'bite'
+p2586
+aS'black wheels'
+p2587
+aS'blood'
+p2588
+aS'blood test'
+p2589
+aS'blood test today'
+p2590
+aS'blood work'
+p2591
+aS'bloody murder'
+p2592
+aS'bone'
+p2593
+aS'boo+boo'
+p2594
+aS'bruise'
+p2595
+aS'butter'
+p2596
+aS'car'
+p2597
+aS"car's"
+p2598
+aS'color'
+p2599
+aS'course'
+p2600
+aS'crazy lady'
+p2601
+aS"d'you@d"
+p2602
+aS"d'you@d like crackers"
+p2603
+aS'day'
+p2604
+aS'death'
+p2605
+aS'delicious pizza'
+p2606
+aS'dentist'
+p2607
+aS'dessert'
+p2608
+aS'dish'
+p2609
+aS'doctor'
+p2610
+aS'doctor today'
+p2611
+aS"doctor's today"
+p2612
+aS'ear infection'
+p2613
+aS'ears'
+p2614
+aS'enough sugar'
+p2615
+aS'fan belt'
+p2616
+aS'finger in my crackers'
+p2617
+aS'firecrackers'
+p2618
+aS'fireworks'
+p2619
+aS'food'
+p2620
+aS'food in a paper'
+p2621
+aS'food in a paper bag'
+p2622
+aS'front'
+p2623
+aS'glove'
+p2624
+aS'good girl'
+p2625
+aS'good pizza'
+p2626
+aS'grandma'
+p2627
+aS"grandma's"
+p2628
+aS"grandmother's"
+p2629
+aS'grandpa'
+p2630
+aS'green car'
+p2631
+aS'half'
+p2632
+aS'ham in the oven'
+p2633
+aS'hand'
+p2634
+aS'hands'
+p2635
+aS'home'
+p2636
+aS'hospital'
+p2637
+aS'hour'
+p2638
+aS'ink on my hand'
+p2639
+aS'kind of food'
+p2640
+aS'kyle'
+p2641
+aS'lap'
+p2642
+aS'last week'
+p2643
+aS'lines'
+p2644
+aS'lot'
+p2645
+aS'lunch today'
+p2646
+aS'mo(ve)'
+p2647
+aS'mom'
+p2648
+aS'momma'
+p2649
+aS'mommy'
+p2650
+aS"mommy's>"
+p2651
+aS'monkey'
+p2652
+aS'more bite'
+p2653
+aS'more milk'
+p2654
+aS'more piece'
+p2655
+aS'more piece of steak'
+p2656
+aS'more steak'
+p2657
+aS'mouth'
+p2658
+aS'mummy'
+p2659
+aS'napkin'
+p2660
+aS'napkin thanks'
+p2661
+aS'next hour'
+p2662
+aS'night'
+p2663
+aS'night of your birthday'
+p2664
+aS'nothing'
+p2665
+aS"one's"
+p2666
+aS'other more piece'
+p2667
+aS'other night'
+p2668
+aS'other piece'
+p2669
+aS'pap(a)'
+p2670
+aS'papa'
+p2671
+aS"papa's"
+p2672
+aS"papa's lap honey"
+p2673
+aS'paper'
+p2674
+aS'paper bag'
+p2675
+aS'pean(ut'
+p2676
+aS'piece'
+p2677
+aS'pieces'
+p2678
+aS'pool'
+p2679
+aS'poppy'
+p2680
+aS'pounds'
+p2681
+aS'rabbit'
+p2682
+aS'room'
+p2683
+aS'sat(urday'
+p2684
+aS'scram'
+p2685
+aS'second'
+p2686
+aS'silly (.)'
+p2687
+aS'silly goose'
+p2688
+aS'sir'
+p2689
+aS'smart kid'
+p2690
+aS'smoke detectors'
+p2691
+aS'something'
+p2692
+aS'spoon'
+p2693
+aS'store'
+p2694
+aS'stuff'
+p2695
+aS'supper'
+p2696
+aS'supper before (.)'
+p2697
+aS'tape'
+p2698
+aS'tape recorder'
+p2699
+aS'tasha'
+p2700
+aS'teeth'
+p2701
+aS'test'
+p2702
+aS'thing'
+p2703
+aS'thursday'
+p2704
+aS'time'
+p2705
+aS'timmy'
+p2706
+aS'today'
+p2707
+aS'tonight'
+p2708
+aS'town'
+p2709
+aS'uncle'
+p2710
+aS'wall'
+p2711
+aS'work'
+p2712
+aS'wrong (.)'
+p2713
+aS'yesterday'
+p2714
+aa(lp2715
+(lp2716
+S'chicken'
+p2717
+aS'peas'
+p2718
+aa(lp2719
+a(lp2720
+a(lp2721
+S'bread'
+p2722
+aS'cherries'
+p2723
+aS'meatballs'
+p2724
+aS'skim milk'
+p2725
+aa(lp2726
+a(lp2727
+S'egg salad'
+p2728
+aS'lollipop'
+p2729
+aS'tootsie roll'
+p2730
+aa(lp2731
+S'butter'
+p2732
+aS'noodles'
+p2733
+aa(lp2734
+S'(to)matoes'
+p2735
+aS'cucum(ber)'
+p2736
+aS'diet dressing'
+p2737
+aS'diet soda'
+p2738
+aS'spaghetti'
+p2739
+aS'water'
+p2740
+aa(lp2741
+S'pepper'
+p2742
+aa(lp2743
+S'(po)tatoes'
+p2744
+aS'diet slice'
+p2745
+aS'diet sprite'
+p2746
+aS'fried chicken'
+p2747
+aS'ginger+ale'
+p2748
+aS'milk shake'
+p2749
+aS'nut and honey'
+p2750
+aS'oats and bran cereal'
+p2751
+aS'oats and honey'
+p2752
+aS'pork chops'
+p2753
+aS'salad'
+p2754
+aS'slim fast'
+p2755
+aa(lp2756
+S'gum drop'
+p2757
+aS'mcdonald'
+p2758
+aS'white fish'
+p2759
+aa(lp2760
+S'honey'
+p2761
+aS'pepsi'
+p2762
+aa(lp2763
+a(lp2764
+S'soup'
+p2765
+aS'tuna+fish'
+p2766
+aa(lp2767
+a(lp2768
+S'orange'
+p2769
+aa(lp2770
+S'ice cream bar'
+p2771
+aS'mayonnaise'
+p2772
+aa(lp2773
+a(lp2774
+a(lp2775
+S'spaghetti'
+p2776
+aa(lp2777
+S'ham'
+p2778
+aS'oatmeal'
+p2779
+aS'pean(ut) butter'
+p2780
+aS'peanut butter and jelly'
+p2781
+aatp2782
+tp2783
+Rp2784
 .

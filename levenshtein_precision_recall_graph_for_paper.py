@@ -2,6 +2,7 @@
 import time
 import cPickle as pickle
 import matplotlib.pyplot as plt 
+from display_html_2 import *
 
 def plot_precision_recall_curve(precision_1, recall_1,precision_2, recall_2, precision_3, recall_3):
 	plt.plot(recall_1, precision_1, label = "System 1")
@@ -23,7 +24,6 @@ print(thresholds)
 settings = ['system1', 'system2', 'system3']
 print(settings)
 
-from display_html_2 import *
 start_time = time.time()
 directory = 'HSLLD/HV1/MT/'
 combined_results = []
@@ -50,8 +50,6 @@ for setting in settings:
 		print('total runtime: {}'.format(time.time() - start_time))
 		precisions.append(precision)
 		recalls.append(recall)
-		with open('most_recent_results.pickle', 'wb') as f:
-		    pickle.dump(results, f)
    	print('precisions:')
    	print(precisions)
 	print('recalls:')
