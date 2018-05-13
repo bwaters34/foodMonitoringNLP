@@ -32,7 +32,7 @@ for setting in settings:
 	precisions = []
 	recalls = []
 	for threshold in thresholds:
-		precision, recall, results = evaluate_all_files_in_directory(directory, only_files_with_solutions=True, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=True, use_word2vec_model = False, use_edit_distance_matching = True, levenshtein_setting = setting, levenshtein_threshold =threshold )
+		precision, recall, results = evaluate_all_files_in_directory(directory, only_files_with_solutions=True, use_wordnet=False, use_wordnet_food_names=True, use_pattern_matching=True, use_word2vec_model = False, use_edit_distance_matching = True, levenshtein_setting = setting, levenshtein_threshold =threshold, use_plurals=False, use_twitter_dataset=True )
 
 		true_pos = results.num_true_pos
 		false_pos = results.num_false_pos

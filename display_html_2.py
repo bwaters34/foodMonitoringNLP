@@ -6,9 +6,7 @@ import numpy as np
 import front_end 
 import pickle 
 import sys 
-from collections import defaultdict 
-import matplotlib.pyplot as plt
-import seaborn as sns
+from collections import defaultdict
 from nltk import pos_tag, word_tokenize
 from os import path
 from collections import namedtuple
@@ -17,9 +15,7 @@ import CMUTweetTagger
 import os
 import cal_calorie_given_food_name 
 import parse 
-import nltk 
-import time 
-from pyjarowinkler import distance
+import time
 import levenshtein_distance_customized
 import wordnet_explorer
 from gensim.models import Word2Vec 
@@ -136,6 +132,11 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	pos_tags_dict = pickle.load(open(
 		pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
 	# TODO: let parser support ark pos tags
+	if use_edit_distance_matching:
+		try:
+			distance_cache = load("./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
+		except IOError:
+			distance_cache = {}  # file doesn't exist, let it be an empty dictionary.
 	try:
 		print('loading solution set')
 		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
@@ -295,14 +296,14 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 				# #removed the plus one
 				# spans_found_on_line.append((c, c + len(word)))
-				try:
-					temp_calorie = calorie.cal_calorie(word)
-					total_calorie += temp_calorie
-					calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
-				except:
-					print sys.exc_info()
-					print('no calories detected for food word')
-					pass
+				# try:
+				# 	temp_calorie = calorie.cal_calorie(word)
+				# 	total_calorie += temp_calorie
+				# 	calorie_text += '<br><mark>'+word+"</mark>-> "+str(temp_calorie)
+				# except:
+				# 	print sys.exc_info()
+				# 	print('no calories detected for food word')
+				# 	pass
 
 
 				individual_food_words = word.split()
@@ -368,53 +369,58 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 							# print "yes", food_data[1], word
 							# PERFORM EDIT DISTANCE
 							if word == foodname: continue
-							ld = levenshtein_distance_customized.get_levenshtein_distance_object(setting=levenshtein_setting)
-							distance = ld.calculate_distance(word, foodname)
-							# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
-							# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
-							# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
-							# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+							if (word, foodname) in distance_cache:
+								k2 = distance_cache[(word, foodname)]
+							else:
+								ld = levenshtein_distance_customized.get_levenshtein_distance_object(setting=levenshtein_setting)
+								distance = ld.calculate_distance(word, foodname)
+								# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
+								# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+								# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
+								# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
 
 
 
-							# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-							# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
+								# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+								# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
 
-							# Manual checking
-							# k2 = 0
-							# if len(temp) > 2 and len(temp2) > 2:
-							# 	if temp[-1] == 's' or temp2[-1] == 's':
-							# 		if temp[:-1] == temp2:
-							# 			print "yes if 1", temp[:-1], temp2
-							# 			k2 = 1
-							# 		elif temp == temp2[:-1]:
-							# 			k2 = 1
-							# 		else:
-							# 			pass
-							# 	elif temp == temp2:
-							# 		k2 =1
-							# 	else:
-							# 		pass
+								# Manual checking
+								# k2 = 0
+								# if len(temp) > 2 and len(temp2) > 2:
+								# 	if temp[-1] == 's' or temp2[-1] == 's':
+								# 		if temp[:-1] == temp2:
+								# 			print "yes if 1", temp[:-1], temp2
+								# 			k2 = 1
+								# 		elif temp == temp2[:-1]:
+								# 			k2 = 1
+								# 		else:
+								# 			pass
+								# 	elif temp == temp2:
+								# 		k2 =1
+								# 	else:
+								# 		pass
 
-							# if len(temp) > 2 and len(temp2) > 2:
-							# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
-							# 		if temp[:-2] == temp2:
-							# 			k2 = 1
-							# 		elif temp == temp2[:-2]:
-							# 			k2 = 1
-							# 		else:
-							# 			pass
-							# 	elif temp == temp2:
-							# 		k2 =1
-							# 	else:
-							# 		pass
+								# if len(temp) > 2 and len(temp2) > 2:
+								# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
+								# 		if temp[:-2] == temp2:
+								# 			k2 = 1
+								# 		elif temp == temp2[:-2]:
+								# 			k2 = 1
+								# 		else:
+								# 			pass
+								# 	elif temp == temp2:
+								# 		k2 =1
+								# 	else:
+								# 		pass
 
-							# print "check -> ", word, food_data[1], temp, temp2, k1
+								# print "check -> ", word, food_data[1], temp, temp2, k1
 
-							# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-							# distance = 0
-							k2 = distance / float(max(len(word), len(foodname)))
-							# if k2  == 1:
+								# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+								# distance = 0
+
+								k2 = distance / float(max(len(word), len(foodname)))
+								distance_cache[(word, foodname)] = k2
+								# if k2  == 1:
 							if k2 < levenshtein_threshold:
 								# k2 = 3
 								# if distance <= k2:
@@ -433,20 +439,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 									food_match_indexes = match.span()
 									index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
 									spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
-								# print "Edit distance added word -> ", word, food_data
-								# with open("./notes/wordnet_twitter_25_per_normalLevenshtien.txt", "a") as myfile:
-									# with open("./notes/edit_distance_30_percen.txt", "a") as myfile:
-
-									# with open("./notes/edit_distance_4.txt", "a") as myfile:
-									# with open("./notes/edit_distance_jaro.txt", "a") as myfile:
-
-									# myfile.write(
-										# word + "," + food_data[1] + "," + str(distance) + ", " + str(
-											# k1) + " , " + str(
-											# k2) + "\n")
-								# print "word found", word, len(word), max_len, max_len_word
-								# print ("Temproray -> ", temp_i)
-								# print ("Final i -> ", i)
 
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
@@ -467,9 +459,10 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 			else:
 				pass
-				text += i[1:] 
-
-	write2file += "<hr>" + "Total Calories -> " + str(total_calorie) 
+				text += i[1:]
+	if use_edit_distance_matching:
+		save(distance_cache, "./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
+	write2file += "<hr>" + "Total Calories -> " + str(total_calorie)
 	num_true_pos = None # give dummy values in case try fails
 	num_false_pos = None
 	num_false_neg = None
