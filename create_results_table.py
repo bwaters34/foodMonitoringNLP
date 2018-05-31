@@ -28,10 +28,10 @@ directory = 'HSLLD/HV1/MT/'
 precision_list = []
 recall_list = []
 
-settings = triangle_table_of_booleans(6) #TODO: add WSD!
+settings = triangle_table_of_booleans(7)
 
-for twitter, wordnet, plurals, phrasemachine, banned_words, span_merge in settings:
-    precision, recall, results = evaluate_all_files_in_directory(directory, only_files_with_solutions=True, use_twitter_dataset=twitter, use_wordnet_food_names=wordnet, use_plurals=plurals, use_pattern_matching=phrasemachine, remove_banned_words=banned_words, use_span_merging=span_merge, use_word2vec_model=False )
+for twitter, wordnet, plurals, phrasemachine, banned_words, span_merge, wsd in settings:
+    precision, recall, results = evaluate_all_files_in_directory(directory, only_files_with_solutions=True, use_twitter_dataset=twitter, use_wordnet_food_names=wordnet, use_plurals=plurals, use_pattern_matching=phrasemachine, remove_banned_words=banned_words, use_span_merging=span_merge, use_word2vec_model=wsd )
     true_pos = results.num_true_pos
     false_pos = results.num_false_pos
     false_neg = results.num_false_neg

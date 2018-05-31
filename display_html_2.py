@@ -43,7 +43,7 @@ def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'nltk', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching = True, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3, levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
+def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = True, use_pattern_matching = True, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3, levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -104,7 +104,8 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer', 'delicious', 'dainty','leftovers', 'micronutrient','multivitamin','ration', 'vitamin', 'vintage' ]
 			for word in banned_words:
 				wordnet_food_names.pop(word)
-			foodNames.update(wordnet_food_names)
+		foodNames.update(wordnet_food_names)
+
 	# add plurals to everything
 	if use_plurals:
 		plural_foods = []
@@ -130,7 +131,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	pos_tags_filename = "pos_tags/" + fileName
 	pos_tags_dict = pickle.load(open(
 		pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
-	# TODO: let parser support ark pos tags
 	if use_edit_distance_matching:
 		try:
 			distance_cache = load("./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
@@ -692,7 +692,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	for filename in os.listdir(directory_path):
 		file_path = directory_path + '/' + filename
 		print(file_path)
-		html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals, log_reg_threshold = log_reg_threshold, levenshtein_threshold = levenshtein_threshold, levenshtein_setting = levenshtein_setting)
+		html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals, use_twitter_dataset=use_twitter_dataset, remove_banned_words=remove_banned_words, log_reg_threshold = log_reg_threshold, levenshtein_threshold = levenshtein_threshold, levenshtein_setting = levenshtein_setting, )
 		print('predicted spans:')
 		print(predicted_spans)
 		if found_solution: # there wasn't a solution set for that file
