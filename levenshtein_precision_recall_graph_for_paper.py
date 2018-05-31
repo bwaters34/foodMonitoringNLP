@@ -18,9 +18,9 @@ def plot_precision_recall_curve(precision_1, recall_1,precision_2, recall_2, pre
 	plt.savefig('edit_distance_precision_recall.pdf')
 
 
-thresholds = [x / 10.0 for x in range(0, 11)]
-print(thresholds)
-
+# thresholds = [x / 10.0 for x in range(0, 11)]
+# print(thresholds)
+thresholds = [0.2, 0.3, 0.4]
 settings = ['system1', 'system2', 'system3']
 print(settings)
 

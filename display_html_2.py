@@ -16,7 +16,7 @@ import os
 import cal_calorie_given_food_name 
 import parse 
 import time
-import levenshtein_distance_customized
+import levenshtein_distance_with_trie
 import wordnet_explorer
 from gensim.models import Word2Vec 
 import gensim 
@@ -60,7 +60,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
  #                            o=(3, 3, 1),
  #                            u=(3, 3, 1),
  #                            s=(0, 0, 1))
- 	levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(s=(0, 0, 1))
 	write2file = ''
 	total_calorie = 0.0
 	calorie = cal_calorie_given_food_name.food_to_calorie()
@@ -336,7 +335,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 
 				# Adding stuffs after reading documentation from USDA
 				# print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
-				print(word)
+				# print(word)
 				if not use_edit_distance_matching:
 					food_id = foodNames[word]
 					if food_id in foodGroup:
@@ -353,92 +352,114 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 					# print("food -> ", food_id_group_pairs)
 					# Checking for EDIT Distance
 				if use_edit_distance_matching:
-					for foodname in foodNames:
-						k1 = float(len(word)) / float(len(foodname))
-						if 0.6 < k1 and k1 < 1.4:
-							# k1 = float(len(food_data[1]))/float(len(word))
-							# if 0.6 < k1 and k1 < 1.4:
-							# k1 = jaccard_distance(food_data[1], word)
-							# if k1 < 0.3:
-							# print "Crossed Jaccard Barrier", k1
-							# if 0.6 < k and k < 1.4:
-							# k1 = abs(len(food_data[1]) - len(word))
-							# if k1 <= 3:s
-							# if word == 'tomatoes':
-							# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
-							# print "yes", food_data[1], word
-							# PERFORM EDIT DISTANCE
-							if word == foodname: continue
-							if (word, foodname) in distance_cache:
-								k2 = distance_cache[(word, foodname)]
-							else:
-								ld = levenshtein_distance_customized.get_levenshtein_distance_object(setting=levenshtein_setting)
-								distance = ld.calculate_distance(word, foodname)
-								# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
-								# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
-								# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
-								# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+					if word in distance_cache:
+						search_results = distance_cache[word]
+					else:
+						not_too_large_foodnames = list(filter(lambda x: (float(len(word)) / float(len(x)) ) < 1.4 and 0.6 < (float(len(word)) / float(len(x)) ),list(foodNames.keys())) )
+						# print('filtered food names:')
+						# print(len(not_too_large_foodnames))
+						start = time.time()
+						ld = levenshtein_distance_with_trie.get_levenshtein_distance_object(food_words=not_too_large_foodnames, setting=levenshtein_setting)
+						search_results = ld.search(word, 50000)
+						# print(search_results)
+						# print('time taken to do levenshtein: {}'.format(time.time()-start))
+						distance_cache[word] = search_results
+					for foodname, distance in search_results:
+						k2 = distance / float(max(len(word), len(foodname)))
+						if k2 < levenshtein_threshold:
+							found_at_least = 1
+							for match in re.finditer(re.escape(word), i):
+					# print "Sentence -> ", temp_i, "matches -> ", match
+								food_match_indexes = match.span()
+								index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+								spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
-
-
-								# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-								# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
-
-								# Manual checking
-								# k2 = 0
-								# if len(temp) > 2 and len(temp2) > 2:
-								# 	if temp[-1] == 's' or temp2[-1] == 's':
-								# 		if temp[:-1] == temp2:
-								# 			print "yes if 1", temp[:-1], temp2
-								# 			k2 = 1
-								# 		elif temp == temp2[:-1]:
-								# 			k2 = 1
-								# 		else:
-								# 			pass
-								# 	elif temp == temp2:
-								# 		k2 =1
-								# 	else:
-								# 		pass
-
-								# if len(temp) > 2 and len(temp2) > 2:
-								# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
-								# 		if temp[:-2] == temp2:
-								# 			k2 = 1
-								# 		elif temp == temp2[:-2]:
-								# 			k2 = 1
-								# 		else:
-								# 			pass
-								# 	elif temp == temp2:
-								# 		k2 =1
-								# 	else:
-								# 		pass
-
-								# print "check -> ", word, food_data[1], temp, temp2, k1
-
-								# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-								# distance = 0
-
-								k2 = distance / float(max(len(word), len(foodname)))
-								distance_cache[(word, foodname)] = k2
-								# if k2  == 1:
-							if k2 < levenshtein_threshold:
-								# k2 = 3
-								# if distance <= k2:
-
-								# k2 = 3
-								# if distance <= k2:
-
-								# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
-								# if k3 > 0.90:
-
-								found_at_least = 1
-								# if word == 'tomatoes':
-								# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-								for match in re.finditer(re.escape(word), i):
-				# print "Sentence -> ", temp_i, "matches -> ", match
-									food_match_indexes = match.span()
-									index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-									spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+				# 	for foodname in foodNames:
+				# 		k1 =
+				# 		if 0.6 < k1 and k1 < 1.4:
+				# 			# k1 = float(len(food_data[1]))/float(len(word))
+				# 			# if 0.6 < k1 and k1 < 1.4:
+				# 			# k1 = jaccard_distance(food_data[1], word)
+				# 			# if k1 < 0.3:
+				# 			# print "Crossed Jaccard Barrier", k1
+				# 			# if 0.6 < k and k < 1.4:
+				# 			# k1 = abs(len(food_data[1]) - len(word))
+				# 			# if k1 <= 3:s
+				# 			# if word == 'tomatoes':
+				# 			# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
+				# 			# print "yes", food_data[1], word
+				# 			# PERFORM EDIT DISTANCE
+				# 			if word == foodname: continue
+				# 			if (word, foodname) in distance_cache:
+				# 				k2 = distance_cache[(word, foodname)]
+				# 			else:
+				# 				ld = levenshtein_distance_with_trie.get_levenshtein_distance_object(setting=levenshtein_setting)
+				# 				distance = ld.calculate_distance(word, foodname)
+				# 				# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
+				# 				# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+				# 				# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
+				# 				# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+				#
+				#
+				#
+				# 				# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+				# 				# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
+				#
+				# 				# Manual checking
+				# 				# k2 = 0
+				# 				# if len(temp) > 2 and len(temp2) > 2:
+				# 				# 	if temp[-1] == 's' or temp2[-1] == 's':
+				# 				# 		if temp[:-1] == temp2:
+				# 				# 			print "yes if 1", temp[:-1], temp2
+				# 				# 			k2 = 1
+				# 				# 		elif temp == temp2[:-1]:
+				# 				# 			k2 = 1
+				# 				# 		else:
+				# 				# 			pass
+				# 				# 	elif temp == temp2:
+				# 				# 		k2 =1
+				# 				# 	else:
+				# 				# 		pass
+				#
+				# 				# if len(temp) > 2 and len(temp2) > 2:
+				# 				# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
+				# 				# 		if temp[:-2] == temp2:
+				# 				# 			k2 = 1
+				# 				# 		elif temp == temp2[:-2]:
+				# 				# 			k2 = 1
+				# 				# 		else:
+				# 				# 			pass
+				# 				# 	elif temp == temp2:
+				# 				# 		k2 =1
+				# 				# 	else:
+				# 				# 		pass
+				#
+				# 				# print "check -> ", word, food_data[1], temp, temp2, k1
+				#
+				# 				# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+				# 				# distance = 0
+				#
+				# 				k2 = distance / float(max(len(word), len(foodname)))
+				# 				distance_cache[(word, foodname)] = k2
+				# 				# if k2  == 1:
+				# 			if k2 < levenshtein_threshold:
+				# 				# k2 = 3
+				# 				# if distance <= k2:
+				#
+				# 				# k2 = 3
+				# 				# if distance <= k2:
+				#
+				# 				# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+				# 				# if k3 > 0.90:
+				#
+				# 				found_at_least = 1
+				# 				# if word == 'tomatoes':
+				# 				# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
+				# 				for match in re.finditer(re.escape(word), i):
+				# # print "Sentence -> ", temp_i, "matches -> ", match
+				# 					food_match_indexes = match.span()
+				# 					index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+				# 					# spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
 			if found_at_least:	
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
@@ -662,7 +683,7 @@ def ark_parser(fileName):
 
 
 def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3,  levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
-	parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
+	# parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
 	sum_false_neg = 0
@@ -688,7 +709,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg, false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
 	precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
 	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
-	print(parameters_used)
+	# print(parameters_used)
 	return precision, recall, combined_results
 
 
