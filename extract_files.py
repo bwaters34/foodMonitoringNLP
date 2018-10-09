@@ -1,14 +1,14 @@
 from collections import defaultdict
 
-import os 
-import sys 
+import os
+import sys
 import nltk
 import pickle
-import matplotlib.pyplot as plt 
-import numpy as np 
+import matplotlib.pyplot as plt
+import numpy as np
 
 # start_file = '.\HSLLD'
-start_file = 'HSLLD'
+start_file = 'solutions'
 #print os.walk(start_file)
 directory = [x[0] for x in os.walk(start_file) if x[0][-2:] =='MT' ]
 print(directory)
@@ -33,7 +33,7 @@ for files in directory:
 		with open(files + '/' + f) as file:
 			print files + '/' + f
 			file_directory.append(files + '/' + f)
-save_file('food_files.pickle', file_directory)
+save_file('food_files_solution.pickle', file_directory)
 			#'''
 			# food_presence = 0
 			# unique = defaultdict(float)
