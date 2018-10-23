@@ -96,18 +96,27 @@ for time_range in times:
 # print(times)
 # seconds = [t.total_seconds() for t in times]
 print(seconds)
-more_than_30 = [x for x in seconds if x > 60*24]
-print(len(more_than_30))
-print("More than 24 mins")
-avg = sum(more_than_30)/float(len(more_than_30))
+files_and_times_and_seconds = zip(times_and_files, seconds)
+more_than_24 = list(filter(lambda x: x[1] > 60*24, files_and_times_and_seconds))
+# print(len(more_than_30))
+# print("More than 24 mins")
+print('getting secodns')
+just_seconds = [x[1] for x in more_than_24]
+print(just_seconds)
+print(more_than_24)
+avg = sum(just_seconds)/float(len(just_seconds))
+print(len(just_seconds))
 print(avg)
 print("average")
 print(avg / 60)
-print(max(seconds))
-i = seconds.index(max(seconds))
+for files_and_times, seconds in more_than_24:
+    print(files_and_times[0])
+print('finished')
+# print(max(seconds))
+# i = seconds.index(max(seconds))
 # print(times_and_files[i])
-print(min(seconds))
-i = seconds.index(min(seconds))
+# print(min(seconds))
+# i = seconds.index(min(seconds))
 # print(times_and_files[i])
 
 
