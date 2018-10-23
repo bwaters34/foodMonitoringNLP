@@ -45,7 +45,8 @@ def calculate_precision_and_recall(gold_standard_set, predicted_set):
 
 def get_solution_set_from_file(file_path):
 	"""
-	returns a set of (line_number, (food_phrase_start_index, food_phrase_end_index))
+	returns a set of (line_number, (food_phrase_start_index, food_phrase_end_index)). OR returns a LIST of food names if the first word is unique
+
 	Each line of the solution file should contain 3 numbers, the line number of the food phrase, the starting index of the food phrase, and the ending index of the food phrase.
 	files are stored under their original name, but in the solutions directory.
 	Example file:
@@ -56,15 +57,30 @@ def get_solution_set_from_file(file_path):
 	:return: set of solutions, where a set contains
 	"""
 	solutions = set()
+	food_solutions = set()
 	with open(file_path) as f:
-		for line in f:
-			if len(line) > 1: # make sure its not end of file
-				words = [int(word) for word in line.split()]
-				line_number = words[0]
-				word_start = words[1]
-				word_end = words[2]
-				key = (line_number, (word_start, word_end))
-				solutions.add(key)
+		lines = f.readlines()
+		lines = [line.strip() for line in lines]
+		if lines[0] == 'UNIQUE':
+			for line in lines[1:]:
+				if len(line) > 0:
+					line_no_and_word = line.split(':')
+					print(line_no_and_word)
+					assert len(line_no_and_word) == 2
+					word = line_no_and_word[1]
+					if len(word) > 0:
+						food_solutions.add(word)
+			print("READ EMs")
+			return list(food_solutions)
+		else:
+			for line in lines:
+				if len(line) > 1: # make sure its not end of file
+					words = [int(word) for word in line.split()]
+					line_number = words[0]
+					word_start = words[1]
+					word_end = words[2]
+					key = (line_number, (word_start, word_end))
+					solutions.add(key)
 	return solutions
 
 def creating_solution_helper(file_path):
@@ -104,18 +120,23 @@ def get_corresponding_lines(file_name, solution_set):
 	return lines
 
 def convert_solution_set_to_set_of_food_names(file_path, solution_set):
-	food_names = set()
-	# print(solution_set)
-	tuples_and_lines = get_corresponding_lines(file_path, list(solution_set))
-	# print(tuples_and_lines)
-	for t_and_l in tuples_and_lines:
-		solution_tuple, line = t_and_l
-		substring_indexes = solution_tuple[1]
-		start_index, stop_index = substring_indexes # unpack the values from the tuple
-		if stop_index < start_index:
-			raise ValueError("stop index cannot be before start index, solutions are incorrect:, " + str(solution_tuple))
-		food_name = line[start_index:stop_index].lower()
-		food_names.add(food_name)
+	if type(solution_set) == list:
+		food_names = set(solution_set)
+		print("WE GOT THE NAMES BOY")
+		print(food_names)
+	else:
+		food_names = set()
+		# print(solution_set)
+		tuples_and_lines = get_corresponding_lines(file_path, list(solution_set))
+		# print(tuples_and_lines)
+		for t_and_l in tuples_and_lines:
+			solution_tuple, line = t_and_l
+			substring_indexes = solution_tuple[1]
+			start_index, stop_index = substring_indexes # unpack the values from the tuple
+			if stop_index < start_index:
+				raise ValueError("stop index cannot be before start index, solutions are incorrect:, " + str(solution_tuple))
+			food_name = line[start_index:stop_index].lower()
+			food_names.add(food_name)
 
 	return food_names
 

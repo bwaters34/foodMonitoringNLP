@@ -490,8 +490,6 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 	false_pos_list = []
 	false_neg_list = []
 	if solution_set_loaded:
-		print('loading solution set')
-		solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
 		print('calculating')
 		if base_accuracy_on_how_many_unique_food_items_detected:
 			food_names_only_solution_set = solution_parser.convert_solution_set_to_set_of_food_names(fileName, solution_set)
