@@ -67,7 +67,7 @@ def get_solution_set_from_file(file_path):
 					line_no_and_word = line.split(':')
 					print(line_no_and_word)
 					assert len(line_no_and_word) == 2
-					word = line_no_and_word[1]
+					word = line_no_and_word[1].strip()
 					if len(word) > 0:
 						food_solutions.add(word)
 			print("READ EMs")
