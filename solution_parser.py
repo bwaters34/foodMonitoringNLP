@@ -99,6 +99,21 @@ def creating_solution_helper(file_path):
 					output_str+= char + str(i) + ' '
 				print(output_str)
 
+def creating_solution_helper_just_lines(file_path):
+	# a visual helper to annotate files easier
+	with open(file_path) as f:
+		line_number = 0
+		for line in f:
+			line_number += 1
+			if line[0] == '*':
+				print(line[:-1].strip())
+				# print("line number: " + str(line_number))
+				# output_str = ''
+				# for i in range(len(line[:-1])):
+				# 	char = line[i]
+				# 	output_str+= char + str(i) + ' '
+				# print(output_str)
+
 def extract_line_numbers_from_solution_set(solution_set):
 	return [x[0] for x in solution_set]
 
@@ -142,5 +157,5 @@ def convert_solution_set_to_set_of_food_names(file_path, solution_set):
 
 if __name__ == '__main__':
 	file_name = sys.argv[1]
-	creating_solution_helper(file_name)
+	creating_solution_helper_just_lines(file_name)
 

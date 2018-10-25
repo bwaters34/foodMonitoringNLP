@@ -687,28 +687,33 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 	sum_false_neg = 0
 	list_of_false_pos_lists = []
 	list_of_false_neg_lists = []
-	for filename in os.listdir(directory_path):
-		file_path = directory_path + '/' + filename
-		print(file_path)
-		html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals, use_twitter_dataset=use_twitter_dataset, remove_banned_words=remove_banned_words, log_reg_threshold = log_reg_threshold, levenshtein_threshold = levenshtein_threshold, levenshtein_setting = levenshtein_setting, )
-		print('predicted spans:')
-		print(predicted_spans)
-		if found_solution: # there wasn't a solution set for that file
-			# if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
-			sum_true_pos += results.num_true_pos
-			# if results.num_false_pos is not None:
-			sum_false_pos += results.num_false_pos
-			# if results.num_false_neg is not None:
-			sum_false_neg += results.num_false_neg
-			# if results.false_pos_list is not None:
-			list_of_false_pos_lists.append(results.false_pos_list)
-			# if results.false_pos_list is not None:
-			list_of_false_neg_lists.append(results.false_neg_list)
-	combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg, false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
-	precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
-	recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
-	# print(parameters_used)
-	return precision, recall, combined_results
+	for path, subdirs, files in os.walk(directory_path):
+		print("OS WALK")
+		for filename in files:
+			if not filename.endswith('.cha'):
+				continue
+			print(filename)
+			file_path = os.path.join(path, filename)
+			print(file_path)
+			html_format, results, predicted_spans, found_solution = read_file(file_path, only_files_with_solutions=only_files_with_solutions,  base_accuracy_on_how_many_unique_food_items_detected=base_accuracy_on_how_many_unique_food_items_detected, use_second_column=use_second_column, pos_tags_setting=pos_tags_setting, use_wordnet=use_wordnet, wordnet_setting=wordnet_setting, use_word2vec_model=use_word2vec_model, use_pretrained_Google_embeddings=use_pretrained_Google_embeddings, use_edit_distance_matching=use_edit_distance_matching, use_wordnet_food_names = use_wordnet_food_names, use_pattern_matching=use_pattern_matching, use_span_merging=use_span_merging, use_plurals=use_plurals, use_twitter_dataset=use_twitter_dataset, remove_banned_words=remove_banned_words, log_reg_threshold = log_reg_threshold, levenshtein_threshold = levenshtein_threshold, levenshtein_setting = levenshtein_setting, )
+			print('predicted spans:')
+			print(predicted_spans)
+			if found_solution: # there wasn't a solution set for that file
+				# if results.num_true_pos is not None:  # if it is none, a solution set was not loaded
+				sum_true_pos += results.num_true_pos
+				# if results.num_false_pos is not None:
+				sum_false_pos += results.num_false_pos
+				# if results.num_false_neg is not None:
+				sum_false_neg += results.num_false_neg
+				# if results.false_pos_list is not None:
+				list_of_false_pos_lists.append(results.false_pos_list)
+				# if results.false_pos_list is not None:
+				list_of_false_neg_lists.append(results.false_neg_list)
+		combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg, false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
+		precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
+		recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
+		# print(parameters_used)
+		return precision, recall, combined_results
 
 
 if __name__ == '__main__':
