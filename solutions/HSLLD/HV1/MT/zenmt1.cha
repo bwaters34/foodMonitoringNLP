@@ -1,3 +1,4 @@
+UNIQUE
 16: cereal
 62: steak
 62: rice
@@ -6,11 +7,9 @@
 182: lobster
 193: hot dog
 204: hot dog and beans
-219: hot dog bun
+219: bun
 294: milk
-342: milk and steak
 457: cheese
-571: steak and gravy
 1056: raisins
 1290: onions
 1390: ham hock
@@ -31,9 +30,5 @@
 2672: crackers
 2826: orange juice
 2818: baked fish
-2840: steak
-2854: beans
-2868: rice
-2875: steak and rice and beans
 2890: spinach
 3349: sauce
