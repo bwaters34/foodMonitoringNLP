@@ -33,6 +33,7 @@ for files in directory:
 		with open(files + '/' + f) as file:
 			print files + '/' + f
 			file_directory.append(files + '/' + f)
+print(file_directory)
 save_file('food_files_solution.pickle', file_directory)
 			#'''
 			# food_presence = 0
