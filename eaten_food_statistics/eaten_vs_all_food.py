@@ -4,17 +4,18 @@ import pickle
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 class EatenVsAll:
     def __init__(self):
         pass
 
     def open_file(self, fileName):
-    	with open(fileName, 'rb') as f:
-    		return pickle.load(f)
+        with open(fileName, 'rb') as f:
+            return pickle.load(f)
 
     def save_file(self, fileName, Variable):
-    	with open(fileName, 'wb') as f:
-    		pickle.dump(Variable, f)
+        with open(fileName, 'wb') as f:
+            pickle.dump(Variable, f)
 
     def readFile(self, fileName):
         contents = open(fileName, 'r').read().split('\n')
@@ -34,7 +35,7 @@ class EatenVsAll:
     def storeNames(self, food_characteristics):
         foodWords = defaultdict(list)
 
-        #Read File
+        # Read File
         for f in food_characteristics:
             f = "../" + f
             if os.path.exists(f):
@@ -62,41 +63,29 @@ class EatenVsAll:
         print(x, no_of_eaten_food, no_of_total_food)
         return x, no_of_eaten_food, no_of_total_food, eatenFoods.keys()
 
+    def calculate_coverate(self, y1, y2):
+        y1 = np.asarray(y1, dtype="float")
+        y2 = np.asarray(y2, dtype="float")
+        y_ = np.divide(y1, y2)
+        print(np.mean(y_), np.std(y_))
+
     def plot_hist(self, x_, y1_, y2_, fileNames):
-        # https://stackoverflow.com/questions/14270391/python-matplotlib-multiple-bars
-        # colors = ['b','g']
-        # #plots the histogram
-        # fig, ax1 = plt.subplots()
-        # ax1.hist([y1,y2],color=colors)
-        # ax1.set_xlim(-10,10)
-        # ax1.set_ylabel("Count")
-        # plt.tight_layout()
-        # plt.show()
-
         x_ = [float(_) for _ in x_]
-        import matplotlib.pyplot as plt
-        from matplotlib.dates import date2num
-        import datetime
-
-        x = [datetime.datetime(2011, 1, 4, 0, 0),
-             datetime.datetime(2011, 1, 5, 0, 0),
-             datetime.datetime(2011, 1, 6, 0, 0)]
-        x = date2num(x)
-        print(x, x_)
-        y = [4, 9, 2]
-        z=[1,2,3]
-        k=[11,12,13]
         x = np.asarray(x_, dtype="float")
         y = y1
         z = y2
+        self.calculate_coverate(y1, y2)
         ax = plt.subplot(111)
-        ax.bar(x-0.2, y,width=0.2,color='b',align='center', label="Foods Eaten")
-        ax.bar(x, z,width=0.2,color='g',align='center', label="All Foods Spoken")
+        ax.bar(x - 0.2, y, width=0.2, color='b',
+               align='center', label="Foods Eaten")
+        ax.bar(x, z, width=0.2, color='g',
+               align='center', label="All Foods Spoken")
         plt.xticks(x, fileNames)
-        # ax.bar(x+0.2, k,width=0.2,color='r',align='center')
-        # ax.xaxis_date()
         plt.legend()
+        plt.ylabel("Number of food keywords")
+        plt.xlabel("Transcript Name")
         plt.show()
+
 
 if __name__ == '__main__':
     eat = EatenVsAll()
@@ -110,4 +99,4 @@ if __name__ == '__main__':
     all_food = eat.storeNames(overall_food_names)
     # print(all_food, len(all_food))
     x, y1, y2, fileNames = eat.compareFoodEaten(eaten_food, all_food)
-    eat.plot_hist(x, y1, y2,fileNames)
+    eat.plot_hist(x, y1, y2, fileNames)
