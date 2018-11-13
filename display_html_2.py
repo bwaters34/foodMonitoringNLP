@@ -2,10 +2,10 @@
 import re
 
 # from matplotlib.axes._base import _AxesBase
-import numpy as np 
-import front_end 
-import pickle 
-import sys 
+import numpy as np
+import front_end
+import pickle
+import sys
 from collections import defaultdict
 from nltk import pos_tag, word_tokenize
 from os import path
@@ -13,13 +13,13 @@ from collections import namedtuple
 import solution_parser
 import CMUTweetTagger
 import os
-import cal_calorie_given_food_name 
-import parse 
+import cal_calorie_given_food_name
+import parse
 import time
 import levenshtein_distance_with_trie
 import wordnet_explorer
-from gensim.models import Word2Vec 
-import gensim 
+from gensim.models import Word2Vec
+import gensim
 from namedtuples import Accuracy
 import phrasemachine
 
@@ -37,13 +37,31 @@ if use_Google:
 
 def load(fileName):
 	with open(fileName, 'r') as f:
-		return pickle.load(f) 
+		return pickle.load(f)
 
 def save(variable, fileName):
 	with open(fileName, 'w') as f:
 		pickle.dump(variable, f)
 
-def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common', use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = True, use_pattern_matching = True, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3, levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
+def read_file(fileName,
+					only_files_with_solutions = False,
+					base_accuracy_on_how_many_unique_food_items_detected = True,
+					use_second_column = False,
+					pos_tags_setting = 'ark',
+					use_wordnet = False,
+					wordnet_setting = 'most_common',
+					use_word2vec_model = False,
+					use_pretrained_Google_embeddings = True,
+					use_edit_distance_matching = False,
+					use_wordnet_food_names = True,
+					use_pattern_matching = True,
+					use_span_merging=True,
+					use_plurals = True,
+					use_twitter_dataset = True,
+					remove_banned_words=True,
+					log_reg_threshold = 0.3,
+					levenshtein_threshold = 0.25,
+					levenshtein_setting = 'system2'):
 	"""
 	:param fileName: Name of file to be read
 	:param parser_type:
@@ -180,7 +198,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 			elif pos_tags_setting == 'ark':
 				sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tags_dict[current_line_number])
 			# elif:
-			# 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)				
+			# 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)
 			else:
 				raise ValueError
 			# print sentence_pos_tags
@@ -325,7 +343,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 							food_match_indexes = match.span()
 							index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
 							spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
- 	
+
 				else:
 					for match in re.finditer(re.escape(word), i):
 						# print "Sentence -> ", temp_i, "matches -> ", match
@@ -461,7 +479,7 @@ def read_file(fileName, only_files_with_solutions = False, base_accuracy_on_how_
 				# 					index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
 				# 					# spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
-			if found_at_least:	
+			if found_at_least:
 				dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
 				#print('dic')
 				#print(dic)
@@ -552,14 +570,14 @@ def get_list_of_foodnames_in_sentence(foodnames_dict, sentence):
 
 def provide_words_with_char_nos(sentence, line_no):
 	temp_char = ''
-	start_count = 0 
+	start_count = 0
 	return_array = []
 	for index, char in enumerate(sentence):
 		if char != ' ' and char != '\t':
-			temp_char += char 
+			temp_char += char
 		else:
 			return_array.append([temp_char, start_count, index])
-			start_count = index + 1 
+			start_count = index + 1
 			temp_char = ' '
 
 	#Converting to displayable format (String format)
@@ -592,7 +610,7 @@ def match_word(food_key_word, sentence, value = 0):
 	for word in food_key_word:
 		if word not in sentence:
 			return 0
-	return 1 
+	return 1
 
 def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 	dic = defaultdict(int)
@@ -600,7 +618,7 @@ def minimum_no_meeting_rooms(list_of_timings, length_of_sent):
 		dic[i] = 0
 	for meeting_schedules in list_of_timings:
 		for i in xrange(meeting_schedules[0], meeting_schedules[1]):
-			dic[i] = 1 
+			dic[i] = 1
 	return dic
 
 def check_if_noun(tag):
@@ -680,7 +698,25 @@ def ark_parser(fileName):
 	return var
 
 
-def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = False, base_accuracy_on_how_many_unique_food_items_detected = True, use_second_column = False, pos_tags_setting = 'ark', use_wordnet = False, wordnet_setting = 'most_common',  use_word2vec_model = False, use_pretrained_Google_embeddings = True, use_edit_distance_matching = False, use_wordnet_food_names = False, use_pattern_matching=False, use_span_merging=True, use_plurals = True, use_twitter_dataset = True, remove_banned_words=True, log_reg_threshold = 0.3,  levenshtein_threshold = 0.25, levenshtein_setting = 'system2'):
+def evaluate_all_files_in_directory(directory_path,
+										only_files_with_solutions = False,
+										base_accuracy_on_how_many_unique_food_items_detected = True,
+										use_second_column = False,
+										pos_tags_setting = 'ark',
+										use_wordnet = False,
+										wordnet_setting = 'most_common',
+										use_word2vec_model = False,
+										use_pretrained_Google_embeddings = True,
+										use_edit_distance_matching = False,
+										use_wordnet_food_names = False,
+										use_pattern_matching=False,
+										use_span_merging=True,
+										use_plurals = True,
+										use_twitter_dataset = True,
+										remove_banned_words=True,
+										log_reg_threshold = 0.3,
+										levenshtein_threshold = 0.25,
+										levenshtein_setting = 'system2'):
 	# parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
 	sum_true_pos = 0
 	sum_false_pos = 0
@@ -710,8 +746,8 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 				# if results.false_pos_list is not None:
 				list_of_false_neg_lists.append(results.false_neg_list)
 		combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg, false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
-		precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
-		recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
+		precision = sum_true_pos / float(sum_true_pos + sum_false_pos + 1)
+		recall = sum_true_pos / float(sum_true_pos + sum_false_neg + 1)
 		# print(parameters_used)
 		return precision, recall, combined_results
 
@@ -719,7 +755,7 @@ def evaluate_all_files_in_directory(directory_path, only_files_with_solutions = 
 if __name__ == '__main__':
 	try:
 		#fileName = 'HSLLD/HV3/MT/brtmt3.cha' # coffee
-		
+
 		start = time.time()
 		fileName = 'HSLLD/HV1/MT/conmt1.cha'
 		html_format, results = read_file(fileName)
@@ -735,20 +771,20 @@ if __name__ == '__main__':
 	# all_files = load("C:\\Users\\priti\\OneDrive\\Documents\\CCPP\\FoodMonitoring-NLP\\data\\food_files.pickle")
 	# c = 0
 	# for file_name in all_files:
-	# 	print "File ", c 
-	# 	c += 1 
+	# 	print "File ", c
+	# 	c += 1
 	# 	try:
 	# 		html_format, count = read_file(file_name)
 	# 	except:
 	# 		continue
 	# 	else:
 	# 		fileCounts.append(len(cont))
-	# sns.distplot(fileCounts, 
+	# sns.distplot(fileCounts,
 	# 				#hist = False,
-	# 				kde = False, 
-	# 				#rug=False, 
-	# 				norm_hist = False, 
-	# 				rug_kws={"color": "g"}, 
+	# 				kde = False,
+	# 				#rug=False,
+	# 				norm_hist = False,
+	# 				rug_kws={"color": "g"},
 	# 				kde_kws={"color": "k", "lw": 3, "label": "KDE"},
 	# 				hist_kws={"histtype": "step", "linewidth": 3,"alpha": 1, "color": "g"})
 	# plt.show()
