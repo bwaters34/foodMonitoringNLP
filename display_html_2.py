@@ -30,7 +30,8 @@ if use_Google:
     start = time.time()
     word2vec_filepath = '/home/pritish/CCPP/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
     # word2vec_filepath = '/home/bwaters/Documents/word2vec/GoogleNews-vectors-negative300.bin.gz'
-    model_google = gensim.models.KeyedVectors.load_word2vec_format(word2vec_filepath, binary=True)
+    model_google = gensim.models.KeyedVectors.load_word2vec_format(
+        word2vec_filepath, binary=True)
     print "Time taken to load google Embeddings", time.time() - start
 
 
@@ -94,7 +95,8 @@ def read_file(fileName,
             Word2Vec_model = model_google
 
             Word2Vec_words = Word2Vec_model.vocab
-            model = load('LogisticRegression_double_neg_Google_no_data_label_aggressive')
+            model = load(
+                'LogisticRegression_double_neg_Google_no_data_label_aggressive')
         else:
             Word2Vec_model = Word2Vec.load('./wsd/word_embeddings_HSLLD.bin')
             Word2Vec_words = list(Word2Vec_model.wv.vocab)
@@ -107,7 +109,8 @@ def read_file(fileName,
     # print('adding extra names')
     # foodNames = Yelena_Mejova_food_names
     if use_twitter_dataset:
-        Yelena_Mejova_food_names = load("./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
+        Yelena_Mejova_food_names = load(
+            "./data/food_desc_files/for_sure_food_words_by_Yelena_Mejova.pickle")
         foodNames.update(Yelena_Mejova_food_names)
 
     # foodNames = Yelena_Mejova_food_names
@@ -118,7 +121,8 @@ def read_file(fileName,
         extraFoodNames = load("./data/food_desc_files/extra_food_names.pickle")
         foodNames.update(extraFoodNames)
     if use_wordnet_food_names:
-        wordnet_food_names = load("./data/food_desc_files/wordnet_food_words.pickle")
+        wordnet_food_names = load(
+            "./data/food_desc_files/wordnet_food_words.pickle")
         # should 'diet' be in the banned words? 'meat'? 'refreshment'? 'takeout'?
         if remove_banned_words:
             banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer',
@@ -148,7 +152,8 @@ def read_file(fileName,
     print(fileName)
     f = file(fileName, 'r')
     current_line_number = 0
-    predicted_food_labels_set = set()  # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
+    # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
+    predicted_food_labels_set = set()
     solution_set_loaded = False
     if only_eaten:
         solution_file_path = path.join('solutions', fileName)
@@ -171,12 +176,15 @@ def read_file(fileName,
             pickle.dump(pos_tags_dict, pf)
     if use_edit_distance_matching:
         try:
-            distance_cache = load("./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
+            distance_cache = load(
+                "./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
         except IOError:
-            distance_cache = {}  # file doesn't exist, let it be an empty dictionary.
+            # file doesn't exist, let it be an empty dictionary.
+            distance_cache = {}
     try:
         print('loading solution set')
-        solution_set = solution_parser.get_solution_set_from_file(solution_file_path)
+        solution_set = solution_parser.get_solution_set_from_file(
+            solution_file_path)
         solution_set_loaded = True
     except IOError:
         print('no solution file found for: ' + solution_file_path)
@@ -193,7 +201,8 @@ def read_file(fileName,
         current_line_number += 1
         if i[0] == '*':
             # print "LINE NO -> ", line_no
-            word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(i, line_no + 1)
+            word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(
+                i, line_no + 1)
             # print "LOOK HERE", word_char_index, word_char_index_string_fromat
             text = ''
             edit_distance_i = i
@@ -213,9 +222,11 @@ def read_file(fileName,
 
             # FOR EDIT DISTANCE
             if pos_tags_setting == 'nltk':
-                sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tag(edit_distance_i.split()))
+                sentence_pos_tags = par.pattern_matching(
+                    edit_distance_i, pos_tag(edit_distance_i.split()))
             elif pos_tags_setting == 'ark':
-                sentence_pos_tags = par.pattern_matching(edit_distance_i, pos_tags_dict[current_line_number])
+                sentence_pos_tags = par.pattern_matching(
+                    edit_distance_i, pos_tags_dict[current_line_number])
             # elif:
             # 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)
             else:
@@ -231,15 +242,18 @@ def read_file(fileName,
                     # print('candidates to check:')
                     # print(len(sentence_pos_tags))
                     for food_data in sentence_pos_tags:
-                        if len(food_data[1]) < 4: continue
+                        if len(food_data[1]) < 4:
+                            continue
                         candidate_word = food_data[1]
                         # if candidate_word == word:
                         # 	continue  # we already guessed it
                         if wordnet_explorer.string_is_descendant_of_food(candidate_word, wordnet_setting):
                             # print('descended from food: {}'.format(str(food_data)))
                             # it might be food!
-                            index_of_food_names.append((food_data[2], food_data[3]))
-                            spans_found_on_line.append((food_data[2], food_data[3]))
+                            index_of_food_names.append(
+                                (food_data[2], food_data[3]))
+                            spans_found_on_line.append(
+                                (food_data[2], food_data[3]))
                             found_at_least = 1
 
             wsd_i = wsd_i[6:]
@@ -252,7 +266,8 @@ def read_file(fileName,
             if use_pattern_matching:
                 pos_tags = pos_tags_dict[current_line_number]
                 if use_edit_distance_matching:
-                    words = phrasemachine.ark_get_phrases_wrapper(pos_tags)  # all noun phrases in sentence
+                    words = phrasemachine.ark_get_phrases_wrapper(
+                        pos_tags)  # all noun phrases in sentence
                 else:
                     words = get_list_of_phrases_in_foodnames(pos_tags,
                                                              foodNames)  # all noun phrases that are also food words!
@@ -271,7 +286,8 @@ def read_file(fileName,
                             if use_pretrained_Google_embeddings:
                                 print "Step 0 (Using Google Pre-Trained Word Embeddings) ", wsd_i, word
 
-                                wsd_i_temp = [temp_w_for_emb.lower() for temp_w_for_emb in wsd_i]
+                                wsd_i_temp = [temp_w_for_emb.lower()
+                                              for temp_w_for_emb in wsd_i]
 
                                 # wsd_i_temp = [same_word if same_word != word else "EmptyWordHereZeroEmbedding" for same_word in wsd_i_temp]
 
@@ -283,13 +299,15 @@ def read_file(fileName,
                                 # wsd_i_temp[food_place_index] = "EmptyWordHereZeroEmbedding"
                                 print "Step 1 ", food_place_index, wsd_i_temp
 
-                                sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
+                                sent_format = wsd_i[food_place_index -
+                                                    n:food_place_index + n + 1]
                                 print "Step 2", sent_format
                                 # sent_word2vec_format = [Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag['unk'] for wsd_word in sent_format]
                                 sent_word2vec_format = [
                                     Word2Vec_model.word_vec(wsd_word) if wsd_word in Word2Vec_words else
                                     unknown_tag['unk'] for wsd_word in sent_format]
-                                testing_array = np.asarray(sent_word2vec_format)
+                                testing_array = np.asarray(
+                                    sent_word2vec_format)
                                 testing_array = testing_array.reshape(1, 1500)
                                 print "Intermediate step -> ", testing_array.shape
                                 prediciton = model.predict(testing_array)
@@ -308,12 +326,14 @@ def read_file(fileName,
                                 print "Step 0", wsd_i, word
                                 food_place_index = wsd_i.index(word)
                                 print "Step 1 ", food_place_index
-                                sent_format = wsd_i[food_place_index - n:food_place_index + n + 1]
+                                sent_format = wsd_i[food_place_index -
+                                                    n:food_place_index + n + 1]
                                 print "Step 2", sent_format
                                 sent_word2vec_format = [
                                     Word2Vec_model[wsd_word] if wsd_word in Word2Vec_words else unknown_tag[
                                         'unk'] for wsd_word in sent_format]
-                                testing_array = np.asarray(sent_word2vec_format)
+                                testing_array = np.asarray(
+                                    sent_word2vec_format)
                                 testing_array = testing_array.reshape(1, 500)
                                 print "Intermediate step -> ", testing_array.shape
                                 prediciton = model.predict(testing_array)
@@ -361,15 +381,19 @@ def read_file(fileName,
                         for match in re.finditer(re.escape(food_word), i):
                             # print "Sentence -> ", temp_i, "matches -> ", match
                             food_match_indexes = match.span()
-                            index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                            spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                            index_of_food_names.append(
+                                [food_match_indexes[0], food_match_indexes[1]])
+                            spans_found_on_line.append(
+                                [food_match_indexes[0], food_match_indexes[1]])
 
                 else:
                     for match in re.finditer(re.escape(word), i):
                         # print "Sentence -> ", temp_i, "matches -> ", match
                         food_match_indexes = match.span()
-                        index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                        spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                        index_of_food_names.append(
+                            [food_match_indexes[0], food_match_indexes[1]])
+                        spans_found_on_line.append(
+                            [food_match_indexes[0], food_match_indexes[1]])
 
                 # Adding stuffs after reading documentation from USDA
                 # print ("food -> ", foodNames[word], foodGroup[foodNames[word]])
@@ -378,7 +402,8 @@ def read_file(fileName,
                     food_id = foodNames[word]
                     if food_id in foodGroup:
                         food_group_for_food_id = foodGroup[food_id]
-                        food_id_group_pairs.append([word, food_group_for_food_id])
+                        food_id_group_pairs.append(
+                            [word, food_group_for_food_id])
 
                     if food_id in langua:
                         temp_langua = langua[food_id]
@@ -395,7 +420,7 @@ def read_file(fileName,
                     else:
                         not_too_large_foodnames = list(filter(
                             lambda x: (float(len(word)) / float(len(x))) < 1.4 and 0.6 < (
-                                        float(len(word)) / float(len(x))), list(foodNames.keys())))
+                                float(len(word)) / float(len(x))), list(foodNames.keys())))
                         # print('filtered food names:')
                         # print(len(not_too_large_foodnames))
                         start = time.time()
@@ -412,8 +437,10 @@ def read_file(fileName,
                             for match in re.finditer(re.escape(word), i):
                                 # print "Sentence -> ", temp_i, "matches -> ", match
                                 food_match_indexes = match.span()
-                                index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-                                spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                                index_of_food_names.append(
+                                    [food_match_indexes[0], food_match_indexes[1]])
+                                spans_found_on_line.append(
+                                    [food_match_indexes[0], food_match_indexes[1]])
 
             # 	for foodname in foodNames:
             # 		k1 =
@@ -517,14 +544,16 @@ def read_file(fileName,
                 tuples_list = give_largest_non_overlapping_sequences(
                     spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
                 for tup in tuples_list:
-                    set_elem = (current_line_number, tup)  # add line number so we know where in the document we got it
+                    # add line number so we know where in the document we got it
+                    set_elem = (current_line_number, tup)
                     predicted_food_labels_set.add(set_elem)
 
             else:
                 pass
                 text += i[1:]
     if use_edit_distance_matching:
-        save(distance_cache, "./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
+        save(distance_cache,
+             "./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
     write2file += "<hr>" + "Total Calories -> " + str(total_calorie)
     num_true_pos = None  # give dummy values in case try fails
     num_false_pos = None
@@ -571,10 +600,13 @@ def read_file(fileName,
             write2file += "False Positives<br>" + str(false_pos_list) + \
                           "<br>"
             for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
-                write2file += str(line) + " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) + "</mark><br>"
-            write2file += "<hr>False negatives:<br>" + str(false_neg_list) + "<br>"
+                write2file += str(line) + " ---> <mark>" + \
+                    str(line[1][line[0][1][0]:line[0][1][1]]) + "</mark><br>"
+            write2file += "<hr>False negatives:<br>" + \
+                str(false_neg_list) + "<br>"
             for line in solution_parser.get_corresponding_lines(fileName, false_neg_list):
-                write2file += str(line) + " ---> <mark>" + str(line[1][line[0][1][0]:line[0][1][1]]) + "</mark><br>"
+                write2file += str(line) + " ---> <mark>" + \
+                    str(line[1][line[0][1][0]:line[0][1][1]]) + "</mark><br>"
 
     else:
         print('no solution set found')
@@ -589,12 +621,14 @@ def read_file(fileName,
 
 def get_list_of_phrases_in_foodnames(pos_tags, foodnames_dict):
     phrases = phrasemachine.ark_get_phrases_wrapper(pos_tags)
-    words = list(filter(lambda x: x in foodnames_dict, phrases))  # filter out noun phrases that are not in foodNames
+    # filter out noun phrases that are not in foodNames
+    words = list(filter(lambda x: x in foodnames_dict, phrases))
     return words
 
 
 def get_list_of_foodnames_in_sentence(foodnames_dict, sentence):
-    words = list(filter(lambda x: sentence.__contains__(' ' + x + ' '), foodnames_dict))
+    words = list(filter(lambda x: sentence.__contains__(
+        ' ' + x + ' '), foodnames_dict))
     return words
 
 
@@ -613,7 +647,8 @@ def provide_words_with_char_nos(sentence, line_no):
     # Converting to displayable format (String format)
     return_string = '<br>(line->' + str(line_no) + ") "
     for word in return_array:
-        return_string += word[0].lower() + " (" + str(word[1]) + "," + str(word[2]) + ") "
+        return_string += word[0].lower() + \
+            " (" + str(word[1]) + "," + str(word[2]) + ") "
     return_string += "<br>"
     return return_array, return_string
 
@@ -683,7 +718,8 @@ def span_merger(list_of_spans):
     for end in ending_spans:
         if end + 1 in starting_spans:  # we can merge a span! possibly more than one span!
             # get indexes of spans to merge
-            spans_to_merge = [(span1, span2) for span1 in ending_spans[end] for span2 in starting_spans[end + 1]]
+            spans_to_merge = [(span1, span2) for span1 in ending_spans[end]
+                              for span2 in starting_spans[end + 1]]
             for first_span, second_span in spans_to_merge:
                 new_start = first_span[0]
                 new_end = second_span[1]
@@ -701,10 +737,12 @@ def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
                                       key=lambda seq: seq.size)  # smallest size is first, largest size is last
     non_overlapping_sequences = []
     while len(sorted_by_size_sequences) > 0:
-        sequence = sorted_by_size_sequences.pop()  # last element in list, therefore sequence with largest size still on the list
+        # last element in list, therefore sequence with largest size still on the list
+        sequence = sorted_by_size_sequences.pop()
         if not conflicts_with_sequences(non_overlapping_sequences, sequence):
             non_overlapping_sequences.append(sequence)
-    extracted_tuples = [(seq.start, seq.end) for seq in non_overlapping_sequences]
+    extracted_tuples = [(seq.start, seq.end)
+                        for seq in non_overlapping_sequences]
     return extracted_tuples
 
 
