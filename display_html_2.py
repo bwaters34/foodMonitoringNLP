@@ -157,7 +157,7 @@ def read_file(fileName,
     # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
     predicted_food_labels_set = set()
     solution_set_loaded = False
-    if only_eaten:
+    if not remove_non_eaten_food:
         solution_file_path = path.join('solutions', fileName)
     else:
         solution_file_path = path.join('solutions_only_eaten', fileName)
