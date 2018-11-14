@@ -23,6 +23,7 @@ import gensim
 from namedtuples import Accuracy
 import phrasemachine
 
+
 # Word2Vec
 use_Google = 0
 if use_Google:
@@ -64,7 +65,7 @@ def read_file(fileName,
               log_reg_threshold=0.3,
               levenshtein_threshold=0.25,
               levenshtein_setting='system2',
-              only_eaten=False):
+              remove_non_eaten_food=True):
     """
     :param fileName: Name of file to be read
     :param parser_type:
@@ -76,16 +77,17 @@ def read_file(fileName,
     :return: write2file, a string that is a valid HTML file of the original transcript with food matches highlighted, and results, a namedtuple with attributes num_true_pos, num_false_pos, and num_false_neg
     """
     # levenshtein_distance_calculator = levenshtein_distance_customized.levenshtein_distance(a=(3, 3, 1),
-    #                            e=(3, 3, 1),
-    #                            i=(3, 3, 1),
-    #                            o=(3, 3, 1),
-    #                            u=(3, 3, 1),
-    #                            s=(0, 0, 1))
+ #                            e=(3, 3, 1),
+ #                            i=(3, 3, 1),
+ #                            o=(3, 3, 1),
+ #                            u=(3, 3, 1),
+ #                            s=(0, 0, 1))
     write2file = ''
     total_calorie = 0.0
     calorie = cal_calorie_given_food_name.food_to_calorie()
     par = parse.parse(pattern=pos_tags_setting)
-
+    if remove_non_eaten_food:
+        only_eaten_food = []
     # WSD
     unknown_tag = {}
     unknown_tag['unk'] = np.zeros(300)
@@ -103,8 +105,8 @@ def read_file(fileName,
             model = load('./wsd/LogisticRegressionModel_twice_neg')
 
     # Previous versions
-    # foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
-    # foodNames = load('.\\data\\nltk_food_dictionary.pickle')
+    #foodNames = load(path.join('.', path.join('data','food_pair_dict.pickle')))
+    #foodNames = load('.\\data\\nltk_food_dictionary.pickle')
     foodNames = load("./data/food_desc_files/food_names.pickle")
     # print('adding extra names')
     # foodNames = Yelena_Mejova_food_names
@@ -126,8 +128,7 @@ def read_file(fileName,
         # should 'diet' be in the banned words? 'meat'? 'refreshment'? 'takeout'?
         if remove_banned_words:
             banned_words = ['dinner', 'supper', 'lunch', 'breakfast', 'meal', 'dessert', 'food', 'appetizer',
-                            'delicious', 'dainty', 'leftovers', 'micronutrient', 'multivitamin', 'ration', 'vitamin',
-                            'vintage']
+                            'delicious', 'dainty', 'leftovers', 'micronutrient', 'multivitamin', 'ration', 'vitamin', 'vintage']
             for word in banned_words:
                 wordnet_food_names.pop(word)
         foodNames.update(wordnet_food_names)
@@ -142,15 +143,16 @@ def read_file(fileName,
         for name in plural_foods:
             if name not in foodNames:  # make sure we're not overwriting anything
                 foodNames[name] = None
-    # print(len(foodNames))
+        # print(len(foodNames))
     foodGroup = load("./data/food_desc_files/food_group.pickle")
     langua = load("./data/food_desc_files/langua.pickle")
 
-    # ark_parsed_data = ark_parser(fileName)
+    #ark_parsed_data = ark_parser(fileName)
 
     unique_food_names = {}
-    print(fileName)
-    f = file(fileName, 'r')
+    f = open(fileName, 'r').readlines()
+    # f = [x for x in f if x[0] == '*']
+    length_of_total_file = len(f)
     current_line_number = 0
     # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
     predicted_food_labels_set = set()
@@ -193,6 +195,8 @@ def read_file(fileName,
     if only_files_with_solutions:
         if not solution_set_loaded:
             return "solution set not found", None, None, None
+
+        print("reaching here -> ", f)
     for line_no, i in enumerate(f):  # i is the current line (a string)
         wsd_i = i
         calorie_text = ''
@@ -207,20 +211,21 @@ def read_file(fileName,
             text = ''
             edit_distance_i = i
             i = i.lower()
-            # i = i.split()
+            #i = i.split()
             # for word in i:
             #	if word not in foodNames:
             #		text += word + ' '
             #	else:
             #		text += '<mark>'+word+'</mark> 's
-            # write2file += text + '<br>'
+            #write2file += text + '<br>'
             found_at_least = 0
             index_of_food_names = []
             temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[4:])
-            # temp_i = i[4:]
+            #temp_i = i[4:]
             spans_found_on_line = []
 
             # FOR EDIT DISTANCE
+            pos_tags = pos_tags_dict[current_line_number]
             if pos_tags_setting == 'nltk':
                 sentence_pos_tags = par.pattern_matching(
                     edit_distance_i, pos_tag(edit_distance_i.split()))
@@ -269,12 +274,21 @@ def read_file(fileName,
                     words = phrasemachine.ark_get_phrases_wrapper(
                         pos_tags)  # all noun phrases in sentence
                 else:
-                    words = get_list_of_phrases_in_foodnames(pos_tags,
-                                                             foodNames)  # all noun phrases that are also food words!
+                    # all noun phrases that are also food words!
+                    words = get_list_of_phrases_in_foodnames(
+                        pos_tags, foodNames)
             else:
-                words = get_list_of_foodnames_in_sentence(foodNames,
-                                                          temp_i)  # all food words in the sentence (may or may not have correct POS tag)
+                # all food words in the sentence (may or may not have correct POS tag)
+                words = get_list_of_foodnames_in_sentence(foodNames, temp_i)
 
+            # print("List of food words in sentence: ", words)
+            if len(words) > 0 and '?' in i:
+                print("Found food keyword in question intent",
+                      line_no, i, words)
+                next_line_number = findNextConversation(
+                    f, line_no, length_of_total_file)
+                print("Next line-> ", f[next_line_number])
+                print("\n\n\n")
             # WSD
             for word in words:
                 if word == 'i':
@@ -375,8 +389,9 @@ def read_file(fileName,
 
                 if use_edit_distance_matching:
                     # guess food words
+                    # filter out noun phrases that are not in foodNames
                     food_words_in_sentence = list(
-                        filter(lambda x: x in foodNames, words))  # filter out noun phrases that are not in foodNames
+                        filter(lambda x: x in foodNames, words))
                     for food_word in food_words_in_sentence:
                         for match in re.finditer(re.escape(food_word), i):
                             # print "Sentence -> ", temp_i, "matches -> ", match
@@ -411,16 +426,15 @@ def read_file(fileName,
                         for temp_words in temp_langua:
                             t.append(temp_words)
                         food_id_langua_pairs.append([word + " " + food_id, t])
-                # food_id_langua_pairs =
-                # print("food -> ", food_id_group_pairs)
-                # Checking for EDIT Distance
+                    # food_id_langua_pairs =
+                    # print("food -> ", food_id_group_pairs)
+                    # Checking for EDIT Distance
                 if use_edit_distance_matching:
                     if word in distance_cache:
                         search_results = distance_cache[word]
                     else:
-                        not_too_large_foodnames = list(filter(
-                            lambda x: (float(len(word)) / float(len(x))) < 1.4 and 0.6 < (
-                                float(len(word)) / float(len(x))), list(foodNames.keys())))
+                        not_too_large_foodnames = list(filter(lambda x: (float(len(word)) / float(len(
+                            x))) < 1.4 and 0.6 < (float(len(word)) / float(len(x))), list(foodNames.keys())))
                         # print('filtered food names:')
                         # print(len(not_too_large_foodnames))
                         start = time.time()
@@ -442,92 +456,92 @@ def read_file(fileName,
                                 spans_found_on_line.append(
                                     [food_match_indexes[0], food_match_indexes[1]])
 
-            # 	for foodname in foodNames:
-            # 		k1 =
-            # 		if 0.6 < k1 and k1 < 1.4:
-            # 			# k1 = float(len(food_data[1]))/float(len(word))
-            # 			# if 0.6 < k1 and k1 < 1.4:
-            # 			# k1 = jaccard_distance(food_data[1], word)
-            # 			# if k1 < 0.3:
-            # 			# print "Crossed Jaccard Barrier", k1
-            # 			# if 0.6 < k and k < 1.4:
-            # 			# k1 = abs(len(food_data[1]) - len(word))
-            # 			# if k1 <= 3:s
-            # 			# if word == 'tomatoes':
-            # 			# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
-            # 			# print "yes", food_data[1], word
-            # 			# PERFORM EDIT DISTANCE
-            # 			if word == foodname: continue
-            # 			if (word, foodname) in distance_cache:
-            # 				k2 = distance_cache[(word, foodname)]
-            # 			else:
-            # 				ld = levenshtein_distance_with_trie.get_levenshtein_distance_object(setting=levenshtein_setting)
-            # 				distance = ld.calculate_distance(word, foodname)
-            # 				# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
-            # 				# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
-            # 				# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
-            # 				# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
-            #
-            #
-            #
-            # 				# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
-            # 				# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
-            #
-            # 				# Manual checking
-            # 				# k2 = 0
-            # 				# if len(temp) > 2 and len(temp2) > 2:
-            # 				# 	if temp[-1] == 's' or temp2[-1] == 's':
-            # 				# 		if temp[:-1] == temp2:
-            # 				# 			print "yes if 1", temp[:-1], temp2
-            # 				# 			k2 = 1
-            # 				# 		elif temp == temp2[:-1]:
-            # 				# 			k2 = 1
-            # 				# 		else:
-            # 				# 			pass
-            # 				# 	elif temp == temp2:
-            # 				# 		k2 =1
-            # 				# 	else:
-            # 				# 		pass
-            #
-            # 				# if len(temp) > 2 and len(temp2) > 2:
-            # 				# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
-            # 				# 		if temp[:-2] == temp2:
-            # 				# 			k2 = 1
-            # 				# 		elif temp == temp2[:-2]:
-            # 				# 			k2 = 1
-            # 				# 		else:
-            # 				# 			pass
-            # 				# 	elif temp == temp2:
-            # 				# 		k2 =1
-            # 				# 	else:
-            # 				# 		pass
-            #
-            # 				# print "check -> ", word, food_data[1], temp, temp2, k1
-            #
-            # 				# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
-            # 				# distance = 0
-            #
-            # 				k2 = distance / float(max(len(word), len(foodname)))
-            # 				distance_cache[(word, foodname)] = k2
-            # 				# if k2  == 1:
-            # 			if k2 < levenshtein_threshold:
-            # 				# k2 = 3
-            # 				# if distance <= k2:
-            #
-            # 				# k2 = 3
-            # 				# if distance <= k2:
-            #
-            # 				# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
-            # 				# if k3 > 0.90:
-            #
-            # 				found_at_least = 1
-            # 				# if word == 'tomatoes':
-            # 				# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
-            # 				for match in re.finditer(re.escape(word), i):
-            # # print "Sentence -> ", temp_i, "matches -> ", match
-            # 					food_match_indexes = match.span()
-            # 					index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
-            # 					# spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
+                # 	for foodname in foodNames:
+                # 		k1 =
+                # 		if 0.6 < k1 and k1 < 1.4:
+                # 			# k1 = float(len(food_data[1]))/float(len(word))
+                # 			# if 0.6 < k1 and k1 < 1.4:
+                # 			# k1 = jaccard_distance(food_data[1], word)
+                # 			# if k1 < 0.3:
+                # 			# print "Crossed Jaccard Barrier", k1
+                # 			# if 0.6 < k and k < 1.4:
+                # 			# k1 = abs(len(food_data[1]) - len(word))
+                # 			# if k1 <= 3:s
+                # 			# if word == 'tomatoes':
+                # 			# 	print word, food_data[1], "Reached first pass",  nltk.edit_distance(word, food_data[1])
+                # 			# print "yes", food_data[1], word
+                # 			# PERFORM EDIT DISTANCE
+                # 			if word == foodname: continue
+                # 			if (word, foodname) in distance_cache:
+                # 				k2 = distance_cache[(word, foodname)]
+                # 			else:
+                # 				ld = levenshtein_distance_with_trie.get_levenshtein_distance_object(setting=levenshtein_setting)
+                # 				distance = ld.calculate_distance(word, foodname)
+                # 				# temp =  " ".join(re.findall("[a-zA-Z]+", food_data[1]))
+                # 				# temp2 = " ".join(re.findall("[a-zA-Z]+", word))
+                # 				# temp = re.sub('[^a-zA-Z]+', ' ', food_data[1])
+                # 				# temp2 = re.sub('[^a-zA-Z]+', ' ', word)
+                #
+                #
+                #
+                # 				# temp = ''.join([x if x.isalpha() else ' ' for x in food_data[1]]).strip()
+                # 				# temp2 = ''.join([x if x.isalpha() else ' ' for x in word]).strip()
+                #
+                # 				# Manual checking
+                # 				# k2 = 0
+                # 				# if len(temp) > 2 and len(temp2) > 2:
+                # 				# 	if temp[-1] == 's' or temp2[-1] == 's':
+                # 				# 		if temp[:-1] == temp2:
+                # 				# 			print "yes if 1", temp[:-1], temp2
+                # 				# 			k2 = 1
+                # 				# 		elif temp == temp2[:-1]:
+                # 				# 			k2 = 1
+                # 				# 		else:
+                # 				# 			pass
+                # 				# 	elif temp == temp2:
+                # 				# 		k2 =1
+                # 				# 	else:
+                # 				# 		pass
+                #
+                # 				# if len(temp) > 2 and len(temp2) > 2:
+                # 				# 	if temp[-2:] == 'es' or temp2[-2:] == 'es':
+                # 				# 		if temp[:-2] == temp2:
+                # 				# 			k2 = 1
+                # 				# 		elif temp == temp2[:-2]:
+                # 				# 			k2 = 1
+                # 				# 		else:
+                # 				# 			pass
+                # 				# 	elif temp == temp2:
+                # 				# 		k2 =1
+                # 				# 	else:
+                # 				# 		pass
+                #
+                # 				# print "check -> ", word, food_data[1], temp, temp2, k1
+                #
+                # 				# distance = levenshtein_distance_calculator.calculate_distance(temp2, temp)
+                # 				# distance = 0
+                #
+                # 				k2 = distance / float(max(len(word), len(foodname)))
+                # 				distance_cache[(word, foodname)] = k2
+                # 				# if k2  == 1:
+                # 			if k2 < levenshtein_threshold:
+                # 				# k2 = 3
+                # 				# if distance <= k2:
+                #
+                # 				# k2 = 3
+                # 				# if distance <= k2:
+                #
+                # 				# k3 = distance.get_jaro_distance(word, food_data[1], winkler = True, scaling = 0.1)
+                # 				# if k3 > 0.90:
+                #
+                # 				found_at_least = 1
+                # 				# if word == 'tomatoes':
+                # 				# 	print git word, food_data[1], "Reached SECOND pass",  nltk.edit_distance(word, food_data[1])
+                # 				for match in re.finditer(re.escape(word), i):
+                # # print "Sentence -> ", temp_i, "matches -> ", match
+                # 					food_match_indexes = match.span()
+                # 					index_of_food_names.append([food_match_indexes[0], food_match_indexes[1]])
+                # 					# spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
             if found_at_least:
                 dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
@@ -541,8 +555,9 @@ def read_file(fileName,
                 text += calorie_text
                 if use_span_merging:
                     spans_found_on_line = span_merger(spans_found_on_line)
+                # filters out spans that conflict with other spans. larger spans are given priority
                 tuples_list = give_largest_non_overlapping_sequences(
-                    spans_found_on_line)  # filters out spans that conflict with other spans. larger spans are given priority
+                    spans_found_on_line)
                 for tup in tuples_list:
                     # add line number so we know where in the document we got it
                     set_elem = (current_line_number, tup)
@@ -563,10 +578,10 @@ def read_file(fileName,
     if solution_set_loaded:
         print('calculating')
         if base_accuracy_on_how_many_unique_food_items_detected:
-            food_names_only_solution_set = solution_parser.convert_solution_set_to_set_of_food_names(fileName,
-                                                                                                     solution_set)
-            food_names_only_predicted_set = solution_parser.convert_solution_set_to_set_of_food_names(fileName,
-                                                                                                      predicted_food_labels_set)
+            food_names_only_solution_set = solution_parser.convert_solution_set_to_set_of_food_names(
+                fileName, solution_set)
+            food_names_only_predicted_set = solution_parser.convert_solution_set_to_set_of_food_names(
+                fileName, predicted_food_labels_set)
             precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(
                 food_names_only_solution_set, food_names_only_predicted_set)
         else:
@@ -596,9 +611,9 @@ def read_file(fileName,
 
         if not base_accuracy_on_how_many_unique_food_items_detected:
             write2file += '<br><hr>' + "Precision: " + str(precision) + \
-                          "<br>Recall: " + str(recall) + "<br><hr>"
+                "<br>Recall: " + str(recall) + "<br><hr>"
             write2file += "False Positives<br>" + str(false_pos_list) + \
-                          "<br>"
+                "<br>"
             for line in solution_parser.get_corresponding_lines(fileName, false_pos_list):
                 write2file += str(line) + " ---> <mark>" + \
                     str(line[1][line[0][1][0]:line[0][1][1]]) + "</mark><br>"
@@ -613,8 +628,8 @@ def read_file(fileName,
     # return write2file, unique_food_names
     # namedtuple()
 
-    results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos, num_false_neg=num_false_neg,
-                       false_pos_list=false_pos_list, false_neg_list=false_neg_list)
+    results = Accuracy(num_true_pos=num_true_pos, num_false_pos=num_false_pos,
+                       num_false_neg=num_false_neg, false_pos_list=false_pos_list, false_neg_list=false_neg_list)
 
     return write2file, results, predicted_food_labels_set, solution_set_loaded
 
@@ -624,6 +639,14 @@ def get_list_of_phrases_in_foodnames(pos_tags, foodnames_dict):
     # filter out noun phrases that are not in foodNames
     words = list(filter(lambda x: x in foodnames_dict, phrases))
     return words
+
+
+def findNextConversation(entire_file, current_line_number, total_length):
+        # for line_number, text in enumerate(entire_file, current_line_number):
+    for line_number in xrange(current_line_number + 1, total_length):
+        # print(entire_file[line_number])
+        if entire_file[line_number][0] == '*':
+            return line_number
 
 
 def get_list_of_foodnames_in_sentence(foodnames_dict, sentence):
@@ -730,11 +753,13 @@ def span_merger(list_of_spans):
 
 def give_largest_non_overlapping_sequences(list_of_start_end_tuples):
     Sequence = namedtuple('Sequence', ['start', 'end', 'size'])
-    list_of_named_sequences = [Sequence(start=x[0], end=x[1], size=x[1] - x[0] - 1) for x in
-                               list_of_start_end_tuples]  # size is -1 because the end number represents the index of the character AFTER the last character in the sequence.
+    # size is -1 because the end number represents the index of the character AFTER the last character in the sequence.
+    list_of_named_sequences = [Sequence(
+        start=x[0], end=x[1], size=x[1] - x[0] - 1) for x in list_of_start_end_tuples]
     # TODO: make this stable?
-    sorted_by_size_sequences = sorted(list_of_named_sequences,
-                                      key=lambda seq: seq.size)  # smallest size is first, largest size is last
+    # smallest size is first, largest size is last
+    sorted_by_size_sequences = sorted(
+        list_of_named_sequences, key=lambda seq: seq.size)
     non_overlapping_sequences = []
     while len(sorted_by_size_sequences) > 0:
         # last element in list, therefore sequence with largest size still on the list
@@ -796,7 +821,7 @@ def evaluate_all_files_in_directory(directory_path,
                                     levenshtein_threshold=0.25,
                                     levenshtein_setting='system2',
                                     file_paths=None,
-                                    compute_only_eaten=True):
+                                    remove_non_eaten_food=True):
     # parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
     sum_true_pos = 0
     sum_false_pos = 0
@@ -834,7 +859,8 @@ def evaluate_all_files_in_directory(directory_path,
                                                                           remove_banned_words=remove_banned_words,
                                                                           log_reg_threshold=log_reg_threshold,
                                                                           levenshtein_threshold=levenshtein_threshold,
-                                                                          levenshtein_setting=levenshtein_setting, )
+                                                                          levenshtein_setting=levenshtein_setting,
+                                                                          remove_non_eaten_food=remove_non_eaten_food)
         print('predicted spans:')
         print(predicted_spans)
         if found_solution:  # there wasn't a solution set for that file

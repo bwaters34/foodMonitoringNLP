@@ -13,7 +13,7 @@ precision, recall, results = evaluate_all_files_in_directory(directory,
                                                              use_word2vec_model = False,
                                                              use_pretrained_Google_embeddings=True,
                                                              file_paths=['HSLLD/HV7/MT/jebmt7.cha'],
-                                                             compute_only_eaten=True)
+                                                             remove_non_eaten_food=True)
 
 true_pos = results.num_true_pos
 false_pos = results.num_false_pos
