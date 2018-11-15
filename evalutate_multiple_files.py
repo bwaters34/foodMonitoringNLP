@@ -6,7 +6,9 @@ import cPickle as pickle
 start_time = time.time()
 directory = 'HSLLD/HV1/MT/'
 
-file_paths = """HSLLD/HV1/MT/geomt1.cha
+old_transcripts = ['HSLLD/HV1/MT/admmt1.cha', 'HSLLD/HV1/MT/aimmt1.cha', 'HSLLD/HV1/MT/allmt1.cha', 'HSLLD/HV1/MT/anamt1.cha', 'HSLLD/HV1/MT/annmt1.cha', 'HSLLD/HV1/MT/aprmt1.cha', 'HSLLD/HV1/MT/bramt1.cha', 'HSLLD/HV1/MT/brimt1.cha', 'HSLLD/HV1/MT/brnmt1.cha', 'HSLLD/HV1/MT/brtmt1.cha', 'HSLLD/HV1/MT/casmt1.cha', 'HSLLD/HV1/MT/conmt1.cha', 'HSLLD/HV1/MT/davmt1.cha', 'HSLLD/HV1/MT/diamt1.cha', 'HSLLD/HV1/MT/emimt1.cha', 'HSLLD/HV1/MT/ethmt1.cha', 'HSLLD/HV1/MT/geomt1.cha', 'HSLLD/HV1/MT/gilmt1.cha', 'HSLLD/HV1/MT/gremt1.cha', 'HSLLD/HV1/MT/guymt1.cha']
+
+new_transcripts = """HSLLD/HV1/MT/geomt1.cha
 HSLLD/HV1/MT/kurmt1.cha
 HSLLD/HV1/MT/brnmt1.cha
 HSLLD/HV1/MT/seamt1.cha
@@ -62,6 +64,10 @@ HSLLD/HV7/MT/davmt7.cha
 HSLLD/HV7/MT/allmt7.cha
 HSLLD/HV7/MT/jebmt7.cha""".splitlines(False)
 
+# file_paths = list(set(old_transcripts+new_transcripts))
+file_paths = new_transcripts
+
+print('TOTAL NUM FILES: {}'.format(file_paths))
 
 precision, recall, results = evaluate_all_files_in_directory(directory,
                                                              only_files_with_solutions=True,
@@ -71,7 +77,7 @@ precision, recall, results = evaluate_all_files_in_directory(directory,
                                                              use_word2vec_model = False,
                                                              use_pretrained_Google_embeddings=True,
                                                              file_paths=file_paths,
-                                                             remove_non_eaten_food=True,
+                                                             remove_non_eaten_food=False,
                                                              use_edit_distance_matching=False,
                                                              base_accuracy_on_how_many_unique_food_items_detected=True)
 

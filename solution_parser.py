@@ -128,7 +128,9 @@ def get_corresponding_lines(file_name, solution_set, file_lines = None):
 	if file_lines is None:
 		with open(file_name) as f:
 			file_lines = f.readlines()
-	current_line_number = 0
+			current_line_number = 1
+	else:
+		current_line_number = 0
 	current_sorted_line_index = 0
 	for line in file_lines:
 		if current_sorted_line_index >= len(sorted_list_of_line_numbers):
@@ -154,18 +156,18 @@ def convert_solution_set_to_set_of_food_names(file_path=None, solution_set=None,
 		print("WE GOT THE NAMES BOY")
 		print(food_names)
 	else:
-			food_names = set()
-			# print(solution_set)
-			tuples_and_lines = get_corresponding_lines(file_path, list(solution_set), file_lines)
-			# print(tuples_and_lines)
-			for t_and_l in tuples_and_lines:
-				solution_tuple, line = t_and_l
-				substring_indexes = solution_tuple[1]
-				start_index, stop_index = substring_indexes # unpack the values from the tuple
-				if stop_index < start_index:
-					raise ValueError("stop index cannot be before start index, solutions are incorrect:, " + str(solution_tuple))
-				food_name = line[start_index:stop_index].lower()
-				food_names.add(food_name)
+		food_names = set()
+		# print(solution_set)
+		tuples_and_lines = get_corresponding_lines(file_path, list(solution_set), file_lines)
+		# print(tuples_and_lines)
+		for t_and_l in tuples_and_lines:
+			solution_tuple, line = t_and_l
+			substring_indexes = solution_tuple[1]
+			start_index, stop_index = substring_indexes # unpack the values from the tuple
+			if stop_index < start_index:
+				raise ValueError("stop index cannot be before start index, solutions are incorrect:, " + str(solution_tuple))
+			food_name = line[start_index:stop_index].lower()
+			food_names.add(food_name)
 	return food_names
 
 
