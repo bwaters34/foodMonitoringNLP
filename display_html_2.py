@@ -151,16 +151,16 @@ def read_file(fileName,
 
     unique_food_names = {}
     f = open(fileName, 'r').readlines()
-    # f = [x for x in f if x[0] == '*']
+    f = [x for x in f if x[0] == '*']
     length_of_total_file = len(f)
-    current_line_number = 0
+    current_line_number = -1
     # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
     predicted_food_labels_set = set()
     solution_set_loaded = False
-    if not remove_non_eaten_food:
-        solution_file_path = path.join('solutions', fileName)
-    else:
+    if remove_non_eaten_food:
         solution_file_path = path.join('solutions_only_eaten', fileName)
+    else:
+        solution_file_path = path.join('solutions', fileName)
     pos_tags_filename = "pos_tags/" + fileName
     try:
         pos_tags_dict = pickle.load(open(
@@ -203,6 +203,7 @@ def read_file(fileName,
         food_id_group_pairs = []
         food_id_langua_pairs = []
         current_line_number += 1
+        assert current_line_number == line_no
         if i[0] == '*':
             # print "LINE NO -> ", line_no
             word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(
@@ -225,17 +226,17 @@ def read_file(fileName,
             spans_found_on_line = []
 
             # FOR EDIT DISTANCE
-            pos_tags = pos_tags_dict[current_line_number]
-            if pos_tags_setting == 'nltk':
-                sentence_pos_tags = par.pattern_matching(
-                    edit_distance_i, pos_tag(edit_distance_i.split()))
-            elif pos_tags_setting == 'ark':
-                sentence_pos_tags = par.pattern_matching(
-                    edit_distance_i, pos_tags_dict[current_line_number])
-            # elif:
-            # 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)
-            else:
-                raise ValueError
+            if use_edit_distance_matching:
+                if pos_tags_setting == 'nltk':
+                    sentence_pos_tags = par.pattern_matching(
+                        edit_distance_i, pos_tag(edit_distance_i.split()))
+                elif pos_tags_setting == 'ark':
+                    sentence_pos_tags = par.pattern_matching(
+                        edit_distance_i, pos_tags_dict[current_line_number])
+                # elif:
+                # 	sentence_pos_tags = par.generate_max_two_words(edit_distance_i, pos_tag)
+                else:
+                    raise ValueError
             # print sentence_pos_tags
             # print "ATTENTION", sentence_pos_tags
             if use_wordnet:

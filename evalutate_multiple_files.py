@@ -13,7 +13,9 @@ precision, recall, results = evaluate_all_files_in_directory(directory,
                                                              use_word2vec_model = False,
                                                              use_pretrained_Google_embeddings=True,
                                                              file_paths=['HSLLD/HV7/MT/jebmt7.cha'],
-                                                             remove_non_eaten_food=True)
+                                                             remove_non_eaten_food=True,
+                                                             use_edit_distance_matching=False,
+                                                             base_accuracy_on_how_many_unique_food_items_detected=True)
 
 true_pos = results.num_true_pos
 false_pos = results.num_false_pos
