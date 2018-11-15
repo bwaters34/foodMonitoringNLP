@@ -45,6 +45,10 @@ def save(variable, fileName):
     with open(fileName, 'w') as f:
         pickle.dump(variable, f)
 
+def clean_line(line):
+    temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', line[4:].lower())
+    return temp_i
+
 
 def read_file(fileName,
               only_files_with_solutions=False,
@@ -147,11 +151,11 @@ def read_file(fileName,
     foodGroup = load("./data/food_desc_files/food_group.pickle")
     langua = load("./data/food_desc_files/langua.pickle")
 
-    #ark_parsed_data = ark_parser(fileName)
 
     unique_food_names = {}
     f = open(fileName, 'r').readlines()
     f = [x for x in f if x[0] == '*']
+    file_lines = [clean_line(l) for l in f]
     length_of_total_file = len(f)
     current_line_number = -1
     # syntax: key = (line_number, (start_index_of_food_string_on_line, end_index_of_food_string_on_line), where ending indices are inclusive.
@@ -165,14 +169,14 @@ def read_file(fileName,
     try:
         pos_tags_dict = pickle.load(open(
             pos_tags_filename))  # keys are line numbers, values are lists of tuples of (term, type, confidence) where each tuple is a word on the line
-        print(pos_tags_dict)
+        # print(pos_tags_dict)
     except IOError:
         print('parsing POS tags now')
         pos_tags_list = ark_parser(fileName)
         pos_tags_dict = {}
-        for i in range(len(pos_tags_list)):
-            pos_tags_dict[i] = pos_tags_list[i]
-        print(pos_tags_dict)
+        for i_index in range(len(pos_tags_list)):
+            pos_tags_dict[i_index] = pos_tags_list[i_index]
+        # print(pos_tags_dict)
         with open(pos_tags_filename, 'wb') as pf:
             print('saving to file: {}'.format(pos_tags_filename))
             pickle.dump(pos_tags_dict, pf)
@@ -197,21 +201,21 @@ def read_file(fileName,
             return "solution set not found", None, None, None
 
         print("reaching here -> ", f)
-    for line_no, i in enumerate(f):  # i is the current line (a string)
-        wsd_i = i
+    for line_no, current_line_in_file in enumerate(f):  # i is the current line (a string)
+        wsd_i = current_line_in_file
         calorie_text = ''
         food_id_group_pairs = []
         food_id_langua_pairs = []
         current_line_number += 1
         assert current_line_number == line_no
-        if i[0] == '*':
+        if current_line_in_file[0] == '*':
             # print "LINE NO -> ", line_no
             word_char_index, word_char_index_string_fromat = provide_words_with_char_nos(
-                i, line_no + 1)
+                current_line_in_file, line_no + 1)
             # print "LOOK HERE", word_char_index, word_char_index_string_fromat
             text = ''
-            edit_distance_i = i
-            i = i.lower()
+            edit_distance_i = current_line_in_file
+            current_line_in_file = current_line_in_file.lower()
             #i = i.split()
             # for word in i:
             #	if word not in foodNames:
@@ -221,7 +225,7 @@ def read_file(fileName,
             #write2file += text + '<br>'
             found_at_least = 0
             index_of_food_names = []
-            temp_i = re.sub('[^a-zA-Z0-9 \n]', ' ', i[4:])
+            temp_i = clean_line(current_line_in_file)
             #temp_i = i[4:]
             spans_found_on_line = []
 
@@ -270,7 +274,10 @@ def read_file(fileName,
                 wsd_i.insert(0, "unk")
 
             if use_pattern_matching:
-                pos_tags = pos_tags_dict[current_line_number]
+                try:
+                    pos_tags = pos_tags_dict[current_line_number]
+                except KeyError: # for breakpoint purposes
+                     raise KeyError
                 if use_edit_distance_matching:
                     words = phrasemachine.ark_get_phrases_wrapper(
                         pos_tags)  # all noun phrases in sentence
@@ -283,13 +290,15 @@ def read_file(fileName,
                 words = get_list_of_foodnames_in_sentence(foodNames, temp_i)
 
             # print("List of food words in sentence: ", words)
-            if len(words) > 0 and '?' in i:
+            if len(words) > 0 and '?' in current_line_in_file:
                 print("Found food keyword in question intent",
-                      line_no, i, words)
-                next_line_number = findNextConversation(
-                    f, line_no, length_of_total_file)
-                print("Next line-> ", f[next_line_number])
-                print("\n\n\n")
+                      line_no, current_line_in_file, words)
+                # next_line_number = findNextConversation(
+                #     f, line_no, length_of_total_file)
+                next_line_number = current_line_number +1
+                if next_line_number < len(f):
+                    print("Next line-> ", f[next_line_number])
+                    print("\n\n\n")
             # WSD
             for word in words:
                 if word == 'i':
@@ -394,7 +403,7 @@ def read_file(fileName,
                     food_words_in_sentence = list(
                         filter(lambda x: x in foodNames, words))
                     for food_word in food_words_in_sentence:
-                        for match in re.finditer(re.escape(food_word), i):
+                        for match in re.finditer(re.escape(food_word), temp_i):
                             # print "Sentence -> ", temp_i, "matches -> ", match
                             food_match_indexes = match.span()
                             index_of_food_names.append(
@@ -403,7 +412,7 @@ def read_file(fileName,
                                 [food_match_indexes[0], food_match_indexes[1]])
 
                 else:
-                    for match in re.finditer(re.escape(word), i):
+                    for match in re.finditer(re.escape(word), temp_i):
                         # print "Sentence -> ", temp_i, "matches -> ", match
                         food_match_indexes = match.span()
                         index_of_food_names.append(
@@ -449,7 +458,7 @@ def read_file(fileName,
                         k2 = distance / float(max(len(word), len(foodname)))
                         if k2 < levenshtein_threshold:
                             found_at_least = 1
-                            for match in re.finditer(re.escape(word), i):
+                            for match in re.finditer(re.escape(word), temp_i):
                                 # print "Sentence -> ", temp_i, "matches -> ", match
                                 food_match_indexes = match.span()
                                 index_of_food_names.append(
@@ -545,14 +554,14 @@ def read_file(fileName,
                 # 					# spans_found_on_line.append([food_match_indexes[0], food_match_indexes[1]])
 
             if found_at_least:
-                dic = minimum_no_meeting_rooms(index_of_food_names, len(i))
+                dic = minimum_no_meeting_rooms(index_of_food_names, len(temp_i))
                 # print('dic')
                 # print(dic)
                 for char_pos in dic:
                     if dic[char_pos] == 1:
-                        text += '<mark>' + i[char_pos] + '</mark>'
+                        text += '<mark>' + current_line_in_file[char_pos] + '</mark>'
                     else:
-                        text += i[char_pos]
+                        text += current_line_in_file[char_pos]
                 text += calorie_text
                 if use_span_merging:
                     spans_found_on_line = span_merger(spans_found_on_line)
@@ -566,7 +575,7 @@ def read_file(fileName,
 
             else:
                 pass
-                text += i[1:]
+                text += current_line_in_file[1:]
     if use_edit_distance_matching:
         save(distance_cache,
              "./data/levenshtein_cache_{}.pickle".format(levenshtein_setting))
@@ -582,7 +591,7 @@ def read_file(fileName,
             food_names_only_solution_set = solution_parser.convert_solution_set_to_set_of_food_names(
                 fileName, solution_set)
             food_names_only_predicted_set = solution_parser.convert_solution_set_to_set_of_food_names(
-                fileName, predicted_food_labels_set)
+                fileName, predicted_food_labels_set, file_lines)
             precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(
                 food_names_only_solution_set, food_names_only_predicted_set)
         else:
@@ -796,7 +805,7 @@ def ark_parser(fileName):
     for sentence in list_of_sentences.split('\n'):
         if len(sentence) > 1:
             if sentence[0] == '*':
-                final_list_of_sentences.append(' '.join(sentence.split()))
+                final_list_of_sentences.append(clean_line(sentence))
     print final_list_of_sentences
     var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
     return var

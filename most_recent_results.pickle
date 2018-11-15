@@ -7,84 +7,1512 @@ p2
 c__builtin__
 tuple
 p3
-(I0
-I33
-I4
+(I253
+I604
+I106
 (lp4
 (lp5
-S''
-aS'\n'
-aS' 4|'
+S'beer'
 p6
-aS' hav'
+aS'egg'
 p7
-aS' the'
+aS'wine'
 p8
-aS'(.) oh '
-p9
-aS'.\n'
+aa(lp9
+S'duck'
 p10
-aS'2|0|root 3|4|inf 4|2|x'
+aS'water'
 p11
-aS'3s pr'
-p12
-aS'3|4|au'
+aa(lp12
+S'asparagus'
 p13
-aS'conj|li'
+aS'blueberries'
 p14
-aS'd 7|'
+aS'blueberries blueberries'
 p15
-aS'd|will '
+aS'cake'
 p16
-aS'e here !\n'
+aS'cakes'
 p17
-aS'ghs .\n'
+aS'chicken'
 p18
-aS'j 4|3'
+aS'chocolate'
 p19
-aS'me ad'
+aS'chocolate ice cream'
 p20
-aS'n:prop|'
+aS'chocolate strawberry'
 p21
-aS'nice so'
+aS'coffee'
 p22
-aS'obj 6|'
+aS'coleslaw'
 p23
-aS'ot 2'
+aS'cookie'
 p24
-aS'pro:su'
+aS'corn'
 p25
-aS'r_i_f .'
+aS'honey'
 p26
-aS'rel|t'
+aS'hot dog'
 p27
-aS'root 3|2|obj'
+aS'ice cream'
 p28
-aS'sub|he'
+aS'juice'
 p29
-aS't 5|8|subj 6'
+aS'onions'
 p30
-aS'toby [<'
+aS'pudding'
 p31
-aS'|0|incroot 3'
+aS'restaurant'
 p32
-aS'|alw'
+aS'strawberries'
 p33
-aS'|jct 3|0|roo'
+aS'strawberry'
 p34
-aS'|not'
+aS'vanilla'
 p35
-aS'|wear p'
+aS'vanilla ice cream'
 p36
-aa(lp37
-(lp38
-S'milk'
+aS'water'
+p37
+aa(lp38
+S'cake'
 p39
-aS'sugar'
+aS'cakes'
 p40
-aS'tea'
+aS'cereal'
 p41
-aS'waffle'
+aS'fish'
 p42
-aattRp43
+aS'gravy'
+p43
+aS'ham'
+p44
+aS'honey'
+p45
+aS'hot dog bun'
+p46
+aS'hot dog buns'
+p47
+aS'hot dogs'
+p48
+aS'kidney beans'
+p49
+aS'lobster'
+p50
+aS'meat'
+p51
+aS'onions'
+p52
+aS'orange juice'
+p53
+aS'peas'
+p54
+aS'pepsi'
+p55
+aS'pineapple'
+p56
+aS'pineapple juice'
+p57
+aS'pork'
+p58
+aS'pumpkin'
+p59
+aS'sherbert'
+p60
+aS'spaghetti'
+p61
+aS'sugar'
+p62
+aS'water'
+p63
+aa(lp64
+S'pepsi'
+p65
+aS'sesame'
+p66
+aS'sugars'
+p67
+aS'tea'
+p68
+aS'water'
+p69
+aa(lp70
+S'beans'
+p71
+aS'broccoli'
+p72
+aS'brown gravy'
+p73
+aS'chicken'
+p74
+aS'juice'
+p75
+aS'lemon'
+p76
+aS'meat'
+p77
+aS'milk'
+p78
+aS'rice pilaf'
+p79
+aS'water'
+p80
+aa(lp81
+S'beer'
+p82
+aS'butter'
+p83
+aS'chickens'
+p84
+aS'colby'
+p85
+aS'lettuce'
+p86
+aS'meat'
+p87
+aS'pepsi'
+p88
+aS'pizza'
+p89
+aS'potato'
+p90
+aS'pudding pie'
+p91
+aS'root beer'
+p92
+aS'sauce'
+p93
+aS'snack'
+p94
+aa(lp95
+S'bread'
+p96
+aS'candy'
+p97
+aS'ham'
+p98
+aS'italian bread'
+p99
+aS'jelly'
+p100
+aS'lamb'
+p101
+aS'potatoes'
+p102
+aS'spinach'
+p103
+aS'water'
+p104
+aa(lp105
+S'apples'
+p106
+aS'chicken'
+p107
+aS'duck'
+p108
+aS'duckling'
+p109
+aS'ducks'
+p110
+aS'fruit'
+p111
+aS'grape juice'
+p112
+aS'honey'
+p113
+aS'melon honey'
+p114
+aS'polar bear'
+p115
+aS'snack'
+p116
+aS'tonic'
+p117
+aS'walnuts'
+p118
+aS'water'
+p119
+aS'wine'
+p120
+aa(lp121
+S'bear'
+p122
+aS'cake'
+p123
+aS'cakes'
+p124
+aS'candy'
+p125
+aS'colby'
+p126
+aS'figs'
+p127
+aS'meat'
+p128
+aS'pepper salt'
+p129
+aS'snack'
+p130
+aS'water'
+p131
+aa(lp132
+S'bacon'
+p133
+aS'banana'
+p134
+aS'barbecue sauce'
+p135
+aS'beef gravy'
+p136
+aS'cake'
+p137
+aS'chicken chicken'
+p138
+aS'chicken gravy'
+p139
+aS'chocolate'
+p140
+aS'cracker'
+p141
+aS'crackers'
+p142
+aS'cranberry sauce'
+p143
+aS'cream'
+p144
+aS'diets'
+p145
+aS'eggs'
+p146
+aS'gravy'
+p147
+aS'green beans'
+p148
+aS'honey'
+p149
+aS'ice cream'
+p150
+aS'ice cream cake'
+p151
+aS'milk'
+p152
+aS'onions'
+p153
+aS'peas'
+p154
+aS'potato'
+p155
+aS'ribs'
+p156
+aS'snack'
+p157
+aS'snacks'
+p158
+aS'soy sauce'
+p159
+aS'steak'
+p160
+aS'tuna fish'
+p161
+aS'vanilla'
+p162
+aS'vegetables'
+p163
+aa(lp164
+S'bread'
+p165
+aS'bun'
+p166
+aS'buns'
+p167
+aS'coffee'
+p168
+aS'ginger ale'
+p169
+aS'honey'
+p170
+aS'hot dogs'
+p171
+aS'loaf sandwich'
+p172
+aS'meat'
+p173
+aS'onions'
+p174
+aS'rolls'
+p175
+aS'salad'
+p176
+aS'tea'
+p177
+aS'water'
+p178
+aa(lp179
+S'apple'
+p180
+aS'apples'
+p181
+aS'cheese'
+p182
+aS'doughnuts'
+p183
+aS'ice cream'
+p184
+aS'orange'
+p185
+aS'pickle'
+p186
+aS'roast beef'
+p187
+aS'turtle'
+p188
+aS'turtles'
+p189
+aa(lp190
+S'bacon'
+p191
+aS'catsup'
+p192
+aS'coffee'
+p193
+aS'cookies'
+p194
+aS'duck'
+p195
+aS'egg'
+p196
+aS'ham'
+p197
+aS'honey'
+p198
+aS'meat'
+p199
+aS'milk'
+p200
+aS'mix'
+p201
+aS'onion rings'
+p202
+aS'roast'
+p203
+aS'sherbet'
+p204
+aS'turkey'
+p205
+aS'water'
+p206
+aS'yolk'
+p207
+aa(lp208
+S'bear'
+p209
+aS'cake'
+p210
+aS'candy'
+p211
+aS'cheese'
+p212
+aS'cheese popcorn'
+p213
+aS'cheese toast'
+p214
+aS'coloring'
+p215
+aS'garlic bread'
+p216
+aS'gums'
+p217
+aS'honey'
+p218
+aS'meat sauce'
+p219
+aS'popcorn'
+p220
+aS'potato chips'
+p221
+aS'rolls'
+p222
+aS'tea'
+p223
+aa(lp224
+S'catsup'
+p225
+aS'cheese'
+p226
+aS'ham'
+p227
+aa(lp228
+S'cake'
+p229
+aS'chicken'
+p230
+aS'ice cream'
+p231
+aS'juice'
+p232
+aS'meat'
+p233
+aS'pancakes'
+p234
+aS'pizza'
+p235
+aS'raisins'
+p236
+aS'sandwich'
+p237
+aS'squash'
+p238
+aS'water'
+p239
+aa(lp240
+S'balsamic'
+p241
+aS'bleu'
+p242
+aS'blue cheese'
+p243
+aS'carrot'
+p244
+aS'chicken'
+p245
+aS'chickens'
+p246
+aS'chocolate'
+p247
+aS'french toast'
+p248
+aS'honey'
+p249
+aS'ice cream'
+p250
+aS'mousse'
+p251
+aS'olive oil'
+p252
+aS'owl'
+p253
+aS'peas'
+p254
+aS'tomato'
+p255
+aS'tomatoes'
+p256
+aS'turtle'
+p257
+aS'vinegar'
+p258
+aa(lp259
+S'cookies'
+p260
+aS'diet'
+p261
+aS'honey'
+p262
+aS'meat'
+p263
+aS'milk honey'
+p264
+aS'potatoes'
+p265
+aS'seal'
+p266
+aS'seals'
+p267
+aS'turtles'
+p268
+aS'water'
+p269
+aa(lp270
+S'bread'
+p271
+aS'bun'
+p272
+aS'cake'
+p273
+aS'chickens'
+p274
+aS'chocolate'
+p275
+aS'chocolate cake'
+p276
+aS'cookies'
+p277
+aS'diet'
+p278
+aS'diets'
+p279
+aS'duck'
+p280
+aS'ice cream'
+p281
+aS'lasagnas'
+p282
+aS'lettuce'
+p283
+aS'mix'
+p284
+aS'pancake'
+p285
+aS'pizza'
+p286
+aS'restaurant'
+p287
+aS'snack'
+p288
+aS'sponge cake'
+p289
+aS'strawberry'
+p290
+aS'vanilla'
+p291
+aS'water'
+p292
+aa(lp293
+S'cherries'
+p294
+aS'green beans'
+p295
+aS'lollipop'
+p296
+aS'milk'
+p297
+aS'pepper'
+p298
+aS'pepsi'
+p299
+aS'potato'
+p300
+aS'salt honey'
+p301
+aS'sesame'
+p302
+aS'snack'
+p303
+aa(lp304
+S'cheese'
+p305
+aS'cookie'
+p306
+aS'duck'
+p307
+aS'meat'
+p308
+aS'tea'
+p309
+aS'turtle'
+p310
+aS'turtles'
+p311
+aS'water'
+p312
+aS'waters'
+p313
+aa(lp314
+S'apple'
+p315
+aS'banquet'
+p316
+aS'candy'
+p317
+aS'chocolate'
+p318
+aS'coffee'
+p319
+aS'coloring'
+p320
+aS'cookies'
+p321
+aS'crackers'
+p322
+aS'egg'
+p323
+aS'gravy'
+p324
+aS'jelly beans'
+p325
+aS'noodles'
+p326
+aS'onions'
+p327
+aS'pie'
+p328
+aS'turtle'
+p329
+aS'turtles'
+p330
+aa(lp331
+S'butter'
+p332
+aS'candy'
+p333
+aS'carrots'
+p334
+aS'cereal'
+p335
+aS'diet'
+p336
+aS'ducks'
+p337
+aS'goose'
+p338
+aS'honey'
+p339
+aS'mashed potatoes'
+p340
+aS'meat'
+p341
+aS'meatballs'
+p342
+aS'potatoes'
+p343
+aS'sauce'
+p344
+aS'tea'
+p345
+aS'vegetables'
+p346
+aS'water'
+p347
+aa(lp348
+S'alcohol'
+p349
+aS'apples'
+p350
+aS'beans'
+p351
+aS'beers'
+p352
+aS'brandy'
+p353
+aS'butter'
+p354
+aS'cheese'
+p355
+aS'chicken'
+p356
+aS'chicken soup'
+p357
+aS'chocolate'
+p358
+aS'concoction'
+p359
+aS'ground pork'
+p360
+aS'hamburger'
+p361
+aS'ice cream'
+p362
+aS'jelly'
+p363
+aS'kidney'
+p364
+aS'kidney beans'
+p365
+aS'lentils'
+p366
+aS'macaroni'
+p367
+aS'mashed potatoes'
+p368
+aS'meat'
+p369
+aS'meat chili'
+p370
+aS'orange juice'
+p371
+aS'peas'
+p372
+aS'pepper'
+p373
+aS'pinto beans'
+p374
+aS'pork'
+p375
+aS'potato pie'
+p376
+aS'potatoes'
+p377
+aS'sausages'
+p378
+aS'scotch'
+p379
+aS'steak'
+p380
+aS'turkey cake'
+p381
+aS'whiskey'
+p382
+aa(lp383
+S'bread'
+p384
+aS'candy'
+p385
+aS'chocolate'
+p386
+aS'greens'
+p387
+aS'honey'
+p388
+aS'ice cream'
+p389
+aS'raisin'
+p390
+aS'snack'
+p391
+aS'sour cream'
+p392
+aS'water'
+p393
+aa(lp394
+S'almond'
+p395
+aS'almonds'
+p396
+aS'apple'
+p397
+aS'bean'
+p398
+aS'berry'
+p399
+aS'cake'
+p400
+aS'cakes'
+p401
+aS'candy'
+p402
+aS'cookies'
+p403
+aS'green beans'
+p404
+aS'jelly beans'
+p405
+aS'jelly sandwich'
+p406
+aS'juice'
+p407
+aS'meat'
+p408
+aS'paprika'
+p409
+aS'peanut butter'
+p410
+aS'pepper'
+p411
+aS'pretzels'
+p412
+aS'raisins'
+p413
+aS'rolls'
+p414
+aS'sandwich'
+p415
+aS'water'
+p416
+aS'white cake'
+p417
+aS'white cakes'
+p418
+aa(lp419
+S'apple pie'
+p420
+aS'beans'
+p421
+aS'bear'
+p422
+aS'bears'
+p423
+aS'bread'
+p424
+aS'bread loaf'
+p425
+aS'bread mix'
+p426
+aS'butter'
+p427
+aS'cheese'
+p428
+aS'hamburger'
+p429
+aS'hamburgers'
+p430
+aS'honey'
+p431
+aS'hot dogs'
+p432
+aS'jelly'
+p433
+aS'juice'
+p434
+aS'loaf'
+p435
+aS'macaroni'
+p436
+aS'meat'
+p437
+aS'milk'
+p438
+aS'mix'
+p439
+aS'muffins'
+p440
+aS'oatmeal'
+p441
+aS'orange juice'
+p442
+aS'peanut butter'
+p443
+aS'pie'
+p444
+aS'pizza'
+p445
+aS'potato puffs'
+p446
+aS'sandwich'
+p447
+aS'snacks'
+p448
+aa(lp449
+S'meat'
+p450
+aS'spaghetti'
+p451
+aa(lp452
+S'alcohol'
+p453
+aS'bread honey'
+p454
+aS'burger kings'
+p455
+aS'cheese'
+p456
+aS'cinnamon'
+p457
+aS'honey'
+p458
+aS'jelly'
+p459
+aS'lamb'
+p460
+aS'oil'
+p461
+aS'pepper'
+p462
+aS'pie'
+p463
+aS'salt'
+p464
+aS'sandwich'
+p465
+aS'sugar'
+p466
+aS'turkey'
+p467
+aa(lp468
+S'ham'
+p469
+aS'honey'
+p470
+aS'lamb'
+p471
+aS'lasagna'
+p472
+aS'pepsi'
+p473
+aS'salt'
+p474
+aS'salt honey'
+p475
+aS'shake'
+p476
+aS'water'
+p477
+aa(lp478
+S'cheese'
+p479
+aS'chuck'
+p480
+aS'corn'
+p481
+aS'dumpling'
+p482
+aS'garlic'
+p483
+aS'kidney beans'
+p484
+aS'meat'
+p485
+aS'peas'
+p486
+aS'peppers'
+p487
+aS'red beans'
+p488
+aS'rolls'
+p489
+aS'vegetables'
+p490
+aS'water'
+p491
+aa(lp492
+S'fish'
+p493
+aS'honey'
+p494
+aS'meat'
+p495
+aS'olives'
+p496
+aS'pizza'
+p497
+aS'pork'
+p498
+aS'potatoes'
+p499
+aS'salt'
+p500
+aS'spaghettios'
+p501
+aS'water'
+p502
+aa(lp503
+S'bean'
+p504
+aS'carrots'
+p505
+aS'cheese'
+p506
+aS'chinese restaurant'
+p507
+aS'coffee'
+p508
+aS'cranberry juice'
+p509
+aS'honey'
+p510
+aS'juice'
+p511
+aS'kraft macaroni'
+p512
+aS'macaroni'
+p513
+aS'pizza'
+p514
+aS'potato chips'
+p515
+aS'root beer'
+p516
+aS'salad'
+p517
+aS'sauce'
+p518
+aS'strawberry'
+p519
+aS'toast'
+p520
+aS'tonic'
+p521
+aS'turtles'
+p522
+aS'white rice'
+p523
+aa(lp524
+S'cakes'
+p525
+aS'candy'
+p526
+aS'champagne'
+p527
+aS'cherries'
+p528
+aS'meat'
+p529
+aS'peas'
+p530
+aS'pepsi'
+p531
+aS'pineapple juice'
+p532
+aS'raspberries'
+p533
+aS'tomatoes'
+p534
+aS'water'
+p535
+aa(lp536
+S'cake'
+p537
+aS'cakes'
+p538
+aS'honey'
+p539
+aS'pancake mix'
+p540
+aS'pancakes'
+p541
+aa(lp542
+S'apple'
+p543
+aS'banana'
+p544
+aS'candy'
+p545
+aS'candy corns'
+p546
+aS'chicken kabob'
+p547
+aS'cookies'
+p548
+aS'cupcakes'
+p549
+aS'farina'
+p550
+aS'gums'
+p551
+aS'honey'
+p552
+aS'jelly beans'
+p553
+aS'lemon'
+p554
+aS'melon'
+p555
+aS'onions'
+p556
+aS'peppers'
+p557
+aS'snack'
+p558
+aS'strawberry'
+p559
+aS'tamales'
+p560
+aa(lp561
+S'bologna'
+p562
+aS'bun'
+p563
+aS'cake'
+p564
+aS'candy'
+p565
+aS'celery'
+p566
+aS'cheese'
+p567
+aS'chicken'
+p568
+aS'chicken patty'
+p569
+aS'chocolate'
+p570
+aS'cocoa'
+p571
+aS'cola'
+p572
+aS'egg'
+p573
+aS'fish'
+p574
+aS'fried chicken'
+p575
+aS'fruit'
+p576
+aS'fudge'
+p577
+aS'hamburger'
+p578
+aS'hamburger bun'
+p579
+aS'honey'
+p580
+aS'ice cream'
+p581
+aS'juice'
+p582
+aS'milk'
+p583
+aS'patty'
+p584
+aS'peanut butter'
+p585
+aS'pepperoni honey'
+p586
+aS'pizza pizza'
+p587
+aS'potato chips'
+p588
+aS'pudding'
+p589
+aS'salad'
+p590
+aS'sandwich'
+p591
+aS'sauce'
+p592
+aS'school lunch'
+p593
+aS'snack'
+p594
+aS'squirrel'
+p595
+aS'toppings'
+p596
+aS'tuna fish'
+p597
+aS'turkey'
+p598
+aa(lp599
+S'beef'
+p600
+aS'bread'
+p601
+aS'cider'
+p602
+aS'cola'
+p603
+aS'cookies'
+p604
+aS'fish'
+p605
+aS'garlic'
+p606
+aS'ham honey'
+p607
+aS'potatoes'
+p608
+aS'sausage'
+p609
+aS'strawberries'
+p610
+aS'water'
+p611
+aa(lp612
+S'cheese'
+p613
+aS'macaroni'
+p614
+aS'meat'
+p615
+aS'pizza'
+p616
+aa(lp617
+S'apples'
+p618
+aS'beef'
+p619
+aS'candy'
+p620
+aS'cheddar cheese'
+p621
+aS'cheese'
+p622
+aS'chicken'
+p623
+aS'chicken fillet'
+p624
+aS'chocolate chip cookies'
+p625
+aS'chocolate milk'
+p626
+aS'cookie'
+p627
+aS'cookies'
+p628
+aS'fish'
+p629
+aS'fruit'
+p630
+aS'hash browns'
+p631
+aS'jellies'
+p632
+aS'jelly'
+p633
+aS'lettuce'
+p634
+aS'meat'
+p635
+aS'peanut butter'
+p636
+aS'peanut butters'
+p637
+aS'pears'
+p638
+aS'pepperoni'
+p639
+aS'pizza'
+p640
+aS'popcorn'
+p641
+aS'rice'
+p642
+aS'salad'
+p643
+aS'salads'
+p644
+aS'school lunch'
+p645
+aS'snack'
+p646
+aS'turtle'
+p647
+aS'waffles'
+p648
+aS'water'
+p649
+aa(lp650
+(lp651
+S'sandwiches'
+p652
+aa(lp653
+a(lp654
+S'Chicken'
+p655
+aS'onion'
+p656
+aa(lp657
+S'Pepsi'
+p658
+aS'black eyed peas'
+p659
+aS'bun'
+p660
+aS'ham hock'
+p661
+aS'pork and beans'
+p662
+aS'shrimp'
+p663
+aa(lp664
+a(lp665
+S'gravy'
+p666
+aa(lp667
+S'chicky'
+p668
+aS'potato coins'
+p669
+aa(lp670
+a(lp671
+S'pork chop'
+p672
+aa(lp673
+S'coke'
+p674
+aa(lp675
+S'hot chi'
+p676
+aS'red sweet and sour sauce'
+p677
+aS'shrimp'
+p678
+aS'sweet and sour sauce'
+p679
+aa(lp680
+S'Coke'
+p681
+aS'ice tea'
+p682
+aS'salad dressing'
+p683
+aa(lp684
+S'chips'
+p685
+aS'doughnut'
+p686
+aa(lp687
+S'orange and sherbet'
+p688
+aa(lp689
+a(lp690
+S'french fries'
+p691
+aa(lp692
+a(lp693
+S'Balsamic vinegar'
+p694
+aS'carrot sticks'
+p695
+aS'french fries'
+p696
+aS'ketchup'
+p697
+aS'virgin olive oil'
+p698
+aa(lp699
+S'Yodel'
+p700
+aS'coke'
+p701
+aS'corn on the cob'
+p702
+aS'diet coke'
+p703
+aS'mashed potato'
+p704
+aS'potato'
+p705
+aa(lp706
+S'koolaid'
+p707
+aa(lp708
+S'Coke'
+p709
+aS'green bean'
+p710
+aa(lp711
+a(lp712
+S'egg roll'
+p713
+aS'gravy things'
+p714
+aS'green onions'
+p715
+aS'noodle'
+p716
+aS'scallions'
+p717
+aa(lp718
+S'carrot'
+p719
+aS'diet coke'
+p720
+aS'hot butter'
+p721
+aS'ketchup'
+p722
+aS'mashed potato'
+p723
+aS'stuffing'
+p724
+aS'vegetable'
+p725
+aa(lp726
+S'Grey poupon'
+p727
+aS'french fry'
+p728
+aS'fry'
+p729
+aS'hot chocolate'
+p730
+aS'kidney bean'
+p731
+aS'lentil'
+p732
+aS'lentil bean'
+p733
+aS'pinto bean'
+p734
+aS'vegetarian chili'
+p735
+aa(lp736
+S"Marie's sour cream and ill"
+p737
+aS'creamy dressing'
+p738
+aS'dressing'
+p739
+aS'half and half'
+p740
+aS'sprinkles'
+p741
+aa(lp742
+S'green bean'
+p743
+aS'red crystal sugar'
+p744
+aa(lp745
+a(lp746
+S'ice'
+p747
+aS'soda'
+p748
+aa(lp749
+S'lamb chop'
+p750
+aS'pork chops'
+p751
+aa(lp752
+S'pig'
+p753
+aS'pork chop'
+p754
+aS'shake in bake'
+p755
+aS'shell'
+p756
+aa(lp757
+S'bell pepper'
+p758
+aS'black eyed pea'
+p759
+aS'french bread'
+p760
+aS'kidney bean'
+p761
+aS'popsicle'
+p762
+aS'sub roll'
+p763
+aa(lp764
+a(lp765
+a(lp766
+S'Pepsi'
+p767
+aS'brownie'
+p768
+aS'cherry'
+p769
+aS'gum'
+p770
+aS'icing'
+p771
+aS'pea'
+p772
+aS'pine juice'
+p773
+aS'raspberry'
+p774
+aa(lp775
+S'golden pancake'
+p776
+aa(lp777
+S'Mike_N_Ike'
+p778
+aS'chicken kabob pepper'
+p779
+aS'donut'
+p780
+aS'flat bread'
+p781
+aS'onion'
+p782
+aS'shishkebab onion'
+p783
+aa(lp784
+S'Classic_coke'
+p785
+aS'Coca_Cola'
+p786
+aS'Coke'
+p787
+aS'orange'
+p788
+aS'soda'
+p789
+aa(lp790
+S'Coca_Cola'
+p791
+aS'Coke'
+p792
+aS'chip'
+p793
+aS'pork chop'
+p794
+aa(lp795
+a(lp796
+S'waffle'
+p797
+aattRp798
 .
