@@ -19,14 +19,14 @@ def calculate_precision_and_recall(gold_standard_set, predicted_set):
 	false_pos_list = []
 	false_neg_list = []
 	for elem in predicted_set:
-		if elem in gold_standard_set:
+		if elem in gold_standard_set or (elem[-1] == 's' and elem[:-1] in gold_standard_set):  # TODO: this is super hacky
 			true_positives += 1
 			true_pos_list.append(elem)
 		else:
 			false_positives += 1
 			false_pos_list.append(elem)
 	for gold_elem in gold_standard_set:
-		if gold_elem not in predicted_set:
+		if gold_elem not in predicted_set and gold_elem + 's' not in predicted_set:  # TODO: this is super hacky
 			false_negatives += 1
 			false_neg_list.append(gold_elem)
 

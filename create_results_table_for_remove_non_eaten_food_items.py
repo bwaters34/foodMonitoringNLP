@@ -162,12 +162,16 @@ for item in list(zip(precision_list, recall_list)):
     print(item)
 
 print('false positives:')
-for group in all_false_positives:
-    print(group)
+for group, val in zip(all_false_positives, remove_non_eaten_food_list):
+    print('----------')
+    print(val)
+    for lst in group:
+        print(lst)
 print('false negatives')
-for group in all_false_negatives:
-    print(group)
-
-
+for group, val in zip(all_false_negatives, remove_non_eaten_food_list):
+    print('----------')
+    print(val)
+    for lst in group:
+        print(lst)
 print(len(all_false_positives))
 print(len(file_paths))
