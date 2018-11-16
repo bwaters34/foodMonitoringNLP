@@ -88,7 +88,7 @@ def read_file(fileName,
  #                            s=(0, 0, 1))
     write2file = ''
     total_calorie = 0.0
-    calorie = cal_calorie_given_food_name.food_to_calorie()
+    # calorie = cal_calorie_given_food_name.food_to_calorie()
     par = parse.parse(pattern=pos_tags_setting)
     if remove_non_eaten_food:
         only_eaten_food = []
@@ -839,6 +839,8 @@ def evaluate_all_files_in_directory(directory_path,
     list_of_false_pos_lists = []
     list_of_false_neg_lists = []
 
+    results_per_file = []  # tuples of file_name, accuracy (LOL)
+
     if file_paths is None:
         file_paths = []
         for path, subdirs, files in os.walk(directory_path):
@@ -850,6 +852,7 @@ def evaluate_all_files_in_directory(directory_path,
                 file_path = os.path.join(path, filename)
                 print(file_path)
                 file_paths.append(file_path)
+
     for file_path in file_paths:
         html_format, results, predicted_spans, found_solution = read_file(file_path,
                                                                           only_files_with_solutions=only_files_with_solutions,
@@ -884,13 +887,29 @@ def evaluate_all_files_in_directory(directory_path,
             list_of_false_pos_lists.append(results.false_pos_list)
             # if results.false_pos_list is not None:
             list_of_false_neg_lists.append(results.false_neg_list)
+            results_per_file.append((file_path, results))
+
     combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg,
-                                false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists)
-    precision = sum_true_pos / float(sum_true_pos + sum_false_pos + 1)
-    recall = sum_true_pos / float(sum_true_pos + sum_false_neg + 1)
+                                false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists,
+                                results_per_file=results_per_file)
+    precision = calculate_precision(sum_true_pos, sum_false_pos)
+    recall = calculate_recall(sum_true_pos, sum_false_neg)
     # print(parameters_used)
     return precision, recall, combined_results
 
+def calculate_precision(sum_true_pos, sum_false_pos):
+    if sum_true_pos + sum_false_pos == 0:
+        precision = 0.0
+    else:
+        precision = sum_true_pos / float(sum_true_pos + sum_false_pos)
+    return precision
+
+def calculate_recall(sum_true_pos, sum_false_neg):
+    if sum_true_pos + sum_false_neg == 0:
+        recall = 0.0
+    else:
+        recall = sum_true_pos / float(sum_true_pos + sum_false_neg)
+    return recall
 
 if __name__ == '__main__':
     try:

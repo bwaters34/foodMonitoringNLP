@@ -69,7 +69,7 @@ class EatenVsAll:
         y_ = np.divide(y1, y2)
         print(np.mean(y_), np.std(y_))
 
-    def plot_hist(self, x_, y1_, y2_, fileNames):
+    def plot_hist(self, x_, y1, y2, fileNames):
         x_ = [float(_) for _ in x_]
         x = np.asarray(x_, dtype="float")
         y = y1
