@@ -64,10 +64,10 @@ HSLLD/HV7/MT/davmt7.cha
 HSLLD/HV7/MT/allmt7.cha
 HSLLD/HV7/MT/jebmt7.cha""".splitlines(False)
 
-file_paths = list(set(old_transcripts+new_transcripts))
+# file_paths = list(set(old_transcripts+new_transcripts))
+file_paths = new_transcripts
 print("LENGTH")
 print(len(file_paths))
-# file_paths = new_transcripts
 
 print('TOTAL NUM FILES: {}'.format(file_paths))
 
@@ -79,7 +79,7 @@ precision, recall, results = evaluate_all_files_in_directory(directory,
                                                              use_word2vec_model = False,
                                                              use_pretrained_Google_embeddings=True,
                                                              file_paths=file_paths,
-                                                             remove_non_eaten_food=False,
+                                                             remove_non_eaten_food=True,
                                                              use_edit_distance_matching=False,
                                                              base_accuracy_on_how_many_unique_food_items_detected=True)
 

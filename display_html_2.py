@@ -22,7 +22,7 @@ from gensim.models import Word2Vec
 import gensim
 from namedtuples import Accuracy
 import phrasemachine
-
+from collections import defaultdict
 
 # Word2Vec
 use_Google = 0
@@ -148,6 +148,11 @@ def read_file(fileName,
             if name not in foodNames:  # make sure we're not overwriting anything
                 foodNames[name] = None
         # print(len(foodNames))
+
+    # keys are food words, values are tuples where the first int is the number of times the food word appeared in a
+    # sentence that is past tense, and the second int is the number that appeared in a sentence otherwise.
+    past_tense_banned_words = defaultdict(lambda: (0,0))
+
     foodGroup = load("./data/food_desc_files/food_group.pickle")
     langua = load("./data/food_desc_files/langua.pickle")
 
@@ -568,11 +573,31 @@ def read_file(fileName,
                 # filters out spans that conflict with other spans. larger spans are given priority
                 tuples_list = give_largest_non_overlapping_sequences(
                     spans_found_on_line)
-                for tup in tuples_list:
-                    # add line number so we know where in the document we got it
-                    set_elem = (current_line_number, tup)
-                    predicted_food_labels_set.add(set_elem)
+                sentence_is_past_tense = False
+                if len(tuples_list) > 0:
+                    nltk_tagged = pos_tag(word_tokenize(temp_i))
+                    for token, pos in nltk_tagged:
+                        if pos == 'VBD' or pos == 'VBN':
+                            print("PAST TENSE")
+                            sentence_is_past_tense = True
+                            print(temp_i)
+                            break
 
+                for tup in tuples_list:
+                    food_word = temp_i[tup[0]:tup[1]]
+                    print('BANNED WORD: {}'.format(food_word))
+                    curr_val = past_tense_banned_words[food_word]
+                    if sentence_is_past_tense:
+                        new_val = curr_val[0]+1, curr_val[1]
+                    else:
+                        new_val = curr_val[0], curr_val[1]+1
+                    past_tense_banned_words[food_word] = new_val
+
+                else:
+                    for tup in tuples_list:
+                        # add line number so we know where in the document we got it
+                        set_elem = (current_line_number, tup)
+                        predicted_food_labels_set.add(set_elem)
             else:
                 pass
                 text += current_line_in_file[1:]
@@ -592,6 +617,7 @@ def read_file(fileName,
                 fileName, solution_set)
             food_names_only_predicted_set = solution_parser.convert_solution_set_to_set_of_food_names(
                 fileName, predicted_food_labels_set, file_lines)
+            food_names_only_predicted_set = past_tense_food_words_filter(food_names_only_predicted_set, past_tense_banned_words)
             precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(
                 food_names_only_solution_set, food_names_only_predicted_set)
         else:
@@ -810,6 +836,18 @@ def ark_parser(fileName):
     var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
     return var
 
+def past_tense_food_words_filter(predicted_set, past_tense_words_dict, ratio = 0.9):
+    words_to_remove = set()
+    for word, tup in past_tense_words_dict.iteritems():
+        past_tense = tup[0]
+        other_tense = tup[1]
+        total = past_tense + other_tense
+        if past_tense / float(total) > ratio:
+            words_to_remove.add(word)
+            print('REMOVING WORD: {}'.format(word))
+    return predicted_set - words_to_remove
+
+
 
 def evaluate_all_files_in_directory(directory_path,
                                     only_files_with_solutions=False,
@@ -888,6 +926,8 @@ def evaluate_all_files_in_directory(directory_path,
             # if results.false_pos_list is not None:
             list_of_false_neg_lists.append(results.false_neg_list)
             results_per_file.append((file_path, results))
+        else:
+            print('solution not found: {}'.format(file_path))
 
     combined_results = Accuracy(num_true_pos=sum_true_pos, num_false_pos=sum_false_pos, num_false_neg=sum_false_neg,
                                 false_pos_list=list_of_false_pos_lists, false_neg_list=list_of_false_neg_lists,

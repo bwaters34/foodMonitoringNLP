@@ -1,0 +1,76 @@
+before:
+
+precision: 0.317504655493
+recall 0.739696312364
+# true pos: 341
+# false pos: 733
+# false neg: 120
+
+
+Tried: don't predict a food word if the sentence is past tense
+ehhhh
+precision: 0.338378378378
+recall 0.681917211329
+
+
+Tried: banning words that were in any past tense sentence
+
+precision: 0.288753799392
+recall 0.424107142857
+# true pos: 190
+# false pos: 468
+# false neg: 258
+
+Tried: banning words that appear as past-tense with ratio 0.1
+
+precision: 0.299259259259
+recall 0.449888641425
+
+Tried: banning words that appear as past-tense with ratio 0.2
+
+precision: 0.331983805668
+recall 0.544247787611
+
+Tried: banning words that appear as past-tense with ratio 0.3
+
+precision: 0.34067357513
+recall 0.579295154185
+
+Tried: banning words that appear as past-tense with ratio 0.4
+
+precision: 0.34512195122
+recall 0.621978021978
+
+
+Tried: banning words that appear as past-tense with ratio 0.5
+
+precision: 0.33779264214
+recall 0.664473684211
+# true pos: 303
+# false pos: 594
+# false neg: 153
+
+
+Tried: banning words that appear as past-tense with ratio 0.6
+
+precision: 0.337763012182
+recall 0.667396061269
+
+Tried: banning words that appear as past-tense with ratio 0.7
+
+precision: 0.338058887677
+recall 0.675381263617
+Tried: banning words that appear as past-tense with ratio 0.8
+
+precision: 0.338394793926
+recall 0.679738562092
+
+Tried: banning words that appear as past-tense with ratio 0.9
+precision: 0.338378378378
+recall 0.681917211329
+
+Tried: banning words that appear as past-tense with ratio 1.0
+
+precision: 0.317504655493
+recall 0.739696312364
+
