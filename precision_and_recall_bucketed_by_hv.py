@@ -71,6 +71,7 @@ if __name__ == '__main__':
     HSLLD/HV7/MT/davmt7.cha
     HSLLD/HV7/MT/allmt7.cha
     HSLLD/HV7/MT/jebmt7.cha""".splitlines(False)
+    new_transcripts = [n.strip() for n in new_transcripts]
 
     file_paths = list(set(old_transcripts+new_transcripts))
 

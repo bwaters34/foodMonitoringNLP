@@ -64,8 +64,10 @@ HSLLD/HV7/MT/davmt7.cha
 HSLLD/HV7/MT/allmt7.cha
 HSLLD/HV7/MT/jebmt7.cha""".splitlines(False)
 
-# file_paths = list(set(old_transcripts+new_transcripts))
-file_paths = new_transcripts
+file_paths = list(set(old_transcripts+new_transcripts))
+print("LENGTH")
+print(len(file_paths))
+# file_paths = new_transcripts
 
 print('TOTAL NUM FILES: {}'.format(file_paths))
 
