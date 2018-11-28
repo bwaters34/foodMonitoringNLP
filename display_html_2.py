@@ -23,6 +23,9 @@ import gensim
 from namedtuples import Accuracy
 import phrasemachine
 from collections import defaultdict
+import en_core_web_sm
+nlp = en_core_web_sm.load()
+
 
 # Word2Vec
 use_Google = 0
@@ -69,7 +72,8 @@ def read_file(fileName,
               log_reg_threshold=0.3,
               levenshtein_threshold=0.25,
               levenshtein_setting='system2',
-              remove_non_eaten_food=True):
+              remove_non_eaten_food=True,
+              tense_ratio=0.5):
     """
     :param fileName: Name of file to be read
     :param parser_type:
@@ -573,27 +577,18 @@ def read_file(fileName,
                 # filters out spans that conflict with other spans. larger spans are given priority
                 tuples_list = give_largest_non_overlapping_sequences(
                     spans_found_on_line)
-                sentence_is_past_tense = False
+
                 if len(tuples_list) > 0:
-                    nltk_tagged = pos_tag(word_tokenize(temp_i))
-                    for token, pos in nltk_tagged:
-                        if pos == 'VBD' or pos == 'VBN':
-                            print("PAST TENSE")
-                            sentence_is_past_tense = True
-                            print(temp_i)
-                            break
+                    sentence_is_past_tense = not is_sentence_present_tense(temp_i, nlp)
 
-                for tup in tuples_list:
-                    food_word = temp_i[tup[0]:tup[1]]
-                    print('BANNED WORD: {}'.format(food_word))
-                    curr_val = past_tense_banned_words[food_word]
-                    if sentence_is_past_tense:
-                        new_val = curr_val[0]+1, curr_val[1]
-                    else:
-                        new_val = curr_val[0], curr_val[1]+1
-                    past_tense_banned_words[food_word] = new_val
-
-                else:
+                    for tup in tuples_list:
+                        food_word = temp_i[tup[0]:tup[1]]
+                        curr_val = past_tense_banned_words[food_word]
+                        if sentence_is_past_tense:
+                            new_val = curr_val[0]+1, curr_val[1]
+                        else:
+                            new_val = curr_val[0], curr_val[1]+1
+                        past_tense_banned_words[food_word] = new_val
                     for tup in tuples_list:
                         # add line number so we know where in the document we got it
                         set_elem = (current_line_number, tup)
@@ -617,7 +612,8 @@ def read_file(fileName,
                 fileName, solution_set)
             food_names_only_predicted_set = solution_parser.convert_solution_set_to_set_of_food_names(
                 fileName, predicted_food_labels_set, file_lines)
-            food_names_only_predicted_set = past_tense_food_words_filter(food_names_only_predicted_set, past_tense_banned_words)
+            food_names_only_predicted_set = past_tense_food_words_filter(food_names_only_predicted_set,
+                                                                         past_tense_banned_words, ratio=tense_ratio)
             precision, recall, false_pos_list, false_neg_list, true_pos_list = solution_parser.calculate_precision_and_recall(
                 food_names_only_solution_set, food_names_only_predicted_set)
         else:
@@ -668,6 +664,19 @@ def read_file(fileName,
                        num_false_neg=num_false_neg, false_pos_list=false_pos_list, false_neg_list=false_neg_list)
 
     return write2file, results, predicted_food_labels_set, solution_set_loaded
+
+
+def find_root_token_of_sentence(sentence, nlp):
+    doc = nlp(sentence)
+    for token in doc:
+        if token.dep_ == 'ROOT':
+            return token
+    raise ValueError("No root found in sentence")
+
+
+def is_sentence_present_tense(sentence, nlp):
+    root = find_root_token_of_sentence(sentence.decode(), nlp)
+    return root.tag_ == 'VB' or root.tag_ == 'VBG' or root.tag_ == 'VBP' or root.tag_ == 'VBZ'
 
 
 def get_list_of_phrases_in_foodnames(pos_tags, foodnames_dict):
@@ -836,7 +845,7 @@ def ark_parser(fileName):
     var = CMUTweetTagger.runtagger_parse(final_list_of_sentences)
     return var
 
-def past_tense_food_words_filter(predicted_set, past_tense_words_dict, ratio = 0.9):
+def past_tense_food_words_filter(predicted_set, past_tense_words_dict, ratio = 1.0):
     words_to_remove = set()
     for word, tup in past_tense_words_dict.iteritems():
         past_tense = tup[0]
@@ -869,7 +878,8 @@ def evaluate_all_files_in_directory(directory_path,
                                     levenshtein_threshold=0.25,
                                     levenshtein_setting='system2',
                                     file_paths=None,
-                                    remove_non_eaten_food=True):
+                                    remove_non_eaten_food=True,
+                                    tense_ratio = 0.8):
     # parameters_used = locals() # locals returns a dictionary of the current variables in memory. If we call it before we do anything, we get a dict of all of the function parameters, and the settings used._
     sum_true_pos = 0
     sum_false_pos = 0
@@ -911,7 +921,8 @@ def evaluate_all_files_in_directory(directory_path,
                                                                           log_reg_threshold=log_reg_threshold,
                                                                           levenshtein_threshold=levenshtein_threshold,
                                                                           levenshtein_setting=levenshtein_setting,
-                                                                          remove_non_eaten_food=remove_non_eaten_food)
+                                                                          remove_non_eaten_food=remove_non_eaten_food,
+                                                                          tense_ratio = tense_ratio)
         print('predicted spans:')
         print(predicted_spans)
         if found_solution:  # there wasn't a solution set for that file

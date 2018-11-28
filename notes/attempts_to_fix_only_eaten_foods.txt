@@ -74,3 +74,26 @@ Tried: banning words that appear as past-tense with ratio 1.0
 precision: 0.317504655493
 recall 0.739696312364
 
+
+using spacy:
+
+per sentence basis:
+precision: 0.329078014184
+recall 0.514412416851
+
+ratio: 0.5
+precision: 0.372372372372
+recall 0.548672566372
+
+ratio: 0.1
+precision: 0.301075268817
+recall 0.251121076233
+
+ratio: 0.9
+precision: 0.371911573472
+recall 0.627192982456
+
+ratio: 1.0
+precision: 0.317504655493
+recall 0.739696312364
+
