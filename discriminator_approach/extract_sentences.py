@@ -7,6 +7,7 @@ from pprint import pprint
 import gensim
 import time
 import nltk
+import numpy as np
 
 
 class extract_sentences:
@@ -19,6 +20,8 @@ class extract_sentences:
         self.hslld_all_food = self.load_files(folder=hslld_all_food)
         self.hslld_eaten_food = self.load_files(folder=hslld_eaten_food)
         self.window_of_sentences = window_of_sentences
+        self.padding_window = 5
+        self.google_Word2Vec = None
         # print(len(self.hslld), len(self.hslld_all_food),
         #       len(self.hslld_eaten_food))
 
@@ -106,6 +109,7 @@ class extract_sentences:
         start_time = time.time()
         model = gensim.models.KeyedVectors.load_word2vec_format(
             loc, binary=True)
+        self.google_Word2Vec = model
         end_time = time.time()
         print("Time taken to load model {:.4f} seconds".format(
             end_time - start_time))
@@ -118,10 +122,32 @@ class extract_sentences:
                 sentence = ''.join(
                     [x.lower() for x in sentence[4:] if x.isalpha() or x == ' ']).strip()
                 sentence = nltk.word_tokenize(sentence)
-                text[sequence_no][sentence_no] = sentence
-        print(len(text), len(text[0]), len(text[0][0]))
-
+                # Todo: Current average sentence length
+                if len(sentence) >= 5:
+                    text[sequence_no][sentence_no] = sentence[:self.padding_window]
+                else:
+                    text[sequence_no][sentence_no] = self.padding_of_sentence(sentence=sentence,
+                                                                              length_of_sentence=self.padding_window,
+                                                                              unknown_token='unk')
+                # print(len(text), len(text[0]), len(
+                #     text[sequence_no][sentence_no]), text[sequence_no][sentence_no])
         return text
+
+    def padding_of_sentence(self, sentence, length_of_sentence, unknown_token='unk'):
+        for index in range(len(sentence), length_of_sentence):
+            sentence.append(unknown_token)
+        return sentence
+
+    def convert_clean_text_to_numpy_vectors(self, text):
+        vocab = self.google_Word2Vec.vocab
+        unk_token = np.zeros(300)
+
+        for sequence_no, sequence in enumerate(text):
+            for sentence_no, sentence in enumerate(sequence):
+                text[sequence_no][sentence_no] = [self.google_Word2Vec.word_vec(
+                    x) if x in vocab else unk_token for x in sentence]
+        text = np.asarray(text)
+        print(text.shape)
 
     def load_files(self, folder):
         with open(folder, 'rb') as f:
@@ -142,9 +168,13 @@ if __name__ == '__main__':
     list_of_eaten_food_sentences = extract_sent.load_files(
         './list_of_eaten_food_sentences.pickle')
 
-    # loc_of_Google_Word2Vec = '~/CCPP/data/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
-    # word2vec = extract_sent.load_Google_Word2Vec(loc_of_Google_Word2Vec)
+    loc_of_Google_Word2Vec = '~/CCPP/data/wordEmbeddings/GoogleNews-vectors-negative300.bin.gz'
+    word2vec = extract_sent.load_Google_Word2Vec(loc_of_Google_Word2Vec)
     clean_all_food_sentences = extract_sent.clean_text(
         list_of_all_food_sentences)
     eaten_food_sentences = extract_sent.clean_text(
         list_of_eaten_food_sentences)
+    all_food_numpy = extract_sent.convert_clean_text_to_numpy_vectors(
+        clean_all_food_sentences)
+    eaten_food_numpy = extract_sent.convert_clean_text_to_numpy_vectors(
+        eaten_food_sentences)
