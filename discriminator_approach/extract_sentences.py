@@ -138,16 +138,26 @@ class extract_sentences:
             sentence.append(unknown_token)
         return sentence
 
-    def convert_clean_text_to_numpy_vectors(self, text):
+    def convert_clean_text_to_numpy_vectors(self, text, name=None):
         vocab = self.google_Word2Vec.vocab
         unk_token = np.zeros(300)
-
         for sequence_no, sequence in enumerate(text):
             for sentence_no, sentence in enumerate(sequence):
                 text[sequence_no][sentence_no] = [self.google_Word2Vec.word_vec(
                     x) if x in vocab else unk_token for x in sentence]
         text = np.asarray(text)
+        text = self.formatting(text)
+        self.store_files(text, folder=name)
         print(text.shape)
+
+    def formatting(self, array):
+        # array = self.load_files(array)
+        formatted_array = np.zeros(
+            (array.shape[0], array.shape[1], array.shape[2] * array.shape[3]))
+        for i, _ in enumerate(array):
+            for j, _ in enumerate(array[i]):
+                formatted_array[i, j, :] = array[i, j, :, :].ravel()
+        return formatted_array
 
     def load_files(self, folder):
         with open(folder, 'rb') as f:
@@ -175,6 +185,8 @@ if __name__ == '__main__':
     eaten_food_sentences = extract_sent.clean_text(
         list_of_eaten_food_sentences)
     all_food_numpy = extract_sent.convert_clean_text_to_numpy_vectors(
-        clean_all_food_sentences)
+        clean_all_food_sentences, name="cleaned_all_food_sentences.pickle")
     eaten_food_numpy = extract_sent.convert_clean_text_to_numpy_vectors(
-        eaten_food_sentences)
+        eaten_food_sentences, name="cleaned_eaten_food_sentences.pickle")
+    # extract_sent.formatting('./cleaned_eaten_food_sentences.pickle')
+    # extract_sent.formatting('./cleaned_all_food_sentences.pickle')
